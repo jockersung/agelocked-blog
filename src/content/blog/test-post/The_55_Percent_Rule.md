@@ -1,7 +1,7 @@
 ---
-title: 'The 55 Percent Rule: Why Your Hardware Isn't Enough for Longevity'
-description: '關於硬體與長壽的 55% 法則'
-pubDate: 2026-01-15
+title: 'The 55 Percent Rule'
+description: '硬體與長壽的關係'
+pubDate: 2026-02-18
 tags: ['健康', '長壽']
 ---
 
