@@ -1,3 +1,12 @@
+---
+title: 'The 55 Percent Rule: Why Your Hardware Isn't Enough for Longevity'
+description: '關於硬體與長壽的 55% 法則'
+pubDate: 2026-01-15
+tags: ['健康', '長壽']
+---
+
+
+
 # 2026《科學》研究長壽新論：當基因影響從 25% 躍升至 55% ，如果硬體天賦已定，你正在錯誤地耗損細胞嗎？
 
 by [sunyikun0729](https://agelocked.com/author/sunyikun0729/) 12 2 月, 2026 0 意見 82 閱覽次數
