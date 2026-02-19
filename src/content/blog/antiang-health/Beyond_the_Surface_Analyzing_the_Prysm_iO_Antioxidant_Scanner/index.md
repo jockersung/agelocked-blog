@@ -8,7 +8,7 @@ tags: ['抗氧化', '科技', 'Prysm-iO']
 
 ## **健康不該「憑感覺」，數據才是硬道理**
 
-![健康不再憑感覺][./健康不再憑感覺.webp]
+![健康不再憑感覺](./健康不再憑感覺.webp)
 
 你是否也曾有過這樣的疑惑：
 
@@ -27,6 +27,17 @@ Nu Skin 推出的 **Prysm iO 高光譜智慧掃描儀**，將實驗室等級的�
 只要伸出一根手指，短短 15 秒，它就能幫你算出體內的抗氧化防禦力，讓你的健康狀態變成手機上清晰可見的數字。
 
 這不僅是一次科技革新，更是「精準健康管理」進入大眾生活的里程碑。
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 2rem 0;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"
+    src="https://www.youtube.com/embed/wbT0bLrF-vI" 
+    title="Stop Guessing" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
 
 ## **為什麼要測「類胡蘿蔔素」？——身體的抗氧化溫度計**
 
@@ -399,7 +410,7 @@ Prysm iO 不僅是一台儀器，它更是一個**動力引擎**。
 
 **現在，就讓 Prysm iO 照亮您的健康盲點，開啟您的精準防禦新生活！**
 
-![CTA][./CTA.webp]
+![CTA](./CTA.webp)
 
 👇👇👇👇
 
