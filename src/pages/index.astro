@@ -1,49 +1,439 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+
+const SITE_TITLE = 'Youthspan 菁英計畫';
+const SITE_DESCRIPTION = '高效能恢復術 — 讓你的身心狀態回到巔峰，7天見效，30天改變體質。';
+const pageUrl = Astro.url.href;
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      /* ── 品牌色（與 global.css 一致）── */
+      :root {
+        --teal:       #1a8c82;
+        --teal-dark:  #116b63;
+        --teal-pale:  rgba(26,140,130,0.08);
+        --teal-mid:   rgba(26,140,130,0.18);
+        --ink:        #111820;
+        --body:       #3a4a58;
+        --muted:      #7a8fa0;
+        --border:     rgba(30,70,100,0.10);
+        --bg:         #f8f9fb;
+        --bg2:        #ffffff;
+        --surface:    #f0f3f7;
+      }
+
+      /* ── Reset for landing sections ── */
+      .lp * { box-sizing: border-box; }
+      .lp { font-family: 'Noto Serif TC', serif; color: var(--body); }
+
+      .label {
+        font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.4em;
+        color: var(--teal); text-transform: uppercase; display: flex;
+        align-items: center; gap: 0.9rem; margin-bottom: 2rem;
+      }
+      .label::before { content: '◆'; font-size: 0.45rem; }
+
+      .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
+
+      /* ── HERO ── */
+      .hero {
+        min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr;
+        align-items: center; padding: 8rem 6vw 6rem; position: relative;
+        overflow: hidden; background: var(--bg2);
+      }
+      .hero::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 55% 65% at 75% 35%, rgba(26,140,130,0.07) 0%, transparent 65%),
+                    radial-gradient(ellipse 35% 50% at 5% 85%, rgba(37,99,168,0.05) 0%, transparent 60%);
+      }
+      .hero::after {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background-image: linear-gradient(rgba(26,140,130,0.04) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(26,140,130,0.04) 1px, transparent 1px);
+        background-size: 48px 48px;
+      }
+      .hero-left { position: relative; z-index: 1; }
+      .hero-eyebrow {
+        font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.4em;
+        color: var(--teal); text-transform: uppercase; margin-bottom: 1.8rem;
+        display: flex; align-items: center; gap: 0.8rem;
+      }
+      .hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--teal); }
+      .hero-title {
+        font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 5.2rem);
+        font-weight: 300; line-height: 1.08; letter-spacing: -0.02em; color: var(--ink);
+        margin-bottom: 1rem;
+      }
+      .hero-title em { font-style: italic; color: var(--teal); display: block; }
+      .hero-subtitle { font-size: 1.05rem; font-weight: 300; color: var(--body); margin-bottom: 2.8rem; }
+      .hero-badge {
+        display: inline-flex; align-items: center; padding: 0.65rem 1.4rem;
+        border: 1.5px solid var(--teal); background: var(--teal-pale);
+        margin-bottom: 2.8rem; border-radius: 2px;
+      }
+      .hero-badge-text { font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; color: var(--teal); }
+      .hero-btn {
+        display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 2.5rem;
+        background: var(--teal); color: #fff; font-family: 'DM Mono', monospace;
+        font-size: 0.78rem; letter-spacing: 0.2em; border: none; cursor: pointer;
+        border-radius: 2px; transition: all 0.3s; text-transform: uppercase; text-decoration: none;
+      }
+      .hero-btn:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(26,140,130,0.22); border-bottom: none; }
+      .hero-right { position: relative; z-index: 1; padding-left: 5vw; }
+      .hero-pain-title { font-family: 'DM Mono', monospace; font-size: 0.67rem; letter-spacing: 0.32em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.3rem; }
+      .hero-questions { display: flex; flex-direction: column; gap: 0.7rem; }
+      .hero-q {
+        display: flex; align-items: flex-start; gap: 0.9rem; padding: 1rem 1.3rem;
+        background: var(--surface); border: 1px solid var(--border);
+        border-left: 2.5px solid var(--teal); font-size: 0.92rem; color: var(--body); font-weight: 300;
+      }
+      .hero-q-dot { color: var(--teal); flex-shrink: 0; }
+
+      /* ── PAIN ── */
+      .pain-section { padding: 7rem 6vw; background: var(--bg); }
+      .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 3rem; background: var(--border); }
+      .pain-card { background: var(--bg2); padding: 1.8rem 2rem; transition: background 0.2s; }
+      .pain-card:hover { background: var(--surface); }
+      .pain-icon { font-size: 0.95rem; margin-bottom: 0.5rem; }
+      .pain-text { font-size: 0.92rem; color: var(--body); line-height: 1.85; font-weight: 300; }
+      .pain-footer {
+        margin-top: 3rem; padding: 2.5rem; border: 1.5px solid var(--teal);
+        background: var(--teal-pale); text-align: center; border-radius: 2px;
+      }
+      .pain-footer-text { font-family: 'Cormorant Garamond', serif; font-size: 1.65rem; font-style: italic; color: var(--teal-dark); line-height: 1.6; }
+
+      /* ── SOLUTION ── */
+      .solution-section { padding: 7rem 6vw; background: var(--bg2); display: grid; grid-template-columns: 1fr 1.6fr; gap: 8vw; align-items: start; }
+      .solution-sticky { position: sticky; top: 5rem; }
+      .solution-cards { display: flex; flex-direction: column; gap: 1px; background: var(--border); }
+      .sol-card { background: var(--bg2); padding: 2.8rem; position: relative; overflow: hidden; transition: background 0.25s; }
+      .sol-card:hover { background: var(--surface); }
+      .sol-num { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.4em; color: var(--teal); margin-bottom: 1rem; }
+      .sol-title { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 400; color: var(--ink); margin-bottom: 0.4rem; }
+      .sol-sub { font-size: 0.85rem; color: var(--teal); font-weight: 300; margin-bottom: 0.9rem; font-style: italic; }
+      .sol-desc { font-size: 0.9rem; color: var(--body); line-height: 2; font-weight: 300; margin: 0; }
+      .sol-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--teal), transparent); opacity: 0; transition: opacity 0.3s; }
+      .sol-card:hover .sol-bar { opacity: 1; }
+
+      /* ── HOW ── */
+      .how-section { padding: 7rem 6vw; background: var(--surface); }
+      .steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 3rem; background: var(--border); }
+      .step { background: var(--bg2); padding: 3.5rem 2.5rem; text-align: center; transition: background 0.2s; }
+      .step:hover { background: var(--surface); }
+      .step-num { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: rgba(26,140,130,0.12); line-height: 1; margin-bottom: 1rem; }
+      .step-time { font-family: 'DM Mono', monospace; font-size: 0.67rem; letter-spacing: 0.25em; color: var(--teal); margin-bottom: 0.7rem; }
+      .step-title { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 400; color: var(--ink); margin-bottom: 0.9rem; }
+      .step-desc { font-size: 0.87rem; color: var(--muted); line-height: 2; font-weight: 300; margin: 0; }
+
+      /* ── RESULTS ── */
+      .results-section { padding: 7rem 6vw; background: var(--bg2); display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: start; }
+      .results-list { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.9rem; }
+      .result-item {
+        display: flex; align-items: center; gap: 1.2rem; padding: 1.2rem 1.5rem;
+        background: var(--bg); border: 1px solid var(--border); transition: border-color 0.2s, background 0.2s; border-radius: 2px;
+      }
+      .result-item:hover { border-color: var(--teal); background: var(--teal-pale); }
+      .result-icon {
+        width: 32px; height: 32px; background: rgba(26,140,94,0.1); border: 1.5px solid rgba(26,140,94,0.3);
+        display: flex; align-items: center; justify-content: center; font-size: 0.8rem;
+        flex-shrink: 0; color: #1a8c5e; border-radius: 50%;
+      }
+      .result-text { font-size: 0.92rem; color: var(--body); font-weight: 300; margin: 0; }
+      .highlight-stat { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--teal); }
+      .testimonials { display: flex; flex-direction: column; gap: 1.3rem; }
+      .testimonial { padding: 2.2rem 2.4rem; background: var(--bg); border: 1px solid var(--border); border-top: 2.5px solid var(--teal); border-radius: 0 0 2px 2px; }
+      .testimonial-body { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-style: italic; color: var(--body); line-height: 1.75; margin-bottom: 1rem; }
+      .testimonial-author { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.22em; color: var(--teal); }
+
+      /* ── WHY ── */
+      .why-section { padding: 7rem 6vw; background: var(--surface); }
+      .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+      .why-card { background: var(--bg2); padding: 2.8rem 2.2rem; border: 1px solid var(--border); border-radius: 2px; transition: border-color 0.25s, box-shadow 0.25s; }
+      .why-card:hover { border-color: var(--teal); box-shadow: 0 4px 24px rgba(26,140,130,0.09); }
+      .why-icon { font-size: 2rem; margin-bottom: 1.3rem; display: block; }
+      .why-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; color: var(--ink); margin-bottom: 0.8rem; }
+      .why-desc { font-size: 0.87rem; color: var(--muted); line-height: 2; font-weight: 300; margin: 0; }
+
+      /* ── FAQ ── */
+      .faq-section { padding: 7rem 6vw; background: var(--bg2); max-width: 860px; margin: 0 auto; }
+      .faq-list { margin-top: 3rem; }
+      .faq-item { border-bottom: 1px solid var(--border); padding: 1.8rem 0; }
+      .faq-item:first-child { border-top: 1px solid var(--border); }
+      .faq-q { font-size: 1rem; color: var(--ink); margin-bottom: 0.8rem; display: flex; gap: 1rem; font-weight: 400; }
+      .faq-q-label { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.25em; color: var(--teal); flex-shrink: 0; padding-top: 0.3em; }
+      .faq-a { font-size: 0.9rem; color: var(--muted); line-height: 2.1; font-weight: 300; padding-left: 3.2rem; margin: 0; }
+
+      /* ── FINAL CTA ── */
+      .final-cta { padding: 8rem 6vw; text-align: center; position: relative; overflow: hidden; background: var(--ink); }
+      .final-cta::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(26,140,130,0.18) 0%, transparent 70%);
+      }
+      .final-cta::after {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background-image: linear-gradient(rgba(26,140,130,0.07) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(26,140,130,0.07) 1px, transparent 1px);
+        background-size: 48px 48px;
+      }
+      .final-watermark {
+        position: absolute; font-family: 'Cormorant Garamond', serif; font-size: 22vw; font-weight: 300;
+        color: rgba(26,140,130,0.05); top: 50%; left: 50%; transform: translate(-50%,-50%);
+        white-space: nowrap; pointer-events: none; user-select: none; z-index: 0;
+      }
+      .final-inner { position: relative; z-index: 1; }
+      .final-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.4em; color: var(--teal); text-transform: uppercase; margin-bottom: 1.8rem; }
+      .final-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 6vw, 6rem); font-weight: 300; line-height: 1.1; margin-bottom: 1.3rem; color: #fff; }
+      .final-title em { font-style: italic; color: #6de8df; }
+      .final-sub { font-size: 1rem; color: rgba(255,255,255,0.5); max-width: 400px; margin: 0 auto 3rem; line-height: 2.1; font-weight: 300; }
+      .final-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+      .btn-teal {
+        padding: 1.1rem 3rem; background: var(--teal); color: #fff;
+        font-family: 'DM Mono', monospace; font-size: 0.78rem; letter-spacing: 0.22em;
+        text-transform: uppercase; border: none; cursor: pointer; transition: all 0.3s; border-radius: 2px;
+        text-decoration: none; display: inline-block;
+      }
+      .btn-teal:hover { background: #22b0a5; transform: translateY(-2px); box-shadow: 0 14px 36px rgba(26,140,130,0.35); border-bottom: none; color: #fff; }
+      .btn-outline-light {
+        padding: 1.1rem 2.5rem; background: transparent; color: rgba(255,255,255,0.8);
+        font-family: 'DM Mono', monospace; font-size: 0.78rem; letter-spacing: 0.22em;
+        text-transform: uppercase; border: 1px solid rgba(255,255,255,0.25); cursor: pointer;
+        transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.6rem;
+        border-radius: 2px; text-decoration: none;
+      }
+      .btn-outline-light:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border-bottom-color: rgba(255,255,255,0.6); color: #fff; }
+
+      /* ── Responsive ── */
+      @media (max-width: 900px) {
+        .hero { grid-template-columns: 1fr; gap: 3rem; }
+        .hero-right { padding-left: 0; }
+        .solution-section { grid-template-columns: 1fr; }
+        .solution-sticky { position: static; }
+        .results-section { grid-template-columns: 1fr; }
+        .steps-row { grid-template-columns: 1fr; }
+        .pain-grid { grid-template-columns: 1fr; }
+        .why-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+
+    <div class="lp">
+
+      <!-- ① HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <div class="hero-eyebrow">Elite Performance Recovery</div>
+          <h1 class="hero-title">高效能<em>恢復術</em></h1>
+          <p class="hero-subtitle">讓你的身心狀態回到巔峰</p>
+          <div class="hero-badge">
+            <div class="hero-badge-text">7 天見效 · 30 天改變體質</div>
+          </div>
+          <a href="#final" class="hero-btn">立即了解菁英計畫 →</a>
+        </div>
+        <div class="hero-right">
+          <div class="hero-pain-title">40 歲以上的你，是否感覺</div>
+          <div class="hero-questions">
+            <div class="hero-q"><span class="hero-q-dot">·</span>體力不如從前</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>恢復速度變慢</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>工作效能下降</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ② PAIN -->
+      <section class="pain-section">
+        <div class="label reveal">高效能人士的困擾</div>
+        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.3rem);font-weight:300;color:var(--ink);margin-bottom:0.3rem;">
+          8 大身心<em style="font-style:italic;color:var(--teal);">警訊</em>
+        </h2>
+        <div class="pain-grid">
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">晚一點睡，隔天還是累、腦鈍鈍</div></div>
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">多喝一杯咖啡，也提不起勁</div></div>
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">早上的「打招呼」不見，平常都提不起勁</div></div>
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">運動後恢復時間變得更長</div></div>
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">記憶力和專注力明顯下降</div></div>
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">眼角下垂跟法令紋加深</div></div>
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">體重增加速度變快，但沒有吃更多</div></div>
+          <div class="pain-card reveal"><div class="pain-icon">❌</div><div class="pain-text">少吃一點，體重也不會回來</div></div>
+        </div>
+        <div class="pain-footer reveal">
+          <div class="pain-footer-text">你不只是變老，<br>而是缺乏「高效能恢復」</div>
+        </div>
+      </section>
+
+      <!-- ③ SOLUTION -->
+      <section class="solution-section">
+        <div class="solution-sticky reveal">
+          <div class="label">解決方案</div>
+          <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.8vw,3.8rem);font-weight:300;line-height:1.1;color:var(--ink);margin-bottom:1.3rem;">
+            菁英計畫<br><em style="font-style:italic;color:var(--teal);">三大核心</em>
+          </h2>
+          <p style="font-size:0.9rem;color:var(--muted);line-height:2.1;font-weight:300;max-width:300px;margin:0;">
+            從細胞到習慣，全面介入。<br>不是短暫改善，而是體質的根本改變。
+          </p>
+        </div>
+        <div class="solution-cards">
+          <div class="sol-card reveal">
+            <div class="sol-bar"></div>
+            <div class="sol-num">CORE 01</div>
+            <div class="sol-title">細胞層級修復</div>
+            <div class="sol-sub">ageLOC 基因科技</div>
+            <div class="sol-desc">從根源調節老化基因表現，針對影響老化速度的關鍵基因群，科學驗證的細胞層級介入，讓修復從最根本處開始。</div>
+          </div>
+          <div class="sol-card reveal">
+            <div class="sol-bar"></div>
+            <div class="sol-num">CORE 02</div>
+            <div class="sol-title">營養精準補充</div>
+            <div class="sol-sub">根據你的狀態，客製化方案</div>
+            <div class="sol-desc">根據你的身體狀態與生活型態，設計專屬的營養介入計畫。不是一般的保健食品，而是針對你的需求精準配方。</div>
+          </div>
+          <div class="sol-card reveal">
+            <div class="sol-bar"></div>
+            <div class="sol-num">CORE 03</div>
+            <div class="sol-title">生活習慣優化</div>
+            <div class="sol-sub">15 年經驗顧問，一對一指導</div>
+            <div class="sol-desc">涵蓋飲食（211 餐盤）、運動（超慢跑處方）與睡眠優化。每週 150 分鐘，有人陪你走每一步。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ④ HOW -->
+      <section class="how-section">
+        <div class="label reveal">簡單三步驟</div>
+        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.3rem);font-weight:300;color:var(--ink);">
+          如何<em style="font-style:italic;color:var(--teal);">運作</em>
+        </h2>
+        <div class="steps-row">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <div class="step-time">DAY 1 · 15 分鐘</div>
+            <div class="step-title">評估</div>
+            <div class="step-desc">透過線上問卷全面了解你的身心狀況，找出最關鍵的改善切入點。</div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <div class="step-time">24 小時內</div>
+            <div class="step-title">定製</div>
+            <div class="step-desc">顧問為你設計專屬的 30 天恢復計畫，從補充品到生活習慣，一次到位。</div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <div class="step-time">30 天 · 每天 20 分鐘</div>
+            <div class="step-title">執行</div>
+            <div class="step-desc">依計畫執行，全程專人追蹤進度，隨時調整優化，確保你感受到真實的改變。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑤ RESULTS -->
+      <section class="results-section">
+        <div>
+          <div class="label reveal">成果展示</div>
+          <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.3rem);font-weight:300;color:var(--ink);line-height:1.15;">
+            30 天後<br><em style="font-style:italic;color:var(--teal);">你會發現</em>
+          </h2>
+          <div class="results-list">
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text"><span class="highlight-stat">體力提升 40%</span>，下午不再需要咖啡撐著</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">睡眠品質改善，早上自然清醒不再賴床</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">專注力恢復，工作效率重回巔峰狀態</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">壓力管理能力增強，情緒更穩定</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">整體效能提升，感覺年輕 10 歲</div></div>
+          </div>
+        </div>
+        <div class="testimonials reveal">
+          <div class="testimonial">
+            <div class="testimonial-body">「第 10 天開始感覺到明顯差異，下午的能量崩潰不見了，開會也能更專注。」</div>
+            <div class="testimonial-author">— 陳總監，47 歲，科技業</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-body">「三週後體重開始往下，不是刻意節食，是整個代謝感覺重新啟動了。」</div>
+            <div class="testimonial-author">— 林協理，52 歲，金融業</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑥ WHY -->
+      <section class="why-section">
+        <div class="label reveal">為什麼選我們</div>
+        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.3rem);font-weight:300;color:var(--ink);">
+          菁英計畫<em style="font-style:italic;color:var(--teal);">三大保證</em>
+        </h2>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <span class="why-icon">🔬</span>
+            <div class="why-title">科學驗證</div>
+            <div class="why-desc">獲得多國專利的 ageLOC 技術，有嚴謹的科學研究支持，不是話術，是有根據的改變。</div>
+          </div>
+          <div class="why-card reveal">
+            <span class="why-icon">🏆</span>
+            <div class="why-title">獲獎無數</div>
+            <div class="why-desc">囊括各大國際發明獎項，技術實力受到全球專業機構認可，讓你用得安心放心。</div>
+          </div>
+          <div class="why-card reveal">
+            <span class="why-icon">🤝</span>
+            <div class="why-title">個人化服務</div>
+            <div class="why-desc">15 年經驗顧問陪伴，使用上任何問題都可以隨時詢問，不是買了就不管你。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑦ FAQ -->
+      <section class="faq-section">
+        <div class="label reveal">常見問題</div>
+        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--ink);">
+          你想知道的<em style="font-style:italic;color:var(--teal);">都在這裡</em>
+        </h2>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <div class="faq-q"><span class="faq-q-label">Q 01</span>需要多久才能看到效果？</div>
+            <div class="faq-a">多數人在 7–10 天開始感受到明顯變化，30 天後體質層面的改善會更加顯著。每個人的基礎狀態不同，顧問會依據你的進度持續調整。</div>
+          </div>
+          <div class="faq-item reveal">
+            <div class="faq-q"><span class="faq-q-label">Q 02</span>菁英計畫適合誰？</div>
+            <div class="faq-a">主要針對 40–60 歲、注重效能的職場菁英。如果你感覺體力和恢復力明顯不如從前，但不想接受這是「正常老化」，這個計畫就是為你設計的。</div>
+          </div>
+          <div class="faq-item reveal">
+            <div class="faq-q"><span class="faq-q-label">Q 03</span>價格如何？</div>
+            <div class="faq-a">依個人狀況與選擇的計畫而定，提供客製化方案。歡迎直接聯繫我們進行免費評估，了解最適合你的組合與費用。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑧ FINAL CTA -->
+      <section class="final-cta" id="final">
+        <div class="final-watermark">ELITE</div>
+        <div class="final-inner">
+          <div class="final-label reveal">立即行動</div>
+          <h2 class="final-title reveal">別讓年齡<br><em>限制你的表現</em></h2>
+          <p class="final-sub reveal">現在預約免費諮詢<br>了解你的專屬菁英計畫</p>
+          <div class="final-btns">
+            <a href="mailto:sunyikun0729@gmail.com" class="btn-teal reveal">立即預約免費諮詢</a>
+            <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-outline-light reveal">💬 加 LINE 諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /.lp -->
+
+    <Footer />
+
+    <script>
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add('visible'), (i % 4) * 80);
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+  </body>
 </html>
