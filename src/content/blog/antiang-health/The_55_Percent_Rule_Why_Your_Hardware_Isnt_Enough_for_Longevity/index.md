@@ -1,17 +1,15 @@
 ---
-title: 'The 55 Percent Rule'
-description: '硬體與長壽的關係'
+title: 'The_55_Percent_Rule_Why_Your_Hardware_Isnt_Enough_for_Longevity'
+description: '基因影響55%硬體與長壽的關係'
 pubDate: 2026-02-18
-tags: ['健康', '長壽']
+tags: ['抗氧化', '健康', '長壽']
 ---
 
 
 
 # 2026《科學》研究長壽新論：當基因影響從 25% 躍升至 55% ，如果硬體天賦已定，你正在錯誤地耗損細胞嗎？
 
-by [sunyikun0729](https://agelocked.com/author/sunyikun0729/) 12 2 月, 2026 0 意見 82 閱覽次數
-
-![][image1]
+![2026長壽新論][./2026長壽新論.webp]
 
 最近《科學》（Science）期刊發表了一項令所有健身與健康飲食愛好者感到「心涼」的研究：
 
@@ -249,6 +247,12 @@ Open AI 即將推出「ChatGPT 健康」，這是一個專為健康打造的獨�
 
 ​**長壽是基因決定的，但「優雅地長壽」，是你決定的。**
 
+![CTA][./CTA.webp]
+
+👇👇👇👇
+
+[「菁英 」的高效能恢復配方](https://lin.ee/jgugMvX)
+
 參考資料：  
 01\. L HAYFLICK, P S MOORHEAD, 1961\.[The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.  
 02\. J F Fries, 1980\. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.  
@@ -269,10 +273,4 @@ S Jay Olshansky, Bradley J Willcox, Lloyd Demetrius, Hiram Beltrán-Sánchez, 20
 14\. Ben Shenhar, Glen Pridham, Thaís Lopes De Oliveira, Yifan Yang, Naveh Raz, Joris Deelen, View ORCID ProfileSara Hägg, Uri Alon, 2026\. [Heritability of intrinsic human life span is about 50% when confounding factors are addressed.](https://pubmed.ncbi.nlm.nih.gov/41610249/)  *Science.* 391(6784):504-510.  
 15\. Mateus V. de Castro, Monize V.R. Silva, João Paulo L.F. Guilherme, Mayana Zatz, 2026\. [Insights from Brazilian supercentenarians.](https://genomicpress.kglmeridian.com/view/journals/genpsych/2/1/article-p18.xml) *Genomic Psychiatry.* 2(1):18–20.  
 16\. Peter Attia/[Outlive I+II: The Science and Art of Longevity](https://www.books.com.tw/products/0011001532?sloc=main)
-
-![CTA][./CTA.webp]
-
-👇👇👇👇
-
-[「菁英 」的高效能恢復配方](https://lin.ee/jgugMvX)
 
