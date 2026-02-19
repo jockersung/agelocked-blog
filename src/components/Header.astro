@@ -1,45 +1,73 @@
 ---
-import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 <header>
-	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-	</nav>
+  <nav>
+    <div class="logo">
+      <a href="/"><img src="/agelockedlogo.webp" alt="AGELOCKED" height="44" /></a>
+    </div>
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+    </div>
+    <div class="nav-right"></div>
+  </nav>
 </header>
+
 <style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
+  header {
+    margin: 0;
+    padding: 0 2em;
+    background: white;
+    border-bottom: 1px solid rgba(30, 70, 100, 0.10);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(14px);
+  }
+  .logo a {
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+  }
+  .logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    height: 60px;
+  }
+  .internal-links {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+  }
+  .nav-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav a {
+    padding: 0 1.2em;
+    line-height: 60px;
+    color: #3a4a58;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+  }
+  nav a:hover {
+    color: #1a8c82;
+    border-bottom-color: transparent;
+  }
+  nav a.active {
+    color: #1a8c82;
+    border-bottom-color: #1a8c82;
+  }
 </style>
