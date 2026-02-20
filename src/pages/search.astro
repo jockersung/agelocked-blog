@@ -1,0 +1,222 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title="搜尋文章" description="搜尋部落格所有文章" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="search-header">
+        <h1 class="search-title">搜尋</h1>
+        <div class="search-box-wrap">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="輸入關鍵字…"
+            autocomplete="off"
+            aria-label="搜尋文章"
+          />
+        </div>
+      </div>
+
+      <div id="search-status" class="search-status" aria-live="polite"></div>
+      <ul id="search-results" class="search-results" role="list"></ul>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 6vw 6rem;
+  }
+
+  .search-header {
+    margin-bottom: 2rem;
+  }
+
+  .search-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    color: var(--ink);
+    margin: 0 0 1.25rem;
+  }
+
+  .search-box-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    color: var(--muted);
+    pointer-events: none;
+  }
+
+  #search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.75rem;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1rem;
+    color: var(--ink);
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  #search-input:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 3px var(--teal-pale);
+  }
+
+  .search-status {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    min-height: 1.4em;
+  }
+
+  .search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .search-results li {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .search-results li:first-child {
+    border-top: 1px solid var(--border);
+  }
+
+  .search-results a {
+    display: block;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    border-bottom: none;
+    color: inherit;
+    transition: background 0.15s;
+  }
+
+  .search-results a:hover .result-title {
+    color: var(--teal);
+  }
+
+  .result-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--teal);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .result-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 0 0 0.4rem;
+    line-height: 1.25;
+    transition: color 0.2s;
+  }
+
+  .result-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  mark {
+    background: var(--teal-pale);
+    color: var(--teal-dark);
+    padding: 0 0.1em;
+    border-radius: 2px;
+  }
+</style>
+
+<script>
+  const input = document.getElementById('search-input') as HTMLInputElement;
+  const resultsList = document.getElementById('search-results') as HTMLUListElement;
+  const statusEl = document.getElementById('search-status') as HTMLDivElement;
+
+  type Post = { id: string; title: string; description: string; pubDate: string; url: string };
+  let allPosts: Post[] = [];
+
+  async function loadPosts() {
+    const res = await fetch('/api/search.json');
+    allPosts = await res.json();
+  }
+
+  function highlight(text: string, query: string): string {
+    if (!query) return text;
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>');
+  }
+
+  function renderResults(query: string) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      resultsList.innerHTML = '';
+      statusEl.textContent = '';
+      return;
+    }
+
+    const matched = allPosts.filter(p =>
+      p.title.toLowerCase().includes(q) || p.description.toLowerCase().includes(q)
+    );
+
+    statusEl.textContent = matched.length > 0
+      ? `找到 ${matched.length} 篇文章`
+      : '沒有找到相關文章';
+
+    resultsList.innerHTML = matched.map(p => `
+      <li>
+        <a href="${p.url}">
+          <span class="result-date">${p.pubDate}</span>
+          <h2 class="result-title">${highlight(p.title, query)}</h2>
+          ${p.description ? `<p class="result-desc">${highlight(p.description, query)}</p>` : ''}
+        </a>
+      </li>
+    `).join('');
+  }
+
+  loadPosts().then(() => {
+    // Handle URL param ?q=...
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q') ?? '';
+    if (q) {
+      input.value = q;
+      renderResults(q);
+    }
+  });
+
+  let debounceTimer: ReturnType<typeof setTimeout>;
+  input.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => renderResults(input.value), 200);
+  });
+</script>

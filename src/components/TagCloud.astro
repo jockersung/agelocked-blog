@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import { CATEGORY_MAP, getCategorySlug } from '../utils/categories';
+
+const posts = await getCollection('blog');
+
+// Count posts per category
+const counts: Record<string, number> = {};
+for (const post of posts) {
+  const slug = getCategorySlug(post.id);
+  if (slug) counts[slug] = (counts[slug] ?? 0) + 1;
+}
+
+const categories = Object.entries(CATEGORY_MAP).map(([slug, label]) => ({
+  slug,
+  label,
+  count: counts[slug] ?? 0,
+}));
+
+const maxCount = Math.max(...categories.map(c => c.count), 1);
+const minCount = Math.min(...categories.map(c => c.count), 0);
+
+function fontSize(count: number): string {
+  if (maxCount === minCount) return '1rem';
+  const ratio = (count - minCount) / (maxCount - minCount);
+  const size = 0.82 + ratio * 0.6; // 0.82rem – 1.42rem
+  return `${size.toFixed(2)}rem`;
+}
+---
+
+<div class="tag-cloud">
+  <span class="tag-cloud-label">分類</span>
+  <div class="tag-cloud-tags">
+    {categories.map(({ slug, label, count }) => (
+      <a
+        href={`/category/${slug}/`}
+        class="tag-cloud-item"
+        style={`font-size: ${fontSize(count)}`}
+        title={`${label}（${count} 篇）`}
+      >
+        {label}
+        <span class="tag-count">{count}</span>
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+  .tag-cloud {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1rem 0 1.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tag-cloud-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .tag-cloud-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+
+  .tag-cloud-item {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--teal-pale);
+    border: 1px solid rgba(26, 140, 130, 0.2);
+    color: var(--teal);
+    border-radius: 2px;
+    text-decoration: none;
+    border-bottom: none;
+    font-family: 'Noto Serif TC', serif;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+
+  .tag-cloud-item:hover {
+    background: var(--teal-mid);
+    color: var(--teal-dark);
+    border-color: var(--teal);
+    border-bottom: none;
+  }
+
+  .tag-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+  }
+</style>

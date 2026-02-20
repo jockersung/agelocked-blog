@@ -1,5 +1,5 @@
 ---
-title: 'The_55_Percent_Rule_Why_Your_Hardware_Isnt_Enough_for_Longevity'
+title: '2026《科學》研究長壽新論：當基因影響從 25% 躍升至 55% ，如果硬體天賦已定，你正在錯誤地耗損細胞嗎？'
 description: '基因影響55%硬體與長壽的關係'
 pubDate: 2026-02-18
 tags: ['抗氧化', '健康', '長壽']
@@ -112,7 +112,7 @@ h2 ≈ 2 \* (rMZ– rDZ)
 
 只可惜現在的醫療技術與人們的關注力，最多把生命周期延長一段，而健康壽命未能跟著增加（**圖底下虛線增加部分**）。
 
-![][image2]
+![Healthspan比LIfespan重要][./Healthspan比LIfespan重要.webp]
 
 ### **數據對比：你想要哪一種「晚年版本」？**
 

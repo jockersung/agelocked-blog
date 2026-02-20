@@ -1,0 +1,104 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+}
+
+const { posts } = Astro.props;
+---
+
+{posts.length > 0 && (
+  <section class="related-posts">
+    <h2 class="related-title">相關文章</h2>
+    <div class="related-grid">
+      {posts.map(post => (
+        <a href={`/blog/${post.id}/`} class="related-card">
+          <span class="related-date">
+            <FormattedDate date={post.data.pubDate} />
+          </span>
+          <span class="related-post-title">{post.data.title}</span>
+          {post.data.description && (
+            <span class="related-desc">{post.data.description}</span>
+          )}
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .related-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1.25rem;
+    font-weight: 400;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    border-bottom: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .related-card:hover {
+    border-color: var(--teal);
+    box-shadow: 0 2px 12px var(--teal-pale);
+    border-bottom: none;
+  }
+
+  .related-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--teal);
+    text-transform: uppercase;
+  }
+
+  .related-post-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.3;
+    font-weight: 400;
+  }
+
+  .related-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: 480px) {
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

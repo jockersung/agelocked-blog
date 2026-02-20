@@ -1,0 +1,166 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { ALL_CATEGORY_SLUGS, getCategoryLabel, getCategorySlug } from '../../utils/categories';
+
+export async function getStaticPaths() {
+  return ALL_CATEGORY_SLUGS.map(category => ({ params: { category } }));
+}
+
+const { category } = Astro.params;
+const label = getCategoryLabel(category);
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter(p => getCategorySlug(p.id) === category)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={`${label} — 文章分類`} description={`所有關於「${label}」的文章`} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <header class="category-header">
+        <p class="category-breadcrumb">
+          <a href="/blog">Blog</a>
+          <span> / </span>
+          <span>{label}</span>
+        </p>
+        <h1 class="category-title">{label}</h1>
+        <p class="category-count">{posts.length} 篇文章</p>
+      </header>
+
+      {posts.length === 0 ? (
+        <p class="empty-state">此分類目前尚無文章。</p>
+      ) : (
+        <ul class="post-list">
+          {posts.map(post => (
+            <li class="post-item">
+              <a href={`/blog/${post.id}/`}>
+                <span class="post-date">
+                  <FormattedDate date={post.data.pubDate} />
+                </span>
+                <h2 class="post-title">{post.data.title}</h2>
+                {post.data.description && (
+                  <p class="post-excerpt">{post.data.description}</p>
+                )}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 6vw 6rem;
+  }
+
+  .category-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .category-breadcrumb {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin: 0 0 0.75rem;
+  }
+
+  .category-breadcrumb a {
+    color: var(--teal);
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .category-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    color: var(--ink);
+    margin: 0 0 0.5rem;
+  }
+
+  .category-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .empty-state {
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .post-item {
+    border-bottom: 1px solid var(--border);
+    padding: 1.75rem 0;
+  }
+
+  .post-item:first-child {
+    border-top: 1px solid var(--border);
+  }
+
+  .post-item a {
+    display: block;
+    text-decoration: none;
+    border-bottom: none;
+    color: inherit;
+  }
+
+  .post-item a:hover .post-title {
+    color: var(--teal);
+  }
+
+  .post-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    color: var(--teal);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .post-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 0 0 0.5rem;
+    line-height: 1.25;
+    transition: color 0.2s;
+  }
+
+  .post-excerpt {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.75;
+    margin: 0;
+  }
+</style>

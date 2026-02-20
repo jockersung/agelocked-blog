@@ -1,0 +1,31 @@
+---
+---
+<div id="reading-progress-bar"></div>
+
+<style>
+  #reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--teal), var(--teal-light));
+    z-index: 200;
+    transition: width 0.1s linear;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const bar = document.getElementById('reading-progress-bar');
+
+  function updateProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if (bar) bar.style.width = `${Math.min(progress, 100)}%`;
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+</script>

@@ -1,63 +1,335 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const title = '關於我 — 孫義坤';
+const description = '陽明交通大學應用化學、清華大學分子醫學背景，15年健康領域經驗，專注抗衰老科學與高效能恢復。';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style>
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 4rem 2rem 6rem;
+      }
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+      .about-header {
+        margin-bottom: 3.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid rgba(30,70,100,0.10);
+      }
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+      .about-eyebrow {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.4em;
+        color: #1a8c82;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+      .about-eyebrow::before {
+        content: '';
+        width: 20px;
+        height: 1px;
+        background: #1a8c82;
+      }
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+      .about-name {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.4rem, 5vw, 3.8rem);
+        font-weight: 300;
+        line-height: 1.1;
+        color: #111820;
+        margin: 0 0 0.8rem;
+      }
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+      .about-credentials {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        margin-top: 1rem;
+      }
+      .credential {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        color: #7a8fa0;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .credential::before {
+        content: '◆';
+        font-size: 0.4rem;
+        color: #1a8c82;
+      }
+
+      .about-section {
+        margin-bottom: 3rem;
+      }
+
+      .section-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.38em;
+        color: #1a8c82;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+      }
+
+      .about-section h2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #111820;
+        margin: 0 0 1rem;
+        line-height: 1.2;
+      }
+
+      .about-section p {
+        font-size: 0.97rem;
+        color: #3a4a58;
+        line-height: 2;
+        font-weight: 300;
+        margin-bottom: 1rem;
+      }
+
+      .pain-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin: 1.5rem 0;
+      }
+      .pain-item {
+        display: flex;
+        gap: 1rem;
+        padding: 0.9rem 1.2rem;
+        background: #f8f9fb;
+        border: 1px solid rgba(30,70,100,0.08);
+        border-left: 2.5px solid #1a8c82;
+        font-size: 0.9rem;
+        color: #3a4a58;
+        font-weight: 300;
+        line-height: 1.6;
+      }
+      .pain-item strong {
+        color: #111820;
+        font-weight: 400;
+      }
+
+      .target-card {
+        padding: 2rem;
+        background: rgba(26,140,130,0.06);
+        border: 1.5px solid rgba(26,140,130,0.2);
+        border-radius: 2px;
+        margin-top: 1.5rem;
+      }
+      .target-card p {
+        margin: 0;
+        font-size: 0.92rem;
+        color: #3a4a58;
+        line-height: 2;
+      }
+
+      .topics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .topic {
+        padding: 1.3rem 1.5rem;
+        background: #ffffff;
+        border: 1px solid rgba(30,70,100,0.10);
+        border-radius: 2px;
+        font-size: 0.88rem;
+        color: #3a4a58;
+        font-weight: 300;
+        transition: border-color 0.2s;
+      }
+      .topic:hover { border-color: #1a8c82; }
+      .topic strong {
+        display: block;
+        color: #111820;
+        font-weight: 400;
+        margin-bottom: 0.3rem;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.1rem;
+      }
+
+      .contact-section {
+        margin-top: 3.5rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid rgba(30,70,100,0.10);
+      }
+      .contact-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+      }
+      .contact-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.8rem 1.8rem;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 2px;
+        transition: all 0.25s;
+      }
+      .contact-btn-solid {
+        background: #1a8c82;
+        color: #fff;
+        border: 1.5px solid #1a8c82;
+      }
+      .contact-btn-solid:hover {
+        background: #116b63;
+        border-color: #116b63;
+        border-bottom: 1.5px solid #116b63;
+        color: #fff;
+      }
+      .contact-btn-outline {
+        background: transparent;
+        color: #1a8c82;
+        border: 1.5px solid #1a8c82;
+      }
+      .contact-btn-outline:hover {
+        background: rgba(26,140,130,0.08);
+        border-bottom: 1.5px solid #1a8c82;
+        color: #1a8c82;
+      }
+
+      hr.divider {
+        border: none;
+        border-top: 1px solid rgba(30,70,100,0.10);
+        margin: 3rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+
+      <!-- Header -->
+      <div class="about-header">
+        <div class="about-eyebrow">About</div>
+        <h1 class="about-name">孫義坤</h1>
+        <div class="about-credentials">
+          <span class="credential">陽明交通大學 應用化學系</span>
+          <span class="credential">清華大學 分子醫學研究所</span>
+          <span class="credential">健康領域 15 年經驗</span>
+        </div>
+      </div>
+
+      <!-- 我的故事 -->
+      <div class="about-section">
+        <div class="section-label">我的故事</div>
+        <h2>40 歲之後，<br>身體開始說話</h2>
+        <p>
+          我在高壓的工作環境裡打滾了十幾年。化學與分子醫學的背景讓我習慣用數據和機制來理解事物，
+          但有很長一段時間，我對自己身體的狀態卻是視而不見的。
+        </p>
+        <p>
+          直到 40 歲之後，那種精神和體力的落差開始變得無法忽視——下午的斷電感、睡了還是累、
+          腦袋卡頓、脖子肩膀石化……這些症狀讓我意識到，「努力工作」已經不足以撐住一切。
+        </p>
+        <p>
+          從對減重的關注，延伸到代謝健康，再深入到抗衰老科學——我開始認真閱讀
+          《身體使用指南》，想搞清楚身體到底發生了什麼，以及我能做什麼。
+          這個 blog，是我把這個過程整理出來分享給你的地方。
+        </p>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- 我在解決什麼問題 -->
+      <div class="about-section">
+        <div class="section-label">這個 Blog 解決什麼</div>
+        <h2>那些讓你撐不下去<br>的小事</h2>
+        <p>這裡寫的，都是真實困擾過我、也困擾著大多數 40+ 高壓工作者的問題：</p>
+
+        <div class="pain-list">
+          <div class="pain-item"><strong>下午斷電</strong> — 不靠咖啡也能撐過 3-4 點的能量低谷</div>
+          <div class="pain-item"><strong>起床沒有恢復感</strong> — 睡了 7-8 小時還是累，想要真正「睡飽」</div>
+          <div class="pain-item"><strong>腦霧與反應變慢</strong> — 開會、做決策時腦袋清晰，不卡頓</div>
+          <div class="pain-item"><strong>脖子肩膀石化</strong> — 解除長期積累的頸肩僵硬，恢復活動自如</div>
+          <div class="pain-item"><strong>張力型頭痛</strong> — 擺脫那種頭被緊箍咒勒住的悶脹感</div>
+          <div class="pain-item"><strong>情緒失控與易怒</strong> — 高壓下保持穩定，不把疲憊發洩在家人身上</div>
+          <div class="pain-item"><strong>花錢沒效果</strong> — 找到真正有感的方法，不再亂槍打鳥</div>
+        </div>
+
+        <div class="target-card">
+          <p>
+            這個 blog 寫給 <strong>40–50 歲、年收超過百萬、工作壓力大</strong> 的你。
+            不需要生物學背景，只需要想認真對待自己身體的心。
+          </p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- 這裡寫什麼 -->
+      <div class="about-section">
+        <div class="section-label">文章主題</div>
+        <h2>你會在這裡<br>找到什麼</h2>
+        <div class="topics-grid">
+          <div class="topic">
+            <strong>抗衰老科學</strong>
+            最新研究轉化成你能理解的行動方案
+          </div>
+          <div class="topic">
+            <strong>粒線體與代謝</strong>
+            從細胞層級理解為什麼你會累
+          </div>
+          <div class="topic">
+            <strong>飲食實戰</strong>
+            211 餐盤、血糖管理、間歇性禁食
+          </div>
+          <div class="topic">
+            <strong>運動與恢復</strong>
+            超慢跑、每週 150 分鐘的科學根據
+          </div>
+          <div class="topic">
+            <strong>睡眠優化</strong>
+            讓你真正睡飽、早上清醒的方法
+          </div>
+          <div class="topic">
+            <strong>補充品指南</strong>
+            什麼有效、什麼只是安慰劑
+          </div>
+        </div>
+      </div>
+
+      <!-- 聯絡 -->
+      <div class="contact-section">
+        <div class="section-label">聯絡我</div>
+        <h2>有問題？<br>直接來找我</h2>
+        <p style="font-size:0.95rem;color:#3a4a58;line-height:2;font-weight:300;">
+          如果你對菁英計畫有興趣，或想聊聊你目前的狀況，歡迎透過 LINE 或 email 聯絡我。
+        </p>
+        <div class="contact-links">
+          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="contact-btn contact-btn-solid">
+            💬 加 LINE @fer7932k
+          </a>
+          <a href="mailto:sunyikun0729@gmail.com" class="contact-btn contact-btn-outline">
+            ✉ sunyikun0729@gmail.com
+          </a>
+        </div>
+      </div>
+
+    </main>
+    <Footer />
+  </body>
+</html>
