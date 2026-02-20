@@ -4,22 +4,6 @@ description: '一個人有多老？當然我們可以從對方的時間年齡（
 pubDate: 2024-12-08T13:33:36+08:00
 ---
 
-_1.9K_
-
-內容目錄
-
-Toggle
-
-  * 測量「衰老」
-  * 方法一、端粒指數檢測
-  * 方法二、抗氧化壓力抽血檢驗套組
-    * 血漿總和抗氧化能力檢驗（Plasma Total Anti-oxidative Capacity，TAC）
-    * 血液麩胱甘肽過氧化酵素檢驗（Blood Glutathione Peroxidase，GPx）
-    * DNA損傷指數
-    * 血漿骨髓過氧化酵素檢驗（Plasma MPO Test）
-    * 丙二醛過氧化脂質檢驗（Urinary Malondialdehyde，MDA）
-    * 抗氧化維生素分析 （Antioxidant/Vitamin Analysis）
-  * 方法三、生物光子掃描儀
 
 ## **測量「衰老」**
 
@@ -33,8 +17,7 @@ Toggle
 
 那衰老程度有什麼儀器可測？那又怎麼知道自己現在抗衰老能力如何？
 
-## **  
-方法一、端粒指數檢測**
+## **方法一、端粒指數檢測**
 
 二十世紀初法國醫生**亞歷克西．卡雷爾** （Alexis Carrel）在研究細胞的時候發現，只要環境與營養適當，細胞就可以不斷的生長與繁殖，因此推論生命其實是可以無限延伸的；
 
