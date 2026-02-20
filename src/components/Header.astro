@@ -2,7 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 ---
 <header>
-  <nav>
+  <nav id="main-nav">
     <div class="logo">
       <a href="/"><img src="/agelockedlogo.webp" alt="AGELOCKED" height="44" /></a>
     </div>
@@ -12,14 +12,130 @@ import HeaderLink from './HeaderLink.astro';
       <HeaderLink href="/about">About</HeaderLink>
     </div>
     <div class="nav-right">
-      <a href="/search" class="search-link" aria-label="搜尋">
+      <button class="search-btn" id="search-toggle" aria-label="搜尋">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
         </svg>
-      </a>
+      </button>
     </div>
   </nav>
 </header>
+
+<!-- 全畫面搜尋 overlay -->
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-overlay-inner">
+    <div class="search-header">
+      <div class="search-field">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7a8fa0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="搜尋文章…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+      <button class="close-btn" id="search-close" aria-label="關閉搜尋">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById('search-toggle')!;
+  const overlay = document.getElementById('search-overlay')!;
+  const closeBtn = document.getElementById('search-close')!;
+  const input = document.getElementById('search-input') as HTMLInputElement;
+  const results = document.getElementById('search-results')!;
+
+  type Post = { id: string; title: string; description: string; pubDate: string; url: string };
+  let allPosts: Post[] = [];
+
+  async function loadPosts() {
+    if (allPosts.length) return;
+    const res = await fetch('/api/search.json');
+    allPosts = await res.json();
+  }
+
+  function highlight(text: string, q: string): string {
+    if (!q) return text;
+    const esc = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return text.replace(new RegExp(`(${esc})`, 'gi'), '<mark>$1</mark>');
+  }
+
+  function renderResults(query: string) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      results.innerHTML = '<p class="hint">輸入關鍵字開始搜尋</p>';
+      return;
+    }
+
+    const matched = allPosts.filter(
+      p => p.title.toLowerCase().includes(q) || p.description.toLowerCase().includes(q)
+    );
+
+    if (!matched.length) {
+      results.innerHTML = `<p class="no-result">沒有找到「${query}」相關文章</p>`;
+      return;
+    }
+
+    results.innerHTML = `
+      <p class="result-count">找到 ${matched.length} 篇文章</p>
+      <ul class="result-list">
+        ${matched.map(p => `
+          <li>
+            <a class="result-item" href="${p.url}">
+              <span class="result-title">${highlight(p.title, query)}</span>
+              ${p.description ? `<span class="result-desc">${highlight(p.description, query)}</span>` : ''}
+            </a>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+  }
+
+  function openOverlay() {
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    input.focus();
+    loadPosts().then(() => {
+      if (input.value.trim()) renderResults(input.value);
+    });
+  }
+
+  function closeOverlay() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    input.value = '';
+    results.innerHTML = '';
+  }
+
+  toggle.addEventListener('click', openOverlay);
+  closeBtn.addEventListener('click', closeOverlay);
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeOverlay();
+  });
+
+  let timer: ReturnType<typeof setTimeout>;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => renderResults(input.value), 180);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeOverlay();
+  });
+</script>
 
 <style>
   header {
@@ -76,17 +192,151 @@ import HeaderLink from './HeaderLink.astro';
     color: #1a8c82;
     border-bottom-color: #1a8c82;
   }
-  .search-link {
+  .search-btn {
     display: flex;
     align-items: center;
     padding: 0 0.5em;
-    line-height: 60px;
+    height: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
     color: #7a8fa0;
-    border-bottom: none !important;
+    transition: color 0.2s;
   }
-  .search-link:hover {
+  .search-btn:hover {
     color: #1a8c82;
-    border-bottom: none !important;
+  }
+
+  /* 全畫面 overlay */
+  .search-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(10, 20, 30, 0.55);
+    backdrop-filter: blur(4px);
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+  }
+  .search-overlay.open {
+    display: flex;
+  }
+  .search-overlay-inner {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 1.5rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    overflow: hidden;
+    max-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+  }
+  .search-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid rgba(30,70,100,0.10);
+    flex-shrink: 0;
+  }
+  .search-field {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex: 1;
+  }
+  .search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.95rem;
+    color: #111820;
+    outline: none;
+  }
+  .search-input::placeholder {
+    color: #b0bec8;
+  }
+  .close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #7a8fa0;
+    border-radius: 4px;
+    transition: background 0.15s, color 0.15s;
+    flex-shrink: 0;
+  }
+  .close-btn:hover {
+    background: rgba(30,70,100,0.07);
+    color: #1a8c82;
+  }
+
+  /* 結果區 */
+  .search-results {
+    overflow-y: auto;
+    padding: 0.5rem 0;
+  }
+  .hint, .no-result, .result-count {
+    padding: 1rem 1.4rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: #7a8fa0;
+    letter-spacing: 0.04em;
+    margin: 0;
+  }
+  .no-result {
+    color: #a0b0bc;
+  }
+  .result-count {
+    color: #1a8c82;
+    border-bottom: 1px solid rgba(30,70,100,0.07);
+    padding-bottom: 0.7rem;
+  }
+  .result-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .result-item {
+    display: block;
+    padding: 0.85rem 1.4rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(30,70,100,0.06);
+    transition: background 0.15s;
+  }
+  .result-item:hover {
+    background: rgba(26,140,130,0.05);
+  }
+  .result-title {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    color: #111820;
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+  }
+  .result-desc {
+    display: block;
+    font-size: 0.75rem;
+    color: #7a8fa0;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  mark {
+    background: rgba(26,140,130,0.15);
+    color: #116b63;
+    padding: 0 0.1em;
+    border-radius: 2px;
   }
 
   @media (max-width: 600px) {
@@ -105,9 +355,16 @@ import HeaderLink from './HeaderLink.astro';
       letter-spacing: 0;
       line-height: 52px;
     }
-    .search-link {
+    .search-btn {
       padding: 0 0.3em;
-      line-height: 52px;
+      height: 52px;
+    }
+    .search-overlay {
+      padding-top: 60px;
+    }
+    .search-overlay-inner {
+      margin: 0 0.75rem;
+      max-height: calc(100vh - 80px);
     }
   }
 </style>

@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:agelocked-blog.pages.dev)",
+      "WebFetch(domain:agelocked.com)",
+      "Bash(curl:*)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(python fetch_articles.py:*)",
+      "Bash(python:*)",
+      "Bash(npm run dev:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm i:*)",
+      "Bash(claude --version)",
+      "Bash(npm run build:*)",
+      "Bash(git mv:*)",
+      "Bash(node:*)",
+      "Bash(python3:*)",
+      "Bash(# Restore images first mv /tmp/prysm_imgs/*.webp \"\"C:/Users/user/Desktop/agelocked-blog/src/content/blog/antiaging-health/健康不再「憑感覺」！Prysm iO 最新一代的抗氧化防護罩：只要 15 秒揭開身體科技大解析/\"\" # Look at the YouTube embed and any special URL patterns grep -n \"\"src=\\\\|href=\\\\|url\\(\"\" \"\"C:/Users/user/Desktop/agelocked-blog/src/content/blog/antiaging-health/健康不再「憑感覺」！Prysm iO 最新一代的抗氧化防護罩：只要 15 秒揭開身體科技大解析/index.md\"\")"
+    ]
+  }
+}
