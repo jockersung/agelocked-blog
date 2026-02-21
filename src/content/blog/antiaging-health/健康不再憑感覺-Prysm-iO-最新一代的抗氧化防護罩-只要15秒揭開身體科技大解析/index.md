@@ -2,6 +2,7 @@
 title: '健康不再「憑感覺」！Prysm iO 最新一代的抗氧化防護罩：只要 15 秒揭開身體科技大解析'
 description: '深入分析 Prysm-iO 抗氧化掃描儀的技術原理'
 pubDate: 2026-02-12T14:49:27+08:00
+heroImage: './健康不再憑感覺.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
 ---
 
