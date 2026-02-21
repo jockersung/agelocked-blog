@@ -1,14 +1,9 @@
 ---
 title: '想要抗衰老  天天都有吃「21世紀的維生素」就對了！'
 description: '十八世紀法國作家薩瓦蘭（Jean-Anthelme Brillat-Savarin）說道：「你就是你吃的東西的樣子（You are what you eat）！」想不老與飲食有很密切的關係，有一個重要的腳色絕對不能少—蔬菜水果。這些富含有益人體健康的營養成分統稱為植物營養素（Phytonutrient），亦有「21 世紀的維生素」之稱，其中植化素（Phytochemicals）佔了很大的關鍵。在希臘文中，Phyto 就是植物的意思，指的是存在於植物中的天然化學物質。不同於維生素及礦物質，植化素依結構差異可分為：類胡蘿蔔素（Carotenoids）、酚酸類（Phenolics）、生物鹼（Alkaloids）、含氮化合物（Nitrogen-containing compound）和 有機硫化合物（Organosulfur compounds）等五大類，每一類下又有數千種、數百種植化素，各有其健康功效。'
-pubDate: 2024-03-31T12:59:03+08:00
+pubDate: 2024-03-31
+tags: ['健康', '抗衰老', '保健品', '飲食']
 ---
-
-_1.6K_
-
-內容目錄
-
-Toggle
 
   * 前言
   * Eat a rainbow

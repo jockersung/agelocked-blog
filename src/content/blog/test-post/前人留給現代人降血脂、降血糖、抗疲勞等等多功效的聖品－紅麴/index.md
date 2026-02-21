@@ -1,14 +1,9 @@
 ---
 title: '前人留給現代人降血脂、降血糖、抗疲勞等等多功效的聖品－紅麴'
 description: '紅麴（Red Yeast Rice），又名赤麴、丹麴、紅麴黴菌（Monascus purpureus）；Mon，意思是「單一」， ascus， 意思是「囊」，purpureus ，意思是「深紅」，意思就是「單一深紅色的子囊」。在日本稱為 beni koji 或 anka koji，歐美則以 red yeast'
-pubDate: 2024-12-08T12:08:54+08:00
+pubDate: 2024-12-08
+tags: ['健康', '保健品']
 ---
-
-_1.6K_
-
-內容目錄
-
-Toggle
 
 ## **紅麴是什麽？**
 

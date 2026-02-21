@@ -1,10 +1,9 @@
 ---
 title: 'Nu Skin 用 6S 的承諾來守護你的健康'
 description: '站長使用 Nu Skin 的保健食品多年，為什麼呢？因為 Nu Skin 有一個 6S 的品質措施（Quality Porcess），整套內容包含研發與質量控制程序，共有六個步驟的制度化：分別是選題（ Selection ）、 來源（ Sourcing ）、規格（ Specification ）、標準化（ Standardization ）、安全（ Safety ）與實證（ Substantiation ）。'
-pubDate: 2024-03-28T14:02:18+08:00
+pubDate: 2024-03-28
+tags: ['健康', '保健品', 'Nu Skin']
 ---
-
-_1.7K_
 
 ## **前言**
 

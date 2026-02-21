@@ -1,14 +1,9 @@
 ---
 title: '「蛤？你公蝦毀？」聽力退化使用 AirPods Pro 2 耳機外，抗衰老補充品有機會減緩症狀'
 description: '聽力退化，又名年齡相關性聽力損失（Age-Related Heaing Loss，ARHL）或老年性聽力損失（Presbycusis），是老年族群中最常見的感覺障礙。'
-pubDate: 2024-11-25T15:09:23+08:00
+pubDate: 2024-11-25
+tags: ['健康', '抗衰老', '保健品']
 ---
-
-_1.4K_
-
-內容目錄
-
-Toggle
 
 ## **聽力退化與失智有關**
 
