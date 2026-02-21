@@ -282,23 +282,23 @@ Open AI 即將推出「ChatGPT 健康」，這是一個專為健康打造的獨�
 
 ## 參考資料
   
-01\. L HAYFLICK, P S MOORHEAD, 1961\.[The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.  
-02\. J F Fries, 1980\. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.  
-03\. M McGue, J W Vaupel, N Holm, B Harvald, 1993\. [Longevity is moderately heritable in a sample of Danish twins born 1870-1880.](https://pubmed.ncbi.nlm.nih.gov/8227991/) *J Gerontol.* 48(6):B237-44.  
-04\. A M Herskind, M McGue, N V Holm, T I Sørensen, B Harvald, J W Vaupel, 1996\. [The heritability of human longevity: a population-based study of 2872 Danish twin pairs born 1870-1900.](https://pubmed.ncbi.nlm.nih.gov/8786073/) *Hum Genet.* 97(3):319-23.  
-05\. Joris Deelen, Marian Beekman, Hae-Won Uh, Quinta Helmer, Maris Kuningas, Lene Christiansen, Dennis Kremer, Ruud van der Breggen, H Eka D Suchiman, Nico Lakenberg, Erik B van den Akker, Willemijn M Passtoors, Henning Tiemeier, Diana van Heemst, Anton J de Craen, Fernando Rivadeneira, Eco J de Geus, Markus Perola, Frans J van der Ouderaa, David A Gunn, Dorret I Boomsma, André G Uitterlinden, Kaare Christensen, Cornelia M van Duijn, Bastiaan T Heijmans, Jeanine J Houwing-Duistermaat, Rudi G J Westendorp, P Eline Slagboom, 2011\. [Genome-wide association study identifies a single major locus contributing to survival into old age; the APOE locus revisited.](https://pubmed.ncbi.nlm.nih.gov/21418511/) *Aging Cell.* 10(4):686-98.  
-06\. Paola Sebastiani, Nadia Solovieff, Andrew T Dewan, Kyle M Walsh, Annibale Puca, Stephen W Hartley, Efthymia Melista, Stacy Andersen, Daniel A Dworkis, Jemma B Wilk, Richard H Myers, Martin H Steinberg, Monty Montano, Clinton T Baldwin, Josephine Hoh, Thomas T Perls, 2012\. [Genetic signatures of exceptional longevity in humans.](https://pubmed.ncbi.nlm.nih.gov/22279548/) *PLoS One.* 2012;7(1):e29848.  
-07\. Eileen M Crimmins, 2015\.[Lifespan and Healthspan: Past, Present, and Promise](https://pubmed.ncbi.nlm.nih.gov/26561272/). *Gerontologist.* 55(6):901–911.  
-08\. Xiao Dong, Brandon Milholland, Jan Vijg, 2016\. [Evidence for a limit to human lifespan.](https://pubmed.ncbi.nlm.nih.gov/27706136/) *Nature.* 538(7624):257-259.  
-09\. Jan Vijg, Eric Le Bourg , 2017\. [Aging and the Inevitable Limit to Human Life Span](https://pubmed.ncbi.nlm.nih.gov/28511176/). *Gerontology.* 63(5):432-434.  
-10\. Elie Dolgin, 2018\. [There’s no limit to longevity, says study that revives human lifespan debate.](https://pubmed.ncbi.nlm.nih.gov/29968831/) *Nature.* 559(7712):14-15.  
-11\. Timothy V Pyrkov, Konstantin Avchaciov, Andrei E Tarkhov, Leonid I Menshikov, Andrei V Gudkov, Peter O Fedichev, 2021\. [Longitudinal analysis of blood markers reveals progressive loss of resilience and predicts human lifespan limit.](https://pubmed.ncbi.nlm.nih.gov/34035236/) *Nat Commun .* 12(1):2765.  
-12\. Armin Garmany, Satsuki Yamada, Andre Terzic, 2021\. [Longevity leap: mind the healthspan gap.](https://pubmed.ncbi.nlm.nih.gov/34556664/) *NPJ Regen Med.* 6(1):57.  
-S Jay Olshansky, Bradley J Willcox, Lloyd Demetrius, Hiram Beltrán-Sánchez, 2024\. [Implausibility of radical life extension in humans in the twenty-first century.](https://www.nature.com/articles/s43587-024-00702-3) *Nat Aging.* 4(11):1635-1642.  
-11\. Yifan Yang, Avi Mayo, Tomer Levy, Naveh Raz, Ben Shenhar, Daniel F Jarosz, Uri Alon, 2025\. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.  
-12\. Armin Garmany, Andre Terzic, 2025\. [Healthspan-lifespan gap differs in magnitude and disease contribution across world regions.](https://pubmed.ncbi.nlm.nih.gov/40890374/) *Commun Med (Lond).* 5(1):381.  
-13\. James Mitchell Crow, 2025\. [Could humans live to 150? Why some researchers think we’re on the cusp of a major longevity breakthrough.](https://pubmed.ncbi.nlm.nih.gov/41224985/) *Nature.* 647(8089):S2-S5.  
-14\. Ben Shenhar, Glen Pridham, Thaís Lopes De Oliveira, Yifan Yang, Naveh Raz, Joris Deelen, View ORCID ProfileSara Hägg, Uri Alon, 2026\. [Heritability of intrinsic human life span is about 50% when confounding factors are addressed.](https://pubmed.ncbi.nlm.nih.gov/41610249/)  *Science.* 391(6784):504-510.  
-15\. Mateus V. de Castro, Monize V.R. Silva, João Paulo L.F. Guilherme, Mayana Zatz, 2026\. [Insights from Brazilian supercentenarians.](https://genomicpress.kglmeridian.com/view/journals/genpsych/2/1/article-p18.xml) *Genomic Psychiatry.* 2(1):18–20.  
-16\. Peter Attia/[Outlive I+II: The Science and Art of Longevity](https://www.books.com.tw/products/0011001532?sloc=main)
+01. L HAYFLICK, P S MOORHEAD, 1961.[The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.  
+02. J F Fries, 1980. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.  
+03. M McGue, J W Vaupel, N Holm, B Harvald, 1993\. [Longevity is moderately heritable in a sample of Danish twins born 1870-1880.](https://pubmed.ncbi.nlm.nih.gov/8227991/) *J Gerontol.* 48(6):B237-44.  
+04. A M Herskind et al. , 1996. [The heritability of human longevity: a population-based study of 2872 Danish twin pairs born 1870-1900.](https://pubmed.ncbi.nlm.nih.gov/8786073/) *Hum Genet.* 97(3):319-23.  
+05. Joris Deelen et al. , 2011. [Genome-wide association study identifies a single major locus contributing to survival into old age; the APOE locus revisited.](https://pubmed.ncbi.nlm.nih.gov/21418511/) *Aging Cell.* 10(4):686-98.  
+06. Paola Sebastiani et al. , 2012. [Genetic signatures of exceptional longevity in humans.](https://pubmed.ncbi.nlm.nih.gov/22279548/) *PLoS One.* 2012;7(1):e29848.  
+07. Eileen M Crimmins, 2015. [Lifespan and Healthspan: Past, Present, and Promise](https://pubmed.ncbi.nlm.nih.gov/26561272/). *Gerontologist.* 55(6):901–911.  
+08. Xiao Dong, Brandon Milholland, Jan Vijg, 2016. [Evidence for a limit to human lifespan.](https://pubmed.ncbi.nlm.nih.gov/27706136/) *Nature.* 538(7624):257-259.  
+09. Jan Vijg, Eric Le Bourg, 2017. [Aging and the Inevitable Limit to Human Life Span](https://pubmed.ncbi.nlm.nih.gov/28511176/). *Gerontology.* 63(5):432-434.  
+10. Elie Dolgin, 2018. [There’s no limit to longevity, says study that revives human lifespan debate.](https://pubmed.ncbi.nlm.nih.gov/29968831/) *Nature.* 559(7712):14-15.  
+11. Timothy V Pyrkov et al. , 2021. [Longitudinal analysis of blood markers reveals progressive loss of resilience and predicts human lifespan limit.](https://pubmed.ncbi.nlm.nih.gov/34035236/) *Nat Commun .* 12(1):2765.  
+12. Armin Garmany, Satsuki Yamada, Andre Terzic, 2021. [Longevity leap: mind the healthspan gap.](https://pubmed.ncbi.nlm.nih.gov/34556664/) *NPJ Regen Med.* 6(1):57.  
+13. S Jay Olshansky et al. , 2024. [Implausibility of radical life extension in humans in the twenty-first century.](https://www.nature.com/articles/s43587-024-00702-3) *Nat Aging.* 4(11):1635-1642.  
+14. Yifan Yang, Avi Mayo, Tomer Levy, Naveh Raz, Ben Shenhar, Daniel F Jarosz, Uri Alon, 2025\. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.  
+15. Armin Garmany, Andre Terzic, 2025. [Healthspan-lifespan gap differs in magnitude and disease contribution across world regions.](https://pubmed.ncbi.nlm.nih.gov/40890374/) *Commun Med (Lond).* 5(1):381.  
+16. James Mitchell Crow, 2025. [Could humans live to 150? Why some researchers think we’re on the cusp of a major longevity breakthrough.](https://pubmed.ncbi.nlm.nih.gov/41224985/) *Nature.* 647(8089):S2-S5.  
+17. Ben Shenhar et al. , 2026. [Heritability of intrinsic human life span is about 50% when confounding factors are addressed.](https://pubmed.ncbi.nlm.nih.gov/41610249/)  *Science.* 391(6784):504-510.  
+18. Mateus V. de Castro et al. , 2026. [Insights from Brazilian supercentenarians.](https://genomicpress.kglmeridian.com/view/journals/genpsych/2/1/article-p18.xml) *Genomic Psychiatry.* 2(1):18–20.  
+19. Peter Attia/[Outlive I+II: The Science and Art of Longevity](https://www.books.com.tw/products/0011001532?sloc=main)
 

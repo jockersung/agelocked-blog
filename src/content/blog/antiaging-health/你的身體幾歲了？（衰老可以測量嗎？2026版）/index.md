@@ -159,15 +159,15 @@ tags: ['抗氧化', '健康', '長壽']
 
 ## 參考資料
 
-1. Steve Horvath, 2013. [DNA methylation age of human tissues and cell types.](https://pubmed.ncbi.nlm.nih.gov/24138928/) *Genome Biol.* 14(10):R115.
-2. Morgan E Levine et al., 2018. [An epigenetic biomarker of aging for lifespan and healthspan.](https://pubmed.ncbi.nlm.nih.gov/29676998/) *Aging (Albany NY)*. 10(4):573–591.
-3. Ake T Lu et al., 2019. [DNA methylation GrimAge strongly predicts lifespan and healthspan.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/) *Aging (Albany NY)*. 11(2):303–327.
-4. Daniel W Belsky et al., 2022. [DunedinPACE, a DNA methylation biomarker of the pace of aging.](https://pubmed.ncbi.nlm.nih.gov/35029144/) *Elife.* 11:e73420.
-5. David H Meyer, Björn Schumacher, 2021. [BiT age: A transcriptome‐based aging clock near the theoretical limit of accuracy.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7963339/) *Aging Cell.* 20(3):e13320.
-6. Caio M P F Batalha et al., 2025. [A combination of differential expression and network connectivity analyses identifies a common set of RNA splicing and processing genes altered with age across human tissues.](https://pubmed.ncbi.nlm.nih.gov/41460210/) *Aging (Albany NY)*. 17(12):2916–2949.
-7. Zeming Wu et al., 2023. [Deciphering RNA m6A regulation in aging.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10577575/) *Aging Cell.* 22(10):e13972.
-8. Jasminka Krištić et al., 2014. [Glycans are a novel biomarker of chronological and biological ages.](https://pubmed.ncbi.nlm.nih.gov/24325898/) *J Gerontol A Biol Sci Med Sci.* 69(7):779–89.
-9. Yu Guo et al., 2024. [Plasma proteomic profiles predict future dementia in healthy adults.](https://pubmed.ncbi.nlm.nih.gov/38347190/) *Nat Aging.* 4(2):247–260.
+01. Steve Horvath, 2013. [DNA methylation age of human tissues and cell types.](https://pubmed.ncbi.nlm.nih.gov/24138928/) *Genome Biol.* 14(10):R115.
+02. Morgan E Levine et al., 2018. [An epigenetic biomarker of aging for lifespan and healthspan.](https://pubmed.ncbi.nlm.nih.gov/29676998/) *Aging (Albany NY)*. 10(4):573–591.
+03. Ake T Lu et al., 2019. [DNA methylation GrimAge strongly predicts lifespan and healthspan.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/) *Aging (Albany NY)*. 11(2):303–327.
+04. Daniel W Belsky et al., 2022. [DunedinPACE, a DNA methylation biomarker of the pace of aging.](https://pubmed.ncbi.nlm.nih.gov/35029144/) *Elife.* 11:e73420.
+05. David H Meyer, Björn Schumacher, 2021. [BiT age: A transcriptome‐based aging clock near the theoretical limit of accuracy.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7963339/) *Aging Cell.* 20(3):e13320.
+06. Caio M P F Batalha et al., 2025. [A combination of differential expression and network connectivity analyses identifies a common set of RNA splicing and processing genes altered with age across human tissues.](https://pubmed.ncbi.nlm.nih.gov/41460210/) *Aging (Albany NY)*. 17(12):2916–2949.
+07. Zeming Wu et al., 2023. [Deciphering RNA m6A regulation in aging.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10577575/) *Aging Cell.* 22(10):e13972.
+08. Jasminka Krištić et al., 2014. [Glycans are a novel biomarker of chronological and biological ages.](https://pubmed.ncbi.nlm.nih.gov/24325898/) *J Gerontol A Biol Sci Med Sci.* 69(7):779–89.
+09. Yu Guo et al., 2024. [Plasma proteomic profiles predict future dementia in healthy adults.](https://pubmed.ncbi.nlm.nih.gov/38347190/) *Nat Aging.* 4(2):247–260.
 10. Heidi Ledford. [Blood test holds promise for predicting when Alzheimer's symptoms will start.](https://www.nature.com/articles/d41586-026-00531-x) *Nature.*
 11. Xiaotao Shen et al., 2024. [Nonlinear dynamics of multi-omics profiles during human aging.](https://www.nature.com/articles/s43587-024-00692-2) *Nature Aging.* 4:1619–1634.
 12. Rubén López-Bueno et al., 2022. [Thresholds of handgrip strength for all-cause, cancer, and cardiovascular mortality.](https://pubmed.ncbi.nlm.nih.gov/36332759/) *Ageing Res Rev.* 82:101778.
