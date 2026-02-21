@@ -46,11 +46,11 @@ tags: ['健康', '飲食']
 
 如果有提到**「雙盲」、「跨世代」、「隨機」** 等等的字樣出現，就表示可信度多一點。😀
 
-參考資料：  
-01\. Benjamin Djulbegovic, Gordon H Guyatt, 2017. [Progress in evidence-based medicine: a quarter century on](https://pubmed.ncbi.nlm.nih.gov/28215660/). _Lancet_ 390(10092):415-423.  
-02\. D. L. Sackett, W. M. Rosenberg, J. A. Gray, R. B. Haynes, and W. S. Richardson, 1996. [Evidence based medicine: what it is and what it isn’t.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2349778/) _British Medical Journal_ 312(7023): 71–72.  
-03.[OCEBM Levels of Evidence.](https://www.cebm.ox.ac.uk/resources/levels-of-evidence/ocebm-levels-of-evidence) Oxford Centre for Evidence-Based Medicine. Accessed Sep 01, 2008.  
-04.林舜穀/[念 Paper 要幹嘛？ 中醫實證有什麼用](https://shunkulin.blogspot.com/2017/06/blog-post_24.html)
+## 參考資料
+1. Benjamin Djulbegovic, Gordon H Guyatt, 2017. [Progress in evidence-based medicine: a quarter century on](https://pubmed.ncbi.nlm.nih.gov/28215660/). _Lancet_ 390(10092):415-423.  
+2. D. L. Sackett, W. M. Rosenberg, J. A. Gray, R. B. Haynes, and W. S. Richardson, 1996. [Evidence based medicine: what it is and what it isn’t.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2349778/) _British Medical Journal_ 312(7023): 71–72.  
+3.[OCEBM Levels of Evidence.](https://www.cebm.ox.ac.uk/resources/levels-of-evidence/ocebm-levels-of-evidence) Oxford Centre for Evidence-Based Medicine. Accessed Sep 01, 2008.  
+4.林舜穀/[念 Paper 要幹嘛？ 中醫實證有什麼用](https://shunkulin.blogspot.com/2017/06/blog-post_24.html)
 
 延伸閱讀：
 

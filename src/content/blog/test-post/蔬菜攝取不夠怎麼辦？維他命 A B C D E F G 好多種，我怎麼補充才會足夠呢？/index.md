@@ -190,11 +190,11 @@ tags: ['健康', '飲食']
 
 > [Nu Skin 會員這樣買更划算！一步步教你利用 enJoy 享回購計畫訂貨，真的 enJOY！](https://agelocked.com/nu-skin-%e6%9c%83%e5%93%a1%e9%80%99%e6%a8%a3%e8%b2%b7%e6%9b%b4%e5%88%92%e7%ae%97%ef%bc%81%e4%b8%80%e6%ad%a5%e6%ad%a5%e6%95%99%e4%bd%a0%e5%88%a9%e7%94%a8-enjoy-%e4%ba%ab%e5%9b%9e%e8%b3%bc%e8%a8%88/)
 
-參考資料：  
-01.營養新知/[綜合維他命被推薦的11種功效及副作用（購買前3點要注意）【綜合維他命詳解】營養不足自己都沒發覺? 綜合維他命的功效是甚麼？有副作用嗎？](https://formulawave.com/choose-best-multivitamin/)  
-02.MIHONG部落格/[為什麼要攝取綜合維他命呢？您關心「微營養素」的攝取嗎？](https://www.mihong.com.tw/blog/posts/mihong%E5%B0%87%E7%B6%AD%E4%BB%96%E5%91%BDabcde%E5%85%A8%E5%8C%85%E4%BA%86%E7%B6%9C%E5%90%88%E7%B6%AD%E4%BB%96%E5%91%BD%E8%A2%AB%E6%8E%A8%E8%96%A6%E7%9A%848%E7%A8%AE%E5%8A%9F%E6%95%88%E5%8F%8A%E5%89%AF%E4%BD%9C%E7%94%A8%E3%80%822019-2020%E6%8E%A8%E8%96%A6%E5%93%81%E7%89%8C-%E6%87%B6%E4%BA%BA%E5%8C%85-ptt-dcard)  
-03.ComeForHealth健康知識網/[簡介：維他命 B 群](http://cfh.com.tw/ClassifyByNutrition/%E7%B6%AD%E7%94%9F%E7%B4%A0/%E7%B0%A1%E4%BB%8B%EF%BC%9A%E7%B6%AD%E4%BB%96%E5%91%BD-B-%E7%BE%A4.aspx)  
-04\. Katherine L Ford, Derek J Jorgenson, Eric J L Landry, Susan J Whiting, 2019. [Vitamin and mineral supplement use in medically complex, community-living, older adults](https://pubmed.ncbi.nlm.nih.gov/30628461/)[.](https://pubmed.ncbi.nlm.nih.gov/30628461/) _Appl Physiol Nutr Metab._ 44(4):450-453.
+## 參考資料
+1.營養新知/[綜合維他命被推薦的11種功效及副作用（購買前3點要注意）【綜合維他命詳解】營養不足自己都沒發覺? 綜合維他命的功效是甚麼？有副作用嗎？](https://formulawave.com/choose-best-multivitamin/)  
+2.MIHONG部落格/[為什麼要攝取綜合維他命呢？您關心「微營養素」的攝取嗎？](https://www.mihong.com.tw/blog/posts/mihong%E5%B0%87%E7%B6%AD%E4%BB%96%E5%91%BDabcde%E5%85%A8%E5%8C%85%E4%BA%86%E7%B6%9C%E5%90%88%E7%B6%AD%E4%BB%96%E5%91%BD%E8%A2%AB%E6%8E%A8%E8%96%A6%E7%9A%848%E7%A8%AE%E5%8A%9F%E6%95%88%E5%8F%8A%E5%89%AF%E4%BD%9C%E7%94%A8%E3%80%822019-2020%E6%8E%A8%E8%96%A6%E5%93%81%E7%89%8C-%E6%87%B6%E4%BA%BA%E5%8C%85-ptt-dcard)  
+3.ComeForHealth健康知識網/[簡介：維他命 B 群](http://cfh.com.tw/ClassifyByNutrition/%E7%B6%AD%E7%94%9F%E7%B4%A0/%E7%B0%A1%E4%BB%8B%EF%BC%9A%E7%B6%AD%E4%BB%96%E5%91%BD-B-%E7%BE%A4.aspx)  
+4. Katherine L Ford, Derek J Jorgenson, Eric J L Landry, Susan J Whiting, 2019. [Vitamin and mineral supplement use in medically complex, community-living, older adults](https://pubmed.ncbi.nlm.nih.gov/30628461/)[.](https://pubmed.ncbi.nlm.nih.gov/30628461/) _Appl Physiol Nutr Metab._ 44(4):450-453.
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

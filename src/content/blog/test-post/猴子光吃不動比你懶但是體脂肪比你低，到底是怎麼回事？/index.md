@@ -110,18 +110,18 @@ tags: ['健康', '減重', '飲食']
 
 > [利用能量學來揭開減重的本質！提供3個不復胖的策略](https://agelocked.com/%e7%86%b1%e9%87%8f%e8%a8%88%e7%ae%97%e6%8e%b0%e6%8e%b0%ef%bc%81%e5%88%a9%e7%94%a8%e8%83%bd%e9%87%8f%e5%ad%b8%e4%be%86%e6%8f%ad%e9%96%8b%e6%b8%9b%e9%87%8d%e7%9a%84%e6%9c%ac%e8%b3%aa%ef%bc%81%e6%8f%90/)
 
-參考資料：  
-01\. J W Mink, R J Blumenschine, D B Adams, 1981. [Ratio of central nervous system to body metabolism in vertebrates: its constancy and functional basis.](https://pubmed.ncbi.nlm.nih.gov/7282965/) _Am J Physiol._ 241(3):R203-12.  
-02\. Marcus E Raichle, Debra A, 2002. [Gusnard Appraising the brain’s energy budget.](https://pubmed.ncbi.nlm.nih.gov/12149485/) _PNAS._ 99(16):10237-9.  
-03\. William R Leonard, Marcia L Robertson, J Josh Snodgrass, Christopher W Kuzawa, 2003. [Metabolic correlates of hominid brain evolution.](https://pubmed.ncbi.nlm.nih.gov/14527625/) _Comp Biochem Physiol A Mol Integr Physiol._ 136(1):5-15.  
-04\. Marcus E Raichle, 2006. [Neuroscience. The brain’s dark energy.](https://pubmed.ncbi.nlm.nih.gov/17124311/) _Science._ 314(5803):1249-50.  
-05\. Karina Fonseca-Azevedo, Suzana Herculano-Houzel, 2012. [Metabolic constraint imposes tradeoff between body size and number of brain neurons in human evolution.](https://pubmed.ncbi.nlm.nih.gov/23090991/) _PNAS._ 109(45):18571-6.  
-06\. Vincent van Ginneken, Aline van Meerveld, Tim Wijgerde, Elwin Verheij, Evert de Vries, 2017. [Hunter-prey correlation between migration routes of African buffaloes and early hominids: Evidence for the “Out of Africa” hypothesis](https://www.oatext.com/hunter-prey-correlation-between-migration-routes-of-african-buffaloes-and-early-hominids-evidence-for-the-out-of-africa-hypothesis.php). _Integr Mol Med._  
+## 參考資料
+1. J W Mink, R J Blumenschine, D B Adams, 1981. [Ratio of central nervous system to body metabolism in vertebrates: its constancy and functional basis.](https://pubmed.ncbi.nlm.nih.gov/7282965/) _Am J Physiol._ 241(3):R203-12.  
+2. Marcus E Raichle, Debra A, 2002. [Gusnard Appraising the brain’s energy budget.](https://pubmed.ncbi.nlm.nih.gov/12149485/) _PNAS._ 99(16):10237-9.  
+3. William R Leonard, Marcia L Robertson, J Josh Snodgrass, Christopher W Kuzawa, 2003. [Metabolic correlates of hominid brain evolution.](https://pubmed.ncbi.nlm.nih.gov/14527625/) _Comp Biochem Physiol A Mol Integr Physiol._ 136(1):5-15.  
+4. Marcus E Raichle, 2006. [Neuroscience. The brain’s dark energy.](https://pubmed.ncbi.nlm.nih.gov/17124311/) _Science._ 314(5803):1249-50.  
+5. Karina Fonseca-Azevedo, Suzana Herculano-Houzel, 2012. [Metabolic constraint imposes tradeoff between body size and number of brain neurons in human evolution.](https://pubmed.ncbi.nlm.nih.gov/23090991/) _PNAS._ 109(45):18571-6.  
+6. Vincent van Ginneken, Aline van Meerveld, Tim Wijgerde, Elwin Verheij, Evert de Vries, 2017. [Hunter-prey correlation between migration routes of African buffaloes and early hominids: Evidence for the “Out of Africa” hypothesis](https://www.oatext.com/hunter-prey-correlation-between-migration-routes-of-african-buffaloes-and-early-hominids-evidence-for-the-out-of-africa-hypothesis.php). _Integr Mol Med._  
 07 Herman Pontzer, Ramon Durazo-Arvizu, Lara R Dugas, Jacob Plange-Rhule, Pascal Bovet, Terrence E Forrester, Estelle V Lambert, Richard S Cooper, Dale A Schoeller, Amy Luke, 2016.[Constrained Total Energy Expenditure and Metabolic Adaptation to Physical Activity in Adult Humans.](https://pubmed.ncbi.nlm.nih.gov/26832439/) _Curr Biol._ 26(3):410-7.  
-08\. Devjanee Swain-Lenz, Alejandro Berrio, Alexias Safi, Gregory E Crawford, Gregory A Wray, 2019. [Comparative Analyses of Chromatin Landscape in White Adipose Tissue Suggest Humans May Have Less Beigeing Potential than Other Primates.](https://pubmed.ncbi.nlm.nih.gov/31233101/) _Genome Biol Evol._ 11(7):1997-2008.  
-09\. Merit Bruckmaier, Ilias Tachtsidis, Phong Phan, Nilli Lavie, 2020. [Attention and Capacity Limits in Perception: A Cellular Metabolism Account.](https://pubmed.ncbi.nlm.nih.gov/32747442/) _J Neurosci._ 40(35):6801-6811.  
-10\. Richard Johnson/[Nature Wants Us to Be Fat: The Surprising Science Behind Why We Gain Weight and How We Can Prevent-And Reverse-It](https://www.books.com.tw/products/F018142669?srsltid=AfmBOor_FH5OEPIxp-MTbkvuTvyadbkHsdMiFjBzgUZ6uDBIlW7nMBW6)  
-11\. WebMD Health News/Lisa Marshall/[What Causes Obesity? More Science Points to the Brain](https://www.medscape.com/s/viewarticle/what-causes-obesity-more-science-points-brain-2023a1000vmx)
+8. Devjanee Swain-Lenz, Alejandro Berrio, Alexias Safi, Gregory E Crawford, Gregory A Wray, 2019. [Comparative Analyses of Chromatin Landscape in White Adipose Tissue Suggest Humans May Have Less Beigeing Potential than Other Primates.](https://pubmed.ncbi.nlm.nih.gov/31233101/) _Genome Biol Evol._ 11(7):1997-2008.  
+9. Merit Bruckmaier, Ilias Tachtsidis, Phong Phan, Nilli Lavie, 2020. [Attention and Capacity Limits in Perception: A Cellular Metabolism Account.](https://pubmed.ncbi.nlm.nih.gov/32747442/) _J Neurosci._ 40(35):6801-6811.  
+10. Richard Johnson/[Nature Wants Us to Be Fat: The Surprising Science Behind Why We Gain Weight and How We Can Prevent-And Reverse-It](https://www.books.com.tw/products/F018142669?srsltid=AfmBOor_FH5OEPIxp-MTbkvuTvyadbkHsdMiFjBzgUZ6uDBIlW7nMBW6)  
+11. WebMD Health News/Lisa Marshall/[What Causes Obesity? More Science Points to the Brain](https://www.medscape.com/s/viewarticle/what-causes-obesity-more-science-points-brain-2023a1000vmx)
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

@@ -71,14 +71,14 @@ Nu Skin 位於中國湖州的保健品生產基地工廠於西元 2005 年通過
 
 良好的 QC 確保產品的品質，不只有原料來源很重視，生產的細節都不能馬乎！
 
-參考資料：  
-01.上下游News&MArket/潘子祁/[食品標章GMP正式廢止，TQF上場 義美：暫不考慮加入](https://www.newsmarket.com.tw/blog/76337/)  
-02.[台灣食品優良協會](https://www.tqf.org.tw/tw/index.php#1)  
-03.快樂小藥師 Im pharmacist nichts glücklich/快樂小藥師/[GMP 與cGMP的差別在哪裡?](https://mulicia.pixnet.net/blog/post/5059925)  
-04.生命元素/Croco/[藥廠的認證有分國際級和普通級，到底哪個好?一次搞懂GMP、cGMP、PIC/S GMP](https://lifelement.tw/gmp/)  
-05.直销头条网/如新/[如新：营养补充品界的“特斯拉”，凭什么走在时代前沿](https://dstoutiao.com/html/ds/zxfull/2019/0820/64440.html)？  
-06.知乎/食品580/[别人家的管理 | 细致才能出极致 放心产品用心制造](https://zhuanlan.zhihu.com/p/43814780)  
-07.如新中国官网/[如新中国生产基地](https://china.nuskin.com/html/content/manufacture_plant.html)
+## 參考資料
+1.上下游News&MArket/潘子祁/[食品標章GMP正式廢止，TQF上場 義美：暫不考慮加入](https://www.newsmarket.com.tw/blog/76337/)  
+2.[台灣食品優良協會](https://www.tqf.org.tw/tw/index.php#1)  
+3.快樂小藥師 Im pharmacist nichts glücklich/快樂小藥師/[GMP 與cGMP的差別在哪裡?](https://mulicia.pixnet.net/blog/post/5059925)  
+4.生命元素/Croco/[藥廠的認證有分國際級和普通級，到底哪個好?一次搞懂GMP、cGMP、PIC/S GMP](https://lifelement.tw/gmp/)  
+5.直销头条网/如新/[如新：营养补充品界的“特斯拉”，凭什么走在时代前沿](https://dstoutiao.com/html/ds/zxfull/2019/0820/64440.html)？  
+6.知乎/食品580/[别人家的管理 | 细致才能出极致 放心产品用心制造](https://zhuanlan.zhihu.com/p/43814780)  
+7.如新中国官网/[如新中国生产基地](https://china.nuskin.com/html/content/manufacture_plant.html)
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

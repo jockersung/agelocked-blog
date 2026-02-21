@@ -106,27 +106,27 @@ TA-65
 
 > [集抗衰老近百年研究大成—傳承自熱量限制法之ageLOC技術的誕生](https://agelocked.com/%e9%9b%86%e6%8a%97%e8%a1%b0%e8%80%81%e8%bf%91%e7%99%be%e5%b9%b4%e7%a0%94%e7%a9%b6%e5%a4%a7%e6%88%90-%e5%82%b3%e6%89%bf%e8%87%aa%e7%86%b1%e9%87%8f%e9%99%90%e5%88%b6%e6%b3%95%e4%b9%8bageloc/)
 
-參考資料：  
-01.維基百科/[端粒](https://zh.wikipedia.org/wiki/%E7%AB%AF%E7%B2%92)  
-02.維基百科/[端粒酶](https://zh.wikipedia.org/wiki/%E7%AB%AF%E7%B2%92%E9%85%B6)  
-03.伊莉莎白．布雷克本, 伊麗莎．艾波/端粒效應: 諾貝爾獎得主破解老化之祕, 傳授真正有效的逆齡養生術  
-04.GeneOnline News基因線上/[定義老化的最佳生物標記 — 端粒 (Telomere)](https://geneonline.news/index.php/2018/12/28/the-role-of-telomeres-in-aging/)  
-05.科學Online/李冠群/[端粒（Telomere）~細胞的生命時鐘-上](http://highscope.ch.ntu.edu.tw/wordpress/?p=12879)  
-06.永越健康管理中心/賴思佳/[解密端粒體 逆齡始於破解細胞老化之謎](https://www.eonway.com/%E8%A7%A3%E5%AF%86%E7%AB%AF%E7%B2%92%E9%AB%94%E3%80%80%E9%80%86%E9%BD%A1%E5%A7%8B%E6%96%BC%E7%A0%B4%E8%A7%A3%E7%B4%B0%E8%83%9E%E8%80%81%E5%8C%96%E4%B9%8B%E8%AC%8E/)  
-07.知乎/时光派/[起底诺奖端粒研究百年进展：我们离120岁还有多远？](https://zhuanlan.zhihu.com/p/448454848)  
-08.知乎/时光派/[天使还是恶魔？端粒酶究竟为我们带来了什么](https://zhuanlan.zhihu.com/p/82725917)  
-09.知乎/时光派/[《Science》特刊：耗时10年，只为解答你对端粒的所有疑问  
+## 參考資料
+1.維基百科/[端粒](https://zh.wikipedia.org/wiki/%E7%AB%AF%E7%B2%92)  
+2.維基百科/[端粒酶](https://zh.wikipedia.org/wiki/%E7%AB%AF%E7%B2%92%E9%85%B6)  
+3.伊莉莎白．布雷克本, 伊麗莎．艾波/端粒效應: 諾貝爾獎得主破解老化之祕, 傳授真正有效的逆齡養生術  
+4.GeneOnline News基因線上/[定義老化的最佳生物標記 — 端粒 (Telomere)](https://geneonline.news/index.php/2018/12/28/the-role-of-telomeres-in-aging/)  
+5.科學Online/李冠群/[端粒（Telomere）~細胞的生命時鐘-上](http://highscope.ch.ntu.edu.tw/wordpress/?p=12879)  
+6.永越健康管理中心/賴思佳/[解密端粒體 逆齡始於破解細胞老化之謎](https://www.eonway.com/%E8%A7%A3%E5%AF%86%E7%AB%AF%E7%B2%92%E9%AB%94%E3%80%80%E9%80%86%E9%BD%A1%E5%A7%8B%E6%96%BC%E7%A0%B4%E8%A7%A3%E7%B4%B0%E8%83%9E%E8%80%81%E5%8C%96%E4%B9%8B%E8%AC%8E/)  
+7.知乎/时光派/[起底诺奖端粒研究百年进展：我们离120岁还有多远？](https://zhuanlan.zhihu.com/p/448454848)  
+8.知乎/时光派/[天使还是恶魔？端粒酶究竟为我们带来了什么](https://zhuanlan.zhihu.com/p/82725917)  
+9.知乎/时光派/[《Science》特刊：耗时10年，只为解答你对端粒的所有疑问  
 ](https://zhuanlan.zhihu.com/p/309829214)10\. Carol W. Greider, Elizabeth H. Blackburn,1985. [Identification of a specific telomere terminal transferase activity in tetrahymena extracts.](https://www.cell.com/fulltext/0092-8674%2885%2990170-9) _Cell_. 43(2), 405-413.  
-11\. Duncan M. Baird, Jan Rowson, David Wynford-Thomas & David Kipling, 2003. [Extensive allelic variation and ultrashort telomeres in senescent human cells.](https://pubmed.ncbi.nlm.nih.gov/15149599/) _Nat. Genet._ 33(2):203-7.  
-12\. Joshua Denham, Brendan J O’Brien, Fadi J Charchar, 2016. [Telomere Length Maintenance and Cardio-Metabolic Disease Prevention Through Exercise Training](https://pubmed.ncbi.nlm.nih.gov/26914269/). _Sports Med._ 46(9), 1213–1237.  
-13\. Richard M Cawthon, Ken R Smith, Elizabeth O’Brien, Anna Sivatchenko, Richard A Kerber, 2003. [Association between telomere length in blood and mortality in people aged 60 years or older.](https://pubmed.ncbi.nlm.nih.gov/12573379/) _Lancet_. 361(9355):393-5.  
-14\. A G Bodnar, M Ouellette, M Frolkis, S E Holt, C P Chiu, G B Morin, C B Harley, J W Shay, S Lichtsteiner, W E Wright, 1998. [Extension of life-span by introduction of telomerase into normal human cells.](https://pubmed.ncbi.nlm.nih.gov/9454332/) _Science_. 279(5349):349-52.  
-15\. W C Hahn, C M Counter, A S Lundberg, R L Beijersbergen, M W Brooks, R A Weinberg, 1999. [Creation of human tumour cells with defined genetic elements](https://pubmed.ncbi.nlm.nih.gov/10440377/). _Nature._ 400(6743):464-8.  
-16\. Brendan Borrell, 2012. [Lawsuit callenges anti-ageing claims](https://pubmed.ncbi.nlm.nih.gov/22859181/). _Nature._ 488(7409):18.   
-17\. Calvin B Harley, Weimin Liu, Maria Blasco, Elsa Vera, William H Andrews, Laura A Briggs, Joseph M Raffaele, 2011. [A Natural Product Telomerase Activator as Part of a Health Maintenance Program.](https://pubmed.ncbi.nlm.nih.gov/?term=Raffaele+JM&cauthor_id=20822369) _REJUVENATION RESEARCH_. 14(1) :45-56.  
-18\. Calvin B Harley, Weimin Liu, Peter L Flom, Joseph M Raffaele, 2013.[ A Natural Product Telomerase Activator as Part of a Health Maintenance Program: Metabolic and Cardiovascular Response.](https://pubmed.ncbi.nlm.nih.gov/?term=Harley+CB&cauthor_id=23808324) _REJUVENATION RESEARCH_. 16(5) :386-395.  
-19\. Laura Salvador, Gunasekaran Singaravelu, Calvin B Harley, Peter Flom, Anitha Suram, Joseph M Raffaele, 2016. [A Natural Product Telomerase Activator Lengthens Telomeres in Humans: A Randomized, Double Blind, and Placebo Controlled Study.](https://pubmed.ncbi.nlm.nih.gov/26950204/) _REJUVENATION RESEARCH_. 19(6): 478–484.  
-20\. Kathryn Demanelis, Farzana Jasmine, Lin S Chen, Meytal Chernoff, Lin Tong, Dayana Delgado, Chenan Zhang, Justin Shinkle, Mekala Sabarinathan, Hannah Lin, Eduardo Ramirez, Meritxell Oliva, Sarah Kim-Hellmuth, Barbara E Stranger, Tsung-Po Lai, Abraham Aviv, Kristin G Ardlie, François Aguet, Habibul Ahsan, GTEx Consortium; Jennifer A Doherty, Muhammad G Kibriya, Brandon L Pierce, 2020. [Determinants of telomere length across human tissues.](https://pubmed.ncbi.nlm.nih.gov/?term=Delgado+D&cauthor_id=32913074https://pubmed.ncbi.nlm.nih.gov/32913074/) _Science_. 369(6509):eaaz6876.
+11. Duncan M. Baird, Jan Rowson, David Wynford-Thomas & David Kipling, 2003. [Extensive allelic variation and ultrashort telomeres in senescent human cells.](https://pubmed.ncbi.nlm.nih.gov/15149599/) _Nat. Genet._ 33(2):203-7.  
+12. Joshua Denham, Brendan J O’Brien, Fadi J Charchar, 2016. [Telomere Length Maintenance and Cardio-Metabolic Disease Prevention Through Exercise Training](https://pubmed.ncbi.nlm.nih.gov/26914269/). _Sports Med._ 46(9), 1213–1237.  
+13. Richard M Cawthon, Ken R Smith, Elizabeth O’Brien, Anna Sivatchenko, Richard A Kerber, 2003. [Association between telomere length in blood and mortality in people aged 60 years or older.](https://pubmed.ncbi.nlm.nih.gov/12573379/) _Lancet_. 361(9355):393-5.  
+14. A G Bodnar, M Ouellette, M Frolkis, S E Holt, C P Chiu, G B Morin, C B Harley, J W Shay, S Lichtsteiner, W E Wright, 1998. [Extension of life-span by introduction of telomerase into normal human cells.](https://pubmed.ncbi.nlm.nih.gov/9454332/) _Science_. 279(5349):349-52.  
+15. W C Hahn, C M Counter, A S Lundberg, R L Beijersbergen, M W Brooks, R A Weinberg, 1999. [Creation of human tumour cells with defined genetic elements](https://pubmed.ncbi.nlm.nih.gov/10440377/). _Nature._ 400(6743):464-8.  
+16. Brendan Borrell, 2012. [Lawsuit callenges anti-ageing claims](https://pubmed.ncbi.nlm.nih.gov/22859181/). _Nature._ 488(7409):18.   
+17. Calvin B Harley, Weimin Liu, Maria Blasco, Elsa Vera, William H Andrews, Laura A Briggs, Joseph M Raffaele, 2011. [A Natural Product Telomerase Activator as Part of a Health Maintenance Program.](https://pubmed.ncbi.nlm.nih.gov/?term=Raffaele+JM&cauthor_id=20822369) _REJUVENATION RESEARCH_. 14(1) :45-56.  
+18. Calvin B Harley, Weimin Liu, Peter L Flom, Joseph M Raffaele, 2013.[ A Natural Product Telomerase Activator as Part of a Health Maintenance Program: Metabolic and Cardiovascular Response.](https://pubmed.ncbi.nlm.nih.gov/?term=Harley+CB&cauthor_id=23808324) _REJUVENATION RESEARCH_. 16(5) :386-395.  
+19. Laura Salvador, Gunasekaran Singaravelu, Calvin B Harley, Peter Flom, Anitha Suram, Joseph M Raffaele, 2016. [A Natural Product Telomerase Activator Lengthens Telomeres in Humans: A Randomized, Double Blind, and Placebo Controlled Study.](https://pubmed.ncbi.nlm.nih.gov/26950204/) _REJUVENATION RESEARCH_. 19(6): 478–484.  
+20. Kathryn Demanelis, Farzana Jasmine, Lin S Chen, Meytal Chernoff, Lin Tong, Dayana Delgado, Chenan Zhang, Justin Shinkle, Mekala Sabarinathan, Hannah Lin, Eduardo Ramirez, Meritxell Oliva, Sarah Kim-Hellmuth, Barbara E Stranger, Tsung-Po Lai, Abraham Aviv, Kristin G Ardlie, François Aguet, Habibul Ahsan, GTEx Consortium; Jennifer A Doherty, Muhammad G Kibriya, Brandon L Pierce, 2020. [Determinants of telomere length across human tissues.](https://pubmed.ncbi.nlm.nih.gov/?term=Delgado+D&cauthor_id=32913074https://pubmed.ncbi.nlm.nih.gov/32913074/) _Science_. 369(6509):eaaz6876.
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

@@ -131,16 +131,16 @@ https://www.youtube.com/watch?v=u28-HbY8PFU
 
 肉體維持不滅的永生與意識不滅的永生，到底誰會先來臨？我們拭目以待。
 
-參考資料：  
-01.Inside/Chris/[《碳變》影評：問題就出在太 Cyberpunk 王道了](https://www.inside.com.tw/article/12092-altered-carbon-cyberpunk)  
-02.許經夌/[不是幻想，是真的！《攻殼機動隊》中的未來科技大解析](https://pansci.asia/archives/118023)  
-03.天下雜誌/黃維德/[當人腦連上電腦，《攻殼機動隊》生化人不是純屬虛構](https://www.cw.com.tw/article/5087602)  
-04.The Economist/[Using thought to control machines](https://www.economist.com/leaders/2018/01/03/using-thought-to-control-machines)  
-05.Investigator/徐聖修/[腦機介面 (Brain-Computer Interface) 專題 (上)](https://investigator.tw/1226/%E8%85%A6%E6%A9%9F%E4%BB%8B%E9%9D%A2-brain-computer-interface-%E5%B0%88%E9%A1%8C-%E4%B8%8A/)  
-06.Investigator/徐聖修/[腦機介面 (Brain-Computer Interface) 專題 (下)](https://investigator.tw/1237/%e8%85%a6%e6%a9%9f%e4%bb%8b%e9%9d%a2-brain-computer-interface-%e5%b0%88%e9%a1%8c-%e4%b8%8b/)  
-07.生醫人BioMeder/[新一代的腦機介面，真的要來讀我們的腦了嗎?](https://www.bing.com/ck/a?!&&p=9462232313890da5JmltdHM9MTcxNjc2ODAwMCZpZ3VpZD0zNzRjNTM4Ni1mYWMxLTYxMGQtMjZiOC00M2Q3ZmJkMTYwZjAmaW5zaWQ9NTMzMg&ptn=3&ver=2&hsh=3&fclid=374c5386-fac1-610d-26b8-43d7fbd160f0&psq=%e9%9b%bb%e5%ad%90%e8%85%a6%ef%bc%88Electronic+Brain%ef%bc%89&u=a1aHR0cHM6Ly9iaW9tZWRlci5jb20vbmV4dC1nZW5lcmF0aW9uLWJyYWluLWNvbXB1dGVyLWludGVyZmFjZS1uZXVyb2dyYWluLw&ntb=1)  
-08.《科學月刊》2017 年 5 月號/林士傑/[系統神經科學的觀點─腦袋裡到底裝些什麼東西？](https://www.scimonth.com.tw/archives/2304)  
-09.泛科學/[馬斯克的「Neuralink」用小豬示範腦機介面，為何神經科學家看完卻狂翻白眼？](https://www.thenewslens.com/article/140459)  
+## 參考資料
+1.Inside/Chris/[《碳變》影評：問題就出在太 Cyberpunk 王道了](https://www.inside.com.tw/article/12092-altered-carbon-cyberpunk)  
+2.許經夌/[不是幻想，是真的！《攻殼機動隊》中的未來科技大解析](https://pansci.asia/archives/118023)  
+3.天下雜誌/黃維德/[當人腦連上電腦，《攻殼機動隊》生化人不是純屬虛構](https://www.cw.com.tw/article/5087602)  
+4.The Economist/[Using thought to control machines](https://www.economist.com/leaders/2018/01/03/using-thought-to-control-machines)  
+5.Investigator/徐聖修/[腦機介面 (Brain-Computer Interface) 專題 (上)](https://investigator.tw/1226/%E8%85%A6%E6%A9%9F%E4%BB%8B%E9%9D%A2-brain-computer-interface-%E5%B0%88%E9%A1%8C-%E4%B8%8A/)  
+6.Investigator/徐聖修/[腦機介面 (Brain-Computer Interface) 專題 (下)](https://investigator.tw/1237/%e8%85%a6%e6%a9%9f%e4%bb%8b%e9%9d%a2-brain-computer-interface-%e5%b0%88%e9%a1%8c-%e4%b8%8b/)  
+7.生醫人BioMeder/[新一代的腦機介面，真的要來讀我們的腦了嗎?](https://www.bing.com/ck/a?!&&p=9462232313890da5JmltdHM9MTcxNjc2ODAwMCZpZ3VpZD0zNzRjNTM4Ni1mYWMxLTYxMGQtMjZiOC00M2Q3ZmJkMTYwZjAmaW5zaWQ9NTMzMg&ptn=3&ver=2&hsh=3&fclid=374c5386-fac1-610d-26b8-43d7fbd160f0&psq=%e9%9b%bb%e5%ad%90%e8%85%a6%ef%bc%88Electronic+Brain%ef%bc%89&u=a1aHR0cHM6Ly9iaW9tZWRlci5jb20vbmV4dC1nZW5lcmF0aW9uLWJyYWluLWNvbXB1dGVyLWludGVyZmFjZS1uZXVyb2dyYWluLw&ntb=1)  
+8.《科學月刊》2017 年 5 月號/林士傑/[系統神經科學的觀點─腦袋裡到底裝些什麼東西？](https://www.scimonth.com.tw/archives/2304)  
+9.泛科學/[馬斯克的「Neuralink」用小豬示範腦機介面，為何神經科學家看完卻狂翻白眼？](https://www.thenewslens.com/article/140459)  
 10.泛科學/[人造腦挑戰 AI！培養皿中的腦組織＋腦機介面能打敗電腦嗎？](https://pansci.asia/archives/366027)  
 11.泛科學/[擁有人腦的老鼠？人腦類器官首次成功移植到其他物種](https://pansci.asia/archives/140383)  
 12.GeneOnline News/Oscar Wu/[癱瘓復能即將成真？Neuralink 腦機介面首次人體臨床試驗啟動招募](https://geneonline.news/bci-neuralink-first-clinical-trial/)  
@@ -149,13 +149,13 @@ https://www.youtube.com/watch?v=u28-HbY8PFU
 15.知乎/莫斯科的亡灵/[浅谈脑机接口（下）](https://zhuanlan.zhihu.com/p/60611493)  
 16.知乎/ShiningObsidian/[侵入式与非侵入式脑机接口](https://zhuanlan.zhihu.com/p/25089884)  
 17.知乎/ShiningObsidian/[脑机接口的研究进展到什么程度了？](https://zhuanlan.zhihu.com/p/20803223)  
-18\. Jonathan R Wolpaw, Niels Birbaumer, Dennis J McFarland, Gert Pfurtscheller, Theresa M Vaughan, 2002. [Brain-computer interfaces for communication and control.](https://pubmed.ncbi.nlm.nih.gov/12048038/) _Clin Neurophysiol._ 113(6):767-91  
-19\. Daniela Camargo-Vargas, Mauro Callejas-Cuervo, Stefano Mazzoleni, 2021. [Brain-Computer Interfaces Systems for Upper and Lower Limb Rehabilitation: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/34202546/) _Sensors(Basel)._ 21(13):4312.  
-20\. Rabie A. Ramadan, Athanasios V. Vasilakos, 2017. [Brain computer interface: control signals review.](https://www.sciencedirect.com/science/article/abs/pii/S0925231216312152) Neurocomputing. 233:26-44.  
-21\. Reza Abiri, Soheil Borhani, Eric W Sellers, Yang Jiang, Xiaopeng Zhao, 2019. [A comprehensive review of EEG-based brain–computer interface paradigms.](https://pubmed.ncbi.nlm.nih.gov/30523919/) _J. Neural Eng._ 16(1):011001.  
-22\. Annushree Bablani, Damodar Reddy Edla, Diwakar Tripathi, Ramalingaswamy Cheruku, 2019. [Survey on Brain-Computer Interface: An Emerging Computational Intelligence Paradigm.](https://dl.acm.org/doi/10.1145/3297713) _ACM._ 52(1):1-32  
-23\. Jerry Tang, Amanda LeBel, Shailee Jain, Alexander G Huth, 2023.[ Semantic reconstruction of continuous language from non-invasive brain recordings.](https://pubmed.ncbi.nlm.nih.gov/37127759/) _Nat Neurosci._ 26(5):858-866.  
-24\. Jihun Lee, Vincent Leung, Ah-Hyoung Lee, Jiannan Huang, Peter Asbeck, Patrick P. Mercier, Stephen Shellhammer, Lawrence Larson, Farah Laiwalla and Arto Nurmikko, 2021. [Neural recording and stimulation using wireless networks of microimplants.](https://www.nature.com/articles/s41928-021-00631-8) _Nature Electronics._ 4:604–614
+18. Jonathan R Wolpaw, Niels Birbaumer, Dennis J McFarland, Gert Pfurtscheller, Theresa M Vaughan, 2002. [Brain-computer interfaces for communication and control.](https://pubmed.ncbi.nlm.nih.gov/12048038/) _Clin Neurophysiol._ 113(6):767-91  
+19. Daniela Camargo-Vargas, Mauro Callejas-Cuervo, Stefano Mazzoleni, 2021. [Brain-Computer Interfaces Systems for Upper and Lower Limb Rehabilitation: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/34202546/) _Sensors(Basel)._ 21(13):4312.  
+20. Rabie A. Ramadan, Athanasios V. Vasilakos, 2017. [Brain computer interface: control signals review.](https://www.sciencedirect.com/science/article/abs/pii/S0925231216312152) Neurocomputing. 233:26-44.  
+21. Reza Abiri, Soheil Borhani, Eric W Sellers, Yang Jiang, Xiaopeng Zhao, 2019. [A comprehensive review of EEG-based brain–computer interface paradigms.](https://pubmed.ncbi.nlm.nih.gov/30523919/) _J. Neural Eng._ 16(1):011001.  
+22. Annushree Bablani, Damodar Reddy Edla, Diwakar Tripathi, Ramalingaswamy Cheruku, 2019. [Survey on Brain-Computer Interface: An Emerging Computational Intelligence Paradigm.](https://dl.acm.org/doi/10.1145/3297713) _ACM._ 52(1):1-32  
+23. Jerry Tang, Amanda LeBel, Shailee Jain, Alexander G Huth, 2023.[ Semantic reconstruction of continuous language from non-invasive brain recordings.](https://pubmed.ncbi.nlm.nih.gov/37127759/) _Nat Neurosci._ 26(5):858-866.  
+24. Jihun Lee, Vincent Leung, Ah-Hyoung Lee, Jiannan Huang, Peter Asbeck, Patrick P. Mercier, Stephen Shellhammer, Lawrence Larson, Farah Laiwalla and Arto Nurmikko, 2021. [Neural recording and stimulation using wireless networks of microimplants.](https://www.nature.com/articles/s41928-021-00631-8) _Nature Electronics._ 4:604–614
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

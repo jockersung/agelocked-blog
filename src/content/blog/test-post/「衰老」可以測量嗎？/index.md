@@ -149,16 +149,16 @@ S3分數
 
 > [集抗衰老近百年研究大成—傳承自熱量限制法之ageLOC技術的誕生](https://agelocked.com/%e9%9b%86%e6%8a%97%e8%a1%b0%e8%80%81%e8%bf%91%e7%99%be%e5%b9%b4%e7%a0%94%e7%a9%b6%e5%a4%a7%e6%88%90-%e5%82%b3%e6%89%bf%e8%87%aa%e7%86%b1%e9%87%8f%e9%99%90%e5%88%b6%e6%b3%95%e4%b9%8bageloc/)
 
-參考資料：  
-01.每日頭條/[「測量」衰老](https://kknews.cc/zh-tw/science/nv489vg.html)  
-02.健康2.0/[老人最怕衰弱症！台大醫師一張圖5指標 教你快速自我檢測](https://health.tvbs.com.tw/review/322417)  
-03.udn部落格/Swordman 的部落格/[生命的長度](http://blog.udn.com/jnwu/18049746)  
-04.晴天醫事檢驗所/[端粒指數檢測](https://www.sunnyday-lab.com/%E7%AB%AF%E7%B2%92%E6%8C%87%E6%95%B8%E6%AA%A2%E6%B8%AC/)  
-05.王復蘇/不生病的慢老生活－越活越年輕的養生祕訣  
-06.永越健康管理中心/[抗老化的關鍵秘密－清除自由基](https://www.eonway.com/%E6%8A%97%E8%80%81%E5%8C%96%E7%9A%84%E9%97%9C%E9%8D%B5%E7%A7%98%E5%AF%86%EF%BC%8D%E6%B8%85%E9%99%A4%E8%87%AA%E7%94%B1%E5%9F%BA/)  
-07.藥師公會全聯會/[抗氧化劑及常見之抗氧化活性評估方法](https://www.taiwan-pharma.org.tw/magazine/103/132-137.pdf)  
-08.長庚醫院/[血漿總和抗氧化能力檢驗](https://www1.cgmh.org.tw/intr/intr2/c3920/INFOR/01/CP011_%E8%A1%80%E6%BC%BF%E7%B8%BD%E5%90%88%E6%8A%97%E6%B0%A7%E5%8C%96%E8%83%BD%E5%8A%9B.pdf)  
-09\. I F Benzie, J J Strain,1996.[__ The Ferric Reducing Ability of Plasma ( FRAP ) as a Measure of “Antioxidant Power : The FRAP Assay _._](https://pubmed.ncbi.nlm.nih.gov/?term=Benzie+IF&cauthor_id=8660627)_Analytical Biochemistry._[__](https://pubmed.ncbi.nlm.nih.gov/?term=Benzie+IF&cauthor_id=8660627)239(1): 70–76.   
+## 參考資料
+1.每日頭條/[「測量」衰老](https://kknews.cc/zh-tw/science/nv489vg.html)  
+2.健康2.0/[老人最怕衰弱症！台大醫師一張圖5指標 教你快速自我檢測](https://health.tvbs.com.tw/review/322417)  
+3.udn部落格/Swordman 的部落格/[生命的長度](http://blog.udn.com/jnwu/18049746)  
+4.晴天醫事檢驗所/[端粒指數檢測](https://www.sunnyday-lab.com/%E7%AB%AF%E7%B2%92%E6%8C%87%E6%95%B8%E6%AA%A2%E6%B8%AC/)  
+5.王復蘇/不生病的慢老生活－越活越年輕的養生祕訣  
+6.永越健康管理中心/[抗老化的關鍵秘密－清除自由基](https://www.eonway.com/%E6%8A%97%E8%80%81%E5%8C%96%E7%9A%84%E9%97%9C%E9%8D%B5%E7%A7%98%E5%AF%86%EF%BC%8D%E6%B8%85%E9%99%A4%E8%87%AA%E7%94%B1%E5%9F%BA/)  
+7.藥師公會全聯會/[抗氧化劑及常見之抗氧化活性評估方法](https://www.taiwan-pharma.org.tw/magazine/103/132-137.pdf)  
+8.長庚醫院/[血漿總和抗氧化能力檢驗](https://www1.cgmh.org.tw/intr/intr2/c3920/INFOR/01/CP011_%E8%A1%80%E6%BC%BF%E7%B8%BD%E5%90%88%E6%8A%97%E6%B0%A7%E5%8C%96%E8%83%BD%E5%8A%9B.pdf)  
+9. I F Benzie, J J Strain,1996.[__ The Ferric Reducing Ability of Plasma ( FRAP ) as a Measure of “Antioxidant Power : The FRAP Assay _._](https://pubmed.ncbi.nlm.nih.gov/?term=Benzie+IF&cauthor_id=8660627)_Analytical Biochemistry._[__](https://pubmed.ncbi.nlm.nih.gov/?term=Benzie+IF&cauthor_id=8660627)239(1): 70–76.   
 10.長庚醫院/[血液麩胱甘肰過氧化酵素檢驗](https://www1.cgmh.org.tw/intr/intr2/c3920/INFOR/01/CP012_%E8%A1%80%E6%B6%B2GPX.pdf)  
 11.R A Lawrence, R F Burk, 1976. [Glutathione peroxidase activity in selenium-deficient rat liver.](https://pubmed.ncbi.nlm.nih.gov/?term=Lawrence+RA&cauthor_id=971321) _Biohem Biophys Res Commun._ 71(4) : 952-958.  
 12.聯安預防醫學機構/[氧化壓力分析](https://liansin.lianan.com.tw/material/files/20181011_6_7_1_2391AC52A7AB4393ADD4DB7D6E6CBD48.pdf)  
@@ -167,8 +167,8 @@ S3分數
 15.健和診所/[抗氧化維生素分析](http://www.kd3388.com/fm20.html)  
 16.科學Online/**林宣鳴** /[拉曼 Chandrasekhara Venkata Raman](https://highscope.ch.ntu.edu.tw/wordpress/?p=38743)  
 17.痞客邦/只剩一張嘴的中年男子/[基礎篇-簡介生物光子掃描儀(biophotonic-Scanner)](https://connect.pixnet.net/blog/post/24140762)  
-18\. Gellermann W, Zidichouski JA, Smidt CR, Bernstein PS. Raman Detection of Carotenoids in Human Tissue. In: Packer L, Obermueller‑Jevic U, Kraemer K, and Sies H, eds. Carotenoids and Retinoids – Molecular Aspects and Health Issues. Champaign, IL: AOCS Press, 2005; Ch. 6, 86‑114.  
-19\. Tissa R.Hata, Theresa A.Scholz, Lynn K.Pershing, Igor V.Ermakov, Robert W.McClane, FrederickKhachik,WernerGellermann, 2000. [“Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin”.](https://www.sciencedirect.com/science/article/pii/S0022202X15409923)_J. Invest. Dermatol._ 115(3): 441-448.
+18. Gellermann W, Zidichouski JA, Smidt CR, Bernstein PS. Raman Detection of Carotenoids in Human Tissue. In: Packer L, Obermueller‑Jevic U, Kraemer K, and Sies H, eds. Carotenoids and Retinoids – Molecular Aspects and Health Issues. Champaign, IL: AOCS Press, 2005; Ch. 6, 86‑114.  
+19. Tissa R.Hata, Theresa A.Scholz, Lynn K.Pershing, Igor V.Ermakov, Robert W.McClane, FrederickKhachik,WernerGellermann, 2000. [“Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin”.](https://www.sciencedirect.com/science/article/pii/S0022202X15409923)_J. Invest. Dermatol._ 115(3): 441-448.
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

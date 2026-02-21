@@ -147,14 +147,14 @@ InBody報告
 
 加油啦！
 
-參考資料：  
-01.健康2.0/郭庚儒/[早晚量體脂肪怎麼都不一樣？2時間量體脂才最準](https://health.tvbs.com.tw/regimen/323573)  
-02.Analog Devices/Cosimo Carriero/[生物電阻抗分析在疾病臨床監測和診斷中的應用](https://www.analog.com/cn/design-center/landing-pages/002/tech-articles-taiwan/bioelectrical-impedance-analysis-in-monitoring-of-the-clinical-status-and-diagnosis-of-diseases.html)  
-03.七分之二的探索/[【InBody完全指南】InBody分數怎麼看？7個重點帶你了解InBody身體組成分析](https://www.twosevenths.com/info/inbody/)  
-04.痞克邦/五爸日常/[【重量訓練。成績單】inbody測量數據](https://t183w80.pixnet.net/blog/post/359158018-%e3%80%90%e9%87%8d%e9%87%8f%e8%a8%93%e7%b7%b4%e3%80%82%e6%88%90%e7%b8%be%e5%96%ae%e3%80%91inbody%e6%b8%ac%e9%87%8f%e6%95%b8%e6%93%9a)  
-05.睿秋科學營養健身/[為何Inbody沒你想像中可靠](https://rachel-nutrition.com/accuracy-of-bia-and-inbody/)  
-06.放射醫傑克/[[體脂肪檢測] TR90 前後實測（by 雙能量X光吸收儀）](http://jackchang86.blogspot.com/2018/04/tr90.html)  
-07.阿塔男孩／Attaboy Deven／[INBODY怎麼測？到底準不準？│INBODY使用全指南](https://trans-attaboy.com/inbody-report/)
+## 參考資料
+1.健康2.0/郭庚儒/[早晚量體脂肪怎麼都不一樣？2時間量體脂才最準](https://health.tvbs.com.tw/regimen/323573)  
+2.Analog Devices/Cosimo Carriero/[生物電阻抗分析在疾病臨床監測和診斷中的應用](https://www.analog.com/cn/design-center/landing-pages/002/tech-articles-taiwan/bioelectrical-impedance-analysis-in-monitoring-of-the-clinical-status-and-diagnosis-of-diseases.html)  
+3.七分之二的探索/[【InBody完全指南】InBody分數怎麼看？7個重點帶你了解InBody身體組成分析](https://www.twosevenths.com/info/inbody/)  
+4.痞克邦/五爸日常/[【重量訓練。成績單】inbody測量數據](https://t183w80.pixnet.net/blog/post/359158018-%e3%80%90%e9%87%8d%e9%87%8f%e8%a8%93%e7%b7%b4%e3%80%82%e6%88%90%e7%b8%be%e5%96%ae%e3%80%91inbody%e6%b8%ac%e9%87%8f%e6%95%b8%e6%93%9a)  
+5.睿秋科學營養健身/[為何Inbody沒你想像中可靠](https://rachel-nutrition.com/accuracy-of-bia-and-inbody/)  
+6.放射醫傑克/[[體脂肪檢測] TR90 前後實測（by 雙能量X光吸收儀）](http://jackchang86.blogspot.com/2018/04/tr90.html)  
+7.阿塔男孩／Attaboy Deven／[INBODY怎麼測？到底準不準？│INBODY使用全指南](https://trans-attaboy.com/inbody-report/)
 
 延伸閱讀：
 

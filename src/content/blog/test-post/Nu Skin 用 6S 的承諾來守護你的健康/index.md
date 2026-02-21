@@ -71,15 +71,15 @@ Nu Skin 保健食品一直追溯到種子階段，並能夠證明這些產品中
 
 > [成為 Nu Skin 自用會員超簡單，完全免費看圖就會！](https://agelocked.com/%e6%88%90%e7%82%ba-nu-skin-%e8%87%aa%e7%94%a8%e6%9c%83%e5%93%a1%e8%b6%85%e7%b0%a1%e5%96%ae%ef%bc%8c%e5%ae%8c%e5%85%a8%e5%85%8d%e8%b2%bb%e7%9c%8b%e5%9c%96%e5%b0%b1%e6%9c%83%ef%bc%81/)
 
-參考資料：  
-01.DT财经/王丽娜/[患上健康焦虑的年轻人，愿意为怎样的保健产品掏钱](https://www.yicai.com/news/100657059.html)？  
-02.直销头条网/如新/[如新：营养补充品界的“特斯拉”，凭什么走在时代前沿](https://dstoutiao.com/html/ds/zxfull/2019/0820/64440.html)？  
-03.知乎/食品580/[别人家的管理 | 细致才能出极致 放心产品用心制造](https://zhuanlan.zhihu.com/p/43814780)  
-04.如新中国官网/[如新中国生产基地](https://china.nuskin.com/html/content/manufacture_plant.html)  
-05.百度/[cGMP](https://baike.baidu.com/item/cGMP/7507671)  
-06.DIGITIMES/陳明陽/[環境控制下的都市智慧農業 可兼顧環境永續與城市食物需求](https://www.digitimes.com.tw/iot/article.asp?cat=158&id=0000573413_vse3d3hd2dlta92ck9zlu)  
-07.金氪/佚名/[工业大麻和可控农业能擦出火花吗？](https://51jinke.com/news/5df349822a66a700018a42f8)  
-08\. Andrew Chiu, Joe Chang, and Michael Chang, 2002. [The 6S™ Quality Management of Nutraceuticals: An Operating Principle at Pharmanex.](https://pubs.acs.org/doi/pdf/10.1021/bk-2002-0803.ch002)
+## 參考資料
+1.DT财经/王丽娜/[患上健康焦虑的年轻人，愿意为怎样的保健产品掏钱](https://www.yicai.com/news/100657059.html)？  
+2.直销头条网/如新/[如新：营养补充品界的“特斯拉”，凭什么走在时代前沿](https://dstoutiao.com/html/ds/zxfull/2019/0820/64440.html)？  
+3.知乎/食品580/[别人家的管理 | 细致才能出极致 放心产品用心制造](https://zhuanlan.zhihu.com/p/43814780)  
+4.如新中国官网/[如新中国生产基地](https://china.nuskin.com/html/content/manufacture_plant.html)  
+5.百度/[cGMP](https://baike.baidu.com/item/cGMP/7507671)  
+6.DIGITIMES/陳明陽/[環境控制下的都市智慧農業 可兼顧環境永續與城市食物需求](https://www.digitimes.com.tw/iot/article.asp?cat=158&id=0000573413_vse3d3hd2dlta92ck9zlu)  
+7.金氪/佚名/[工业大麻和可控农业能擦出火花吗？](https://51jinke.com/news/5df349822a66a700018a42f8)  
+8. Andrew Chiu, Joe Chang, and Michael Chang, 2002. [The 6S™ Quality Management of Nutraceuticals: An Operating Principle at Pharmanex.](https://pubs.acs.org/doi/pdf/10.1021/bk-2002-0803.ch002)
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

@@ -147,16 +147,16 @@ tags: ['健康', '抗衰老', '飲食']
 
 頭髮是突破極限的障礙
 
-參考資料：  
-01.微笑藥師網/[生物素(biotin)能防止掉髮？](https://b303094004.pixnet.net/blog/post/348704032)  
-02.微笑藥師網/[搶救毛髮，不可不知的毛髮保養觀念](https://b303094004.pixnet.net/blog/post/353030852)  
-03.微笑藥師網/[搶救毛髮，不可不知的毛髮生長重點](https://b303094004.pixnet.net/blog/post/352887074)  
-04.微笑藥師網/[生髮水Minoxidil 2%與5%比較](https://b303094004.pixnet.net/blog/post/353032421)  
-05.康健/陳昱璁 /[掉髮困擾新救星 「雷射生髮」減緩雄性禿效果好](https://www.commonhealth.com.tw/article/article.action?nid=81451&from=search)  
-06.康健/陳蔚承/[從雞皮疙瘩找到治療禿頭新方法 醫師：活化毛囊幹細胞促生髮](https://www.commonhealth.com.tw/article/article.action?nid=82480)  
-07.澤林毛髮診所/[【生髮雷射】照照光頭髮真能長回來嗎？](https://www.zlclinic.com.tw/article_d.php?lang=tw&tb=4&cid=14&id=173)  
-08.Heho健康/林以璿/[永久治癒禿頭的希望來了！《自然》用幹細胞造出具毛囊的皮膚](https://heho.com.tw/archives/87435?utm_source=%E5%BB%B6%E4%BC%B8%E9%96%B1%E8%AE%80&utm_medium=heho&utm_campaign=click)  
-09.Heho健康/林以璿/[雞皮疙瘩有望治療禿頭！哈佛研究：交感神經活化幹細胞，讓毛髮「逆生長」](https://heho.com.tw/archives/93244?utm_source=%E5%BB%B6%E4%BC%B8%E9%96%B1%E8%AE%80&utm_medium=heho&utm_campaign=click)  
+## 參考資料
+1.微笑藥師網/[生物素(biotin)能防止掉髮？](https://b303094004.pixnet.net/blog/post/348704032)  
+2.微笑藥師網/[搶救毛髮，不可不知的毛髮保養觀念](https://b303094004.pixnet.net/blog/post/353030852)  
+3.微笑藥師網/[搶救毛髮，不可不知的毛髮生長重點](https://b303094004.pixnet.net/blog/post/352887074)  
+4.微笑藥師網/[生髮水Minoxidil 2%與5%比較](https://b303094004.pixnet.net/blog/post/353032421)  
+5.康健/陳昱璁 /[掉髮困擾新救星 「雷射生髮」減緩雄性禿效果好](https://www.commonhealth.com.tw/article/article.action?nid=81451&from=search)  
+6.康健/陳蔚承/[從雞皮疙瘩找到治療禿頭新方法 醫師：活化毛囊幹細胞促生髮](https://www.commonhealth.com.tw/article/article.action?nid=82480)  
+7.澤林毛髮診所/[【生髮雷射】照照光頭髮真能長回來嗎？](https://www.zlclinic.com.tw/article_d.php?lang=tw&tb=4&cid=14&id=173)  
+8.Heho健康/林以璿/[永久治癒禿頭的希望來了！《自然》用幹細胞造出具毛囊的皮膚](https://heho.com.tw/archives/87435?utm_source=%E5%BB%B6%E4%BC%B8%E9%96%B1%E8%AE%80&utm_medium=heho&utm_campaign=click)  
+9.Heho健康/林以璿/[雞皮疙瘩有望治療禿頭！哈佛研究：交感神經活化幹細胞，讓毛髮「逆生長」](https://heho.com.tw/archives/93244?utm_source=%E5%BB%B6%E4%BC%B8%E9%96%B1%E8%AE%80&utm_medium=heho&utm_campaign=click)  
 10.Heho健康/盧映慈/[用雞皮疙瘩治療禿頭！哈佛、台大共同研究：毛囊幹細胞能讓毛髮再生](https://heho.com.tw/archives/130001)  
 11.iHealth健康報報/[禿頭有前兆！雄性禿的原因和治療方式](https://www.ihealth.com.tw/article/%E7%A6%BF%E9%A0%AD/)  
 12.痞客邦/董哥的家/[停止使用Minoxidil生髮水之後的掉髮現象](https://iwanthair.pixnet.net/blog/post/220403825-%e5%81%9c%e6%ad%a2%e4%bd%bf%e7%94%a8minoxidil%e7%94%9f%e9%ab%ae%e6%b0%b4%e4%b9%8b%e5%be%8c%e7%9a%84%e6%8e%89%e9%ab%ae%e7%8f%be%e8%b1%a1)  
@@ -165,14 +165,14 @@ tags: ['健康', '抗衰老', '飲食']
 15.美的好朋友/[生髮藥物新髮靈Dutasteride與柔沛Finasteride功效完整評比](https://www.medpartner.club/dutasteride-finasteride-comparison-androgenetic-alopecia/)  
 16.健康醫學院/[對抗落髮你應該補充這9項營養素](https://www.medschool.cc/article/Hair_loss)  
 17.美的好朋友/[生髮食物和營養補充品能有效生髮嗎？醫師回顧文獻完整解答！](https://www.medpartner.club/dietary-supplement-hair-loss/)  
-18\. Esther J van Zuuren, Zbys Fedorowicz, Jan Schoones, 2016. [Interventions for female pattern hair loss.](https://pubmed.ncbi.nlm.nih.gov/27225981/) _Cochrane Database Syst Rev._ (5):CD007628  
-19\. Emily L. Guo and Rajani Katta, 2017. [Diet and hair loss: effects of nutrient deficiency and supplement use.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5315033/) _Dermatol Pract Concept._ 7(1):1-10.  
-20\. Ladan Afifi, Eric L Maranda, Mina Zarei, Gina M Delcanto, Leyre Falto-Aizpurua, Wouter P Kluijfhout, Joaquin J Jimenez, 2017. [Low-level laser therapy as a treatment for androgenetic alopecia.](https://pubmed.ncbi.nlm.nih.gov/27114071/) _Lasers Surg Med._ 49:27–39.  
-21\. Leo L Wang, George Cotsarelis, 2020. [Regenerative medicine could pave the way to treating baldness.](https://pubmed.ncbi.nlm.nih.gov/32541911/)_Nature_. 582(7812):343-344.  
-22\. Jiyoon Lee, Cyrus C. Rabbani, Hongyu Gao, Matthew R. Steinhart, Benjamin M. Woodruff, Zachary E. Pflum, Alexander Kim, Stefan Heller, Yunlong Liu, Taha Z. Shipchandler, and Karl R. Koehler, 2020. [Hair-bearing human skin generated entirely from pluripotent stem cells.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7593871/) _Nature_. 582(7812): 399–404.  
-23\. Yulia Shwartz, Meryem Gonzalez-Celeiro, Chih-Lung Chen, H Amalia Pasolli, Shu-Hsien Sheu, Sabrina Mai-Yi Fan, Farnaz Shami, Steven Assaad, Edrick Tai-Yu Lin, Bing Zhang, Pai-Chi Tsai, Megan He, Yu-Hua Tseng, Sung-Jan Lin, Ya-Chieh Hsu, 2020. [Cell Types Promoting Goosebumps Form a Niche to Regulate Hair Follicle Stem Cells.](https://pubmed.ncbi.nlm.nih.gov/32679029/) _Cell_. 182(3):578-593.  
-24\. Katherine S Stewart, Kevin Au Gonzales, Shaopeng Yuan, Matthew T Tierney, Alain R Bonny, Yihao Yang, Nicole R Infarinato, Christopher J Cowley, John M Levorse, Hilda Amalia Pasolli, Sourav Ghosh, Carla V Rothlin, Elaine Fuchs, 2024. [Stem cells tightly regulate dead cell clearance to maintain tissue fitness.](https://pubmed.ncbi.nlm.nih.gov/39169186/) _Nature._ 633(8029):407-416.  
-25\. Milos S Simic, Erica A Moehle, Robert T Schinzel, Franziska K Lorbeer, Jonathan J Halloran, Kartoosh Heydari, Melissa Sanchez, Damien Jullié, Dirk Hockemeyer, Andrew Dillin, 2019. [Transient activation of the UPRER is an essential step in the acquisition of pluripotency during reprogramming.](https://pubmed.ncbi.nlm.nih.gov/30989118/) _Sci Adv._ 5(4):eaaw0025.
+18. Esther J van Zuuren, Zbys Fedorowicz, Jan Schoones, 2016. [Interventions for female pattern hair loss.](https://pubmed.ncbi.nlm.nih.gov/27225981/) _Cochrane Database Syst Rev._ (5):CD007628  
+19. Emily L. Guo and Rajani Katta, 2017. [Diet and hair loss: effects of nutrient deficiency and supplement use.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5315033/) _Dermatol Pract Concept._ 7(1):1-10.  
+20. Ladan Afifi, Eric L Maranda, Mina Zarei, Gina M Delcanto, Leyre Falto-Aizpurua, Wouter P Kluijfhout, Joaquin J Jimenez, 2017. [Low-level laser therapy as a treatment for androgenetic alopecia.](https://pubmed.ncbi.nlm.nih.gov/27114071/) _Lasers Surg Med._ 49:27–39.  
+21. Leo L Wang, George Cotsarelis, 2020. [Regenerative medicine could pave the way to treating baldness.](https://pubmed.ncbi.nlm.nih.gov/32541911/)_Nature_. 582(7812):343-344.  
+22. Jiyoon Lee, Cyrus C. Rabbani, Hongyu Gao, Matthew R. Steinhart, Benjamin M. Woodruff, Zachary E. Pflum, Alexander Kim, Stefan Heller, Yunlong Liu, Taha Z. Shipchandler, and Karl R. Koehler, 2020. [Hair-bearing human skin generated entirely from pluripotent stem cells.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7593871/) _Nature_. 582(7812): 399–404.  
+23. Yulia Shwartz, Meryem Gonzalez-Celeiro, Chih-Lung Chen, H Amalia Pasolli, Shu-Hsien Sheu, Sabrina Mai-Yi Fan, Farnaz Shami, Steven Assaad, Edrick Tai-Yu Lin, Bing Zhang, Pai-Chi Tsai, Megan He, Yu-Hua Tseng, Sung-Jan Lin, Ya-Chieh Hsu, 2020. [Cell Types Promoting Goosebumps Form a Niche to Regulate Hair Follicle Stem Cells.](https://pubmed.ncbi.nlm.nih.gov/32679029/) _Cell_. 182(3):578-593.  
+24. Katherine S Stewart, Kevin Au Gonzales, Shaopeng Yuan, Matthew T Tierney, Alain R Bonny, Yihao Yang, Nicole R Infarinato, Christopher J Cowley, John M Levorse, Hilda Amalia Pasolli, Sourav Ghosh, Carla V Rothlin, Elaine Fuchs, 2024. [Stem cells tightly regulate dead cell clearance to maintain tissue fitness.](https://pubmed.ncbi.nlm.nih.gov/39169186/) _Nature._ 633(8029):407-416.  
+25. Milos S Simic, Erica A Moehle, Robert T Schinzel, Franziska K Lorbeer, Jonathan J Halloran, Kartoosh Heydari, Melissa Sanchez, Damien Jullié, Dirk Hockemeyer, Andrew Dillin, 2019. [Transient activation of the UPRER is an essential step in the acquisition of pluripotency during reprogramming.](https://pubmed.ncbi.nlm.nih.gov/30989118/) _Sci Adv._ 5(4):eaaw0025.
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

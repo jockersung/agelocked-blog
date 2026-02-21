@@ -133,15 +133,15 @@ tags: ['健康']
 
 [仕女如沛（適合 20 歲以上女性）](https://www.nuskin.com.tw/shop/poSharePdp/1176341658270292071?salesSlipId=1275541683745053729&catalogId=1218157219652230157&utm_source=copylink&utm_medium=affiliate&utm_campaign=personal-offer&openExternalBrowser=1)
 
-參考資料：  
-01.痞客邦/蘋果貓喵言喵語/[亞麻油酸、γ-次亞麻油酸、α-次亞麻油酸，傻傻分不清楚？](https://appleapplecat.pixnet.net/blog/post/27435633)  
-02.美的好朋友/[月見草油可改善經痛與停經症候群？有副作用嗎？專家完整解密](https://www.medpartner.club/evening-primrose-oil-efficacy-introduction/)  
-03.hello醫師/[月見草油](https://helloyishi.com.tw/herbal-alternatives/herbals/evening-primrose-oil/)  
-04.營養新知/[月見草油的9種功效及副作用](https://formulawave.com/evening-primrose-oil-benefits/)  
-05.iShare/[GLA、月見草、琉璃苣、當歸、薑](https://nupau.pixnet.net/blog/post/31889368)  
-06.營養新知/[琉璃苣油的3種功效與副作用](https://formulawave.com/borage-oil-benefits-side-effects/)  
-07.Mohaddese Mahboubi, 2019. [Evening Primrose (_Oenothera biennis_) Oil in Management of Female Ailments. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6718646/)_J Menopausal Med._ 25(2): 74–82.  
-08.Ladan Kashani, Nafiseh Saedi and Shahin Akhondzadeh, 2010. [Femicomfort in the Treatment of Premenstrual Syndromes: A Double-Blind, Randomized and Placebo Controlled Trial.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3430493/) _Iran J Psychiatry._ 5(2): 47–50.
+## 參考資料
+1.痞客邦/蘋果貓喵言喵語/[亞麻油酸、γ-次亞麻油酸、α-次亞麻油酸，傻傻分不清楚？](https://appleapplecat.pixnet.net/blog/post/27435633)  
+2.美的好朋友/[月見草油可改善經痛與停經症候群？有副作用嗎？專家完整解密](https://www.medpartner.club/evening-primrose-oil-efficacy-introduction/)  
+3.hello醫師/[月見草油](https://helloyishi.com.tw/herbal-alternatives/herbals/evening-primrose-oil/)  
+4.營養新知/[月見草油的9種功效及副作用](https://formulawave.com/evening-primrose-oil-benefits/)  
+5.iShare/[GLA、月見草、琉璃苣、當歸、薑](https://nupau.pixnet.net/blog/post/31889368)  
+6.營養新知/[琉璃苣油的3種功效與副作用](https://formulawave.com/borage-oil-benefits-side-effects/)  
+7.Mohaddese Mahboubi, 2019. [Evening Primrose (_Oenothera biennis_) Oil in Management of Female Ailments. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6718646/)_J Menopausal Med._ 25(2): 74–82.  
+8.Ladan Kashani, Nafiseh Saedi and Shahin Akhondzadeh, 2010. [Femicomfort in the Treatment of Premenstrual Syndromes: A Double-Blind, Randomized and Placebo Controlled Trial.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3430493/) _Iran J Psychiatry._ 5(2): 47–50.
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

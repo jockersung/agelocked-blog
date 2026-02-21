@@ -192,15 +192,15 @@ Screenshot
 
 **以每週量體重體脂得知真實的體重變化，進而適當的調整每日的飲食控制。**
 
-參考資料：  
-01.Wishnofsky M, 1958. [Caloric equivalents of gained or lost weight.](https://pubmed.ncbi.nlm.nih.gov/13594881/)  _Am J Clin Nutr._ 6(5):542–546.  
-02\. Diana M Thomas, M Cristina Gonzalez, Andrea Z Pereira, Leanne M Redman, Steven B Heymsfield, 2014. [Time to Correctly Predict the Amount of Weight Loss with Dieting.](https://pubmed.ncbi.nlm.nih.gov/24699137/) _J Acad Nutr Diet._ 114(6):857-861.  
-03\. Kevin D Hall, Steven B Heymsfield, Joseph W Kemnitz, Samuel Klein, Dale A Schoeller, John R Speakman, 2012. [Energy balance and its components: implications for body weight regulation.](https://pubmed.ncbi.nlm.nih.gov/22434603/) _Am J Clin Nutr._ 95(4):989-94.  
-04\. A Bosy-Westpha, 2017. [Regulation of energy balance-classical concepts and novel insights.](https://pubmed.ncbi.nlm.nih.gov/28246377/) _Eur J Clin Nutr._ 71(3):293.  
-05\. Jyoti Dabas, S Shunmukha Priya, Akshay Alawani, Praveen Budhrani, 2024. [What could be the reasons for not losing weight even after following a weight loss program?](https://pubmed.ncbi.nlm.nih.gov/38429842/#full-view-affiliation-1) _J Health Popul Nutr._ 43(1):37.  
-06.Harvard Health/[Stop counting calories.](https://www.health.harvard.edu/staying-healthy/stop-counting-calories)  
-07.Harvard Health/[Don’t count calories, but be aware of them](https://www.health.harvard.edu/healthbeat/dont-count-calories-but-be-aware-of-them?fbclid=IwZXh0bgNhZW0CMTAAAR0mzaYCUM7aB-MXCqd20e4I8n-igydXKRPvQ-cUbbiSrvlpyIf0tR_n91c_aem_AauNMrITvMhGg4LBdcZpoiVaFJjg4YPvYzXIGFxRU1jwT6phkFQ1w1IeL7mBvEcv8hfLUszRa4xgDcZGg__G9NeQ)[.](https://www.health.harvard.edu/healthbeat/dont-count-calories-but-be-aware-of-them)  
-08.Healthy Eating Plate/[健康飲食餐盤](https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/translations/chinese_traditional/)
+## 參考資料
+1.Wishnofsky M, 1958. [Caloric equivalents of gained or lost weight.](https://pubmed.ncbi.nlm.nih.gov/13594881/)  _Am J Clin Nutr._ 6(5):542–546.  
+2. Diana M Thomas, M Cristina Gonzalez, Andrea Z Pereira, Leanne M Redman, Steven B Heymsfield, 2014. [Time to Correctly Predict the Amount of Weight Loss with Dieting.](https://pubmed.ncbi.nlm.nih.gov/24699137/) _J Acad Nutr Diet._ 114(6):857-861.  
+3. Kevin D Hall, Steven B Heymsfield, Joseph W Kemnitz, Samuel Klein, Dale A Schoeller, John R Speakman, 2012. [Energy balance and its components: implications for body weight regulation.](https://pubmed.ncbi.nlm.nih.gov/22434603/) _Am J Clin Nutr._ 95(4):989-94.  
+4. A Bosy-Westpha, 2017. [Regulation of energy balance-classical concepts and novel insights.](https://pubmed.ncbi.nlm.nih.gov/28246377/) _Eur J Clin Nutr._ 71(3):293.  
+5. Jyoti Dabas, S Shunmukha Priya, Akshay Alawani, Praveen Budhrani, 2024. [What could be the reasons for not losing weight even after following a weight loss program?](https://pubmed.ncbi.nlm.nih.gov/38429842/#full-view-affiliation-1) _J Health Popul Nutr._ 43(1):37.  
+6.Harvard Health/[Stop counting calories.](https://www.health.harvard.edu/staying-healthy/stop-counting-calories)  
+7.Harvard Health/[Don’t count calories, but be aware of them](https://www.health.harvard.edu/healthbeat/dont-count-calories-but-be-aware-of-them?fbclid=IwZXh0bgNhZW0CMTAAAR0mzaYCUM7aB-MXCqd20e4I8n-igydXKRPvQ-cUbbiSrvlpyIf0tR_n91c_aem_AauNMrITvMhGg4LBdcZpoiVaFJjg4YPvYzXIGFxRU1jwT6phkFQ1w1IeL7mBvEcv8hfLUszRa4xgDcZGg__G9NeQ)[.](https://www.health.harvard.edu/healthbeat/dont-count-calories-but-be-aware-of-them)  
+8.Healthy Eating Plate/[健康飲食餐盤](https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/translations/chinese_traditional/)
 
 延伸閱讀：
 

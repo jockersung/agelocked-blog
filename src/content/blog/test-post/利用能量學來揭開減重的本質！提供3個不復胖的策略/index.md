@@ -256,27 +256,27 @@ tags: ['健康', '減重']
 
 總結以上三點，當我們有了有關能量平衡、能流及能量缺口的概念，就能透過調整飲食內容或活動量來達到不復胖的目的！
 
-參考資料：  
-01\. James O Hill, Holly R Wyatt, John C Peters, 2012. [Energy Balance and Obesity.](https://pubmed.ncbi.nlm.nih.gov/22753534/) _Circulation._ 126(1):126-32.  
-02\. Isabelle Romieu, Laure Dossus, Simón Barquera, Hervé M Blottière, Paul W Franks, Marc Gunter, Nahla Hwalla, Stephen D Hursting, Michael Leitzmann, Barrie Margetts, Chizuru Nishida, Nancy Potischman, Jacob Seidell, Magdalena Stepien, Youfa Wang, Klaas Westerterp, Pattanee Winichagoon, Martin Wiseman, Walter C Willett; IARC working group on Energy Balance and Obesity, 2017. [Energy balance and obesity: what are the main drivers?](https://pubmed.ncbi.nlm.nih.gov/28210884/) _Cancer Causes Control._ 28(3):247-258.  
-03\. Christopher L Melby, Hunter L Paris, Rebecca M Foright, James Pet, 2017. [Attenuating the Biologic Drive for Weight Regain Following Weight Loss: Must What Goes Down Always Go Back Up?](https://pubmed.ncbi.nlm.nih.gov/27169833/) _Nutrients._ 9(5):468.  
-04\. Clemens Drenowatz, and Klaus Greier, 2017. [The Role of Energy Flux in Weight Management.](https://www.exercmed.org/journal/view.php?doi=10.26644/em.2017.004) _Exerc Med._ 1(4)1-6.  
-05\. David John Hume, Sonja Yokum, Eric Stice, 2016. [Low energy intake plus low energy expenditure (low energy flux), not energy surfeit, predicts future body fat gain](https://pubmed.ncbi.nlm.nih.gov/27169833/). _Am J Clin Nutr._ 103(6):1389-96.  
-06\. Gregory A Hand, Steven N Blair, 2014. [Energy Flux and its Role in Obesity and Metabolic Disease](https://pubmed.ncbi.nlm.nih.gov/30289030/). _Eur Endocrinol._ 10(2):131-135.  
-07\. Gregory A Hand, Robin P Shook, James O Hill, Peter R Giacobbi, Steven N Blair, 2015. [Energy flux: staying in energy balance at a high level is necessary to prevent weight gain for most people.](https://pubmed.ncbi.nlm.nih.gov/30289030/) _Expert Rev Endocrinol Metab._ 10(6):599-605.  
-08\. Melinda M Manore, D Enette Larson-Meyer, Anne R Lindsay, Nobuko Hongu, Linda Houtkooper, 2017. [Dynamic Energy Balance: An Integrated Framework for Discussing Diet and Physical Activity in Obesity Prevention—Is it More than Eating Less and Exercising More?](https://pubmed.ncbi.nlm.nih.gov/28825615/) _Nutrients._ 9(8):905.  
-09\. Hunter L Paris, Rebecca M Foright, Kelsey A Werth, Lauren C Larson, Joseph W Beals, Kimberly Cox-York, Christopher Bell, Christopher L Melby, 2016. [Increasing energy flux to decrease the biological drive toward weight regain after weight loss – A proof-of-concept pilot study.](https://pubmed.ncbi.nlm.nih.gov/28531421/) _Clin Nutr ESPEN._ 11:e12-e20.  
-10\. Christopher L. Melby, Hunter L. Paris, R. Drew Sayer, Christopher Bell, and James O. Hill, 2019. [Increasing Energy Flux to Maintain Diet-Induced Weight Loss](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835968/). _Nutrients._ 2019 Oct; 11(10): 2533.  
-11\. B J Rolls, E T Rolls, E A Rowe, K Sweeney, 1981. [Sensory specific satiety in man.](https://pubmed.ncbi.nlm.nih.gov/7267792/) _Physiol Behav._ 27(1):137-42.  
-12\. 健身醫二三事/[[醫療] 高能量通量(high energy flux) (上)](https://juor2.com/%E9%86%AB%E7%99%82-%E9%AB%98%E8%83%BD%E9%87%8F%E9%80%9A%E9%87%8F-high-energy-flux/)  
-13\. 健身醫二三事/[[醫療] 高能量通量(high energy flux) (下)](https://juor2.com/%e9%86%ab%e7%99%82-%e9%ab%98%e8%83%bd%e9%87%8f%e9%80%9a%e9%87%8fhigh-energy-flux-%e4%b8%8b/)  
-14\. 蔡明劼醫師/[《燃》閱讀心得番外篇：什麼是能量通量模型？](https://mgleo07.blogspot.com/2022/09/blog-post.html)  
-15\. 健美女大生/Kelly教練/[還在執著於算熱量嗎？那可能就是你瘦不下來的原因（上）](https://coachkelly.tw/energy-flux-1/)  
-16\. 睿秋科學營氧健身/[如何提高基礎代謝｜活動量對減脂和維持體重的重要性](https://rachel-nutrition.com/neat/)  
-17\. Science News/ANN GIBBONS/[THE CALORIE COUNTER-volutionary anthropologist Herman Pontzer busts myths about how humans burn calories—and why](https://www.science.org/content/article/scientist-busts-myths-about-how-humans-burn-calories-and-why)   
-18\. Karine Spiegel, Esra Tasali, Plamen Penev, Eve Van Cauter, 2004. [Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite.](https://pubmed.ncbi.nlm.nih.gov/15583226/) _Ann Intern Med._ 141(11):846-50.  
-19\. M R Druce, A M Wren, A J Park, J E Milton, M Patterson, G Frost, M A Ghatei, C Small, S R Bloom, 2005. [Ghrelin increases food intake in obese as well as lean subjects](https://pubmed.ncbi.nlm.nih.gov/15917842/). _Int J Obes (Lond)._ 29(9):1130-6.  
-20\. Maria Magdalena Farias, Ada M Cuevas, Fatima Rodriguez, 2011. [Set-point theory and obesity.](https://pubmed.ncbi.nlm.nih.gov/21117971/) _Metab Syndr Relat Disord  
+## 參考資料
+1. James O Hill, Holly R Wyatt, John C Peters, 2012. [Energy Balance and Obesity.](https://pubmed.ncbi.nlm.nih.gov/22753534/) _Circulation._ 126(1):126-32.  
+2. Isabelle Romieu, Laure Dossus, Simón Barquera, Hervé M Blottière, Paul W Franks, Marc Gunter, Nahla Hwalla, Stephen D Hursting, Michael Leitzmann, Barrie Margetts, Chizuru Nishida, Nancy Potischman, Jacob Seidell, Magdalena Stepien, Youfa Wang, Klaas Westerterp, Pattanee Winichagoon, Martin Wiseman, Walter C Willett; IARC working group on Energy Balance and Obesity, 2017. [Energy balance and obesity: what are the main drivers?](https://pubmed.ncbi.nlm.nih.gov/28210884/) _Cancer Causes Control._ 28(3):247-258.  
+3. Christopher L Melby, Hunter L Paris, Rebecca M Foright, James Pet, 2017. [Attenuating the Biologic Drive for Weight Regain Following Weight Loss: Must What Goes Down Always Go Back Up?](https://pubmed.ncbi.nlm.nih.gov/27169833/) _Nutrients._ 9(5):468.  
+4. Clemens Drenowatz, and Klaus Greier, 2017. [The Role of Energy Flux in Weight Management.](https://www.exercmed.org/journal/view.php?doi=10.26644/em.2017.004) _Exerc Med._ 1(4)1-6.  
+5. David John Hume, Sonja Yokum, Eric Stice, 2016. [Low energy intake plus low energy expenditure (low energy flux), not energy surfeit, predicts future body fat gain](https://pubmed.ncbi.nlm.nih.gov/27169833/). _Am J Clin Nutr._ 103(6):1389-96.  
+6. Gregory A Hand, Steven N Blair, 2014. [Energy Flux and its Role in Obesity and Metabolic Disease](https://pubmed.ncbi.nlm.nih.gov/30289030/). _Eur Endocrinol._ 10(2):131-135.  
+7. Gregory A Hand, Robin P Shook, James O Hill, Peter R Giacobbi, Steven N Blair, 2015. [Energy flux: staying in energy balance at a high level is necessary to prevent weight gain for most people.](https://pubmed.ncbi.nlm.nih.gov/30289030/) _Expert Rev Endocrinol Metab._ 10(6):599-605.  
+8. Melinda M Manore, D Enette Larson-Meyer, Anne R Lindsay, Nobuko Hongu, Linda Houtkooper, 2017. [Dynamic Energy Balance: An Integrated Framework for Discussing Diet and Physical Activity in Obesity Prevention—Is it More than Eating Less and Exercising More?](https://pubmed.ncbi.nlm.nih.gov/28825615/) _Nutrients._ 9(8):905.  
+9. Hunter L Paris, Rebecca M Foright, Kelsey A Werth, Lauren C Larson, Joseph W Beals, Kimberly Cox-York, Christopher Bell, Christopher L Melby, 2016. [Increasing energy flux to decrease the biological drive toward weight regain after weight loss – A proof-of-concept pilot study.](https://pubmed.ncbi.nlm.nih.gov/28531421/) _Clin Nutr ESPEN._ 11:e12-e20.  
+10. Christopher L. Melby, Hunter L. Paris, R. Drew Sayer, Christopher Bell, and James O. Hill, 2019. [Increasing Energy Flux to Maintain Diet-Induced Weight Loss](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835968/). _Nutrients._ 2019 Oct; 11(10): 2533.  
+11. B J Rolls, E T Rolls, E A Rowe, K Sweeney, 1981. [Sensory specific satiety in man.](https://pubmed.ncbi.nlm.nih.gov/7267792/) _Physiol Behav._ 27(1):137-42.  
+12. 健身醫二三事/[[醫療] 高能量通量(high energy flux) (上)](https://juor2.com/%E9%86%AB%E7%99%82-%E9%AB%98%E8%83%BD%E9%87%8F%E9%80%9A%E9%87%8F-high-energy-flux/)  
+13. 健身醫二三事/[[醫療] 高能量通量(high energy flux) (下)](https://juor2.com/%e9%86%ab%e7%99%82-%e9%ab%98%e8%83%bd%e9%87%8f%e9%80%9a%e9%87%8fhigh-energy-flux-%e4%b8%8b/)  
+14. 蔡明劼醫師/[《燃》閱讀心得番外篇：什麼是能量通量模型？](https://mgleo07.blogspot.com/2022/09/blog-post.html)  
+15. 健美女大生/Kelly教練/[還在執著於算熱量嗎？那可能就是你瘦不下來的原因（上）](https://coachkelly.tw/energy-flux-1/)  
+16. 睿秋科學營氧健身/[如何提高基礎代謝｜活動量對減脂和維持體重的重要性](https://rachel-nutrition.com/neat/)  
+17. Science News/ANN GIBBONS/[THE CALORIE COUNTER-volutionary anthropologist Herman Pontzer busts myths about how humans burn calories—and why](https://www.science.org/content/article/scientist-busts-myths-about-how-humans-burn-calories-and-why)   
+18. Karine Spiegel, Esra Tasali, Plamen Penev, Eve Van Cauter, 2004. [Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite.](https://pubmed.ncbi.nlm.nih.gov/15583226/) _Ann Intern Med._ 141(11):846-50.  
+19. M R Druce, A M Wren, A J Park, J E Milton, M Patterson, G Frost, M A Ghatei, C Small, S R Bloom, 2005. [Ghrelin increases food intake in obese as well as lean subjects](https://pubmed.ncbi.nlm.nih.gov/15917842/). _Int J Obes (Lond)._ 29(9):1130-6.  
+20. Maria Magdalena Farias, Ada M Cuevas, Fatima Rodriguez, 2011. [Set-point theory and obesity.](https://pubmed.ncbi.nlm.nih.gov/21117971/) _Metab Syndr Relat Disord  
 ._ 9(2):85-9.
 
 延伸閱讀：

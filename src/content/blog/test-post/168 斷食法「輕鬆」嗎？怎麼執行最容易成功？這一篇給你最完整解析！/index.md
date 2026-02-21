@@ -140,18 +140,18 @@ tags: ['健康', '減重']
 
 > [集抗衰老近百年研究大成—傳承自熱量限制法之ageLOC技術的誕生](https://agelocked.com/%e9%9b%86%e6%8a%97%e8%a1%b0%e8%80%81%e8%bf%91%e7%99%be%e5%b9%b4%e7%a0%94%e7%a9%b6%e5%a4%a7%e6%88%90-%e5%82%b3%e6%89%bf%e8%87%aa%e7%86%b1%e9%87%8f%e9%99%90%e5%88%b6%e6%b3%95%e4%b9%8bageloc/)
 
-參考資料：  
-01.薯條安的營養生活/薯條安/[帶你完整了解「間歇性斷食法」！如何健康執行？](https://dieticianlife.com/intermittent-fasting/)  
-02.黑減重術聯盟/陳韋螢/[淺談間歇性斷食法](https://www.dr-heichao.com.tw/news_view.php?t=2&mpmid=5&minfoid=472)  
-03.健康 2.0 /曾金月/[好煩，年後肚子多了一圈肉！營養師推「168斷食」輕鬆減脂](https://health.tvbs.com.tw/nutrition/327090)  
-04.康健/[近年風靡世界的168間歇性斷食法該如何執行？斷食期間的飲食原則是什麼？哪些人不適合？專家一次說清楚！](https://campaign.commonhealth.com.tw/main/168-IF-481) 05.Heho健康/林以璿/[168斷食越減越胖？ 斷食≠節食，吃不夠身體狂存脂肪！](https://heho.com.tw/archives/165538)  
-06.COFIT/宋晏仁/[斷食前先看這篇！宋晏仁醫師完整公開 斷食方法及12大常見QA 一次學！](https://events.cofit.me/cofitme/fasting-14922)  
-07\. Rafael de Cabo, and Mark P. Mattson, 2019. [Effects of Intermittent Fasting on Health, Aging, and Disease.](https://pubmed.ncbi.nlm.nih.gov/31881139/) _N Engl J Med._ 381(26):2541-2551.  
-08\. Elizabeth F Sutton, Robbie Beyl, Kate S Early, William T Cefalu, Eric Ravussin, Courtney M Peterson, 2018. [Early Time-Restricted Feeding Improves Insulin Sensitivity, Blood Pressure, and Oxidative Stress Even without Weight Loss in Men with Prediabetes.](https://pubmed.ncbi.nlm.nih.gov/29754952/) _Cell Metab._ 27(6):1212-1221.  
-09\. Shubhroz Gill, Satchidananda Panda, 2015. [A Smartphone App Reveals Erratic Diurnal Eating Patterns in Humans that Can Be Modulated for Health Benefits.](https://pubmed.ncbi.nlm.nih.gov/26411343/) _Cell Metab._ 22(5):789-98.  
-09\. Tiffany A Dong, Pratik B Sandesara, Devinder S Dhindsa, Anurag Mehta, Laura C Arneson, Allen L Dollar, Pam R Taub, Laurence S Sperling,2020. [Intermittent Fasting: A Heart Healthy Dietary Pattern?](https://pubmed.ncbi.nlm.nih.gov/32330491/) _Am J Med._ 133(8):901-907.   
-10\. Yoko O. Henderson, Nazmin Bithi, Christopher Link, Jie Yang, Rebecca Schugar, Natalia Llarena, J. Mark Brown, Christopher Hine, 2021. [Late-life intermittent fasting decreases aging-related frailty and increases renal hydrogen sulfide production in a sexually dimorphic manner.](https://pubmed.ncbi.nlm.nih.gov/33675469/) _Geroscience._ doi: 10.1007/s11357-021-00330-4.  
-11\. Josep Bassaganya-Riera, Elliot M Berry, Ellen E Blaak, Barbara Burlingame, Johannes le Coutre, Willem van Eden, Ahmed El-Sohemy, J Bruce German, Dietrich Knorr, Christophe Lacroix, Maurizio Muscaritoli, David C Nieman, Michael Rychlik, Andrew Scholey, Mauro Serafini, 2021. [Goals in Nutrition Science 2020-2025.](https://pubmed.ncbi.nlm.nih.gov/33665201/)_Front Nutr._ 9;7:606378.
+## 參考資料
+1.薯條安的營養生活/薯條安/[帶你完整了解「間歇性斷食法」！如何健康執行？](https://dieticianlife.com/intermittent-fasting/)  
+2.黑減重術聯盟/陳韋螢/[淺談間歇性斷食法](https://www.dr-heichao.com.tw/news_view.php?t=2&mpmid=5&minfoid=472)  
+3.健康 2.0 /曾金月/[好煩，年後肚子多了一圈肉！營養師推「168斷食」輕鬆減脂](https://health.tvbs.com.tw/nutrition/327090)  
+4.康健/[近年風靡世界的168間歇性斷食法該如何執行？斷食期間的飲食原則是什麼？哪些人不適合？專家一次說清楚！](https://campaign.commonhealth.com.tw/main/168-IF-481) 05.Heho健康/林以璿/[168斷食越減越胖？ 斷食≠節食，吃不夠身體狂存脂肪！](https://heho.com.tw/archives/165538)  
+6.COFIT/宋晏仁/[斷食前先看這篇！宋晏仁醫師完整公開 斷食方法及12大常見QA 一次學！](https://events.cofit.me/cofitme/fasting-14922)  
+7. Rafael de Cabo, and Mark P. Mattson, 2019. [Effects of Intermittent Fasting on Health, Aging, and Disease.](https://pubmed.ncbi.nlm.nih.gov/31881139/) _N Engl J Med._ 381(26):2541-2551.  
+8. Elizabeth F Sutton, Robbie Beyl, Kate S Early, William T Cefalu, Eric Ravussin, Courtney M Peterson, 2018. [Early Time-Restricted Feeding Improves Insulin Sensitivity, Blood Pressure, and Oxidative Stress Even without Weight Loss in Men with Prediabetes.](https://pubmed.ncbi.nlm.nih.gov/29754952/) _Cell Metab._ 27(6):1212-1221.  
+9. Shubhroz Gill, Satchidananda Panda, 2015. [A Smartphone App Reveals Erratic Diurnal Eating Patterns in Humans that Can Be Modulated for Health Benefits.](https://pubmed.ncbi.nlm.nih.gov/26411343/) _Cell Metab._ 22(5):789-98.  
+9. Tiffany A Dong, Pratik B Sandesara, Devinder S Dhindsa, Anurag Mehta, Laura C Arneson, Allen L Dollar, Pam R Taub, Laurence S Sperling,2020. [Intermittent Fasting: A Heart Healthy Dietary Pattern?](https://pubmed.ncbi.nlm.nih.gov/32330491/) _Am J Med._ 133(8):901-907.   
+10. Yoko O. Henderson, Nazmin Bithi, Christopher Link, Jie Yang, Rebecca Schugar, Natalia Llarena, J. Mark Brown, Christopher Hine, 2021. [Late-life intermittent fasting decreases aging-related frailty and increases renal hydrogen sulfide production in a sexually dimorphic manner.](https://pubmed.ncbi.nlm.nih.gov/33675469/) _Geroscience._ doi: 10.1007/s11357-021-00330-4.  
+11. Josep Bassaganya-Riera, Elliot M Berry, Ellen E Blaak, Barbara Burlingame, Johannes le Coutre, Willem van Eden, Ahmed El-Sohemy, J Bruce German, Dietrich Knorr, Christophe Lacroix, Maurizio Muscaritoli, David C Nieman, Michael Rychlik, Andrew Scholey, Mauro Serafini, 2021. [Goals in Nutrition Science 2020-2025.](https://pubmed.ncbi.nlm.nih.gov/33665201/)_Front Nutr._ 9;7:606378.
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

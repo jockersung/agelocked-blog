@@ -166,16 +166,16 @@ TGA
 
 > [保健食品天然萃取最好VS人工合成就是爛？](https://agelocked.com/%e4%bf%9d%e5%81%a5%e9%a3%9f%e5%93%81%e5%a4%a9%e7%84%b6%e8%90%83%e5%8f%96%e6%9c%80%e5%a5%bdvs%e4%ba%ba%e5%b7%a5%e5%90%88%e6%88%90%e5%b0%b1%e6%98%af%e7%88%9b%ef%bc%9f/)
 
-參考資料：  
-01.食品生技2007年第11期/許朝凱/[國內外保健食品管理制度概況](http://www.biotaiwan.org.tw/mag/image_doc/11/04%E5%9C%8B%E5%85%A7%E5%A4%96%E4%BF%9D%E5%81%A5%E9%A3%9F%E5%93%81%E7%AE%A1%E7%90%86%E5%88%B6%E5%BA%A6%E6%A6%82%E6%B3%81.pdf)  
-02.食品藥物管理署企劃及科技管理組/吳怡萱、黃維生、謝碧蓮、遲蘭慧/[健康宣稱之規範及管理制度](http://lawdata.com.tw/File/PDF/J993/A04990008_271.pdf)  
-03.財團法人醫藥敏查驗中心/温譽鈴/[各國健康食品之法規發展、管理制度及市場概況](https://www.cde.org.tw/Content/Files/Knowledge/2604fa74-643b-4dcb-8ab0-ac64006d6510.pdf)  
-04.台灣經濟研究院生物科技產業研究中心/劉依蓁/[國際政策趨勢：日本機能性標示制度介紹](http://www.biotaiwan.org.tw/download/structure4/%E5%8A%89%E4%BE%9D%E8%93%81/107/%E5%9C%8B%E9%9A%9B%E6%94%BF%E7%AD%96%E8%B6%A8%E5%8B%A2%EF%BC%9A%E6%97%A5%E6%9C%AC%E6%A9%9F%E8%83%BD%E6%80%A7%E6%A8%99%E7%A4%BA%E5%88%B6%E5%BA%A6%E4%BB%8B%E7%B4%B9%20\(201711\).pdf)  
-05.台灣經濟研究院生物科技產業研究中心/劉依蓁/[從日本新標示管理法規論我國機能性農產品發展策略](http://www.biotaiwan.org.tw/download/structure4/%E5%8A%89%E4%BE%9D%E8%93%81/105/5%E5%BE%9E%E6%97%A5%E6%9C%AC%E6%96%B0%E6%A8%99%E7%A4%BA%E7%AE%A1%E7%90%86%E6%B3%95%E8%A6%8F%E8%AB%96%E6%88%91%E5%9C%8B%E6%A9%9F%E8%83%BD%E6%80%A7%E8%BE%B2%E7%94%A2%E5%93%81%E7%99%BC%E5%B1%95%E7%AD%96%E7%95%A5%20\(201603\).pdf)  
-06.台灣經濟研究院生物科技產業研究中心/劉依蓁/[日本機能性表示食品制度政策分析](http://www.biotaiwan.org.tw/mag/image_doc/49/03%E6%97%A5%E6%9C%AC%E6%A9%9F%E8%83%BD%E6%80%A7%E8%A1%A8%E7%A4%BA%E9%A3%9F%E5%93%81%E5%88%B6%E5%BA%A6%E6%94%BF%E7%AD%96%E5%88%86%E6%9E%90.pdf)  
-07.財團法人農業科技研究院/張聆真/[解析日本機能保健營養產品市場概況](file:///C:/Users/Sun/Desktop/%E8%A7%A3%E6%9E%90%E6%97%A5%E6%9C%AC%E6%A9%9F%E8%83%BD%E4%BF%9D%E5%81%A5%E7%87%9F%E9%A4%8A%E7%94%A2%E5%93%81%E5%B8%82%E5%A0%B4%E6%A6%82%E6%B3%81_%E8%B2%A1%E5%9C%98%E6%B3%95%E4%BA%BA%E8%BE%B2%E6%A5%AD%E7%A7%91%E6%8A%80%E7%A0%94%E7%A9%B6%E9%99%A2%E7%94%A2%E6%A5%AD%E7%99%BC%E5%B1%95%E4%B8%AD%E5%BF%83_%E5%BC%B5%E8%81%86%E7%9C%9F.pdf)  
-08.台灣經濟研究院生物科技產業研究中心/劉依蓁/[美、韓保健食品健康宣稱政策分析](http://www.biotaiwan.org.tw/mag/image_doc/56/56-06%E7%BE%8E%E3%80%81%E9%9F%93%E4%BF%9D%E5%81%A5%E9%A3%9F%E5%93%81%E5%81%A5%E5%BA%B7%E5%AE%A3%E7%A8%B1%E6%94%BF%E7%AD%96%E5%88%86%E6%9E%90.pdf)  
-09.香港立法會秘書處資料研究及圖書館服務部/黃麗菁/[澳洲對藥物的規管](https://www.legco.gov.hk/yr00-01/chinese/library/crp15.pdf)  
+## 參考資料
+1.食品生技2007年第11期/許朝凱/[國內外保健食品管理制度概況](http://www.biotaiwan.org.tw/mag/image_doc/11/04%E5%9C%8B%E5%85%A7%E5%A4%96%E4%BF%9D%E5%81%A5%E9%A3%9F%E5%93%81%E7%AE%A1%E7%90%86%E5%88%B6%E5%BA%A6%E6%A6%82%E6%B3%81.pdf)  
+2.食品藥物管理署企劃及科技管理組/吳怡萱、黃維生、謝碧蓮、遲蘭慧/[健康宣稱之規範及管理制度](http://lawdata.com.tw/File/PDF/J993/A04990008_271.pdf)  
+3.財團法人醫藥敏查驗中心/温譽鈴/[各國健康食品之法規發展、管理制度及市場概況](https://www.cde.org.tw/Content/Files/Knowledge/2604fa74-643b-4dcb-8ab0-ac64006d6510.pdf)  
+4.台灣經濟研究院生物科技產業研究中心/劉依蓁/[國際政策趨勢：日本機能性標示制度介紹](http://www.biotaiwan.org.tw/download/structure4/%E5%8A%89%E4%BE%9D%E8%93%81/107/%E5%9C%8B%E9%9A%9B%E6%94%BF%E7%AD%96%E8%B6%A8%E5%8B%A2%EF%BC%9A%E6%97%A5%E6%9C%AC%E6%A9%9F%E8%83%BD%E6%80%A7%E6%A8%99%E7%A4%BA%E5%88%B6%E5%BA%A6%E4%BB%8B%E7%B4%B9%20\(201711\).pdf)  
+5.台灣經濟研究院生物科技產業研究中心/劉依蓁/[從日本新標示管理法規論我國機能性農產品發展策略](http://www.biotaiwan.org.tw/download/structure4/%E5%8A%89%E4%BE%9D%E8%93%81/105/5%E5%BE%9E%E6%97%A5%E6%9C%AC%E6%96%B0%E6%A8%99%E7%A4%BA%E7%AE%A1%E7%90%86%E6%B3%95%E8%A6%8F%E8%AB%96%E6%88%91%E5%9C%8B%E6%A9%9F%E8%83%BD%E6%80%A7%E8%BE%B2%E7%94%A2%E5%93%81%E7%99%BC%E5%B1%95%E7%AD%96%E7%95%A5%20\(201603\).pdf)  
+6.台灣經濟研究院生物科技產業研究中心/劉依蓁/[日本機能性表示食品制度政策分析](http://www.biotaiwan.org.tw/mag/image_doc/49/03%E6%97%A5%E6%9C%AC%E6%A9%9F%E8%83%BD%E6%80%A7%E8%A1%A8%E7%A4%BA%E9%A3%9F%E5%93%81%E5%88%B6%E5%BA%A6%E6%94%BF%E7%AD%96%E5%88%86%E6%9E%90.pdf)  
+7.財團法人農業科技研究院/張聆真/[解析日本機能保健營養產品市場概況](file:///C:/Users/Sun/Desktop/%E8%A7%A3%E6%9E%90%E6%97%A5%E6%9C%AC%E6%A9%9F%E8%83%BD%E4%BF%9D%E5%81%A5%E7%87%9F%E9%A4%8A%E7%94%A2%E5%93%81%E5%B8%82%E5%A0%B4%E6%A6%82%E6%B3%81_%E8%B2%A1%E5%9C%98%E6%B3%95%E4%BA%BA%E8%BE%B2%E6%A5%AD%E7%A7%91%E6%8A%80%E7%A0%94%E7%A9%B6%E9%99%A2%E7%94%A2%E6%A5%AD%E7%99%BC%E5%B1%95%E4%B8%AD%E5%BF%83_%E5%BC%B5%E8%81%86%E7%9C%9F.pdf)  
+8.台灣經濟研究院生物科技產業研究中心/劉依蓁/[美、韓保健食品健康宣稱政策分析](http://www.biotaiwan.org.tw/mag/image_doc/56/56-06%E7%BE%8E%E3%80%81%E9%9F%93%E4%BF%9D%E5%81%A5%E9%A3%9F%E5%93%81%E5%81%A5%E5%BA%B7%E5%AE%A3%E7%A8%B1%E6%94%BF%E7%AD%96%E5%88%86%E6%9E%90.pdf)  
+9.香港立法會秘書處資料研究及圖書館服務部/黃麗菁/[澳洲對藥物的規管](https://www.legco.gov.hk/yr00-01/chinese/library/crp15.pdf)  
 10.知乎/孙博士/[聊聊澳洲TGA对保健品的监管](https://zhuanlan.zhihu.com/p/90664926)
 
 喜歡我寫的內容嗎?  

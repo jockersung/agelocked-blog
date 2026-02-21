@@ -124,13 +124,13 @@ Phytochemicals哪些
 
 > [蔬菜攝取不夠怎麼辦？維他命 A B C D E F G 好多種，我怎麼補充才會足夠呢？](https://agelocked.com/%e8%94%ac%e8%8f%9c%e6%94%9d%e5%8f%96%e4%b8%8d%e5%a4%a0%e6%80%8e%e9%ba%bc%e8%be%a6%ef%bc%9f%e7%b6%ad%e4%bb%96%e5%91%bd-a-b-c-d-e-f-g-%e5%a5%bd%e5%a4%9a%e7%a8%ae%ef%bc%8c%e6%88%91%e6%80%8e%e9%ba%bc/)
 
-參考資料：  
-01.Uho優活健康網/[聽過維生素Ｐ嗎？新營養素還是唬人？](https://www.uho.com.tw/article-14273.html)  
-02.MedicineNet/Nazneen Memon/[P (Flavonoids): Overview, Benefits, and More](https://www.medicinenet.com/vitamin_p_flavonoids_overview_and_benefits/article.htm)  
-03\. ST. RUSZNYÁK & A. SZENT-GYÖRGYI, 1936. [P: Flavonols as Vitamins.](https://www.nature.com/articles/138027a0) _Nature_ 138, 27.  
-04\. I M Borisov, 1980. [Vitamin P in the nutrition of athletes.](https://pubmed.ncbi.nlm.nih.gov/7376551/) _Vopr Pitan._ (1):35-8.  
-05\. Wujun Chen, Shuai Wang, Yudong Wu, Xin Shen, Shutan Xu, Zhu Guo, Renshuai Zhang, Dongming Xing, 2020. [The Physiologic Activity and Mechanism of Quercetin-Like Natural Plant Flavonoids.](https://pubmed.ncbi.nlm.nih.gov/32048963/) _Curr Pharm Biotechnol._ 2020;21(8):654-658.  
-06.Wen-Harn Pan, Nai-Hua Yeh, Ray-Yu Yang, Wei-Hsuan Lin, Wan-Chen Wu, Wen-Ting Yeh, Mi-Kyung Sung, Haeng-Shin Lee, Sue-Joan Chang, Ching-Jang Huang, Bi-Fong Lin, and Meng-Tsan Chiang, 2018. [Vegetable, fruit, and phytonutrient consumption patterns in Taiwan.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9332634/) _J Food Drug Anal._ 26(1):145-153.
+## 參考資料
+1.Uho優活健康網/[聽過維生素Ｐ嗎？新營養素還是唬人？](https://www.uho.com.tw/article-14273.html)  
+2.MedicineNet/Nazneen Memon/[P (Flavonoids): Overview, Benefits, and More](https://www.medicinenet.com/vitamin_p_flavonoids_overview_and_benefits/article.htm)  
+3. ST. RUSZNYÁK & A. SZENT-GYÖRGYI, 1936. [P: Flavonols as Vitamins.](https://www.nature.com/articles/138027a0) _Nature_ 138, 27.  
+4. I M Borisov, 1980. [Vitamin P in the nutrition of athletes.](https://pubmed.ncbi.nlm.nih.gov/7376551/) _Vopr Pitan._ (1):35-8.  
+5. Wujun Chen, Shuai Wang, Yudong Wu, Xin Shen, Shutan Xu, Zhu Guo, Renshuai Zhang, Dongming Xing, 2020. [The Physiologic Activity and Mechanism of Quercetin-Like Natural Plant Flavonoids.](https://pubmed.ncbi.nlm.nih.gov/32048963/) _Curr Pharm Biotechnol._ 2020;21(8):654-658.  
+6.Wen-Harn Pan, Nai-Hua Yeh, Ray-Yu Yang, Wei-Hsuan Lin, Wan-Chen Wu, Wen-Ting Yeh, Mi-Kyung Sung, Haeng-Shin Lee, Sue-Joan Chang, Ching-Jang Huang, Bi-Fong Lin, and Meng-Tsan Chiang, 2018. [Vegetable, fruit, and phytonutrient consumption patterns in Taiwan.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9332634/) _J Food Drug Anal._ 26(1):145-153.
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  

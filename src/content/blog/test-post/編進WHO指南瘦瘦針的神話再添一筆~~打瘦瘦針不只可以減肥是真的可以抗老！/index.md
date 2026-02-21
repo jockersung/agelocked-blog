@@ -90,7 +90,6 @@ tags: ['健康', '抗衰老', '減重']
 ---
 
 ## 參考資料
- 
-01\. Francesca Celletti, Jeremy Farrar, Luz De Regil, 2025. [World Health Organization Guideline on the Use and Indications of Glucagon-Like Peptide-1 Therapies for the Treatment of Obesity in Adults.](https://pubmed.ncbi.nlm.nih.gov/41324410/) _JAMA._   
-02\. Junzhe Huang, Andrew J Kwok, Jason Chak Yan Li, Clement Lek Hin Chiu, Bonaventure Y Ip, Lok Yi Tung, Roy C H Chan, Danny C W Chan, Ziyu Wang, Xianyi Zheng, Hoi Tung Chow, Michelle P S Lo, Zhongqi Li, Nenghan Lin, Manyu Wang, Leo Y C Yan, William K K Wu, Kim Hei-Man Chow, Wei-Jye Lin, Yamei Tang, Yun Zhang, Weihong Song, Billy Wai-Lung Ng, Sunny H Wong, Thomas W Leung, Vincent C T Mok, Ho Ko, 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/41265449/) _Cell Metab._ 37(12):2362-2380.e8.
+1. Francesca Celletti, Jeremy Farrar, Luz De Regil, 2025. [World Health Organization Guideline on the Use and Indications of Glucagon-Like Peptide-1 Therapies for the Treatment of Obesity in Adults.](https://pubmed.ncbi.nlm.nih.gov/41324410/) _JAMA._   
+2. Junzhe Huang, Andrew J Kwok, Jason Chak Yan Li, Clement Lek Hin Chiu, Bonaventure Y Ip, Lok Yi Tung, Roy C H Chan, Danny C W Chan, Ziyu Wang, Xianyi Zheng, Hoi Tung Chow, Michelle P S Lo, Zhongqi Li, Nenghan Lin, Manyu Wang, Leo Y C Yan, William K K Wu, Kim Hei-Man Chow, Wei-Jye Lin, Yamei Tang, Yun Zhang, Weihong Song, Billy Wai-Lung Ng, Sunny H Wong, Thomas W Leung, Vincent C T Mok, Ho Ko, 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/41265449/) _Cell Metab._ 37(12):2362-2380.e8.
 

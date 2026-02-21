@@ -87,10 +87,10 @@ GeoSense app 實測結果
 
 健康壽命
 
-參考資料：  
-01.維基百科/[海佛烈克極限](https://zh.wikipedia.org/zh-tw/%E6%B5%B7%E4%BD%9B%E7%83%88%E5%85%8B%E6%A5%B5%E9%99%90)  
-02.知乎/時光派/[前沿｜Nature子刊：衰老从35岁开始，寿命极限在120-150岁间，步数能预测寿命…这篇业界大牛支持的文章还有多少重磅消息？](https://zhuanlan.zhihu.com/p/376731848)  
-03\. Timothy V Pyrkov, Konstantin Avchaciov, Andrei E Tarkhov, Leonid I Menshikov, Andrei V Gudkov, Peter O Fedichev, 2021. [Longitudinal analysis of blood markers reveals progressive loss of resilience and predicts human lifespan limit.](https://pubmed.ncbi.nlm.nih.gov/34035236/) _Nat Commun ._ 12(1):2765.
+## 參考資料
+1.維基百科/[海佛烈克極限](https://zh.wikipedia.org/zh-tw/%E6%B5%B7%E4%BD%9B%E7%83%88%E5%85%8B%E6%A5%B5%E9%99%90)  
+2.知乎/時光派/[前沿｜Nature子刊：衰老从35岁开始，寿命极限在120-150岁间，步数能预测寿命…这篇业界大牛支持的文章还有多少重磅消息？](https://zhuanlan.zhihu.com/p/376731848)  
+3. Timothy V Pyrkov, Konstantin Avchaciov, Andrei E Tarkhov, Leonid I Menshikov, Andrei V Gudkov, Peter O Fedichev, 2021. [Longitudinal analysis of blood markers reveals progressive loss of resilience and predicts human lifespan limit.](https://pubmed.ncbi.nlm.nih.gov/34035236/) _Nat Commun ._ 12(1):2765.
 
 最強抗衰老技術內容請看這一篇：
 

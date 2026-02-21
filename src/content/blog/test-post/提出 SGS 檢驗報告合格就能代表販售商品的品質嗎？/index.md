@@ -198,11 +198,11 @@ SGS 報告03
 
 > [成為 Nu Skin 自用會員超簡單，完全免費看圖就會！](https://agelocked.com/%e6%88%90%e7%82%ba-nu-skin-%e8%87%aa%e7%94%a8%e6%9c%83%e5%93%a1%e8%b6%85%e7%b0%a1%e5%96%ae%ef%bc%8c%e5%ae%8c%e5%85%a8%e5%85%8d%e8%b2%bb%e7%9c%8b%e5%9c%96%e5%b0%b1%e6%9c%83%ef%bc%81/)
 
-參考資料：  
-01.SGS安心資訊平台/[「認證」與「驗證」、「檢驗」與「測試」，您用對了嗎?](https://msn.sgs.com/Knowledge/FOOD/1347)  
-02.SGS安心資訊平台/[看懂SGS測試報告的十大細節!](https://msn.sgs.com/Knowledge/FOOD/3574)  
-03.風傳媒/[產品廣告寫「經SGS檢驗」是品質保證？內行人揭「背後真相」把SGS檢驗當賣點很可笑](https://www.storm.mg/lifestyle/734708?page=1)  
-04.環安傢俱/Jean/[3分鐘教你輕鬆看懂檢驗報告!!](https://www.hawoodtw.com/blogs/news/9675)
+## 參考資料
+1.SGS安心資訊平台/[「認證」與「驗證」、「檢驗」與「測試」，您用對了嗎?](https://msn.sgs.com/Knowledge/FOOD/1347)  
+2.SGS安心資訊平台/[看懂SGS測試報告的十大細節!](https://msn.sgs.com/Knowledge/FOOD/3574)  
+3.風傳媒/[產品廣告寫「經SGS檢驗」是品質保證？內行人揭「背後真相」把SGS檢驗當賣點很可笑](https://www.storm.mg/lifestyle/734708?page=1)  
+4.環安傢俱/Jean/[3分鐘教你輕鬆看懂檢驗報告!!](https://www.hawoodtw.com/blogs/news/9675)
 
 喜歡我寫的內容嗎?  
 請點選加入如新保健品專家ageLOC坤專區告訴我你的感想與評論 👇👇👇👇  
