@@ -89,7 +89,7 @@ const { title, description, pubDate, updatedDate, heroImage, headings = [], rela
 
 	.post-layout {
 		display: grid;
-		grid-template-columns: 1fr 280px;
+		grid-template-columns: minmax(0, 1fr) 280px;
 		gap: 3rem;
 		align-items: start;
 	}
@@ -99,6 +99,8 @@ const { title, description, pubDate, updatedDate, heroImage, headings = [], rela
 		max-width: 100%;
 		margin: auto;
 		padding: 1em;
+		overflow-wrap: break-word;
+		word-break: break-word;
 	}
 
 	.title {
@@ -135,7 +137,7 @@ const { title, description, pubDate, updatedDate, heroImage, headings = [], rela
 
 	@media (max-width: 1100px) {
 		.post-layout {
-			grid-template-columns: 1fr;
+			grid-template-columns: minmax(0, 1fr);
 			gap: 0;
 		}
 
