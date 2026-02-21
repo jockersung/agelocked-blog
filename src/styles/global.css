@@ -159,13 +159,14 @@ article table {
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  white-space: nowrap;
 }
 
 .prose table td,
-article table td {
+article table td,
+.prose table th,
+article table th {
+  min-width: 100px;
   white-space: normal;
-  min-width: 120px;
 }
 
 /* ── 4. Header / Nav ── */
