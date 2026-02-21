@@ -1,7 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import profileImg from './profile.webp';
 
 const title = '關於我 — 孫義坤';
 const description = '陽明交通大學應用化學、清華大學分子醫學背景，15年健康領域經驗，專注抗衰老科學與高效能恢復。';
@@ -19,9 +21,37 @@ const description = '陽明交通大學應用化學、清華大學分子醫學�
       }
 
       .about-header {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
         margin-bottom: 3.5rem;
         padding-bottom: 2.5rem;
         border-bottom: 1px solid rgba(30,70,100,0.10);
+      }
+      .about-header-text {
+        flex: 1;
+      }
+      .about-photo {
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+        border: 3px solid rgba(26,140,130,0.25);
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      }
+      @media (max-width: 640px) {
+        .about-header {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          gap: 1.5rem;
+        }
+        .about-photo {
+          width: 120px;
+          height: 120px;
+          align-self: center;
+        }
       }
 
       .about-eyebrow {
@@ -224,13 +254,16 @@ const description = '陽明交通大學應用化學、清華大學分子醫學�
 
       <!-- Header -->
       <div class="about-header">
-        <div class="about-eyebrow">About</div>
-        <h1 class="about-name">孫義坤</h1>
-        <div class="about-credentials">
-          <span class="credential">陽明交通大學 應用化學系</span>
-          <span class="credential">清華大學 分子醫學研究所</span>
-          <span class="credential">健康領域 15 年經驗</span>
+        <div class="about-header-text">
+          <div class="about-eyebrow">About</div>
+          <h1 class="about-name">孫義坤</h1>
+          <div class="about-credentials">
+            <span class="credential">陽明交通大學 應用化學系</span>
+            <span class="credential">清華大學 分子醫學研究所</span>
+            <span class="credential">健康領域 15 年經驗</span>
+          </div>
         </div>
+        <Image src={profileImg} alt="孫義坤" class="about-photo" width={200} height={200} />
       </div>
 
       <!-- 我的故事 -->
