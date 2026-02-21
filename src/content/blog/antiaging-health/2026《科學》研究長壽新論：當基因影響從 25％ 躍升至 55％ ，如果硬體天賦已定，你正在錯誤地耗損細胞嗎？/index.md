@@ -280,7 +280,7 @@ Open AI 即將推出「ChatGPT 健康」，這是一個專為健康打造的獨�
 
 ---
 
-**參考資料
+## 參考資料
   
 01\. L HAYFLICK, P S MOORHEAD, 1961\.[The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.  
 02\. J F Fries, 1980\. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.  

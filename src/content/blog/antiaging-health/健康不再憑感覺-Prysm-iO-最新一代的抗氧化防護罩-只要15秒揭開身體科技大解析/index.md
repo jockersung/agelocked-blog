@@ -5,7 +5,7 @@ pubDate: 2026-02-12T14:49:27+08:00
 tags: ['抗氧化', '科技', 'Prysm-iO']
 ---
 
-![健康不再憑感覺](./健康不再憑感覺.webp)
+![健康不再憑感覺](./健康不再憑感覺.png)
 
 
 你是否也曾有過這樣的疑惑：
@@ -447,7 +447,7 @@ Prysm iO 不僅是一台儀器，它更是一個**動力引擎**。
 
 ---
 
-**參考資料
+## 參考資料
   
 01\. T R Hata, T A Scholz, I V Ermakov, R W McClane, F Khachik, W Gellermann, L K Pershing, 2000\. [Non-invasive raman spectroscopic detection of carotenoids in human skin.](https://pubmed.ncbi.nlm.nih.gov/10951281/) *J Invest Dermatol.* 115(3):441-8.  
 02\. Igor V Ermakov, Maia R Ermakova, Werner Gellermann, Jürgen Lademann, 2004\. [Noninvasive selective detection of lycopene and beta-carotene in human skin using Raman spectroscopy.](https://pubmed.ncbi.nlm.nih.gov/15065899/) *J Biomed Opt.* 9(2):332-8.  
