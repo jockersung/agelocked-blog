@@ -124,6 +124,50 @@ img {
   border-radius: 2px;
 }
 
+/* ── 表格 ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+th, td {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--surface);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+tr:nth-child(even) td {
+  background: rgba(30, 70, 100, 0.02);
+}
+
+/* 手機上表格可橫向捲動 */
+.prose table,
+article table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.prose table td,
+article table td {
+  white-space: normal;
+  min-width: 120px;
+}
+
 /* ── 4. Header / Nav ── */
 header {
   position: sticky;
@@ -175,6 +219,27 @@ main {
 @media (max-width: 640px) {
   main {
     padding: 1.5rem 1.2rem 4rem;
+  }
+
+  h1 { font-size: clamp(1.5rem, 6vw, 2rem); }
+  h2 { font-size: clamp(1.25rem, 5vw, 1.7rem); }
+  h3 { font-size: 1.15rem; }
+
+  blockquote {
+    padding: 0.9rem 1rem;
+    margin: 1.25rem 0;
+  }
+
+  pre {
+    padding: 1rem;
+    font-size: 0.82rem;
+    border-radius: 0;
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+  }
+
+  article {
+    font-size: 0.97rem;
   }
 }
 
