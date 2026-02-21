@@ -35,7 +35,7 @@ tags: ['聽力退化', '抗衰老', '失智']
 
 聽力退化不僅是感官系統的生理衰變，更與認知能力下降、失智症風險增加、憂鬱症、跌倒風險以及社交隔離有著密切的流行病學關聯 。
 
-> **因為「聽不到又不好意思麻煩別人」就是自己把自己跟別人隔離的開始。
+> **因為「聽不到又不好意思麻煩別人」就是自己把自己跟別人隔離的開始。**
 
 ![蛤](./蛤.webp)
 
@@ -92,7 +92,7 @@ tags: ['聽力退化', '抗衰老', '失智']
 自由基對耳蝸細胞的具體破壞路徑如下：
 
 * **脂質過氧化 (Lipid Peroxidation)：** ROS 攻擊細胞膜與粒線體膜上的多不飽和脂肪酸，產生 4-羥基壬烯醛（4-HNE）等有毒產物，破壞膜的完整性並引發連鎖反應。
-* **蛋白質變性：**氧化修飾會改變關鍵酶（如呼吸鏈複合體）與結構蛋白的功能，導致代謝效率進一步降低。
+* **蛋白質變性：** 氧化修飾會改變關鍵酶（如呼吸鏈複合體）與結構蛋白的功能，導致代謝效率進一步降低。
 * **DNA 斷裂：** ROS 直接誘導核 DNA 與粒線體 DNA 發生氧化損傷及股斷裂，這在缺乏組蛋白保護的 mtDNA 中尤為嚴重。
 
 ---
@@ -180,7 +180,7 @@ tags: ['聽力退化', '抗衰老', '失智']
 
 結論很明確：**能不能維持 Nrf2 的活性，直接決定你耳朵的壽命。**
 
-![Nrf2 訊號通路](Nrf2 訊號通路.webp)
+![Nrf2訊號通路](./Nrf2訊號通路.webp)
 
 ---
 
@@ -241,7 +241,7 @@ B12 缺乏會導致同半胱胺酸（Homocysteine）水平升高，這與血管�
 
 先說清楚：目前沒有任何東西能「逆轉」已死亡的毛細胞。
 
-所有介入的目標都是**「減緩損耗速度」**——讓你的磚頭少掉得慢一點。
+所有介入的目標都是 **「減緩損耗速度」** ——讓你的磚頭少掉得慢一點。
 
 以下是目前科學研究中，對耳蝸有保護效果、證據最強的幾個選項：
 
@@ -318,9 +318,9 @@ CoQ10 的良好食物來源，同時富含 Omega-3，有助改善內耳血流。
 01. Someya S. et al. , 2009.  [Age-related hearing loss in C57BL/6J mice is mediated by Bak-dependent mitochondrial apoptosis.](https://www.pnas.org/doi/10.1073/pnas.0908786106) *PNAS* 106(46), 19432–19437.
 02. Oishi T. et al. , 2020. [ Activation of the NRF2 pathway in Keap1-knockdown mice attenuates progression of age-related hearing loss.](https://www.nature.com/articles/s41514-020-00053-4) *npj Aging and Mechanisms of Disease* 6, 14.
 03. Bauer M.A. et al. , 2024. [L-Ergothioneine slows the progression of age-related hearing loss in CBA/CaJ mice.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11112832/) * Hearing Research* 446, 109004.
-04. Doostkam A., Malekmakan L. et al. , 2024. [The effectiveness of curcumin as a safe agent on hearing threshold improvement in patients with chronic kidney disease: a double-blind, placebo-controlled trial.](https://www.nature.com/articles/s41598-024-68572-8) * Scientific Reports* 14, 17576.
+04. Doostkam A., Malekmakan L. et al. , 2024. [The effectiveness of curcumin as a safe agent on hearing threshold improvement in patients with chronic kidney disease: a double-blind, placebo-controlled trial.](https://www.nature.com/articles/s41598-024-68572-8) *Scientific Reports* 14, 17576.
 05. Li N. et al. , 2023. [Curcumin protects against the age-related hearing loss by attenuating apoptosis and senescence via activating Nrf2 signaling in cochlear hair cells.](https://pubmed.ncbi.nlm.nih.gov/37334787/) *Biochemical Pharmacology* 212, 115575.
-06. Kyu-Yup Lee, 2013. [Pathophysiology of age-related hearing loss (peripheral and central).](https://pubmed.ncbi.nlm.nih.gov/24653905/) *Korean J Audiol.*17(2):45-9.
+06. Kyu-Yup Lee, 2013. [Pathophysiology of age-related hearing loss (peripheral and central).](https://pubmed.ncbi.nlm.nih.gov/24653905/) *Korean J Audiol.* 17(2):45-9.
 07. Sharon G Curhan et al. ,2019. [Prospective Study of Dietary Patterns and Hearing Threshold Elevation.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7217280/) *Am J Epidemiol.* 189(3):204–214.
 08. Xingxu Song et al., 2024. [Associations between Plant-Based Dietary Patterns and Sensory Impairments among Chinese Older Adults: Based on the Chinese Longitudinal Healthy Longevity Survey.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11493375/) *Gerontology.* 70(10):1042–1054.
 09.  Chisato Fujimoto,  Tatsuya Yamasoba, 2014. [Oxidative Stresses and Mitochondrial Dysfunction in Age-Related Hearing Loss.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4106174/) *Oxid Med Cell Longev.* 2014:582849.
@@ -338,9 +338,9 @@ CoQ10 的良好食物來源，同時富含 Omega-3，有助改善內耳血流。
 21. James D B O'Sullivan et al., 2024. [Mitochondrial dynamics regulate cell morphology in the developing cochlea.](https://pubmed.ncbi.nlm.nih.gov/39120083/) *Development.* 151(15):dev202845. 
 22. Mark A Bauer et al., 2025. [L-Ergothioneine Slows the Progression of Age-related Hearing Loss in CBA/CaJ Mice.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11112832/) *Hear Res.*  446:109004.
 23. C G Le Prell et al., 2011. [Nutrient-Enhanced Diet Reduces Noise-Induced Damage to the Inner Ear and Hearing Loss.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3132794/) *Transl Res.* 158(1):38–53. 
-24.  Colleen G Le Prell et al., 2007. [Free radical scavengers, vitamins A, C, and E, plus magnesium reduces noise trauma.](https://pmc.ncbi.nlm.nih.gov/articles/PMC1950331/) *Free Radic Biol Med.* 42(9):1454–1463.
-25. Su Young Jung et al., 2019. [ Association of Nutritional Factors with Hearing Loss.]()* Nutrients.* 11(2):307.
+24. Colleen G Le Prell et al., 2007. [Free radical scavengers, vitamins A, C, and E, plus magnesium reduces noise trauma.](https://pmc.ncbi.nlm.nih.gov/articles/PMC1950331/) *Free Radic Biol Med.* 42(9):1454–1463.
+25. Su Young Jung et al., 2019. [Association of Nutritional Factors with Hearing Loss.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6412883/) *Nutrients.* 11(2):307.
 26.  Wang Lu et al., 2025. [Protective effects of dietary nutrients on hearing loss: a systematic review and meta-analysis.](https://pmc.ncbi.nlm.nih.gov/articles/PMC12100664/) *Front Nutr.* 12:1528771. 
-27. Zhongming Zhou , Yanyan Han, 2024. [Association between oxidative balance score and hearing loss: a cross-sectional study from the NHANES database.](https://pubmed.ncbi.nlm.nih.gov/38812938/) *Front Nutr. * 11:1375545.
+27. Zhongming Zhou , Yanyan Han, 2024. [Association between oxidative balance score and hearing loss: a cross-sectional study from the NHANES database.](https://pubmed.ncbi.nlm.nih.gov/38812938/) *Front Nutr.* 11:1375545.
 28. Milad Abbasi et al., 2021. [Protective effects of vitamins/antioxidants on occupational noise-induced hearing loss: A systematic review.](https://pubmed.ncbi.nlm.nih.gov/33788342/) *J Occup Health.* 63(1):e12217.
-29. Agnieszka J. Szczepek, Heidi Olze1, 2026. [Coenzyme Q10 in Hearing Disorders: Replacement Therapy in Mitochondrial Deafness and Neuroprotective Use in Acquired Hearing Loss.](https://www.mdpi.com/2504-463X/7/1/8)*J. Otorhinolaryngol. Hear. Balance Med.* 7(1), 8.
+29. Agnieszka J. Szczepek, Heidi Olze1, 2026. [Coenzyme Q10 in Hearing Disorders: Replacement Therapy in Mitochondrial Deafness and Neuroprotective Use in Acquired Hearing Loss.](https://www.mdpi.com/2504-463X/7/1/8) *J. Otorhinolaryngol. Hear. Balance Med.* 7(1), 8.
