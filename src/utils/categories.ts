@@ -2,7 +2,7 @@ export const CATEGORY_MAP: Record<string, string> = {
   'antiaging-health':   '抗衰老保健',
   'antiaging-skincare': '抗衰老保養',
   'ageloc-products':    '抗衰老產品',
-  'test-post':          '健康知識',
+  'test-post':          '網路行銷',
 };
 
 export function getCategorySlug(postId: string): string | null {
