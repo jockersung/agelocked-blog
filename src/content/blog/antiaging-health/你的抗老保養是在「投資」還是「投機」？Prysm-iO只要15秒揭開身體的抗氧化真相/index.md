@@ -237,9 +237,9 @@ HPLC 是一種精密的化學分離技術。
 
 **【測量方法演進史】**
 
-01. Parker RS, 1993. Analysis of carotenoids in human plasma and tissues. *Methods Enzymol.* 214:86–93. — HPLC 皮膚活組織切片黃金標準技術說明
+01. Parker RS, 1993. [Analysis of carotenoids in human plasma and tissues.](https://pubmed.ncbi.nlm.nih.gov/8469155/) *Methods Enzymol.* 214:86–93. — HPLC 皮膚活組織切片黃金標準技術說明
 02. T R Hata et al., 2000. [Non-invasive raman spectroscopic detection of carotenoids in human skin.](https://pubmed.ncbi.nlm.nih.gov/10951281/) *J Invest Dermatol.* 115(3):441-8. — **首篇確認拉曼光譜可非侵入性偵測人體皮膚類胡蘿蔔素**
-03. Igor V Ermakov et al., 2001. Resonance Raman detection of carotenoid antioxidants in living human tissues. *Opt Lett.* 26:1179–1181. — **首度確認活體人體組織中的共振拉曼偵測可行性**
+03. Igor V Ermakov et al., 2001. [Resonance Raman detection of carotenoid antioxidants in living human tissues.](https://pubmed.ncbi.nlm.nih.gov/16409093/) *Opt Lett.* 26:1179–1181. — **首度確認活體人體組織中的共振拉曼偵測可行性**
 04. Igor V Ermakov et al., 2004. [Noninvasive selective detection of lycopene and beta-carotene in human skin using Raman spectroscopy.](https://pubmed.ncbi.nlm.nih.gov/15065899/) *J Biomed Opt.* 9(2):332-8. — 實現茄紅素與 beta-胡蘿蔔素的選擇性分別識別
 05. Igor V Ermakov et al., 2005. [Resonance Raman detection of carotenoid antioxidants in living human tissue.](https://pubmed.ncbi.nlm.nih.gov/16409093/) *J Biomed Opt.* 10(6):064028. — 綜合評述 RRS 在活體偵測的應用
 06. Susan T Mayne et al., 2010. [Noninvasive assessment of dermal carotenoids as a biomarker of fruit and vegetable intake.](https://pubmed.ncbi.nlm.nih.gov/20685953/) *Am J Clin Nutr.* 92(4):794-800. — **372 人臨床驗證：皮膚數值穩定性優於血液 HPLC**
@@ -249,7 +249,7 @@ HPLC 是一種精密的化學分離技術。
 **【類胡蘿蔔素的抗氧化機制與皮膚防護】**
 
 09. Maxim E Darvin et al., 2009. [In vivo distribution of carotenoids in different anatomical locations of human skin.](https://pubmed.ncbi.nlm.nih.gov/19650865/) *Exp Dermatol.* 18(12):1060-3.
-10. Blume-Peytavi U et al., 2009. Cutaneous lycopene and beta-carotene levels measured by resonance Raman spectroscopy: high reliability and sensitivity to oral lactolycopene deprivation and supplementation. *Eur J Pharm Biopharm.* 73(1):187-94. — **雙盲實驗確認皮膚的「外周緩衝功能」**
+10. Blume-Peytavi U et al., 2009. Cutaneous lycopene and beta-carotene levels measured by resonance Raman spectroscopy: high reliability and sensitivity to oral lactolycopene deprivation and supplementation. (https://pubmed.ncbi.nlm.nih.gov/19442725/) *Eur J Pharm Biopharm.* 73(1):187-94. — **雙盲實驗確認皮膚的「外周緩衝功能」**
 
 **【最新 Prysm iO 驗證】**
 
