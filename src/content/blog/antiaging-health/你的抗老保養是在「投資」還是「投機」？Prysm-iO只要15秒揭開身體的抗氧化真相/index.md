@@ -249,7 +249,7 @@ HPLC 是一種精密的化學分離技術。
 **【類胡蘿蔔素的抗氧化機制與皮膚防護】**
 
 09. Maxim E Darvin et al., 2009. [In vivo distribution of carotenoids in different anatomical locations of human skin.](https://pubmed.ncbi.nlm.nih.gov/19650865/) *Exp Dermatol.* 18(12):1060-3.
-10. Blume-Peytavi U et al., 2009. Cutaneous lycopene and beta-carotene levels measured by resonance Raman spectroscopy: high reliability and sensitivity to oral lactolycopene deprivation and supplementation. (https://pubmed.ncbi.nlm.nih.gov/19442725/) *Eur J Pharm Biopharm.* 73(1):187-94. — **雙盲實驗確認皮膚的「外周緩衝功能」**
+10. Blume-Peytavi U et al., 2009. [Cutaneous lycopene and beta-carotene levels measured by resonance Raman spectroscopy: high reliability and sensitivity to oral lactolycopene deprivation and supplementation.] (https://pubmed.ncbi.nlm.nih.gov/19442725/) *Eur J Pharm Biopharm.* 73(1):187-94. — **雙盲實驗確認皮膚的「外周緩衝功能」**
 
 **【最新 Prysm iO 驗證】**
 
