@@ -191,7 +191,9 @@ HPLC 是一種精密的化學分離技術。
 
 為了確保檢測的科學嚴謹性，科學家不斷進行交叉比對：
 
-**2024 年研究：** Wu 等人的研究顯示，透過反射光譜（RS）測得的皮膚分數，與血液中主要類胡蘿蔔素（如 alpha-、beta-胡蘿蔔素、葉黃素等）的相關係數 **Pearson's r 達到 0.52 至 0.78**，顯示出中高度的正相關。
+**2025 年研究：** Wu 等人的研究顯示，透過反射光譜（RS）測得的皮膚分數，與血液中主要類胡蘿蔔素（如 alpha-、beta-胡蘿蔔素、葉黃素等）的相關係數 **Pearson's r 達到 0.52 至 0.78**，顯示出中高度的正相關。
+
+![Pearson係數](./Pearson係數.png)
 
 **2026 年最新驗證：** Riggs 與 Lephart 等學者於 2026 年初發表的最新研究 (*Food Nutr J*)，針對 Prysm iO 進行了專項驗證。
 
@@ -251,4 +253,5 @@ HPLC 是一種精密的化學分離技術。
 
 **【最新 Prysm iO 驗證】**
 
-11. Melanie Riggs et al., 2025. [Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans.](https://www.gavinpublishers.com/assets/articles_pdf/Validation-of-a-New-Non-invasive-Personalized-RS-Skin-Carotenoid-Scanner-Prysm-iO-versus-the-BioPhotonic-Scanner-S3-RRS-Device-for-Estimating-Carotenoid-Levels-in-Humans.pdf) *Food Nutr J.* 11: (1)1-5.  
+11. Stephanie B Jilcott Pittset al., 2025. [Two Spectroscopy Devices Can Approximate Fruit and Vegetable Intake in a Racially and Ethnically Diverse Sample.](https://cdn.nutrition.org/article/S2475-2991(25)02943-9/fulltext) *Curr Dev Nutr.* 9(7):107482.
+12. Melanie Riggs et al., 2025. [Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans.](https://www.gavinpublishers.com/assets/articles_pdf/Validation-of-a-New-Non-invasive-Personalized-RS-Skin-Carotenoid-Scanner-Prysm-iO-versus-the-BioPhotonic-Scanner-S3-RRS-Device-for-Estimating-Carotenoid-Levels-in-Humans.pdf) *Food Nutr J.* 11: (1)1-5.  
