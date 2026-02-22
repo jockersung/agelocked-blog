@@ -1,7 +1,7 @@
 export const CATEGORY_MAP: Record<string, string> = {
-  'antiaging-health':   '抗衰老保健',
-  'antiaging-skincare': '抗衰老保養',
-  'ageloc-products':    '抗衰老產品',
+  'antiaging-health':   '抗老保健',
+  'antiaging-skincare': '抗老保養',
+  'ageloc-products':    '抗老產品',
   'test-post':          '網路行銷',
 };
 
