@@ -135,7 +135,7 @@ Prysm iO 引入高光譜成像（HSI）與 Spectral Rai AI 演算法，在 15 �
 
 這也是為什麼我對這個工具有信心——不是因為它看起來很科技，而是因為我親眼看過這段歷史。
 
-> 想知道你的抗氧化儲備現在在哪個水位？[回到主篇了解 Prysm iO →](/blog/antiaging-health/你的抗老保養是在「投資」還是「投機」？Prysm-iO只要15秒揭開身體的抗氧化真相/index)
+> 想知道你的抗氧化儲備現在在哪個水位？[回到主篇了解 Prysm iO →](/blog/antiaging-health/你的抗老保養是在投資還是投機prysm-io只要15秒揭開身體的抗氧化真相)
 
 ---
 
