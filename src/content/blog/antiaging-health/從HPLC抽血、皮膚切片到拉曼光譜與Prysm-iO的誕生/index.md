@@ -1,5 +1,5 @@
 ---
-title: '【深度科普】從抽血到 15 秒掃描：人類花了二十年才解決的這個問題'
+title: '【深度科普】從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生'
 description: '完整還原抗氧化測量技術的五階段演化史——從 HPLC 抽血、皮膚切片，到拉曼光譜與 Prysm iO 的誕生'
 pubDate: 2026-02-23
 heroImage: './從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png'
