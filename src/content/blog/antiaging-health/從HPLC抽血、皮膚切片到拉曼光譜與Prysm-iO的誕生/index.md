@@ -149,9 +149,9 @@ Prysm iO 引入高光譜成像（HSI）與 Spectral Rai AI 演算法，在 15 �
 
 ## 參考資料
 
-01. Parker RS, 1993. Analysis of carotenoids in human plasma and tissues. *Methods Enzymol.* 214:86–93.
+01. Parker RS, 1993. [Analysis of carotenoids in human plasma and tissues.](https://pubmed.ncbi.nlm.nih.gov/8469155/) *Methods Enzymol.* 214:86–93.
 02. T R Hata et al., 2000. [Non-invasive raman spectroscopic detection of carotenoids in human skin.](https://pubmed.ncbi.nlm.nih.gov/10951281/) *J Invest Dermatol.* 115(3):441-8.
-03. Igor V Ermakov et al., 2001. Resonance Raman detection of carotenoid antioxidants in living human tissues. *Opt Lett.* 26:1179–1181.
+03. Igor V Ermakov et al., 2001. [Resonance Raman detection of carotenoid antioxidants in living human tissues.](https://pubmed.ncbi.nlm.nih.gov/16409093/) *Opt Lett.* 26:1179–1181.
 04. Igor V Ermakov et al., 2004. [Noninvasive selective detection of lycopene and beta-carotene in human skin using Raman spectroscopy.](https://pubmed.ncbi.nlm.nih.gov/15065899/) *J Biomed Opt.* 9(2):332-8.
 05. Igor V Ermakov et al., 2005. [Resonance Raman detection of carotenoid antioxidants in living human tissue.](https://pubmed.ncbi.nlm.nih.gov/16409093/) *J Biomed Opt.* 10(6):064028.
 06. Susan T Mayne et al., 2010. [Noninvasive assessment of dermal carotenoids as a biomarker of fruit and vegetable intake.](https://pubmed.ncbi.nlm.nih.gov/20685953/) *Am J Clin Nutr.* 92(4):794-800.
