@@ -1,5 +1,5 @@
 ---
-title: '【深度科普】從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生'
+title: '從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生'
 description: '完整還原抗氧化測量技術的五階段演化史——從 HPLC 抽血、皮膚切片，到拉曼光譜與 Prysm iO 的誕生'
 pubDate: 2026-02-23
 heroImage: './從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png'
@@ -135,7 +135,7 @@ Prysm iO 引入高光譜成像（HSI）與 Spectral Rai AI 演算法，在 15 �
 
 這也是為什麼我對這個工具有信心——不是因為它看起來很科技，而是因為我親眼看過這段歷史。
 
-> 想知道你的抗氧化儲備現在在哪個水位？[回到主篇了解 Prysm iO →](/blog/antiaging-health/你的抗老保養是在投資還是投機prysm-io只要15秒揭開身體的抗氧化真相)
+> 想知道你的抗氧化儲備現在在哪個水位？回到[你的抗老保養是在投資還是投機prysm-io只要15秒揭開身體的抗氧化真相](/blog/antiaging-health/你的抗老保養是在投資還是投機prysm-io只要15秒揭開身體的抗氧化真相)
 
 ---
 
