@@ -1,4 +1,4 @@
-----
+---
 title: '【會員限定】Galaxy Watch VS Prysm iO：科學流派大解密＋15 秒實測完整教學'
 description: '深入解析兩大科學流派的技術路線差異，以及 Prysm iO 的完整使用教學與健康計畫'
 pubDate: 2026-02-24
