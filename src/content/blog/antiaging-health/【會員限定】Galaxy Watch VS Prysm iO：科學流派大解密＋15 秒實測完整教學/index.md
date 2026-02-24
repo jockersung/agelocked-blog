@@ -49,7 +49,7 @@ memberOnly: true
 
 儘管兩位大師共享科學基礎，在將技術推向應用市場時，卻依據不同的應用場景，發展出兩條截然不同的技術路徑：
 
-* **【Gellermann 路線：高精度的專業評估】** Gellermann 博士追求的是「醫療級別的準確度」。 Gellermann 博士的研究方向以「醫療級量測準確度」為核心目標。其所開發的**「壓力介導反射光譜法（Pressure-mediated Reflectance Spectroscopy）」**成為 Prysm iO 裝置的技術基礎。  
+* **【Gellermann 路線：高精度的專業評估】** Gellermann 博士追求的是「醫療級別的準確度」。 Gellermann 博士的研究方向以「醫療級量測準確度」為核心目標。其所開發的**「按壓式反射光譜法（Pressure-mediated Reflectance Spectroscopy）」**成為 Prysm iO 裝置的技術基礎。  
   * **核心方法：** 藉由施加物理壓力於測量窗口，暫時排空指尖微血管中的血液。  
   * **方法學優勢：** 血液中的血紅蛋白是干擾光譜訊號的主要因素之一。透過壓力排血，可獲得干擾極低的類胡蘿蔔素光譜數據，此亦為 Prysm iO 採用「指尖測量」而非「手腕測量」的方法學依據。  
 * **【Lademann 路線：穿戴化的日常監測】** Lademann 教授的研究重點則在於技術的「微型化」與「穿戴整合」，其研究成果後來成為三星開發 BioActive 感應器的理論參考依據。  
