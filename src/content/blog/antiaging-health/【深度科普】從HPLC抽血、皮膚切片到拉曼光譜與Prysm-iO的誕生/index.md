@@ -71,6 +71,8 @@ HPLC 是一種精密的化學分離技術，流程是這樣的：
 **物理學家** Werner Gellermann 博士（專精雷射與光學）
 **眼科醫師** Paul S. Bernstein 醫師（視網膜專家）
 
+![Gellermann博士Bernstein醫師](./Gellermann博士Bernstein醫師.png)
+
 Bernstein 醫師的畢生研究目標，是對抗一種叫做**老年性黃斑部病變（AMD）**的眼疾。
 
 這種疾病會讓你視野的正中央逐漸變成一團黑影——想像你看書時，每個字的中心都是黑的。
@@ -306,7 +308,9 @@ Gellermann 博士創立了兩家公司（Nutriscan, Inc. 與 Caroderm, Inc.）�
 
 為了平息疑慮，技術需要完全中立的第三方權威驗證。
 
-最關鍵的背書來自**耶魯大學公共衛生學院**。這支由 Susan T. Mayne 博士、Brenda Cartmel 博士、Stephanie Scarmo 博士領導的團隊，在完全不受商業利益干涉的情況下，進行了嚴謹的臨床對比試驗。
+最關鍵的背書來自**耶魯大學公共衛生學院**。
+
+這支由 Susan T. Mayne 博士、Brenda Cartmel 博士、Stephanie Scarmo 博士領導的團隊，在完全不受商業利益干涉的情況下，進行了嚴謹的臨床對比試驗。
 
 他們對數百名受試者：
 - 進行傳統靜脈抽血
@@ -366,7 +370,7 @@ Gellermann 博士創立了兩家公司（Nutriscan, Inc. 與 Caroderm, Inc.）�
 
 **Veggie Meter®（蔬菜儀）：「擠壓」的智慧**
 
-Longevity Link 開發的產品叫 **Veggie Meter®**。
+Longevity Link 開發的產品叫 **Veggie Meter®**，由 Gellermann 博士與 **Igor Ermakov 博士**共同研製。
 
 這台儀器不配備 488 奈米雷射，取而代之的是一顆簡單、便宜的「寬頻白光燈泡」。
 
@@ -388,7 +392,7 @@ Longevity Link 開發的產品叫 **Veggie Meter®**。
 
 接著，儀器內部的演算法會自動微調，扣除每個人皮膚天生黑色素深淺不同的誤差。
 
-這項創新在 **2012 年**發表於《生物光子學雜誌》（*Journal of Biophotonics*）。經過 **33,000 人以上**的大數據校準，實現不論膚色深淺都能精準讀取。
+這項創新在 **2012 年**發表於《生物光子學雜誌》（*Journal of Biophotonics*）。經過多族群臨床驗證，確認不論膚色深淺皆能精準讀取——設備內建演算法會自動補償黑色素、殘餘血紅素與組織散射的干擾。
 
 ![veggie-meter](./veggie-meter.png)
 
@@ -424,6 +428,8 @@ Veggie Meter 不只是測量儀器，更成為評估國家公衛政策、追蹤�
 
 但工程師們面臨一個終極難題：
 
+**Prysm iO 的核心技術路徑，是直接建立在 Gellermann-Ermakov 陣營的壓力式反射光譜研究上。** 在血液干擾的處理策略上，Prysm iO 沿用了 Gellermann 的物理排血路徑；而柏林夏里特陣營（Lademann/Darvin）的 MSRRS 成果，則是 Galaxy Watch 的學術根基，兩條路線各有明確的技術傳承。
+
 > **怎麼在使用便宜、無雷射危險的「反射式白光硬體（RS）」的同時，獲得媲美昂貴「拉曼雷射光譜（RRS）」的黃金標準精確度？**
 
 為了解決這個看似不可能的矛盾，Nu Skin 在累積超過二十年研發實力後，於 2025 年發表了震撼業界的次世代智慧健康裝置：
@@ -443,8 +449,8 @@ Prysm iO 徹底拋棄了雷射發射器。
 **但 Prysm iO 的運作方式像一把光學散彈槍。**
 
 當你將食指輕觸在 Prysm iO 迷你掃描鏡頭上時，在短短 **15 秒**內：
-- 設備以每秒超過 15,000 次的速度採樣
-- 單次掃描捕捉高達 **234,000 個**獨立的高光譜光線吸收數據點
+- 設備以每秒超過 **6,000 次**的速度採樣
+- 單次掃描累積高達 **70,000+ 次**超光譜吸收測量
 
 這種高密度採樣，能極度細緻地描繪出白光在穿透表皮、角質層並與血管交錯時，各種波長被吸收與反射的複雜圖形。
 
@@ -472,7 +478,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 科學界對任何宣稱「靠軟體就能彌補硬體極限」的說法，向來嚴格懷疑。
 
-為此，在 **2025 年**，一份決定性的臨床驗證報告發表在《食品與營養學期刊》（*Food & Nutrition Journal*）。
+為此，在 **2026 年**，一份決定性的臨床驗證報告發表在《食品與營養學期刊》（*Food & Nutrition Journal*）。
 
 這項由 Melanie Riggs 博士、百翰楊大學的 Edwin Lephart 博士、Helen Knaggs 博士、Zoe D. Draelos 博士等重量級學者執行的研究，設計了一場終極對決：
 
@@ -513,7 +519,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 **Prysm iO 不是一個新發明，它是二十五年科學積累的終點。**
 
-每一個你看到的「15 秒」、「234,000 次擷取」、「2,100 萬筆數據」背後，都是真實的研究者用真實的受試者、一步一步驗證出來的。
+每一個你看到的「15 秒」、「70,000+ 次擷取」、「2,100 萬筆數據」背後，都是真實的研究者用真實的受試者、一步一步驗證出來的。
 
 這也是為什麼我對這個工具有信心——不是因為它看起來很科技，而是因為我親眼看過這段歷史。
 
@@ -526,9 +532,9 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 ## 參考資料
 
-01. Parker RS, 1993. Analysis of carotenoids in human plasma and tissues. *Methods Enzymol.* 214:86–93.
+01. Parker RS, 1993. [Analysis of carotenoids in human plasma and tissues.](https://pubmed.ncbi.nlm.nih.gov/8469155/) *Methods Enzymol.* 214:86–93.
 02. T R Hata et al., 2000. [Non-invasive raman spectroscopic detection of carotenoids in human skin.](https://pubmed.ncbi.nlm.nih.gov/10951281/) *J Invest Dermatol.* 115(3):441-8.
-03. Igor V Ermakov et al., 2001. Resonance Raman detection of carotenoid antioxidants in living human tissues. *Opt Lett.* 26:1179–1181.
+03. Igor V Ermakov et al., 2001. [Resonance Raman detection of carotenoid antioxidants in living human tissues.](https://pubmed.ncbi.nlm.nih.gov/16409093/) *Opt Lett.* 26:1179–1181.
 04. Paul S Bernstein et al., 2002. [Resonance Raman measurement of macular carotenoids in normal subjects and in age-related macular degeneration patients.](https://pubmed.ncbi.nlm.nih.gov/12359594/) *Ophthalmology.* 109(10):1780-7.
 05. Igor V Ermakov et al., 2004. [Noninvasive selective detection of lycopene and beta-carotene in human skin using Raman spectroscopy.](https://pubmed.ncbi.nlm.nih.gov/15065899/) *J Biomed Opt.* 9(2):332-8.
 06. Igor V Ermakov et al., 2005. [Resonance Raman detection of carotenoid antioxidants in living human tissue.](https://pubmed.ncbi.nlm.nih.gov/16409093/) *J Biomed Opt.* 10(6):064028.
@@ -536,4 +542,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 08. Igor V Ermakov, Werner Gellermann, 2010. [Validation model for Raman based skin carotenoid detection.](https://pubmed.ncbi.nlm.nih.gov/20678465/) *Arch Biochem Biophys.* 504(1):40-9.
 09. Igor V Ermakov, Werner Gellermann, 2012. [Dermal carotenoid measurements via pressure mediated reflection spectroscopy.](https://pubmed.ncbi.nlm.nih.gov/22331637/) *J Biophotonics.* 5(7):559-70.
 10. Susan T Mayne et al., 2013. [Resonance Raman spectroscopic evaluation of skin carotenoids as a biomarker of carotenoid status for human studies.](https://pubmed.ncbi.nlm.nih.gov/23823930/) *Arch Biochem Biophys.* 539(2):163-70.
-11. Melanie Riggs et al., 2025. [Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO).](https://www.gavinpublishers.com/assets/articles_pdf/Validation-of-a-New-Non-invasive-Personalized-RS-Skin-Carotenoid-Scanner-Prysm-iO-versus-the-BioPhotonic-Scanner-S3-RRS-Device-for-Estimating-Carotenoid-Levels-in-Humans.pdf) *Food Nutr J.* 11:(1)1-5.
+11. Melanie Riggs et al., 2026. [Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO).](https://www.gavinpublishers.com/assets/articles_pdf/Validation-of-a-New-Non-invasive-Personalized-RS-Skin-Carotenoid-Scanner-Prysm-iO-versus-the-BioPhotonic-Scanner-S3-RRS-Device-for-Estimating-Carotenoid-Levels-in-Humans.pdf) *Food Nutr J.* 11:(1)1-5.
+12. Jilcott Pitts SB et al., 2021. [Use of the Spectroscopy-Based Veggie Meter® to Objectively Assess Fruit and Vegetable Intake in Low-Income Adults.](https://pubmed.ncbi.nlm.nih.gov/34206978/) *Nutrients.* 13(7):2270.
+13. Maxim E Darvin, Björn Magnussen, Jürgen Lademann, Wolfgang Köcher, 2016. Multiple spatially resolved reflection spectroscopy for in vivo determination of carotenoids in human skin and blood. *Laser Phys. Lett.* 13(9):095601. doi:10.1088/1612-202X/13/9/095601
+14. Helen Knaggs, Edwin Lephart, 2025. [Global Lifetime Non-invasive Spectroscopy-based RRS Quantification of Skin Carotenoids Provides Evidence for Enhancing the Human Healthspan.](https://sciety.org/articles/activity/10.20944/preprints202507.0634.v1) *Adv Prev Med Health Care.* 8(2):1-35.
