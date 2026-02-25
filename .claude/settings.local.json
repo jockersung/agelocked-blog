@@ -24,7 +24,8 @@
       "Bash(tail:*)",
       "Bash(cd:*)",
       "Bash(grep:*)",
-      "Bash(grep Duplicate:*)"
+      "Bash(grep Duplicate:*)",
+      "Bash(cd /c/Users/user/Desktop/agelocked-blog && npx wrangler pages deploy dist --project-name agelocked-blog 2>&1)"
     ]
   }
 }

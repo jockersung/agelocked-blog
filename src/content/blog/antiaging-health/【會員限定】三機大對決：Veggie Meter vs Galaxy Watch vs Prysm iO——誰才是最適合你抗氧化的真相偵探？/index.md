@@ -116,13 +116,15 @@ Longevity Link 甚至將技術授權給 MacuHealth 公司，以「LifeMeter」�
 
 ### ⌚ 第二位選手：Galaxy Watch 8 ——日常生活的抗氧化哨兵
 
-**出身：** 三星電子，學術基礎源自 Lademann 教授與合作者 **Maxim Darvin 博士 **開創的「多路徑空間分辨反射光譜（MSRRS）」研究，2025 年整合至 Galaxy Watch 8 系列的 BioActive 感測器。
+**出身：** 三星電子，學術基礎源自 Lademann 教授與合作者 **Maxim Darvin 博士**開創的「多路徑空間分辨反射光譜（MSRRS）」研究，2025 年整合至 Galaxy Watch 8 系列的 BioActive 感測器。
 
 **技術哲學：「空間分辨派」**
 
 三星的解法不只是靠物理壓力排走血液，更利用硬體工程解決問題。
 
 Galaxy Watch 8 的 BioActive 感測器配備了 **118 個微型發射器與 152 個探測器**矩陣。
+
+![BioActive感測器](./BioActive感測器.png)
 
 這個龐大的硬體陣列能捕捉不同「源探距離」的反射光——短距離路徑代表淺層（表皮，類胡蘿蔔素所在），長距離路徑代表深層（真皮，血紅素所在）。
 
@@ -329,7 +331,7 @@ Prysm iO 是這條路線的現階段終點。
 
 **下一步：把你自己的數字拿出來。**
 
-→ [Prysm iO 15 秒實測教學：測完之後，你的分數代表什麼？](/blog/antiaging-health/你的prysm-io分數出來了這個數字對你意味著什麼)
+→ [Prysm iO 15 秒實測教學：測完之後，你的分數代表什麼？](/blog/antiaging-health/你的-prysm-io-分數出來了這個數字對你意味著什麼完整教學--六色分數全解析/)
 
 
 ## 參考資料
