@@ -185,7 +185,7 @@ Galaxy Watch 和 Prysm iO 都是「光打進皮膚、看反射回來的光」—
 
 透過同時分析 **18,000 條不同深淺的光路數據**，演算法用數學模型把「摻了血液的深層訊號」從總訊號裡扣除。
 
-> 你可以把它想成**「3D 超音波」**：不是直接切開看，而是透過光路的折射角度，推算不同深度的組織狀態。
+> 你可以把它想成 **「3D 超音波」**：不是直接切開看，而是透過光路的折射角度，推算不同深度的組織狀態。
 
 ---
 
@@ -353,4 +353,4 @@ Prysm iO 是這條路線的現階段終點。
 15. Akira Obana et al., 2024. [Association between atherosclerotic cardiovascular disease score and skin carotenoid levels.](https://pubmed.ncbi.nlm.nih.gov/38806551/) *Sci Rep.* 14(1):12173.
 16. Helen Knaggs, Edwin Lephart, 2025. [Global Lifetime Non-invasive Spectroscopy-based RRS Quantification of Skin Carotenoids Provides Evidence for Enhancing the Human Healthspan.](https://sciety.org/articles/activity/10.20944/preprints202507.0634.v1) *Adv Prev Med Health Care.* 8(2) 1-35.
 17. Melanie Riggs et al., 2026. [Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans.](https://www.gavinpublishers.com/assets/articles_pdf/Validation-of-a-New-Non-invasive-Personalized-RS-Skin-Carotenoid-Scanner-Prysm-iO-versus-the-BioPhotonic-Scanner-S3-RRS-Device-for-Estimating-Carotenoid-Levels-in-Humans.pdf) *Food Nutr J.* 11:(1)1-5.
-18. Maxim E Darvin, Björn Magnussen, Jürgen Lademann, Wolfgang Köcher, 2016. Multiple spatially resolved reflection spectroscopy for in vivo determination of carotenoids in human skin and blood. *Laser Phys. Lett.* 13(9):095601. doi:10.1088/1612-202X/13/9/095601
+18. Maxim E Darvin, Björn Magnussen, Jürgen Lademann, Wolfgang Köcher, 2016. [Multiple spatially resolved reflection spectroscopy for in vivo determination of carotenoids in human skin and blood.](https://iopscience.iop.org/article/10.1088/1612-2011/13/9/095601) *Laser Phys. Lett.* 13(9):095601. doi:10.1088/1612-202X/13/9/095601
