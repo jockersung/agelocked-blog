@@ -5,8 +5,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import profileImg from './profile.webp';
 
-const title = '關於我 — 孫義坤';
-const description = '陽明交通大學應用化學、清華大學分子醫學背景，15年健康領域經驗，專注抗衰老科學與高效能恢復。';
+const title = '關於孫義坤｜生物醫學專員，15年醫療研究背景';
+const description = '在醫療體系工作15年，見過太多高科技工作者把症狀一個一個分開處理，結果花了很多錢，問題還是一直輪流出現。我做的第一件事不是賣你產品，是先幫你找到真正的根本原因。';
 ---
 
 <!doctype html>
@@ -14,358 +14,470 @@ const description = '陽明交通大學應用化學、清華大學分子醫學�
   <head>
     <BaseHead title={title} description={description} />
     <style>
-      main {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 4rem 2rem 6rem;
+      :root {
+        --teal:      #1a8c82;
+        --teal-dark: #116b63;
+        --teal-pale: rgba(26,140,130,0.07);
+        --gold:      #b8935a;
+        --gold-pale: rgba(184,147,90,0.09);
+        --gold-mid:  rgba(184,147,90,0.20);
+        --ink:       #111820;
+        --body:      #3a4a58;
+        --muted:     #7a8fa0;
+        --border:    rgba(30,70,100,0.09);
+        --border-gold: rgba(184,147,90,0.20);
+        --bg:        #f8f9fb;
+        --bg-warm:   #faf8f5;
+        --bg2:       #ffffff;
+        --surface:   #f0f3f7;
       }
 
-      .about-header {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-        margin-bottom: 3.5rem;
-        padding-bottom: 2.5rem;
-        border-bottom: 1px solid rgba(30,70,100,0.10);
-      }
-      .about-header-text {
-        flex: 1;
-      }
-      .about-photo {
-        flex-shrink: 0;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: center top;
-        border: 3px solid rgba(26,140,130,0.25);
-        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-      }
-      @media (max-width: 640px) {
-        .about-header {
-          flex-direction: column-reverse;
-          align-items: flex-start;
-          gap: 1.5rem;
-        }
-        .about-photo {
-          width: 120px;
-          height: 120px;
-          align-self: center;
-        }
-      }
+      * { box-sizing: border-box; }
+      body { font-family: 'Noto Serif TC', serif; color: var(--body); background: var(--bg2); }
 
-      .about-eyebrow {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.68rem;
-        letter-spacing: 0.4em;
-        color: #1a8c82;
-        text-transform: uppercase;
-        margin-bottom: 1.2rem;
-        display: flex;
+      /* ── HERO ── */
+      .about-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6vw;
         align-items: center;
-        gap: 0.8rem;
+        padding: 7rem 6vw 5rem;
+        background: var(--bg2);
+        position: relative;
+        overflow: hidden;
       }
-      .about-eyebrow::before {
+      .about-hero::before {
         content: '';
-        width: 20px;
-        height: 1px;
-        background: #1a8c82;
+        position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 50% 60% at 85% 30%, rgba(26,140,130,0.06) 0%, transparent 65%),
+                    radial-gradient(ellipse 30% 40% at 5% 80%, rgba(184,147,90,0.05) 0%, transparent 60%);
       }
-
+      .hero-eyebrow {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.66rem; letter-spacing: 0.4em;
+        color: var(--gold); text-transform: uppercase;
+        display: flex; align-items: center; gap: 0.8rem;
+        margin-bottom: 1.6rem;
+      }
+      .hero-eyebrow::before { content: ''; width: 22px; height: 1px; background: var(--gold); }
       .about-name {
         font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(2.4rem, 5vw, 3.8rem);
-        font-weight: 300;
-        line-height: 1.1;
-        color: #111820;
-        margin: 0 0 0.8rem;
+        font-size: clamp(2.8rem, 5vw, 4.2rem);
+        font-weight: 300; line-height: 1.1; color: var(--ink);
+        margin: 0 0 0.5rem;
       }
+      .about-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.25rem; font-weight: 300; font-style: italic;
+        color: var(--teal); margin-bottom: 1.8rem;
+      }
+      .hero-divider { width: 36px; height: 1.5px; background: var(--gold); margin-bottom: 1.8rem; }
+      .about-tagline {
+        font-size: 1.05rem; font-weight: 300; color: var(--body);
+        line-height: 2; max-width: 420px;
+      }
+      .about-tagline strong { color: var(--ink); font-weight: 500; }
 
+      /* 照片側 */
+      .about-photo-wrap { position: relative; }
+      .about-photo {
+        width: 100%; max-width: 340px;
+        aspect-ratio: 1; object-fit: cover; object-position: center top;
+        border-radius: 2px;
+        border: 1px solid var(--border-gold);
+        box-shadow: 8px 8px 0 var(--gold-pale);
+        display: block; margin-left: auto;
+      }
       .about-credentials {
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-        margin-top: 1rem;
+        margin-top: 1.8rem;
+        display: flex; flex-direction: column; gap: 0.5rem;
       }
       .credential {
         font-family: 'DM Mono', monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.12em;
-        color: #7a8fa0;
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
+        font-size: 0.7rem; letter-spacing: 0.13em; color: var(--muted);
+        display: flex; align-items: center; gap: 0.7rem;
       }
-      .credential::before {
-        content: '◆';
-        font-size: 0.4rem;
-        color: #1a8c82;
-      }
+      .credential::before { content: '◆'; font-size: 0.38rem; color: var(--teal); }
 
-      .about-section {
-        margin-bottom: 3rem;
-      }
+      /* ── STORY SECTION ── */
+      .story-wrap { max-width: 760px; margin: 0 auto; padding: 6rem 6vw; }
 
       .section-label {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem;
-        letter-spacing: 0.38em;
-        color: #1a8c82;
-        text-transform: uppercase;
-        margin-bottom: 1.2rem;
+        font-size: 0.65rem; letter-spacing: 0.4em;
+        color: var(--teal); text-transform: uppercase;
+        display: flex; align-items: center; gap: 0.8rem;
+        margin-bottom: 1.4rem;
       }
+      .section-label::before { content: '◆'; font-size: 0.38rem; }
 
-      .about-section h2 {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.8rem;
-        font-weight: 400;
-        color: #111820;
-        margin: 0 0 1rem;
-        line-height: 1.2;
-      }
-
-      .about-section p {
-        font-size: 0.97rem;
-        color: #3a4a58;
-        line-height: 2;
-        font-weight: 300;
-        margin-bottom: 1rem;
-      }
-
-      .pain-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-        margin: 1.5rem 0;
-      }
-      .pain-item {
-        display: flex;
-        gap: 1rem;
-        padding: 0.9rem 1.2rem;
-        background: #f8f9fb;
-        border: 1px solid rgba(30,70,100,0.08);
-        border-left: 2.5px solid #1a8c82;
-        font-size: 0.9rem;
-        color: #3a4a58;
-        font-weight: 300;
-        line-height: 1.6;
-      }
-      .pain-item strong {
-        color: #111820;
-        font-weight: 400;
-      }
-
-      .target-card {
-        padding: 2rem;
-        background: rgba(26,140,130,0.06);
-        border: 1.5px solid rgba(26,140,130,0.2);
-        border-radius: 2px;
-        margin-top: 1.5rem;
-      }
-      .target-card p {
-        margin: 0;
-        font-size: 0.92rem;
-        color: #3a4a58;
-        line-height: 2;
-      }
-
-      .topics-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        margin-top: 1.5rem;
-      }
-      .topic {
-        padding: 1.3rem 1.5rem;
-        background: #ffffff;
-        border: 1px solid rgba(30,70,100,0.10);
-        border-radius: 2px;
-        font-size: 0.88rem;
-        color: #3a4a58;
-        font-weight: 300;
-        transition: border-color 0.2s;
-      }
-      .topic:hover { border-color: #1a8c82; }
-      .topic strong {
-        display: block;
-        color: #111820;
-        font-weight: 400;
-        margin-bottom: 0.3rem;
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.1rem;
-      }
-
-      .contact-section {
-        margin-top: 3.5rem;
-        padding-top: 2.5rem;
-        border-top: 1px solid rgba(30,70,100,0.10);
-      }
-      .contact-links {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-top: 1.5rem;
-      }
-      .contact-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.6rem;
-        padding: 0.8rem 1.8rem;
+      .section-label-gold {
         font-family: 'DM Mono', monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        text-decoration: none;
-        border-radius: 2px;
-        transition: all 0.25s;
+        font-size: 0.65rem; letter-spacing: 0.4em;
+        color: var(--gold); text-transform: uppercase;
+        display: flex; align-items: center; gap: 0.8rem;
+        margin-bottom: 1.4rem;
       }
-      .contact-btn-solid {
-        background: #1a8c82;
-        color: #fff;
-        border: 1.5px solid #1a8c82;
+      .section-label-gold::before { content: '◆'; font-size: 0.38rem; }
+
+      .section-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        font-weight: 300; line-height: 1.25; color: var(--ink);
+        margin: 0 0 1.4rem;
       }
-      .contact-btn-solid:hover {
-        background: #116b63;
-        border-color: #116b63;
-        border-bottom: 1.5px solid #116b63;
-        color: #fff;
+      .section-title em { font-style: italic; color: var(--teal); }
+
+      .body-text {
+        font-size: 0.97rem; color: var(--body);
+        line-height: 2.2; font-weight: 300; margin-bottom: 1.2rem;
       }
-      .contact-btn-outline {
-        background: transparent;
-        color: #1a8c82;
-        border: 1.5px solid #1a8c82;
-      }
-      .contact-btn-outline:hover {
-        background: rgba(26,140,130,0.08);
-        border-bottom: 1.5px solid #1a8c82;
-        color: #1a8c82;
+      .body-text:last-child { margin-bottom: 0; }
+      .body-text strong { color: var(--ink); font-weight: 500; }
+
+      .divider { border: none; border-top: 1px solid var(--border); margin: 4rem 0; }
+
+      /* 引用塊 */
+      .pullquote {
+        border-left: 3px solid var(--gold);
+        padding: 1.4rem 2rem;
+        background: var(--gold-pale);
+        margin: 2.4rem 0;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.25rem; font-style: italic;
+        color: var(--ink); line-height: 1.75;
       }
 
-      hr.divider {
-        border: none;
-        border-top: 1px solid rgba(30,70,100,0.10);
-        margin: 3rem 0;
+      /* 觀察清單 */
+      .observe-list { display: flex; flex-direction: column; gap: 0.7rem; margin: 2rem 0; }
+      .observe-item {
+        display: flex; gap: 1rem;
+        padding: 1rem 1.4rem;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-left: 2.5px solid var(--teal);
+        font-size: 0.91rem; color: var(--body); font-weight: 300; line-height: 1.75;
+        border-radius: 0 2px 2px 0;
+      }
+      .observe-item strong { color: var(--ink); font-weight: 500; }
+
+      /* 方式比較 */
+      .approach-compare {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+        margin: 2rem 0;
+      }
+      .approach-card {
+        padding: 1.6rem 1.8rem;
+        background: var(--bg); border: 1px solid var(--border);
+        border-radius: 2px; font-size: 0.88rem; font-weight: 300;
+        color: var(--body); line-height: 1.9;
+      }
+      .approach-card.mine {
+        background: var(--teal-pale);
+        border-color: var(--teal); border-top: 2.5px solid var(--teal);
+      }
+      .approach-card-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.62rem; letter-spacing: 0.25em;
+        color: var(--muted); text-transform: uppercase;
+        margin-bottom: 0.6rem;
+      }
+      .approach-card.mine .approach-card-label { color: var(--teal); }
+      .approach-card-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.2rem; font-weight: 400; color: var(--ink);
+        margin-bottom: 0.7rem;
+      }
+
+      /* 主題格 */
+      .topics-section { padding: 5rem 6vw; background: var(--bg-warm); }
+      .topics-inner { max-width: 760px; margin: 0 auto; }
+      .topics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+      .topic {
+        padding: 1.4rem 1.6rem;
+        background: var(--bg2); border: 1px solid var(--border);
+        border-radius: 2px; font-size: 0.88rem; color: var(--body);
+        font-weight: 300; line-height: 1.75; transition: border-color 0.2s, background 0.2s;
+      }
+      .topic:hover { border-color: var(--teal); background: var(--teal-pale); }
+      .topic strong {
+        display: block; color: var(--ink); font-weight: 400;
+        margin-bottom: 0.3rem;
+        font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
+      }
+
+      /* CTA 區 */
+      .contact-section {
+        padding: 6rem 6vw; background: var(--ink);
+        text-align: center; position: relative; overflow: hidden;
+      }
+      .contact-section::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(26,140,130,0.14) 0%, transparent 70%);
+      }
+      .contact-inner { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
+      .contact-label {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem;
+        letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase;
+        margin-bottom: 1.6rem;
+      }
+      .contact-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300;
+        line-height: 1.2; color: #fff; margin-bottom: 1.2rem;
+      }
+      .contact-title em { font-style: italic; color: #6de8df; }
+      .contact-sub {
+        font-size: 0.95rem; color: rgba(255,255,255,0.5);
+        line-height: 2.1; font-weight: 300; margin-bottom: 2.8rem;
+      }
+      .contact-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+      .btn-teal {
+        padding: 1rem 2.6rem; background: var(--teal); color: #fff;
+        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em;
+        text-transform: uppercase; border-radius: 2px; text-decoration: none;
+        transition: all 0.3s; display: inline-block;
+      }
+      .btn-teal:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(26,140,130,0.35); border-bottom: none; color: #fff; }
+      .btn-outline {
+        padding: 1rem 2.2rem; background: transparent;
+        color: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.22);
+        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em;
+        text-transform: uppercase; border-radius: 2px; text-decoration: none;
+        transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
+      }
+      .btn-outline:hover { border-color: rgba(255,255,255,0.55); color: #fff; border-bottom-color: rgba(255,255,255,0.55); }
+      .contact-note {
+        margin-top: 1.8rem;
+        font-family: 'DM Mono', monospace; font-size: 0.62rem;
+        letter-spacing: 0.2em; color: rgba(255,255,255,0.28);
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 760px) {
+        .about-hero { grid-template-columns: 1fr; padding: 5rem 5vw 4rem; }
+        .about-photo { max-width: 220px; margin: 0 auto; }
+        .approach-compare { grid-template-columns: 1fr; }
+        .topics-grid { grid-template-columns: 1fr; }
       }
     </style>
   </head>
   <body>
     <Header />
-    <main>
 
-      <!-- Header -->
-      <div class="about-header">
-        <div class="about-header-text">
-          <div class="about-eyebrow">About</div>
-          <h1 class="about-name">孫義坤</h1>
-          <div class="about-credentials">
-            <span class="credential">陽明交通大學 應用化學系</span>
-            <span class="credential">清華大學 分子醫學研究所</span>
-            <span class="credential">健康領域 15 年經驗</span>
-          </div>
+    <!-- ① HERO：你是誰，為什麼值得信 -->
+    <section class="about-hero">
+      <div>
+        <div class="hero-eyebrow">生物醫學專員</div>
+        <h1 class="about-name">孫義坤</h1>
+        <div class="about-title">在醫療體系工作15年的人</div>
+        <div class="hero-divider"></div>
+        <p class="about-tagline">
+          我做的第一件事<strong>不是賣你產品</strong>，<br>
+          而是先幫你搞清楚，<br>
+          你那些輪流出現的症狀，<br>
+          背後到底是<strong>同一件什麼事</strong>。
+        </p>
+      </div>
+      <div class="about-photo-wrap">
+        <Image src={profileImg} alt="孫義坤" class="about-photo" width={340} height={340} />
+        <div class="about-credentials">
+          <span class="credential">陽明交通大學 應用化學系</span>
+          <span class="credential">清華大學 分子醫學研究所</span>
+          <span class="credential">醫療體系研究工作 15年</span>
+          <span class="credential">Nu Skin ageLOC 認證顧問</span>
         </div>
-        <Image src={profileImg} alt="孫義坤" class="about-photo" width={200} height={200} />
+      </div>
+    </section>
+
+    <!-- ② STORY：個人故事（讓他覺得你懂他） -->
+    <div class="story-wrap">
+
+      <div class="section-label">我的故事</div>
+      <h2 class="section-title">
+        我見過太多這樣的人——<br>
+        <em>也包括以前的我自己</em>
+      </h2>
+
+      <p class="body-text">
+        在醫療體系做研究這些年，我接觸過很多高科技產業的工作者。他們聰明、努力、對數據很敏感，
+        在工作上是真正的高手。但當我問他們身體狀況，得到的答案幾乎都差不多：
+      </p>
+
+      <div class="pullquote">
+        「最近一直感冒，才剛好又中了。嘴破已經三週了還沒好。
+        體檢報告紅字很多，醫生說多休息……但我哪有時間休息？」
       </div>
 
-      <!-- 我的故事 -->
-      <div class="about-section">
-        <div class="section-label">我的故事</div>
-        <h2>40 歲之後，<br>身體開始說話</h2>
-        <p>
-          我在高壓的工作環境裡打滾了十幾年。化學與分子醫學的背景讓我習慣用數據和機制來理解事物，
-          但有很長一段時間，我對自己身體的狀態卻是視而不見的。
-        </p>
-        <p>
-          直到 40 歲之後，那種精神和體力的落差開始變得無法忽視——下午的斷電感、睡了還是累、
-          腦袋卡頓、脖子肩膀石化……這些症狀讓我意識到，「努力工作」已經不足以撐住一切。
-        </p>
-        <p>
-          從對減重的關注，延伸到代謝健康，再深入到抗衰老科學——我開始認真閱讀
-          《身體使用指南》，想搞清楚身體到底發生了什麼，以及我能做什麼。
-          這個 blog，是我把這個過程整理出來分享給你的地方。
-        </p>
-        <p>
-          現在有 AI 可以回答你任何健康問題。但 AI 不認識你。我認識你之後，才告訴你什麼有用、什麼不用花那個錢。
-        </p>
-      </div>
+      <p class="body-text">
+        這不是個別案例。這幾乎是每一個在高壓環境工作超過十年的人，都會走到的狀態。
+      </p>
+
+      <p class="body-text">
+        問題不在於他們不夠努力照顧自己——很多人其實買了一堆保健品，看過很多科，
+        只是症狀還是一直輪流出現。
+        <strong>原因是他們把每個症狀當成獨立的問題在處理，但這些症狀本來就不是獨立的。</strong>
+      </p>
 
       <hr class="divider" />
 
-      <!-- 我在解決什麼問題 -->
-      <div class="about-section">
-        <div class="section-label">這個 Blog 解決什麼</div>
-        <h2>那些讓你撐不下去<br>的小事</h2>
-        <p>這裡寫的，都是真實困擾過我、也困擾著大多數 40+ 高壓工作者的問題：</p>
+      <!-- ③ 我在醫療體系觀察到什麼 -->
+      <div class="section-label">我見過什麼</div>
+      <h2 class="section-title">
+        頭痛醫頭，<br>
+        <em>為什麼永遠解決不了</em>
+      </h2>
 
-        <div class="pain-list">
-          <div class="pain-item"><strong>下午斷電</strong> — 不靠咖啡也能撐過 3-4 點的能量低谷</div>
-          <div class="pain-item"><strong>起床沒有恢復感</strong> — 睡了 7-8 小時還是累，想要真正「睡飽」</div>
-          <div class="pain-item"><strong>腦霧與反應變慢</strong> — 開會、做決策時腦袋清晰，不卡頓</div>
-          <div class="pain-item"><strong>脖子肩膀石化</strong> — 解除長期積累的頸肩僵硬，恢復活動自如</div>
-          <div class="pain-item"><strong>張力型頭痛</strong> — 擺脫那種頭被緊箍咒勒住的悶脹感</div>
-          <div class="pain-item"><strong>情緒失控與易怒</strong> — 高壓下保持穩定，不把疲憊發洩在家人身上</div>
-          <div class="pain-item"><strong>花錢沒效果</strong> — 找到真正有感的方法，不再亂槍打鳥</div>
-        </div>
+      <p class="body-text">
+        這些年在醫療體系，我最常看到的不是疾病本身，而是人們面對症狀的方式：
+      </p>
 
-        <div class="target-card">
-          <p>
-            這個 blog 寫給 <strong>40–50 歲、年收超過百萬、工作壓力大</strong> 的你。
-            不需要生物學背景，只需要想認真對待自己身體的心。
-          </p>
-        </div>
+      <div class="observe-list">
+        <div class="observe-item"><strong>嘴破</strong>→ 買口內膏、買維他命C、買奇異果。症狀壓下去，下個月又來。</div>
+        <div class="observe-item"><strong>感冒不好</strong>→ 看診拿藥、掛點滴、多喝水。好了之後繼續熬夜，下次感冒更嚴重。</div>
+        <div class="observe-item"><strong>眼睛乾澀</strong>→ 買人工淚液，點了又點。根本原因沒解決，繼續乾。</div>
+        <div class="observe-item"><strong>體檢紅字</strong>→ 醫生說「多休息、少熬夜、不要太累」。出了診間，什麼都沒有改變。</div>
+        <div class="observe-item"><strong>體力下滑</strong>→ 買B群、買鐵劑、買各種補品。花了很多錢，還是一樣累。</div>
       </div>
+
+      <p class="body-text">
+        每個症狀分開處理，不是因為這些人不認真——而是沒有人幫他們把這些症狀連起來看，
+        告訴他們背後是同一件事在發生。
+      </p>
 
       <hr class="divider" />
 
-      <!-- 這裡寫什麼 -->
-      <div class="about-section">
-        <div class="section-label">文章主題</div>
-        <h2>你會在這裡<br>找到什麼</h2>
+      <!-- ④ 我的方式和別人有什麼不同 -->
+      <div class="section-label-gold">我的方式</div>
+      <h2 class="section-title">
+        和一般「健康顧問」<br>
+        <em>最不一樣的地方</em>
+      </h2>
+
+      <p class="body-text">
+        我有分子醫學的研究背景，但我在諮詢裡做的第一件事從來不是引用研究數據——
+        而是先聽你說你的狀況，然後幫你找到那個把所有症狀連起來的根本原因。
+      </p>
+
+      <div class="approach-compare">
+        <div class="approach-card">
+          <div class="approach-card-label">一般做法</div>
+          <div class="approach-card-title">給建議，賣產品</div>
+          你說你感冒不好，就推薦免疫力相關的產品。
+          你說你嘴破，就說補充維他命。
+          每個症狀給一個答案，你買了一堆，但問題還在。
+        </div>
+        <div class="approach-card mine">
+          <div class="approach-card-label">我的做法</div>
+          <div class="approach-card-title">先找根本原因，再決定從哪裡開始</div>
+          先幫你看這些症狀背後的共同原因是什麼，
+          再告訴你對你這個人來說，從哪裡開始介入效率最高。
+          不是賣你最多，是幫你用最少的步驟解決真正的問題。
+        </div>
+      </div>
+
+      <p class="body-text">
+        這不是謙虛，而是我在醫療體系這些年得到的真正結論：
+        <strong>大多數健康問題之所以無法改善，不是因為缺少產品，而是因為找錯了切入點。</strong>
+      </p>
+
+      <hr class="divider" />
+
+      <!-- ⑤ 我幫的是什麼樣的人 -->
+      <div class="section-label">我幫的是誰</div>
+      <h2 class="section-title">
+        你需要認識我，<br>
+        <em>如果你是這樣的人</em>
+      </h2>
+
+      <p class="body-text">
+        我主要協助40–50歲、在高科技產業工作、年收超過百萬的工作者。
+        他們的共同特徵是：在工作上非常厲害，但身體開始悄悄失守，
+        而且沒有時間或精力去一個一個處理每個症狀。
+      </p>
+
+      <div class="observe-list">
+        <div class="observe-item">身體同時出現多個警報：嘴破、感冒不好、傷口癒合慢、皮膚乾癢、眼睛乾澀</div>
+        <div class="observe-item">體檢紅字一堆，但沒有具體的行動方向，只有「多休息」的建議</div>
+        <div class="observe-item">買過保健品但不確定自己真正缺什麼，不想再亂槍打鳥</div>
+        <div class="observe-item">工作型態短期難以大幅改變，需要在現有條件下找到最有效率的方法</div>
+        <div class="observe-item">需要有人用醫療邏輯幫他整理狀況，而不只是給通用建議</div>
+      </div>
+
+      <div class="pullquote">
+        「如果你現在的症狀已經需要立即就醫，我會直接告訴你去看哪一科。
+        我做的不是取代醫療，而是幫你找到醫院以外的盲點。」
+      </div>
+
+    </div><!-- /story-wrap -->
+
+    <!-- ⑥ 文章主題 -->
+    <section class="topics-section">
+      <div class="topics-inner">
+        <div class="section-label">這裡寫什麼</div>
+        <h2 class="section-title">
+          你會在這裡<br>
+          <em>找到什麼</em>
+        </h2>
+        <p class="body-text" style="max-width:520px;">
+          每篇文章都從你真實搜尋過的問題出發，
+          用醫療研究的邏輯幫你看懂症狀背後的原因，
+          而不是單純給你一個產品建議。
+        </p>
         <div class="topics-grid">
           <div class="topic">
-            <strong>抗衰老科學</strong>
-            最新研究轉化成你能理解的行動方案
+            <strong>免疫與慢性發炎</strong>
+            感冒一直不好、嘴破反覆——為什麼頭痛醫頭永遠解決不了
           </div>
           <div class="topic">
-            <strong>粒線體與代謝</strong>
-            從細胞層級理解為什麼你會累
+            <strong>細胞修復與粒線體</strong>
+            從細胞層級理解為什麼你的身體修復速度跟不上損耗
           </div>
           <div class="topic">
-            <strong>飲食實戰</strong>
-            211 餐盤、血糖管理、間歇性禁食
+            <strong>體檢報告解讀</strong>
+            紅字背後真正代表什麼，以及你能做什麼
           </div>
           <div class="topic">
-            <strong>運動與恢復</strong>
-            超慢跑、每週 150 分鐘的科學根據
+            <strong>抗氧化與補充方向</strong>
+            什麼真的有用、什麼只是你以為有用
           </div>
           <div class="topic">
-            <strong>睡眠優化</strong>
-            讓你真正睡飽、早上清醒的方法
+            <strong>睡眠與恢復</strong>
+            為什麼睡滿八小時還是累，以及真正需要解決的是什麼
           </div>
           <div class="topic">
-            <strong>補充品指南</strong>
-            什麼有效、什麼只是安慰劑
+            <strong>高壓工作者的身體管理</strong>
+            不改變工作型態的前提下，怎麼讓身體撐得更久
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- 聯絡 -->
-      <div class="contact-section">
-        <div class="section-label">聯絡我</div>
-        <h2>有問題？<br>直接來找我</h2>
-        <p style="font-size:0.95rem;color:#3a4a58;line-height:2;font-weight:300;">
-          找我不是來查詢標準答案——那你可以問 AI。找我，是因為你需要一個認識你這個人、能幫你做決定的顧問。
+    <!-- ⑦ CTA：和首頁一致的行動出口 -->
+    <section class="contact-section">
+      <div class="contact-inner">
+        <div class="contact-label">下一步</div>
+        <h2 class="contact-title">
+          想聊聊你的狀況？<br>
+          <em>第一次諮詢免費</em>
+        </h2>
+        <p class="contact-sub">
+          告訴我你現在最困擾的症狀，<br>
+          我幫你分析背後的共同原因，<br>
+          以及你最優先需要處理的是什麼。
         </p>
-        <div class="contact-links">
-          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="contact-btn contact-btn-solid">
-            💬 加 LINE @fer7932k
+        <div class="contact-btns">
+          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal">
+            💬 加LINE，告訴我你的狀況
           </a>
-          <a href="mailto:sunyikun0729@gmail.com" class="contact-btn contact-btn-outline">
-            ✉ sunyikun0729@gmail.com
+          <a href="mailto:sunyikun0729@gmail.com" class="btn-outline">
+            📧 用Email聯絡我
           </a>
         </div>
+        <div class="contact-note">不推銷產品 · 先搞清楚你的狀況再說</div>
       </div>
+    </section>
 
-    </main>
     <Footer />
   </body>
 </html>
