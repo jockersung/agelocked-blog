@@ -3,8 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const SITE_TITLE = 'AGELOCKED｜這些症狀為什麼處理了還是輪流出現？';
-const SITE_DESCRIPTION = '感冒才剛好又復發、嘴破補了維他命還是一直出現——每個症狀都處理了，為什麼還是輪流？這5個症狀來自同一個根本原因。在醫療體系15年的生物醫學專員，幫你讓症狀真正好轉。';
+const SITE_TITLE = 'AGELOCKED｜給身體開始失守的高科技工作者';
+const SITE_DESCRIPTION = '嘴破、感冒不好、體力下滑——這些不是老化，是你身體發出的同一個警報。在醫療體系15年的生物醫學專員，幫你找到真正的根本原因。';
 const pageUrl = Astro.url.href;
 ---
 
@@ -121,51 +121,88 @@ const pageUrl = Astro.url.href;
 
       /* ── ② PAIN（症狀確認）── */
       .pain-section { padding: 7rem 6vw; background: var(--bg); }
-      .pain-intro { font-size: 0.95rem; color: var(--muted); line-height: 2.1; font-weight: 300; max-width: 560px; margin-bottom: 3rem; }
-      .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); }
-      .pain-card { background: var(--bg2); padding: 1.6rem 2rem; display: flex; align-items: flex-start; gap: 1rem; transition: background 0.2s; }
+      .pain-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: start; margin-top: 3rem; }
+      .pain-left { }
+      .pain-intro { font-size: 0.95rem; color: var(--muted); line-height: 2.1; font-weight: 300; max-width: 520px; margin-bottom: 2rem; }
+      .pain-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 2px; overflow: hidden; }
+      .pain-card { background: var(--bg2); padding: 1.1rem 1.6rem; display: flex; align-items: flex-start; gap: 1rem; transition: background 0.2s; border-bottom: 1px solid var(--border); }
+      .pain-card:last-child { border-bottom: none; }
       .pain-card:hover { background: var(--teal-pale); }
-      .pain-check { color: var(--teal); font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem; }
-      .pain-text { font-size: 0.91rem; color: var(--body); line-height: 1.8; font-weight: 300; margin: 0; }
+      .pain-check { color: var(--teal); font-size: 0.75rem; flex-shrink: 0; margin-top: 0.35rem; }
+      .pain-text { font-size: 0.89rem; color: var(--body); line-height: 1.75; font-weight: 300; margin: 0; }
       .pain-footer {
-        margin-top: 2.8rem; padding: 2.2rem 2.5rem; border-left: 3px solid var(--gold);
+        margin-top: 2rem; padding: 1.8rem 2rem; border-left: 3px solid var(--gold);
         background: var(--gold-pale);
       }
-      .pain-footer-text { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-style: italic; color: var(--ink); line-height: 1.7; }
-      .pain-footer-sub { font-size: 0.85rem; color: var(--muted); margin-top: 0.6rem; font-weight: 300; }
+      .pain-footer-text { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-style: italic; color: var(--ink); line-height: 1.7; }
+      .pain-footer-sub { font-size: 0.83rem; color: var(--muted); margin-top: 0.5rem; font-weight: 300; }
 
-      /* ── ③ BRIDGE（重新定義問題）── */
-      .bridge-section { padding: 7rem 6vw; background: var(--bg2); display: grid; grid-template-columns: 1fr 1.3fr; gap: 8vw; align-items: center; }
-      .bridge-left { }
+      /* 右側：症狀→根本原因 示意圖 */
+      .pain-diagram { position: sticky; top: 6rem; }
+      .pain-diagram-inner {
+        background: var(--bg2); border: 1px solid var(--border); border-radius: 2px;
+        padding: 2.4rem 2rem; position: relative; overflow: hidden;
+      }
+      .pain-diagram-inner::before {
+        content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+        background: linear-gradient(90deg, var(--gold), var(--teal));
+      }
+      .pd-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.35em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.6rem; }
+      .pd-symptoms { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.6rem; }
+      .pd-symptom {
+        display: flex; align-items: center; gap: 0.75rem;
+        font-size: 0.84rem; color: var(--body); font-weight: 300; line-height: 1.5;
+      }
+      .pd-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
+      .pd-line-wrap { display: flex; flex-direction: column; align-items: center; gap: 0; margin: 0.4rem 0; }
+      .pd-lines { display: flex; justify-content: space-around; width: 80%; height: 28px; position: relative; }
+      .pd-lines::before, .pd-lines::after, .pd-lines span { 
+        content: ''; position: absolute; bottom: 0; width: 1px; background: var(--teal-mid); height: 100%;
+      }
+      .pd-lines::before { left: 15%; }
+      .pd-lines::after { right: 15%; }
+      .pd-lines span { left: 50%; transform: translateX(-50%); }
+      .pd-converge {
+        width: 80%; height: 1px; background: var(--teal-mid); margin-bottom: 0.4rem;
+      }
+      .pd-arrow-down {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--teal);
+        letter-spacing: 0.15em; margin-bottom: 1rem; text-align: center;
+      }
+      .pd-root {
+        padding: 1.4rem 1.8rem; background: var(--ink); color: #fff;
+        border-radius: 2px; text-align: center;
+      }
+      .pd-root-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 0.4rem; }
+      .pd-root-sub { font-size: 0.78rem; color: rgba(255,255,255,0.55); line-height: 1.7; font-weight: 300; }
+      .pd-tag {
+        display: inline-block; margin-top: 0.9rem;
+        font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em;
+        color: #6de8df; border: 1px solid rgba(109,232,221,0.3); padding: 0.3rem 0.8rem;
+        border-radius: 1px; text-transform: uppercase;
+      }
+
+      /* ── ③ BRIDGE（機制說明，不重複症狀）── */
+      .bridge-section {
+        padding: 7rem 6vw; background: var(--bg2);
+        max-width: 860px; margin: 0 auto;
+      }
       .bridge-title {
         font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3.2rem);
         font-weight: 300; color: var(--ink); line-height: 1.2; margin-bottom: 1.8rem;
       }
       .bridge-title em { font-style: italic; color: var(--teal); }
-      .bridge-body { font-size: 0.95rem; color: var(--body); line-height: 2.2; font-weight: 300; }
-      .bridge-body p { margin: 0 0 1.2rem; }
+      .bridge-body { font-size: 0.97rem; color: var(--body); line-height: 2.3; font-weight: 300; max-width: 680px; }
+      .bridge-body p { margin: 0 0 1.3rem; }
       .bridge-body p:last-child { margin: 0; }
-      .bridge-right { }
-      .bridge-visual {
-        background: var(--surface); border: 1px solid var(--border); padding: 2.8rem;
-        position: relative; border-radius: 2px;
+      .bridge-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-top: 3rem; }
+      .bridge-step {
+        padding: 1.6rem 1.8rem; border: 1px solid var(--border); border-radius: 2px;
+        border-top: 3px solid var(--teal);
       }
-      .bridge-visual-title { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.8rem; }
-      .bridge-symptom {
-        display: flex; align-items: center; gap: 1rem; padding: 0.85rem 1rem;
-        background: var(--bg2); border: 1px solid var(--border); margin-bottom: 0.6rem;
-        font-size: 0.88rem; color: var(--body); font-weight: 300; border-radius: 2px;
-      }
-      .bridge-symptom-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; flex-shrink: 0; }
-      .bridge-arrow {
-        text-align: center; padding: 1rem 0 0.6rem; font-family: 'DM Mono', monospace;
-        font-size: 0.62rem; letter-spacing: 0.25em; color: var(--teal); text-transform: uppercase;
-      }
-      .bridge-root {
-        padding: 1.4rem 1.6rem; background: var(--teal); color: #fff; text-align: center;
-        font-size: 0.92rem; font-weight: 300; line-height: 1.8; border-radius: 2px;
-      }
-      .bridge-root strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 0.3rem; }
+      .bridge-step-num { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.35em; color: var(--teal); margin-bottom: 0.6rem; text-transform: uppercase; }
+      .bridge-step-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 400; color: var(--ink); margin-bottom: 0.5rem; }
+      .bridge-step-body { font-size: 0.83rem; color: var(--muted); line-height: 1.8; font-weight: 300; }
 
       /* ── ④ COMPARE（方案比較）── */
       .compare-section { padding: 7rem 6vw; background: var(--bg-warm); }
@@ -318,7 +355,8 @@ const pageUrl = Astro.url.href;
       @media (max-width: 960px) {
         .hero { grid-template-columns: 1fr; gap: 3rem; min-height: auto; padding-top: 5rem; }
         .hero-right { padding-left: 0; }
-        .bridge-section { grid-template-columns: 1fr; }
+        .pain-layout { grid-template-columns: 1fr; }
+        .bridge-steps { grid-template-columns: 1fr; }
         .solution-section { grid-template-columns: 1fr; }
         .solution-sticky { position: static; }
         .fit-section { grid-template-columns: 1fr; }
@@ -338,28 +376,29 @@ const pageUrl = Astro.url.href;
       <!-- ① HERO：命中症狀 -->
       <section class="hero">
         <div class="hero-left">
-          <div class="hero-eyebrow">生物醫學專員 · 15年醫療研究背景</div>
+          <div class="hero-eyebrow">生物醫學專員 · 15年醫學研究背景</div>
           <h1 class="hero-title">
-            感冒、嘴破、眼睛乾——<br>
-            每個都處理了，<br>
-            <em>為什麼還是一直<br>輪流出現？</em>
+            嘴破、感冒不好、<br>
+            體力一直在下滑——<br>
+            <em>這些不只是老化，<br>是同一個警報</em>
           </h1>
           <div class="hero-divider"></div>
           <p class="hero-subtitle">
-            因為這5個症狀來自同一個根本原因。<br>
-            分開處理，只是暫時壓住。
+            給40–50歲、在高科技產業工作、<br>
+            身體開始悄悄失守的你
           </p>
-          <a href="#pain" class="hero-btn">看看你的狀況 →</a>
+          <a href="#compare" class="hero-btn">了解你的身體在說什麼 →</a>
         </div>
         <div class="hero-right">
           <div class="hero-card">
-            <div class="hero-card-label">你有沒有這樣處理過，但效果只是暫時的？</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>感冒看診拿藥 → 好了又復發</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>嘴破補維他命C → 下個月又出現</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>眼睛乾點人工淚液 → 只是暫時舒緩</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>肩頸去推拿 → 隔天坐回辦公桌又僵</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>體檢紅字 → 醫生說多休息，然後呢？</div>
-            <div class="hero-card-footer">每個都處理了，但症狀還在輪流——這就是問題所在</div>
+            <div class="hero-card-label">你是否也有這些狀況</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>感冒一拖就是三週，咳不停</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>嘴破反覆出現，吃什麼都沒用</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>傷口好得比以前慢很多</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>體檢紅字一堆，醫生只叫你多休息</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>睡滿八小時還是覺得累</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>皮膚乾癢，壓力大就更嚴重</div>
+            <div class="hero-card-footer">勾了三個以上？繼續往下看</div>
           </div>
         </div>
       </section>
@@ -367,106 +406,96 @@ const pageUrl = Astro.url.href;
       <!-- ② PAIN：症狀確認 -->
       <section class="pain-section" id="pain">
         <div class="label reveal">你有沒有這樣的經驗</div>
-        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:1.2rem;">
-          每個都處理過了，<br><em style="font-style:italic;color:var(--teal);">症狀還是輪流出現</em>
+        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:0.6rem;">
+          每個都處理過了，<br><em style="font-style:italic;color:var(--teal);">症狀還是一直輪流出現</em>
         </h2>
         <p class="pain-intro reveal">
-          不是你買錯產品。<br>
-          而是這些症狀本來就不是獨立的問題——<br>
-          它們需要被連起來看，才能真正好轉。
+          不是你買錯產品——而是這些症狀本來就不是獨立的問題。
         </p>
-        <div class="pain-grid">
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">感冒一直復發，好了又來</p>
-              <p class="pain-text">看診拿藥、掛點滴——好了。但下次更快來、更難好</p>
+
+        <div class="pain-layout">
+
+          <!-- 左：8個症狀清單 -->
+          <div class="pain-left">
+            <div class="pain-list">
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">感冒一拖就是三週，咳不停，吃完藥又復發</p></div>
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">嘴破反覆出現，補了維他命C和奇異果還是沒用</p></div>
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">傷口癒合變慢，以前幾天好的，現在要兩三週</p></div>
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">體檢報告一堆紅字，醫生說「多休息、少熬夜」</p></div>
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">睡滿八小時隔天還是累，喝咖啡也沒用</p></div>
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">體力明顯下滑，爬樓梯、走快一點就喘</p></div>
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">皮膚乾癢起疹子，壓力大的時候更嚴重</p></div>
+              <div class="pain-card reveal"><span class="pain-check">◆</span><p class="pain-text">眼睛乾澀，點人工淚液只有暫時舒緩，過一下又來</p></div>
+            </div>
+            <div class="pain-footer reveal">
+              <div class="pain-footer-text">「勾了3個以上——這些症狀在你身上<br>已經是同一個根本原因造成的結果。」</div>
+              <div class="pain-footer-sub">分開處理，永遠只是暫時壓住。</div>
             </div>
           </div>
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">嘴破補了維他命還是每個月出現</p>
-              <p class="pain-text">口內膏、維他命C、奇異果——壓下去，下個月同個地方又破</p>
+
+          <!-- 右：示意圖 -->
+          <div class="pain-diagram reveal">
+            <div class="pain-diagram-inner">
+              <div class="pd-label">為什麼分開處理沒用？</div>
+
+              <div class="pd-symptoms">
+                <div class="pd-symptom"><span class="pd-dot"></span>感冒反覆復發</div>
+                <div class="pd-symptom"><span class="pd-dot"></span>嘴破每個月出現</div>
+                <div class="pd-symptom"><span class="pd-dot"></span>眼睛乾澀止不住</div>
+                <div class="pd-symptom"><span class="pd-dot"></span>睡飽還是累</div>
+                <div class="pd-symptom"><span class="pd-dot"></span>肩頸推完又僵</div>
+                <div class="pd-symptom"><span class="pd-dot"></span>體力下滑、傷口癒合慢</div>
+              </div>
+
+              <!-- 收斂線 SVG -->
+              <svg viewBox="0 0 200 60" style="width:100%;display:block;margin:0.4rem 0;" preserveAspectRatio="none">
+                <line x1="17"  y1="0" x2="100" y2="58" stroke="rgba(26,140,130,0.3)" stroke-width="1"/>
+                <line x1="57"  y1="0" x2="100" y2="58" stroke="rgba(26,140,130,0.3)" stroke-width="1"/>
+                <line x1="100" y1="0" x2="100" y2="58" stroke="rgba(26,140,130,0.45)" stroke-width="1.5"/>
+                <line x1="143" y1="0" x2="100" y2="58" stroke="rgba(26,140,130,0.3)" stroke-width="1"/>
+                <line x1="183" y1="0" x2="100" y2="58" stroke="rgba(26,140,130,0.3)" stroke-width="1"/>
+              </svg>
+
+              <div class="pd-arrow-down reveal">↓ 同一個根本原因</div>
+
+              <div class="pd-root">
+                <div class="pd-root-title">細胞修復系統長期透支</div>
+                <div class="pd-root-sub">修復速度跟不上損耗速度<br>系統一旦失守，症狀就在不同地方同時出現</div>
+                <div class="pd-tag">我們稱這個現象為「初老」</div>
+              </div>
             </div>
           </div>
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">睡滿八小時隔天還是累</p>
-              <p class="pain-text">換床墊、試助眠產品——早上還是像被掏空，靠咖啡撐著</p>
-            </div>
-          </div>
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">眼睛乾澀，點人工淚液沒什麼用</p>
-              <p class="pain-text">點了又點——只是暫時，工作一久又乾，停不下來</p>
-            </div>
-          </div>
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">肩頸推拿完隔天又僵</p>
-              <p class="pain-text">推拿、按摩、護頸枕——舒緩了一兩天，坐回辦公桌又回到原點</p>
-            </div>
-          </div>
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">體檢紅字，醫生說多休息</p>
-              <p class="pain-text">查了資料、看了報告——出了診間還是不知道從哪裡開始改</p>
-            </div>
-          </div>
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">皮膚乾癢，壓力大就更嚴重</p>
-              <p class="pain-text">換乳液、換洗沐用品——壓力一來又爆發，止不住</p>
-            </div>
-          </div>
-          <div class="pain-card reveal">
-            <span class="pain-check">□</span>
-            <div>
-              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">傷口癒合慢，體力明顯下滑</p>
-              <p class="pain-text">以前幾天好的小傷現在拖兩三週；爬樓梯、走快一點就喘</p>
-            </div>
-          </div>
-        </div>
-        <div class="pain-footer reveal">
-          <div class="pain-footer-text">「這5個症狀同時出現，是同一個系統在失守造成的現象——<br>我們稱它為<strong>初老</strong>。」</div>
-          <div class="pain-footer-sub">不是你老了，是這個修復系統先垮了。找到根本原因，症狀才會真正好轉，而不只是一個個暫時壓住。</div>
+
         </div>
       </section>
 
-      <!-- ③ BRIDGE：重新定義問題（最關鍵的橋接層）-->
+      <!-- ③ BRIDGE：機制說明（不重複症狀，解釋「為什麼」）-->
       <section class="bridge-section">
-        <div class="bridge-left reveal">
-          <div class="label">根本原因</div>
-          <h2 class="bridge-title">
-            這5個症狀同時出現，<br>
-            是同一個系統在失守——<br>
-            <em>這個現象，<br>我們稱為初老</em>
-          </h2>
-          <div class="bridge-body">
-            <p>你的身體長期在高壓、睡眠不足、三餐不正常的狀態下運作，<strong style="color:var(--ink);font-weight:500;">細胞修復的速度開始跟不上損耗的速度。</strong></p>
-            <p>這個修復系統一旦開始失守，感冒反覆、嘴破、眼睛乾澀、肩頸僵硬、體力下滑就會同時出現——是同一個根本原因在不同地方的表現。</p>
-            <p>初老不是你變老了。是這個系統先垮了，你才同時感受到這5個症狀。<strong style="color:var(--ink);font-weight:500;">找到這個根本原因，症狀才會真正好轉，而不只是一個個暫時壓住。</strong></p>
-          </div>
+        <div class="label reveal">這是怎麼發生的</div>
+        <h2 class="bridge-title reveal">
+          這個修復系統，<br>
+          是怎麼<em>開始失守的？</em>
+        </h2>
+        <div class="bridge-body reveal">
+          <p>高科技產業的工作節奏，長期讓身體處於一個特殊狀態：<strong style="color:var(--ink);font-weight:500;">損耗速度遠超過修復速度。</strong></p>
+          <p>高壓讓皮質醇持續偏高、睡眠不足讓細胞沒有時間完成修復、氧化壓力累積讓免疫與再生機制開始打折——三件事同時發生，而且互相強化。</p>
+          <p>當這個修復系統的缺口夠大，你就開始同時看到多個症狀。<strong style="color:var(--ink);font-weight:500;">不是因為你有很多病，而是同一個系統在不同地方失守。</strong></p>
         </div>
-        <div class="bridge-right reveal">
-          <div class="bridge-visual">
-            <div class="bridge-visual-title">你分開處理了、但還在輪流出現的症狀</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>感冒反覆復發</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>嘴破每個月出現</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>睡飽還是累</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>眼睛乾澀止不住</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>肩頸推完又僵</div>
-            <div class="bridge-arrow">↓ 同一個根本原因造成的現象</div>
-            <div class="bridge-root">
-              <strong>細胞修復系統長期透支＝初老</strong>
-              不是你老了——是這個系統先垮了，<br>症狀才會一直在不同地方輪流出現
-            </div>
+        <div class="bridge-steps">
+          <div class="bridge-step reveal">
+            <div class="bridge-step-num">機制 01</div>
+            <div class="bridge-step-title">免疫修復打折</div>
+            <div class="bridge-step-body">感冒反覆、嘴破不好、傷口癒合慢——身體再生速度跟不上</div>
+          </div>
+          <div class="bridge-step reveal">
+            <div class="bridge-step-num">機制 02</div>
+            <div class="bridge-step-title">細胞能量不足</div>
+            <div class="bridge-step-body">睡飽還是累、體力下滑、下午斷電——細胞產能系統透支</div>
+          </div>
+          <div class="bridge-step reveal">
+            <div class="bridge-step-num">機制 03</div>
+            <div class="bridge-step-title">氧化壓力累積</div>
+            <div class="bridge-step-body">皮膚乾癢、眼睛乾澀、肩頸難恢復——自由基損傷大於修復</div>
           </div>
         </div>
       </section>
@@ -652,14 +681,14 @@ const pageUrl = Astro.url.href;
         <div>
           <div class="label reveal">30天後你會發現</div>
           <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;color:var(--ink);line-height:1.2;margin-bottom:2rem;">
-            不只是暫時壓住，<br><em style="font-style:italic;color:var(--teal);">是症狀真正開始好轉</em>
+            不只是感覺更年輕，<br><em style="font-style:italic;color:var(--teal);">是身體告訴你</em>
           </h2>
           <div class="results-list">
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">感冒次數減少，感冒了也恢復得比以前快，不再反覆</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">嘴破間隔拉長，不再每個月出現同一個地方</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">睡起來有恢復感，<strong>不再靠咖啡撐著</strong>下午</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">眼睛乾澀明顯改善，不再靠人工淚液撐一整天</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">肩頸恢復速度變快，皮膚壓力下不再立刻出狀況</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">感冒次數減少，就算感冒也恢復得比以前快</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">嘴破間隔拉長，不再每個月反覆出現</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">下午的<strong>能量崩潰不見了</strong>，不再靠咖啡撐著</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">睡眠品質改善，早上起床不再像被掏空</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">皮膚狀況穩定，壓力大的時候不再立刻出狀況</div></div>
           </div>
         </div>
         <div class="testimonials reveal">
@@ -705,11 +734,11 @@ const pageUrl = Astro.url.href;
         <div class="final-watermark">AGELOCKED</div>
         <div class="final-inner">
           <div class="final-label reveal">下一步很簡單</div>
-          <h2 class="final-title reveal">想讓這些症狀<br><em>真正好轉？</em></h2>
+          <h2 class="final-title reveal">想知道你的症狀<br><em>背後是什麼原因？</em></h2>
           <p class="final-sub reveal">
-            告訴我哪些症狀一直輪流出現，<br>
-            我幫你找到讓它們真正好轉的根本原因——<br>
-            而不只是一個個暫時壓住。
+            告訴我你現在最困擾的狀況，<br>
+            我幫你分析背後的共同原因，<br>
+            以及你最優先需要處理的是什麼。
           </p>
           <div class="final-btns">
             <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal reveal">💬 加LINE，告訴我你的狀況</a>
