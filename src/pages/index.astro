@@ -3,8 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const SITE_TITLE = 'AGELOCKED｜給身體開始失守的高科技工作者';
-const SITE_DESCRIPTION = '嘴破、感冒不好、體力下滑——這些不是老化，是你身體發出的同一個警報。在醫療體系15年的生物醫學專員，幫你找到真正的根本原因。';
+const SITE_TITLE = 'AGELOCKED｜這些症狀為什麼處理了還是輪流出現？';
+const SITE_DESCRIPTION = '感冒才剛好又復發、嘴破補了維他命還是一直出現——每個症狀都處理了，為什麼還是輪流？這5個症狀來自同一個根本原因。在醫療體系15年的生物醫學專員，幫你讓症狀真正好轉。';
 const pageUrl = Astro.url.href;
 ---
 
@@ -338,56 +338,104 @@ const pageUrl = Astro.url.href;
       <!-- ① HERO：命中症狀 -->
       <section class="hero">
         <div class="hero-left">
-          <div class="hero-eyebrow">生物醫學專員 · 15年醫學研究背景</div>
+          <div class="hero-eyebrow">生物醫學專員 · 15年醫療研究背景</div>
           <h1 class="hero-title">
-            嘴破、感冒不好、<br>
-            體力一直在下滑——<br>
-            <em>這些不只是老化，<br>是同一個警報</em>
+            感冒、嘴破、眼睛乾——<br>
+            每個都處理了，<br>
+            <em>為什麼還是一直<br>輪流出現？</em>
           </h1>
           <div class="hero-divider"></div>
           <p class="hero-subtitle">
-            給40–50歲、在高科技產業工作、<br>
-            身體開始悄悄失守的你
+            因為這5個症狀來自同一個根本原因。<br>
+            分開處理，只是暫時壓住。
           </p>
-          <a href="#compare" class="hero-btn">了解你的身體在說什麼 →</a>
+          <a href="#pain" class="hero-btn">看看你的狀況 →</a>
         </div>
         <div class="hero-right">
           <div class="hero-card">
-            <div class="hero-card-label">你是否也有這些狀況</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>感冒一拖就是三週，咳不停</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>嘴破反覆出現，吃什麼都沒用</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>傷口好得比以前慢很多</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>體檢紅字一堆，醫生只叫你多休息</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>睡滿八小時還是覺得累</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>皮膚乾癢，壓力大就更嚴重</div>
-            <div class="hero-card-footer">勾了三個以上？繼續往下看</div>
+            <div class="hero-card-label">你有沒有這樣處理過，但效果只是暫時的？</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>感冒看診拿藥 → 好了又復發</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>嘴破補維他命C → 下個月又出現</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>眼睛乾點人工淚液 → 只是暫時舒緩</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>肩頸去推拿 → 隔天坐回辦公桌又僵</div>
+            <div class="hero-q"><span class="hero-q-dot">·</span>體檢紅字 → 醫生說多休息，然後呢？</div>
+            <div class="hero-card-footer">每個都處理了，但症狀還在輪流——這就是問題所在</div>
           </div>
         </div>
       </section>
 
       <!-- ② PAIN：症狀確認 -->
-      <section class="pain-section">
-        <div class="label reveal">你是不是也有這些狀況</div>
+      <section class="pain-section" id="pain">
+        <div class="label reveal">你有沒有這樣的經驗</div>
         <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:1.2rem;">
-          8 個<em style="font-style:italic;color:var(--teal);">身體警訊</em>
+          每個都處理過了，<br><em style="font-style:italic;color:var(--teal);">症狀還是輪流出現</em>
         </h2>
         <p class="pain-intro reveal">
-          這些症狀看起來互不相關——但如果你同時有三個以上，<br>
-          你的身體其實在發出同一個訊號。
+          不是你買錯產品。<br>
+          而是這些症狀本來就不是獨立的問題——<br>
+          它們需要被連起來看，才能真正好轉。
         </p>
         <div class="pain-grid">
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">感冒一拖就是三週，咳不停，吃完藥又復發</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">嘴破反覆出現，補了維他命C和奇異果還是沒用</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">傷口癒合變慢，以前幾天好的，現在要兩三週</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">體檢報告一堆紅字，醫生說「多休息、少熬夜」</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">睡滿八小時隔天還是累，喝咖啡也沒用</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">體力明顯下滑，爬樓梯、走快一點就喘</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">皮膚乾癢起疹子，壓力大的時候更嚴重</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">眼睛乾澀，點人工淚液只有暫時舒緩，過一下又來</p></div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">感冒一直復發，好了又來</p>
+              <p class="pain-text">看診拿藥、掛點滴——好了。但下次更快來、更難好</p>
+            </div>
+          </div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">嘴破補了維他命還是每個月出現</p>
+              <p class="pain-text">口內膏、維他命C、奇異果——壓下去，下個月同個地方又破</p>
+            </div>
+          </div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">睡滿八小時隔天還是累</p>
+              <p class="pain-text">換床墊、試助眠產品——早上還是像被掏空，靠咖啡撐著</p>
+            </div>
+          </div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">眼睛乾澀，點人工淚液沒什麼用</p>
+              <p class="pain-text">點了又點——只是暫時，工作一久又乾，停不下來</p>
+            </div>
+          </div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">肩頸推拿完隔天又僵</p>
+              <p class="pain-text">推拿、按摩、護頸枕——舒緩了一兩天，坐回辦公桌又回到原點</p>
+            </div>
+          </div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">體檢紅字，醫生說多休息</p>
+              <p class="pain-text">查了資料、看了報告——出了診間還是不知道從哪裡開始改</p>
+            </div>
+          </div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">皮膚乾癢，壓力大就更嚴重</p>
+              <p class="pain-text">換乳液、換洗沐用品——壓力一來又爆發，止不住</p>
+            </div>
+          </div>
+          <div class="pain-card reveal">
+            <span class="pain-check">□</span>
+            <div>
+              <p class="pain-text" style="font-weight:500;color:var(--ink);margin-bottom:0.3rem;">傷口癒合慢，體力明顯下滑</p>
+              <p class="pain-text">以前幾天好的小傷現在拖兩三週；爬樓梯、走快一點就喘</p>
+            </div>
+          </div>
         </div>
         <div class="pain-footer reveal">
-          <div class="pain-footer-text">「頭痛醫頭、嘴破買口內膏、眼睛乾買人工淚液——<br>每個症狀分開處理，症狀才會一直輪流出現。」</div>
-          <div class="pain-footer-sub">你不是買錯產品，而是還沒找到真正的根本原因。</div>
+          <div class="pain-footer-text">「這5個症狀同時出現，是同一個系統在失守造成的現象——<br>我們稱它為<strong>初老</strong>。」</div>
+          <div class="pain-footer-sub">不是你老了，是這個修復系統先垮了。找到根本原因，症狀才會真正好轉，而不只是一個個暫時壓住。</div>
         </div>
       </section>
 
@@ -396,28 +444,28 @@ const pageUrl = Astro.url.href;
         <div class="bridge-left reveal">
           <div class="label">根本原因</div>
           <h2 class="bridge-title">
-            這些症狀看起來不同，<br>
-            但背後是<em>同一件事</em>
+            這5個症狀同時出現，<br>
+            是同一個系統在失守——<br>
+            <em>這個現象，<br>我們稱為初老</em>
           </h2>
           <div class="bridge-body">
-            <p>你可能已經看過很多科、買過很多保健品，但症狀還是輪流出現。</p>
-            <p>原因不是你買錯產品——而是這些症狀本來就不是獨立的問題。</p>
-            <p>當你的身體長期在高壓、睡眠不足、三餐不正常的狀態下運作，<strong style="color:var(--ink);font-weight:500;">細胞修復的速度開始跟不上損耗的速度</strong>。</p>
-            <p>嘴破、感冒不好、傷口癒合慢、皮膚乾癢、長癬——是同一個系統開始失守的不同出口。</p>
+            <p>你的身體長期在高壓、睡眠不足、三餐不正常的狀態下運作，<strong style="color:var(--ink);font-weight:500;">細胞修復的速度開始跟不上損耗的速度。</strong></p>
+            <p>這個修復系統一旦開始失守，感冒反覆、嘴破、眼睛乾澀、肩頸僵硬、體力下滑就會同時出現——是同一個根本原因在不同地方的表現。</p>
+            <p>初老不是你變老了。是這個系統先垮了，你才同時感受到這5個症狀。<strong style="color:var(--ink);font-weight:500;">找到這個根本原因，症狀才會真正好轉，而不只是一個個暫時壓住。</strong></p>
           </div>
         </div>
         <div class="bridge-right reveal">
           <div class="bridge-visual">
-            <div class="bridge-visual-title">你看到的症狀</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>嘴破反覆出現</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>感冒好不了</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>傷口癒合慢</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>皮膚乾癢</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>體力下滑</div>
-            <div class="bridge-arrow">↓ 共同根本原因</div>
+            <div class="bridge-visual-title">你分開處理了、但還在輪流出現的症狀</div>
+            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>感冒反覆復發</div>
+            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>嘴破每個月出現</div>
+            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>睡飽還是累</div>
+            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>眼睛乾澀止不住</div>
+            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>肩頸推完又僵</div>
+            <div class="bridge-arrow">↓ 同一個根本原因造成的現象</div>
             <div class="bridge-root">
-              <strong>身體修復資源長期透支</strong>
-              細胞修復速度跟不上每日損耗，<br>防禦系統開始在不同地方失守
+              <strong>細胞修復系統長期透支＝初老</strong>
+              不是你老了——是這個系統先垮了，<br>症狀才會一直在不同地方輪流出現
             </div>
           </div>
         </div>
@@ -604,14 +652,14 @@ const pageUrl = Astro.url.href;
         <div>
           <div class="label reveal">30天後你會發現</div>
           <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;color:var(--ink);line-height:1.2;margin-bottom:2rem;">
-            不只是感覺更年輕，<br><em style="font-style:italic;color:var(--teal);">是身體告訴你</em>
+            不只是暫時壓住，<br><em style="font-style:italic;color:var(--teal);">是症狀真正開始好轉</em>
           </h2>
           <div class="results-list">
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">感冒次數減少，就算感冒也恢復得比以前快</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">嘴破間隔拉長，不再每個月反覆出現</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">下午的<strong>能量崩潰不見了</strong>，不再靠咖啡撐著</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">睡眠品質改善，早上起床不再像被掏空</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">皮膚狀況穩定，壓力大的時候不再立刻出狀況</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">感冒次數減少，感冒了也恢復得比以前快，不再反覆</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">嘴破間隔拉長，不再每個月出現同一個地方</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">睡起來有恢復感，<strong>不再靠咖啡撐著</strong>下午</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">眼睛乾澀明顯改善，不再靠人工淚液撐一整天</div></div>
+            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">肩頸恢復速度變快，皮膚壓力下不再立刻出狀況</div></div>
           </div>
         </div>
         <div class="testimonials reveal">
@@ -657,11 +705,11 @@ const pageUrl = Astro.url.href;
         <div class="final-watermark">AGELOCKED</div>
         <div class="final-inner">
           <div class="final-label reveal">下一步很簡單</div>
-          <h2 class="final-title reveal">想知道你的症狀<br><em>背後是什麼原因？</em></h2>
+          <h2 class="final-title reveal">想讓這些症狀<br><em>真正好轉？</em></h2>
           <p class="final-sub reveal">
-            告訴我你現在最困擾的狀況，<br>
-            我幫你分析背後的共同原因，<br>
-            以及你最優先需要處理的是什麼。
+            告訴我哪些症狀一直輪流出現，<br>
+            我幫你找到讓它們真正好轉的根本原因——<br>
+            而不只是一個個暫時壓住。
           </p>
           <div class="final-btns">
             <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal reveal">💬 加LINE，告訴我你的狀況</a>
