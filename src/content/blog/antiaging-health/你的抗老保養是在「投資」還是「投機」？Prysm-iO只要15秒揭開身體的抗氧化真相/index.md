@@ -4,6 +4,7 @@ description: 'Prysm-iO-15 秒，一根手指，讀出你過去幾週的真實生
 pubDate: 2026-02-12
 heroImage: './健康不再憑感覺.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
+category: '皮膚保養'
 ---
 
 ![健康不再憑感覺](./健康不再憑感覺.png)

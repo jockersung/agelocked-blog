@@ -5,6 +5,7 @@ pubDate: 2026-02-24
 heroImage: './三機對比.png'
 tags: ['抗氧化', '科技', 'Prysm-iO', '會員限定']
 memberOnly: true
+category: '身體保健'
 ---
 
 ![三機對比](./三機對比.png)

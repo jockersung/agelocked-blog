@@ -4,6 +4,7 @@ description: '頂級期刊《Cell Metabolism》發現GLP-1 類藥物具有全身
 pubDate: 2025-12-12
 heroImage: './打瘦瘦針可以抗老.png'
 tags: ['健康', '抗衰老', '減重']
+category: '身體保健'
 ---
 
 ![打瘦瘦針可以抗老](./打瘦瘦針可以抗老.png)

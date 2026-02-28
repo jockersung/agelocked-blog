@@ -4,6 +4,7 @@ description: '完整還原抗氧化測量技術的五階段演化史——從 HP
 pubDate: 2026-02-24
 heroImage: './從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png'
 tags: ['抗氧化', '科學史', 'Prysm-iO', '深度科普']
+category: '身體保健'
 ---
 
 ![從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生](./從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png)
