@@ -2,10 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-// 如果你有圖片，請放在 src/assets/images/ 下，並取消下方註解來引入
-// import { Image } from 'astro:assets';
-// import heroImg from '../assets/images/hero-bg.jpg';
-// import profileImg from '../assets/images/profile.jpg';
+import { Image } from 'astro:assets';
+import heroImg from '../assets/生醫數據投影.webp';
+import profileImg from '../assets/profile.webp';
 
 const SITE_TITLE = '孫義坤｜給高壓科技人的「身體重開機」計畫';
 const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科學實證角度，找出慢性發炎的根本原因，幫你清償健康技術債，找回大腦與體力的最高效能。';
@@ -173,7 +172,7 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
         </div>
         
         <div class="hero-image-box">
-          [ 生醫數據投影.webp ]
+          <Image src={heroImg} alt="生醫數據投影" />
           </div>
       </div>
     </section>
@@ -225,7 +224,7 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
     <section class="authority-section">
       <div class="authority-grid">
         <div class="auth-image-box">
-          [ profile.webp ]
+          <Image src={profileImg} alt="profile" />
           </div>
         <div>
           <span class="section-label" style="margin-bottom: 1rem;">專業底線</span>
