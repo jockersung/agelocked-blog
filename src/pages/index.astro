@@ -212,6 +212,10 @@ const pageUrl = Astro.url.href;
       .fit-check { color: var(--teal); flex-shrink: 0; }
       .fit-not { margin-top: 2rem; padding: 1.6rem 1.8rem; background: var(--gold-pale); border: 1px solid var(--border-gold); border-radius: 2px; font-size: 0.87rem; color: var(--body); line-height: 1.9; font-weight: 300; }
       .fit-not strong { color: var(--gold); font-weight: 500; }
+      .fit-inline { margin-top: 3rem; padding: 2.4rem; background: var(--surface); border: 1px solid var(--border); border-radius: 2px; }
+      .fit-inline-title { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.25em; color: var(--teal); text-transform: uppercase; margin-bottom: 1.4rem; }
+      .fit-inline-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.6rem; margin-bottom: 1.6rem; }
+      .fit-inline-item { display: flex; gap: 0.75rem; font-size: 0.87rem; color: var(--body); font-weight: 300; line-height: 1.7; align-items: flex-start; }
 
       /* ── ⑥ SOLUTION ── */
       .solution-section { padding: 7rem 6vw; background: var(--bg2); display: grid; grid-template-columns: 1fr 1.6fr; gap: 8vw; align-items: start; }
@@ -476,103 +480,27 @@ const pageUrl = Astro.url.href;
         <div class="compare-footer reveal">
           取決於你現在的狀況。如果你不確定從哪裡開始，繼續往下看。
         </div>
-      </section>
-
-      <!-- ⑤ FIT：適合誰 -->
-      <section class="fit-section">
-        <div>
-          <div class="label reveal">第三種方式，特別適合這樣的你</div>
-          <h2 class="fit-title reveal">
-            你符合<em>幾個</em>條件？
-          </h2>
-          <p class="fit-body reveal">
-            以下是選擇找我諮詢的人，最常有的共同特徵。
-            符合三個以上，代表你的狀況適合從這個方向開始。
-          </p>
-          <div class="fit-list">
-            <div class="fit-item reveal"><span class="fit-check">✓</span>工作型態短期內無法大幅改變</div>
-            <div class="fit-item reveal"><span class="fit-check">✓</span>身體已同時出現三個以上的警報</div>
-            <div class="fit-item reveal"><span class="fit-check">✓</span>不想只是壓制症狀，想找到根本原因</div>
-            <div class="fit-item reveal"><span class="fit-check">✓</span>完全健檢之後想知道有什麼方式可以調整</div>
-            <div class="fit-item reveal"><span class="fit-check">✓</span>買過保健品但不確定自己真正缺什麼</div>
-            <div class="fit-item reveal"><span class="fit-check">✓</span>需要有生物醫學背景的人幫你整理你的狀況</div>
+        <!-- 選項03 適合的條件：整併入 COMPARE，不另開區塊 -->
+        <div class="fit-inline reveal">
+          <div class="fit-inline-title">選項 03 特別適合你，如果你符合這些條件：</div>
+          <div class="fit-inline-grid">
+            <div class="fit-inline-item"><span class="fit-check">✓</span>工作型態短期內無法大幅改變</div>
+            <div class="fit-inline-item"><span class="fit-check">✓</span>身體已同時出現三個以上的警報</div>
+            <div class="fit-inline-item"><span class="fit-check">✓</span>不想只是壓制症狀，想找到慢性發炎的切入點</div>
+            <div class="fit-inline-item"><span class="fit-check">✓</span>體檢紅字之後想知道有什麼方式可以調整</div>
+            <div class="fit-inline-item"><span class="fit-check">✓</span>買過保健品但不確定自己真正缺什麼</div>
+            <div class="fit-inline-item"><span class="fit-check">✓</span>需要有醫學背景的人幫你把症狀連起來看</div>
           </div>
-        </div>
-        <div class="reveal">
-          <div class="fit-not">
-            <strong>坦白說，我不適合每個人。</strong><br><br>
-            如果你現在的症狀已經需要立即就醫處理，我會直接建議你去看醫生。絕對不要拖。<br><br>
-            如果你想找人快速推薦一瓶保健品，我可以給你連結，你直接下單。但是我可能不是你要找的人。<br><br>
-            因為我做的第一件事是先幫你搞清楚你的狀況，再決定從哪裡開始。
+          <div class="fit-not reveal">
+            <strong>坦白說，我不適合每個人。</strong>
+            如果你的症狀已需要立即就醫，我會直接建議你去看哪一科，絕對不要拖。
+            如果你想要有人快速推薦一瓶保健品，我可能不是你要找的人——
+            因為我做的第一件事是先幫你搞清楚狀況，再決定從哪裡開始。
           </div>
         </div>
       </section>
 
-      <!-- ⑥ SOLUTION：菁英計畫內容 -->
-      <section class="solution-section">
-        <div class="solution-sticky reveal">
-          <div class="label">我怎麼幫你</div>
-          <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.8vw,3.6rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:1.3rem;">
-            菁英計畫<br><em style="font-style:italic;color:var(--teal);">三大核心</em>
-          </h2>
-          <p style="font-size:0.9rem;color:var(--muted);line-height:2.2;font-weight:300;max-width:300px;margin:0;">
-            不是短暫壓制症狀，<br>而是找到你的根本原因，<br>再從那裡開始介入。
-          </p>
-        </div>
-        <div class="solution-cards">
-          <div class="sol-card reveal">
-            <div class="sol-bar"></div>
-            <div class="sol-num">CORE 01</div>
-            <div class="sol-title">找出根本原因</div>
-            <div class="sol-hook">為什麼頭痛醫頭永遠解決不了？</div>
-            <div class="sol-desc">用醫療研究的邏輯，整理你身體各處症狀的共同原因，我負責看懂。基於ageLOC基因科技，從細胞層級的角度切入分析。</div>
-          </div>
-          <div class="sol-card reveal">
-            <div class="sol-bar"></div>
-            <div class="sol-num">CORE 02</div>
-            <div class="sol-title">精準補充方向</div>
-            <div class="sol-hook">買了一堆保健品，但不知道自己真正缺什麼？</div>
-            <div class="sol-desc">根據你的身體狀態、生活型態和現有狀況，給你具體的補充方向——不是通用建議，是針對你這個人的判斷。避免你花冤枉錢在你根本不需要的東西上。</div>
-          </div>
-          <div class="sol-card reveal">
-            <div class="sol-bar"></div>
-            <div class="sol-num">CORE 03</div>
-            <div class="sol-title">有人陪你走每一步</div>
-            <div class="sol-hook">知道要改變，但不知道從哪裡開始？</div>
-            <div class="sol-desc">AI能查資訊，但不認識你這個人。我了解你的工作壓力、飲食習慣、睡眠狀況之後，才告訴你什麼對你有用。全程陪你追蹤進度，隨時可以問我。</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ⑦ HOW：三步驟 -->
-      <section class="how-section">
-        <div class="label reveal">開始很簡單</div>
-        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);">
-          三個<em style="font-style:italic;color:var(--teal);">步驟</em>
-        </h2>
-        <div class="steps-row">
-          <div class="step reveal">
-            <div class="step-num">1</div>
-            <div class="step-time">第一步 · 15分鐘</div>
-            <div class="step-title">告訴我你的狀況</div>
-            <div class="step-desc">透過LINE或線上問卷，告訴我你最困擾的症狀和你的生活型態。</div>
-          </div>
-          <div class="step reveal">
-            <div class="step-num">2</div>
-            <div class="step-time">24小時內</div>
-            <div class="step-title">我幫你整理分析</div>
-            <div class="step-desc">我用醫學研究的角度，幫你找出症狀背後可能的共同原因，以及你最優先需要處理的是什麼。</div>
-          </div>
-          <div class="step reveal">
-            <div class="step-num">3</div>
-            <div class="step-time">30天起</div>
-            <div class="step-title">執行，有人陪你看進度</div>
-            <div class="step-desc">依照你的專屬計畫執行，全程可以隨時問我。定期回報狀況，我幫你調整方向。</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ⑧ WHY：信任建立（個人擺第一）-->
+      <!-- ⑤ WHY + HOW + 見證：整併 -->
       <section class="why-section">
         <div class="label reveal">為什麼是我</div>
         <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:3rem;">
@@ -582,7 +510,7 @@ const pageUrl = Astro.url.href;
           <div class="why-card primary reveal">
             <span class="why-icon">🧬</span>
             <div class="why-title">我認識你，才告訴你什麼對你有用</div>
-            <div class="why-desc">在醫療體系做研究超過15年，見過太多高科技工作者把症狀一個一個分開處理，花了很多錢，問題還是一直輪流出現。我做的第一件事不是賣你產品，是先幫你找到那個共同的根本原因。</div>
+            <div class="why-desc">在醫療體系做研究超過15年，見過太多高科技工作者把症狀一個一個分開處理，花了很多錢，問題還是一直輪流出現。我做的第一件事不是賣你產品，是先幫你把症狀連起來，找到讓慢性發炎持續的那個切入點。</div>
             <div class="why-quote">「AI能給建議，但不認識你這個人。我認識你之後，才給方向。」</div>
           </div>
           <div class="why-card reveal">
@@ -596,77 +524,92 @@ const pageUrl = Astro.url.href;
             <div class="why-desc">購買保健品很容易，難的是知道怎麼用、用了之後有沒有效、遇到問題時有人可以問。我做的是讓你的投入真正有效果。</div>
           </div>
         </div>
-      </section>
 
-      <!-- ⑨ RESULTS：30天後 -->
-      <section class="results-section">
-        <div>
-          <div class="label reveal">30天後你會發現</div>
-          <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;color:var(--ink);line-height:1.2;margin-bottom:2rem;">
-            不只是感覺更年輕，<br><em style="font-style:italic;color:var(--teal);">是身體告訴你</em>
-          </h2>
-          <div class="results-list">
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">感冒次數減少，就算感冒也恢復得比以前快</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">嘴破間隔拉長，不再每個月反覆出現</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">下午的<strong>能量崩潰不見了</strong>，不再靠咖啡撐著</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">睡眠品質改善，早上起床不再像被掏空</div></div>
-            <div class="result-item reveal"><div class="result-icon">✓</div><div class="result-text">皮膚狀況穩定，壓力大的時候不再立刻出狀況</div></div>
+        <!-- 三步驟 -->
+        <div style="margin-top:5rem;border-top:1px solid var(--border);padding-top:5rem;">
+          <div class="label reveal">開始很簡單</div>
+          <div class="steps-row" style="margin-top:1.8rem;">
+            <div class="step reveal">
+              <div class="step-num">1</div>
+              <div class="step-time">第一步 · 15分鐘</div>
+              <div class="step-title">告訴我你的狀況</div>
+              <div class="step-desc">透過LINE，告訴我你最困擾的症狀和你試過什麼沒用。</div>
+            </div>
+            <div class="step reveal">
+              <div class="step-num">2</div>
+              <div class="step-time">24小時內</div>
+              <div class="step-title">我幫你整理分析</div>
+              <div class="step-desc">用醫學研究的角度，幫你找出症狀背後的共同模式，以及最優先的切入點。</div>
+            </div>
+            <div class="step reveal">
+              <div class="step-num">3</div>
+              <div class="step-time">30天起</div>
+              <div class="step-title">執行，有人陪你看進度</div>
+              <div class="step-desc">依照你的專屬方向執行，全程可以隨時問我，定期調整。</div>
+            </div>
           </div>
         </div>
-        <div class="testimonials reveal">
-          <div class="testimonial">
+
+        <!-- 見證 -->
+        <div class="testimonials" style="margin-top:4rem;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+          <div class="testimonial reveal">
             <div class="testimonial-body">「第10天開始感覺明顯差異，下午的能量崩潰不見了，開會也能更專注。最重要的是終於有人幫我搞清楚這些症狀之間的關聯性。」</div>
             <div class="testimonial-author">— 陳總監，47歲，科技業</div>
           </div>
-          <div class="testimonial">
-            <div class="testimonial-body">「之前一直以為嘴破是火氣大，買了很多東西都只是暫時。後來才知道根本原因不在這裡。三週後嘴破就沒再出現了。」</div>
+          <div class="testimonial reveal">
+            <div class="testimonial-body">「之前一直以為嘴破是火氣大，買了很多東西都只是暫時。後來才知道是慢性發炎的問題，三週後嘴破就沒再出現了。」</div>
             <div class="testimonial-author">— 林協理，44歲，半導體業</div>
           </div>
         </div>
       </section>
 
-      <!-- ⑩ FAQ -->
-      <section class="faq-section">
-        <div class="label reveal">常見問題</div>
-        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--ink);">
-          你可能想知道的<em style="font-style:italic;color:var(--teal);">事</em>
-        </h2>
-        <div class="faq-list">
-          <div class="faq-item reveal">
-            <div class="faq-q"><span class="faq-q-label">Q 01</span>我已經吃過很多保健品都沒效，這個會不一樣嗎？</div>
-            <div class="faq-a">很多人吃沒效，是因為補充方向和你真正的根本原因沒有對應到。我做的第一件事不是賣你產品，是先幫你整理你的症狀背後是什麼原因，再決定從哪裡開始最有效率。</div>
-          </div>
-          <div class="faq-item reveal">
-            <div class="faq-q"><span class="faq-q-label">Q 02</span>需要多久才能看到效果？</div>
-            <div class="faq-a">多數人在7–10天開始感受到明顯變化，30天後症狀層面的改善會更穩定。每個人的基礎狀態不同，我會依據你的進度持續調整方向。</div>
-          </div>
-          <div class="faq-item reveal">
-            <div class="faq-q"><span class="faq-q-label">Q 03</span>我的症狀需要看醫生嗎？</div>
-            <div class="faq-a">如果你的症狀需要就醫才知道，我會直接告訴你去看醫生。我做的是幫助你看懂身體在亞健康狀態下發出的求救訊號。</div>
-          </div>
-          <div class="faq-item reveal">
-            <div class="faq-q"><span class="faq-q-label">Q 04</span>費用如何？</div>
-            <div class="faq-a">第一次諮詢免費，我會幫你分析你的狀況適合從哪裡開始。後續方案依個人狀況而定，歡迎加LINE直接問我。</div>
-          </div>
-        </div>
-      </section>
+      <!-- ⑥ FAQ + CTA：整併 -->
+      <section class="faq-section" id="final" style="background:var(--bg);padding:7rem 6vw;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:start;max-width:1100px;margin:0 auto;">
 
-      <!-- ⑪ FINAL CTA -->
-      <section class="final-cta" id="final">
-        <div class="final-watermark">AGELOCKED</div>
-        <div class="final-inner">
-          <div class="final-label reveal">下一步很簡單</div>
-          <h2 class="final-title reveal">想知道你的症狀<br><em>背後是什麼原因？</em></h2>
-          <p class="final-sub reveal">
-            告訴我你現在最困擾的狀況，<br>
-            我幫你分析背後的共同原因，<br>
-            以及你最優先需要處理的是什麼。
-          </p>
-          <div class="final-btns">
-            <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal reveal">💬 加LINE，告訴我你的狀況</a>
-            <a href="mailto:sunyikun0729@gmail.com" class="btn-outline-light reveal">📧 用Email聯絡我</a>
+          <!-- 左：FAQ -->
+          <div>
+            <div class="label reveal">常見問題</div>
+            <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--ink);margin-bottom:2rem;">
+              你可能想知道的<em style="font-style:italic;color:var(--teal);">事</em>
+            </h2>
+            <div class="faq-list">
+              <div class="faq-item reveal">
+                <div class="faq-q"><span class="faq-q-label">Q 01</span>我已經吃過很多保健品都沒效，這個會不一樣嗎？</div>
+                <div class="faq-a">很多人吃沒效，是因為補充方向和症狀背後的慢性發炎原因沒有對應到。我做的第一件事不是賣你產品，是先把你的症狀連起來，找到切入點，再決定從哪裡開始。</div>
+              </div>
+              <div class="faq-item reveal">
+                <div class="faq-q"><span class="faq-q-label">Q 02</span>需要多久才能看到效果？</div>
+                <div class="faq-a">多數人在7–10天開始感受到明顯變化，30天後症狀層面的改善會更穩定。每個人的基礎狀態不同，我會依據你的進度持續調整方向。</div>
+              </div>
+              <div class="faq-item reveal">
+                <div class="faq-q"><span class="faq-q-label">Q 03</span>我的症狀需要看醫生嗎？</div>
+                <div class="faq-a">如果你的症狀需要立即就醫，我會直接告訴你去看哪一科。我的切入點是症狀已出現、但還在可以調整的那段時期。</div>
+              </div>
+            </div>
           </div>
-          <div class="final-note reveal">第一次諮詢免費 · 不推銷產品 · 先搞清楚你的狀況再說</div>
+
+          <!-- 右：CTA 卡片 -->
+          <div style="position:sticky;top:6rem;">
+            <div style="background:var(--ink);padding:3rem 2.6rem;border-radius:2px;position:relative;overflow:hidden;">
+              <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(26,140,130,0.18) 0%,transparent 65%);pointer-events:none;"></div>
+              <div style="position:relative;z-index:1;">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.35em;color:var(--gold);text-transform:uppercase;margin-bottom:1.4rem;" class="reveal">下一步很簡單</div>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:#fff;line-height:1.2;margin-bottom:1rem;" class="reveal">
+                  哪些症狀<br><em style="font-style:italic;color:#6de8df;">一直輪流出現？</em>
+                </h3>
+                <p style="font-size:0.88rem;color:rgba(255,255,255,0.5);line-height:2;font-weight:300;margin-bottom:2rem;" class="reveal">
+                  告訴我你的狀況，<br>
+                  我幫你找到讓症狀真正好轉的切入點——<br>
+                  而不只是一個個暫時壓住。
+                </p>
+                <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal reveal" style="display:block;text-align:center;margin-bottom:0.8rem;">💬 加LINE，告訴我你的狀況</a>
+                <a href="mailto:sunyikun0729@gmail.com" class="btn-outline-light reveal" style="display:block;text-align:center;">📧 用Email聯絡我</a>
+                <div style="font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.15em;color:rgba(255,255,255,0.25);margin-top:1.4rem;text-align:center;" class="reveal">第一次諮詢免費 · 不推銷產品 · 先搞清楚你的狀況再說</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
