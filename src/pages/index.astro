@@ -2,631 +2,257 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+// 如果你有圖片，請放在 src/assets/images/ 下，並取消下方註解來引入
+// import { Image } from 'astro:assets';
+// import heroImg from '../assets/images/hero-bg.jpg';
+// import profileImg from '../assets/images/profile.jpg';
 
-const SITE_TITLE = 'AGELOCKED｜給身體開始失守的高科技工作者';
-const SITE_DESCRIPTION = '嘴破、感冒不好、體力下滑——這些不是老化，是你身體發出的同一個警報。在醫療體系15年的生物醫學專員，幫你找到真正的根本原因。';
-const pageUrl = Astro.url.href;
+const SITE_TITLE = '孫義坤｜給高壓科技人的「身體重開機」計畫';
+const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科學實證角度，找出慢性發炎的根本原因，幫你清償健康技術債，找回大腦與體力的最高效能。';
 ---
 
+<!doctype html>
 <html lang="zh-TW">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
-      /* ────────────────────────────────────────
-         配色說明（新版）
-         主色  teal   #1a8c82  → 醫療信任感、穩定
-         輔色  gold   #b8935a  → 高端質感、溫度
-         深色  ink    #111820  → 標題對比
-         文字  body   #3a4a58
-         淡灰  muted  #7a8fa0
-         背景A bg     #f8f9fb  （微藍白）
-         背景B warm   #faf8f5  （微暖白）
-         ──────────────────────────────────────── */
       :root {
         --teal:       #1a8c82;
         --teal-dark:  #116b63;
         --teal-pale:  rgba(26,140,130,0.07);
-        --teal-mid:   rgba(26,140,130,0.16);
         --gold:       #b8935a;
-        --gold-pale:  rgba(184,147,90,0.10);
-        --gold-mid:   rgba(184,147,90,0.22);
+        --gold-pale:  rgba(184,147,90,0.09);
         --ink:        #111820;
         --body:       #3a4a58;
         --muted:      #7a8fa0;
         --border:     rgba(30,70,100,0.09);
-        --border-gold:rgba(184,147,90,0.20);
         --bg:         #f8f9fb;
         --bg-warm:    #faf8f5;
-        --bg2:        #ffffff;
-        --surface:    #f0f3f7;
       }
+      * { box-sizing: border-box; }
+      body { font-family: 'Noto Serif TC', serif; color: var(--body); background: var(--bg); margin: 0; }
 
-      .lp * { box-sizing: border-box; }
-      .lp { font-family: 'Noto Serif TC', serif; color: var(--body); }
-
-      .label {
-        font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.4em;
-        color: var(--teal); text-transform: uppercase; display: flex;
-        align-items: center; gap: 0.9rem; margin-bottom: 2rem;
-      }
-      .label::before { content: '◆'; font-size: 0.45rem; }
-
-      .label-gold {
-        font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.4em;
-        color: var(--gold); text-transform: uppercase; display: flex;
-        align-items: center; gap: 0.9rem; margin-bottom: 2rem;
-      }
-      .label-gold::before { content: '◆'; font-size: 0.45rem; }
-
-      .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-      .reveal.visible { opacity: 1; transform: translateY(0); }
-
-      /* ── ① HERO ── */
+      /* --- HERO SECTION (雙欄：左文右圖 + Check-list) --- */
       .hero {
-        min-height: 94vh; display: grid; grid-template-columns: 1.1fr 0.9fr;
-        align-items: center; padding: 8rem 6vw 6rem; position: relative;
-        overflow: hidden; background: var(--bg2);
+        padding: 8rem 6vw 6rem;
+        background: var(--ink);
+        color: #fff;
+        position: relative;
+        overflow: hidden;
       }
-      .hero::before {
-        content: ''; position: absolute; inset: 0; pointer-events: none;
-        background: radial-gradient(ellipse 60% 70% at 80% 30%, rgba(26,140,130,0.06) 0%, transparent 65%),
-                    radial-gradient(ellipse 40% 50% at 5% 90%, rgba(184,147,90,0.05) 0%, transparent 60%);
+      .hero-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        position: relative;
+        z-index: 1;
       }
-      .hero::after {
-        content: ''; position: absolute; inset: 0; pointer-events: none;
-        background-image: linear-gradient(rgba(26,140,130,0.03) 1px, transparent 1px),
-                          linear-gradient(90deg, rgba(26,140,130,0.03) 1px, transparent 1px);
-        background-size: 52px 52px;
+      .hero-label {
+        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.3em;
+        color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem; display: block;
       }
-      .hero-left { position: relative; z-index: 1; }
-      .hero-eyebrow {
-        font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.38em;
-        color: var(--gold); text-transform: uppercase; margin-bottom: 1.8rem;
-        display: flex; align-items: center; gap: 0.8rem;
-      }
-      .hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
       .hero-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(2.4rem, 4.5vw, 4.6rem);
-        font-weight: 300; line-height: 1.18; letter-spacing: -0.01em; color: var(--ink);
-        margin-bottom: 1.4rem;
+        font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 4vw, 3.5rem);
+        font-weight: 300; line-height: 1.25; margin-bottom: 2rem; color: #fff;
       }
-      .hero-title em { font-style: normal; color: var(--teal); }
-      .hero-title strong { font-weight: 400; }
-      .hero-subtitle {
-        font-size: 1rem; font-weight: 300; color: var(--muted);
-        margin-bottom: 2.4rem; line-height: 1.9; max-width: 480px;
+      .hero-title em { color: #6de8df; font-style: italic; }
+      
+      /* Checklist 樣式 */
+      .hero-checklist {
+        list-style: none; padding: 0; margin: 0 0 2.5rem 0;
       }
-      .hero-divider { width: 40px; height: 1.5px; background: var(--gold); margin-bottom: 2.4rem; }
-      .hero-btn {
-        display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 2.4rem;
-        background: var(--teal); color: #fff; font-family: 'DM Mono', monospace;
-        font-size: 0.76rem; letter-spacing: 0.2em; border: none; cursor: pointer;
-        border-radius: 2px; transition: all 0.3s; text-transform: uppercase; text-decoration: none;
+      .hero-checklist li {
+        font-size: 1.05rem; line-height: 1.6; color: rgba(255,255,255,0.85);
+        margin-bottom: 1.2rem; display: flex; align-items: flex-start; gap: 0.8rem;
+        font-weight: 300;
       }
-      .hero-btn:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(26,140,130,0.25); border-bottom: none; }
-      .hero-right { position: relative; z-index: 1; padding-left: 4vw; }
-      .hero-card {
-        background: var(--bg-warm); border: 1px solid var(--border-gold);
-        border-top: 3px solid var(--gold); padding: 2rem 2.2rem; border-radius: 2px;
+      .hero-checklist li::before {
+        content: '☑️'; font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem;
       }
-      .hero-card-label { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.3em; color: var(--gold); margin-bottom: 1.2rem; text-transform: uppercase; }
-      .hero-q {
-        display: flex; align-items: flex-start; gap: 0.85rem; padding: 0.75rem 0;
-        border-bottom: 1px solid var(--border); font-size: 0.91rem; color: var(--body); font-weight: 300; line-height: 1.65;
+      
+      .btn-primary {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 1.2rem 2.5rem; background: var(--teal); color: #fff; text-decoration: none;
+        font-family: 'DM Mono', monospace; font-size: 0.9rem; letter-spacing: 0.15em;
+        border-radius: 2px; transition: all 0.3s;
       }
-      .hero-q:last-child { border-bottom: none; }
-      .hero-q-dot { color: var(--teal); flex-shrink: 0; margin-top: 0.15rem; }
-      .hero-card-footer { margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.2em; color: var(--muted); }
+      .btn-primary:hover { background: #6de8df; color: var(--ink); transform: translateY(-2px); }
 
-      /* ── ② PAIN（症狀確認）── */
-      .pain-section { padding: 7rem 6vw; background: var(--bg); }
-      .pain-intro { font-size: 0.95rem; color: var(--muted); line-height: 2.1; font-weight: 300; max-width: 560px; margin-bottom: 3rem; }
-      .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); }
-      .pain-card { background: var(--bg2); padding: 1.6rem 2rem; display: flex; align-items: flex-start; gap: 1rem; transition: background 0.2s; }
-      .pain-card:hover { background: var(--teal-pale); }
-      .pain-check { color: var(--teal); font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem; }
-      .pain-text { font-size: 0.91rem; color: var(--body); line-height: 1.8; font-weight: 300; margin: 0; }
-      .pain-footer {
-        margin-top: 2.8rem; padding: 2.2rem 2.5rem; border-left: 3px solid var(--gold);
-        background: var(--gold-pale);
+      /* 右側圖片框 (佔位符) */
+      .hero-image-box {
+        width: 100%; aspect-ratio: 4/5;
+        background: linear-gradient(135deg, rgba(26,140,130,0.1) 0%, rgba(255,255,255,0.05) 100%);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 2px; display: flex; align-items: center; justify-content: center;
+        color: rgba(255,255,255,0.3); font-family: 'DM Mono', monospace; font-size: 0.8rem;
+        overflow: hidden;
       }
-      .pain-footer-text { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-style: italic; color: var(--ink); line-height: 1.7; }
-      .pain-footer-sub { font-size: 0.85rem; color: var(--muted); margin-top: 0.6rem; font-weight: 300; }
+      .hero-image-box img { width: 100%; height: 100%; object-fit: cover; }
 
-      /* ── ③ BRIDGE（重新定義問題）── */
-      .bridge-section { padding: 7rem 6vw; background: var(--bg2); display: grid; grid-template-columns: 1fr 1.3fr; gap: 8vw; align-items: center; }
-      .bridge-left { }
-      .bridge-title {
-        font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3.2rem);
-        font-weight: 300; color: var(--ink); line-height: 1.2; margin-bottom: 1.8rem;
+      /* --- PAIN / REVEAL POINTS (揭曉真相) --- */
+      .pain-section { padding: 6rem 6vw; background: var(--bg-warm); }
+      .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
+      .section-label {
+        font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.3em;
+        color: var(--teal); margin-bottom: 1rem; display: block;
       }
-      .bridge-title em { font-style: italic; color: var(--teal); }
-      .bridge-body { font-size: 0.95rem; color: var(--body); line-height: 2.2; font-weight: 300; }
-      .bridge-body p { margin: 0 0 1.2rem; }
-      .bridge-body p:last-child { margin: 0; }
-      .bridge-right { }
-      .bridge-visual {
-        background: var(--surface); border: 1px solid var(--border); padding: 2.8rem;
-        position: relative; border-radius: 2px;
+      .section-title {
+        font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 2.8rem);
+        color: var(--ink); font-weight: 300; line-height: 1.3; margin: 0 0 1.5rem 0;
       }
-      .bridge-visual-title { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.8rem; }
-      .bridge-symptom {
-        display: flex; align-items: center; gap: 1rem; padding: 0.85rem 1rem;
-        background: var(--bg2); border: 1px solid var(--border); margin-bottom: 0.6rem;
-        font-size: 0.88rem; color: var(--body); font-weight: 300; border-radius: 2px;
+      .section-subtitle {
+        font-size: 1.1rem; line-height: 2; color: var(--body); font-weight: 300;
       }
-      .bridge-symptom-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; flex-shrink: 0; }
-      .bridge-arrow {
-        text-align: center; padding: 1rem 0 0.6rem; font-family: 'DM Mono', monospace;
-        font-size: 0.62rem; letter-spacing: 0.25em; color: var(--teal); text-transform: uppercase;
+      .pain-grid {
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;
+        max-width: 1000px; margin: 0 auto;
       }
-      .bridge-root {
-        padding: 1.4rem 1.6rem; background: var(--teal); color: #fff; text-align: center;
-        font-size: 0.92rem; font-weight: 300; line-height: 1.8; border-radius: 2px;
+      .pain-card {
+        background: #fff; padding: 2.5rem 2rem; border-top: 3px solid var(--gold);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-radius: 2px;
       }
-      .bridge-root strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 0.3rem; }
+      .pain-card h3 { font-size: 1.2rem; color: var(--ink); margin-top: 0; margin-bottom: 1rem; }
+      .pain-card p { font-size: 0.95rem; line-height: 1.8; color: var(--body); margin: 0; font-weight: 300; }
 
-      /* ── ④ COMPARE（方案比較）── */
-      .compare-section { padding: 7rem 6vw; background: var(--bg-warm); }
-      .compare-intro { font-size: 0.95rem; color: var(--muted); line-height: 2.1; font-weight: 300; max-width: 520px; margin-bottom: 3rem; }
-      .compare-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-      .compare-card {
-        background: var(--bg2); border: 1px solid var(--border); padding: 2.4rem 2rem;
-        border-radius: 2px; transition: all 0.25s; position: relative;
+      /* --- SOLUTION / COMPARE --- */
+      .solution-section { padding: 6rem 6vw; background: #fff; }
+      .solution-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: center;
       }
-      .compare-card:hover { border-color: var(--border-gold); }
-      .compare-card.featured {
-        border-color: var(--teal); border-top: 3px solid var(--teal);
-        box-shadow: 0 8px 40px rgba(26,140,130,0.10);
-      }
-      .compare-tag {
-        position: absolute; top: -1px; right: 1.5rem;
-        font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.25em;
-        background: var(--teal); color: #fff; padding: 0.35rem 0.8rem; text-transform: uppercase;
-        border-radius: 0 0 3px 3px;
-      }
-      .compare-num { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; margin-bottom: 0.8rem; }
-      .compare-name { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 400; color: var(--ink); margin-bottom: 1.2rem; }
-      .compare-pros { margin-bottom: 1.2rem; }
-      .compare-pro { display: flex; gap: 0.7rem; font-size: 0.86rem; color: var(--body); font-weight: 300; line-height: 1.7; margin-bottom: 0.4rem; }
-      .compare-pro::before { content: '✓'; color: var(--teal); flex-shrink: 0; font-size: 0.8rem; }
-      .compare-cons { border-top: 1px solid var(--border); padding-top: 1rem; }
-      .compare-con { display: flex; gap: 0.7rem; font-size: 0.84rem; color: var(--muted); font-weight: 300; line-height: 1.7; margin-bottom: 0.4rem; }
-      .compare-con::before { content: '—'; flex-shrink: 0; }
-      .compare-footer { margin-top: 3rem; text-align: center; font-size: 0.87rem; color: var(--muted); font-weight: 300; font-style: italic; }
+      .compare-box { padding: 2rem; background: var(--bg); border: 1px solid var(--border); border-left: 4px solid var(--muted); margin-bottom: 1.5rem; }
+      .compare-box.mine { border-left-color: var(--teal); background: var(--teal-pale); }
+      .compare-title { font-size: 0.8rem; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 0.5rem; text-transform: uppercase; font-family: 'DM Mono', monospace;}
+      .compare-box.mine .compare-title { color: var(--teal); }
+      .compare-text { font-size: 1.1rem; color: var(--ink); font-weight: 400; }
 
-      /* ── ⑤ FIT（適合誰）── */
-      .fit-section { padding: 7rem 6vw; background: var(--surface); display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: start; }
-      .fit-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 300; color: var(--ink); line-height: 1.2; margin-bottom: 1.4rem; }
-      .fit-title em { font-style: italic; color: var(--teal); }
-      .fit-body { font-size: 0.93rem; color: var(--body); font-weight: 300; line-height: 2.1; margin-bottom: 2rem; }
-      .fit-list { display: flex; flex-direction: column; gap: 0.75rem; }
-      .fit-item {
-        display: flex; align-items: flex-start; gap: 1rem; padding: 1.1rem 1.4rem;
-        background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--teal);
-        font-size: 0.9rem; color: var(--body); font-weight: 300; line-height: 1.75; border-radius: 0 2px 2px 0;
-        transition: border-color 0.2s, background 0.2s;
+      /* --- AUTHORITY / WHY ME (雙欄) --- */
+      .authority-section { padding: 6rem 6vw; background: var(--bg-warm); }
+      .authority-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: center;
       }
-      .fit-item:hover { background: var(--teal-pale); border-left-color: var(--teal-dark); }
-      .fit-check { color: var(--teal); flex-shrink: 0; }
-      .fit-not { margin-top: 2rem; padding: 1.6rem 1.8rem; background: var(--gold-pale); border: 1px solid var(--border-gold); border-radius: 2px; font-size: 0.87rem; color: var(--body); line-height: 1.9; font-weight: 300; }
-      .fit-not strong { color: var(--gold); font-weight: 500; }
-      .fit-inline { margin-top: 3rem; padding: 2.4rem; background: var(--surface); border: 1px solid var(--border); border-radius: 2px; }
-      .fit-inline-title { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.25em; color: var(--teal); text-transform: uppercase; margin-bottom: 1.4rem; }
-      .fit-inline-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.6rem; margin-bottom: 1.6rem; }
-      .fit-inline-item { display: flex; gap: 0.75rem; font-size: 0.87rem; color: var(--body); font-weight: 300; line-height: 1.7; align-items: flex-start; }
-
-      /* ── ⑥ SOLUTION ── */
-      .solution-section { padding: 7rem 6vw; background: var(--bg2); display: grid; grid-template-columns: 1fr 1.6fr; gap: 8vw; align-items: start; }
-      .solution-sticky { position: sticky; top: 5rem; }
-      .solution-cards { display: flex; flex-direction: column; gap: 1px; background: var(--border); }
-      .sol-card { background: var(--bg2); padding: 2.6rem; position: relative; overflow: hidden; transition: background 0.25s; }
-      .sol-card:hover { background: var(--surface); }
-      .sol-num { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.4em; color: var(--teal); margin-bottom: 0.5rem; }
-      .sol-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; color: var(--ink); margin-bottom: 0.3rem; }
-      .sol-hook { font-size: 0.84rem; color: var(--gold); font-weight: 400; margin-bottom: 0.9rem; font-style: italic; }
-      .sol-desc { font-size: 0.9rem; color: var(--body); line-height: 2.1; font-weight: 300; margin: 0; }
-      .sol-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--teal), transparent); opacity: 0; transition: opacity 0.3s; }
-      .sol-card:hover .sol-bar { opacity: 1; }
-
-      /* ── ⑦ HOW ── */
-      .how-section { padding: 7rem 6vw; background: var(--bg); }
-      .steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 3rem; background: var(--border); }
-      .step { background: var(--bg2); padding: 3.2rem 2.4rem; text-align: center; transition: background 0.2s; }
-      .step:hover { background: var(--teal-pale); }
-      .step-num { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: rgba(26,140,130,0.10); line-height: 1; margin-bottom: 1rem; }
-      .step-time { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.25em; color: var(--gold); margin-bottom: 0.7rem; }
-      .step-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; color: var(--ink); margin-bottom: 0.8rem; }
-      .step-desc { font-size: 0.87rem; color: var(--muted); line-height: 2; font-weight: 300; margin: 0; }
-
-      /* ── ⑧ WHY（信任建立）── */
-      .why-section { padding: 7rem 6vw; background: var(--bg-warm); }
-      .why-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
-      .why-card { background: var(--bg2); padding: 2.6rem 2.2rem; border: 1px solid var(--border); border-radius: 2px; transition: all 0.25s; }
-      .why-card:hover { box-shadow: 0 4px 24px rgba(26,140,130,0.08); }
-      .why-card.primary { border-color: var(--teal); border-top: 3px solid var(--teal); }
-      .why-card.primary:hover { box-shadow: 0 8px 40px rgba(26,140,130,0.14); }
-      .why-icon { font-size: 1.8rem; margin-bottom: 1.1rem; display: block; }
-      .why-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; color: var(--ink); margin-bottom: 0.8rem; }
-      .why-desc { font-size: 0.87rem; color: var(--muted); line-height: 2.1; font-weight: 300; margin: 0; }
-      .why-quote { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--border); font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic; color: var(--teal-dark); line-height: 1.7; }
-
-      /* ── ⑨ RESULTS ── */
-      .results-section { padding: 7rem 6vw; background: var(--bg2); display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: start; }
-      .results-list { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.8rem; }
-      .result-item {
-        display: flex; align-items: center; gap: 1.1rem; padding: 1.1rem 1.4rem;
-        background: var(--bg); border: 1px solid var(--border); transition: all 0.2s; border-radius: 2px;
+      .auth-text { font-size: 1.1rem; line-height: 2.2; color: var(--body); font-weight: 300; margin-bottom: 2rem; }
+      .auth-image-box {
+        width: 100%; aspect-ratio: 1; border-radius: 2px;
+        background: var(--gold-pale); border: 1px solid var(--border-gold);
+        display: flex; align-items: center; justify-content: center;
+        color: var(--gold); font-family: 'DM Mono', monospace; font-size: 0.8rem;
+        overflow: hidden; box-shadow: 8px 8px 0 var(--gold-pale);
       }
-      .result-item:hover { border-color: var(--teal); background: var(--teal-pale); }
-      .result-icon { width: 28px; height: 28px; background: rgba(26,140,130,0.1); border: 1.5px solid rgba(26,140,130,0.25); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; flex-shrink: 0; color: var(--teal); border-radius: 50%; }
-      .result-text { font-size: 0.91rem; color: var(--body); font-weight: 300; margin: 0; }
-      .result-text strong { color: var(--teal); font-weight: 500; }
-      .testimonials { display: flex; flex-direction: column; gap: 1.2rem; }
-      .testimonial { padding: 2rem 2.2rem; background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 2px 2px 0; }
-      .testimonial-body { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: var(--body); line-height: 1.8; margin-bottom: 0.9rem; }
-      .testimonial-author { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: var(--gold); }
+      .auth-image-box img { width: 100%; height: 100%; object-fit: cover; }
+      
+      /* --- CTA SECTION --- */
+      .cta-section { padding: 6rem 6vw; background: var(--ink); color: #fff; text-align: center; }
+      .cta-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; margin-bottom: 1.5rem; }
+      .cta-sub { font-size: 1rem; color: rgba(255,255,255,0.6); margin-bottom: 3rem; font-weight: 300; line-height: 2;}
 
-      /* ── ⑩ FAQ ── */
-      .faq-section { padding: 7rem 6vw; background: var(--bg); max-width: 860px; margin: 0 auto; }
-      .faq-list { margin-top: 3rem; }
-      .faq-item { border-bottom: 1px solid var(--border); padding: 1.8rem 0; }
-      .faq-item:first-child { border-top: 1px solid var(--border); }
-      .faq-q { font-size: 1rem; color: var(--ink); margin-bottom: 0.8rem; display: flex; gap: 1.2rem; font-weight: 400; align-items: flex-start; }
-      .faq-q-label { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.25em; color: var(--gold); flex-shrink: 0; padding-top: 0.28em; }
-      .faq-a { font-size: 0.9rem; color: var(--muted); line-height: 2.1; font-weight: 300; padding-left: 3.5rem; margin: 0; }
-
-      /* ── ⑪ FINAL CTA ── */
-      .final-cta { padding: 9rem 6vw; text-align: center; position: relative; overflow: hidden; background: var(--ink); }
-      .final-cta::before {
-        content: ''; position: absolute; inset: 0; pointer-events: none;
-        background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(26,140,130,0.15) 0%, transparent 70%),
-                    radial-gradient(ellipse 30% 40% at 90% 10%, rgba(184,147,90,0.10) 0%, transparent 60%);
-      }
-      .final-cta::after {
-        content: ''; position: absolute; inset: 0; pointer-events: none;
-        background-image: linear-gradient(rgba(26,140,130,0.05) 1px, transparent 1px),
-                          linear-gradient(90deg, rgba(26,140,130,0.05) 1px, transparent 1px);
-        background-size: 52px 52px;
-      }
-      .final-watermark {
-        position: absolute; font-family: 'Cormorant Garamond', serif; font-size: 20vw; font-weight: 300;
-        color: rgba(255,255,255,0.02); top: 50%; left: 50%; transform: translate(-50%,-50%);
-        white-space: nowrap; pointer-events: none; user-select: none; z-index: 0; letter-spacing: -0.05em;
-      }
-      .final-inner { position: relative; z-index: 1; }
-      .final-label { font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.8rem; }
-      .final-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 5.5vw, 5.5rem); font-weight: 300; line-height: 1.12; margin-bottom: 1.4rem; color: #fff; }
-      .final-title em { font-style: italic; color: #6de8df; }
-      .final-sub { font-size: 0.97rem; color: rgba(255,255,255,0.5); max-width: 420px; margin: 0 auto 3.2rem; line-height: 2.2; font-weight: 300; }
-      .final-note { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.3); margin-top: 2rem; }
-      .final-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-      .btn-teal {
-        padding: 1.1rem 3rem; background: var(--teal); color: #fff;
-        font-family: 'DM Mono', monospace; font-size: 0.76rem; letter-spacing: 0.22em;
-        text-transform: uppercase; border: none; cursor: pointer; transition: all 0.3s; border-radius: 2px;
-        text-decoration: none; display: inline-block;
-      }
-      .btn-teal:hover { background: #22b0a5; transform: translateY(-2px); box-shadow: 0 14px 36px rgba(26,140,130,0.4); border-bottom: none; color: #fff; }
-      .btn-outline-light {
-        padding: 1.1rem 2.5rem; background: transparent; color: rgba(255,255,255,0.75);
-        font-family: 'DM Mono', monospace; font-size: 0.76rem; letter-spacing: 0.22em;
-        text-transform: uppercase; border: 1px solid rgba(255,255,255,0.22); cursor: pointer;
-        transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.6rem;
-        border-radius: 2px; text-decoration: none;
-      }
-      .btn-outline-light:hover { border-color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.05); color: #fff; border-bottom-color: rgba(255,255,255,0.55); }
-
-      /* ── Responsive ── */
-      @media (max-width: 960px) {
-        .hero { grid-template-columns: 1fr; gap: 3rem; min-height: auto; padding-top: 5rem; }
-        .hero-right { padding-left: 0; }
-        .bridge-section { grid-template-columns: 1fr; }
-        .solution-section { grid-template-columns: 1fr; }
-        .solution-sticky { position: static; }
-        .fit-section { grid-template-columns: 1fr; }
-        .results-section { grid-template-columns: 1fr; }
-        .steps-row { grid-template-columns: 1fr; }
-        .pain-grid { grid-template-columns: 1fr; }
-        .compare-grid { grid-template-columns: 1fr; }
-        .why-grid { grid-template-columns: 1fr; }
+      @media (max-width: 900px) {
+        .hero-inner, .solution-grid, .authority-grid { grid-template-columns: 1fr; gap: 3rem; }
+        .hero-image-box { aspect-ratio: 16/9; }
       }
     </style>
   </head>
   <body>
     <Header />
 
-    <div class="lp">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="hero-label">高階健康專案經理</span>
+          <h1 class="hero-title">給高壓科技人的<br><em>「身體重開機」</em>計畫</h1>
+          
+          <ul class="hero-checklist">
+            <li>每天睡滿 8 小時，下午開會還是腦袋霧霧的？</li>
+            <li>體檢報告開始出現紅字，卻不知道從何改善？</li>
+            <li>小感冒拖很久、嘴破反覆，身體一直有小狀況？</li>
+          </ul>
 
-      <!-- ① HERO：命中症狀 -->
-      <section class="hero">
-        <div class="hero-left">
-          <div class="hero-eyebrow">生物醫學專員 · 15年醫學研究背景</div>
-          <h1 class="hero-title">
-            嘴破、感冒不好、<br>
-            體力一直在下滑——<br>
-            <em>這些不只是老化，<br>是同一個警報</em>
-          </h1>
-          <div class="hero-divider"></div>
-          <p class="hero-subtitle">
-            給40–50歲、在高科技產業工作、<br>
-            身體開始悄悄失守的你
+          <a href="#cta" class="btn-primary">👉 如果你中了兩項以上，請點此</a>
+        </div>
+        
+        <div class="hero-image-box">
+          [ 生醫數據投影.webp ]
+          </div>
+      </div>
+    </section>
+
+    <section class="pain-section">
+      <div class="section-header">
+        <span class="section-label">根本原因</span>
+        <h2 class="section-title">以為只是「初老」？<br>其實你的系統正在「無限期加班」</h2>
+        <p class="section-subtitle">
+          很多人遇到上面的狀況，都覺得「年紀到了」或是「太累而已」。但從生醫科學來看，這不是單純的疲勞，而是你的身體正在<strong>「慢性發炎」</strong>。
+        </p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <h3>【蓄電力見底】</h3>
+          <p>週末補眠也補不回來。這不是單純疲勞，是你的細胞發電廠（粒線體）已經過勞受損，無法再產生足夠的能量。</p>
+        </div>
+        <div class="pain-card">
+          <h3>【滿江紅報告】</h3>
+          <p>血脂、血糖或發炎指數異常。吞了一堆保健品卻無感，只能放任健康技術債越疊越高，讓系統負載超標。</p>
+        </div>
+        <div class="pain-card">
+          <h3>【防護網失效】</h3>
+          <p>感冒特別久才好、肩頸永遠像石頭一樣硬。這是免疫系統長期處於「慢性發炎」待命模式，開始攻擊正常細胞的代價。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution-section">
+      <div class="solution-grid">
+        <div>
+          <span class="section-label">思維轉換</span>
+          <h2 class="section-title">為什麼吞了一堆保健品，還是無感？</h2>
+          <p style="margin-top: 1.5rem; line-height: 2; font-weight: 300;">因為傳統的方式是「頭痛醫頭」。面對慢性發炎這種全身上下的問題，你需要的是整合性的健康盤點，而不是單純的成分推疊。</p>
+        </div>
+        <div>
+          <div class="compare-box">
+            <div class="compare-title">傳統做法：無效堆疊</div>
+            <div class="compare-text">針對單一症狀盲目吃保健品，治標不治本，最後小毛病還是輪流出現。</div>
+          </div>
+          <div class="compare-box mine">
+            <div class="compare-title">我的做法：非藥物健康調校</div>
+            <div class="compare-text">透過生醫數據比對，找出發炎的「真正源頭」，策劃專屬的健康重置計畫。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="authority-section">
+      <div class="authority-grid">
+        <div class="auth-image-box">
+          [ profile.webp ]
+          </div>
+        <div>
+          <span class="section-label" style="margin-bottom: 1rem;">專業底線</span>
+          <h2 class="section-title" style="margin-bottom: 2rem;">我不賣奇蹟，<br>只看科學實證與數據</h2>
+          <p class="auth-text">
+            在醫療體系負責幫醫師整理海量醫學數據的 15 年裡，我深知一件事：<strong>真正有效的健康管理，絕對不是靠行銷話術。</strong>
+            <br><br>
+            我幫你篩選與推薦的介入資源，都必須具備「基因科學」與「細胞層級」的嚴謹實證支持。我們不靠感覺，我們看科學文獻與數據說話。
           </p>
-          <a href="#compare" class="hero-btn">了解你的身體在說什麼 →</a>
         </div>
-        <div class="hero-right">
-          <div class="hero-card">
-            <div class="hero-card-label">這些症狀，你有幾個？</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>感冒一拖就是三週，咳不停</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>嘴破反覆出現，吃什麼都沒用</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>傷口好得比以前慢很多</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>體檢紅字一堆，醫生只叫你多休息</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>睡滿八小時還是覺得累</div>
-            <div class="hero-q"><span class="hero-q-dot">·</span>皮膚乾癢，壓力大就更嚴重</div>
-            <div class="hero-card-footer">勾了三個以上？繼續往下看</div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ② PAIN：症狀確認 -->
-      <section class="pain-section" id="pain">
-        <div class="label reveal">處理過了，但還是一直輪流出現？</div>
-        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:1.2rem;">
-          每個都處理過了，<br><em style="font-style:italic;color:var(--teal);">症狀還是一直輪流出現</em>
-        </h2>
-        <p class="pain-intro reveal">
-          不是你買錯產品——而是這些症狀本來就不是獨立的問題，<br>
-          它們需要被連起來看，才能真正好轉。
-        </p>
-        <div class="pain-grid">
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">睡滿八小時還是累，體力下滑、爬樓梯就喘</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">CRP偏高、發炎指數紅字，醫生說多休息——但你不知道從哪裡開始改</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">嘴破反覆出現，補了維他命C和奇異果還是沒用</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">感冒好不了，才剛好又來；傷口也比以前拖更久才好</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">眼睛乾澀，點人工淚液只是暫時，工作一久又來</p></div>
-          <div class="pain-card reveal"><span class="pain-check">□</span><p class="pain-text">肩頸僵硬，去推拿了，很快又回到原點</p></div>
-        </div>
-        <div class="pain-footer reveal">
-          <div class="pain-footer-text">「你以為這些是你『初老』的症頭，不能逆轉？<br>其實這是<strong style="font-style:normal;">慢性發炎</strong>造成的狀況——<strong style="font-style:normal;">這是可以調整回來的。</strong>」</div>
-          <div class="pain-footer-sub">分開處理每個症狀，只是暫時壓住。找到慢性發炎的根本原因，症狀才會真正好轉。</div>
-        </div>
-      </section>
-
-      <!-- ③ BRIDGE：重新定義問題（最關鍵的橋接層）-->
-      <section class="bridge-section">
-        <div class="bridge-left reveal">
-          <div class="label">這是怎麼發生的</div>
-          <h2 class="bridge-title">
-            慢性發炎，<br>
-            是怎麼讓這些症狀<br>
-            <em>同時出現的？</em>
-          </h2>
-          <div class="bridge-body">
-            <p>高壓讓皮質醇持續偏高、睡眠不足讓細胞沒有時間完成修復、氧化壓力累積讓免疫與再生機制開始打折——<strong style="color:var(--ink);font-weight:500;">三件事同時發生，互相強化。</strong></p>
-            <p>這就是為什麼你同時出現這麼多症狀，而不是只有一個地方出問題：慢性發炎的缺口夠大時，身體會在最脆弱的幾個地方同時失守。</p>
-            <p>處理任何單一症狀，只是暫時壓住那個出口。<strong style="color:var(--teal);font-weight:500;">要讓症狀真正好轉，需要從讓慢性發炎持續的根本原因介入。</strong></p>
-          </div>
-        </div>
-        <div class="bridge-right reveal">
-          <div class="bridge-visual">
-            <div class="bridge-visual-title">這6個症狀的共同來源</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>睡滿還累、體力下滑</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>發炎指數紅字</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>嘴破反覆出現</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>感冒好不了、傷口慢</div>
-            <div class="bridge-symptom"><span class="bridge-symptom-dot"></span>眼睛乾澀、肩頸僵硬</div>
-            <div class="bridge-arrow">↓ 同一個根本原因</div>
-            <div class="bridge-root">
-              <strong>慢性發炎</strong>
-              細胞長期處於發炎狀態，<br>修復速度跟不上每日損耗<br>
-              <span style="display:inline-block;margin-top:0.8rem;padding:0.35rem 1rem;background:rgba(109,232,221,0.15);border:1px solid rgba(109,232,221,0.35);border-radius:2px;font-size:0.8rem;color:#6de8df;letter-spacing:0.1em;">這是可以調整回來的</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ④ COMPARE：方案比較（讓他自己選你）-->
-      <section class="compare-section" id="compare">
-        <div class="label-gold reveal">面對這個狀況，你有幾種選擇</div>
-        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:1rem;">
-          三種方法，<em style="font-style:italic;color:var(--teal);">你的選擇？</em>
-        </h2>
-        <p class="compare-intro reveal">
-          取決於你現在的狀況和時間資源。以下是最常見的三條路：
-        </p>
-        <div class="compare-grid">
-          <div class="compare-card reveal">
-            <div class="compare-num">選項 01</div>
-            <div class="compare-name">調整生活習慣</div>
-            <div class="compare-pros">
-              <div class="compare-pro">最根本的方法，從源頭解決</div>
-              <div class="compare-pro">不需要花額外費用</div>
-            </div>
-            <div class="compare-cons">
-              <div class="compare-con">需要3–6個月甚至更長才能看到效果</div>
-              <div class="compare-con">工作型態短期難以大幅改變的人較難執行</div>
-              <div class="compare-con">身體已透支的狀況下，光靠調整很難追上損耗速度</div>
-            </div>
-          </div>
-          <div class="compare-card reveal">
-            <div class="compare-num">選項 02</div>
-            <div class="compare-name">功能醫學門診</div>
-            <div class="compare-pros">
-              <div class="compare-pro">評估最完整，可以做系統性身體分析</div>
-              <div class="compare-pro">有醫師判斷，安全性高</div>
-            </div>
-            <div class="compare-cons">
-              <div class="compare-con">需要請假好幾天，工作夠忙沒時間</div>
-              <div class="compare-con">費用較高，公司有排我才去</div>
-              <div class="compare-con">適合有時間做完整評估的人</div>
-            </div>
-          </div>
-          <div class="compare-card featured reveal">
-            <div class="compare-tag">適合你的狀況</div>
-            <div class="compare-num">選項 03</div>
-            <div class="compare-name">細胞層級補充</div>
-            <div class="compare-pros">
-              <div class="compare-pro">適合已透支一段時間、身體同時出現多個警報的人</div>
-              <div class="compare-pro">讓身體先有資源啟動修復機制</div>
-              <div class="compare-pro">可以與前兩種方法同時進行，不衝突</div>
-              <div class="compare-pro">有醫學研究背景的人幫你判斷從哪裡開始</div>
-            </div>
-            <div class="compare-cons">
-              <div class="compare-con">需要有人幫你判斷你的狀況適合什麼方向</div>
-            </div>
-          </div>
-        </div>
-        <div class="compare-footer reveal">
-          取決於你現在的狀況。如果你不確定從哪裡開始，繼續往下看。
-        </div>
-        <!-- 選項03 適合的條件：整併入 COMPARE，不另開區塊 -->
-        <div class="fit-inline reveal">
-          <div class="fit-inline-title">選項 03 特別適合你，如果你符合這些條件：</div>
-          <div class="fit-inline-grid">
-            <div class="fit-inline-item"><span class="fit-check">✓</span>工作型態短期內無法大幅改變</div>
-            <div class="fit-inline-item"><span class="fit-check">✓</span>身體已同時出現三個以上的警報</div>
-            <div class="fit-inline-item"><span class="fit-check">✓</span>不想只是壓制症狀，想找到慢性發炎的切入點</div>
-            <div class="fit-inline-item"><span class="fit-check">✓</span>體檢紅字之後想知道有什麼方式可以調整</div>
-            <div class="fit-inline-item"><span class="fit-check">✓</span>買過保健品但不確定自己真正缺什麼</div>
-            <div class="fit-inline-item"><span class="fit-check">✓</span>需要有醫學背景的人幫你把症狀連起來看</div>
-          </div>
-          <div class="fit-not reveal">
-            <strong>坦白說，我不適合每個人。</strong>
-            如果你的症狀已需要立即就醫，我會直接建議你去看哪一科，絕對不要拖。
-            如果你想要有人快速推薦一瓶保健品，我可能不是你要找的人——
-            因為我做的第一件事是先幫你搞清楚狀況，再決定從哪裡開始。
-          </div>
-        </div>
-      </section>
-
-      <!-- ⑤ WHY + HOW + 見證：整併 -->
-      <section class="why-section">
-        <div class="label reveal">為什麼是我</div>
-        <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:3rem;">
-          你值得<em style="font-style:italic;color:var(--teal);">付費的理由</em>
-        </h2>
-        <div class="why-grid">
-          <div class="why-card primary reveal">
-            <span class="why-icon">🧬</span>
-            <div class="why-title">我認識你，才告訴你什麼對你有用</div>
-            <div class="why-desc">在醫療體系做研究超過15年，見過太多高科技工作者把症狀一個一個分開處理，花了很多錢，問題還是一直輪流出現。我做的第一件事不是賣你產品，是先幫你把症狀連起來，找到讓慢性發炎持續的那個切入點。</div>
-            <div class="why-quote">「AI能給建議，但不認識你這個人。我認識你之後，才給方向。」</div>
-          </div>
-          <div class="why-card reveal">
-            <span class="why-icon">🔬</span>
-            <div class="why-title">科學驗證的方法</div>
-            <div class="why-desc">ageLOC技術獲得多國專利，有嚴謹的科學研究支持。不是話術，是有根據的介入方向。我用的是醫療研究的邏輯，不是銷售的邏輯。</div>
-          </div>
-          <div class="why-card reveal">
-            <span class="why-icon">🤝</span>
-            <div class="why-title">有人全程陪你，不是買了就消失</div>
-            <div class="why-desc">購買保健品很容易，難的是知道怎麼用、用了之後有沒有效、遇到問題時有人可以問。我做的是讓你的投入真正有效果。</div>
-          </div>
-        </div>
-
-        <!-- 三步驟 -->
-        <div style="margin-top:5rem;border-top:1px solid var(--border);padding-top:5rem;">
-          <div class="label reveal">開始很簡單</div>
-          <div class="steps-row" style="margin-top:1.8rem;">
-            <div class="step reveal">
-              <div class="step-num">1</div>
-              <div class="step-time">第一步 · 15分鐘</div>
-              <div class="step-title">告訴我你的狀況</div>
-              <div class="step-desc">透過LINE，告訴我你最困擾的症狀和你試過什麼沒用。</div>
-            </div>
-            <div class="step reveal">
-              <div class="step-num">2</div>
-              <div class="step-time">24小時內</div>
-              <div class="step-title">我幫你整理分析</div>
-              <div class="step-desc">用醫學研究的角度，幫你找出症狀背後的共同模式，以及最優先的切入點。</div>
-            </div>
-            <div class="step reveal">
-              <div class="step-num">3</div>
-              <div class="step-time">30天起</div>
-              <div class="step-title">執行，有人陪你看進度</div>
-              <div class="step-desc">依照你的專屬方向執行，全程可以隨時問我，定期調整。</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 見證 -->
-        <div class="testimonials" style="margin-top:4rem;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
-          <div class="testimonial reveal">
-            <div class="testimonial-body">「第10天開始感覺明顯差異，下午的能量崩潰不見了，開會也能更專注。最重要的是終於有人幫我搞清楚這些症狀之間的關聯性。」</div>
-            <div class="testimonial-author">— 陳總監，47歲，科技業</div>
-          </div>
-          <div class="testimonial reveal">
-            <div class="testimonial-body">「之前一直以為嘴破是火氣大，買了很多東西都只是暫時。後來才知道是慢性發炎的問題，三週後嘴破就沒再出現了。」</div>
-            <div class="testimonial-author">— 林協理，44歲，半導體業</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ⑥ FAQ + CTA：整併 -->
-      <section class="faq-section" id="final" style="background:var(--bg);padding:7rem 6vw;">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:start;max-width:1100px;margin:0 auto;">
-
-          <!-- 左：FAQ -->
-          <div>
-            <div class="label reveal">常見問題</div>
-            <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--ink);margin-bottom:2rem;">
-              你可能想知道的<em style="font-style:italic;color:var(--teal);">事</em>
-            </h2>
-            <div class="faq-list">
-              <div class="faq-item reveal">
-                <div class="faq-q"><span class="faq-q-label">Q 01</span>我已經吃過很多保健品都沒效，這個會不一樣嗎？</div>
-                <div class="faq-a">很多人吃沒效，是因為補充方向和症狀背後的慢性發炎原因沒有對應到。我做的第一件事不是賣你產品，是先把你的症狀連起來，找到切入點，再決定從哪裡開始。</div>
-              </div>
-              <div class="faq-item reveal">
-                <div class="faq-q"><span class="faq-q-label">Q 02</span>需要多久才能看到效果？</div>
-                <div class="faq-a">多數人在7–10天開始感受到明顯變化，30天後症狀層面的改善會更穩定。每個人的基礎狀態不同，我會依據你的進度持續調整方向。</div>
-              </div>
-              <div class="faq-item reveal">
-                <div class="faq-q"><span class="faq-q-label">Q 03</span>我的症狀需要看醫生嗎？</div>
-                <div class="faq-a">如果你的症狀需要立即就醫，我會直接告訴你去看哪一科。我的切入點是症狀已出現、但還在可以調整的那段時期。</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 右：CTA 卡片 -->
-          <div style="position:sticky;top:6rem;">
-            <div style="background:var(--ink);padding:3rem 2.6rem;border-radius:2px;position:relative;overflow:hidden;">
-              <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(26,140,130,0.18) 0%,transparent 65%);pointer-events:none;"></div>
-              <div style="position:relative;z-index:1;">
-                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.35em;color:var(--gold);text-transform:uppercase;margin-bottom:1.4rem;" class="reveal">下一步很簡單</div>
-                <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:#fff;line-height:1.2;margin-bottom:1rem;" class="reveal">
-                  哪些症狀<br><em style="font-style:italic;color:#6de8df;">一直輪流出現？</em>
-                </h3>
-                <p style="font-size:0.88rem;color:rgba(255,255,255,0.5);line-height:2;font-weight:300;margin-bottom:2rem;" class="reveal">
-                  告訴我你的狀況，<br>
-                  我幫你找到讓症狀真正好轉的切入點——<br>
-                  而不只是一個個暫時壓住。
-                </p>
-                <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal reveal" style="display:block;text-align:center;margin-bottom:0.8rem;">💬 加LINE，告訴我你的狀況</a>
-                <a href="mailto:sunyikun0729@gmail.com" class="btn-outline-light reveal" style="display:block;text-align:center;">📧 用Email聯絡我</a>
-                <div style="font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.15em;color:rgba(255,255,255,0.25);margin-top:1.4rem;text-align:center;" class="reveal">第一次諮詢免費 · 不推銷產品 · 先搞清楚你的狀況再說</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-    </div><!-- /.lp -->
+    <section id="cta" class="cta-section">
+      <h2 class="cta-title">停止盲目測試，先找出真正的健康盲點</h2>
+      <p class="cta-sub">
+        如果你也厭倦了無效的補充與不斷輪流出現的小毛病，<br>
+        不要急著亂買保健品。我們先從盤點你的身體現況開始。
+      </p>
+      <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-primary" style="font-size: 1rem; padding: 1.2rem 3rem;">
+        💬 加 LINE 索取【科技人專屬：抗發炎自我檢測清單】
+      </a>
+      <div style="font-family:'DM Mono',monospace; font-size:0.7rem; color:rgba(255,255,255,0.4); margin-top:1.5rem; letter-spacing: 0.1em;">
+        * 第一次諮詢免費 · 不推銷產品 · 先用數據搞清楚你的狀況再說
+      </div>
+    </section>
 
     <Footer />
-
-    <script>
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach((e, i) => {
-          if (e.isIntersecting) {
-            setTimeout(() => e.target.classList.add('visible'), (i % 4) * 80);
-            obs.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-    </script>
   </body>
 </html>

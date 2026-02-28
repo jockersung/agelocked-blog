@@ -5,8 +5,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import profileImg from './profile.webp';
 
-const title = '關於孫義坤｜幫你找到讓症狀真正好轉的根本原因';
-const description = '感冒反覆、嘴破一直出現、睡飽還是累——每個症狀都處理了，為什麼還是輪流出現？這不是初老，是慢性發炎造成的狀況，而且可以調整回來。在醫療體系15年，我幫你找到讓症狀真正好轉的根本原因。';
+const title = '關於孫義坤｜幫高壓科技人用科學數據「除錯」的生醫顧問';
+const description = '過去15年我在醫療體系負責幫醫師從海量數據中整理患者生病原因。現在，我用這套研究邏輯，幫高壓科技人找回被慢性發炎偷走的體力。';
 ---
 
 <!doctype html>
@@ -48,7 +48,8 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
       }
       .about-hero::before {
         content: '';
-        position: absolute; inset: 0; pointer-events: none;
+        position: absolute;
+        inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 50% 60% at 85% 30%, rgba(26,140,130,0.06) 0%, transparent 65%),
                     radial-gradient(ellipse 30% 40% at 5% 80%, rgba(184,147,90,0.05) 0%, transparent 60%);
       }
@@ -73,7 +74,8 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
       }
       .hero-divider { width: 36px; height: 1.5px; background: var(--gold); margin-bottom: 1.8rem; }
       .about-tagline {
-        font-size: 1.05rem; font-weight: 300; color: var(--body);
+        font-size: 1.05rem;
+        font-weight: 300; color: var(--body);
         line-height: 2; max-width: 420px;
       }
       .about-tagline strong { color: var(--ink); font-weight: 500; }
@@ -86,7 +88,8 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
         border-radius: 2px;
         border: 1px solid var(--border-gold);
         box-shadow: 8px 8px 0 var(--gold-pale);
-        display: block; margin-left: auto;
+        display: block;
+        margin-left: auto;
       }
       .about-credentials {
         margin-top: 1.8rem;
@@ -156,36 +159,31 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
         background: var(--bg);
         border: 1px solid var(--border);
         border-left: 2.5px solid var(--teal);
-        font-size: 0.91rem; color: var(--body); font-weight: 300; line-height: 1.75;
+        font-size: 0.91rem; color: var(--body);
+        font-weight: 300; line-height: 1.75;
         border-radius: 0 2px 2px 0;
       }
       .observe-item strong { color: var(--ink); font-weight: 500; }
 
       /* 方式比較 */
       .approach-compare {
-        display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-        margin: 2rem 0;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0;
       }
       .approach-card {
-        padding: 1.6rem 1.8rem;
-        background: var(--bg); border: 1px solid var(--border);
+        padding: 1.6rem 1.8rem; background: var(--bg); border: 1px solid var(--border);
         border-radius: 2px; font-size: 0.88rem; font-weight: 300;
         color: var(--body); line-height: 1.9;
       }
       .approach-card.mine {
-        background: var(--teal-pale);
-        border-color: var(--teal); border-top: 2.5px solid var(--teal);
+        background: var(--teal-pale); border-color: var(--teal); border-top: 2.5px solid var(--teal);
       }
       .approach-card-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.62rem; letter-spacing: 0.25em;
-        color: var(--muted); text-transform: uppercase;
-        margin-bottom: 0.6rem;
+        font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.25em;
+        color: var(--muted); text-transform: uppercase; margin-bottom: 0.6rem;
       }
       .approach-card.mine .approach-card-label { color: var(--teal); }
       .approach-card-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.2rem; font-weight: 400; color: var(--ink);
+        font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--ink);
         margin-bottom: 0.7rem;
       }
 
@@ -194,22 +192,19 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
       .topics-inner { max-width: 760px; margin: 0 auto; }
       .topics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
       .topic {
-        padding: 1.4rem 1.6rem;
-        background: var(--bg2); border: 1px solid var(--border);
+        padding: 1.4rem 1.6rem; background: var(--bg2); border: 1px solid var(--border);
         border-radius: 2px; font-size: 0.88rem; color: var(--body);
         font-weight: 300; line-height: 1.75; transition: border-color 0.2s, background 0.2s;
       }
       .topic:hover { border-color: var(--teal); background: var(--teal-pale); }
       .topic strong {
-        display: block; color: var(--ink); font-weight: 400;
-        margin-bottom: 0.3rem;
+        display: block; color: var(--ink); font-weight: 400; margin-bottom: 0.3rem;
         font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
       }
 
       /* CTA 區 */
       .contact-section {
-        padding: 6rem 6vw; background: var(--ink);
-        text-align: center; position: relative; overflow: hidden;
+        padding: 6rem 6vw; background: var(--ink); text-align: center; position: relative; overflow: hidden;
       }
       .contact-section::before {
         content: ''; position: absolute; inset: 0; pointer-events: none;
@@ -218,40 +213,29 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
       .contact-inner { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
       .contact-label {
         font-family: 'DM Mono', monospace; font-size: 0.65rem;
-        letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase;
-        margin-bottom: 1.6rem;
+        letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.6rem;
       }
       .contact-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300;
+        font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300;
         line-height: 1.2; color: #fff; margin-bottom: 1.2rem;
       }
       .contact-title em { font-style: italic; color: #6de8df; }
       .contact-sub {
-        font-size: 0.95rem; color: rgba(255,255,255,0.5);
-        line-height: 2.1; font-weight: 300; margin-bottom: 2.8rem;
+        font-size: 0.95rem; color: rgba(255,255,255,0.5); line-height: 2.1; font-weight: 300; margin-bottom: 2.8rem;
       }
       .contact-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
       .btn-teal {
         padding: 1rem 2.6rem; background: var(--teal); color: #fff;
         font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em;
-        text-transform: uppercase; border-radius: 2px; text-decoration: none;
-        transition: all 0.3s; display: inline-block;
+        text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all 0.3s; display: inline-block;
       }
-      .btn-teal:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(26,140,130,0.35); border-bottom: none; color: #fff; }
+      .btn-teal:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(26,140,130,0.35); color: #fff; }
       .btn-outline {
-        padding: 1rem 2.2rem; background: transparent;
-        color: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.22);
-        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em;
-        text-transform: uppercase; border-radius: 2px; text-decoration: none;
-        transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
+        padding: 1rem 2.2rem; background: transparent; color: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.22);
+        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
       }
-      .btn-outline:hover { border-color: rgba(255,255,255,0.55); color: #fff; border-bottom-color: rgba(255,255,255,0.55); }
-      .contact-note {
-        margin-top: 1.8rem;
-        font-family: 'DM Mono', monospace; font-size: 0.62rem;
-        letter-spacing: 0.2em; color: rgba(255,255,255,0.28);
-      }
+      .btn-outline:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
+      .contact-note { margin-top: 1.8rem; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.28); }
 
       /* ── Responsive ── */
       @media (max-width: 760px) {
@@ -265,19 +249,15 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
   <body>
     <Header />
 
-    <!-- ① HERO：你是誰，為什麼值得信 -->
     <section class="about-hero">
       <div>
-        <div class="hero-eyebrow">生物醫學相關專員</div>
+        <div class="hero-eyebrow">高階健康專案經理</div>
         <h1 class="about-name">孫義坤</h1>
-        <div class="about-title">在醫療體系工作15年的人</div>
+        <div class="about-title">用科學數據幫你「除錯」的生醫專員</div>
         <div class="hero-divider"></div>
         <p class="about-tagline">
-          你來這裡，大概是因為<br>
-          某些症狀處理了一遍又一遍，<br>
-          <strong>但還是一直輪流出現。</strong><br><br>
-          我做的，就是幫你找到<br>
-          讓這些症狀同時出現的那個共同原因。
+          過去 15 年，我在醫療體系負責幫醫師從海量數據中整理患者的生病原因，並發表成國際論文。<br><br>
+          現在，我用這套研究邏輯，幫高壓科技人用科學數據<strong>『除錯』</strong>，找回被慢性發炎偷走的體力。
         </p>
       </div>
       <div class="about-photo-wrap">
@@ -285,81 +265,24 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
         <div class="about-credentials">
           <span class="credential">陽明交通大學 應用化學系</span>
           <span class="credential">清華大學 分子醫學研究所</span>
-          <span class="credential">醫療體系研究工作 15年</span>
-          <span class="credential">Nu Skin ageLOC 顧問</span>
+          <span class="credential">醫療體系研究工作 15 年</span>
+          <span class="credential">抗衰老生物技術研究應用</span>
         </div>
       </div>
     </section>
 
-    <!-- ② STORY：個人故事（讓他覺得你懂他） -->
     <div class="story-wrap">
 
-      <div class="section-label">我見過的模式</div>
+      <div class="section-label">指出產業亂象</div>
       <h2 class="section-title">
-        每個症狀都處理了，<br>
-        <em>為什麼還是一直輪流出現？</em>
+        最聰明的科技菁英，<br>
+        <em>卻用最盲目的方式管理健康？</em>
       </h2>
 
       <p class="body-text">
-        在醫療體系做研究這些年，我接觸過很多在高科技產業工作的人。
-        他們很認真——願意花時間、花錢處理每一個症狀。
-        但幾乎每個人都有同樣的挫折感：
+        我發現醫療體系跟一般大眾之間有道牆：醫師在診間只有幾分鐘，能給你的往往只是簡單的結論或藥物；而市面上的保健品廣告又吹得太神。結果，最聰明的這群科技菁英，反而都在用最盲目的方式管理健康。
       </p>
-
-      <div class="pullquote">
-        「嘴破買了口內膏、感冒看了診、眼睛乾買了人工淚液——
-        每個都處理了，症狀還是一直輪流出現。花了很多錢，還是一樣。」
-      </div>
-
-      <p class="body-text">
-        這不是個別案例。這是我這些年最常觀察到的模式。
-        不是他們買錯產品，而是沒有人幫他們把這些症狀連起來看——
-        <strong>告訴他們這些症狀背後，其實是同一件事在發生。</strong>
-      </p>
-
-      <hr class="divider" />
-
-      <!-- ③ 翻轉認知：初老 → 慢性發炎 -->
-      <div class="section-label">真正的原因</div>
-      <h2 class="section-title">
-        你以為這是「初老」，<br>
-        <em>其實是慢性發炎——<br>而且可以調整回來</em>
-      </h2>
-
-      <p class="body-text">
-        很多人以為這些症狀是「初老」的症頭，時間到了就這樣、不能逆轉。
-        但這些症狀有一個共同名字：<strong>慢性發炎</strong>。
-      </p>
-
-      <p class="body-text">
-        當身體長期處於高壓、睡眠不足、三餐不正常的狀態，細胞會持續在低度發炎狀態下運作——
-        修復速度跟不上每日損耗。這個狀態夠久，身體就會在最脆弱的幾個地方同時失守：
-        感冒反覆、嘴破不好、體力下滑、眼睛乾澀——同時出現，看起來像不同問題，
-        <strong>其實是同一件事在不同地方的表現。</strong>
-      </p>
-
-      <div class="observe-list">
-        <div class="observe-item"><strong>這不是老化</strong>——慢性發炎在任何年齡都可能發生，40歲只是累積夠久了</div>
-        <div class="observe-item"><strong>這不是無法改變</strong>——慢性發炎是一個可以被介入的狀態，不是判決</div>
-        <div class="observe-item"><strong>分開處理症狀之所以沒用</strong>——是因為出口不同，但根本原因是同一個</div>
-        <div class="observe-item"><strong>找到讓慢性發炎持續的原因</strong>——這些症狀才能真正好轉，而不只是一個個暫時壓住</div>
-      </div>
-
-      <hr class="divider" />
-
-      <!-- ④ 我的方式：連起來看，從慢性發炎介入 -->
-      <div class="section-label-gold">我怎麼幫你</div>
-      <h2 class="section-title">
-        不是每個症狀給一個答案，<br>
-        <em>是把它們連起來看</em>
-      </h2>
-
-      <p class="body-text">
-        我有分子醫學的研究背景，但諮詢裡我做的第一件事從來不是引用研究數據——
-        而是先聽你說你的狀況，幫你整理這些症狀背後的共同模式，
-        找到讓慢性發炎在你身上持續的那個切入點。
-      </p>
-
+      
       <div class="approach-compare">
         <div class="approach-card">
           <div class="approach-card-label">一般做法</div>
@@ -370,52 +293,42 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
         </div>
         <div class="approach-card mine">
           <div class="approach-card-label">我的做法</div>
-          <div class="approach-card-title">把症狀連起來，找到慢性發炎的切入點</div>
-          先聽你說哪些症狀一直出現、你試過什麼沒用，
-          幫你整理這些症狀背後的共同模式——
-          找到讓慢性發炎在你身上持續的那個原因，
-          從那裡介入，症狀才會真正好轉。
+          <div class="approach-card-title">連起來看，找出系統 Bug</div>
+          用醫療研究邏輯，幫你整理這些症狀背後的共同模式。找到讓「慢性發炎」在你身上持續的底層原因，從那裡介入，症狀才會真正好轉。
         </div>
       </div>
 
+      <hr class="divider" />
+
+      <div class="section-label-gold">我的專業壁壘</div>
+      <h2 class="section-title">
+        我不賣奇蹟，<br>
+        <em>我只看科學實證與數據</em>
+      </h2>
+
       <p class="body-text">
-        這不是謙虛，而是我在醫療體系這些年得到的結論：
-        <strong>大多數人的症狀之所以一直輪流出現，不是因為缺少產品，而是因為沒有人幫他們把症狀連起來看。</strong>
+        在做醫學研究的這些年，我學會了如何從最嚴謹的實驗與數據中找答案。我不賣奇蹟，也不講玄學。我只提供具備數據證實、且在科學文獻上有明確證據的健康管理路徑，幫你找出體檢紅字背後的系統漏洞。
       </p>
 
       <hr class="divider" />
 
-      <!-- ⑤ 我幫的是什麼樣的人 -->
-      <div class="section-label">適合找我的人</div>
+      <div class="section-label">我的使命</div>
       <h2 class="section-title">
-        如果你符合這些描述，<br>
-        <em>我可以幫到你</em>
+        別在準備享受下半場時，<br>
+        <em>才發現還不完的技術債</em>
       </h2>
 
       <p class="body-text">
-        我主要協助40–50歲、在高科技產業工作的人。
-        不是因為他們特別脆弱——而是這個族群的工作模式，
-        最容易讓慢性發炎在身體裡持續累積卻沒有被處理。
+        我建立 Agelocked 的初衷很簡單：希望讓這些撐起台灣產業的菁英，不需要在事業巔峰、準備享受人生下半場的時候，才發現身體早已累積了無法償還的技術債。
       </p>
 
       <div class="observe-list">
-        <div class="observe-item">同時有好幾個症狀，但每次都只處理最困擾的那個，其他繼續放著</div>
-        <div class="observe-item">體檢紅字看了不知道怎麼辦，醫生說多休息，但你不知道從哪裡開始改</div>
-        <div class="observe-item">買過保健品，但不確定有沒有用，或是用對了沒有</div>
-        <div class="observe-item">工作型態短期內不會改變，需要在現有條件下找到最有效率的切入點</div>
-        <div class="observe-item">想要有人用研究邏輯幫你整理狀況，而不只是給一個通用建議</div>
+        <div class="observe-item">體檢紅字看了不知道怎麼辦，醫生說多休息，但你不知道從哪裡開始「除錯」。</div>
+        <div class="observe-item">買過一堆保健品，但只是「頭痛醫頭」，症狀依舊輪流出現。</div>
+        <div class="observe-item">工作型態短期內不會改變，需要在現有高壓條件下，找到最有效率的科學介入點。</div>
       </div>
 
-      <div class="pullquote">
-        「如果你的症狀已經需要立即就醫，我會直接告訴你去看哪一科。
-        我的切入點是在你還沒走進醫院之前——
-        症狀已經出現、但還有空間調整的這段時期。」
-      </div>
-
-    </div><!-- /story-wrap -->
-
-    <!-- ⑥ 文章主題 -->
-    <section class="topics-section">
+    </div><section class="topics-section">
       <div class="topics-inner">
         <div class="section-label">這裡寫什麼</div>
         <h2 class="section-title">
@@ -444,40 +357,31 @@ const description = '感冒反覆、嘴破一直出現、睡飽還是累——�
             <strong>抗氧化與補充方向</strong>
             什麼真的有用、什麼只是你以為有用
           </div>
-          <div class="topic">
-            <strong>睡眠與恢復</strong>
-            為什麼睡滿八小時還是累，以及真正需要解決的是什麼
-          </div>
-          <div class="topic">
-            <strong>高壓工作者的身體管理</strong>
-            不改變工作型態的前提下，怎麼讓身體撐得更久
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- ⑦ CTA：和首頁一致的行動出口 -->
     <section class="contact-section">
       <div class="contact-inner">
-        <div class="contact-label">下一步</div>
+        <div class="contact-label">下一步行動</div>
         <h2 class="contact-title">
-          哪些症狀一直<br>
-          <em>輪流出現？</em>
+          停止盲目測試，<br>
+          <em>先找出系統的 Bug</em>
         </h2>
         <p class="contact-sub">
-          告訴我你的狀況，<br>
-          我幫你找到讓這些症狀真正好轉的切入點——<br>
-          而不只是一個個暫時壓住。第一次免費。
+          如果你也厭倦了無效的補充與不斷輪流出現的小毛病，<br>
+          歡迎直接私訊我你手邊那份讓你無解的體檢報告，<br>
+          或者索取【抗發炎自我檢測清單】。
         </p>
         <div class="contact-btns">
           <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal">
-            💬 加LINE，告訴我你的狀況
+            💬 加 LINE 索取檢測清單 / 傳送紅字
           </a>
           <a href="mailto:sunyikun0729@gmail.com" class="btn-outline">
-            📧 用Email聯絡我
+            📧 用 Email 聯絡我
           </a>
         </div>
-        <div class="contact-note">不推銷產品 · 先搞清楚你的狀況再說</div>
+        <div class="contact-note">不推銷產品 · 先用數據搞清楚你的狀況再說</div>
       </div>
     </section>
 
