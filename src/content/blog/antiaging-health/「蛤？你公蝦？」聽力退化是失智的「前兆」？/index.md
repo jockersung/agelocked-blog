@@ -305,13 +305,13 @@ CoQ10 的良好食物來源，同時富含 Omega-3，有助改善內耳血流。
 
 ---
 
-![CTA](./CTA.webp)
+![CTA](./CTA.png)
 
 👇👇👇👇
 
 一瓶抵十瓶 投資自己永遠不嫌晚
 
-[「菁英 」的高效能恢復配方](https://lin.ee/jgugMvX)
+[身體警報自我檢測清單](https://lin.ee/jgugMvX)
 
 ---
 

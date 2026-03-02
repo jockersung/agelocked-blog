@@ -148,7 +148,7 @@ category: '身體保健'
 
 ---
 
-![CTA](./CTA.webp)
+![CTA](./CTA.png)
 
 👇👇👇👇
 
