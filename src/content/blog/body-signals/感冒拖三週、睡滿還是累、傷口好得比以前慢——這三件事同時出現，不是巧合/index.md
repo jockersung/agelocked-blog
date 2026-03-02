@@ -4,7 +4,7 @@ description: '感冒拖三週、睡滿還是累、傷口好得比以前慢，「
 pubDate: 2026-03-02
 heroImage: './三件事.png'
 tags: ['抗氧化', '老化', '慢性發炎']
-category: '身體保健'
+category: '身體訊號'
 ---
 
 ![三件事](./三件事.png)

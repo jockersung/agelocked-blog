@@ -4,7 +4,7 @@ description: '15 秒實測完整教學 + 六色分數全解析，讀懂你的抗
 pubDate: 2026-02-24
 heroImage: './光譜指數.png'
 tags: ['抗氧化', 'Prysm-iO', '教學', '健康管理']
-category: '身體保健'
+category: '精準健康工具'
 ---
 
 ![光譜指數](./光譜指數.png)

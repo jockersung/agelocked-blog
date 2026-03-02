@@ -4,7 +4,7 @@ description: '你的耳朵正在悄悄罷工。你以為只是別人說話不清
 pubDate: 2026-02-21
 heroImage: './蛤？你公蝦？.png'
 tags: ['聽力退化', '抗衰老', '失智']
-category: '症狀解析'
+category: '身體訊號'
 ---
 
 ![蛤？你公蝦？](./蛤？你公蝦？.png)

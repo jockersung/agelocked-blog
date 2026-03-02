@@ -5,7 +5,7 @@ pubDate: 2026-02-24
 heroImage: './三機對比.png'
 tags: ['抗氧化', '科技', 'Prysm-iO', '會員限定']
 memberOnly: true
-category: '身體保健'
+category: '精準健康工具'
 ---
 
 ![三機對比](./三機對比.png)
@@ -332,7 +332,7 @@ Prysm iO 是這條路線的現階段終點。
 
 **下一步：把你自己的數字拿出來。**
 
-→ [Prysm iO 15 秒實測教學：測完之後，你的分數代表什麼？](/blog/antiaging-health/你的-prysm-io-分數出來了這個數字對你意味著什麼完整教學--六色分數全解析/)
+→ [Prysm iO 15 秒實測教學：測完之後，你的分數代表什麼？](/blog/precision-health-tools/你的-prysm-io-分數出來了這個數字對你意味著什麼完整教學--六色分數全解析/)
 
 
 ## 參考資料

@@ -4,7 +4,7 @@ description: 'Prysm-iO-15 秒，一根手指，讀出你過去幾週的真實生
 pubDate: 2026-02-12
 heroImage: './健康不再憑感覺.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
-category: '身體保健'
+category: '精準健康工具'
 ---
 
 ![健康不再憑感覺](./健康不再憑感覺.png)
@@ -47,7 +47,7 @@ category: '身體保健'
 
 耶魯大學的研究確認，皮膚類胡蘿蔔素濃度與你整體的抗氧化防禦能力高度相關。
 
-> 想知道這背後完整的二十年科學演化史？[點這裡看深度科普篇 →](/blog/antiaging-health/深度科普從hplc抽血皮膚切片到拉曼光譜與prysm-io的誕生)
+> 想知道這背後完整的二十年科學演化史？[點這裡看深度科普篇 →](/blog/precision-health-tools/深度科普從hplc抽血皮膚切片到拉曼光譜與prysm-io的誕生)
 
 更重要的是：**它可以被測量**。
 

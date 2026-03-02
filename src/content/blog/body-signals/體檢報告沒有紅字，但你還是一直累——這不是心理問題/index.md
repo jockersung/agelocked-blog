@@ -4,7 +4,7 @@ description: '體檢報告沒有紅字，如果知道自己的狀態不對—要
 pubDate: 2026-03-02
 heroImage: './體檢報告.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
-category: '身體保健'
+category: '身體訊號'
 ---
 
 ![體檢報告](./體檢報告.png)
