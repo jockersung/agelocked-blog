@@ -150,11 +150,11 @@ category: '精準健康工具'
 
 ---
 
-![CTA](./CTA.webp)
+![CTA](./CTA.png)
 
 👇👇👇👇
 
-[「菁英 」的高效能恢復配方](https://lin.ee/jgugMvX)
+[「還沒測過嗎？加Line了解](https://lin.ee/jgugMvX)
 
 ---
 
