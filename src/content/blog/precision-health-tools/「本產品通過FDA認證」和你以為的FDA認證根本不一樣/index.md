@@ -133,8 +133,8 @@ FDA針對食品原料建立了GRAS（Generally Recognized As Safe）安全性認
 
 **延伸閱讀：**
 - [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/那些讓你點頭的保健品話術，你聽過哪些？/) ← 話術篇
-- [提出 SGS 檢驗報告合格就能代表販售商品有效嗎？](/blog/precision-health-tools/提出 SGS 檢驗報告合格就能代表販售商品有效嗎？/) ← SGS篇
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？/) ← Nu Skin標準篇
+- [提出 SGS 檢驗報告合格就能代表販售商品有效嗎？](/blog/precision-health-tools/提出SGS檢驗報告合格就能代表販售商品有效嗎？/) ← SGS篇
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/為什麼NuSkin敢說他們以製藥的標準來開發營養補充品？/) ← Nu Skin標準篇
 
 ---
 
