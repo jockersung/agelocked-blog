@@ -55,6 +55,40 @@ category: '慢性發炎科學'
 
 ---
 
+## 人類第一次「被迫做」的熱量限制實驗
+
+在 CALERIE-II 之前，還有一個更戲劇性的故事。
+
+1988年，美國亞利桑那州沙漠裡蓋了一個玻璃圓頂密封空間，耗資1.5億美金，占地12,700平方公尺，由80,000根鋼樑和6,000塊玻璃組成——這是**生物圈二號（Biosphere 2）**，原本的任務是模擬地球生態系統，為人類移居火星做準備。
+
+1991年，八位「生物圈人」進入這個封閉空間，預計在裡面自給自足生活兩年。
+
+其中有一位醫生，67歲，叫做**羅伊·華福德（Roy Walford）**。
+
+他是熱量限制研究的先驅，師承最早做恆河猴CR研究的團隊。進入生物圈之前，他已經自己執行熱量限制飲食超過十年——每天只攝取1,600大卡，比正常人少了三分之一以上。
+
+生物圈二號內的農作物產量不如預期，糧食開始短缺。
+
+組員們開始恐慌。
+
+但華福德暗自欣喜——他說服組員不用擔心，這正是他一直等待的機會：真正在人體上驗證熱量限制的效果。
+
+六個月後，每位組員的體重平均下降了七到八公斤。
+
+但他們的健康指標呢？
+
+**血壓下降、空腹血糖下降、血脂改善、代謝年齡各項指標全面向好。**
+
+這是人類史上第一次，在真實環境中對健康成人執行熱量限制的完整紀錄。
+
+唯一的問題是：後來糧食恢復供應之後，所有人幾乎立刻恢復了正常的飲食量。飢餓感太難忍受。
+
+這個結果很重要——它同時證明了熱量限制對人體有效，也預告了它最大的實踐障礙。
+
+![生物圈二號](./生物圈二號.png)
+
+---
+
 ## 人類怎麼樣？CALERIE-II 研究
 
 動物實驗再強，都有人會問：「但人類呢？」
@@ -74,6 +108,30 @@ category: '慢性發炎科學'
 2022年，更新的分析進一步顯示，熱量限制組的免疫代謝調節出現了與長壽高度相關的正向改變。
 
 這是目前人類層級最有說服力的熱量限制臨床數據。
+
+---
+
+## 為什麼「少吃」的效果，跟「多補充抗氧化劑」完全不同？
+
+在解釋機制之前，先破解一個常見的誤解。
+
+很多人以為抗衰老就是「補充抗氧化劑對抗自由基」。這個邏輯有一定的根據，但有一個根本性的盲點。
+
+把身體想像成一個浴缸，水是你的細胞功能和精力。老化就像浴缸底下有孔洞和裂縫，水慢慢流出去。
+
+抗氧化劑的邏輯是找塞子——把洞堵住，水就不會流了。吃了一段時間確實感覺有點效，因為某幾個洞被堵住了。
+
+但浴缸底下不只有幾個洞，還有數不清的裂縫。
+
+就算把所有洞都堵住，水還是會從裂縫流出去。老化的路徑太多，靠單一方向的補充，永遠是被動應付。
+
+熱量限制做的事完全不同——
+
+**它不是去堵洞，它是讓細胞主動啟動修復程式，把裂縫從內部修復。**
+
+這就是為什麼 CR 的效果在跨物種實驗中如此一致：它不是針對某一個老化路徑，它觸動的是細胞最底層的能量感測和修復系統。
+
+背後的分子機制有三個核心。
 
 ---
 
@@ -131,7 +189,9 @@ mTOR 被抑制有什麼好處？
 
 在這個模式下，DNA 損傷被修復、受損的細胞器被清除、發炎訊號被抑制、能量代謝變得更有效率。
 
-這不是讓你的細胞「凍齡」，而是讓你的細胞**把有限的資源用在對的地方**——修復，而不是擴張。
+這不是讓你的細胞「凍齡」，而是讓你的細胞 **把有限的資源用在對的地方**——修復，而不是擴張。
+
+![熱量限制啟動細胞修復的三條路徑](./熱量限制啟動細胞修復的三條路徑.png)
 
 ---
 
@@ -174,9 +234,9 @@ mTOR 被抑制有什麼好處？
 
 ## 參考資料
 
-1. Clive M McCay, Mary F Crowell, Lewis A Maynard, 1935. [The effect of retarded growth upon the length of life span and upon the ultimate body size.](https://pubmed.ncbi.nlm.nih.gov/13925718/) *J Nutr.* 10(1):63-79.
-2. Julie A Mattison et al., 2017. [Caloric restriction improves health and survival of rhesus monkeys.](https://pubmed.ncbi.nlm.nih.gov/28094793/) *Nat Commun.* 8:14063.
-3. O Spadaro et al., 2022. [Caloric restriction in humans reveals immunometabolic regulators of health span.](https://pubmed.ncbi.nlm.nih.gov/35084972/) *Science.* 375(6581):671-677.
-4. Yaru Liang et al., 2018. [Calorie restriction is the most reasonable anti-ageing intervention: a meta-analysis of survival curves.](https://pubmed.ncbi.nlm.nih.gov/29695755/) *Sci Rep.* 8(1):5779.
-5. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
-6. Ki Wung Chung, Hae Young Chung, 2019. [The Effects of Calorie Restriction on Autophagy: Role on Aging Intervention.](https://pubmed.ncbi.nlm.nih.gov/31817038/) *Nutrients.* 11(12):2923.
+01. Clive M McCay, Mary F Crowell, Lewis A Maynard, 1935. [The effect of retarded growth upon the length of life span and upon the ultimate body size.](https://pubmed.ncbi.nlm.nih.gov/13925718/) *J Nutr.* 10(1):63-79.
+02. Julie A Mattison et al., 2017. [Caloric restriction improves health and survival of rhesus monkeys.](https://pubmed.ncbi.nlm.nih.gov/28094793/) *Nat Commun.* 8:14063.
+03. O Spadaro et al., 2022. [Caloric restriction in humans reveals immunometabolic regulators of health span.](https://pubmed.ncbi.nlm.nih.gov/35084972/) *Science.* 375(6581):671-677.
+04. Yaru Liang et al., 2018. [Calorie restriction is the most reasonable anti-ageing intervention: a meta-analysis of survival curves.](https://pubmed.ncbi.nlm.nih.gov/29695755/) *Sci Rep.* 8(1):5779.
+05. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
+06. Ki Wung Chung, Hae Young Chung, 2019. [The Effects of Calorie Restriction on Autophagy: Role on Aging Intervention.](https://pubmed.ncbi.nlm.nih.gov/31817038/) *Nutrients.* 11(12):2923.

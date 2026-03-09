@@ -1,7 +1,7 @@
 ---
 title: '雷帕黴素、二甲雙胍、GLP-1——抗老化藥物的科學很真實，但有些事情你需要知道'
 description: '這三種藥物在抗老化研究圈裡被討論得最多，背後的分子機制也最紮實。這篇客觀說清楚它們做了什麼、限制在哪裡，以及沒有處方的人可以從哪裡開始。'
-pubDate: 2026-03-01
+pubDate: 2026-03-04
 heroImage: './三種抗老藥物.png'
 tags: ['抗老化', '雷帕黴素', '二甲雙胍', 'GLP-1', 'mTOR', 'CRM']
 category: '慢性發炎科學'
@@ -17,7 +17,7 @@ category: '慢性發炎科學'
 
 但它們都是 **處方藥**。
 
-這篇的目的不是說你應不應該用它們，而是：搞清楚它們為什麼有效、限制在哪裡、以及如果你現在沒有在用藥，你的選項是什麼。
+這篇的目的：搞清楚它們為什麼有效、限制在哪裡、以及如果你現在沒有在用藥，你的選項是什麼。
 
 ---
 
@@ -35,7 +35,19 @@ category: '慢性發炎科學'
 
 雷帕黴素做的事情是：直接抑制 mTOR，繞過「需要少吃」這個步驟。
 
-動物實驗的結果令人印象深刻——在多個小鼠實驗中，即使從中年才開始給藥，雷帕黴素都能顯著延長壽命，同時改善多項老化相關指標。
+動物實驗的結果令人印象深刻。
+
+2009年，美國國家老化研究所資助的三個獨立實驗室同時宣布：雷帕黴素可以將小鼠的壽命延長 12%——而且對那些看起來已經嚴重老化的小鼠也有效，平均存活率提高了三分之一。
+
+這三個實驗室各自獨立得出相同的結論，發表在《Nature》。
+
+2022年，德國研究團隊在《Nature》子刊發現了一個更驚人的結果：在年輕果蠅和小鼠身上，**只要早期短暫服用**雷帕黴素，就能獲得與 **長期終身服用**幾乎相同的延長壽命效果。
+
+窗口期用藥的概念，開始進入研究視野。
+
+同年另一篇《Nature》子刊顯示：熱量限制搭配雷帕黴素，能更有效地減緩老年小鼠的肌肉衰退——單獨用任何一種的效果都不如兩者並用。
+
+人體試驗方面，2018 年諾華生醫研究所用雷帕黴素的衍生物做了一項試驗：264 名 65 歲以上受試者連續 6 週服用低劑量，結果未來一年的感冒次數只有安慰劑組的一半，接種後一個月血液抗體濃度提升了20%。
 
 **限制在哪裡？**
 
@@ -51,15 +63,27 @@ category: '慢性發炎科學'
 
 二甲雙胍（Metformin）是全球使用最廣泛的第二型糖尿病藥物之一，便宜、安全紀錄長達數十年。
 
-它的抗老化潛力來自一個觀察：長期服用二甲雙胍的糖尿病患者，某些與年齡相關的疾病（癌症、心血管疾病、認知退化）的發生率，比沒有服藥的非糖尿病患者還要低。
+它的抗老化潛力來自一個觀察：2014年，一份針對近10萬名糖尿病患者的分析報告發現，長期服用二甲雙胍的病人不但健康狀況明顯更好，而且平均壽命竟然超過了沒有糖尿病的一般人。
 
-這個觀察催生了一個大型臨床試驗： **TAME（Targeting Aging with Metformin）**——這是第一個把「延緩老化」作為主要臨床終點的人體試驗，目前正在進行中。
+這個結果非常不尋常——理論上糖尿病患者的壽命應該更短，結果卻反了過來。
+
+這個觀察催生了一個大型臨床試驗：**TAME（Targeting Aging with Metformin）**。
+
+由美國國家老化研究所和老化研究聯盟的 Nir Barzilai 博士主導，研究費用高達 7,500 萬美金，計劃針對 3,000 名 65 - 79 歲的成年人進行六年追蹤——這也是 **史上第一個**以「延緩老化」為主要臨床終點的人體試驗。
+
+動物實驗的支持也持續增加。2023 年，中國同濟大學研究團隊發現，二甲雙胍能透過腸道益菌 AKK 菌，減少促發炎細胞因子 IL-6 的分泌，改善老年小鼠的認知功能。
+
+同年《Nature》子刊整理了從線蟲、果蠅到哺乳類動物的大量研究，結論一致：二甲雙胍能延長中位壽命和最高壽命。
+
+2017 年一項針對 4.1 萬名男性二甲雙胍使用者的研究也顯示，長期使用可以顯著降低癡呆症、癌症和心血管疾病的發生風險。
 
 二甲雙胍的主要機制之一是 **激活 AMPK**——這正是熱量限制和斷食啟動修復模式的關鍵能量感應路徑。它同時對 mTOR 有間接的抑制效果。
 
 **限制在哪裡？**
 
-二甲雙胍是處方藥，適應症是第二型糖尿病。健康的人自行服用，在台灣不合法規，也缺乏足夠的長期安全數據支持用於非糖尿病族群。
+二甲雙胍是處方藥，適應症是第二型糖尿病。
+
+健康的人自行服用，在台灣不合法規，也缺乏足夠的長期安全數據支持用於非糖尿病族群。
 
 另外有研究顯示，二甲雙胍可能干擾運動訓練帶來的粒線體適應效益——也就是說，如果你同時在認真運動，它可能會抵消部分訓練效果。
 
@@ -105,6 +129,30 @@ GLP-1藥物是處方藥，目前的適應症是糖尿病和肥胖，抗老化用
 
 ---
 
+## 為什麼「單一成分」永遠不夠——CRM組合物的邏輯
+
+回到一個根本問題：如果白藜蘆醇、NMN、雷帕黴素、二甲雙胍都有效，能不能把它們全部一起用？
+
+問題在於，單一成分影響的路徑太廣，也不可能面面俱到，而且在不同的訊息傳遞機制之間很可能相互干擾。
+
+白藜蘆醇和某些藥物組合可能產生衝突；NMN 在某些情況下可能同時刺激到我們不希望活躍的 mTOR 路徑；雷帕黴素在壓制 mTOR 的同時也壓制了免疫反應。
+
+科學家開始嘗試另一個方向：**用「配方」而不是「單品」來處理老化的多條路徑。**
+
+2020年發表的一項研究，從超過50種具有熱量限制效果的天然物中，篩選出 15 種混成營養素混合物，給老鼠食用。
+
+結果：對大腦皮質、心臟和肌肉的改善效果，比單純做熱量限制還要好。在線蟲實驗中，這個配方同時增加了活動力和壽命。
+
+在少量的人體雙盲試驗中，確認可以提升大腦中的穀胱甘肽濃度，並改善認知功能表現。
+
+這個方向的邏輯很清楚：老化是多條路徑同時失效的結果，單一成分只能堵住幾個洞，有配方思維的 CRM 組合物才能同時影響 AMPK、Sirtuin、mTOR、Nrf2、NF-κB這幾條核心路徑。
+
+這也是為什麼在這個領域，真正嚴肅的研究方向不是「找到一個神奇成分」，而是「設計出一個能影響多條老化路徑的精準配方」。
+
+![CRM組合物多路徑作用](./CRM組合物多路徑作用.png)
+
+---
+
 ## 如果你現在沒有在用這些藥，你的選項是什麼？
 
 這不是要你放棄藥物的科學，而是要說清楚一件事：
@@ -121,7 +169,7 @@ Nrf2 通路的激活，可以透過蘿蔔硫素等植化素達到。
 
 這些不是「藥物的廉價替代品」——它們是獨立的研究方向，只是作用強度和精準度與藥物不同。
 
-藥物是高強度、高風險的工具。天然成分的CRM策略是低強度、持續維護的工具。
+藥物是高強度、高風險的工具。天然成分的 CRM 策略是低強度、持續維護的工具。
 
 它們可以並存，也可以在不同階段各自扮演不同的角色。
 
@@ -146,8 +194,8 @@ Nrf2 通路的激活，可以透過蘿蔔硫素等植化素達到。
 
 ## 參考資料
 
-1. David E Harrison et al., 2009. [Rapamycin fed late in life extends lifespan in genetically heterogeneous mice.](https://pubmed.ncbi.nlm.nih.gov/19587680/) *Nature.* 460(7253):392-5.
-2. Nir Barzilai et al., 2016. [Metformin as a Tool to Target Aging.](https://pubmed.ncbi.nlm.nih.gov/27304501/) *Cell Metab.* 23(6):1060-1065.
-3. Junzhe Huang et al., 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/39719089/) *Cell Metab.* 37(12):2362-2380.e8.
-4. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
-5. Sebastian Brandhorst et al., 2024. [Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk.](https://pubmed.ncbi.nlm.nih.gov/38383456/) *Nat Commun.* 15(1):1309.
+01. David E Harrison et al., 2009. [Rapamycin fed late in life extends lifespan in genetically heterogeneous mice.](https://pubmed.ncbi.nlm.nih.gov/19587680/) *Nature.* 460(7253):392-5.
+02. Nir Barzilai et al., 2016. [Metformin as a Tool to Target Aging.](https://pubmed.ncbi.nlm.nih.gov/27304501/) *Cell Metab.* 23(6):1060-1065.
+03. Junzhe Huang et al., 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/39719089/) *Cell Metab.* 37(12):2362-2380.e8.
+04. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
+05. Sebastian Brandhorst et al., 2024. [Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk.](https://pubmed.ncbi.nlm.nih.gov/38383456/) *Nat Commun.* 15(1):1309.

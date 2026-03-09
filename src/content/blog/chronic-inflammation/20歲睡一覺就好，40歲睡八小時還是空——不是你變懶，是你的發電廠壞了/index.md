@@ -132,7 +132,7 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 
 ## 參考資料
 
-1. Pénélope A Andreux et al., 2019. [The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans.](https://pubmed.ncbi.nlm.nih.gov/31226288/) *Nat Metab.* 1(6):595-603.
-2. Amazed Singh et al., 2022. [Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults.](https://pubmed.ncbi.nlm.nih.gov/35679046/) *Cell Rep Med.* 3(5):100633.
-3. Ki Wung Chung, Hae Young Chung, 2019. [The Effects of Calorie Restriction on Autophagy.](https://pubmed.ncbi.nlm.nih.gov/31817038/) *Nutrients.* 11(12):2923.
-4. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112-20.
+01. Pénélope A Andreux et al., 2019. [The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans.](https://pubmed.ncbi.nlm.nih.gov/31226288/) *Nat Metab.* 1(6):595-603.
+02. Amazed Singh et al., 2022. [Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults.](https://pubmed.ncbi.nlm.nih.gov/35679046/) *Cell Rep Med.* 3(5):100633.
+03. Ki Wung Chung, Hae Young Chung, 2019. [The Effects of Calorie Restriction on Autophagy.](https://pubmed.ncbi.nlm.nih.gov/31817038/) *Nutrients.* 11(12):2923.
+04. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112-20.

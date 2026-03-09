@@ -1,6 +1,6 @@
 ---
 title: '感冒拖三週、睡滿還是累、傷口好得比以前慢——這三件事同時出現，不是巧合'
-description: '感冒拖三週、睡滿還是累、傷口好得比以前慢，「老化」只是表面徵兆，這是一個可以早期介入的狀態'
+description: '感冒拖三週、睡滿還是累、傷口好得比以前慢，你把它們當成三個不相關的問題分開處理。但它們有一個共同的底層——你的免疫、修復、能量系統，都在從同一個地方取用資源。'
 pubDate: 2026-03-02
 heroImage: './三件事.png'
 tags: ['抗氧化', '老化', '慢性發炎']
@@ -87,6 +87,7 @@ category: '身體訊號'
 
 是因為那時候你的細胞資源比較充足。
 
+![三個症狀共同底層](./三個症狀共同底層.png)
 ---
 
 ## 三件事同時出現，說明什麼？
@@ -132,5 +133,13 @@ category: '身體訊號'
 第一步是先搞清楚你的身體在說什麼。
 
 👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
+
+---
+
+## 參考資料
+
+01. Claudio Franceschi, Judith Campisi, 2014. [Chronic inflammation (inflammaging) and its potential contribution to age-associated diseases.](https://pubmed.ncbi.nlm.nih.gov/24833586/) *J Gerontol A Biol Sci Med Sci.* 69 Suppl 1:S4-9.
+02. Luigi Ferrucci, Elisa Fabbri, 2018. [Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty.](https://pubmed.ncbi.nlm.nih.gov/30228304/) *Nat Rev Cardiol.* 15(9):505-522.
+03. Tamara Tchkonia et al., 2013. [Cellular senescence and the senescent secretory phenotype: therapeutic opportunities.](https://pubmed.ncbi.nlm.nih.gov/23863708/) *J Clin Invest.* 123(3):966-72.
 
 

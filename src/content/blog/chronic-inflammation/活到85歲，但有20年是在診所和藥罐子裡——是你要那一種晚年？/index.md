@@ -1,6 +1,6 @@
 ---
 title: '活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？'
-description: '基因影響55%硬體與長壽的關係'
+description: '人類平均壽命在延長，但健康壽命和最大壽命之間的落差也在擴大——全球平均超過9年。這篇說清楚 Healthspan 和 Lifespan 的差別，以及你現在的選擇怎麼決定你走哪條路。'
 pubDate: 2026-03-02
 heroImage: './哪一種晚年.png'
 tags: ['抗氧化', '健康', '長壽']
@@ -54,8 +54,6 @@ category: '慢性發炎科學'
 
 現實情況是：這兩條線之間有一段落差——也就是你「活著但不健康」的時間。
 
-![Healthspan比LIfespan重要](./Healthspan比LIfespan重要.webp)
-
 根據 2025 年發表在《Communications Medicine》的研究，在全球多個地區，這個 Healthspan 和 Lifespan 之間的落差平均超過 9 年。
 
 **9年。**
@@ -63,6 +61,8 @@ category: '慢性發炎科學'
 這9年裡，你可能還能走路、還能說話，但你在管理高血壓、在控制血糖、在擔心下一次的心臟檢查、在每天吃三到五種藥。
 
 你還活著，但你的生活已經不是你的了。
+
+![Healthspan vs Lifespan 落差](./Healthspan vs Lifespan 落差.png)
 
 ---
 
@@ -135,6 +135,8 @@ category: '慢性發炎科學'
 
 **版本A和版本B的差別，不是發生在你60歲的那個選擇，而是你40歲的那個選擇。**
 
+![壓縮發病率：兩條路徑對比](./壓縮發病率：兩條路徑對比.png)
+
 ---
 
 ## 你現在的狀態，在這條線的哪裡？
@@ -170,15 +172,15 @@ category: '慢性發炎科學'
 ---
 
 **延伸閱讀：**
-- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](agelocked-blog\src\content\blog\body-signals\體檢報告沒有紅字，但你還是一直累——這不是心理問題) ← 第2篇
-- [壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？](agelocked-blog\src\content\blog\chronic-inflammation\2026《科學》研究長壽新論：壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？) ← 第3篇
+- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](agelocked-blog\src\content\blog\body-signals\體檢報告沒有紅字，但你還是一直累——這不是心理問題/) ← 第2篇
+- [壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？](agelocked-blog\src\content\blog\chronic-inflammation\2026《科學》研究長壽新論：壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？/) ← 第3篇
 
 ---
 
 ## 參考資料
 
-1. J F Fries, 1980. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.
-2. Eileen M Crimmins, 2015. [Lifespan and Healthspan: Past, Present, and Promise.](https://pubmed.ncbi.nlm.nih.gov/26561272/) *Gerontologist.* 55(6):901–911.
-3. Armin Garmany, Satsuki Yamada, Andre Terzic, 2021. [Longevity leap: mind the healthspan gap.](https://pubmed.ncbi.nlm.nih.gov/34556664/) *NPJ Regen Med.* 6(1):57.
-4. Yifan Yang et al., 2025. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.
-5. Armin Garmany, Andre Terzic, 2025. [Healthspan-lifespan gap differs in magnitude and disease contribution across world regions.](https://pubmed.ncbi.nlm.nih.gov/40890374/) *Commun Med (Lond).* 5(1):381.
+01. J F Fries, 1980. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.
+02. Eileen M Crimmins, 2015. [Lifespan and Healthspan: Past, Present, and Promise.](https://pubmed.ncbi.nlm.nih.gov/26561272/) *Gerontologist.* 55(6):901–911.
+03. Armin Garmany, Satsuki Yamada, Andre Terzic, 2021. [Longevity leap: mind the healthspan gap.](https://pubmed.ncbi.nlm.nih.gov/34556664/) *NPJ Regen Med.* 6(1):57.
+04. Yifan Yang et al., 2025. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.
+05. Armin Garmany, Andre Terzic, 2025. [Healthspan-lifespan gap differs in magnitude and disease contribution across world regions.](https://pubmed.ncbi.nlm.nih.gov/40890374/) *Commun Med (Lond).* 5(1):381.
