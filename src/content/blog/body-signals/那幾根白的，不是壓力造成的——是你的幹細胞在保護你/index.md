@@ -149,13 +149,13 @@ MeSCs或卡住，或退場，或被周圍的 H₂O₂ 直接漂白——三種�
 
 ## 參考資料
 
-1. Sun Q, Lee W, Tan YQ et al., 2023. [Dedifferentiation maintains melanocyte stem cells in a dynamic niche.](https://www.nature.com/articles/s41586-023-05960-6) *Nature.* 616:543–550.
-2. Mohri Y, Nie J, Morinaga H et al., 2025. [Antagonistic stem cell fates under stress govern decisions between hair greying and melanoma.](https://www.nature.com/articles/s41556-025-01769-9) *Nature Cell Biology.*
-3. Rosenberg AM, Rausser S, Ren J et al., 2021. [Quantitative mapping of human hair greying and reversal in relation to life stress.](https://elifesciences.org/articles/67437) *eLife.* 10:e67437.
-4. Zhang B, Ma S, Rachmin I et al., 2020. [Hyperactivation of sympathetic nerves drives depletion of melanocyte stem cells.](https://www.nature.com/articles/s41586-020-1935-3) *Nature.* 577:676–681.
-5. Wood JM et al., 2009. [Senile hair graying: H₂O₂-mediated oxidative stress affects human hair color by blunting methionine sulfoxide repair.](https://pubmed.ncbi.nlm.nih.gov/19237503/) *FASEB Journal.* 23(7):2065-2075.
-6. Ungvari A et al., 2024. [Irradiation-induced hair graying in mice: an experimental model to evaluate the effectiveness of interventions targeting oxidative stress, DNA damage prevention, and cellular senescence.](https://link.springer.com/article/10.1007/s11357-023-01042-7) *GeroScience.* 46:3105–3122.
-7. Herdiana Y, 2025. [Gray Hair: From Preventive to Treatment.](https://www.dovepress.com/article/download/103946) *Clinical, Cosmetic and Investigational Dermatology.* 18.
-8. Ramirez-Gomez KM et al., 2025. [Hair Graying Update and Review.](https://www.actasdermo.org/es-download-pdf-S0001731025008403) *Actas Dermo-Sifiliográficas.*
-9. Trüeb RM et al., 2023. [Human Hair Graying Revisited: Principles, Misconceptions, and Key Research Frontiers.](https://www.sciencedirect.com/science/article/pii/S0022202X23029627) *Journal of Investigative Dermatology.*
+01. Sun Q, Lee W, Tan YQ et al., 2023. [Dedifferentiation maintains melanocyte stem cells in a dynamic niche.](https://www.nature.com/articles/s41586-023-05960-6) *Nature.* 616:543–550.
+02. Mohri Y, Nie J, Morinaga H et al., 2025. [Antagonistic stem cell fates under stress govern decisions between hair greying and melanoma.](https://www.nature.com/articles/s41556-025-01769-9) *Nature Cell Biology.*
+03. Rosenberg AM, Rausser S, Ren J et al., 2021. [Quantitative mapping of human hair greying and reversal in relation to life stress.](https://elifesciences.org/articles/67437) *eLife.* 10:e67437.
+04. Zhang B, Ma S, Rachmin I et al., 2020. [Hyperactivation of sympathetic nerves drives depletion of melanocyte stem cells.](https://www.nature.com/articles/s41586-020-1935-3) *Nature.* 577:676–681.
+05. Wood JM et al., 2009. [Senile hair graying: H₂O₂-mediated oxidative stress affects human hair color by blunting methionine sulfoxide repair.](https://pubmed.ncbi.nlm.nih.gov/19237503/) *FASEB Journal.* 23(7):2065-2075.
+06. Ungvari A et al., 2024. [Irradiation-induced hair graying in mice: an experimental model to evaluate the effectiveness of interventions targeting oxidative stress, DNA damage prevention, and cellular senescence.](https://link.springer.com/article/10.1007/s11357-023-01042-7) *GeroScience.* 46:3105–3122.
+07. Herdiana Y, 2025. [Gray Hair: From Preventive to Treatment.](https://www.dovepress.com/article/download/103946) *Clinical, Cosmetic and Investigational Dermatology.* 18.
+08. Ramirez-Gomez KM et al., 2025. [Hair Graying Update and Review.](https://www.actasdermo.org/es-download-pdf-S0001731025008403) *Actas Dermo-Sifiliográficas.*
+09. Trüeb RM et al., 2023. [Human Hair Graying Revisited: Principles, Misconceptions, and Key Research Frontiers.](https://www.sciencedirect.com/science/article/pii/S0022202X23029627) *Journal of Investigative Dermatology.*
 10. Tobin DJ et al., 2020. [Stress-sensing in the human greying hair follicle: ATM depletion in hair bulb melanocytes in canities-prone scalp.](https://www.nature.com/articles/s41598-020-75334-9) *Scientific Reports.*
