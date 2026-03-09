@@ -7,8 +7,6 @@ tags: ['ageLOC R2', '男性抗衰老', '蟲草', 'Nrf2', '介入與調校']
 category: '介入與調校'
 ---
 
-![ageLOCR2](./ageLOCR2.png)
-
 同樣40歲出頭，但他看起來就是不像那個年紀。精神好、身形穩、眼神還有光——不是特別在健身，也沒有特別自律，就是狀態一直在那裡。
 
 你老婆不一定說出來，但她看得出來這件事。
@@ -166,9 +164,9 @@ R2 不是急性的效果——它針對的是細胞層級的耗損模式，改�
 
 ## 參考資料
 
-1. Ning-Zhi Tan et al., 2011. [The lifespan-extending effect of Cordyceps sinensis Cs-4 in normal mice and its molecular mechanisms.](https://www.fasebj.org/) *FASEB.*
-2. Jie-Ying Yang et al., 2011. [An ageLOC Vitality formula improves endurance exercise in aged mice and energy metabolism in muscle mitochondria.](https://www.fasebj.org/) *FASEB.*
-3. Zimei Wu et al., 2012. [ageLOC Vitality enhances sexual functions in normal and impotent models.](https://www.fasebj.org/) *FASEB.*
-4. Ning-Zhi Tan et al., 2013. [ageLOC Vitality improves memory and learning ability in memory impairment models.](https://www.fasebj.org/) *FASEB.*
-5. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression: role of dietary phytonutrients.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112-20.
-6. Cheol-Koo Lee et al., 2004. [The impact of alpha-lipoic acid, coenzyme Q10 and caloric restriction on life span and gene expression patterns in mice.](https://pubmed.ncbi.nlm.nih.gov/15019971/) *Free Radic Biol Med.* 36(8):1043-57.
+01. Ning-Zhi Tan et al., 2011. [The lifespan-extending effect of Cordyceps sinensis Cs-4 in normal mice and its molecular mechanisms.](https://www.fasebj.org/) *FASEB.*
+02. Jie-Ying Yang et al., 2011. [An ageLOC Vitality formula improves endurance exercise in aged mice and energy metabolism in muscle mitochondria.](https://www.fasebj.org/) *FASEB.*
+03. Zimei Wu et al., 2012. [ageLOC Vitality enhances sexual functions in normal and impotent models.](https://www.fasebj.org/) *FASEB.*
+04. Ning-Zhi Tan et al., 2013. [ageLOC Vitality improves memory and learning ability in memory impairment models.](https://www.fasebj.org/) *FASEB.*
+05. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression: role of dietary phytonutrients.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112-20.
+06. Cheol-Koo Lee et al., 2004. [The impact of alpha-lipoic acid, coenzyme Q10 and caloric restriction on life span and gene expression patterns in mice.](https://pubmed.ncbi.nlm.nih.gov/15019971/) *Free Radic Biol Med.* 36(8):1043-57.

@@ -7,8 +7,6 @@ tags: ['健康', '抗衰老', '長壽科學']
 category: '精準健康工具'
 ---
 
-![身體老化速度檢測](./身體老化速度檢測.png)
-
 你知道自己幾歲。
 
 但你不知道你的細胞，現在幾歲。
@@ -150,6 +148,6 @@ Prysm iO 用光譜技術，15秒掃描指尖，把這個數值轉換成一個顏
 
 ## 參考資料
 
-1. L Hayflick, P S Moorhead, 1961. [The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.
-2. I F Benzie, J J Strain, 1996. [The Ferric Reducing Ability of Plasma (FRAP) as a Measure of Antioxidant Power.](https://pubmed.ncbi.nlm.nih.gov/8660627/) *Analytical Biochemistry.* 239(1):70–76.
-3. Tissa R. Hata et al., 2000. [Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin.](https://www.sciencedirect.com/science/article/pii/S0022202X15409923) *J Invest Dermatol.* 115(3):441-448.
+01. L Hayflick, P S Moorhead, 1961. [The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.
+02. I F Benzie, J J Strain, 1996. [The Ferric Reducing Ability of Plasma (FRAP) as a Measure of Antioxidant Power.](https://pubmed.ncbi.nlm.nih.gov/8660627/) *Analytical Biochemistry.* 239(1):70–76.
+03. Tissa R. Hata et al., 2000. [Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin.](https://www.sciencedirect.com/science/article/pii/S0022202X15409923) *J Invest Dermatol.* 115(3):441-448.

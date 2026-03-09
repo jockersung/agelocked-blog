@@ -7,9 +7,6 @@ tags: ['抗衰老', '基因表達', 'mTOR', '慢性發炎科學', 'Cell Metaboli
 category: '慢性發炎科學'
 ---
 
-![GLP1抗老](./GLP1抗老.png)
-
-
 前兩篇我們說了一件事：
 
 老化不只是時間的問題，而是基因表達模式失衡的問題。當細胞的「修復開關」關掉、「發炎開關」開著，老化就加速了。
@@ -127,5 +124,5 @@ mTOR 是我們在前幾篇反覆提到的概念——它是細胞的「生長感
 
 ## 參考資料
 
-1. Junzhe Huang et al., 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/39719089/) *Cell Metab.* 37(12):2362-2380.e8.
-2. Francesca Celletti, Jeremy Farrar, Luz De Regil, 2025. [World Health Organization Guideline on the Use and Indications of Glucagon-Like Peptide-1 Therapies for the Treatment of Obesity in Adults.](https://jamanetwork.com/journals/jama/fullarticle/2833914) *JAMA.*
+01. Junzhe Huang et al., 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/39719089/) *Cell Metab.* 37(12):2362-2380.e8.
+02. Francesca Celletti, Jeremy Farrar, Luz De Regil, 2025. [World Health Organization Guideline on the Use and Indications of Glucagon-Like Peptide-1 Therapies for the Treatment of Obesity in Adults.](https://jamanetwork.com/journals/jama/fullarticle/2833914) *JAMA.*

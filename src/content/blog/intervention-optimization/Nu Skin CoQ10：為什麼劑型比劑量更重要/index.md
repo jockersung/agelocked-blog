@@ -1,5 +1,5 @@
 ---
-title: 'Nu Skin CoQ10——為什麼劑型比劑量更重要'
+title: 'Nu Skin CoQ10：為什麼劑型比劑量更重要'
 description: '同樣是CoQ10，為什麼有人吃了有感、有人完全沒反應？關鍵不在劑量，在你的身體能吸收多少。這篇說清楚環糊精包覆技術解決了什麼問題。'
 pubDate: 2026-03-03
 heroImage: './CoQ10.png'
@@ -103,7 +103,7 @@ Nu Skin CoQ10 的使用建議和適合的族群，因每個人的細胞狀態不
 
 ## 參考資料
 
-1. Bhagavan HN, Chopra RK, 2006. [Coenzyme Q10: absorption, tissue uptake, metabolism and pharmacokinetics.](https://pubmed.ncbi.nlm.nih.gov/16524932/) *Free Radic Res.* 40(5):445-53.
-2. Zmitek J et al., 2008. [Relative bioavailability of two forms of a novel water-soluble coenzyme Q10.](https://pubmed.ncbi.nlm.nih.gov/18373294/) *Ann Nutr Metab.* 52(4):281-7.
-3. Agnieszka J. Szczepek, Heidi Olze, 2026. [Coenzyme Q10 in Hearing Disorders: Replacement Therapy in Mitochondrial Deafness and Neuroprotective Use in Acquired Hearing Loss.](https://www.mdpi.com/2504-463X/7/1/8) *J. Otorhinolaryngol. Hear. Balance Med.* 7(1):8.
-4. Chisato Fujimoto, Tatsuya Yamasoba, 2019. [Mitochondria-Targeted Antioxidants for Treatment of Hearing Loss: A Systematic Review.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6523236/) *Antioxidants (Basel).* 8(4):109.
+01. Bhagavan HN, Chopra RK, 2006. [Coenzyme Q10: absorption, tissue uptake, metabolism and pharmacokinetics.](https://pubmed.ncbi.nlm.nih.gov/16524932/) *Free Radic Res.* 40(5):445-53.
+02. Zmitek J et al., 2008. [Relative bioavailability of two forms of a novel water-soluble coenzyme Q10.](https://pubmed.ncbi.nlm.nih.gov/18373294/) *Ann Nutr Metab.* 52(4):281-7.
+03. Agnieszka J. Szczepek, Heidi Olze, 2026. [Coenzyme Q10 in Hearing Disorders: Replacement Therapy in Mitochondrial Deafness and Neuroprotective Use in Acquired Hearing Loss.](https://www.mdpi.com/2504-463X/7/1/8) *J. Otorhinolaryngol. Hear. Balance Med.* 7(1):8.
+04. Chisato Fujimoto, Tatsuya Yamasoba, 2019. [Mitochondria-Targeted Antioxidants for Treatment of Hearing Loss: A Systematic Review.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6523236/) *Antioxidants (Basel).* 8(4):109.

@@ -7,8 +7,6 @@ tags: ['ageLOC', 'Youthspan', '抗衰老', '基因表達', 'CRM', '介入']
 category: '介入與調校'
 ---
 
-![Youthspan](./Youthspan.png)
-
 你可能已經在補一些保健品了。
 
 CoQ10、魚油、維生素D、白藜蘆醇——每一樣東西都有它的道理。
@@ -210,8 +208,8 @@ Youthspan 用三十年的基因表達研究，把那個複雜的配比問題解�
 
 ## 參考資料
 
-1. Jamie L Barger et al., 2008. [A low dose of dietary resveratrol partially mimics caloric restriction and retards aging parameters in mice.](https://pubmed.ncbi.nlm.nih.gov/18545640/) *PLoS One.* 3(6):e2264.
-2. Eva Serna et al., 2020. [A Novel Micronutrient Blend Mimics Calorie Restriction Transcriptomics in Multiple Tissues of Mice and Increases Lifespan and Mobility in C. elegans.](https://pubmed.ncbi.nlm.nih.gov/32046035/) *Nutrients.* 12(2):486.
-3. Angela Mastaloudis et al., 2020. [Supplementation with a putative calorie restriction mimetic micronutrient blend increases glutathione concentrations and improves neuroenergetics in brain of healthy middle-aged men and women.](https://pubmed.ncbi.nlm.nih.gov/32470595/) *Free Radic Biol Med.* 153:112-121.
-4. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
-5. Cheol-Koo Lee et al., 2004. [The impact of alpha-lipoic acid, coenzyme Q10 and caloric restriction on life span and gene expression patterns in mice.](https://pubmed.ncbi.nlm.nih.gov/15019971/) *Free Radic Biol Med.* 36(8):1043-57.
+01. Jamie L Barger et al., 2008. [A low dose of dietary resveratrol partially mimics caloric restriction and retards aging parameters in mice.](https://pubmed.ncbi.nlm.nih.gov/18545640/) *PLoS One.* 3(6):e2264.
+02. Eva Serna et al., 2020. [A Novel Micronutrient Blend Mimics Calorie Restriction Transcriptomics in Multiple Tissues of Mice and Increases Lifespan and Mobility in C. elegans.](https://pubmed.ncbi.nlm.nih.gov/32046035/) *Nutrients.* 12(2):486.
+03. Angela Mastaloudis et al., 2020. [Supplementation with a putative calorie restriction mimetic micronutrient blend increases glutathione concentrations and improves neuroenergetics in brain of healthy middle-aged men and women.](https://pubmed.ncbi.nlm.nih.gov/32470595/) *Free Radic Biol Med.* 153:112-121.
+04. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
+05. Cheol-Koo Lee et al., 2004. [The impact of alpha-lipoic acid, coenzyme Q10 and caloric restriction on life span and gene expression patterns in mice.](https://pubmed.ncbi.nlm.nih.gov/15019971/) *Free Radic Biol Med.* 36(8):1043-57.

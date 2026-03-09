@@ -7,8 +7,6 @@ tags: ['LifePak', '植化素', 'Phytochemicals', 'Nrf2', '抗氧化', '微量營
 category: '介入與調校'
 ---
 
-![lifepack家族](./lifepack家族.png)
-
 如果你已經做過 Prysm iO 掃描，你手上有一個數字。
 
 這個數字告訴你，你的皮膚類胡蘿蔔素濃度——也就是你的細胞抗氧化防禦水位——現在在哪裡。

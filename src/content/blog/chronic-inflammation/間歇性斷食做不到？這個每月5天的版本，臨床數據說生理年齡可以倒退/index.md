@@ -7,8 +7,6 @@ tags: ['模擬斷食', '熱量限制', '生理年齡', '自噬', '抗衰老']
 category: '慢性發炎科學'
 ---
 
-![模擬間歇性斷食](./模擬間歇性斷食.png)
-
 上一篇說到，熱量限制是目前科學上最有跨物種一致性的抗老化方法。
 
 從 1930 年代的大鼠實驗，到追蹤 27 年的恆河猴研究，減少20%到30%的熱量攝取，能啟動 Sirtuins、抑制 mTOR、激活自噬——把細胞切換到「精準修復模式」。
@@ -135,8 +133,8 @@ category: '慢性發炎科學'
 
 ## 參考資料
 
-1. Sebastian Brandhorst et al., 2024. [Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk.](https://pubmed.ncbi.nlm.nih.gov/38383456/) *Nat Commun.* 15(1):1309.
-2. Luigi Fontana, Linda Partridge, 2015. [Promoting health and longevity through diet: from model organisms to humans.](https://pubmed.ncbi.nlm.nih.gov/25815989/) *Cell.* 161(1):106-118.
-3. R Waziry et al., 2023. [Effect of long-term caloric restriction on DNA methylation measures of biological aging in healthy adults from the CALERIE trial.](https://pubmed.ncbi.nlm.nih.gov/36949220/) *Nat Aging.* 3(3):248-257.
-4. Claudio Vernieri et al., 2022. [Fasting-Mimicking Diet Is Safe and Reshapes Metabolism and Antitumor Immunity in Patients with Cancer.](https://pubmed.ncbi.nlm.nih.gov/34789537/) *Cancer Discov.* 12(1):90-107.
-5. Mark P Mattson, Valter D Longo, Michelle Harvie, 2017. [Impact of intermittent fasting on health and disease processes.](https://pubmed.ncbi.nlm.nih.gov/27810402/) *Ageing Res Rev.* 39:46-58.
+01. Sebastian Brandhorst et al., 2024. [Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk.](https://pubmed.ncbi.nlm.nih.gov/38383456/) *Nat Commun.* 15(1):1309.
+02. Luigi Fontana, Linda Partridge, 2015. [Promoting health and longevity through diet: from model organisms to humans.](https://pubmed.ncbi.nlm.nih.gov/25815989/) *Cell.* 161(1):106-118.
+03. R Waziry et al., 2023. [Effect of long-term caloric restriction on DNA methylation measures of biological aging in healthy adults from the CALERIE trial.](https://pubmed.ncbi.nlm.nih.gov/36949220/) *Nat Aging.* 3(3):248-257.
+04. Claudio Vernieri et al., 2022. [Fasting-Mimicking Diet Is Safe and Reshapes Metabolism and Antitumor Immunity in Patients with Cancer.](https://pubmed.ncbi.nlm.nih.gov/34789537/) *Cancer Discov.* 12(1):90-107.
+05. Mark P Mattson, Valter D Longo, Michelle Harvie, 2017. [Impact of intermittent fasting on health and disease processes.](https://pubmed.ncbi.nlm.nih.gov/27810402/) *Ageing Res Rev.* 39:46-58.

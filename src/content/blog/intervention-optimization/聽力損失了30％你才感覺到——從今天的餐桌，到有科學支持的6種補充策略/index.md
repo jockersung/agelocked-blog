@@ -7,8 +7,6 @@ tags: ['聽力保護', '抗氧化', '粒線體', '抗衰老']
 category: '介入與調校'
 ---
 
-![聽力保護6種補充](./聽力保護6種補充.png)
-
 上一篇說到，你耳朵裡的毛細胞是「不補貨的倉庫」——死一根少一根，而且問題在你感覺到之前就已經在進行了。
 
 這篇要談的是：**知道機制之後，你實際上可以做什麼。**
@@ -179,12 +177,12 @@ Prysm iO 可以在 15 秒內量化你的皮膚類胡蘿蔔素——這個數值�
 
 ## 參考資料
 
-1. Chisato Fujimoto, Tatsuya Yamasoba, 2019. [Mitochondria-Targeted Antioxidants for Treatment of Hearing Loss: A Systematic Review.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6523236/) *Antioxidants (Basel).* 8(4):109.
-2. C G Le Prell et al., 2007. [Free radical scavengers, vitamins A, C, and E, plus magnesium reduces noise trauma.](https://pmc.ncbi.nlm.nih.gov/articles/PMC1950331/) *Free Radic Biol Med.* 42(9):1454–1463.
-3. C G Le Prell et al., 2011. [Nutrient-Enhanced Diet Reduces Noise-Induced Damage to the Inner Ear and Hearing Loss.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3132794/) *Transl Res.* 158(1):38–53.
-4. Doostkam A., Malekmakan L. et al., 2024. [The effectiveness of curcumin as a safe agent on hearing threshold improvement in patients with chronic kidney disease: a double-blind, placebo-controlled trial.](https://www.nature.com/articles/s41598-024-68572-8) *Scientific Reports* 14, 17576.
-5. Li N. et al., 2023. [Curcumin protects against the age-related hearing loss by attenuating apoptosis and senescence via activating Nrf2 signaling in cochlear hair cells.](https://pubmed.ncbi.nlm.nih.gov/37334787/) *Biochemical Pharmacology* 212, 115575.
-6. Mark A Bauer et al., 2024. [L-Ergothioneine slows the progression of age-related hearing loss in CBA/CaJ mice.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11112832/) *Hearing Research* 446, 109004.
-7. Xingxu Song et al., 2024. [Associations between Plant-Based Dietary Patterns and Sensory Impairments among Chinese Older Adults.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11493375/) *Gerontology.* 70(10):1042–1054.
-8. Zhongming Zhou, Yanyan Han, 2024. [Association between oxidative balance score and hearing loss: a cross-sectional study from the NHANES database.](https://pubmed.ncbi.nlm.nih.gov/38812938/) *Front Nutr.* 11:1375545.
-9. Agnieszka J. Szczepek, Heidi Olze, 2026. [Coenzyme Q10 in Hearing Disorders: Replacement Therapy in Mitochondrial Deafness and Neuroprotective Use in Acquired Hearing Loss.](https://www.mdpi.com/2504-463X/7/1/8) *J. Otorhinolaryngol. Hear. Balance Med.* 7(1), 8.
+01. Chisato Fujimoto, Tatsuya Yamasoba, 2019. [Mitochondria-Targeted Antioxidants for Treatment of Hearing Loss: A Systematic Review.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6523236/) *Antioxidants (Basel).* 8(4):109.
+02. C G Le Prell et al., 2007. [Free radical scavengers, vitamins A, C, and E, plus magnesium reduces noise trauma.](https://pmc.ncbi.nlm.nih.gov/articles/PMC1950331/) *Free Radic Biol Med.* 42(9):1454–1463.
+03. C G Le Prell et al., 2011. [Nutrient-Enhanced Diet Reduces Noise-Induced Damage to the Inner Ear and Hearing Loss.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3132794/) *Transl Res.* 158(1):38–53.
+04. Doostkam A., Malekmakan L. et al., 2024. [The effectiveness of curcumin as a safe agent on hearing threshold improvement in patients with chronic kidney disease: a double-blind, placebo-controlled trial.](https://www.nature.com/articles/s41598-024-68572-8) *Scientific Reports* 14, 17576.
+05. Li N. et al., 2023. [Curcumin protects against the age-related hearing loss by attenuating apoptosis and senescence via activating Nrf2 signaling in cochlear hair cells.](https://pubmed.ncbi.nlm.nih.gov/37334787/) *Biochemical Pharmacology* 212, 115575.
+06. Mark A Bauer et al., 2024. [L-Ergothioneine slows the progression of age-related hearing loss in CBA/CaJ mice.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11112832/) *Hearing Research* 446, 109004.
+07. Xingxu Song et al., 2024. [Associations between Plant-Based Dietary Patterns and Sensory Impairments among Chinese Older Adults.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11493375/) *Gerontology.* 70(10):1042–1054.
+08. Zhongming Zhou, Yanyan Han, 2024. [Association between oxidative balance score and hearing loss: a cross-sectional study from the NHANES database.](https://pubmed.ncbi.nlm.nih.gov/38812938/) *Front Nutr.* 11:1375545.
+09. Agnieszka J. Szczepek, Heidi Olze, 2026. [Coenzyme Q10 in Hearing Disorders: Replacement Therapy in Mitochondrial Deafness and Neuroprotective Use in Acquired Hearing Loss.](https://www.mdpi.com/2504-463X/7/1/8) *J. Otorhinolaryngol. Hear. Balance Med.* 7(1), 8.
