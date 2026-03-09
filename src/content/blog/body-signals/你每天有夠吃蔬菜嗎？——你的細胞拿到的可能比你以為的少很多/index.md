@@ -19,15 +19,17 @@ category: '身體訊號'
 
 ## 台灣人的蔬果缺口，比官方數字更嚴重
 
-衛生福利部國民健康署在 2013–2016 年（第一波）與 2017–2020 年（第二波）兩次「國民營養健康狀況變遷調查」顯示，台灣人每天的蔬菜和水果攝取量，和建議量（蔬菜 3–5 份、水果 2–4 份）相比嚴重不足——**且兩波調查之間幾乎沒有改善**。
+衛生福利部國民健康署在 2013–2016 年（第一波）與 2017–2020 年（第二波）兩次「國民營養健康狀況變遷調查」顯示，台灣人每天的蔬菜和水果攝取量和建議量（蔬菜 3–5 份、水果 2–4 份）相比嚴重不足——**且兩波調查之間幾乎沒有改善**。
 
-最新的第二波結果（2022年5月發布）明確指出：各性別、年齡層的蔬菜、水果攝取量仍大幅低於飲食指南建議，所有年齡層的膳食纖維攝取量均未達建議量。第三波調查（2022–2025年）目前仍在進行中，結果尚未公布。
+最新的第二波結果（2022年5月發布）明確指出：各性別、年齡層的蔬菜、水果攝取量仍大幅低於飲食指南建議，所有年齡層的膳食纖維攝取量均未達建議量。
+
+第三波調查（2022–2025年）目前仍在進行中，結果尚未公布。
 
 這還只是「份數」的缺口。
 
 份數沒達標，代表的是植化素——這些藏在蔬果顏色裡的關鍵抗氧化物質——的攝取量同樣嚴重不足。
 
-但問題不只是吃的量不夠。
+但問題遠遠不只是吃的量不夠而已，吃足量只是基本。
 
 ---
 
@@ -121,7 +123,7 @@ category: '身體訊號'
 ## 參考資料
 
 01. 衛生福利部國民健康署, 2022. [國民營養健康狀況變遷調查成果報告 2017–2020 年](https://www.hpa.gov.tw/Pages/List.aspx?nodeid=3998)（第二波，2022年5月發布）.
-02. 衛生福利部國民健康署, 2016. 國民營養健康狀況變遷調查成果報告 2013–2016 年（第一波）.
+02. 衛生福利部國民健康署, 2016. [國民營養健康狀況變遷調查成果報告 2013–2016 年](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=3999&pid=11145)（第一波，2022年5月發布）.
 03. Brenda M Roe et al., 2013. [Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings.](https://pubmed.ncbi.nlm.nih.gov/15735074/) *Am J Clin Nutr.* 80(2):396-403.
 04. Achim Bub et al., 2000. [Moderate intervention with carotenoid-rich vegetable products reduces lipid peroxidation in young, healthy male subjects.](https://pubmed.ncbi.nlm.nih.gov/10648262/) *J Nutr.* 130(9):2200-6.
 05. Werner Gellermann et al., 2002. [Noninvasive laser Raman detection of carotenoid skin pigmentation in volunteers.](https://pubmed.ncbi.nlm.nih.gov/12428194/) *J Invest Dermatol.* 119(6):1420-5.
