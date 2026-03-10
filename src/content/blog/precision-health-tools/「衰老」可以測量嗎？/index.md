@@ -147,13 +147,17 @@ slug: "aging-measurement-methods"
 
 如果是第一次想了解，那「生物光子掃描儀」掃描檢測是最適合新手，如果有興趣的朋友，都非常歡迎與我聯繫取得優惠檢測喔！
 
+👇
+**[加LINE預約檢測](https://lin.ee/jgugMvX)**
+
 ---
 
 ![CTA](./CTA.png)
 
-👇👇👇👇
+還在觀望的可以跟我拿身體警報自我檢測清單。
+👇
 
-[「菁英 」的高效能恢復配方](https://lin.ee/jgugMvX)
+**[加LINE拿取檢測清單](https://lin.ee/jgugMvX)**
 
 ---
 
