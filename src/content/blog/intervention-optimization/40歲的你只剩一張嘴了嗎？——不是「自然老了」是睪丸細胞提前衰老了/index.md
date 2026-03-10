@@ -147,7 +147,7 @@ slug: "testosterone-cell-aging-40"
 
 **想了解 ageLOC R2 是否適合你目前的狀況，或想知道怎麼配合使用效果最好，歡迎加入 LINE 直接諮詢：**
 
-**→ [與我聯繫 LINE @fer7932k](https://line.me/ti/p/@fer7932k)**
+**→ [與我聯繫 LINE](https://line.me/ti/p/@fer7932k)**
 
 ---
 
