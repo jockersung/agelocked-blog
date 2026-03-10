@@ -1,12 +1,12 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
-import { getCategorySlug } from '../../utils/categories';
+import { LABEL_TO_SLUG, getUrlSlug } from '../../utils/categories';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
 	return posts.map((post) => ({
-		params: { slug: post.id },
+		params: { slug: getUrlSlug(post) },
 		props: post,
 	}));
 }
@@ -15,10 +15,10 @@ type Props = CollectionEntry<'blog'>;
 const post = Astro.props;
 const { Content, headings } = await render(post);
 
-const categorySlug = getCategorySlug(post.id);
+const categorySlug = LABEL_TO_SLUG[post.data.category] ?? null;
 const allPosts = await getCollection('blog');
 const related = allPosts
-	.filter(p => p.id !== post.id && getCategorySlug(p.id) === categorySlug && categorySlug !== null)
+	.filter(p => p.id !== post.id && LABEL_TO_SLUG[p.data.category] === categorySlug && categorySlug !== null)
 	.sort(() => Math.random() - 0.5)
 	.slice(0, 3);
 ---

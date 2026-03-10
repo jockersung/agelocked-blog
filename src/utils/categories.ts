@@ -21,3 +21,14 @@ export function getCategoryLabel(slug: string): string {
 }
 
 export const ALL_CATEGORY_SLUGS = Object.keys(CATEGORY_MAP);
+
+// Returns the URL slug used in getStaticPaths for a given post
+export function getUrlSlug(post: { id: string; data: { category: string } }): string {
+  if (post.id.includes('/')) {
+    // Path-based ID already contains category folder prefix
+    return post.id;
+  }
+  // Flat English slug — prepend category folder
+  const catSlug = LABEL_TO_SLUG[post.data.category];
+  return catSlug ? `${catSlug}/${post.id}` : post.id;
+}
