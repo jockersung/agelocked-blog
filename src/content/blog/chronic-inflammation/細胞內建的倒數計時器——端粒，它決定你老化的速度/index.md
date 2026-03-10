@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './端粒是細胞倒數計時器.png'
 tags: ['端粒', '細胞老化', '慢性發炎', 'Inflammaging', '氧化壓力', '生物年齡']
 category: '慢性發炎科學'
+slug: "telomere-aging-clock"
 ---
 
 你的每一個細胞裡，有一個正在倒數的計時器。
@@ -85,7 +86,7 @@ Richard Cawthon 在2003年的 *Lancet* 研究中，追蹤了143名60歲以上的
 
 這裡要說清楚一件事：**目前沒有任何口服補充品被嚴格科學驗證能有效延長端粒。**
 
-端粒酶促進劑的爭議、風險，以及消化系統這一關的根本限制，在另一篇說清楚了（→[「以形補形」這個邏輯，在生物學上行不通](/blog/precision-health-tools/打爆保健品神話，以形補形為什麼不行？/)。
+端粒酶促進劑的爭議、風險，以及消化系統這一關的根本限制，在另一篇說清楚了（→[「以形補形」這個邏輯，在生物學上行不通](/blog/precision-health-tools/supplement-myths-debunked/)。
 
 但減慢端粒縮短速度，有幾個方向是有可靠研究支持的：
 
@@ -113,10 +114,10 @@ Richard Cawthon 在2003年的 *Lancet* 研究中，追蹤了143名60歲以上的
 
 **延伸閱讀：**
 - [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光) ← 第5篇（端粒是四個儲備之一/）
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光/) ← Inflammaging篇
-- [打爆保健品神話，以形補形為什麼不行？](/blog/precision-health-tools/打爆保健品神話，以形補形為什麼不行？/) ← 消化系統篇
-- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/同樣的成分，有人吸收80，有人吸收5——差在哪裡/) ← 吸收率篇（口服端粒酶為什麼進不了細胞，這篇說機制）
-- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家/) ← 第7篇（端粒長度檢測是方法一）
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) ← Inflammaging篇
+- [打爆保健品神話，以形補形為什麼不行？](/blog/precision-health-tools/supplement-myths-debunked/) ← 消化系統篇
+- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇（口服端粒酶為什麼進不了細胞，這篇說機制）
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) ← 第7篇（端粒長度檢測是方法一）
 
 ---
 

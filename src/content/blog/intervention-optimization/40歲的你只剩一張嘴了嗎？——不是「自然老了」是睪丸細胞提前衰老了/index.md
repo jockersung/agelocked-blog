@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './中年男子只剩一張嘴.png'
 tags: ['男性健康', '睪固酮', '雄性素', '性功能', 'LOH', '晚發性性腺功能低下', 'Inflammaging', '慢性發炎']
 category: '介入與調校'
+slug: "testosterone-cell-aging-40"
 ---
 
 先做一個快速測試。
@@ -152,7 +153,7 @@ category: '介入與調校'
 
 還沒讀過中年男性慢性發炎全貌的，建議先讀這篇：
 
-**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/大多數男人沒有意識到——40歲之後的疲勞，和20歲的疲勞不一樣/)**（article-E）
+**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**（article-E）
 
 ---
 

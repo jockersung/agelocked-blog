@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './中年男子禿頭.png'
 tags: ['男性健康', '掉髮', '雄性禿', 'M型禿', '頭皮發炎', 'Inflammaging', '細胞衰老']
 category: '身體訊號'
+slug: "hairline-recession-warning"
 ---
 
 照鏡子的那一秒，你停下來了。
@@ -123,7 +124,7 @@ M 型的 M，可以是 Male，可以是 Middle-aged，也可以是 Mitochondria�
 
 下一步建議讀：
 
-**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/大多數男人沒有意識到——40歲之後的疲勞，和20歲的疲勞不一樣/)**（article-E）
+**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**（article-E）
 
 那篇文章會告訴你，頭皮正在發生的事，在你的肌肉、大腦、血管裡也同時在進行。
 

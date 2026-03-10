@@ -5,6 +5,7 @@ pubDate: 2026-02-12
 heroImage: './2026長壽新論.png'
 tags: ['抗氧化', '健康', '長壽']
 category: '慢性發炎科學'
+slug: "longevity-55-percent-genetics"
 ---
 
 2026年1月，以色列魏茲曼科學研究所（Weizmann Institute of Science）在《科學》（Science）期刊發表了一項研究。

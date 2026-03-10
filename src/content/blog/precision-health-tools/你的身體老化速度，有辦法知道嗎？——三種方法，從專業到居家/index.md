@@ -5,6 +5,7 @@ pubDate: 2026-03-03
 heroImage: './身體老化速度檢測.png'
 tags: ['健康', '抗衰老', '長壽科學']
 category: '精準健康工具'
+slug: "aging-speed-measurement-methods"
 ---
 
 你知道自己幾歲。
@@ -141,8 +142,8 @@ Prysm iO 用光譜技術，15秒掃描指尖，把這個數值轉換成一個顏
 ---
 
 **延伸閱讀：**
-- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](/blog/body-signals/體檢報告沒有紅字，但你還是一直累——這不是心理問題/) ← 第2篇
-- [活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？](/blog/chronic-inflammation/活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？/) ← 第4篇
+- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](/blog/body-signals/normal-checkup-still-tired/) ← 第2篇
+- [活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？](/blog/chronic-inflammation/healthspan-vs-lifespan/) ← 第4篇
 
 ---
 

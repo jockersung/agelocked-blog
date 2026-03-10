@@ -5,6 +5,7 @@ pubDate: 2026-02-24
 heroImage: './從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png'
 tags: ['抗氧化', '科學史', 'Prysm-iO', '深度科普']
 category: '精準健康工具'
+slug: "carotenoid-rrs-science"
 ---
 
 ![從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生](./從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png)

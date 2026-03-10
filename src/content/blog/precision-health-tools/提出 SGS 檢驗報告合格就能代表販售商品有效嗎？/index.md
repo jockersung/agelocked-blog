@@ -5,6 +5,7 @@ pubDate: 2026-03-07
 heroImage: './SGS合格.png'
 tags: ['保健品選購', 'SGS', '品質標準', '科學選品', '精準健康']
 category: '精準健康工具'
+slug: "sgs-report-vs-efficacy"
 ---
 
 你在選保健品的時候，看到「SGS檢驗合格」這幾個字，會不會放心一點？
@@ -152,6 +153,6 @@ SGS是對成品做檢測，不是對整個生產流程做評估。
 ---
 
 **延伸閱讀：**
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/那些讓你點頭的保健品話術，你聽過哪些？/) ← 話術篇
-- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/同樣的成分，有人吸收80，有人吸收5——差在哪裡/) ← 吸收率篇
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？/) ← 第6篇
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
+- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← 第6篇

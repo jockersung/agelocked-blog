@@ -5,6 +5,7 @@ pubDate: 2026-03-01
 heroImage: './模擬間歇性斷食.png'
 tags: ['模擬斷食', '熱量限制', '生理年齡', '自噬', '抗衰老']
 category: '慢性發炎科學'
+slug: "fasting-mimicking-diet-5days"
 ---
 
 上一篇說到，熱量限制是目前科學上最有跨物種一致性的抗老化方法。
@@ -126,8 +127,8 @@ category: '慢性發炎科學'
 ---
 
 **延伸閱讀：**
-- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天/) ← B篇（本篇前傳）
-- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇（本篇續集）
+- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇（本篇前傳）
+- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇（本篇續集）
 
 ---
 

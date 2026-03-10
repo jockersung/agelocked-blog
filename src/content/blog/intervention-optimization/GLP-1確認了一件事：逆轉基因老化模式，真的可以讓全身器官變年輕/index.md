@@ -5,6 +5,7 @@ pubDate: 2026-03-01
 heroImage: './GLP1抗老.png'
 tags: ['抗衰老', '基因表達', 'mTOR', '慢性發炎科學', 'Cell Metabolism']
 category: '慢性發炎科學'
+slug: "glp1-gene-aging-reversal"
 ---
 
 前兩篇我們說了一件事：
@@ -117,8 +118,8 @@ mTOR 是我們在前幾篇反覆提到的概念——它是細胞的「生長感
 ---
 
 **延伸閱讀：**
-- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇（本篇前傳）
-- [ageLOC Youthspan：不節食，也能啟動修護基因](/blog/intervention-optimization/ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/) ← Youthspan 產品篇
+- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇（本篇前傳）
+- [ageLOC Youthspan：不節食，也能啟動修護基因](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇
 
 ---
 

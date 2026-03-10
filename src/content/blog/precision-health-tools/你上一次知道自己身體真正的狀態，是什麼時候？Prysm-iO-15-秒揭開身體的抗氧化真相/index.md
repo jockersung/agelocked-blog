@@ -5,6 +5,7 @@ pubDate: 2026-02-12
 heroImage: './健康不再憑感覺.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
 category: '精準健康工具'
+slug: "prysm-io-15sec"
 ---
 
 你上一次感覺「身體很好」是什麼時候？

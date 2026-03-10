@@ -5,6 +5,7 @@ pubDate: 2024-12-08
 heroImage: './衰老可以測量.png'
 tags: ['健康', '抗衰老', '長壽科學']
 category: '精準健康工具'
+slug: "aging-measurement-methods"
 ---
 
 ![衰老可以測量](./衰老可以測量.png)

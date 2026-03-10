@@ -5,6 +5,7 @@ pubDate: 2026-02-24
 heroImage: './光譜指數.png'
 tags: ['抗氧化', 'Prysm-iO', '教學', '健康管理']
 category: '精準健康工具'
+slug: "prysm-io-score-guide"
 ---
 
 數字出來的那一刻，很多人的第一個反應是：

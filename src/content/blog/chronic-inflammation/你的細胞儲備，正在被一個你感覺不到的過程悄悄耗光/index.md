@@ -154,9 +154,9 @@ NAD+ 下降 → Sirtuins 失活 → 端粒修復能力下降 → 端粒縮短加
 ---
 
 **延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging篇
-- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家/) ← 第6篇（生物年齡量測工具）
-- [不節食也能啟動修護基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) ← 第6篇（生物年齡量測工具）
+- [不節食也能啟動修護基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
 
 ---
 

@@ -184,9 +184,9 @@ Nrf2 通路的激活，可以透過蘿蔔硫素等植化素達到。
 ---
 
 **延伸閱讀：**
-- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇（本篇前傳）
-- [GLP-1 確認了一件事：逆轉基因老化模式，真的可以讓全身器官變年輕](/blog/intervention-optimization/GLP-1確認了一件事：逆轉基因老化模式，真的可以讓全身器官變年輕/) ← GLP-1佐證篇
-- [ageLOC Youthspan：不節食，也能啟動長壽基因](/blog/intervention-optimization/ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/) ← Youthspan 產品篇
+- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇（本篇前傳）
+- [GLP-1 確認了一件事：逆轉基因老化模式，真的可以讓全身器官變年輕](/blog/intervention-optimization/glp1-gene-aging-reversal/) ← GLP-1佐證篇
+- [ageLOC Youthspan：不節食，也能啟動長壽基因](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇
 
 ---
 

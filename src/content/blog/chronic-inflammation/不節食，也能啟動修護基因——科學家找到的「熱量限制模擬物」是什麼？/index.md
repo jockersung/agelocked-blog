@@ -5,6 +5,7 @@ pubDate: 2026-03-01
 heroImage: './熱量限制模擬物科學.png'
 tags: ['熱量限制模擬物', 'CRM', '基因表達', '抗衰老', '長壽科學']
 category: '慢性發炎科學'
+slug: "caloric-restriction-mimetics-science"
 ---
 
 上一篇說到，熱量限制是目前科學上最有跨物種一致性的抗老化介入方式。
@@ -176,7 +177,7 @@ CRM 的研究方向，把「抗老化」從「感覺學」推進到了「精準�
 
 **延伸閱讀：**
 
-- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天/) ← B篇（本篇前傳）
+- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇（本篇前傳）
 - [ageLOC Youthspan：不節食，也能啟動修護基因功能](/blog/intervention-optimization/ageLOC%20Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/) ← Youthspan 產品篇（本篇續集）
 
 ---

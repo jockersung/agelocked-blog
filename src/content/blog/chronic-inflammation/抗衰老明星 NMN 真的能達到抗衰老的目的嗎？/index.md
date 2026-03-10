@@ -5,6 +5,7 @@ pubDate: 2026-03-01
 heroImage: './抗衰老明星NMN.png'
 tags: ['NMN', 'NAD+', '粒線體', '熱量限制', 'CRM', '抗衰老']
 category: '慢性發炎科學'
+slug: "nmn-anti-aging-review"
 ---
 
 NMN 被稱為「不老藥」，這個稱號不是無中生有的。
@@ -196,10 +197,10 @@ NMN 不是「不老藥」，但也不是無效的。
 ---
 
 **延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging篇
-- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← CRM篇（節流策略的科學）
-- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能](/blog/intervention-optimization/ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/) ← Youthspan 產品篇
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/那些讓你點頭的保健品話術，你聽過哪些？/) ← 話術篇（市場品管問題的完整討論）
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
+- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← CRM篇（節流策略的科學）
+- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇（市場品管問題的完整討論）
 
 ---
 

@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './自由基的兩張臉.png'
 tags: ['自由基', 'ROS', 'Nrf2', '粒線體', 'Mitohormesis', '抗氧化', '氧化壓力', '抗老']
 category: '慢性發炎科學'
+slug: "free-radical-two-faces"
 ---
 
 你一定聽過這個說法：

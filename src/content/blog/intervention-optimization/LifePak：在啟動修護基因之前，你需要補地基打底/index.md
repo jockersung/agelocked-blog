@@ -5,6 +5,7 @@ pubDate: 2026-03-08
 heroImage: './lifepack家族.png'
 tags: ['LifePak', '植化素', 'Phytochemicals', 'Nrf2', '抗氧化', '微量營養素']
 category: '介入與調校'
+slug: "lifepak-foundation-nutrition"
 ---
 
 如果你已經做過 Prysm iO 掃描，你手上有一個數字。
@@ -186,10 +187,10 @@ LifePak 針對不同的生理需求分為三個配方：
 ---
 
 **延伸閱讀：**
-- [你每天有夠吃蔬菜嗎？——你的細胞拿到的可能比你以為的少很多](/blog/body-signals/你每天有夠吃蔬菜嗎？——你的細胞拿到的可能比你以為的少很多/) ← 植化素SEO篇
-- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家/) ← 第7篇
-- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能](/blog/intervention-optimization/ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/) ← Youthspan 產品篇
-- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光/) ← 第5篇
+- [你每天有夠吃蔬菜嗎？——你的細胞拿到的可能比你以為的少很多](/blog/body-signals/carotenoid-cell-absorption/) ← 植化素SEO篇
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) ← 第7篇
+- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇
+- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) ← 第5篇
 
 ---
 

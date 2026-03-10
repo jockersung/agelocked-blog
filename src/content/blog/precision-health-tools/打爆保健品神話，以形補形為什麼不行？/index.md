@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './打爆保健品神話.png'
 tags: ['保健品選擇', '生物利用率', '消化系統', '以形補形', '胎盤素', '端粒酶']
 category: '精準健康工具'
+slug: "supplement-myths-debunked"
 ---
 
 「以形補形」是一個非常直觀的邏輯：
@@ -134,10 +135,10 @@ TA Sciences 在 2011 年的 9 人試驗中，端粒長度沒有顯著增加；20
 ---
 
 **延伸閱讀：**
-- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/同樣的成分，有人吸收80，有人吸收5——差在哪裡/) ← 吸收率篇
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/那些讓你點頭的保健品話術，你聽過哪些？/) ← 話術篇
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？/) ← Nu Skin標準篇
-- [Prysm iO 掃完之後，第一步先做這件事](/blog/intervention-optimization/LifePak：在啟動修護基因之前，你需要補地基打底/) ← LifePak產品篇
+- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← Nu Skin標準篇
+- [Prysm iO 掃完之後，第一步先做這件事](/blog/intervention-optimization/lifepak-foundation-nutrition/) ← LifePak產品篇
 
 ---
 

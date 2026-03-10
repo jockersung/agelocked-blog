@@ -5,6 +5,7 @@ pubDate: 2026-03-04
 heroImage: './Youthspan.png'
 tags: ['ageLOC', 'Youthspan', '抗衰老', '基因表達', 'CRM', '介入']
 category: '介入與調校'
+slug: "ageloc-youthspan-longevity-genes"
 ---
 
 你可能已經在補一些保健品了。
@@ -201,8 +202,8 @@ Youthspan 用三十年的基因表達研究，把那個複雜的配比問題解�
 ---
 
 **延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging篇
-- [你的身體老化速度，有辦法知道嗎？](/blog/precision-health-tools/你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家/) ← Prysm iO 掃描說明
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
+- [你的身體老化速度，有辦法知道嗎？](/blog/precision-health-tools/aging-speed-measurement-methods/) ← Prysm iO 掃描說明
 
 ---
 

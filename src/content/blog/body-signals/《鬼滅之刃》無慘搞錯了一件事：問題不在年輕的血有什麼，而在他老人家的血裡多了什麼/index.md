@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './換血能抗老.png'
 tags: ['抗衰老', '慢性發炎', 'SASP', '異體共生', '科學']
 category: '身體訊號'
+slug: "demon-slayer-aging-blood"
 ---
 
 《鬼滅之刃》裡，鬼舞辻無慘生來患有絕症，活不過二十歲。
@@ -144,7 +145,7 @@ Inflammaging 不是感染，不是急性發炎。它是一種長年慢慢燒的�
 
 **接下來讀這篇：**
 
-[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging 篇（了解 SASP 的完整機制與介入邏輯）
+[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging 篇（了解 SASP 的完整機制與介入邏輯）
 
 ---
 

@@ -5,6 +5,7 @@ pubDate: 2026-03-03
 heroImage: './CoQ10.png'
 tags: ['CoQ10', '輔酶Q10', '粒線體', '抗衰老', '介入']
 category: '介入與調校'
+slug: "nuskin-coq10-bioavailability"
 ---
 
 ![CoQ10](./CoQ10.png)
@@ -97,7 +98,7 @@ Nu Skin CoQ10 的使用建議和適合的族群，因每個人的細胞狀態不
 ---
 
 **延伸閱讀：**
-- [聽力損失了30%你才感覺到——從今天的餐桌，到有科學支持的6種補充策略](/blog/intervention-optimization/聽力損失了30％你才感覺到——從今天的餐桌，到有科學支持的6種補充策略/) ← 介入篇
+- [聽力損失了30%你才感覺到——從今天的餐桌，到有科學支持的6種補充策略](/blog/intervention-optimization/hearing-loss-supplement-strategy/) ← 介入篇
 
 ---
 

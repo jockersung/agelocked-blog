@@ -6,6 +6,7 @@ heroImage: './三機對比.png'
 tags: ['抗氧化', '科技', 'Prysm-iO', '會員限定']
 memberOnly: true
 category: '精準健康工具'
+slug: "antioxidant-scanner-comparison"
 ---
 
 ![三機對比](./三機對比.png)

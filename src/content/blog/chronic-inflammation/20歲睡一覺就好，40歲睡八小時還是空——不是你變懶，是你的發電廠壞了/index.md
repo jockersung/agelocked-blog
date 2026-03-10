@@ -122,9 +122,9 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 ---
 
 **延伸閱讀：**
-- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天/) ← B篇（自噬機制的上游邏輯）
-- [不節食也能啟動長壽基因？CRM的概念](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇
-- [那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了/) ← G篇（R2產品篇）
+- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇（自噬機制的上游邏輯）
+- [不節食也能啟動長壽基因？CRM的概念](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
+- [那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) ← G篇（R2產品篇）
 
 ---
 

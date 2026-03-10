@@ -5,6 +5,7 @@ pubDate: 2026-03-02
 heroImage: './體檢報告.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
 category: '身體訊號'
+slug: "normal-checkup-still-tired"
 ---
 
 每年健康檢查，數值都在正常範圍內。

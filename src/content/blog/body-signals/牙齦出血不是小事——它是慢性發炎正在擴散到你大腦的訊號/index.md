@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './牙齦出血會失智.png'
 tags: ['慢性發炎', '牙周病', '失智症', 'Inflammaging', '口腔健康']
 category: '身體訊號'
+slug: "gum-bleeding-brain-inflammation"
 ---
 
 你上一次刷牙，牙齦有沒有出血？
@@ -139,7 +140,7 @@ P. gingivalis 觸發 **兩個阿茲海默症的核心病理**：
 
 **接下來讀這篇：**
 
-[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging 篇（了解全身性慢性發炎的機制與管理邏輯）
+[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging 篇（了解全身性慢性發炎的機制與管理邏輯）
 
 ---
 

@@ -5,6 +5,7 @@ pubDate: 2026-03-01
 heroImage: './中年男性疲憊.png'
 tags: ['男性健康', 'Inflammaging', '慢性發炎', '疲勞', '身體訊號']
 category: '身體訊號'
+slug: "male-fatigue-after-40"
 ---
 
 20 歲的疲勞，睡一覺就好了。
@@ -144,4 +145,3 @@ Inflammaging 發生在「還沒生病」和「已經生病」之間的那個光�
 **延伸閱讀：**
 - [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging篇
 - [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2那個40歲看起來像32歲的男人你老婆也注意到他了/) ← G篇（R2產品篇）
-

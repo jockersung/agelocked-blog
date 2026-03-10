@@ -5,6 +5,7 @@ pubDate: 2026-02-21
 heroImage: './蛤？你公蝦？.png'
 tags: ['聽力退化', '抗衰老', '失智']
 category: '身體訊號'
+slug: "hearing-loss-dementia-signal"
 ---
 
 ## 先問你幾個問題：你最近是不是開始覺得聽不太清楚？
@@ -197,8 +198,8 @@ category: '身體訊號'
 ---
 
 **延伸閱讀：**
-- [感冒拖三週、睡滿還是累、傷口好得比以前慢——這三件事同時出現，不是巧合](/blog/body-signals/感冒拖三週、睡滿還是累、傷口好得比以前慢——這三件事同時出現，不是巧合/) ← 第1篇
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging篇
+- [感冒拖三週、睡滿還是累、傷口好得比以前慢——這三件事同時出現，不是巧合](/blog/body-signals/three-signs-chronic-inflammation/) ← 第1篇
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
 
 ---
 

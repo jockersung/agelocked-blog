@@ -5,6 +5,7 @@ pubDate: 2026-03-07
 heroImage: './保健品話術.png'
 tags: ['保健品選購', '話術破解', '科學選品', '精準健康']
 category: '精準健康工具'
+slug: "supplement-marketing-tactics"
 ---
 
 你一定聽過類似這樣的話：
@@ -135,7 +136,7 @@ FDA 扮演的是事後監管的角色——有問題才介入、罰款、下架�
 
 「通過FDA認證」這句話在台灣被嚴重濫用，你以為的意思和廠商說的意思，往往不是同一件事。
 
-→ 完整解析看這篇：[「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/「本產品通過FDA認證」和你以為的FDA認證根本不一樣/)
+→ 完整解析看這篇：[「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/fda-certification-myth/)
 
 ---
 
@@ -222,6 +223,6 @@ NMN 是近年來研究最活躍、市場最熱門的抗衰老成分之一，在�
 ---
 
 **延伸閱讀：**
-- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/同樣的成分，有人吸收80，有人吸收5——差在哪裡/) ← 第4篇
-- [提出 SGS 檢驗報告合格就能代表販售商品的品質嗎？](/blog/precision-health-tools/提出 SGS 檢驗報告合格就能代表販售商品有效嗎？/) ← 第5篇
-- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇
+- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 第4篇
+- [提出 SGS 檢驗報告合格就能代表販售商品的品質嗎？](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← 第5篇
+- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇

@@ -224,9 +224,9 @@ mTOR 被抑制有什麼好處？
 ---
 
 **延伸閱讀：**
-- [老化，已經可以被量化管理了](/blog/precision-health-tools/你的身體幾歲了？（衰老可以測量嗎？2026版）/) ← A篇
-- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇（接續本篇）
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging篇
+- [老化，已經可以被量化管理了](/blog/precision-health-tools/biological-age-measurement/) ← A篇
+- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇（接續本篇）
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
 
 ---
 

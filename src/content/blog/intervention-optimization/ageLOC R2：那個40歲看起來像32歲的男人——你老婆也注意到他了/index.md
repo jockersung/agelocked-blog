@@ -5,6 +5,7 @@ pubDate: 2026-03-01
 heroImage: './ageLOCR2.png'
 tags: ['ageLOC R2', '男性抗衰老', '蟲草', 'Nrf2', '介入與調校']
 category: '介入與調校'
+slug: "ageloc-r2-cellular-renewal"
 ---
 
 同樣40歲出頭，但他看起來就是不像那個年紀。精神好、身形穩、眼神還有光——不是特別在健身，也沒有特別自律，就是狀態一直在那裡。
@@ -157,8 +158,8 @@ R2 不是急性的效果——它針對的是細胞層級的耗損模式，改�
 ---
 
 **延伸閱讀：**
-- [20歲睡一覺就好，40歲睡八小時還是空——不是你變懶，是你的發電廠壞了](/blog/chronic-inflammation/20歲睡一覺就好，40歲睡八小時還是空——不是你變懶，是你的發電廠壞了/) ← E篇（男性Inflammaging症狀篇）
-- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/不節食，也能啟動修護基因——科學家找到的「熱量限制模擬物」是什麼？/) ← C篇
+- [20歲睡一覺就好，40歲睡八小時還是空——不是你變懶，是你的發電廠壞了](/blog/chronic-inflammation/mitochondria-energy-after-40/) ← E篇（男性Inflammaging症狀篇）
+- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
 
 ---
 

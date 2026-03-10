@@ -5,6 +5,7 @@ pubDate: 2026-02-21
 heroImage: './聽力保護6種補充.png'
 tags: ['聽力保護', '抗氧化', '粒線體', '抗衰老']
 category: '介入與調校'
+slug: "hearing-loss-supplement-strategy"
 ---
 
 上一篇說到，你耳朵裡的毛細胞是「不補貨的倉庫」——死一根少一根，而且問題在你感覺到之前就已經在進行了。
@@ -170,8 +171,8 @@ Prysm iO 可以在 15 秒內量化你的皮膚類胡蘿蔔素——這個數值�
 ---
 
 **延伸閱讀：**
-- [「蛤？你公蝦？」聽力退化是失智的「前兆」？](/blog/body-signals/「蛤？你公蝦？」聽力退化是失智的「前兆」？/) ← 聽力退化原因篇
-- [你的身體老化速度，有辦法知道嗎？](/blog/precision-health-tools/你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家/) ← Prysm iO 掃描說明
+- [「蛤？你公蝦？」聽力退化是失智的「前兆」？](/blog/body-signals/hearing-loss-dementia-signal/) ← 聽力退化原因篇
+- [你的身體老化速度，有辦法知道嗎？](/blog/precision-health-tools/aging-speed-measurement-methods/) ← Prysm iO 掃描說明
 
 ---
 

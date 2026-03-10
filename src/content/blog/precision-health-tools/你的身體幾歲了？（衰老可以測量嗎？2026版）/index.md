@@ -5,6 +5,7 @@ pubDate: 2026-02-21
 heroImage: './你的身體幾歲了.png'
 tags: ['抗氧化', '健康', '長壽']
 category: '精準健康工具'
+slug: "biological-age-measurement"
 ---
 
 很多人開玩笑說：「過了 40 歲，身體就像零件開始鬆動」，有時候覺得：「我明明才 45 歲，為什麼體力比 50 歲的朋友還差？」

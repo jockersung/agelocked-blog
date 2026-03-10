@@ -157,7 +157,7 @@ category: '身體訊號'
 
 👇
 
-[少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天](/blog/chronic-inflammation/少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天/)
+[少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天](/blog/chronic-inflammation/caloric-restriction-longevity-science/)
 
 ---
 
