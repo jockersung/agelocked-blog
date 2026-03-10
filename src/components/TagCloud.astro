@@ -1,13 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
-import { CATEGORY_MAP, getCategorySlug } from '../utils/categories';
+import { CATEGORY_MAP, LABEL_TO_SLUG } from '../utils/categories';
 
 const posts = await getCollection('blog');
 
-// Count posts per category
+// Count posts per category using frontmatter category field
 const counts: Record<string, number> = {};
 for (const post of posts) {
-  const slug = getCategorySlug(post.id);
+  const slug = LABEL_TO_SLUG[post.data.category];
   if (slug) counts[slug] = (counts[slug] ?? 0) + 1;
 }
 

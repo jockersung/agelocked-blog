@@ -5,6 +5,11 @@ export const CATEGORY_MAP: Record<string, string> = {
   'intervention-optimization':'介入與調校',
 };
 
+// Inverse map: label → slug
+export const LABEL_TO_SLUG: Record<string, string> = Object.fromEntries(
+  Object.entries(CATEGORY_MAP).map(([slug, label]) => [label, slug])
+);
+
 export function getCategorySlug(postId: string): string | null {
   const parts = postId.split('/');
   if (parts.length < 2) return null;
