@@ -143,5 +143,5 @@ Inflammaging 發生在「還沒生病」和「已經生病」之間的那個光�
 ---
 
 **延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學/) ← Inflammaging篇
-- [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2那個40歲看起來像32歲的男人你老婆也注意到他了/) ← G篇（R2產品篇）
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
+- [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) ← G篇（R2產品篇）

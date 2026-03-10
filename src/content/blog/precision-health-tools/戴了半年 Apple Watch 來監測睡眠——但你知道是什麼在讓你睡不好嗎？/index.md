@@ -5,6 +5,7 @@ pubDate: 2026-03-04
 heroImage: './穿戴裝置監測.png'
 tags: ['穿戴裝置', 'HRV', 'Prysm iO', '精準健康', '生物標記', '細胞儲備']
 category: '精準健康工具'
+slug: "apple-watch-sleep-vs-root-cause"
 ---
 
 你有沒有過這種早晨：

@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './白髮保護.png'
 tags: ['男性健康', '白頭髮', '白髮', '黑色素幹細胞', '細胞衰老', 'DNA損傷', '氧化壓力', 'Inflammaging']
 category: '身體訊號'
+slug: "white-hair-stem-cells"
 ---
 
 你發現它的方式，通常不是刻意去找的。
@@ -97,7 +98,7 @@ category: '身體訊號'
 
 ## 早發白髮，是全身氧化壓力的外顯
 
-《Clinical, Cosmetic and Investigational Dermatology》2025年的回顧整理了早發白髮（30歲前出現）的臨床研究：
+《Clinical, Cosmetic and Investigational Dermatology》2025 年的回顧整理了早發白髮（30歲前出現）的臨床研究：
 
 - 血清丙二醛（MDA，脂質過氧化指標）顯著高於對照組
 - 血清 SOD 和麩胱甘肽顯著低於對照組
@@ -133,9 +134,9 @@ MeSCs或卡住，或退場，或被周圍的 H₂O₂ 直接漂白——三種�
 
 下一步建議讀：
 
-**→ [那條後退的髮際線，是身體給中年男人的第一個警告](/blog/body-signals/那條後退的髮際線，是身體給中年男人的第一個警告/)**（article-hair-loss）掉髮和白頭是同一根毛囊裡的兩件事——那篇文章解釋的是另一批幹細胞，用不同的方式，在同一個微環境裡老化。
+**→ [那條後退的髮際線，是身體給中年男人的第一個警告](/blog/body-signals/hairline-recession-warning/)**（article-hair-loss）掉髮和白頭是同一根毛囊裡的兩件事——那篇文章解釋的是另一批幹細胞，用不同的方式，在同一個微環境裡老化。
 
-**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/大多數男人沒有意識到——40歲之後的疲勞，和20歲的疲勞不一樣/)**（article-E）
+**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**（article-E）
 
 ---
 

@@ -32,7 +32,7 @@ slug: "hairline-recession-warning"
 
 罪魁禍首通常被指向一個名詞：**DHT（二氫睪固酮，Dihydrotestosterone）**。
 
-睪固酮透過5α-還原酶（5α-reductase）轉化成DHT，DHT與頭皮毛囊中的雄性素受體結合，縮短毛囊的生長週期，讓頭髮一根一根越長越細、越來越短，最後停止生長。
+睪固酮透過5α-還原酶（5α-reductase）轉化成 DHT，DHT 與頭皮毛囊中的雄性素受體結合，縮短毛囊的生長週期，讓頭髮一根一根越長越細、越來越短，最後停止生長。
 
 > **這個解釋是正確的。但它不完整。**
 
@@ -130,11 +130,11 @@ M 型的 M，可以是 Male，可以是 Middle-aged，也可以是 Mitochondria�
 
 ---
 
+![CTA](./CTA.png)
+
 如果你還沒有定期監測自己的發炎狀態，歡迎加入 LINE 索取【身體警報自我檢測清單】：
 
 **→ [加入 LINE 取得清單](https://line.me/ti/p/@fer7932k)**
-
-![CTA](./CTA.png)
 
 ---
 

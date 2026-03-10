@@ -5,6 +5,7 @@ pubDate: 2026-03-07
 heroImage: './同樣成分吸收不同.png'
 tags: ['保健品選購', '生物利用率', '吸收率', '科學選品', '精準健康']
 category: '精準健康工具'
+slug: "supplement-bioavailability-gap"
 ---
 
 兩個人買了同一罐 CoQ10，同樣的品牌、同樣的劑量、同樣每天吃。

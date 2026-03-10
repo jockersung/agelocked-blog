@@ -110,7 +110,7 @@ slug: "supplement-one-thing-to-check"
 
 產品如果宣稱上述任何一項功效，但包裝上沒有小綠人標章，就代表這個宣稱沒有通過台灣政府審查。
 
-**SNQ國家品質標章**——由國家生技醫療產業策進會主辦，評核產品的安全性與有效性，是另一個有第三方審查意義的台灣認證。
+**SNQ 國家品質標章**——由國家生技醫療產業策進會主辦，評核產品的安全性與有效性，是另一個有第三方審查意義的台灣認證。
 
 **NSF / USP**——國際第三方認證，適用於評估進口或外資品牌的生產標準，意義在前幾篇已有詳細說明。
 
@@ -127,7 +127,7 @@ slug: "supplement-one-thing-to-check"
 搜尋主要成分名稱加「effective dose」或「clinical dose」，看研究裡用的劑量和你的產品標示是否在同一個數量級。
 
 **CP值怎麼算？**
-不要看總價，要計算**有效成分的單位成本**——把產品的關鍵有效成分含量和服用天數換算成「每天吃到多少有效成分、花多少錢」，才能真正比較不同產品的性價比。大包裝但每次要吃很多顆，算起來不見得划算。
+不要看總價，要計算 **有效成分的單位成本**——把產品的關鍵有效成分含量和服用天數換算成「每天吃到多少有效成分、花多少錢」，才能真正比較不同產品的性價比。大包裝但每次要吃很多顆，算起來不見得划算。
 
 三個問題都有答案，這罐值得繼續吃。都沒有答案——不代表有害，但代表你不知道它有沒有用。
 
@@ -153,7 +153,7 @@ slug: "supplement-one-thing-to-check"
 - [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
 - [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
 - [提出 SGS 檢驗報告合格就能代表販售商品有效嗎？](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇
-- [「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/本產品通過FDA認證」和你以為的FDA認證根本不一樣/) ← FDA篇
+- [「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/fda-certification-myth/) ← FDA篇
 - [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← Nu Skin標準篇
 - 選購保健品如果只能看一件事，就看這個 ← 本篇（總結）
 

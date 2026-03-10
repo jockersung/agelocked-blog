@@ -138,7 +138,7 @@ DNA 微陣列的工作，就是幫你同時拍下整個面板的「快照」—�
 原因有幾個：
 
 - 老化是多個路徑同時發生的問題。單一成分只能作用在一個路徑上。
-- 不同成分在血漿中的達峰時間不同——有的2小時達峰，有的需要8小時。如果配比不對，這些成分在體內根本不是同時工作的。
+- 不同成分在血漿中的達峰時間不同——有的 2 小時達峰，有的需要8小時。如果配比不對，這些成分在體內根本不是同時工作的。
 - 成分之間存在化學拮抗——錯誤的劑量配比可能讓某些成分的吸收被抑制，甚至產生反效果。
 
 這就是為什麼在 CRM 研究中，發現最有效的往往不是最高劑量的某個成分，而是低劑量、多成分、精確配比的組合。
@@ -178,7 +178,7 @@ CRM 的研究方向，把「抗老化」從「感覺學」推進到了「精準�
 **延伸閱讀：**
 
 - [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇（本篇前傳）
-- [ageLOC Youthspan：不節食，也能啟動修護基因功能](/blog/intervention-optimization/ageLOC%20Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/) ← Youthspan 產品篇（本篇續集）
+- [ageLOC Youthspan：不節食，也能啟動修護基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇（本篇續集）
 
 ---
 

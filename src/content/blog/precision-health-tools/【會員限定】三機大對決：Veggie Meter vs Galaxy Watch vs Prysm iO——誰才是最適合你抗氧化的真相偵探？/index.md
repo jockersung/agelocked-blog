@@ -9,8 +9,6 @@ category: '精準健康工具'
 slug: "antioxidant-scanner-comparison"
 ---
 
-![三機對比](./三機對比.png)
-
 > 👋 歡迎會員！在開始之前，我想先問你一個問題：
 >
 > **如果你現在馬上去做 Prysm iO 掃描，你覺得你的分數會落在哪個區間？**
@@ -333,7 +331,7 @@ Prysm iO 是這條路線的現階段終點。
 
 **下一步：把你自己的數字拿出來。**
 
-→ [Prysm iO 15 秒實測教學：測完之後，你的分數代表什麼？](/blog/precision-health-tools/你的-prysm-io-分數出來了這個數字對你意味著什麼完整教學--六色分數全解析/)
+→ [Prysm iO 15 秒實測教學：測完之後，你的分數代表什麼？](/blog/precision-health-tools/prysm-io-score-guide/)
 
 
 ## 參考資料

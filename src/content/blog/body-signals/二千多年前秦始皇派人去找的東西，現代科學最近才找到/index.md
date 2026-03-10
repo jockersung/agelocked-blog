@@ -5,6 +5,7 @@ pubDate: 2026-03-04
 heroImage: './找了兩千年的東西.png'
 tags: ['抗衰老', '科學']
 category: '身體訊號'
+slug: "emperor-longevity-modern-science"
 ---
 
 秦始皇統一六國之後，做的第一件大事不是休養生息，是派徐福帶著三千童男童女出海，去找長生不老藥。

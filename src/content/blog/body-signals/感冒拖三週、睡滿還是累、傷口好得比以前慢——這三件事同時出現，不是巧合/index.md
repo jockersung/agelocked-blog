@@ -5,6 +5,7 @@ pubDate: 2026-03-02
 heroImage: './三件事.png'
 tags: ['抗氧化', '老化', '慢性發炎']
 category: '身體訊號'
+slug: "three-signs-chronic-inflammation"
 ---
 
 你有沒有發現，身體開始同時出現幾件事：
