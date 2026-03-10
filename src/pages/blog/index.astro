@@ -6,17 +6,50 @@ import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
 import TagCloud from '../../components/TagCloud.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 import { getUrlSlug } from '../../utils/categories';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 <!doctype html>
-<html lang="en">
+<html lang="zh-TW">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title="慢性發炎 × 抗老化知識庫｜AGELOCKED" description="用生醫專員的科學視角解讀身體訊號、慢性發炎機制與精準健康工具。給把健康排最後的你。" />
 		<style>
+			.newcomer-banner {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				flex-wrap: wrap;
+				background: rgba(26,140,130,0.07);
+				border-left: 3px solid #1a8c82;
+				border-radius: 2px;
+				padding: 0.9rem 1.4rem;
+				margin-bottom: 2rem;
+				font-family: 'DM Mono', monospace;
+				font-size: 0.8rem;
+			}
+			.newcomer-label {
+				color: #1a8c82;
+				font-weight: 600;
+				letter-spacing: 0.1em;
+				white-space: nowrap;
+			}
+			.newcomer-text {
+				color: #3a4a58;
+				flex: 1;
+				min-width: 160px;
+				letter-spacing: 0.03em;
+			}
+			.newcomer-cta {
+				color: #1a8c82;
+				text-decoration: none;
+				border-bottom: 1px solid #1a8c82;
+				padding-bottom: 1px;
+				white-space: nowrap;
+				transition: opacity 0.2s;
+			}
+			.newcomer-cta:hover { opacity: 0.7; }
 			main {
 				max-width: 960px;
 				width: 100%;
@@ -100,6 +133,11 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
+			<div class="newcomer-banner">
+				<span class="newcomer-label">第一次來？</span>
+				<span class="newcomer-text">從這篇開始讀，10 分鐘搞懂你的身體在說什麼</span>
+				<a href="/blog/body-signals/three-signs-chronic-inflammation" class="newcomer-cta">帶我去 →</a>
+			</div>
 			<TagCloud />
 			<section>
 				<ul>

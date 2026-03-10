@@ -153,6 +153,38 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
       }
       .auth-image-box img { width: 100%; height: 100%; object-fit: cover; }
       
+      /* --- FEATURED ARTICLES --- */
+      .featured-section { padding: 6rem 6vw; background: #fff; }
+      .featured-grid {
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem; max-width: 1000px; margin: 0 auto;
+      }
+      .featured-card {
+        display: flex; flex-direction: column; gap: 0.75rem;
+        padding: 2rem 1.75rem; border: 1px solid var(--border);
+        border-top: 3px solid var(--teal); border-radius: 2px;
+        text-decoration: none; color: inherit;
+        transition: box-shadow 0.2s, transform 0.2s;
+        background: #fff;
+      }
+      .featured-card:hover { box-shadow: 0 8px 28px rgba(26,140,130,0.10); transform: translateY(-3px); }
+      .featured-card-label {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem;
+        letter-spacing: 0.2em; color: var(--teal); text-transform: uppercase;
+      }
+      .featured-card-title {
+        font-family: 'Noto Serif TC', serif; font-size: 1rem;
+        color: var(--ink); line-height: 1.6; margin: 0; font-weight: 500;
+      }
+      .featured-card-desc {
+        font-size: 0.85rem; color: var(--muted); line-height: 1.75;
+        margin: 0; font-weight: 300; flex: 1;
+      }
+      .featured-card-cta {
+        font-family: 'DM Mono', monospace; font-size: 0.72rem;
+        color: var(--teal); letter-spacing: 0.1em; margin-top: 0.25rem;
+      }
+
       /* --- CTA SECTION --- */
       .cta-section { padding: 6rem 6vw; background: var(--ink); color: #fff; text-align: center; }
       .cta-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; margin-bottom: 1.5rem; }
@@ -270,6 +302,37 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
       </div>
     </section>
 
+    <!-- ===== 推薦閱讀區塊 ===== -->
+    <section class="featured-section">
+      <div class="section-header">
+        <span class="section-label">第一次來？從這裡開始</span>
+        <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem);">這三篇，很多人說讀完才終於搞懂自己的身體</h2>
+      </div>
+      <div class="featured-grid">
+        <a href="/blog/body-signals/normal-checkup-still-tired" class="featured-card">
+          <div class="featured-card-label">身體訊號</div>
+          <h3 class="featured-card-title">體檢報告沒有紅字，但你還是一直累——這不是心理問題</h3>
+          <p class="featured-card-desc">你的數值「正常」不代表你「沒問題」。讀懂這個差距，是一切的起點。</p>
+          <span class="featured-card-cta">閱讀文章 →</span>
+        </a>
+        <a href="/blog/body-signals/three-signs-chronic-inflammation" class="featured-card">
+          <div class="featured-card-label">身體訊號</div>
+          <h3 class="featured-card-title">感冒拖三週、睡滿還是累、傷口好得比以前慢——三件事同時出現，不是巧合</h3>
+          <p class="featured-card-desc">這三個訊號各自「不嚴重」，但同時出現時，身體在說一件很具體的事。</p>
+          <span class="featured-card-cta">閱讀文章 →</span>
+        </a>
+        <a href="/blog/chronic-inflammation/anti-inflammation-anti-aging" class="featured-card">
+          <div class="featured-card-label">慢性發炎科學</div>
+          <h3 class="featured-card-title">抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學</h3>
+          <p class="featured-card-desc">Inflammaging 的概念從哪裡來，為什麼它解釋了你所有那些「小問題」。</p>
+          <span class="featured-card-cta">閱讀文章 →</span>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top: 3rem;">
+        <a href="/blog" style="font-family:'DM Mono',monospace; font-size:0.8rem; letter-spacing:0.15em; color:var(--teal); text-decoration:none; border-bottom: 1px solid var(--teal); padding-bottom: 2px;">查看全部文章 →</a>
+      </div>
+    </section>
+
     <section id="cta" class="cta-section">
       <h2 class="cta-title">停止一個個追症狀，先找出共同的根本原因</h2>
       <p class="cta-sub">
@@ -280,7 +343,7 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
         💬 加LINE索取【身體警報自我檢測清單】
       </a>
       <div style="font-family:'DM Mono',monospace; font-size:0.7rem; color:rgba(255,255,255,0.4); margin-top:1.5rem; letter-spacing: 0.1em;">
-        第一次諮詢免費 · 不推銷產品 · 先搞清楚你的狀況再說
+        加入後 48 小時內回覆你的狀況 · 第一次諮詢免費 · 不推銷產品
       </div>
     </section>
 
