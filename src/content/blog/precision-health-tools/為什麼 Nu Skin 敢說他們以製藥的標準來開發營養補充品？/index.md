@@ -139,7 +139,7 @@ Nu Skin在 2011 年收購了 LifeGen Technologies，取得了其核心資產—�
 ---
 
 **延伸閱讀：**
-- [提出 SGS 檢驗報告合格就能代表販售商品有效嗎？](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇（本篇前傳）
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇（本篇前傳）
 - [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan產品篇
 - [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) ← R2產品篇
 

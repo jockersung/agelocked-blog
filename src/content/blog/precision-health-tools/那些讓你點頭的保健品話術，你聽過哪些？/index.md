@@ -86,7 +86,7 @@ SGS 檢驗的是重金屬含量、農藥殘留、標示成分是否與實際相�
 
 真正的品質問題不在檢驗報告，在 **配方設計的科學依據**。
 
-→ SGS報告的完整分析看這篇：[提出 SGS 檢驗報告合格就能代表販售商品有效嗎？](/blog/precision-health-tools/sgs-report-vs-efficacy/)
+→ SGS報告的完整分析看這篇：[廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/)
 
 **話術四：「成分越多，效果越全面」**
 
@@ -219,6 +219,6 @@ NMN 是近年來研究最活躍、市場最熱門的抗衰老成分之一，在�
 ---
 
 **延伸閱讀：**
-- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 第4篇
-- [提出 SGS 檢驗報告合格就能代表販售商品的品質嗎？](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← 第5篇
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 第4篇
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← 第5篇
 - [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇

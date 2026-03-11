@@ -1,7 +1,7 @@
 ---
-title: '同樣的成分，有人吸收80%，有人吸收5%——差在哪裡'
+title: '平平都花一樣的錢，為什麼他有感但你沒感覺？'
 description: '你花錢買了成分，但成分有沒有進到細胞，取決於劑型、配方、服用時機、和你自己的腸道狀態。這篇說清楚生物利用率是什麼，以及它為什麼比成分本身更重要。'
-pubDate: 2026-03-07
+pubDate: 2026-03-11
 heroImage: './同樣成分吸收不同.png'
 tags: ['保健品選購', '生物利用率', '吸收率', '科學選品', '精準健康']
 category: '精準健康工具'
@@ -155,7 +155,7 @@ CoQ10 是脂溶性成分，在一般粉末膠囊劑型中，吸收率極低—�
 
 **延伸閱讀：**
 - [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
-- [提出 SGS 檢驗報告合格就能代表販售商品有效嗎？](/blog/precision-health-tools/sgs-report-vs-efficacy/ ) ← 第5篇
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/ ) ← 第5篇
 - [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
 
 ---

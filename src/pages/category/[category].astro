@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
@@ -44,6 +45,9 @@ const posts = allPosts
           {posts.map(post => (
             <li class="post-item">
               <a href={`/blog/${getUrlSlug(post)}/`}>
+                {post.data.heroImage && (
+                  <Image class="post-hero" width={720} height={360} src={post.data.heroImage} alt="" />
+                )}
                 <span class="post-date">
                   <FormattedDate date={post.data.pubDate} />
                 </span>
@@ -124,6 +128,13 @@ const posts = allPosts
 
   .post-item:first-child {
     border-top: 1px solid var(--border);
+  }
+
+  .post-hero {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
   }
 
   .post-item a {

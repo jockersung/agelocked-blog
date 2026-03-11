@@ -1,7 +1,7 @@
 ---
-title: '選購保健品如果只能看一件事，就看這個'
+title: '我篩選保健品只看一件事——其他都是行銷'
 description: '不是成分清單、不是品牌知名度、不是價格。選保健品最關鍵的一件事，是這個產品有沒有針對你的目標，提供人體層級的臨床證據。這篇把選品邏輯整理成一個可以直接用的框架。'
-pubDate: 2026-03-07
+pubDate: 2026-03-11
 heroImage: './選購保健品指南.png'
 tags: ['保健品選購', '選品指南', '科學選品', '台灣認證', '精準健康']
 category: '精準健康工具'
@@ -151,10 +151,10 @@ slug: "supplement-one-thing-to-check"
 
 **這個系列的完整閱讀順序：**
 - [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
-- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
-- [提出 SGS 檢驗報告合格就能代表販售商品有效嗎？](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇
 - [「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/fda-certification-myth/) ← FDA篇
 - [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← Nu Skin標準篇
-- 選購保健品如果只能看一件事，就看這個 ← 本篇（總結）
+- 我篩選保健品只看一件事——其他都是行銷 ← 本篇（總結）
 
 想了解如何挑選國外品牌保健品？→ [怎麼挑選國外保健食品：NSF查詢、Amazon真偽辨別與台灣法規](/blog/precision-health-tools/supplement-import-guide/)

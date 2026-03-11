@@ -135,7 +135,7 @@ TA Sciences 在 2011 年的 9 人試驗中，端粒長度沒有顯著增加；20
 ---
 
 **延伸閱讀：**
-- [同樣的成分，有人吸收80%，有人吸收5%——差在哪裡](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
 - [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
 - [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← Nu Skin標準篇
 - [Prysm iO 掃完之後，第一步先做這件事](/blog/intervention-optimization/lifepak-foundation-nutrition/) ← LifePak產品篇
