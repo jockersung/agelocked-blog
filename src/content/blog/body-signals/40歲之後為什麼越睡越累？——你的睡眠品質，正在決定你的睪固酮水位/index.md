@@ -48,7 +48,7 @@ slug: "sleep-quality-testosterone"
 
 一週，換來了十幾年的老化代價。
 
-2022年發表於《Reviews in Endocrine and Metabolic Disorders》的綜合分析整合了多項流行病學與介入研究，結論明確：睡眠不足和較短的睡眠時間，與早晨、下午、全天24小時的睪固酮水平降低都有顯著關聯——同時伴隨下午皮質醇的升高。
+2022 年發表於《Reviews in Endocrine and Metabolic Disorders》的綜合分析整合了多項流行病學與介入研究，結論明確：睡眠不足和較短的睡眠時間，與早晨、下午、全天24小時的睪固酮水平降低都有顯著關聯——同時伴隨下午皮質醇的升高。
 
 這兩件事同時發生，問題就倍增了。
 
@@ -86,50 +86,25 @@ slug: "sleep-quality-testosterone"
 
 這不是你「睡眠品質比較差」，這是中年男性睡眠生理的正常變化——但它的下游效應，是睪固酮水位的結構性下滑。
 
-一個研究65歲以上健康男性的世代研究發現，睪固酮水平較低的男性，同時有更低的睡眠效率、更多的夜間醒來、更少的慢波睡眠時間，以及更高的睡眠呼吸中止指數——這個關聯在調整了年齡和體重指數之後仍然存在。
+一個研究 65 歲以上健康男性的世代研究發現，睪固酮水平較低的男性，同時有更低的睡眠效率、更多的夜間醒來、更少的慢波睡眠時間，以及更高的睡眠呼吸中止指數——這個關聯在調整了年齡和體重指數之後仍然存在。
 
 ---
-
-## 鎂缺乏：最被忽略的睡眠破壞者
-
-台灣成人的飲食結構中，鎂的攝取量普遍不足——加工食品比例高、精緻澱粉為主的飲食都會降低鎂的攝取與吸收。
-
-鎂對睡眠的影響是雙向的：一方面，它是神經系統的天然煞車，幫助大腦從清醒狀態切換到放鬆狀態，讓入睡變得更自然；另一方面，它直接參與睡眠週期的調節，有助於維持深眠的時間比例。
-
-但鎂和睪固酮的關係，比「它幫助睡眠」更直接。
-
-發表於《Biological Trace Element Research》的臨床研究發現，鎂補充可以顯著提升久坐者和運動者的游離睪固酮與總睪固酮水平，運動者的提升幅度更為顯著。發表於《Journal of Pharmaceutical and Biomedical Analysis》的研究進一步說明機制：鎂透過調節SHBG（性荷爾蒙結合球蛋白）的結合親和力，增加了睪固酮的生物可用性——不只是提高總量，而是讓你身體真正能用的睪固酮比例增加。
-
-簡單說：**鎂不足，你的睪固酮即使製造出來，也可能被 SHBG 鎖住，身體用不到。**
-
----
-
-## 藏紅花：同時修復睡眠節律和睪固酮
-
-藏紅花（Saffron，Crocus sativus）的睡眠研究在過去幾年累積了相當清楚的數據。
-
-一項系統回顧整合了五項隨機對照試驗（379位受試者），結論是藏紅花對睡眠品質、入睡時間、睡眠持續時間的改善有顯著效果——核心機制是透過促進色胺酸往褪黑激素合成路徑轉化，而不是直接補充褪黑激素，這代表它幫助身體恢復正常節律，而不是強制入睡。
-
-更值得關注的是另一條機制：
-
-2023 年發表於《Antioxidants》（MDPI）的動物研究，以及多項人類研究的系統回顧顯示，藏紅花萃取物（affron®）補充後可提升循環中的褪黑激素濃度，同時也顯著提升了睪固酮水平。
-
-2025 年發表於PubMed的研究更直接說明機制：藏紅花萃取物透過 **PI3K-Akt-Nrf2信號路徑**保護萊氏細胞（Leydig cells）——也就是睾固酮的製造工廠——對抗氧化壓力和老化誘導的細胞損傷，緩解中老年男性的睪固酮下降。
 
 ---
 
 ## 這一切的共同節點
 
-把這幾條線拉在一起：
+把這兩條線拉在一起：
 
 深眠縮短 → 睪固酮夜間製造窗口消失  
 睡眠不足 → 皮質醇偏高 → 進一步抑制睪固酮合成  
-鎂不足 → SHBG競爭性增加 → 游離睪固酮生物可用率下降  
-色胺酸被分流到皮質醇路徑 → 褪黑激素不足 → 睡眠節律紊亂 → 惡性循環
 
-這不是四個獨立的問題，是一個互相強化的迴圈。
+這不是兩個獨立的問題，而是一個互相強化的迴圈。
 
 而這個迴圈的切入點，比你想像的更具體——**從睡眠品質開始，最能同時影響多個節點。**
+
+如果你想知道怎麼具體切斷這個惡性迴圈，矽谷富豪布萊恩・強生的做法很值得參考：他發現只要控制『睡前心率』，就能大幅改善深眠。
+**→ [延伸閱讀：為什麼你睡滿8小時還是累？矽谷富豪的抗老實驗證實：問題出在你的「睡前心率」](/blog/ibody-signals/aging-quantified-bryan-johnson-blueprint/)
 
 ---
 
@@ -157,14 +132,10 @@ slug: "sleep-quality-testosterone"
 
 ## 參考資料
 
+
 01. Leproult R, Van Cauter E, 2011. [Effect of 1 week of sleep restriction on testosterone levels in young healthy men.](https://pubmed.ncbi.nlm.nih.gov/21632481/) *JAMA.* 305(21):2173–2174.
 02. Liu PY, Reddy RT, 2022. [Sleep, testosterone and cortisol balance, and ageing men.](https://pmc.ncbi.nlm.nih.gov/articles/PMC9510302/) *Reviews in Endocrine and Metabolic Disorders.* 23:1251–1266.
 03. Wittert G, 2014. [The relationship between sleep disorders and testosterone in men.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3955336/) *Asian Journal of Andrology.* 16(2):262–265.
 04. Barrett-Connor E et al., 2008. [The association of testosterone levels with overall sleep quality, sleep architecture, and sleep-disordered breathing.](https://pmc.ncbi.nlm.nih.gov/articles/PMC2453053/) *Journal of Clinical Endocrinology & Metabolism.* 93(7):2602–2609.
 05. Penev PD, 2007. [Association between sleep and morning testosterone levels in older men.](https://pubmed.ncbi.nlm.nih.gov/17520786/) *Sleep.* 30(4):427–432.
-06. Cinar V et al., 2011. [Effects of magnesium supplementation on testosterone levels of athletes and sedentary subjects at rest and after exhaustion.](https://pubmed.ncbi.nlm.nih.gov/20352370/) *Biological Trace Element Research.* 140(1):18–23.
-07. Maggio M et al., 2014. [The interplay between magnesium and testosterone in modulating physical function in men.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3958794/) *International Journal of Endocrinology.* 2014:525249.
-08. Esposito MR et al., 2023. [Effects of supplementation with the standardized extract of saffron (affron®) on the kynurenine pathway and melatonin synthesis in rats.](https://www.mdpi.com/2076-3921/12/8/1619) *Antioxidants.* 12(8):1619.
-09. Lv M et al., 2025. [Saffron extract alleviates D-gal-induced late-onset hypogonadism by activating the PI3K-Akt-Nrf2 signaling pathway.](https://pubmed.ncbi.nlm.nih.gov/39710157/) *Journal of Ethnopharmacology.*
-10. Nu Skin Enterprises, 2024. [Nu Skin Introduces MYND360™, a New Line of Clinically Proven Supplements and Topicals for Mental Well-Being.](https://www.businesswire.com/news/home/20241015775027/en/) *Business Wire.*
-11. Su L et al., 2021. [Effect of partial and total sleep deprivation on serum testosterone in healthy males: a systematic review and meta-analysis.](https://pubmed.ncbi.nlm.nih.gov/34801825/) *Andrologia.* 53(10):e14235.
+06. Su L et al., 2021. [Effect of partial and total sleep deprivation on serum testosterone in healthy males: a systematic review and meta-analysis.](https://pubmed.ncbi.nlm.nih.gov/34801825/) *Andrologia.* 53(10):e14235.
