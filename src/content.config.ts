@@ -13,7 +13,7 @@ const blog = defineCollection({
 
 			// ── 分類 ──
 			category: z.enum([
-				'身體訊號',
+				'身體訊號解讀',
 				'慢性發炎科學',
 				'精準健康工具',
 				'介入與調校',
