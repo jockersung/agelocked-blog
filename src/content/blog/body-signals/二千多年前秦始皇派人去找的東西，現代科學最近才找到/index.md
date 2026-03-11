@@ -4,7 +4,7 @@ description: '從秦始皇的徐福東渡，到唐朝皇帝一個個死於仙丹
 pubDate: 2026-03-04
 heroImage: './找了兩千年的東西.png'
 tags: ['抗衰老', '科學']
-category: '身體訊號'
+category: '身體訊號解讀'
 slug: "emperor-longevity-modern-science"
 ---
 

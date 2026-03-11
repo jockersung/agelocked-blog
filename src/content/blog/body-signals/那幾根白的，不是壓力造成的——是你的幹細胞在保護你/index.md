@@ -4,7 +4,7 @@ description: '白頭髮一直被當成壓力或老化的象徵。但最新科學
 pubDate: 2026-03-09
 heroImage: './白髮保護.png'
 tags: ['男性健康', '白頭髮', '白髮', '黑色素幹細胞', '細胞衰老', 'DNA損傷', '氧化壓力', 'Inflammaging']
-category: '身體訊號'
+category: '身體訊號解讀'
 slug: "white-hair-stem-cells"
 ---
 

@@ -4,7 +4,7 @@ description: '研究發現，牙周病菌能穿透血腦屏障，直接在阿茲
 pubDate: 2026-03-09
 heroImage: './牙齦出血會失智.png'
 tags: ['慢性發炎', '牙周病', '失智症', 'Inflammaging', '口腔健康']
-category: '身體訊號'
+category: '身體訊號解讀'
 slug: "gum-bleeding-brain-inflammation"
 ---
 

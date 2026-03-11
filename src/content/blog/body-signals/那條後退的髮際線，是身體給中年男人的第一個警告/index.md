@@ -4,7 +4,7 @@ description: '以為只是遺傳問題？科學告訴你：M型禿背後，是DH
 pubDate: 2026-03-09
 heroImage: './中年男子禿頭.png'
 tags: ['男性健康', '掉髮', '雄性禿', 'M型禿', '頭皮發炎', 'Inflammaging', '細胞衰老']
-category: '身體訊號'
+category: '身體訊號解讀'
 slug: "hairline-recession-warning"
 ---
 

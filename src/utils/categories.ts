@@ -1,5 +1,5 @@
 export const CATEGORY_MAP: Record<string, string> = {
-  'body-signals':             '身體訊號',
+  'body-signals':             '身體訊號解讀',
   'chronic-inflammation':     '慢性發炎科學',
   'precision-health-tools':   '精準健康工具',
   'intervention-optimization':'介入與調校',

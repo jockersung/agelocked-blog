@@ -4,7 +4,7 @@ description: '體力下降、睡醒還累、記憶力開始出空白——你以
 pubDate: 2026-03-01
 heroImage: './中年男性疲憊.png'
 tags: ['男性健康', 'Inflammaging', '慢性發炎', '疲勞', '身體訊號']
-category: '身體訊號'
+category: '身體訊號解讀'
 slug: "male-fatigue-after-40"
 ---
 

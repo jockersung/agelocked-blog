@@ -4,7 +4,7 @@ description: '無慘花了一千年找年輕的血——方向沒有完全錯，
 pubDate: 2026-03-09
 heroImage: './換血能抗老.png'
 tags: ['抗衰老', '慢性發炎', 'SASP', '異體共生', '科學']
-category: '身體訊號'
+category: '身體訊號解讀'
 slug: "demon-slayer-aging-blood"
 ---
 

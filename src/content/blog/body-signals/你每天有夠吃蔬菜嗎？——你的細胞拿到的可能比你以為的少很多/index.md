@@ -4,7 +4,7 @@ description: '台灣人的蔬果攝取量嚴重不足，這件事大家都知道
 pubDate: 2026-03-09
 heroImage: './蔬果攝取不足.png'
 tags: ['植化素', '抗氧化', '蔬果攝取', '類胡蘿蔔素', '細胞防禦']
-category: '身體訊號'
+category: '身體訊號解讀'
 slug: "carotenoid-cell-absorption"
 ---
 
