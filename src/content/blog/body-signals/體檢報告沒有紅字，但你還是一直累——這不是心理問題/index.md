@@ -1,7 +1,7 @@
 ---
 title: '體檢報告沒有紅字，但你還是一直累——這不是心理問題'
 description: '體檢報告沒有紅字，如果知道自己的狀態不對—要去思考是不是慢性發炎'
-pubDate: 2026-03-02
+pubDate: 2026-03-11
 heroImage: './體檢報告.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
 category: '身體訊號解讀'
