@@ -5,7 +5,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const title = '掃描前資料表 · AGELOCKED';
-const description = '資料越完整，當場解讀越精準。有的填、沒有的跳過就好——我會根據你提供的數據組合，找出最關鍵的代謝缺口。';
+const description = '資料越完整，當場解析越精準。有的填、沒有的跳過就好——我會根據你提供的數據組合，梳理出最適合你的科學保養與營養優化方向。';
 ---
 
 <!doctype html>
@@ -320,8 +320,8 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
           <div class="header-brand">AGELOCKED · 孫義坤</div>
           <h1 class="page-title">掃描前<em>資料表</em></h1>
           <p class="page-desc">
-            資料越完整，當場解讀越精準。有的填、沒有的跳過就好——
-            我會根據你提供的數據組合，找出最關鍵的代謝缺口。
+            資料越完整，當場解析越精準。有的填、沒有的跳過就好——
+            我會根據你提供的數據組合，梳理出最適合你的科學保養與營養優化方向。
           </p>
           <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
         </div>
@@ -362,7 +362,7 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
               </div>
               <div class="field">
                 <div class="field-label">LINE ID <span class="field-optional">選填</span></div>
-                <input type="text" id="line_id" placeholder="方便掃描後追蹤" />
+                <input type="text" id="line_id" placeholder="方便後續追蹤" />
               </div>
             </div>
           </div>
@@ -373,7 +373,7 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
             <div class="section-num">02</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Blood Lipids</div>
-              <div class="section-h">血脂數據（健檢報告）</div>
+              <div class="section-h">血脂數據（常規檢查）</div>
             </div>
           </div>
           <div class="section-body">
@@ -419,7 +419,7 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
 
             <div class="calc-box">
               <div class="calc-label">◆ 即時計算器</div>
-              <div class="calc-title">TG / HDL 比值——胰島素阻抗的隱藏指標</div>
+              <div class="calc-title">TG / HDL 比值——代謝彈性與能量轉換的趨勢參考</div>
               <div class="calc-inputs">
                 <div class="calc-field">
                   <label>三酸甘油酯 TG（mg/dL）</label>
@@ -475,7 +475,7 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
             </div>
             <div class="field" style="margin-top:0.3rem;">
               <div class="field-label" style="font-size:0.78rem; color:var(--muted); font-weight:300;">
-                台灣代謝症候群警戒值：男性腰圍 ≥ 90 cm ／ 女性腰圍 ≥ 80 cm
+                國健署代謝健康參考標準：男性腰圍 ≥ 90 cm ／ 女性腰圍 ≥ 80 cm
               </div>
             </div>
           </div>
@@ -492,7 +492,7 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
           <div class="section-body">
             <div class="watch-hint">
               <strong>為什麼需要這個？</strong>
-              靜止心率（RHR）與心率變異度（HRV）是 24 小時動態指標，能看出健檢報告看不到的「自律神經疲勞」與慢性發炎負擔。吃完補充品後，這兩個數字的變化是最直接的驗證方式。
+              靜止心率（RHR）與心率變異度（HRV）是 24 小時動態指標，能反映出日常的壓力與體能恢復狀態。這將是我們後續追蹤營養補充效率的重要參考。
             </div>
 
             <div class="field">
@@ -546,25 +546,25 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
             <div class="section-num">05</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Body Signals</div>
-              <div class="section-h">身體訊號（勾選有感覺的）</div>
+              <div class="section-h">體力與日常感受（勾選有感覺的）</div>
             </div>
           </div>
           <div class="section-body">
             <div class="check-grid">
-              <label class="check-item"><input type="checkbox" name="signal" value="fatigue_pm" /> 下午容易疲勞、昏沉</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="sleep_enough_tired" /> 睡滿 7-8 小時仍感疲勞</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="belly_increase" /> 腹部脂肪近 1-2 年明顯增加</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="brain_fog" /> 下午腦霧、注意力散漫</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="wound_slow" /> 傷口癒合變慢</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="sleep_poor" /> 睡眠品質差 / 容易半夜醒來</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="muscle_loss" /> 肌肉量感覺在下降</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="hair_gray" /> 白髮 / 掉髮明顯增加</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="stress_high" /> 工作壓力高、難以放鬆</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="cold_long" /> 感冒拖很久、免疫力差</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="fatigue_pm" /> 下午容易疲勞、體力下滑</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_enough_tired" /> 睡滿 7-8 小時起床仍感疲倦</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="belly_increase" /> 腹部脂肪近 1-2 年感覺有增加</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="brain_fog" /> 專注力不如以往、容易渙散</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="wound_slow" /> 體能或運動後的恢復變慢</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_poor" /> 睡眠品質不佳 / 容易中斷</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="muscle_loss" /> 肌肉量感覺較難維持</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="hair_gray" /> 白髮 / 掉髮問題</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="stress_high" /> 工作壓力高、日常難以放鬆</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="cold_long" /> 保護力感覺變差、容易小感冒</label>
             </div>
             <div class="field" style="margin-top:1.2rem;">
-              <div class="field-label">最困擾你的狀況（用自己的話描述）<span class="field-optional">選填</span></div>
-              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，下午 3 點開始腦袋轉不動..."></textarea>
+              <div class="field-label">目前在保養上最想優化的重點 <span class="field-optional">選填</span></div>
+              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，想提升下午的專注力與體力..."></textarea>
             </div>
           </div>
         </div>
@@ -579,7 +579,7 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
           </div>
           <div class="section-body">
             <p style="font-size:0.82rem; color:var(--muted); font-weight:300; line-height:1.8; margin-bottom:1.2rem;">
-              包含維他命、魚油、益生菌、Nu Skin 產品等任何補充品。這幫助我判斷你目前的補充缺口和重疊狀況。
+              包含維他命、魚油、益生菌、Nu Skin 產品等任何補充品。這能幫助我了解目前的營養配置狀況。
             </p>
             <div id="supplList">
               <div class="suppl-row">
@@ -591,8 +591,8 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
             <button class="suppl-add" onclick="addSuppl()">＋ 新增一項</button>
 
             <div class="field" style="margin-top:1.4rem;">
-              <div class="field-label">吃了多久仍無感 <span class="field-optional">選填</span></div>
-              <textarea id="suppl_note" placeholder="例如：吃了半年 A 品牌 CoQ10，能量感覺沒變化..."></textarea>
+              <div class="field-label">補充後的感受或備註 <span class="field-optional">選填</span></div>
+              <textarea id="suppl_note" placeholder="例如：吃了半年某品牌的 B 群，感覺體力沒有明顯差別..."></textarea>
             </div>
           </div>
         </div>
@@ -605,8 +605,12 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
               直接貼到 LINE 傳送給我即可
             </p>
             <button class="btn-submit" onclick="copyToLine()">📋 複製資料並傳送</button>
-            <div class="submit-note">資料僅用於諮詢分析 · 不會轉傳或儲存至第三方</div>
+            <div class="submit-note">資料僅用於諮詢評估 · 不會轉傳或儲存至第三方</div>
           </div>
+        </div>
+        
+        <div style="font-size: 0.75rem; color: var(--muted); margin-top: 2rem; padding: 0 1rem; text-align: center; font-weight: 300; line-height: 1.6;">
+          免責聲明：本表單與後續諮詢所提供之資訊、數據解析及營養建議，皆為日常健康促進與營養補充之參考，不具備醫療診斷、治療、減輕或預防任何疾病之功效。若有身體不適或明確醫療需求，請務必尋求專業醫師協助。
         </div>
 
       </div>
@@ -657,18 +661,19 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
         ratio.textContent = val;
         res.className = 'calc-result show';
 
+        // 將回饋文字調整為合規的「能量與營養」用語
         if (val < 2) {
           res.classList.add('green');
           badge.textContent = '代謝彈性良好';
-          text.textContent = `TG/HDL = ${val}。你的胰島素敏感性在正常範圍，代謝靈活度良好。繼續維持現有習慣，定期追蹤確認趨勢穩定。`;
+          text.textContent = `TG/HDL = ${val}。你的代謝靈活度與能量轉換效率在良好範圍。建議繼續維持現有習慣，定期追蹤趨勢即可。`;
         } else if (val < 3.5) {
           res.classList.add('orange');
-          badge.textContent = '次臨床胰島素阻抗';
-          text.textContent = `TG/HDL = ${val}。數值超過 2，代表細胞層級的胰島素敏感性已開始下降。健檢可能沒有紅字，但這是最早期的代謝失衡訊號——也是下午容易疲勞、腦霧的常見原因之一。`;
+          badge.textContent = '代謝彈性需注意';
+          text.textContent = `TG/HDL = ${val}。數值超過 2，代表身體維持能量轉換的效率可能正在降低。雖可能無紅字，但這往往是下午容易疲勞、體力下滑的隱藏因素之一，建議可開始調整日常營養配置。`;
         } else {
           res.classList.add('red');
-          badge.textContent = '胰島素阻抗風險偏高';
-          text.textContent = `TG/HDL = ${val}。數值超過 3.5，顯示胰島素阻抗問題已較為明顯，內臟脂肪的三個荷爾蒙迴路可能已在運作。建議優先處理代謝迴路，掃描當場會詳細解析。`;
+          badge.textContent = '代謝負擔較高';
+          text.textContent = `TG/HDL = ${val}。數值超過 3.5，顯示身體目前的代謝負擔較為吃力，能量消耗與恢復可能受到影響。建議在後續諮詢時，優先討論這部分的日常作息與營養介入策略。`;
         }
       }
 
@@ -725,7 +730,7 @@ const description = '資料越完整，當場解讀越精準。有的填、沒�
           ratio = `\nTG/HDL 比值：${(parseFloat(tg)/parseFloat(hdl)).toFixed(2)}`;
         }
 
-        const text = `【AGELOCKED 掃描前資料】\n\n▌基本資料\n姓名：${name}\n年齡：${age} 歲　性別：${genderText}\n\n▌血脂數據\n三酸甘油酯 TG：${tg || '（未填）'} mg/dL\n高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL\n空腹血糖：${glucose || '（未填）'} mg/dL\nHbA1c：${hba1c || '（未填）'}%\nhs-CRP：${hsCrp || '（未填）'} mg/L${ratio}\n\n▌體態數據\n腰圍：${waist || '（未填）'} cm\n\n▌穿戴裝置（${watchText}）\n靜止心率 RHR：${rhr || '（未填）'} bpm\nHRV：${hrv || '（未填）'} ms\n\n▌身體訊號\n${signals}\n\n▌目前保健品\n${suppls}\n\n▌主要困擾\n${concern || '（未填）'}\n\n▌補充品備注\n${supplNote || '（未填）'}`;
+        const text = `【AGELOCKED 掃描前資料】\n\n▌基本資料\n姓名：${name}\n年齡：${age} 歲　性別：${genderText}\n\n▌血脂數據\n三酸甘油酯 TG：${tg || '（未填）'} mg/dL\n高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL\n空腹血糖：${glucose || '（未填）'} mg/dL\nHbA1c：${hba1c || '（未填）'}%\nhs-CRP：${hsCrp || '（未填）'} mg/L${ratio}\n\n▌體態數據\n腰圍：${waist || '（未填）'} cm\n\n▌穿戴裝置（${watchText}）\n靜止心率 RHR：${rhr || '（未填）'} bpm\nHRV：${hrv || '（未填）'} ms\n\n▌身體訊號\n${signals}\n\n▌目前保健品\n${suppls}\n\n▌主要優化方向\n${concern || '（未填）'}\n\n▌補充品備註\n${supplNote || '（未填）'}`;
 
         navigator.clipboard.writeText(text).then(() => {
           const btn = document.querySelector('.btn-submit');
