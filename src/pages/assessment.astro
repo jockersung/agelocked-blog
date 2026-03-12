@@ -1,0 +1,386 @@
+---
+// src/pages/assessment.astro
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = '細胞效能與慢性發炎檢測清單 · AGELOCKED';
+const description = '為什麼你的健檢報告沒有紅字，卻依然感覺體力在流失？花 1 分鐘，找出你的細胞防護網目前處於什麼水位。';
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style>
+      :root {
+        --teal:    #1a8c82;
+        --teal-d:  #116b63;
+        --teal-p:  rgba(26,140,130,0.08);
+        --gold:    #b8935a;
+        --gold-p:  rgba(184,147,90,0.10);
+        --ink:     #111820;
+        --body:    #3a4a58;
+        --muted:   #7a8fa0;
+        --border:  rgba(30,70,100,0.10);
+        --bg:      #f8f9fb;
+        --bg2:     #ffffff;
+        --surface: #f0f3f7;
+        --red:     #c0392b;
+        --red-p:   rgba(192,57,43,0.07);
+        --green:   #1a7a50;
+        --green-p: rgba(26,122,80,0.07);
+        --orange:  #b85c1a;
+        --orange-p:rgba(184,92,26,0.07);
+      }
+
+      /* ── HEADER 區塊樣式 ── */
+      .page-header {
+        background: var(--ink);
+        padding: 4rem 6vw 3.5rem;
+        position: relative; overflow: hidden;
+        text-align: center;
+      }
+      .page-header::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(184,147,90,0.15) 0%, transparent 70%);
+      }
+      .header-inner { max-width: 680px; margin: 0 auto; position: relative; }
+      .header-brand {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.4em; 
+        color: var(--gold); text-transform: uppercase; margin-bottom: 1.4rem;
+        display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+      }
+      .header-brand::before, .header-brand::after { content: '◆'; font-size: 0.38rem; }
+      .page-title {
+        font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 300; color: #fff; line-height: 1.3; margin-bottom: 1.2rem;
+      }
+      .page-title em { font-style: italic; color: #6de8df; }
+      .page-desc {
+        font-size: 0.95rem; color: rgba(255,255,255,0.6);
+        font-weight: 300; line-height: 2; max-width: 580px; margin: 0 auto;
+      }
+
+      /* ── FORM BODY ── */
+      .form-body { max-width: 740px; margin: -2rem auto 4rem; padding: 0 6vw; position: relative; z-index: 2; }
+      
+      .quiz-section {
+        background: var(--bg2); border: 1px solid var(--border);
+        border-radius: 2px; margin-bottom: 2rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+      }
+      
+      .quiz-category { padding: 2rem 2.5rem; border-bottom: 1px solid var(--border); }
+      .quiz-category:last-child { border-bottom: none; }
+      
+      .cat-head { margin-bottom: 1.5rem; }
+      .cat-label {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.25em; 
+        color: var(--teal); background: var(--teal-p); padding: 0.3rem 0.6rem; 
+        border-radius: 1px; display: inline-block; margin-bottom: 0.8rem;
+      }
+      .cat-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--ink); }
+
+      /* Checkbox Items */
+      .check-list { display: flex; flex-direction: column; gap: 0.8rem; }
+      .check-item {
+        display: flex; align-items: flex-start; gap: 1rem;
+        padding: 1.2rem 1.4rem; border: 1px solid var(--border);
+        border-radius: 2px; cursor: pointer; transition: all 0.2s;
+        background: var(--bg); position: relative; overflow: hidden;
+      }
+      .check-item:hover { border-color: var(--teal); background: var(--teal-p); }
+      .check-item.active { border-color: var(--teal); background: var(--bg2); box-shadow: 0 4px 12px rgba(26,140,130,0.08); }
+      .check-item.active::before {
+        content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--teal);
+      }
+      
+      .check-item input { flex-shrink: 0; accent-color: var(--teal); margin-top: 0.3rem; transform: scale(1.2); cursor: pointer; }
+      .check-content { display: flex; flex-direction: column; gap: 0.3rem; }
+      .check-title { font-size: 0.95rem; font-weight: 500; color: var(--ink); }
+      .check-desc { font-size: 0.85rem; color: var(--muted); font-weight: 300; line-height: 1.6; }
+
+      /* ── RESULT BOX ── */
+      .result-box {
+        background: var(--surface); border: 1px solid var(--border);
+        border-radius: 2px; padding: 2.5rem; margin-bottom: 2rem;
+        text-align: center; transition: all 0.3s;
+      }
+      .result-box.hidden { opacity: 0; transform: translateY(20px); pointer-events: none; display: none; }
+      .result-box.show { opacity: 1; transform: translateY(0); display: block; animation: fadeUp 0.5s ease; }
+      
+      .score-display {
+        font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; 
+        font-weight: 300; color: var(--ink); margin-bottom: 0.5rem; line-height: 1;
+      }
+      .score-display span { font-size: 1.5rem; color: var(--muted); }
+      
+      .result-badge {
+        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.15em;
+        padding: 0.4rem 1rem; border-radius: 2px; display: inline-block; margin-bottom: 1.2rem;
+      }
+      .result-box.green .result-badge { background: rgba(26,122,80,0.15); color: var(--green); }
+      .result-box.orange .result-badge { background: rgba(184,92,26,0.15); color: var(--orange); }
+      .result-box.red .result-badge { background: rgba(192,57,43,0.12); color: var(--red); }
+      
+      .result-text { font-size: 0.9rem; color: var(--body); font-weight: 300; line-height: 1.9; max-width: 540px; margin: 0 auto; }
+      .result-text strong { color: var(--ink); font-weight: 500; }
+
+      /* ── SUBMIT SECTION ── */
+      .submit-section {
+        background: var(--ink); border-radius: 2px; padding: 2.5rem 2rem; text-align: center;
+        position: relative; overflow: hidden;
+      }
+      .submit-section::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(26,140,130,0.15) 0%, transparent 70%);
+      }
+      .submit-inner { position: relative; z-index: 1; }
+      .submit-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300; color: #fff; margin-bottom: 0.8rem; }
+      .submit-sub { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 300; line-height: 1.8; margin-bottom: 1.8rem; }
+      
+      .btn-submit {
+        display: inline-block; background: var(--teal); color: #fff;
+        padding: 1.1rem 3rem; border-radius: 2px; border: none; cursor: pointer;
+        font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.2em; 
+        text-transform: uppercase; transition: all 0.3s;
+      }
+      .btn-submit:hover { background: var(--teal-d); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(26,140,130,0.35); }
+      
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(15px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (max-width: 600px) {
+        .page-header { padding: 3rem 5vw 2.5rem; }
+        .quiz-category { padding: 1.5rem; }
+        .check-item { padding: 1rem; }
+        .result-box { padding: 1.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <header class="page-header">
+        <div class="header-inner">
+          <div class="header-brand">AGELOCKED · 專屬評估</div>
+          <h1 class="page-title">細胞效能與慢性發炎<br><em>自我檢測清單</em></h1>
+          <p class="page-desc">
+            標準健檢找的是「已經發生的疾病」，但身體在生病之前，會先經歷一段漫長的「能量耗損與發炎」期。花 1 分鐘，勾選你過去 3 個月內頻繁出現的狀況，看看你的防護網目前處於什麼水位。
+          </p>
+        </div>
+      </header>
+
+      <div class="form-body">
+        
+        <div class="quiz-section">
+          
+          <div class="quiz-category">
+            <div class="cat-head">
+              <div class="cat-label">PART 01</div>
+              <h2 class="cat-title">能量與神經系統</h2>
+            </div>
+            <div class="check-list">
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="睡眠品質的錯覺" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">睡眠品質的錯覺</div>
+                  <div class="check-desc">週末就算睡滿 8 小時甚至補眠，禮拜一早上起床依然覺得身體很沉重。</div>
+                </div>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="續航力斷崖" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">續航力斷崖</div>
+                  <div class="check-desc">下午 2-4 點之間會出現明顯的「腦霧」，專注力渙散，必須依賴咖啡才能撐過會議。</div>
+                </div>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="煞車失靈" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">煞車失靈</div>
+                  <div class="check-desc">晚上躺在床上，腦袋依然轉個不停，感覺自律神經處於緊繃狀態，很難進入深眠。</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-category">
+            <div class="cat-head">
+              <div class="cat-label">PART 02</div>
+              <h2 class="cat-title">代謝與荷爾蒙迴路</h2>
+            </div>
+            <div class="check-list">
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="頑固的內臟脂肪" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">頑固的內臟脂肪</div>
+                  <div class="check-desc">飲食與運動量明明跟以前差不多，但近一兩年腹部（腰圍）的脂肪卻越來越難減。</div>
+                </div>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="肌肉與衝勁流失" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">肌肉與衝勁流失</div>
+                  <div class="check-desc">感覺肌肉的力量在下降，體態開始變得鬆垮，且常伴隨日常活力與衝勁的下滑。</div>
+                </div>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="壓力性進食" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">壓力性進食</div>
+                  <div class="check-desc">工作壓力大的時候，會無法控制地極度渴望高糖、高碳水或重口味的食物。</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-category">
+            <div class="cat-head">
+              <div class="cat-label">PART 03</div>
+              <h2 class="cat-title">修復與免疫防護網</h2>
+            </div>
+            <div class="check-list">
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="恢復期拉長" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">恢復期拉長</div>
+                  <div class="check-desc">不管是運動後的痠痛，還是偶爾熬夜的疲勞，現在需要的「恢復天數」比以前長很多。</div>
+                </div>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="免疫力邊緣" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">免疫力邊緣</div>
+                  <div class="check-desc">只要壓力一來，就容易有快感冒的感覺，或者一個小感冒拖了兩三週都好不徹底。</div>
+                </div>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="表面氧化痕跡" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">表面氧化痕跡</div>
+                  <div class="check-desc">白髮增生的速度明顯變快，或是洗頭時感覺掉髮量比過去增加。</div>
+                </div>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="alarm" value="組織修復緩慢" onchange="toggleActive(this)">
+                <div class="check-content">
+                  <div class="check-title">組織修復緩慢</div>
+                  <div class="check-desc">嘴破（口腔潰瘍）的頻率變高，或者小傷口癒合的時間變長。</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="resultBox" class="result-box hidden">
+          <div class="score-display"><span id="scoreNum">0</span> <span>/ 10</span></div>
+          <div id="resultBadge" class="result-badge">測量中</div>
+          <div id="resultText" class="result-text">請勾選上方符合的狀況以顯示評估結果。</div>
+        </div>
+
+        <div class="submit-section">
+          <div class="submit-inner">
+            <div class="submit-title">獲取專屬解析</div>
+            <p class="submit-sub">
+              點擊下方按鈕複製你的檢測分數，並傳送到 LINE 給我。<br>
+              我會根據你的分數與勾選項目，給予你科學的保養優化建議。
+            </p>
+            <button class="btn-submit" onclick="copyResult()">📋 複製檢測結果並傳送</button>
+          </div>
+        </div>
+        
+        <div style="font-size: 0.75rem; color: var(--muted); margin-top: 1.5rem; text-align: center; font-weight: 300;">
+          免責聲明：本表單為自我評估工具，不具備醫療診斷之功效。若有明確疾病請就醫。
+        </div>
+
+      </div>
+    </main>
+
+    <Footer />
+
+    <script is:inline>
+      // 點擊選項時切換樣式與計算分數
+      function toggleActive(checkbox) {
+        const label = checkbox.closest('.check-item');
+        if (checkbox.checked) {
+          label.classList.add('active');
+        } else {
+          label.classList.remove('active');
+        }
+        calculateScore();
+      }
+
+      function calculateScore() {
+        const checkedBoxes = document.querySelectorAll('input[name="alarm"]:checked');
+        const score = checkedBoxes.length;
+        const resultBox = document.getElementById('resultBox');
+        const scoreNum = document.getElementById('scoreNum');
+        const badge = document.getElementById('resultBadge');
+        const text = document.getElementById('resultText');
+
+        scoreNum.textContent = score;
+
+        if (score === 0) {
+          resultBox.className = 'result-box hidden';
+          return;
+        }
+
+        resultBox.className = 'result-box show';
+
+        if (score <= 2) {
+          resultBox.classList.add('green');
+          badge.textContent = '代謝彈性良好';
+          text.innerHTML = '你的細胞能量工廠運作順暢，防護網依然堅固。請繼續保持目前的飲食與運動習慣，這將是你事業最好的資本。';
+        } else if (score <= 5) {
+          resultBox.classList.add('orange');
+          badge.textContent = '次臨床能量耗損';
+          text.innerHTML = '你的健檢報告可能很漂亮，但細胞已經開始「透支」。這代表體內的<strong>慢性發炎與壓力</strong>正在干擾你的修復迴路。此時盲目補充一般的維他命效果有限，你需要的是針對細胞層級修復的精準介入。';
+        } else {
+          resultBox.classList.add('red');
+          badge.textContent = '高發炎警報狀態';
+          text.innerHTML = '你的抗氧化防護網可能已出現明顯漏洞，身體的「煞車與修復系統」幾乎停擺。這通常伴隨著代謝彈性下降與荷爾蒙失衡。強烈建議停止盲目測試保健品，直接進行客觀的數據量化與介入。';
+        }
+      }
+
+      function copyResult() {
+        const checkedBoxes = document.querySelectorAll('input[name="alarm"]:checked');
+        const score = checkedBoxes.length;
+        
+        if (score === 0) {
+          alert('請至少勾選一項符合您狀況的訊號喔！');
+          return;
+        }
+
+        const signals = Array.from(checkedBoxes).map(cb => `- ${cb.value}`).join('\n');
+        let status = '';
+        if (score <= 2) status = '🟢 代謝彈性良好';
+        else if (score <= 5) status = '🟡 次臨床能量耗損';
+        else status = '🔴 高發炎警報狀態';
+
+        const textToCopy = `【AGELOCKED 細胞效能檢測結果】\n\n我的發炎與耗損指數：${score} / 10\n狀態評估：${status}\n\n▌我目前觀察到的訊號：\n${signals}\n\n（孫站長，這是我目前的檢測結果，希望能進一步了解如何優化。）`;
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          const btn = document.querySelector('.btn-submit');
+          btn.textContent = '✓ 已複製！請開啟 LINE 貼上';
+          btn.style.background = '#1a7a50';
+          setTimeout(() => {
+            btn.textContent = '📋 複製檢測結果並傳送';
+            btn.style.background = '';
+          }, 3500);
+        }).catch(() => {
+          const ta = document.createElement('textarea');
+          ta.value = textToCopy; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+          document.body.removeChild(ta);
+          alert('已複製！請開啟 LINE 貼上傳送給我。');
+        });
+      }
+    </script>
+  </body>
+</html>
