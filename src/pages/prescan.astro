@@ -1,0 +1,748 @@
+---
+// src/pages/prescan.astro
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = '掃描前資料表 · AGELOCKED';
+const description = '資料越完整，當場解讀越精準。有的填、沒有的跳過就好——我會根據你提供的數據組合，找出最關鍵的代謝缺口。';
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style>
+      /* 保留原本的 CSS 變數，與您的全站設計系統對齊 */
+      :root {
+        --teal:    #1a8c82;
+        --teal-d:  #116b63;
+        --teal-p:  rgba(26,140,130,0.08);
+        --gold:    #b8935a;
+        --gold-p:  rgba(184,147,90,0.10);
+        --ink:     #111820;
+        --body:    #3a4a58;
+        --muted:   #7a8fa0;
+        --border:  rgba(30,70,100,0.10);
+        --bg:      #f8f9fb;
+        --bg2:     #ffffff;
+        --surface: #f0f3f7;
+        --red:     #c0392b;
+        --red-p:   rgba(192,57,43,0.07);
+        --green:   #1a7a50;
+        --green-p: rgba(26,122,80,0.07);
+        --orange:  #b85c1a;
+        --orange-p:rgba(184,92,26,0.07);
+      }
+
+      /* ── HEADER 區塊樣式 ── */
+      .page-header {
+        background: var(--ink);
+        padding: 3rem 6vw 2.5rem;
+        position: relative; overflow: hidden;
+      }
+      .page-header::before {
+        content: '';
+        position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(26,140,130,0.12) 0%, transparent 70%);
+      }
+      .header-inner { max-width: 740px; margin: 0 auto; position: relative; }
+      .header-brand {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.62rem; letter-spacing: 0.4em; color: var(--gold);
+        text-transform: uppercase; margin-bottom: 1.4rem;
+        display: flex; align-items: center; gap: 0.8rem;
+      }
+      .header-brand::before { content: '◆'; font-size: 0.38rem; }
+      .page-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        font-weight: 300; color: #fff; line-height: 1.2;
+        margin-bottom: 0.8rem;
+      }
+      .page-title em { font-style: italic; color: #6de8df; }
+      .page-desc {
+        font-size: 0.9rem; color: rgba(255,255,255,0.48);
+        font-weight: 300; line-height: 1.9; max-width: 520px;
+      }
+
+      /* ── PROGRESS BAR ── */
+      .progress-wrap { background: rgba(255,255,255,0.05); height: 2px; margin-top: 2rem; }
+      .progress-bar {
+        height: 100%; background: var(--teal);
+        width: 0%; transition: width 0.4s ease;
+      }
+
+      /* ── FORM BODY ── */
+      .form-body { max-width: 740px; margin: 0 auto; padding: 3rem 6vw 6rem; background: var(--bg); }
+
+      /* Section */
+      .form-section {
+        background: var(--bg2); border: 1px solid var(--border);
+        border-radius: 2px; margin-bottom: 1.6rem;
+        overflow: hidden;
+        animation: fadeUp 0.5s ease both;
+      }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(12px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .form-section:nth-child(2) { animation-delay: 0.05s; }
+      .form-section:nth-child(3) { animation-delay: 0.10s; }
+      .form-section:nth-child(4) { animation-delay: 0.15s; }
+      .form-section:nth-child(5) { animation-delay: 0.20s; }
+      .form-section:nth-child(6) { animation-delay: 0.25s; }
+
+      .section-head {
+        padding: 1.4rem 1.8rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        display: flex; align-items: flex-start; gap: 1rem;
+      }
+      .section-num {
+        font-family: 'DM Mono', monospace; font-size: 0.62rem;
+        letter-spacing: 0.2em; color: var(--teal);
+        background: var(--teal-p); padding: 0.2rem 0.55rem;
+        border-radius: 1px; flex-shrink: 0; margin-top: 0.3rem;
+      }
+      .section-label-sm {
+        font-family: 'DM Mono', monospace; font-size: 0.6rem;
+        letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase;
+        margin-bottom: 0.3rem;
+      }
+      .section-h {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.2rem; font-weight: 400; color: var(--ink);
+      }
+      .section-body { padding: 1.6rem 1.8rem; }
+
+      /* Fields */
+      .field { margin-bottom: 1.3rem; }
+      .field:last-child { margin-bottom: 0; }
+      .field-label {
+        font-size: 0.82rem; font-weight: 400; color: var(--ink);
+        margin-bottom: 0.45rem; display: flex; align-items: center; gap: 0.5rem;
+      }
+      .field-optional {
+        font-family: 'DM Mono', monospace; font-size: 0.55rem;
+        letter-spacing: 0.15em; color: var(--muted);
+        background: var(--surface); padding: 0.1rem 0.4rem; border-radius: 1px;
+      }
+      input[type="text"], input[type="number"], input[type="tel"], select, textarea {
+        width: 100%; border: 1px solid var(--border);
+        border-radius: 2px; padding: 0.7rem 0.9rem;
+        font-family: 'Noto Serif TC', serif; font-size: 0.88rem;
+        color: var(--ink); background: var(--bg);
+        transition: border-color 0.2s, background 0.2s;
+        appearance: none;
+      }
+      input:focus, select:focus, textarea:focus {
+        outline: none; border-color: var(--teal);
+        background: var(--bg2);
+      }
+      textarea { resize: vertical; min-height: 80px; line-height: 1.8; }
+
+      .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+      .field-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.9rem; }
+
+      /* Unit label */
+      .input-unit { position: relative; }
+      .input-unit input { padding-right: 3.2rem; }
+      .unit-tag {
+        position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%);
+        font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--muted);
+        pointer-events: none;
+      }
+
+      /* Checkbox group */
+      .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.2rem; }
+      .check-item {
+        display: flex; align-items: flex-start; gap: 0.6rem;
+        padding: 0.7rem 0.9rem; border: 1px solid var(--border);
+        border-radius: 2px; cursor: pointer; transition: all 0.15s;
+        font-size: 0.83rem; color: var(--body); font-weight: 300; line-height: 1.5;
+        background: var(--bg);
+      }
+      .check-item:hover { border-color: var(--teal); background: var(--teal-p); }
+      .check-item input { flex-shrink: 0; accent-color: var(--teal); margin-top: 0.15rem; }
+
+      /* ── TG/HDL CALCULATOR ── */
+      .calc-box {
+        background: var(--ink); border-radius: 2px;
+        padding: 1.6rem 1.8rem; margin-top: 1.4rem;
+        position: relative; overflow: hidden;
+      }
+      .calc-box::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 70% 80% at 100% 50%, rgba(26,140,130,0.15) 0%, transparent 70%);
+      }
+      .calc-label {
+        font-family: 'DM Mono', monospace; font-size: 0.6rem;
+        letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase;
+        margin-bottom: 0.8rem; position: relative;
+      }
+      .calc-title {
+        font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
+        color: #fff; font-weight: 300; margin-bottom: 1.2rem; position: relative;
+      }
+      .calc-inputs { display: grid; grid-template-columns: 1fr 1fr auto; gap: 0.8rem; align-items: end; position: relative; }
+      .calc-field label {
+        font-size: 0.75rem; color: rgba(255,255,255,0.5);
+        display: block; margin-bottom: 0.35rem; font-weight: 300;
+      }
+      .calc-field input {
+        background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+        color: #fff; font-family: 'DM Mono', monospace; font-size: 1rem;
+        padding: 0.65rem 0.8rem; width: 100%; border-radius: 2px;
+        transition: border-color 0.2s;
+      }
+      .calc-field input:focus { outline: none; border-color: var(--teal); background: rgba(26,140,130,0.1); }
+      .calc-btn {
+        padding: 0.65rem 1.2rem; background: var(--teal); color: #fff;
+        border: none; border-radius: 2px; cursor: pointer;
+        font-family: 'DM Mono', monospace; font-size: 0.7rem;
+        letter-spacing: 0.15em; text-transform: uppercase;
+        transition: background 0.2s; white-space: nowrap;
+      }
+      .calc-btn:hover { background: var(--teal-d); }
+
+      .calc-result {
+        margin-top: 1.2rem; padding: 1rem 1.2rem;
+        border-radius: 2px; font-size: 0.88rem;
+        font-weight: 300; line-height: 1.8; display: none;
+        position: relative;
+      }
+      .calc-result.show { display: block; }
+      .calc-result.green { background: rgba(26,122,80,0.15); border: 1px solid rgba(26,122,80,0.3); }
+      .calc-result.orange { background: rgba(184,92,26,0.15); border: 1px solid rgba(184,92,26,0.3); }
+      .calc-result.red { background: rgba(192,57,43,0.18); border: 1px solid rgba(192,57,43,0.35); }
+      .calc-result-ratio {
+        font-family: 'Cormorant Garamond', serif; font-size: 2rem;
+        font-weight: 300; display: block; margin-bottom: 0.4rem;
+      }
+      .calc-result.green .calc-result-ratio { color: #4ade80; }
+      .calc-result.orange .calc-result-ratio { color: #fb923c; }
+      .calc-result.red .calc-result-ratio { color: #f87171; }
+      .calc-result-text { color: rgba(255,255,255,0.75); font-size: 0.82rem; }
+      .calc-result-badge {
+        font-family: 'DM Mono', monospace; font-size: 0.6rem;
+        letter-spacing: 0.2em; padding: 0.15rem 0.5rem; border-radius: 1px;
+        display: inline-block; margin-bottom: 0.5rem;
+      }
+      .calc-result.green .calc-result-badge { background: rgba(74,222,128,0.2); color: #4ade80; }
+      .calc-result.orange .calc-result-badge { background: rgba(251,146,60,0.2); color: #fb923c; }
+      .calc-result.red .calc-result-badge { background: rgba(248,113,113,0.2); color: #f87171; }
+
+      /* ── WATCH DATA SECTION ── */
+      .watch-hint {
+        background: var(--teal-p); border: 1px solid rgba(26,140,130,0.18);
+        border-radius: 2px; padding: 1rem 1.2rem;
+        font-size: 0.82rem; color: var(--body); font-weight: 300; line-height: 1.85;
+        margin-bottom: 1.2rem;
+      }
+      .watch-hint strong { color: var(--teal); font-weight: 500; }
+      .watch-guide {
+        background: var(--surface); border-radius: 2px;
+        padding: 1rem 1.2rem; margin-top: 1rem;
+        font-size: 0.78rem; color: var(--muted); font-weight: 300; line-height: 1.9;
+      }
+      .watch-guide strong { color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.2rem; }
+
+      /* ── SUPPLEMENT LIST ── */
+      .suppl-row {
+        display: grid; grid-template-columns: 1fr auto auto;
+        gap: 0.6rem; align-items: center; margin-bottom: 0.5rem;
+      }
+      .suppl-row input { margin-bottom: 0; }
+      .suppl-add {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem;
+        letter-spacing: 0.15em; color: var(--teal); text-transform: uppercase;
+        background: none; border: 1px solid var(--teal); border-radius: 2px;
+        padding: 0.45rem 0.8rem; cursor: pointer; transition: all 0.2s;
+        white-space: nowrap; margin-top: 0.5rem; display: inline-block;
+      }
+      .suppl-add:hover { background: var(--teal-p); }
+      .suppl-remove {
+        background: none; border: 1px solid var(--border); border-radius: 2px;
+        padding: 0.45rem 0.6rem; cursor: pointer; color: var(--muted);
+        font-size: 0.75rem; transition: all 0.15s; line-height: 1;
+      }
+      .suppl-remove:hover { border-color: var(--red); color: var(--red); }
+      .suppl-qty { width: 80px !important; }
+
+      /* ── SUBMIT ── */
+      .submit-section {
+        background: var(--ink); border-radius: 2px;
+        padding: 2rem 1.8rem; text-align: center;
+        position: relative; overflow: hidden;
+      }
+      .submit-section::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(26,140,130,0.12) 0%, transparent 70%);
+      }
+      .submit-inner { position: relative; }
+      .submit-title {
+        font-family: 'Cormorant Garamond', serif; font-size: 1.4rem;
+        font-weight: 300; color: #fff; margin-bottom: 0.6rem;
+      }
+      .submit-sub {
+        font-size: 0.8rem; color: rgba(255,255,255,0.4);
+        font-weight: 300; line-height: 1.9; margin-bottom: 1.6rem;
+      }
+      .btn-submit {
+        display: inline-block; background: var(--teal); color: #fff;
+        padding: 1rem 3rem; border-radius: 2px; border: none; cursor: pointer;
+        font-family: 'DM Mono', monospace; font-size: 0.75rem;
+        letter-spacing: 0.2em; text-transform: uppercase;
+        transition: all 0.3s; text-decoration: none;
+      }
+      .btn-submit:hover { background: var(--teal-d); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,140,130,0.35); }
+      .submit-note {
+        margin-top: 1.2rem; font-family: 'DM Mono', monospace;
+        font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.22);
+      }
+
+      @media (max-width: 600px) {
+        .field-row, .field-row-3 { grid-template-columns: 1fr; }
+        .calc-inputs { grid-template-columns: 1fr 1fr; }
+        .calc-btn { grid-column: span 2; }
+        .check-grid { grid-template-columns: 1fr; }
+        .suppl-row { grid-template-columns: 1fr auto; }
+        .suppl-qty { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <header class="page-header">
+        <div class="header-inner">
+          <div class="header-brand">AGELOCKED · 孫義坤</div>
+          <h1 class="page-title">掃描前<em>資料表</em></h1>
+          <p class="page-desc">
+            資料越完整，當場解讀越精準。有的填、沒有的跳過就好——
+            我會根據你提供的數據組合，找出最關鍵的代謝缺口。
+          </p>
+          <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+        </div>
+      </header>
+
+      <div class="form-body">
+        
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">01</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Basic Info</div>
+              <div class="section-h">基本資料</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="field-row">
+              <div class="field">
+                <div class="field-label">姓名</div>
+                <input type="text" id="name" placeholder="您的稱呼即可" />
+              </div>
+              <div class="field">
+                <div class="field-label">年齡</div>
+                <div class="input-unit">
+                  <input type="number" id="age" placeholder="40" min="20" max="80" />
+                  <span class="unit-tag">歲</span>
+                </div>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <div class="field-label">性別</div>
+                <select id="gender">
+                  <option value="">請選擇</option>
+                  <option value="male">男性</option>
+                  <option value="female">女性</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="field-label">LINE ID <span class="field-optional">選填</span></div>
+                <input type="text" id="line_id" placeholder="方便掃描後追蹤" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">02</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Blood Lipids</div>
+              <div class="section-h">血脂數據（健檢報告）</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="field-row-3">
+              <div class="field">
+                <div class="field-label">三酸甘油酯 TG</div>
+                <div class="input-unit">
+                  <input type="number" id="tg" placeholder="150" step="1" oninput="autoCalc()" />
+                  <span class="unit-tag">mg/dL</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">高密度脂蛋白 HDL</div>
+                <div class="input-unit">
+                  <input type="number" id="hdl" placeholder="50" step="1" oninput="autoCalc()" />
+                  <span class="unit-tag">mg/dL</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">空腹血糖 <span class="field-optional">選填</span></div>
+                <div class="input-unit">
+                  <input type="number" id="glucose" placeholder="95" step="1" />
+                  <span class="unit-tag">mg/dL</span>
+                </div>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <div class="field-label">HbA1c 糖化血色素 <span class="field-optional">選填</span></div>
+                <div class="input-unit">
+                  <input type="number" id="hba1c" placeholder="5.6" step="0.1" />
+                  <span class="unit-tag">%</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">hs-CRP 高敏感 C 反應蛋白 <span class="field-optional">選填</span></div>
+                <div class="input-unit">
+                  <input type="number" id="hsCrp" placeholder="0.8" step="0.1" />
+                  <span class="unit-tag">mg/L</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-box">
+              <div class="calc-label">◆ 即時計算器</div>
+              <div class="calc-title">TG / HDL 比值——胰島素阻抗的隱藏指標</div>
+              <div class="calc-inputs">
+                <div class="calc-field">
+                  <label>三酸甘油酯 TG（mg/dL）</label>
+                  <input type="number" id="calc_tg" placeholder="150" oninput="syncCalc()" />
+                </div>
+                <div class="calc-field">
+                  <label>高密度脂蛋白 HDL（mg/dL）</label>
+                  <input type="number" id="calc_hdl" placeholder="50" oninput="syncCalc()" />
+                </div>
+                <button class="calc-btn" onclick="calculate()">計算</button>
+              </div>
+              <div class="calc-result" id="calcResult">
+                <div class="calc-result-badge" id="calcBadge"></div>
+                <span class="calc-result-ratio" id="calcRatio"></span>
+                <div class="calc-result-text" id="calcText"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">03</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Body Metrics</div>
+              <div class="section-h">體態數據</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="field-row-3">
+              <div class="field">
+                <div class="field-label">腰圍</div>
+                <div class="input-unit">
+                  <input type="number" id="waist" placeholder="88" step="0.5" />
+                  <span class="unit-tag">cm</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">體重 <span class="field-optional">選填</span></div>
+                <div class="input-unit">
+                  <input type="number" id="weight" placeholder="70" step="0.1" />
+                  <span class="unit-tag">kg</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">身高 <span class="field-optional">選填</span></div>
+                <div class="input-unit">
+                  <input type="number" id="height" placeholder="170" step="0.5" />
+                  <span class="unit-tag">cm</span>
+                </div>
+              </div>
+            </div>
+            <div class="field" style="margin-top:0.3rem;">
+              <div class="field-label" style="font-size:0.78rem; color:var(--muted); font-weight:300;">
+                台灣代謝症候群警戒值：男性腰圍 ≥ 90 cm ／ 女性腰圍 ≥ 80 cm
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">04</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Wearable Data · 選填</div>
+              <div class="section-h">穿戴裝置數據</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="watch-hint">
+              <strong>為什麼需要這個？</strong>
+              靜止心率（RHR）與心率變異度（HRV）是 24 小時動態指標，能看出健檢報告看不到的「自律神經疲勞」與慢性發炎負擔。吃完補充品後，這兩個數字的變化是最直接的驗證方式。
+            </div>
+
+            <div class="field">
+              <div class="field-label">裝置品牌</div>
+              <select id="watch_brand">
+                <option value="">無穿戴裝置</option>
+                <option value="apple">Apple Watch</option>
+                <option value="garmin">Garmin</option>
+                <option value="oura">Oura Ring</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <div class="field-label">近一個月平均靜止心率（RHR）</div>
+                <div class="input-unit">
+                  <input type="number" id="rhr" placeholder="62" step="1" />
+                  <span class="unit-tag">bpm</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">近一個月平均 HRV</div>
+                <div class="input-unit">
+                  <input type="number" id="hrv" placeholder="38" step="1" />
+                  <span class="unit-tag">ms</span>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="field-label">近期趨勢 <span class="field-optional">選填</span></div>
+              <select id="watch_trend">
+                <option value="">請選擇</option>
+                <option value="rhr_up">靜止心率近一個月緩步上升</option>
+                <option value="hrv_down">HRV 近一個月低於平常水準</option>
+                <option value="both">兩者都有</option>
+                <option value="stable">數值穩定</option>
+              </select>
+            </div>
+
+            <div class="watch-guide">
+              <strong>怎麼找這個數字？</strong>
+              Apple Watch：健康 App → 瀏覽 → 心臟 → 靜止心率 / 心率變異度 → 截圖「過去一個月」趨勢圖<br>
+              Garmin：Garmin Connect App → 心率區塊 → 靜止心率 / HRV 狀態
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">05</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Body Signals</div>
+              <div class="section-h">身體訊號（勾選有感覺的）</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="check-grid">
+              <label class="check-item"><input type="checkbox" name="signal" value="fatigue_pm" /> 下午容易疲勞、昏沉</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_enough_tired" /> 睡滿 7-8 小時仍感疲勞</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="belly_increase" /> 腹部脂肪近 1-2 年明顯增加</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="brain_fog" /> 下午腦霧、注意力散漫</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="wound_slow" /> 傷口癒合變慢</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_poor" /> 睡眠品質差 / 容易半夜醒來</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="muscle_loss" /> 肌肉量感覺在下降</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="hair_gray" /> 白髮 / 掉髮明顯增加</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="stress_high" /> 工作壓力高、難以放鬆</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="cold_long" /> 感冒拖很久、免疫力差</label>
+            </div>
+            <div class="field" style="margin-top:1.2rem;">
+              <div class="field-label">最困擾你的狀況（用自己的話描述）<span class="field-optional">選填</span></div>
+              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，下午 3 點開始腦袋轉不動..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">06</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Current Supplements</div>
+              <div class="section-h">目前在吃的保健品</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <p style="font-size:0.82rem; color:var(--muted); font-weight:300; line-height:1.8; margin-bottom:1.2rem;">
+              包含維他命、魚油、益生菌、Nu Skin 產品等任何補充品。這幫助我判斷你目前的補充缺口和重疊狀況。
+            </p>
+            <div id="supplList">
+              <div class="suppl-row">
+                <input type="text" placeholder="產品名稱（例：LifePak、魚油）" />
+                <input type="text" class="suppl-qty" placeholder="每天幾顆" />
+                <button class="suppl-remove" onclick="removeSuppl(this)">✕</button>
+              </div>
+            </div>
+            <button class="suppl-add" onclick="addSuppl()">＋ 新增一項</button>
+
+            <div class="field" style="margin-top:1.4rem;">
+              <div class="field-label">吃了多久仍無感 <span class="field-optional">選填</span></div>
+              <textarea id="suppl_note" placeholder="例如：吃了半年 A 品牌 CoQ10，能量感覺沒變化..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-section">
+          <div class="submit-inner">
+            <div class="submit-title">資料填寫完成</div>
+            <p class="submit-sub">
+              點擊下方按鈕，將資料複製為文字後<br>
+              直接貼到 LINE 傳送給我即可
+            </p>
+            <button class="btn-submit" onclick="copyToLine()">📋 複製資料並傳送</button>
+            <div class="submit-note">資料僅用於諮詢分析 · 不會轉傳或儲存至第三方</div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <Footer />
+
+    <script is:inline>
+      // ── PROGRESS ──
+      function updateProgress() {
+        const inputs = document.querySelectorAll('input[type="text"], input[type="number"], select, textarea, input[type="checkbox"]:checked');
+        const filled = [...document.querySelectorAll('input[type="text"], input[type="number"], select, textarea')]
+          .filter(el => el.value.trim() !== '' && el.value !== '').length;
+        const checks = document.querySelectorAll('input[type="checkbox"]:checked').length;
+        const total = 12;
+        const pct = Math.min(100, Math.round(((filled + checks) / total) * 100));
+        document.getElementById('progressBar').style.width = pct + '%';
+      }
+      document.addEventListener('input', updateProgress);
+      document.addEventListener('change', updateProgress);
+
+      // ── TG/HDL CALCULATOR ──
+      function autoCalc() {
+        const tg = document.getElementById('tg').value;
+        const hdl = document.getElementById('hdl').value;
+        if (tg) document.getElementById('calc_tg').value = tg;
+        if (hdl) document.getElementById('calc_hdl').value = hdl;
+        if (tg && hdl) calculate();
+      }
+      function syncCalc() {
+        const tg = document.getElementById('calc_tg').value;
+        const hdl = document.getElementById('calc_hdl').value;
+        if (tg) document.getElementById('tg').value = tg;
+        if (hdl) document.getElementById('hdl').value = hdl;
+        if (tg && hdl) calculate();
+      }
+      function calculate() {
+        const tg = parseFloat(document.getElementById('calc_tg').value);
+        const hdl = parseFloat(document.getElementById('calc_hdl').value);
+        const res = document.getElementById('calcResult');
+        const badge = document.getElementById('calcBadge');
+        const ratio = document.getElementById('calcRatio');
+        const text = document.getElementById('calcText');
+
+        if (!tg || !hdl || hdl === 0) return;
+
+        const val = (tg / hdl).toFixed(2);
+        ratio.textContent = val;
+        res.className = 'calc-result show';
+
+        if (val < 2) {
+          res.classList.add('green');
+          badge.textContent = '代謝彈性良好';
+          text.textContent = `TG/HDL = ${val}。你的胰島素敏感性在正常範圍，代謝靈活度良好。繼續維持現有習慣，定期追蹤確認趨勢穩定。`;
+        } else if (val < 3.5) {
+          res.classList.add('orange');
+          badge.textContent = '次臨床胰島素阻抗';
+          text.textContent = `TG/HDL = ${val}。數值超過 2，代表細胞層級的胰島素敏感性已開始下降。健檢可能沒有紅字，但這是最早期的代謝失衡訊號——也是下午容易疲勞、腦霧的常見原因之一。`;
+        } else {
+          res.classList.add('red');
+          badge.textContent = '胰島素阻抗風險偏高';
+          text.textContent = `TG/HDL = ${val}。數值超過 3.5，顯示胰島素阻抗問題已較為明顯，內臟脂肪的三個荷爾蒙迴路可能已在運作。建議優先處理代謝迴路，掃描當場會詳細解析。`;
+        }
+      }
+
+      // ── SUPPLEMENT LIST ──
+      function addSuppl() {
+        const list = document.getElementById('supplList');
+        const row = document.createElement('div');
+        row.className = 'suppl-row';
+        row.innerHTML = `
+          <input type="text" placeholder="產品名稱（例：LifePak、魚油）" />
+          <input type="text" class="suppl-qty" placeholder="每天幾顆" />
+          <button class="suppl-remove" onclick="removeSuppl(this)">✕</button>
+        `;
+        list.appendChild(row);
+      }
+      function removeSuppl(btn) {
+        const rows = document.querySelectorAll('.suppl-row');
+        if (rows.length > 1) btn.closest('.suppl-row').remove();
+      }
+
+      // ── COPY TO LINE ──
+      function copyToLine() {
+        const name = document.getElementById('name').value || '（未填）';
+        const age = document.getElementById('age').value || '（未填）';
+        const gender = document.getElementById('gender');
+        const genderText = gender.options[gender.selectedIndex].text || '（未填）';
+        const tg = document.getElementById('tg').value;
+        const hdl = document.getElementById('hdl').value;
+        const glucose = document.getElementById('glucose').value;
+        const hba1c = document.getElementById('hba1c').value;
+        const hsCrp = document.getElementById('hsCrp').value;
+        const waist = document.getElementById('waist').value;
+        const rhr = document.getElementById('rhr').value;
+        const hrv = document.getElementById('hrv').value;
+        const watchBrand = document.getElementById('watch_brand');
+        const watchText = watchBrand.options[watchBrand.selectedIndex].text;
+        const concern = document.getElementById('main_concern').value;
+        const supplNote = document.getElementById('suppl_note').value;
+
+        const signals = [...document.querySelectorAll('input[name="signal"]:checked')]
+          .map(el => el.parentElement.textContent.trim()).join('、') || '（未勾選）';
+
+        const supplRows = document.querySelectorAll('.suppl-row');
+        const suppls = [...supplRows].map(r => {
+          const inputs = r.querySelectorAll('input');
+          const name = inputs[0].value;
+          const qty = inputs[1]?.value;
+          if (!name) return null;
+          return qty ? `${name}（${qty}）` : name;
+        }).filter(Boolean).join('、') || '（無）';
+
+        let ratio = '';
+        if (tg && hdl) {
+          ratio = `\nTG/HDL 比值：${(parseFloat(tg)/parseFloat(hdl)).toFixed(2)}`;
+        }
+
+        const text = `【AGELOCKED 掃描前資料】\n\n▌基本資料\n姓名：${name}\n年齡：${age} 歲　性別：${genderText}\n\n▌血脂數據\n三酸甘油酯 TG：${tg || '（未填）'} mg/dL\n高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL\n空腹血糖：${glucose || '（未填）'} mg/dL\nHbA1c：${hba1c || '（未填）'}%\nhs-CRP：${hsCrp || '（未填）'} mg/L${ratio}\n\n▌體態數據\n腰圍：${waist || '（未填）'} cm\n\n▌穿戴裝置（${watchText}）\n靜止心率 RHR：${rhr || '（未填）'} bpm\nHRV：${hrv || '（未填）'} ms\n\n▌身體訊號\n${signals}\n\n▌目前保健品\n${suppls}\n\n▌主要困擾\n${concern || '（未填）'}\n\n▌補充品備注\n${supplNote || '（未填）'}`;
+
+        navigator.clipboard.writeText(text).then(() => {
+          const btn = document.querySelector('.btn-submit');
+          btn.textContent = '✓ 已複製！請貼到 LINE 傳送';
+          btn.style.background = '#1a7a50';
+          setTimeout(() => {
+            btn.textContent = '📋 複製資料並傳送';
+            btn.style.background = '';
+          }, 3000);
+        }).catch(() => {
+          const ta = document.createElement('textarea');
+          ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+          document.body.removeChild(ta);
+          alert('已複製！請開啟 LINE 貼上傳送給孫義坤。');
+        });
+      }
+    </script>
+  </body>
+</html>
