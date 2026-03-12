@@ -187,6 +187,56 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         margin-bottom: 0.7rem;
       }
 
+      /* ── 服務方案雙軌 ── */
+      .plans-section { padding: 5rem 6vw; background: var(--bg2); }
+      .plans-inner { max-width: 760px; margin: 0 auto; }
+      .plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 2rem; }
+      .plan-card {
+        border: 1px solid var(--border); border-radius: 2px;
+        padding: 2rem 2rem 1.8rem; background: var(--bg);
+        display: flex; flex-direction: column; gap: 0;
+      }
+      .plan-card.plan-remote { border-top: 2.5px solid var(--teal); }
+      .plan-card.plan-onsite { border-top: 2.5px solid var(--gold); }
+      .plan-badge {
+        font-family: 'DM Mono', monospace; font-size: 0.6rem;
+        letter-spacing: 0.3em; text-transform: uppercase;
+        padding: 0.25rem 0.7rem; border-radius: 1px; display: inline-block;
+        margin-bottom: 1rem; align-self: flex-start;
+      }
+      .plan-remote .plan-badge { background: var(--teal-pale); color: var(--teal); }
+      .plan-onsite .plan-badge { background: var(--gold-pale); color: var(--gold); }
+      .plan-title {
+        font-family: 'Cormorant Garamond', serif; font-size: 1.35rem;
+        font-weight: 400; color: var(--ink); margin-bottom: 0.35rem;
+      }
+      .plan-sub { font-size: 0.8rem; color: var(--muted); margin-bottom: 1.2rem; font-weight: 300; }
+      .plan-divider { border: none; border-top: 1px solid var(--border); margin: 0 0 1.2rem; }
+      .plan-steps { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.4rem; }
+      .plan-step {
+        font-size: 0.85rem; font-weight: 300; color: var(--body);
+        line-height: 1.75; display: flex; gap: 0.7rem;
+      }
+      .plan-step-num {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem;
+        color: var(--muted); flex-shrink: 0; padding-top: 0.25rem;
+      }
+      .plan-data {
+        background: var(--surface); border-radius: 2px;
+        padding: 0.9rem 1rem; margin-bottom: 1.2rem;
+        font-size: 0.8rem; color: var(--muted); font-weight: 300; line-height: 1.8;
+      }
+      .plan-data strong { color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.25rem; }
+      .plan-tagline {
+        font-size: 0.82rem; font-style: italic; color: var(--teal);
+        font-family: 'Cormorant Garamond', serif; line-height: 1.6;
+        margin-top: auto; padding-top: 1rem;
+        border-top: 1px solid var(--border);
+      }
+      .plan-onsite .plan-tagline { color: var(--gold); }
+
+      @media (max-width: 760px) { .plans-grid { grid-template-columns: 1fr; } }
+
       /* 主題格 */
       .topics-section { padding: 5rem 6vw; background: var(--bg-warm); }
       .topics-inner { max-width: 760px; margin: 0 auto; }
@@ -234,7 +284,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         padding: 1rem 2.2rem; background: transparent; color: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.22);
         font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
       }
-      .btn-outline:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
+      .btn-outline:hover { border-color: var(--teal); color: #6de8df; background: rgba(26,140,130,0.1); }
       .contact-note { margin-top: 1.8rem; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.28); }
 
       /* ── Responsive ── */
@@ -257,7 +307,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         <div class="hero-divider"></div>
         <p class="about-tagline">
           過去 15 年，我在醫療體系負責幫醫師從海量數據中整理患者的生病原因，並發表成國際論文。<br><br>
-          現在，我用這套研究邏輯，幫把健康排最後的你用科學數據<strong>『除錯』</strong>，找回被慢性發炎偷走的體力。
+          現在，我用這套研究邏輯，帶著你的健檢報告一起做 Prysm iO 掃描——<strong>把兩份數字拼成一張完整的代謝地圖</strong>，讓你看懂分數背後的原因，而不只是拿到一個數字。
         </p>
       </div>
       <div class="about-photo-wrap">
@@ -266,7 +316,8 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
           <span class="credential">陽明交通大學 應用化學系</span>
           <span class="credential">清華大學 分子醫學研究所</span>
           <span class="credential">醫療體系研究工作 15 年</span>
-          <span class="credential">抗衰老生物技術研究應用</span>
+          <span class="credential">協助醫師學術論文寫作</span>
+          <span class="credential">ageLOC 抗衰老生技研究應用</span>
         </div>
       </div>
     </section>
@@ -275,12 +326,12 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
 
       <div class="section-label">指出產業亂象</div>
       <h2 class="section-title">
-        我發現把健康排最後的人，很常忽視健康<br>
-        <em>結果就是頭痛醫頭腳痛醫腳</em>
+        你在事業上講求精準數據，<br>
+        <em>對待身體卻用最低效的方式「盲測」</em>
       </h2>
 
       <p class="body-text">
-        我發現醫療體系跟一般大眾之間有道牆：病患在診間只有幾分鐘，醫師能給你的只是簡單的結論或藥物；而市面上的保健品廣告又吹得太神。結果，把健康排最後的這群人，只能用最沒有效率的方式管理健康。
+        我發現醫療體系跟一般大眾之間有道牆：病患在診間只有幾分鐘，醫師能給你的只是簡單的結論或藥物；而市面上的保健品廣告又吹得太神。結果，這群撐起台灣產業的高壓菁英，明明是最需要精準數據的人，卻只能用「頭痛醫頭、盲吃保健品」這種最沒有效率的方式管理健康資本。
       </p>
       
       <div class="approach-compare">
@@ -293,8 +344,8 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         </div>
         <div class="approach-card mine">
           <div class="approach-card-label">我的做法</div>
-          <div class="approach-card-title">連起來看，找出系統 Bug</div>
-          用醫療研究邏輯，幫你整理這些症狀背後的共同模式。找到讓「慢性發炎」在你身上持續的底層原因，從那裡介入，症狀才會真正好轉。
+          <div class="approach-card-title">健檢報告 × 掃描數值 → 代謝地圖</div>
+          掃描前先收集你的血糖、三酸甘油酯、腰圍、症狀描述。掃描當場，我把兩份數字交叉比對，告訴你數值背後是哪個代謝迴路出了問題——而不是只說「分數低要補類胡蘿蔔素」。
         </div>
       </div>
 
@@ -307,7 +358,13 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       </h2>
 
       <p class="body-text">
-        在做醫學研究的這些年，我學會了如何從最嚴謹的實驗與數據中找答案。我不賣奇蹟，也不講玄學。我只提供具備數據證實、且在科學文獻上有明確證據的健康管理路徑，幫你找出體檢紅字背後的系統漏洞。
+        在做醫學研究的這些年，我學會了如何從最嚴謹的實驗與數據中找答案。我協助醫師撰寫學術論文——這代表我的科學理解力，已經達到醫師同儕認可的層次。我不賣奇蹟，也不講玄學。我提供的每一個建議，都有 PubMed 文獻與臨床數據支撐。
+      </p>
+      <p class="body-text">
+        這也是為什麼，除了幫你解讀體檢紅字，我更導入了 <strong>Prysm iO 光學掃描</strong>等客觀量化工具。只有當老化與發炎程度可以被精準測量時，我們才能找出系統漏洞，並驗證介入方案是否真的有效。
+      </p>
+      <p class="body-text">
+        你的醫師告訴你數字。<strong>我告訴你數字背後的代謝機制，以及你的下一步。</strong>
       </p>
 
       <hr class="divider" />
@@ -328,7 +385,63 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         <div class="observe-item">工作型態短期內不會改變，需要在現有高壓條件下，找到最有效率的科學介入點。</div>
       </div>
 
-    </div><section class="topics-section">
+    </div>
+
+    <section class="plans-section">
+      <div class="plans-inner">
+        <div class="section-label">服務方案</div>
+        <h2 class="section-title">
+          不管你在哪，<br>
+          <em>數據在手就能開始</em>
+        </h2>
+        <p class="body-text" style="max-width:520px;">
+          Prysm iO 掃描是加分項，不是門票。你手邊的健檢報告和手腕上的手錶，已經藏著足夠的數據——差的只是一個懂得轉譯的人。
+        </p>
+        <div class="plans-grid">
+
+          <div class="plan-card plan-remote">
+            <span class="plan-badge">方案 A · 遠距</span>
+            <div class="plan-title">線上數據解析諮詢</div>
+            <div class="plan-sub">全台、海外皆可 · LINE / 視訊</div>
+            <hr class="plan-divider" />
+            <div class="plan-data">
+              <strong>你需要準備的數據</strong>
+              最近一次健檢報告 PDF（有血脂就夠）<br>
+              Apple Watch / Garmin 的 HRV 與靜止心率截圖（選填）<br>
+              目前在吃的保健品清單
+            </div>
+            <div class="plan-steps">
+              <div class="plan-step"><span class="plan-step-num">01</span><span>上傳資料後，我先用 TG/HDL 比值等次臨床指標，找出你健檢「沒有紅字卻還是很累」的原因</span></div>
+              <div class="plan-step"><span class="plan-step-num">02</span><span>LINE 或視訊 45 分鐘，逐一拆解你的代謝漏洞，給出介入優先順序</span></div>
+              <div class="plan-step"><span class="plan-step-num">03</span><span>每兩週追蹤手錶數據（HRV / 靜止心率）驗證成果，不需要再出門</span></div>
+            </div>
+            <div class="plan-tagline">「你不必出門，只要提供現有數據，我就能幫你揪出疲勞的系統 Bug。」</div>
+          </div>
+
+          <div class="plan-card plan-onsite">
+            <span class="plan-badge">方案 B · 實體</span>
+            <div class="plan-title">Prysm iO 掃描 + 交叉解析</div>
+            <div class="plan-sub">高雄面對面 · 含光學細胞掃描</div>
+            <hr class="plan-divider" />
+            <div class="plan-data">
+              <strong>你需要準備的數據</strong>
+              最近一次健檢報告（紙本或電子檔皆可）<br>
+              手錶 HRV 與靜止心率截圖（選填）<br>
+              若有 hs-CRP / HbA1c 數值請一併帶來
+            </div>
+            <div class="plan-steps">
+              <div class="plan-step"><span class="plan-step-num">01</span><span>掃描前先看你的血液生化指標，建立代謝基準線</span></div>
+              <div class="plan-step"><span class="plan-step-num">02</span><span>Prysm iO 光學掃描，取得細胞抗氧化防護網的精準分數</span></div>
+              <div class="plan-step"><span class="plan-step-num">03</span><span>三份數據交叉比對，給出有機制依據的 90 天介入策略</span></div>
+            </div>
+            <div class="plan-tagline">「血液生化 × 細胞光學掃描，醫學中心等級的交叉比對——在高雄。」</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="topics-section">
       <div class="topics-inner">
         <div class="section-label">這裡寫什麼</div>
         <h2 class="section-title">
@@ -342,20 +455,20 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         </p>
         <div class="topics-grid">
           <div class="topic">
-            <strong>免疫與慢性發炎</strong>
-            感冒一直不好、嘴破反覆——為什麼頭痛醫頭永遠解決不了
+            <strong>慢性發炎與老化機制</strong>
+            從 NF-κB、SASP 到 Inflammaging——為什麼你的身體修復速度跟不上損耗
           </div>
           <div class="topic">
-            <strong>細胞修復與粒線體</strong>
-            從細胞層級理解為什麼你的身體修復速度跟不上損耗
+            <strong>內臟脂肪與代謝迴路</strong>
+            胰島素阻抗 × 皮質醇 × 睪固酮三個迴路如何互相強化，讓少吃多動越來越難
           </div>
           <div class="topic">
-            <strong>體檢報告解讀</strong>
-            紅字背後真正代表什麼，以及你能做什麼
+            <strong>Prysm iO 掃描解讀</strong>
+            類胡蘿蔔素分數背後代表什麼，如何搭配健檢數值讀出真正的代謝狀態
           </div>
           <div class="topic">
-            <strong>抗氧化與補充方向</strong>
-            什麼真的有用、什麼只是你以為有用
+            <strong>精準補充與成分科學</strong>
+            花青素、Oligonol®、Nrf2 路徑——什麼有 RCT 數據支持、什麼只是行銷話術
           </div>
         </div>
       </div>
@@ -365,23 +478,24 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       <div class="contact-inner">
         <div class="contact-label">下一步行動</div>
         <h2 class="contact-title">
-          停止一個個追症狀，<br>
-          <em>先找出共同的根本原因</em>
+          帶著你的健檢報告，<br>
+          <em>我們一起把數字讀懂</em>
         </h2>
         <p class="contact-sub">
-          如果你也厭倦了無效的補充與不斷輪流出現的小毛病，<br>
-          歡迎直接私訊我你手邊那份讓你無解的體檢報告，<br>
-          或者索取【抗發炎自我檢測清單】。
+          掃描前請準備：空腹血糖、三酸甘油酯、腰圍、目前在吃的保健品清單。<br>
+          有的帶、沒有的跳過——資料越完整，當場解讀越精準。<br><br>
+          或者先加 LINE，索取【代謝症候群自我評估清單】，<br>
+          釐清你最需要優先處理的缺口。
         </p>
         <div class="contact-btns">
           <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal">
-            💬 加 LINE 索取檢測清單
+            💬 加 LINE 索取代謝評估清單
           </a>
-          <a href="mailto:sunyikun0729@gmail.com" class="btn-outline">
-            📧 用 Email 聯絡我
+          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-outline">
+            📊 預約 Prysm iO 數據解析與諮詢
           </a>
         </div>
-        <div class="contact-note">不推銷產品 · 先用數據搞清楚你的狀況再說</div>
+        <div class="contact-note">不只給你一個分數 · 幫你讀懂分數背後的代謝狀態</div>
       </div>
     </section>
 
