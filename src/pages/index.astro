@@ -6,8 +6,8 @@ import { Image } from 'astro:assets';
 import heroImg from '../assets/生醫數據投影.webp';
 import profileImg from '../assets/profile.webp';
 
-const SITE_TITLE = '孫義坤｜給把健康排最後的你——身體重開機計畫';
-const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科學實證角度，找出慢性發炎的根本原因，幫你找回被偷走的體力與清醒。';
+const SITE_TITLE = '孫義坤｜給把健康排最後的你——體力重開機計畫';
+const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科學實證角度，梳理日常耗損的盲點，幫你找回被過度消耗的狀態與清醒。';
 ---
 
 <!doctype html>
@@ -50,35 +50,41 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
         z-index: 1;
       }
       .hero-label {
-        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.3em;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.75rem; letter-spacing: 0.3em;
         color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem; display: block;
       }
       .hero-title {
-        font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 4vw, 3.5rem);
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
         font-weight: 300; line-height: 1.25; margin-bottom: 2rem; color: #fff;
       }
       .hero-title em { color: #6de8df; font-style: italic; }
       
       /* Checklist 樣式 */
       .hero-checklist {
-        list-style: none; padding: 0; margin: 0 0 2.5rem 0;
+        list-style: none;
+        padding: 0; margin: 0 0 2.5rem 0;
       }
       .hero-checklist li {
-        display: flex; flex-direction: column; gap: 0.2rem;
+        display: flex;
+        flex-direction: column; gap: 0.2rem;
         padding: 0.95rem 0.8rem 0.95rem 2.4rem; position: relative;
         border-bottom: 1px solid rgba(255,255,255,0.08);
         font-weight: 300;
       }
       .hero-checklist li:last-child { border-bottom: none; }
       .hero-checklist li::before {
-        content: '☑'; color: #6de8df; font-size: 1rem;
+        content: '☑'; color: #6de8df;
+        font-size: 1rem;
         position: absolute; left: 0.5rem; top: 1rem; flex-shrink: 0;
       }
       .li-main { font-size: 0.97rem; color: #fff; font-weight: 400; line-height: 1.5; }
       .li-sub { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.65; font-weight: 300; }
       
       .btn-primary {
-        display: inline-flex; align-items: center; justify-content: center;
+        display: inline-flex;
+        align-items: center; justify-content: center;
         padding: 1.2rem 2.5rem; background: var(--teal); color: #fff; text-decoration: none;
         font-family: 'DM Mono', monospace; font-size: 0.9rem; letter-spacing: 0.15em;
         border-radius: 2px; transition: all 0.3s;
@@ -87,7 +93,8 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
 
       /* 右側圖片框 (佔位符) */
       .hero-image-box {
-        width: 100%; aspect-ratio: 4/5;
+        width: 100%;
+        aspect-ratio: 4/5;
         background: linear-gradient(135deg, rgba(26,140,130,0.1) 0%, rgba(255,255,255,0.05) 100%);
         border: 1px solid rgba(255,255,255,0.1);
         border-radius: 2px; display: flex; align-items: center; justify-content: center;
@@ -100,22 +107,26 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
       .pain-section { padding: 6rem 6vw; background: var(--bg-warm); }
       .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
       .section-label {
-        font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.3em;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.7rem; letter-spacing: 0.3em;
         color: var(--teal); margin-bottom: 1rem; display: block;
       }
       .section-title {
-        font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 2.8rem);
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2rem, 4vw, 2.8rem);
         color: var(--ink); font-weight: 300; line-height: 1.3; margin: 0 0 1.5rem 0;
       }
       .section-subtitle {
         font-size: 1.1rem; line-height: 2; color: var(--body); font-weight: 300;
       }
       .pain-grid {
-        display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;
         max-width: 1000px; margin: 0 auto;
       }
       .pain-card {
-        background: #fff; padding: 2.5rem 2rem; border-top: 3px solid var(--gold);
+        background: #fff; padding: 2.5rem 2rem;
+        border-top: 3px solid var(--gold);
         box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-radius: 2px;
       }
       .pain-card h3 { font-size: 1.2rem; color: var(--ink); margin-top: 0; margin-bottom: 0.6rem; }
@@ -163,8 +174,7 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
         display: flex; flex-direction: column; gap: 0.75rem;
         padding: 2rem 1.75rem; border: 1px solid var(--border);
         border-top: 3px solid var(--teal); border-radius: 2px;
-        text-decoration: none; color: inherit;
-        transition: box-shadow 0.2s, transform 0.2s;
+        text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.2s;
         background: #fff;
       }
       .featured-card:hover { box-shadow: 0 8px 28px rgba(26,140,130,0.10); transform: translateY(-3px); }
@@ -202,8 +212,8 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
     <section class="hero">
       <div class="hero-inner">
         <div>
-          <span class="hero-label">生物醫學專員 · 15年醫療研究背景</span>
-          <h1 class="hero-title">給<em>把健康排最後</em>的你——<br>身體重開機計畫</h1>
+          <span class="hero-label">專屬健康數據顧問 · 15年研究背景</span>
+          <h1 class="hero-title">給<em>把健康排最後</em>的你——<br>體力重開機計畫</h1>
           
           <ul class="hero-checklist">
             <li>
@@ -211,24 +221,24 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
               <span class="li-sub">咖啡只撐一小時，然後又塌下去。腦袋就是轉不動，你自己也知道，但沒辦法。</span>
             </li>
             <li>
-              <span class="li-main">B 群吃了、鐵劑試了、朋友推薦的也買了——還是一樣累</span>
-              <span class="li-sub">你開始懷疑是不是自己體質的問題，而不是補充品的問題。</span>
+              <span class="li-main">B 群吃了、朋友推薦的也買了——還是一樣累</span>
+              <span class="li-sub">你開始懷疑是不是自己狀態的問題，而不是補充品的問題。</span>
             </li>
             <li>
-              <span class="li-main">每年體檢都有紅字，醫生說多休息</span>
-              <span class="li-sub">出了診間，沒有一件事可以改變。紅字明年還在。</span>
+              <span class="li-main">健康檢查數字出現波動，醫生說多休息</span>
+              <span class="li-sub">出了診間，生活還是照舊。不知道從哪裡開始改，疲倦感依然存在。</span>
             </li>
             <li>
               <span class="li-main">感冒剛好，嘴破又來；嘴破好了，肩頸又卡住</span>
-              <span class="li-sub">不是大病，但從來沒有「完全正常」的狀態，身體一直有事。</span>
+              <span class="li-sub">不是大病，但從來沒有「完全正常」的狀態，身體一直覺得耗損。</span>
             </li>
             <li>
               <span class="li-main">以前可以撐到晚上九點還清醒</span>
-              <span class="li-sub">現在下午四點之後，你就在等今天結束。你知道這不對，但不知道從哪裡改。</span>
+              <span class="li-sub">現在下午四點之後，你就在等今天結束。你知道這不對，但沒時間處理。</span>
             </li>
           </ul>
 
-          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-primary">💬 加LINE索取【身體警報自我檢測清單】</a>
+          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-primary">💬 加LINE索取【細胞防護力自我檢測清單】</a>
           <a href="#pain" style="display:inline-flex;align-items:center;margin-top:0.9rem;padding:1rem 2rem;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.65);text-decoration:none;font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.15em;border-radius:2px;transition:all 0.3s;">繼續往下看，了解原因 →</a>
         </div>
         
@@ -236,117 +246,4 @@ const SITE_DESCRIPTION = '告別無效的單一維他命。用生醫專員的科
           <Image src={heroImg} alt="生醫數據投影" />
         </div>
       </div>
-    </section>
-
-    <section class="pain-section" id="pain">
-      <div class="section-header">
-        <span class="section-label">根本原因</span>
-        <h2 class="section-title">以為只是「初老」？<br>其實是你的身體在<em style="font-style:italic;color:var(--teal);">無限期加班</em></h2>
-        <p class="section-subtitle">
-          很多人看到上面的狀況，都覺得「年紀到了」或是「太累而已」。但從生醫角度來看，表面的結果叫「初老」但是身體裡面正在「求救」。這些症狀不是獨立的，它們都指向一個根本原因——<strong>「慢性發炎」</strong>。<strong style="color:var(--teal);">幸好，這是可以調整回來的。</strong>
-        </p>
-      </div>
-      <div class="pain-grid">
-        <div class="pain-card">
-          <h3>🔋 蓄電力見底</h3>
-          <div class="pain-card-tried">你試過：週末狂睡、吃 B 群、換了好幾個品牌</div>
-          <p>補不回來——因為問題不在補充量，而是細胞把你吃進去的東西轉換成能量的能力已經打折，再多也沒用。</p>
-        </div>
-        <div class="pain-card">
-          <h3>📊 滿江紅報告</h3>
-          <div class="pain-card-tried">你試過：照醫生說多休息，買了保健品吃一堆</div>
-          <p>紅字還是在那裡——因為這些數值是慢性發炎累積的結果，不是單一症狀。分開補充，永遠在追著紅字跑。</p>
-        </div>
-        <div class="pain-card">
-          <h3>🛡️ 防護網失效</h3>
-          <div class="pain-card-tried">你試過：多喝水、看診拿藥、嘴破買口內膏</div>
-          <p>好了又來——你的免疫系統長期處於慢性發炎的待命模式，修復速度已跟不上損耗，才會一直輪流出現。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="solution-section">
-      <div class="solution-grid">
-        <div>
-          <span class="section-label">思維轉換</span>
-          <h2 class="section-title">為什麼試了這麼多，還是沒用？</h2>
-          <p style="margin-top: 1.5rem; line-height: 2; font-weight: 300;">因為傳統的方式是「頭痛醫頭」。面對慢性發炎這種全身性的問題，你需要的是把症狀連起來看、找到共同的根本原因，而不是一個症狀配一個保健品。</p>
-        </div>
-        <div>
-          <div class="compare-box">
-            <div class="compare-title">傳統做法：無效堆疊</div>
-            <div class="compare-text">針對單一症狀盲目吃保健品，治標不治本，最後小毛病還是輪流出現。</div>
-          </div>
-          <div class="compare-box mine">
-            <div class="compare-title">我的做法：非藥物健康調校</div>
-            <div class="compare-text">透過生醫數據比對，找出發炎的「真正源頭」，策劃專屬的健康重置計畫。</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="authority-section">
-      <div class="authority-grid">
-        <div class="auth-image-box">
-          <Image src={profileImg} alt="profile" />
-          </div>
-        <div>
-          <span class="section-label" style="margin-bottom: 1rem;">專業底線</span>
-          <h2 class="section-title" style="margin-bottom: 2rem;">我不賣奇蹟，<br>只看科學實證與數據</h2>
-          <p class="auth-text">
-            在醫療體系負責幫醫師整理海量醫學數據的 15 年裡，我深知一件事：<strong>真正有效的健康管理，絕對不是靠行銷話術。</strong>
-            <br><br>
-            我幫你篩選與推薦的介入資源，都必須具備「基因科學」與「細胞層級」的嚴謹實證支持。我們不靠感覺，我們看科學文獻與數據說話。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 推薦閱讀區塊 ===== -->
-    <section class="featured-section">
-      <div class="section-header">
-        <span class="section-label">第一次來？從這裡開始</span>
-        <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem);">這三篇，很多人說讀完才終於搞懂自己的身體</h2>
-      </div>
-      <div class="featured-grid">
-        <a href="/blog/body-signals/normal-checkup-still-tired" class="featured-card">
-          <div class="featured-card-label">身體訊號</div>
-          <h3 class="featured-card-title">體檢報告沒有紅字，但你還是一直累——這不是心理問題</h3>
-          <p class="featured-card-desc">你的數值「正常」不代表你「沒問題」。讀懂這個差距，是一切的起點。</p>
-          <span class="featured-card-cta">閱讀文章 →</span>
-        </a>
-        <a href="/blog/body-signals/three-signs-chronic-inflammation" class="featured-card">
-          <div class="featured-card-label">身體訊號</div>
-          <h3 class="featured-card-title">感冒拖三週、睡滿還是累、傷口好得比以前慢——三件事同時出現，不是巧合</h3>
-          <p class="featured-card-desc">這三個訊號各自「不嚴重」，但同時出現時，身體在說一件很具體的事。</p>
-          <span class="featured-card-cta">閱讀文章 →</span>
-        </a>
-        <a href="/blog/chronic-inflammation/anti-inflammation-anti-aging" class="featured-card">
-          <div class="featured-card-label">慢性發炎科學</div>
-          <h3 class="featured-card-title">抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學</h3>
-          <p class="featured-card-desc">Inflammaging 的概念從哪裡來，為什麼它解釋了你所有那些「小問題」。</p>
-          <span class="featured-card-cta">閱讀文章 →</span>
-        </a>
-      </div>
-      <div style="text-align:center; margin-top: 3rem;">
-        <a href="/blog" style="font-family:'DM Mono',monospace; font-size:0.8rem; letter-spacing:0.15em; color:var(--teal); text-decoration:none; border-bottom: 1px solid var(--teal); padding-bottom: 2px;">查看全部文章 →</a>
-      </div>
-    </section>
-
-    <section id="cta" class="cta-section">
-      <h2 class="cta-title">停止一個個追症狀，先找出共同的根本原因</h2>
-      <p class="cta-sub">
-        如果你也厭倦了無效的補充與一直輪流出現的小狀況，<br>
-        不要急著亂買保健品。先來弄清楚你的身體到底在發生什麼。
-      </p>
-      <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-primary" style="font-size: 1rem; padding: 1.2rem 3rem;">
-        💬 加LINE索取【身體警報自我檢測清單】
-      </a>
-      <div style="font-family:'DM Mono',monospace; font-size:0.7rem; color:rgba(255,255,255,0.4); margin-top:1.5rem; letter-spacing: 0.1em;">
-        加入後 48 小時內回覆你的狀況 · 第一次諮詢免費 · 不推銷產品
-      </div>
-    </section>
-
-    <Footer />
-  </body>
-</html>
+    </section
