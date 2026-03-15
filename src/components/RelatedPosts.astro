@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from './FormattedDate.astro';
+import { getUrlSlug } from '../utils/categories';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
@@ -14,7 +15,7 @@ const { posts } = Astro.props;
     <h2 class="related-title">相關文章</h2>
     <div class="related-grid">
       {posts.map(post => (
-        <a href={`/blog/${post.id}/`} class="related-card">
+        <a href={`/blog/${getUrlSlug(post)}/`} class="related-card">
           <span class="related-date">
             <FormattedDate date={post.data.pubDate} />
           </span>
