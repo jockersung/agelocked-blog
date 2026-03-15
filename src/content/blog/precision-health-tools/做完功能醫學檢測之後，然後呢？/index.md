@@ -110,9 +110,9 @@ slug: 'functional-medicine-execution-gap'
 
 **延伸閱讀：**
 
-- \[為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/)
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/)
 
-- \[你上一次知道自己身體真正的狀態，是什麼時候？Prysm-iO 15秒揭開真相](/blog/precision-health-tools/prysm-io-15sec/)
+- [你上一次知道自己身體真正的狀態，是什麼時候？Prysm-iO 15秒揭開真相](/blog/precision-health-tools/prysm-io-15sec/)
 
 ---
 
