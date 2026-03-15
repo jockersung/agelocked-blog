@@ -103,13 +103,12 @@ slug: "visceral-fat-metabolic-signal"
 
 想先評估自己目前的代謝風險在哪個水位？
 
-**→ 加入 AGELOCKED LINE 諮詢，取得【代謝症候群自我評估清單】**
-LINE：[https://line.me/ti/p/@fer7932k](https://line.me/ti/p/@fer7932k)
+**→ [加入 LINE 諮詢，取得【代謝症候群自我評估清單】](https://line.me/ti/p/@fer7932k)**
 
 ---
 
 ## 參考資料
 
-01. Pontzer H, et al. (2021). Daily energy expenditure through the human life course. *Science*, 373(6556), 808–812.
-02. Tchernof A, Despres JP. (2013). Pathophysiology of human visceral obesity: an update. *Physiol Rev*, 93(1), 359–404.
-03. Hotamisligil GS. (2017). Inflammation, metaflammation and immunometabolic disorders. *Nature*, 542(7640), 177–185.
+01. Pontzer H, et al. (2021). [Daily energy expenditure through the human life course.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8370708/) *Science*, 373(6556), 808–812.
+02. Tchernof A, Despres JP. (2013). [Pathophysiology of human visceral obesity: an update.](https://pubmed.ncbi.nlm.nih.gov/23303913/) *Physiol Rev*, 93(1), 359–404.
+03. Hotamisligil GS. (2017). [Inflammation, metaflammation and immunometabolic disorders.](https://pubmed.ncbi.nlm.nih.gov/28179656/) *Nature*, 542(7640), 177–185.
