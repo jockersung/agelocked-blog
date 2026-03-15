@@ -97,7 +97,7 @@ slug: "visceral-fat-metabolic-signal"
 
 理解這三個循環，才能知道為什麼「少吃」在中年之後越來越難奏效，以及真正需要干預的是什麼。
 
-→ **系列第二篇**：[三個讓你越減越肥的荷爾蒙迴路——胰島素 × 皮質醇 × 睪固酮](/blog/chronic-inflammation/visceral-fat-three-cycles/)
+→ **系列第二篇**：[不是卡路里，是你的荷爾蒙！3 大荷爾蒙陷阱大公開](/blog/chronic-inflammation/visceral-fat-three-cycles/)
 
 ---
 
