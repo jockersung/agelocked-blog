@@ -1,11 +1,11 @@
 ---
 title: "瑪卡加精胺酸，為什麼吃了還是沒感覺？——市售男性活力配方的根本盲點"
-slug: "maca-arginine-zinc-vs-ageloc-r2"
-category: "precision-health"
-tags: ["瑪卡", "精胺酸", "男性活力", "ageLOC R2", "睪固酮", "粒線體", "慢性疲勞"]
 description: "市售最常見的「瑪卡+精胺酸+鋅」組合，為什麼對40歲後的主管往往無效？帶你看懂「刺激神經」與「重啟細胞發電廠（Nrf2/粒線體）」的科學機制差異。"
-pubDate: 2026-03-25
+pubDate: 2026-03-15
 heroImage: "./瑪卡劑量競賽陷阱.png"
+tags: ["瑪卡", "精胺酸", "男性活力", "ageLOC R2", "睪固酮", "粒線體", "慢性疲勞"]
+category: '介入與調校'
+slug: 'maca-arginine-vs-ageloc-r2'
 ---
 
 你在網路上搜尋「男性活力」，出來的前幾名幾乎都長一樣：
