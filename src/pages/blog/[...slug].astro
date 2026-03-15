@@ -17,10 +17,27 @@ const { Content, headings } = await render(post);
 
 const categorySlug = LABEL_TO_SLUG[post.data.category] ?? null;
 const allPosts = await getCollection('blog');
-const related = allPosts
-	.filter(p => p.id !== post.id && LABEL_TO_SLUG[p.data.category] === categorySlug && categorySlug !== null)
-	.sort(() => Math.random() - 0.5)
-	.slice(0, 3);
+const currentSeries = post.data.series ?? null;
+
+// 同系列文章（依 series_order 排序）
+const seriesPosts = currentSeries
+	? allPosts
+		.filter(p => p.id !== post.id && p.data.series === currentSeries)
+		.sort((a, b) => (a.data.series_order ?? 99) - (b.data.series_order ?? 99))
+	: [];
+
+// 若同系列文章不足 3 篇，用同 category 文章補足（排除已出現的）
+const seriesIds = new Set(seriesPosts.map(p => p.id));
+const categoryFallback = allPosts
+	.filter(p =>
+		p.id !== post.id &&
+		!seriesIds.has(p.id) &&
+		LABEL_TO_SLUG[p.data.category] === categorySlug &&
+		categorySlug !== null
+	)
+	.sort(() => Math.random() - 0.5);
+
+const related = [...seriesPosts, ...categoryFallback].slice(0, 3);
 ---
 
 <BlogPost {...post.data} headings={headings} relatedPosts={related}>
