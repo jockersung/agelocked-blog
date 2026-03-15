@@ -1,0 +1,736 @@
+---
+// src/pages/action-plan.astro
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = '個人化 90 天保健參考方案 · AGELOCKED';
+const description = '輸入你的健康數字，對照科學文獻，整理出適合你的 90 天 ageLOC 保健參考順序與追蹤指標。';
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style>
+      :root {
+        --teal: #1a8c82; --teal-d: #116b63; --teal-p: rgba(26,140,130,0.07);
+        --gold: #b8935a; --gold-p: rgba(184,147,90,0.09); --gold-mid: rgba(184,147,90,0.20);
+        --ink: #111820; --body: #3a4a58;
+        --border: rgba(30,70,100,0.09); --border-gold: rgba(184,147,90,0.20);
+        --text: #111820; --muted: #7a8fa0; --bg: #f8f9fb; --bg-warm: #faf8f5; --bg2: #ffffff; --surface: #f0f3f7;
+        --blue: #2563eb; --purple: #7c3aed;
+        --orange: #c2680a; --red: #c0392b;
+        --green: #1a7a50; --gold2: #92680a;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Noto Serif TC', serif; background: var(--bg2); color: var(--body); }
+
+      /* ── PAGE HEADER ── */
+      .plan-header {
+        padding: 3.5rem 6vw 3rem; position: relative; overflow: hidden;
+        background: linear-gradient(160deg, var(--bg-warm) 60%, rgba(26,140,130,0.04));
+        border-bottom: 1px solid rgba(26,140,130,0.12);
+      }
+      .plan-header::before {
+        content: ''; position: absolute; top: -40%; right: -10%;
+        width: 500px; height: 500px; pointer-events: none;
+        background: radial-gradient(circle, rgba(26,140,130,0.06) 0%, transparent 70%);
+      }
+      .header-inner { max-width: 700px; margin: 0 auto; position: relative; }
+      .brand-row {
+        font-family: 'DM Mono', monospace; font-size: .6rem; letter-spacing: .4em;
+        color: var(--gold); text-transform: uppercase; margin-bottom: 1.3rem;
+        display: flex; align-items: center; gap: .7rem;
+      }
+      .brand-row::before { content: '◆'; font-size: .35rem; }
+      .lock-pill {
+        display: inline-flex; align-items: center; gap: .4rem;
+        background: var(--gold-p); border: 1px solid var(--border-gold);
+        border-radius: 2px; padding: .18rem .65rem; font-family: 'DM Mono', monospace;
+        font-size: .55rem; letter-spacing: .2em; color: var(--gold); text-transform: uppercase;
+        margin-bottom: 1.1rem;
+      }
+      .plan-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 300; line-height: 1.15;
+        margin-bottom: .8rem;
+      }
+      .plan-title em { font-style: italic; color: var(--teal); }
+      .plan-desc { font-size: .88rem; color: var(--muted); line-height: 2; font-weight: 300; max-width: 500px; }
+      .progress-rail { height: 2px; background: rgba(30,70,100,0.10); margin-top: 2rem; }
+      .progress-fill { height: 100%; background: linear-gradient(90deg, var(--teal), var(--teal-d)); width: 0%; transition: width .4s ease; }
+
+      /* ── FORM WRAP ── */
+      .form-wrap { max-width: 700px; margin: 0 auto; padding: 2.5rem 6vw 5rem; }
+
+      /* Cards */
+      .f-card {
+        background: var(--bg2); border: 1px solid var(--border);
+        border-radius: 3px; margin-bottom: 1.2rem; overflow: hidden;
+        animation: fadeUp .45s ease both;
+      }
+      @keyframes fadeUp { from{opacity:0;transform:translateY(12px);} to{opacity:1;transform:translateY(0);} }
+      .f-card:nth-child(2){animation-delay:.05s;}
+      .f-card:nth-child(3){animation-delay:.10s;}
+      .f-card:nth-child(4){animation-delay:.15s;}
+
+      .f-head {
+        padding: 1.1rem 1.5rem; border-bottom: 1px solid rgba(26,140,130,0.12);
+        display: flex; align-items: flex-start; gap: .85rem;
+      }
+      .f-num {
+        font-family: 'DM Mono', monospace; font-size: .55rem; letter-spacing: .2em;
+        color: var(--teal); background: var(--teal-p); padding: .18rem .5rem;
+        border-radius: 1px; flex-shrink: 0; margin-top: .2rem;
+      }
+      .f-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 400; color: var(--ink); }
+      .f-sub { font-size: .72rem; color: var(--muted); font-weight: 300; margin-top: .18rem; }
+      .f-body { padding: 1.3rem 1.5rem; }
+
+      /* Fields */
+      .field { margin-bottom: 1rem; }
+      .field:last-child { margin-bottom: 0; }
+      .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+      .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .75rem; }
+      label {
+        display: block; font-size: .78rem; font-weight: 400;
+        color: var(--ink); margin-bottom: .38rem;
+      }
+      .opt { font-family: 'DM Mono', monospace; font-size: .5rem; letter-spacing: .12em; color: var(--muted); background: var(--surface); padding: .06rem .35rem; border-radius: 1px; margin-left: .3rem; }
+      .iw { position: relative; }
+      input[type=number], input[type=text], select {
+        width: 100%; background: var(--surface); border: 1px solid var(--border);
+        border-radius: 2px; padding: .62rem .82rem; font-family: 'Noto Serif TC', serif;
+        font-size: .85rem; color: var(--ink); transition: border-color .2s; appearance: none;
+      }
+      input:focus, select:focus { outline: none; border-color: var(--teal); background: var(--bg2); }
+      .unit { position: absolute; right: .75rem; top: 50%; transform: translateY(-50%); font-family: 'DM Mono', monospace; font-size: .58rem; color: var(--muted); pointer-events: none; }
+      select option { background: var(--bg2); }
+
+      /* Checkboxes */
+      .chk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .42rem; }
+      .chk {
+        display: flex; align-items: flex-start; gap: .5rem; padding: .6rem .82rem;
+        background: var(--surface); border: 1px solid var(--border); border-radius: 2px;
+        cursor: pointer; font-size: .78rem; color: var(--muted); font-weight: 300;
+        line-height: 1.55; transition: all .15s;
+      }
+      .chk:hover { border-color: var(--teal); color: var(--ink); }
+      .chk.on { border-color: var(--teal); color: var(--ink); background: var(--teal-p); }
+      .chk input { accent-color: var(--teal); flex-shrink: 0; margin-top: .12rem; }
+
+      /* Generate button */
+      .gen-wrap { text-align: center; margin: 1.8rem 0 0; }
+      .btn-gen {
+        padding: 1rem 3.2rem; background: var(--teal); color: #fff; border: none;
+        border-radius: 2px; cursor: pointer; font-family: 'DM Mono', monospace;
+        font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; transition: all .3s;
+      }
+      .btn-gen:hover { background: var(--teal-d); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,140,130,.35); }
+
+      /* ── OUTPUT ── */
+      #output { display: none; margin-top: 2rem; animation: fadeUp .6s ease both; }
+
+      /* Output header */
+      .out-header {
+        background: linear-gradient(135deg, var(--bg-warm) 0%, rgba(26,140,130,0.05) 100%);
+        border: 1px solid rgba(26,140,130,0.20); border-radius: 3px;
+        padding: 1.8rem; margin-bottom: 1.2rem; position: relative; overflow: hidden;
+      }
+      .out-header::before {
+        content: ''; position: absolute; top: -30%; right: -10%; width: 280px; height: 280px;
+        background: radial-gradient(circle, rgba(26,140,130,.12) 0%, transparent 70%); pointer-events: none;
+      }
+      .out-eyebrow { font-family: 'DM Mono', monospace; font-size: .55rem; letter-spacing: .35em; color: var(--gold); text-transform: uppercase; margin-bottom: .8rem; }
+      .out-title { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 300; color: var(--ink); line-height: 1.3; margin-bottom: .7rem; }
+      .out-title em { font-style: italic; color: var(--teal); }
+      .primary-pill {
+        display: inline-flex; align-items: center; gap: .45rem;
+        background: rgba(194,104,10,0.08); border: 1px solid rgba(194,104,10,0.20);
+        border-radius: 2px; padding: .25rem .8rem;
+      }
+      .pp-label { font-family: 'DM Mono', monospace; font-size: .52rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
+      .pp-val { font-size: .82rem; color: var(--ink); font-weight: 500; }
+
+      /* Score bars */
+      .scores-block {
+        background: var(--bg2); border: 1px solid var(--border); border-radius: 3px;
+        padding: 1.3rem 1.5rem; margin-bottom: 1.2rem;
+      }
+      .block-label { font-family: 'DM Mono', monospace; font-size: .55rem; letter-spacing: .28em; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; }
+      .s-row { margin-bottom: .85rem; }
+      .s-row:last-of-type { margin-bottom: 0; }
+      .s-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: .32rem; }
+      .s-name { font-size: .8rem; color: var(--ink); }
+      .s-val { font-family: 'DM Mono', monospace; font-size: .68rem; color: var(--muted); }
+      .s-rail { height: 4px; background: var(--surface); border-radius: 3px; overflow: hidden; }
+      .s-bar { height: 100%; border-radius: 3px; transition: width 1s cubic-bezier(.4,0,.2,1); }
+      .scores-note { font-size: .7rem; color: var(--muted); font-weight: 300; font-weight: 300; margin-top: .9rem; line-height: 1.8; }
+
+      /* Data comparison */
+      .data-block {
+        background: var(--bg2); border: 1px solid var(--border); border-radius: 3px;
+        padding: 1.3rem 1.5rem; margin-bottom: 1.2rem;
+      }
+      .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .65rem; margin-top: .9rem; }
+      .d-card { background: var(--bg); border: 1px solid var(--border); border-radius: 2px; padding: .95rem 1rem; }
+      .d-source { font-family: 'DM Mono', monospace; font-size: .52rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; margin-bottom: .45rem; }
+      .d-reading { font-size: .78rem; color: var(--ink); font-weight: 300; line-height: 1.75; white-space: pre-line; }
+      .d-badge {
+        margin-top: .45rem; padding: .32rem .55rem; border-radius: 1px;
+        font-size: .7rem; font-weight: 300; line-height: 1.6;
+      }
+      .badge-ok  { background: rgba(26,122,80,0.08); color: #1a7a50; }
+      .badge-warn{ background: rgba(194,104,10,0.08); color: var(--orange); }
+      .badge-red { background: rgba(192,57,43,0.08); color: var(--red); }
+
+      /* Analysis block */
+      .analysis-block {
+        background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--teal);
+        border-radius: 3px; padding: 1.3rem 1.5rem; margin-bottom: 1.2rem;
+      }
+      .analysis-label { font-family: 'DM Mono', monospace; font-size: .55rem; letter-spacing: .28em; color: var(--teal); text-transform: uppercase; margin-bottom: .9rem; }
+      .analysis-body { font-size: .85rem; color: var(--body); line-height: 2.1; font-weight: 300; }
+      .analysis-body strong { color: var(--ink); font-weight: 500; }
+      .analysis-body p { margin-bottom: .9rem; }
+      .analysis-body p:last-child { margin-bottom: 0; }
+
+      /* Timeline */
+      .tl-block { margin-bottom: 1.2rem; }
+      .tl-label { font-family: 'DM Mono', monospace; font-size: .55rem; letter-spacing: .28em; color: var(--teal); text-transform: uppercase; margin-bottom: 1rem; }
+      .tl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+      .tl-card {
+        background: var(--bg2); border: 1px solid var(--border); border-radius: 3px;
+        padding: 1.2rem 1.1rem; position: relative; overflow: hidden;
+      }
+      .tl-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2.5px; }
+      .tl-m1::before { background: var(--teal); }
+      .tl-m2::before { background: var(--blue); }
+      .tl-m3::before { background: var(--purple); }
+      .tl-month { font-family: 'DM Mono', monospace; font-size: .54rem; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; margin-bottom: .55rem; }
+      .tl-phase { font-family: 'Cormorant Garamond', serif; font-size: .95rem; font-weight: 400; color: var(--ink); margin-bottom: .75rem; line-height: 1.3; }
+      .tl-items { display: flex; flex-direction: column; gap: .38rem; }
+      .tl-item { font-size: .75rem; color: var(--body); font-weight: 300; line-height: 1.65; display: flex; gap: .45rem; align-items: flex-start; }
+      .tl-dot { width: 4px; height: 4px; border-radius: 50%; flex-shrink: 0; margin-top: .5rem; }
+      .tl-m1 .tl-dot { background: var(--teal); }
+      .tl-m2 .tl-dot { background: var(--blue); }
+      .tl-m3 .tl-dot { background: var(--purple); }
+      .tl-note { font-size: .68rem; color: var(--muted); font-weight: 300; margin-top: .85rem; line-height: 1.8; }
+
+      /* 30-day tracking */
+      .track-block {
+        background: var(--bg2); border: 1px solid var(--border); border-radius: 3px;
+        padding: 1.3rem 1.5rem; margin-bottom: 1.2rem;
+      }
+      .track-label { font-family: 'DM Mono', monospace; font-size: .55rem; letter-spacing: .28em; color: var(--gold2); text-transform: uppercase; margin-bottom: 1rem; }
+      .track-intro { font-size: .78rem; color: var(--muted); font-weight: 300; line-height: 1.85; margin-bottom: 1rem; }
+      .track-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; }
+      .track-card {
+        background: var(--surface); border: 1px solid var(--border); border-radius: 2px;
+        padding: .95rem 1rem;
+      }
+      .track-metric { font-size: .82rem; font-weight: 400; color: var(--ink); margin-bottom: .28rem; }
+      .track-target { font-family: 'DM Mono', monospace; font-size: .62rem; color: var(--teal); margin-bottom: .32rem; letter-spacing: .05em; }
+      .track-how { font-size: .72rem; color: var(--body); font-weight: 300; line-height: 1.75; }
+
+      /* CTA */
+      .cta-block {
+        background: var(--bg2); border: 1px solid rgba(26,140,130,0.20); border-radius: 3px;
+        padding: 1.8rem; text-align: center; margin-bottom: 1.2rem;
+      }
+      .cta-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 300; color: var(--ink); margin-bottom: .45rem; }
+      .cta-sub { font-size: .78rem; color: var(--muted); font-weight: 300; line-height: 1.9; margin-bottom: 1.2rem; }
+      .btn-line {
+        display: inline-block; padding: .85rem 2.2rem; background: var(--teal); color: #fff;
+        font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .18em;
+        text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all .3s;
+      }
+      .btn-line:hover { background: var(--teal-d); transform: translateY(-2px); }
+
+      /* Legal */
+      .legal-note {
+        background: var(--surface); border: 1px solid var(--border); border-radius: 2px;
+        padding: .95rem 1.2rem; text-align: center;
+        font-size: .68rem; color: var(--muted); font-weight: 300; line-height: 1.9;
+      }
+
+      /* Responsive */
+      @media (max-width: 640px) {
+        .row2, .row3 { grid-template-columns: 1fr; }
+        .chk-grid { grid-template-columns: 1fr; }
+        .tl-grid { grid-template-columns: 1fr; }
+        .data-grid { grid-template-columns: 1fr; }
+        .track-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+
+    <div class="plan-header">
+      <div class="header-inner">
+        <div class="brand-row">AGELOCKED · 孫義坤</div>
+        <div class="lock-pill">🔒 LINE 限定 · 諮詢後專屬</div>
+        <h1 class="plan-title">個人化 90 天<br><em>保健參考方案</em></h1>
+        <p class="plan-desc">輸入你的健康數字，自動對照科學文獻，整理出你的數字觀察維度與 90 天 ageLOC 保健參考順序。</p>
+        <div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+    </div>
+
+    <div class="form-wrap">
+
+      <!-- 01 血脂體態 -->
+      <div class="f-card">
+        <div class="f-head">
+          <div class="f-num">01</div>
+          <div>
+            <div class="f-title">血脂與體態數據</div>
+            <div class="f-sub">健檢報告上都有 · 沒有的欄位跳過</div>
+          </div>
+        </div>
+        <div class="f-body">
+          <div class="row3">
+            <div class="field">
+              <label>三酸甘油酯 TG</label>
+              <div class="iw"><input type="number" id="tg" placeholder="150" oninput="prog()" /><span class="unit">mg/dL</span></div>
+            </div>
+            <div class="field">
+              <label>高密度脂蛋白 HDL</label>
+              <div class="iw"><input type="number" id="hdl" placeholder="50" oninput="prog()" /><span class="unit">mg/dL</span></div>
+            </div>
+            <div class="field">
+              <label>腰圍</label>
+              <div class="iw"><input type="number" id="waist" placeholder="88" oninput="prog()" /><span class="unit">cm</span></div>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>空腹血糖 <span class="opt">選填</span></label>
+              <div class="iw"><input type="number" id="glucose" placeholder="95" oninput="prog()" /><span class="unit">mg/dL</span></div>
+            </div>
+            <div class="field">
+              <label>Prysm iO 掃描分數 <span class="opt">選填</span></label>
+              <div class="iw"><input type="number" id="prysm" placeholder="30000" oninput="prog()" /><span class="unit">SkinScore</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 手錶數據 -->
+      <div class="f-card">
+        <div class="f-head">
+          <div class="f-num">02</div>
+          <div>
+            <div class="f-title">穿戴裝置數據</div>
+            <div class="f-sub">Apple Watch / Garmin / Oura — 過去一個月平均值</div>
+          </div>
+        </div>
+        <div class="f-body">
+          <div class="row2">
+            <div class="field">
+              <label>靜止心率 RHR</label>
+              <div class="iw"><input type="number" id="rhr" placeholder="64" oninput="prog()" /><span class="unit">bpm</span></div>
+            </div>
+            <div class="field">
+              <label>心率變異度 HRV</label>
+              <div class="iw"><input type="number" id="hrv" placeholder="38" oninput="prog()" /><span class="unit">ms</span></div>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>RHR 近期趨勢</label>
+              <select id="rhr_trend" onchange="prog()">
+                <option value="">請選擇</option>
+                <option value="up">緩步上升（近一個月）</option>
+                <option value="stable">穩定</option>
+                <option value="down">有在改善</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>深睡比例 <span class="opt">選填</span></label>
+              <div class="iw"><input type="number" id="deepsleep" placeholder="15" oninput="prog()" /><span class="unit">%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 症狀 -->
+      <div class="f-card">
+        <div class="f-head">
+          <div class="f-num">03</div>
+          <div>
+            <div class="f-title">身體訊號</div>
+            <div class="f-sub">勾選近 3 個月持續有感覺的</div>
+          </div>
+        </div>
+        <div class="f-body">
+          <div class="chk-grid" id="symGrid">
+            <label class="chk"><input type="checkbox" value="fatigue_pm"    onchange="tog(this);prog()" />下午疲勞、昏沉</label>
+            <label class="chk"><input type="checkbox" value="sleep_tired"   onchange="tog(this);prog()" />睡夠了還是很累</label>
+            <label class="chk"><input type="checkbox" value="brain_fog"     onchange="tog(this);prog()" />腦霧、思緒不清晰</label>
+            <label class="chk"><input type="checkbox" value="recovery_slow" onchange="tog(this);prog()" />運動後恢復變慢</label>
+            <label class="chk"><input type="checkbox" value="belly_up"      onchange="tog(this);prog()" />腹部脂肪明顯增加</label>
+            <label class="chk"><input type="checkbox" value="libido_down"   onchange="tog(this);prog()" />性慾明顯下降</label>
+            <label class="chk"><input type="checkbox" value="morning_erect" onchange="tog(this);prog()" />晨勃頻率減少</label>
+            <label class="chk"><input type="checkbox" value="stress_high"   onchange="tog(this);prog()" />壓力大、難放鬆</label>
+            <label class="chk"><input type="checkbox" value="sleep_poor"    onchange="tog(this);prog()" />睡眠淺、容易醒</label>
+            <label class="chk"><input type="checkbox" value="muscle_loss"   onchange="tog(this);prog()" />肌肉量感覺下降</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="gen-wrap">
+        <button class="btn-gen" onclick="generate()">▶ 產生我的 90 天保健參考方案</button>
+      </div>
+
+      <!-- ── OUTPUT ── -->
+      <div id="output">
+
+        <!-- Header -->
+        <div class="out-header">
+          <div class="out-eyebrow">◆ 文獻對照結果</div>
+          <div class="out-title">你的數字，<em>主要觀察維度</em></div>
+          <div class="primary-pill">
+            <span class="pp-label">主要維度</span>
+            <span class="pp-val" id="ppText"></span>
+          </div>
+        </div>
+
+        <!-- Score bars -->
+        <div class="scores-block">
+          <div class="block-label">◆ 三維度文獻觀察評分</div>
+          <div class="s-row">
+            <div class="s-meta"><span class="s-name">粒線體能量維度</span><span class="s-val" id="sA">—</span></div>
+            <div class="s-rail"><div class="s-bar" id="bA" style="background:var(--teal);width:0%"></div></div>
+          </div>
+          <div class="s-row">
+            <div class="s-meta"><span class="s-name">皮質醇 ／ 睡眠修復維度</span><span class="s-val" id="sB">—</span></div>
+            <div class="s-rail"><div class="s-bar" id="bB" style="background:var(--purple);width:0%"></div></div>
+          </div>
+          <div class="s-row">
+            <div class="s-meta"><span class="s-name">睪固酮 ／ 內臟脂肪維度</span><span class="s-val" id="sC">—</span></div>
+            <div class="s-rail"><div class="s-bar" id="bC" style="background:var(--orange);width:0%"></div></div>
+          </div>
+          <p class="scores-note">評分依你輸入的數值與症狀，對照預防醫學文獻的參考區間加權計算。分數越高代表該維度在文獻中的觀察訊號越顯著，不代表診斷結論。</p>
+        </div>
+
+        <!-- Data comparison -->
+        <div class="data-block">
+          <div class="block-label">◆ 健檢 × 穿戴裝置 × Prysm iO 文獻對照</div>
+          <div class="data-grid">
+            <div class="d-card">
+              <div class="d-source">健檢報告</div>
+              <div class="d-reading" id="dHC"></div>
+              <div class="d-badge" id="bHC"></div>
+            </div>
+            <div class="d-card">
+              <div class="d-source">穿戴裝置</div>
+              <div class="d-reading" id="dW"></div>
+              <div class="d-badge" id="bW"></div>
+            </div>
+            <div class="d-card">
+              <div class="d-source">Prysm iO</div>
+              <div class="d-reading" id="dP"></div>
+              <div class="d-badge" id="bP"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed analysis -->
+        <div class="analysis-block">
+          <div class="analysis-label">◆ 數字說了什麼——詳細文獻對照說明</div>
+          <div class="analysis-body" id="analysisBody"></div>
+        </div>
+
+        <!-- 90-day timeline -->
+        <div class="tl-block">
+          <div class="tl-label">◆ 90 天保健參考順序</div>
+          <div class="tl-grid">
+            <div class="tl-card tl-m1"><div class="tl-month">第一個月</div><div class="tl-phase" id="p1t"></div><div class="tl-items" id="p1i"></div></div>
+            <div class="tl-card tl-m2"><div class="tl-month">第二個月</div><div class="tl-phase" id="p2t"></div><div class="tl-items" id="p2i"></div></div>
+            <div class="tl-card tl-m3"><div class="tl-month">第三個月</div><div class="tl-phase" id="p3t"></div><div class="tl-items" id="p3i"></div></div>
+          </div>
+          <p class="tl-note">※ 以上為基於文獻觀察的保健參考方向，不構成醫療診斷或治療建議。請與孫義坤確認是否適合你目前的個別狀況後再執行。</p>
+        </div>
+
+        <!-- 30-day tracking -->
+        <div class="track-block">
+          <div class="track-label">◆ 30 天後追蹤指標</div>
+          <p class="track-intro">
+            保健方案的有效性需要數字驗證，而不是靠感覺猜測。以下四個指標是 30 天後確認方向是否正確的最直接依據——每一項都附上「怎麼找這個數字」的操作說明。
+          </p>
+          <div class="track-grid" id="trackGrid"></div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-block">
+          <div class="cta-title">有任何數字不確定，或想確認這個方向適不適合你？</div>
+          <p class="cta-sub">截圖這個頁面或把你的分數傳給我，我會告訴你有沒有需要調整的地方。</p>
+          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-line">💬 傳給孫義坤確認</a>
+        </div>
+
+        <div class="legal-note">
+          本工具提供的所有資訊為健康科學文獻整理，不構成醫療診斷、治療建議或處方。<br>
+          如有健康疑慮，請諮詢合格醫療人員。· AGELOCKED © 2026
+        </div>
+
+      </div><!-- /output -->
+    </div><!-- /form-wrap -->
+
+    <Footer />
+
+    <script is:inline>
+    // ── UTILS ──
+    const g = id => parseFloat(document.getElementById(id).value) || 0;
+    const gs = id => document.getElementById(id).value;
+    const syms = () => [...document.querySelectorAll('#symGrid input:checked')].map(e=>e.value);
+    function tog(el){ el.closest('.chk').classList.toggle('on', el.checked); }
+    function prog(){
+      const filled = ['tg','hdl','waist','rhr','hrv'].filter(id=>document.getElementById(id).value).length;
+      const chks = Math.min(syms().length, 3);
+      document.getElementById('progressFill').style.width = Math.min(100, Math.round((filled+chks)/8*100))+'%';
+    }
+
+    // ── SCORING ──
+    function score(){
+      const tg=g('tg'), hdl=g('hdl'), waist=g('waist');
+      const rhr=g('rhr'), hrv=g('hrv'), ds=g('deepsleep');
+      const trend=gs('rhr_trend'), ss=syms();
+      let A=0,B=0,C=0;
+      const ratio=(tg&&hdl)?tg/hdl:null;
+      if(ratio){ if(ratio>3.5)C+=3; else if(ratio>2)C+=2; }
+      if(waist){ if(waist>=95)C+=3; else if(waist>=90)C+=2; else if(waist>=85)C+=1; }
+      if(rhr){ if(rhr>72)A+=3; else if(rhr>68)A+=2; else if(rhr>65)A+=1; }
+      if(trend==='up')A+=2;
+      if(hrv){ if(hrv<25)B+=3; else if(hrv<35)B+=2; else if(hrv<45)B+=1; }
+      if(ds){ if(ds<10)B+=3; else if(ds<15)B+=2; else if(ds<20)B+=1; }
+      const sm={fatigue_pm:{A:2},sleep_tired:{A:2,B:1},brain_fog:{A:1,B:1},recovery_slow:{A:2},
+                belly_up:{C:2},libido_down:{C:2},morning_erect:{C:3},stress_high:{B:2},
+                sleep_poor:{B:2},muscle_loss:{C:1,A:1}};
+      ss.forEach(s=>{ const w=sm[s]||{}; A+=w.A||0; B+=w.B||0; C+=w.C||0; });
+      const mx=Math.max(A,B,C,1);
+      const p = A>=B&&A>=C?'mito': B>=A&&B>=C?'cortisol':'testosterone';
+      return {A,B,C,Ap:Math.round(A/mx*100),Bp:Math.round(B/mx*100),Cp:Math.round(C/mx*100),ratio,p};
+    }
+
+    // ── DETAILED ANALYSIS TEXT ──
+    const analysis = {
+      mito(sc){
+        const rhr=g('rhr'), hrv=g('hrv'), trend=gs('rhr_trend'), ss=syms();
+        let html='';
+        html+=`<p>你的數字組合在文獻中與<strong>粒線體能量代謝效率下降</strong>的觀察訊號最為吻合。`;
+        if(rhr>65||trend==='up'){
+          html+=`靜止心率${rhr?`（${rhr} bpm）`:''}${trend==='up'?'近期緩步上升，':''}在研究中與細胞能量輸出下降、身體底層維持成本升高有關聯——當粒線體效率降低，心臟需要更多次收縮來維持相同的組織灌流。`;
+        }
+        if(hrv&&hrv<45){
+          html+=`心率變異度（HRV ${hrv} ms）落在${hrv<25?'低於常見警示':'偏低觀察'}區間，研究顯示此區間的副交感神經活性偏低，身體在夜間進入深層修復模式的效率受限，是「睡了還是累」的常見生理背景。`;
+        }
+        if(ss.includes('fatigue_pm')||ss.includes('recovery_slow')){
+          html+=`<br><br>你勾選的症狀（${[ss.includes('fatigue_pm')?'下午疲勞':null, ss.includes('recovery_slow')?'運動恢復慢':null].filter(Boolean).join('、')}）與文獻描述的粒線體 ATP 輸出不足表現一致。這類疲勞的特徵是<strong>系統性、下午更明顯、與運動量不成比例</strong>，有別於單純睡眠不足造成的疲倦。`;
+        }
+        html+=`</p><p>ageLOC R2 的設計針對此維度的核心機制——日錠啟動 Nrf2 轉錄因子，上調細胞內源性抗氧化酵素（SOD、GSH）；夜錠支援夜間粒線體自噬（受損粒線體的清除更新）與肝臟 Phase II 解毒窗口。這不是補充外來的抗氧化劑，而是讓細胞自身的修復系統重新上線。</p>`;
+        return html;
+      },
+      cortisol(sc){
+        const hrv=g('hrv'), ds=g('deepsleep'), ss=syms();
+        let html='';
+        html+=`<p>你的數字組合在文獻中與<strong>皮質醇節律紊亂 / 副交感神經修復效率下降</strong>的觀察訊號最為吻合。`;
+        if(hrv&&hrv<45){
+          html+=`HRV（${hrv} ms）偏低是此維度最直接的客觀指標——它反映的是自律神經「油門（交感）與煞車（副交感）」切換的靈活度。數值偏低代表身體長期處於交感神經主導的備戰狀態，副交感神經的修復窗口被壓縮。`;
+        }
+        if(ds&&ds<20){
+          html+=`深睡比例（${ds}%）低於文獻建議的 15–20% 參考範圍，深睡階段是睪固酮脈衝式分泌、粒線體自噬、以及皮質醇歸零的主要時間窗口——這個窗口利用率不足，其他維度的介入效果都會受到限制。`;
+        }
+        if(ss.includes('stress_high')||ss.includes('sleep_poor')){
+          html+=`<br><br>你勾選的症狀（${[ss.includes('stress_high')?'壓力難放鬆':null, ss.includes('sleep_poor')?'睡眠淺易醒':null].filter(Boolean).join('、')}）在文獻中與 HPA 軸（下視丘—垂體—腎上腺）過度活化有關聯，是皮質醇節律長期偏移的主要表現。`;
+        }
+        html+=`</p><p><strong>為什麼要先處理這個維度？</strong>皮質醇偏高是睪固酮的直接拮抗因素（兩者共享同一前驅物），也會削弱 Oligonol® 的產熱效應。在這個維度未穩定之前，貿然加入其他保健成分，效果容易被部分抵消。MYND360 舒眠膠囊針對睡眠修復窗口設計，是此維度的優先選項。</p>`;
+        return html;
+      },
+      testosterone(sc){
+        const ratio=sc.ratio, waist=g('waist'), ss=syms();
+        let html='';
+        html+=`<p>你的數字組合在文獻中與<strong>睪固酮下滑 × 內臟脂肪累積的雙向惡性迴路</strong>的觀察訊號最為吻合。`;
+        if(ratio){
+          html+=`TG/HDL 比值（${ratio.toFixed(2)}）${ratio>3.5?'超過文獻定義的次臨床代謝風險閾值（3.5）':'落在值得關注的觀察區間（>2）'}，研究顯示此數值與胰島素敏感性下降、內臟脂肪累積的族群分佈高度重疊。`;
+        }
+        if(waist>=85){
+          html+=`腰圍（${waist} cm）${waist>=90?'達到台灣代謝症候群定義的觀察閾值（男性 ≥ 90 cm）':'在代謝風險觀察範圍內（85–89 cm）'}。內臟脂肪（非皮下脂肪）是活躍的內分泌器官，持續分泌 IL-6、TNF-α 等促炎細胞因子，並透過芳香酶（CYP19A1）將睪固酮轉化為雌激素，形成「脂肪越多→睪固酮越低→脂肪更多」的自我強化迴路。`;
+        }
+        if(ss.includes('morning_erect')||ss.includes('libido_down')){
+          html+=`<br><br>你勾選的症狀（${[ss.includes('morning_erect')?'晨勃頻率減少':null, ss.includes('libido_down')?'性慾下降':null].filter(Boolean).join('、')}）在文獻中是游離睪固酮水平下滑的早期主觀指標，與上述代謝數字的組合互相印證。`;
+        }
+        html+=`</p><p>ageLOC R2 的 Nrf2 路徑介入，配合 ageLOC Meta 的三重多酚機制（腸道菌路徑 × 產熱代謝 × 脂肪動員），針對此迴路的多個節點同時切入。Meta 的兒茶素 COMT 抑制機制需要有運動刺激作為基礎——每週 3 次以上 Zone 2 有氧（維持對話不喘的強度）是讓這個成分充分發揮的前提條件。</p>`;
+        return html;
+      }
+    };
+
+    // ── PLANS ──
+    const plans = {
+      mito:{
+        pp:'粒線體能量維度 · 觀察訊號最強',
+        p1t:'建立 Nrf2 與粒線體基礎', p1i:[
+          'ageLOC R2 日錠（早餐後）：啟動 Nrf2 路徑，上調 SOD / GSH 等內源性抗氧化酵素',
+          'ageLOC R2 夜錠（睡前）：支援粒線體自噬窗口與肝臟 Phase II 解毒',
+          '觀察重點：下午能量感受、Apple Watch RHR 趨勢方向'
+        ],
+        p2t:'確認基礎後補強', p2i:[
+          '第 4 週確認 RHR 是否穩定或下降，若有改善繼續維持 R2 完整模組',
+          '視情況評估加入 LifePak（全方位微量營養素底層補充）',
+          '開始記錄深睡比例作為第三個月的對比基準'
+        ],
+        p3t:'延伸評估', p3i:[
+          '第 8 週重新評估三個維度的主觀感受變化',
+          '若腰圍仍在觀察區間，可評估加入 ageLOC Meta',
+          '安排新一次健檢，追蹤 TG/HDL 比值變化'
+        ]
+      },
+      cortisol:{
+        pp:'皮質醇 ／ 睡眠修復維度 · 觀察訊號最強',
+        p1t:'睡眠修復窗口優先', p1i:[
+          'MYND360 舒眠膠囊（睡前）：穩定皮質醇節律，改善深睡比例',
+          '此階段暫不加入 R2——睡眠品質未改善前，粒線體自噬效率仍受限',
+          '觀察重點：HRV 趨勢、深睡比例（目標 ≥15%）、早晨清醒感'
+        ],
+        p2t:'睡眠改善後加入 R2', p2i:[
+          '第 3–4 週若 HRV 有回升趨勢，開始加入 ageLOC R2 日錠',
+          '睡眠修復窗口改善後，R2 夜錠的粒線體自噬效果才能充分運作',
+          '持續追蹤 HRV 與深睡比例，確認兩者同步改善'
+        ],
+        p3t:'完整組合評估', p3i:[
+          '第 2 個月確認 R2 日夜錠 + MYND360 的整體效果',
+          '視腰圍與 TG/HDL 數值，評估是否加入 Meta',
+          '第 90 天重新填寫本問卷，對比三個維度評分變化'
+        ]
+      },
+      testosterone:{
+        pp:'睪固酮 ／ 內臟脂肪維度 · 觀察訊號最強',
+        p1t:'代謝迴路多點介入', p1i:[
+          'ageLOC R2 日錠（早餐後）：Nrf2 路徑支援整體細胞抗氧化防禦基礎',
+          'ageLOC Meta 每代紫（隨餐）：三重多酚針對內臟脂肪三條路徑同時切入',
+          '配合每週 ≥3 次 Zone 2 有氧（兒茶素 COMT 機制需要運動刺激才能充分發揮）'
+        ],
+        p2t:'加入夜間修復模組', p2i:[
+          '第 4 週加入 R2 夜錠，支援夜間睪固酮分泌窗口（深睡期）與粒線體更新',
+          '若睡眠品質仍差，評估加入 MYND360（皮質醇是睪固酮的直接拮抗因素）',
+          '記錄第一次 4 週腰圍數據作為 Meta 效果的客觀基準'
+        ],
+        p3t:'數字驗證與調整', p3i:[
+          '第 8 週對比腰圍、HRV、晨勃頻率三項的變化',
+          '若 TG/HDL 有改善，Meta 繼續維持；若無變化，確認運動頻率是否達標',
+          '視情況安排第二次 Prysm iO 掃描，對比細胞抗氧化指數'
+        ]
+      }
+    };
+
+    // ── TRACKING ──
+    const tracking = {
+      mito:[
+        {m:'靜止心率 RHR',t:'目標：回到或低於個人基準線',h:'Apple Watch → 健康 → 心臟 → 靜止心率 → 截圖「過去一個月」趨勢圖'},
+        {m:'HRV 心率變異度',t:'目標：趨勢穩定或緩步上升',h:'Apple Watch → 健康 → 心率變異度 → 過去一個月平均'},
+        {m:'下午能量感受',t:'目標：下午 2–3 點不再系統性昏沉',h:'每天給自己打分 1–10，記錄在備忘錄，看週平均有無上升'},
+        {m:'運動後恢復時間',t:'目標：同強度運動的酸痛/疲勞恢復縮短',h:'Garmin / Apple Watch 的「恢復時間」數值，或主觀記錄'}
+      ],
+      cortisol:[
+        {m:'深睡比例',t:'目標：≥ 15%（Apple Watch 深層睡眠）',h:'健康 App → 睡眠 → 深層睡眠，看每週平均比例'},
+        {m:'HRV 心率變異度',t:'目標：回升至個人歷史基準線以上',h:'健康 App → 心率變異度 → 查看一個月趨勢，關注方向而非單日數值'},
+        {m:'早晨清醒感',t:'目標：起床後 15 分鐘內感覺清醒',h:'每天起床後 10 分鐘主觀評估，記錄 1–10 分'},
+        {m:'靜止心率 RHR',t:'目標：不再緩步上升，趨勢趨於穩定',h:'Apple Watch → 靜止心率 → 看月趨勢圖的走向'}
+      ],
+      testosterone:[
+        {m:'腰圍',t:'目標：4 週縮減 1–2 cm（量測條件需一致）',h:'早晨空腹、站立、肚臍水平量，每次相同條件，記錄數字'},
+        {m:'TG/HDL 比值',t:'目標：下次健檢時比值下降',h:'需要新一次抽血，拿到報告後重新在掃描前問卷計算'},
+        {m:'晨勃頻率',t:'目標：4 週內頻率有回升',h:'每週記錄次數（0–7），觀察趨勢，不需精確到天'},
+        {m:'Prysm iO 分數',t:'目標：3 個月後重新掃描對比基準',h:'預約第二次掃描，數值差異是 R2 + Meta 效果的客觀驗證'}
+      ]
+    };
+
+    // ── GENERATE ──
+    function generate(){
+      const sc = score();
+      document.getElementById('output').style.display = 'block';
+      setTimeout(()=>document.getElementById('output').scrollIntoView({behavior:'smooth',block:'start'}),120);
+
+      const pl = plans[sc.p];
+      document.getElementById('ppText').textContent = pl.pp;
+
+      // Bars
+      setTimeout(()=>{
+        document.getElementById('sA').textContent = sc.A+' 分';
+        document.getElementById('sB').textContent = sc.B+' 分';
+        document.getElementById('sC').textContent = sc.C+' 分';
+        document.getElementById('bA').style.width = sc.Ap+'%';
+        document.getElementById('bB').style.width = sc.Bp+'%';
+        document.getElementById('bC').style.width = sc.Cp+'%';
+      },200);
+
+      // Data cards
+      const tg=g('tg'), hdl=g('hdl'), waist=g('waist'), rhr=g('rhr'), hrv=g('hrv'), prysm=g('prysm');
+      const ratio=sc.ratio;
+
+      // Health check
+      let hcR='', hcT='未填入血脂數值', hcC='badge-ok', hcB='—';
+      if(tg&&hdl){
+        hcT=`TG: ${tg} mg/dL\nHDL: ${hdl} mg/dL\nTG/HDL: ${ratio.toFixed(2)}`;
+        if(waist) hcT+=`\n腰圍: ${waist} cm`;
+        if(ratio>3.5){hcB='文獻觀察：次臨床代謝風險閾值（>3.5）';hcC='badge-red';}
+        else if(ratio>2){hcB='文獻觀察：值得關注區間（2–3.5）';hcC='badge-warn';}
+        else{hcB='文獻觀察：一般參考範圍（<2）';}
+      }
+      document.getElementById('dHC').textContent=hcT;
+      document.getElementById('bHC').textContent=hcB;
+      document.getElementById('bHC').className='d-badge '+hcC;
+
+      // Watch
+      let wT='未填入穿戴數據', wC='badge-ok', wB='建議填入以提升分析精準度';
+      if(rhr||hrv){
+        wT=(rhr?`RHR: ${rhr} bpm\n`:'')+(hrv?`HRV: ${hrv} ms\n`:'');
+        if(gs('rhr_trend')==='up') wT+='RHR 近期：緩步上升';
+        if(hrv&&hrv<25){wB='文獻觀察：HRV 低於常見警示區間';wC='badge-red';}
+        else if(hrv&&hrv<35){wB='文獻觀察：HRV 偏低觀察範圍';wC='badge-warn';}
+        else if(rhr&&rhr>70){wB='文獻觀察：RHR 偏高，底層負擔訊號';wC='badge-warn';}
+        else{wB='文獻觀察：在一般參考範圍內，持續追蹤趨勢';}
+      }
+      document.getElementById('dW').textContent=wT;
+      document.getElementById('bW').textContent=wB;
+      document.getElementById('bW').className='d-badge '+wC;
+
+      // Prysm
+      let pT='尚未進行掃描', pC='badge-ok', pB='可預約掃描後填入，補充細胞層級數據';
+      if(prysm){
+        pT=`掃描分數: ${prysm.toLocaleString()}`;
+        if(prysm<20000){pB='文獻對照：細胞抗氧化儲備偏低區間';pC='badge-red';}
+        else if(prysm<35000){pB='文獻對照：一般觀察區間，有提升空間';pC='badge-warn';}
+        else{pB='文獻對照：在較佳觀察區間';}
+      }
+      document.getElementById('dP').textContent=pT;
+      document.getElementById('bP').textContent=pB;
+      document.getElementById('bP').className='d-badge '+pC;
+
+      // Analysis
+      document.getElementById('analysisBody').innerHTML = analysis[sc.p](sc);
+
+      // Timeline
+      [['p1t','p1i',pl.p1t,pl.p1i,'tl-m1'],['p2t','p2i',pl.p2t,pl.p2i,'tl-m2'],['p3t','p3i',pl.p3t,pl.p3i,'tl-m3']]
+        .forEach(([ti,ii,tt,items,cls])=>{
+          document.getElementById(ti).textContent=tt;
+          document.getElementById(ii).innerHTML=items.map(item=>
+            `<div class="tl-item"><div class="tl-dot ${cls}"></div><span>${item}</span></div>`
+          ).join('');
+        });
+
+      // Tracking
+      document.getElementById('trackGrid').innerHTML = tracking[sc.p].map(m=>
+        `<div class="track-card">
+          <div class="track-metric">${m.m}</div>
+          <div class="track-target">${m.t}</div>
+          <div class="track-how">${m.h}</div>
+        </div>`
+      ).join('');
+
+      document.getElementById('progressFill').style.width='100%';
+    }
+    </script>
+  </body>
+</html>
