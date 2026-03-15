@@ -12,7 +12,7 @@ tags: ['功能醫學', '代謝評估', '心率變異度', '量化健康', '慢�
 
 category: '精準健康工具'
 
-slug: "'functional-medicine-execution-gap
+slug: 'functional-medicine-execution-gap'
 
 ---
 
