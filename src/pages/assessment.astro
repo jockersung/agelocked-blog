@@ -4,8 +4,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = '細胞效能與慢性發炎檢測清單 · AGELOCKED';
-const description = '為什麼你的健檢報告沒有紅字，卻依然感覺體力在流失？花 1 分鐘，找出你的細胞防護網目前處於什麼水位。';
+const title = '身體警報訊號評估清單 · AGELOCKED';
+const description = '為什麼你的健檢報告沒有紅字，卻依然感覺體力在流失？花 1 分鐘，勾選你觀察到的身體訊號，了解目前需要優先關注的生活型態面向。';
 ---
 
 <!doctype html>
@@ -147,6 +147,7 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
         text-transform: uppercase; transition: all 0.3s;
       }
       .btn-submit:hover { background: var(--teal-d); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(26,140,130,0.35); }
+      .btn-submit:disabled { background: var(--muted); cursor: not-allowed; opacity: 0.5; box-shadow: none; transform: none; }
       
       @keyframes fadeUp {
         from { opacity: 0; transform: translateY(15px); }
@@ -168,9 +169,9 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
       <header class="page-header">
         <div class="header-inner">
           <div class="header-brand">AGELOCKED · 專屬評估</div>
-          <h1 class="page-title">細胞效能與慢性發炎<br><em>自我檢測清單</em></h1>
+          <h1 class="page-title">身體警報訊號<br><em>自我評估清單</em></h1>
           <p class="page-desc">
-            標準健檢找的是「已經發生的疾病」，但身體在生病之前，會先經歷一段漫長的「能量耗損與發炎」期。花 1 分鐘，勾選你過去 3 個月內頻繁出現的狀況，看看你的防護網目前處於什麼水位。
+            標準健檢找的是「已經發生的疾病」，但身體在出狀況之前，往往會先出現一段漫長的「能量感受下滑與慢性低度發炎」訊號期。花 1 分鐘，勾選你過去 3 個月內頻繁出現的狀況，了解目前需要優先關注的生活型態面向。
           </p>
         </div>
       </header>
@@ -212,7 +213,7 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
           <div class="quiz-category">
             <div class="cat-head">
               <div class="cat-label">PART 02</div>
-              <h2 class="cat-title">代謝與荷爾蒙迴路</h2>
+              <h2 class="cat-title">代謝與體態訊號</h2>
             </div>
             <div class="check-list">
               <label class="check-item">
@@ -291,7 +292,7 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
               點擊下方按鈕複製你的檢測分數，並傳送到 LINE 給我。<br>
               我會根據你的分數與勾選項目，給予你科學的保養優化建議。
             </p>
-            <button class="btn-submit" onclick="copyResult()">📋 複製檢測結果並傳送</button>
+            <button class="btn-submit" id="copyBtn" onclick="copyResult()" disabled>📋 複製評估結果並傳送</button>
           </div>
         </div>
         
@@ -323,54 +324,52 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
         const scoreNum = document.getElementById('scoreNum');
         const badge = document.getElementById('resultBadge');
         const text = document.getElementById('resultText');
+        const copyBtn = document.getElementById('copyBtn');
 
         scoreNum.textContent = score;
 
         if (score === 0) {
           resultBox.className = 'result-box hidden';
+          copyBtn.disabled = true;
           return;
         }
 
+        copyBtn.disabled = false;
         resultBox.className = 'result-box show';
 
         if (score <= 2) {
           resultBox.classList.add('green');
-          badge.textContent = '代謝彈性良好';
-          text.innerHTML = '你的細胞能量工廠運作順暢，防護網依然堅固。請繼續保持目前的飲食與運動習慣，這將是你事業最好的資本。';
+          badge.textContent = '身體訊號良好';
+          text.innerHTML = '你目前觀察到的身體訊號不多，代謝與恢復狀態看起來相對穩定。請繼續保持目前的飲食與運動習慣，這將是你事業最好的資本。';
         } else if (score <= 5) {
           resultBox.classList.add('orange');
-          badge.textContent = '次臨床能量耗損';
-          text.innerHTML = '你的健檢報告可能很漂亮，但細胞已經開始「透支」。這代表體內的<strong>慢性發炎與壓力</strong>正在干擾你的修復迴路。此時盲目補充一般的維他命效果有限，你需要的是針對細胞層級修復的精準介入。';
+          badge.textContent = '需留意的身體訊號';
+          text.innerHTML = '你的健檢報告可能很漂亮，但身體已經開始給出警告訊號。研究顯示，這類症狀組合與慢性低度發炎及壓力負荷高度相關。此時盲目補充一般的維他命效果有限，你需要的是針對生活型態根本原因的系統性調整。';
         } else {
           resultBox.classList.add('red');
-          badge.textContent = '高發炎警報狀態';
-          text.innerHTML = '你的抗氧化防護網可能已出現明顯漏洞，身體的「煞車與修復系統」幾乎停擺。這通常伴隨著代謝彈性下降與荷爾蒙失衡。強烈建議停止盲目測試保健品，直接進行客觀的數據量化與介入。';
+          badge.textContent = '多重身體警報訊號';
+          text.innerHTML = '你觀察到的訊號數量較多，身體在多個面向同時發出警報。這類狀況通常伴隨著代謝彈性下降與整體恢復力的明顯變化。強烈建議停止盲目測試保健品，先進行客觀的數據比對，再討論生活型態調整方向。';
         }
       }
 
       function copyResult() {
         const checkedBoxes = document.querySelectorAll('input[name="alarm"]:checked');
         const score = checkedBoxes.length;
-        
-        if (score === 0) {
-          alert('請至少勾選一項符合您狀況的訊號喔！');
-          return;
-        }
 
         const signals = Array.from(checkedBoxes).map(cb => `- ${cb.value}`).join('\n');
         let status = '';
-        if (score <= 2) status = '🟢 代謝彈性良好';
-        else if (score <= 5) status = '🟡 次臨床能量耗損';
-        else status = '🔴 高發炎警報狀態';
+        if (score <= 2) status = '🟢 身體訊號良好';
+        else if (score <= 5) status = '🟡 需留意的身體訊號';
+        else status = '🔴 多重身體警報訊號';
 
-        const textToCopy = `【AGELOCKED 細胞效能檢測結果】\n\n我的發炎與耗損指數：${score} / 10\n狀態評估：${status}\n\n▌我目前觀察到的訊號：\n${signals}\n\n（孫站長，這是我目前的檢測結果，希望能進一步了解如何優化。）`;
+        const textToCopy = `【AGELOCKED 身體警報評估結果】\n\n我的身體警報評估分數：${score} / 10\n整體狀況：${status}\n\n▌我目前觀察到的訊號：\n${signals}\n\n（孫站長，這是我目前的評估結果，希望能進一步了解如何調整。）`;
 
         navigator.clipboard.writeText(textToCopy).then(() => {
-          const btn = document.querySelector('.btn-submit');
+          const btn = document.getElementById('copyBtn');
           btn.textContent = '✓ 已複製！請開啟 LINE 貼上';
           btn.style.background = '#1a7a50';
           setTimeout(() => {
-            btn.textContent = '📋 複製檢測結果並傳送';
+            btn.textContent = '📋 複製評估結果並傳送';
             btn.style.background = '';
           }, 3500);
         }).catch(() => {
