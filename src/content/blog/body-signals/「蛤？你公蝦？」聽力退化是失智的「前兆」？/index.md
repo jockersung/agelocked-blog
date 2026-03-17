@@ -191,13 +191,11 @@ slug: "hearing-loss-dementia-signal"
 
 **加我 LINE，我把清單傳給你。**
 
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
 ---
 
 **延伸閱讀：**
-- [感冒拖三週、睡滿還是累、傷口好得比以前慢——這三件事同時出現，不是巧合](/blog/body-signals/three-signs-chronic-inflammation/) ← 第1篇
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
+- [感冒拖三週、睡滿還是累、傷口好得比以前慢——這三件事同時出現，不是巧合](/blog/body-signals/three-signs-chronic-inflammation/) 
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
 
 ---
 
