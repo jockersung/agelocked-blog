@@ -145,15 +145,7 @@ Inflammaging 不是感染，不是急性發炎。它是一種長年慢慢燒的�
 
 **接下來讀這篇：**
 
-[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging 篇（了解 SASP 的完整機制與介入邏輯）
-
----
-
-還不確定自己的身體目前累積了多少慢性發炎？
-
-![CTA](./CTA.png)
-
-加入我們的 LINE，免費領取【身體警報自我檢測清單】，五分鐘找出你身體正在發出的訊號。
+[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/)
 
 ---
 
