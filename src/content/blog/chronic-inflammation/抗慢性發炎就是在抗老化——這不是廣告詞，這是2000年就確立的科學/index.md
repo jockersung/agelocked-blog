@@ -174,18 +174,12 @@ Franceschi 自己在後續研究中強調：老化的速度因人而異，個體
 
 我整理了一份【身體警報自我檢測清單】，可以幫你系統化看這件事。
 
-![CTA](./CTA.png)
-
-**加我 LINE，我把清單傳給你。**
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
 ---
 
 **延伸閱讀：**
-- [大多數男人沒有意識到——40歲之後的疲勞，和20歲的疲勞不一樣](/blog/body-signals/male-fatigue-after-40/) ← E篇
-- [少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇
-- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
+- [大多數男人沒有意識到——40歲之後的疲勞，和20歲的疲勞不一樣](/blog/body-signals/male-fatigue-after-40/)
+- [少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天](/blog/chronic-inflammation/caloric-restriction-longevity-science/) 
+- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/)
 
 ---
 
