@@ -181,23 +181,15 @@ SIRT1 的激活可以反過來增強 Nrf2 的核內停留時間，兩條路徑�
 
 ---
 
-想了解 Youthspan 和 R2 的配方邏輯，或想知道你目前的狀況適合從哪裡開始，歡迎加入 LINE 直接諮詢：
-
-**→ [加入 LINE 諮詢](https://line.me/ti/p/@fer7932k)**
-
-![CTA](./CTA.png)
-
-或索取【身體警報自我檢測清單】，了解你目前的細胞狀態：
-
-**→ [加入 LINE 取得清單](https://line.me/ti/p/@fer7932k)**
+想了解 Youthspan 和 R2 的配方邏輯，或想知道你目前的狀況適合從哪裡開始，歡迎直接加入 LINE 直接諮詢：
 
 ---
 
 延伸閱讀：
 
-**→ [身體最強抗老藥廠：Nrf2 通路與 ageLOC Youthspan 的設計邏輯](/blog/chronic-inflammation/caloric-restriction-mimetics-science/)**（article-C）
+**→ [身體最強抗老藥廠：Nrf2 通路與 ageLOC Youthspan 的設計邏輯](/blog/chronic-inflammation/caloric-restriction-mimetics-science/)**
 
-**→ [中年男性的慢性發炎：為什麼疲勞不是心理問題](/blog/body-signals/male-fatigue-after-40/)**（article-E）
+**→ [中年男性的慢性發炎：為什麼疲勞不是心理問題](/blog/body-signals/male-fatigue-after-40/)**
 
 ---
 
