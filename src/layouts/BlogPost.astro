@@ -110,6 +110,31 @@ const bridge = ctaBridge || defaultBridge;
 			</div>
 		</main>
 		<Footer />
+
+		<script is:inline>
+			// 把 CTA 移到「參考資料」標題之前
+			// 若無參考資料，CTA 留在原位（文章最後）
+			(function () {
+				const cta = document.querySelector('.article-cta');
+				if (!cta) return;
+
+				// 找 h2 文字包含「參考資料」的節點
+				const headings = document.querySelectorAll('h2');
+				let refHeading = null;
+				for (const h of headings) {
+					if (h.textContent.trim().includes('參考資料')) {
+						refHeading = h;
+						break;
+					}
+				}
+
+				if (refHeading) {
+					// 插到參考資料 h2 之前
+					refHeading.parentNode.insertBefore(cta, refHeading);
+				}
+				// 沒有參考資料 → cta 已在文章末，不動
+			})();
+		</script>
 	</body>
 </html>
 
