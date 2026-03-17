@@ -122,7 +122,7 @@ NAD+ 下降 → Sirtuins 失活 → 端粒修復能力下降 → 端粒縮短加
 
 有兩個原因。
 
-第一，**儲備是有緩衝的**。NAD+ 下降50%，你不會立刻失去一半的能量——你的身體會適應，用各種代償機制維持表面上的正常運作。你感覺到的「有點累」，是在儲備已經消耗了很多之後才出現的訊號。
+第一，**儲備是有緩衝的**。NAD+ 下降 50%，你不會立刻失去一半的能量——你的身體會適應，用各種代償機制維持表面上的正常運作。你感覺到的「有點累」，是在儲備已經消耗了很多之後才出現的訊號。
 
 第二，**標準健康檢查量的不是儲備**。血壓、血糖、膽固醇——這些量的是系統是否已經損壞，不是損壞累積到哪個程度了。NAD+ 濃度、粒線體功能指標、幹細胞動員能力、端粒長度——這些都不在標準檢查項目裡。
 
@@ -148,16 +148,12 @@ NAD+ 下降 → Sirtuins 失活 → 端粒修復能力下降 → 端粒縮短加
 
 這件事不需要靠感覺猜測，也不需要等到體檢紅字才知道答案。
 
-**加我 LINE，我們聊聊你目前的狀況，看看從哪裡開始評估最有意義。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
-
 ---
 
 **延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
-- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) ← 第6篇（生物年齡量測工具）
-- [不節食也能啟動修護基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) 
+- [不節食也能啟動修護基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
 
 ---
 
