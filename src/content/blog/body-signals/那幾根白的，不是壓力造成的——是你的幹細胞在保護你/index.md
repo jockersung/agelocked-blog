@@ -132,19 +132,15 @@ MeSCs或卡住，或退場，或被周圍的 H₂O₂ 直接漂白——三種�
 
 而同樣的氧化壓力，正在你的肌肉、血管、免疫系統裡同步累積。
 
-下一步建議讀：
+延伸閱讀：
 
-**→ [那條後退的髮際線，是身體給中年男人的第一個警告](/blog/body-signals/hairline-recession-warning/)**（article-hair-loss）掉髮和白頭是同一根毛囊裡的兩件事——那篇文章解釋的是另一批幹細胞，用不同的方式，在同一個微環境裡老化。
+**→ [那條後退的髮際線，是身體給中年男人的第一個警告](/blog/body-signals/hairline-recession-warning/)**（
 
-**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**（article-E）
+**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**
 
 ---
 
-![CTA](./CTA.png)
-
 如果你還沒有定期監測自己的發炎狀態，歡迎加入 LINE 索取【身體警報自我檢測清單】：
-
-**→ [加入 LINE 取得清單](https://line.me/ti/p/@fer7932k)**
 
 ---
 
