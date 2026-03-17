@@ -128,16 +128,12 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 
 我整理了一份【身體警報自我檢測清單】，幫你系統化整理身體的訊號，找出你目前的細胞耗損模式。
 
-**加我 LINE，我把清單傳給你。**
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
 ---
 
 **延伸閱讀：**
-- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇（自噬機制的上游邏輯）
-- [不節食也能啟動長壽基因？CRM的概念](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
-- [那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) ← G篇（R2產品篇）
+- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) 
+- [不節食也能啟動長壽基因？CRM的概念](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
+- [那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) 
 
 ---
 
