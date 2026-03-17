@@ -156,16 +156,6 @@ slug: "emperor-longevity-modern-science"
 
 長期熱量限制的問題、科學家如何找到不用挨餓的替代方案，以及這個替代方案的完整科學根據——請繼續讀下去。
 
-👇
-
-[少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天](/blog/chronic-inflammation/caloric-restriction-longevity-science/)
+👉 **[少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天](/blog/chronic-inflammation/caloric-restriction-longevity-science/)**
 
 ---
-
-還不確定自己的身體目前在哪個老化階段？
-
-![CTA](./CTA.png)
-
-加入我們的 LINE，免費領取【身體警報自我檢測清單】，五分鐘找出你身體正在發出的訊號。
-
-[立即領取 →](https://line.me/ti/p/@fer7932k)
