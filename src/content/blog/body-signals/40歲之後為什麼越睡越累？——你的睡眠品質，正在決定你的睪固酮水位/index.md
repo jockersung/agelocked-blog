@@ -126,8 +126,6 @@ slug: "sleep-quality-testosterone"
 
 加入我們的 LINE，免費索取【身體警報自我檢測清單】，五分鐘找出你的身體正在發出的訊號：
 
-**→ [加入 LINE 取得清單](https://line.me/ti/p/@fer7932k)**
-
 ---
 
 ## 參考資料
