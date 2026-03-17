@@ -297,9 +297,31 @@ const description = '資料越完整，當場討論越有方向。有的填、�
       }
       .btn-submit:hover { background: var(--teal-d); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,140,130,0.35); }
       .submit-note {
-        margin-top: 1.2rem; font-family: 'DM Mono', monospace;
+        margin-top: 1.5rem; font-family: 'DM Mono', monospace;
         font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.22);
       }
+      .submit-steps {
+        display: flex; flex-direction: column; align-items: center; gap: 0.8rem;
+        margin-bottom: 0;
+      }
+      .submit-step {
+        display: flex; align-items: center; gap: 0.8rem; width: 100%; justify-content: center;
+      }
+      .step-num {
+        font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em;
+        color: rgba(255,255,255,0.3); flex-shrink: 0;
+      }
+      .submit-arrow {
+        font-size: 1rem; color: rgba(255,255,255,0.2);
+      }
+      .btn-line {
+        display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+        padding: 1rem 2.2rem; border-radius: 2px;
+        background: #06C755; color: #ffffff; text-decoration: none;
+        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.15em;
+        text-transform: uppercase; transition: all 0.3s;
+      }
+      .btn-line:hover { background: #05a847; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(6,199,85,0.35); }
 
       @media (max-width: 600px) {
         .field-row, .field-row-3 { grid-template-columns: 1fr; }
@@ -607,11 +629,25 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           <div class="submit-inner">
             <div class="submit-title">資料填寫完成</div>
             <p class="submit-sub">
-              點擊下方按鈕，將資料複製為文字後<br>
-              直接貼到 LINE 傳送給我即可
+              先複製資料，再開啟 LINE 貼上傳送給我即可
             </p>
-            <button class="btn-submit" onclick="copyToLine()">📋 複製資料並傳送</button>
-            <div class="submit-note">資料僅用於諮詢評估 · 不會轉傳或儲存至第三方</div>
+            <div class="submit-steps">
+              <div class="submit-step">
+                <span class="step-num">1</span>
+                <button class="btn-submit" onclick="copyToLine()">📋 複製資料</button>
+              </div>
+              <div class="submit-arrow">↓</div>
+              <div class="submit-step">
+                <span class="step-num">2</span>
+                <a href="https://line.me/ti/p/@fer7932k" target="_blank" rel="noopener" class="btn-line">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                  </svg>
+                  開啟 LINE 傳送資料
+                </a>
+              </div>
+            </div>
+            <div class="submit-note">資料僅用於諮詢參考 · 不會轉傳或儲存至第三方</div>
           </div>
         </div>
         
