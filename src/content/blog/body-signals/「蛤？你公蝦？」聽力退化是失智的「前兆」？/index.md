@@ -183,16 +183,6 @@ slug: "hearing-loss-dementia-signal"
 
 ---
 
-聽力退化、感冒難好、睡滿還累——這些不是獨立的問題，它們有共同的底層機制。
-
-如果你想先系統化了解自己的身體現在在說什麼，我整理了一份【身體警報自我檢測清單】，幫你把這些訊號放在一起看，找出模式在哪裡。
-
-![CTA](./CTA.png)
-
-**加我 LINE，我把清單傳給你。**
-
----
-
 **延伸閱讀：**
 - [感冒拖三週、睡滿還是累、傷口好得比以前慢——這三件事同時出現，不是巧合](/blog/body-signals/three-signs-chronic-inflammation/) 
 - [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
