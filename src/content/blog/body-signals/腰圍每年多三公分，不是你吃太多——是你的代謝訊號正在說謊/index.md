@@ -103,8 +103,6 @@ slug: "visceral-fat-metabolic-signal"
 
 想先評估自己目前的代謝風險在哪個水位？
 
-**→ [加入 LINE 諮詢，取得【代謝症候群自我評估清單】](https://line.me/ti/p/@fer7932k)**
-
 ---
 
 ## 參考資料
