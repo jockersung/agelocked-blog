@@ -118,7 +118,7 @@ slug: "sleep-quality-testosterone"
 
 如果想從睪固酮和男性老化的角度理解更深層的機制：
 
-**→ [40歲的你只剩一張嘴了嗎？——不是「自然老了」是睪丸細胞提前衰老了](/blog/intervention-optimization/testosterone-cell-aging-40/)**（article-testosterone-r2）
+**→ [40歲的你只剩一張嘴了嗎？——不是「自然老了」是睪丸細胞提前衰老了](/blog/intervention-optimization/testosterone-cell-aging-40/)**
 
 ---
 
