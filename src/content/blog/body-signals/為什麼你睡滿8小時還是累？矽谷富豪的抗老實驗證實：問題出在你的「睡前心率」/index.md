@@ -120,20 +120,14 @@ slug: 'aging-quantified-bryan-johnson-blueprint'
 
 先搞清楚你現在的身體訊號在告訴你什麼——那些感冒容易拖很久的週期、那些睡滿八小時還是累的早晨、那些下午突然腦袋停止轉動的時刻——系統化整理它們，能讓你看出模式在哪裡。
 
-![CTA](./CTA.png)
-
 我整理了一份【身體警報自我檢測清單】，幫你把這些訊號放在一起看，找出你現在的狀態和慢性發炎（Inflammaging）的早期模式有多少重疊。
 
-**加我 LINE，我把清單傳給你。**
-
-知道問題在哪裡，才能從對的地方開始。
-
-就像布萊恩的藍圖計畫——一切都從測量開始。
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
+就像布萊恩的藍圖計畫——一切都從測量開始。知道問題在哪裡，才能從對的地方開始。
 
 ---
 
 **延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
-- [壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？](/blog/chronic-inflammation/longevity-55-percent-genetics/) ← 第3篇
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
+- [壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？](/blog/chronic-inflammation/longevity-55-percent-genetics/) 
+
+---
