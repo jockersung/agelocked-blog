@@ -111,15 +111,11 @@ mTOR 是我們在前幾篇反覆提到的概念——它是細胞的「生長感
 
 **加我 LINE，我們安排一次 Prysm iO 掃描和諮詢。**
 
-掃描給你一個數字，諮詢告訴你這個數字意味著什麼、以及可以從哪裡開始介入。
-
-👉 [加 LINE 預約掃描](https://line.me/ti/p/@fer7932k)
-
 ---
 
 **延伸閱讀：**
-- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇（本篇前傳）
-- [ageLOC Youthspan：不節食，也能啟動修護基因](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇
+- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
+- [ageLOC Youthspan：不節食，也能啟動修護基因](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) 
 
 ---
 
