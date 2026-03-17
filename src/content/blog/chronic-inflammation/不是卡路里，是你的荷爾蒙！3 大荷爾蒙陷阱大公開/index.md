@@ -131,8 +131,6 @@ slug: "visceral-fat-three-cycles"
 
 如果你對自己目前的代謝迴路狀態有疑問，歡迎諮詢。
 
-**→ [加入 LINE 諮詢，詢問代謝支援策略](https://line.me/ti/p/@fer7932k)**
-
 ---
 
 ## 參考資料
