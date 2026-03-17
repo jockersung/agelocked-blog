@@ -112,6 +112,12 @@ slug: "fasting-mimicking-diet-5days"
 
 ---
 
+**延伸閱讀：**
+- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) 
+- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/)
+
+---
+
 你的身體現在在哪個狀態？
 
 修復機制是活躍的，還是已經長期關閉了？
@@ -119,16 +125,6 @@ slug: "fasting-mimicking-diet-5days"
 這個問題，可以從你日常的身體訊號開始觀察。
 
 我整理了一份【身體警報自我檢測清單】，幫你系統化評估目前的細胞耗損程度。
-
-**加我 LINE，我把清單傳給你。**
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
----
-
-**延伸閱讀：**
-- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇（本篇前傳）
-- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇（本篇續集）
 
 ---
 
