@@ -6,6 +6,7 @@ heroImage: './中年男子只剩一張嘴.png'
 tags: ['男性健康', '睪固酮', '雄性素', '性功能', 'LOH', '晚發性性腺功能低下', 'Inflammaging', '慢性發炎']
 category: '介入與調校'
 slug: "testosterone-cell-aging-40"
+ctaType: 'hard'
 ---
 
 先做一個快速測試。
@@ -145,15 +146,11 @@ slug: "testosterone-cell-aging-40"
 
 從現在開始管理全身的慢性發炎狀態，是唯一能同時影響所有相關機制的策略。
 
-**想了解 ageLOC R2 是否適合你目前的狀況，或想知道怎麼配合使用效果最好，歡迎加入 LINE 直接諮詢：**
-
-**→ [與我聯繫 LINE](https://line.me/ti/p/@fer7932k)**
-
 ---
 
 還沒讀過中年男性慢性發炎全貌的，建議先讀這篇：
 
-**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**（article-E）
+**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**
 
 ---
 
