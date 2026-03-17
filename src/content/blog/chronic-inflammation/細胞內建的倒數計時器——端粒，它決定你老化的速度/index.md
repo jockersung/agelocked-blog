@@ -24,13 +24,13 @@ slug: "telomere-aging-clock"
 
 二十世紀初，法國醫生亞歷克西．卡雷爾（Alexis Carrel）認為，只要環境與營養適當，細胞可以永遠生長繁殖——生命是可以無限延伸的。
 
-這個想法在1960年代被推翻。科學家李奧納多．海佛烈克（Leonard Hayflick）與保羅．穆爾黑德（Paul Moorhead）用實驗證明：細胞分裂有其極限，大約複製40到60次之後就會進入休止期，不再繼續。
+這個想法在1960年代被推翻。科學家李奧納多．海佛烈克（Leonard Hayflick）與保羅．穆爾黑德（Paul Moorhead）用實驗證明：細胞分裂有其極限，大約複製 40 - 60 次之後就會進入休止期，不再繼續。
 
 這就是著名的**海佛烈克極限**（Hayflick limit）。
 
-對人體細胞而言，大約每2.5年更新一代，平均可複製分裂50代——據此推算，人類的理論壽命上限約為125歲。
+對人體細胞而言，大約每 2.5 年更新一代，平均可複製分裂50代——據此推算，人類的理論壽命上限約為 125 歲。
 
-但海佛烈克當時說不清楚：為什麼是50次？這個上限是什麼東西在控制的？
+但海佛烈克當時說不清楚：為什麼是 50 次？這個上限是什麼東西在控制的？
 
 這個問題的答案，要等到端粒被發現才揭開。
 
@@ -92,7 +92,7 @@ Richard Cawthon 在 2003 年的 *Lancet* 研究中追蹤了 143 名 60 歲以上
 
 **端粒長度和壽命之間，沒有簡單的線性關係。**
 
-老鼠的端粒長度是人類的 5–15 倍，但壽命只有 2–3 年。
+老鼠的端粒長度是人類的 5 – 15 倍，但壽命只有 2 – 3 年。
 
 靈長類的端粒長度比人類短，但壽命可以到 50 歲。
 
@@ -133,11 +133,11 @@ Richard Cawthon 在 2003 年的 *Lancet* 研究中追蹤了 143 名 60 歲以上
 ---
 
 **延伸閱讀：**
-- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) ← 第5篇（端粒是四個儲備之一）
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
-- [打爆保健品神話，以形補形為什麼不行？](/blog/precision-health-tools/supplement-myths-debunked/) ← 消化系統篇
-- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇（口服端粒酶為什麼進不了細胞，這篇說機制）
-- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) ← 第7篇（端粒長度檢測是方法一）
+- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) 
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
+- [打爆保健品神話，以形補形為什麼不行？](/blog/precision-health-tools/supplement-myths-debunked/) 
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) 
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/)
 
 ---
 
