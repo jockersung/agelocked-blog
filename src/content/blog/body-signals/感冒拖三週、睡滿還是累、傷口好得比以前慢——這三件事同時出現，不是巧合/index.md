@@ -113,12 +113,6 @@ slug: "three-signs-chronic-inflammation"
 
 第一步是先搞清楚你的身體在說什麼。知道模式在哪裡，才知道從哪裡開始。
 
-![CTA](./CTA.png)
-
-**加我 LINE，我把清單傳給你。**
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
 ---
 
 ## 參考資料
