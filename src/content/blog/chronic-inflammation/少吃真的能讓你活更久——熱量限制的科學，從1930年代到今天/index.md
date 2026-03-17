@@ -210,18 +210,12 @@ mTOR 被抑制有什麼好處？
 
 如果你想先了解自己的身體訊號現在在哪個程度，我整理了一份【身體警報自我檢測清單】可以幫你系統化看這件事。
 
-![CTA](./CTA.png)
-
-**加我 LINE，我把清單傳給你。**
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
 ---
 
 **延伸閱讀：**
 - [老化，已經可以被量化管理了](/blog/precision-health-tools/biological-age-measurement/) ← A篇
-- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇（接續本篇）
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
+- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
 
 ---
 
