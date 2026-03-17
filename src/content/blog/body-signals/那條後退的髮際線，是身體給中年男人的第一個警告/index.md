@@ -124,17 +124,13 @@ M 型的 M，可以是 Male，可以是 Middle-aged，也可以是 Mitochondria�
 
 下一步建議讀：
 
-**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**（article-E）
+**→ [40歲之後的疲勞，和20歲不一樣——中年男性Inflammaging全解析](/blog/body-signals/male-fatigue-after-40/)**
 
 那篇文章會告訴你，頭皮正在發生的事，在你的肌肉、大腦、血管裡也同時在進行。
 
 ---
 
-![CTA](./CTA.png)
-
 如果你還沒有定期監測自己的發炎狀態，歡迎加入 LINE 索取【身體警報自我檢測清單】：
-
-**→ [加入 LINE 取得清單](https://line.me/ti/p/@fer7932k)**
 
 ---
 
