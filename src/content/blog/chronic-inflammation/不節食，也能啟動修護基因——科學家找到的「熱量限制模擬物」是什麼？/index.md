@@ -167,18 +167,12 @@ CRM 的研究方向，把「抗老化」從「感覺學」推進到了「精準�
 
 如果你想先了解自己目前的細胞抗氧化狀態在哪裡，我整理了一份【身體警報自我檢測清單】，幫你系統化評估身體現在的訊號。
 
-![CTA](./CTA.png)
-
-**加我 LINE，我把清單傳給你。**
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
 ---
 
 **延伸閱讀：**
 
-- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) ← B篇（本篇前傳）
-- [ageLOC Youthspan：不節食，也能啟動修護基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇（本篇續集）
+- [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) 
+- [ageLOC Youthspan：不節食，也能啟動修護基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/)
 
 ---
 
