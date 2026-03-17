@@ -104,20 +104,10 @@ slug: "carotenoid-cell-absorption"
 
 ---
 
-我整理了一份【身體警報自我檢測清單】，裡面包含了幾個和植化素儲備高度相關的身體訊號——感冒的頻率、皮膚狀態、疲勞恢復速度——幫你先系統化評估你的狀況。
-
-![CTA](./CTA.png)
-
-**加我 LINE，我把清單傳給你。**
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
-- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) ← 第5篇
-- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) ← 第7篇
-- [Prysm iO 分數偏低的人，第一步先做這件事](/blog/intervention-optimization/lifepak-foundation-nutrition/) ← LifePak 產品篇
+- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) 
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) 
+- [Prysm iO 分數偏低的人，第一步先做這件事](/blog/intervention-optimization/lifepak-foundation-nutrition/) 
 
 ---
 
