@@ -162,17 +162,11 @@ P. gingivalis 觸發 **兩個阿茲海默症的核心病理**：
 
 **接下來讀這篇：**
 
-[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging 篇（了解全身性慢性發炎的機制與管理邏輯）
+[抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
 
 ---
 
 還不確定自己的身體目前累積了多少慢性發炎？
-
-![CTA](./CTA.png)
-
-加入我們的 LINE，免費領取【身體警報自我檢測清單】，五分鐘找出你身體正在發出的訊號。
-
-[立即領取 →](https://line.me/ti/p/@fer7932k)
 
 ---
 
