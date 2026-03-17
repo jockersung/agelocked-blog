@@ -16,7 +16,16 @@ type Props = CollectionEntry<'blog'>['data'] & {
 	relatedPosts?: CollectionEntry<'blog'>[];
 };
 
-const { title, description, pubDate, updatedDate, heroImage, headings = [], relatedPosts = [] } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, headings = [], relatedPosts = [], ctaType = 'soft', ctaBridge = '' } = Astro.props;
+
+// CTA 文字設定
+const isSoft = ctaType !== 'hard';
+
+const defaultBridge = isSoft
+  ? '如果你最近也有類似的情況，建議先做一個系統化的評估，看看你的身體警報目前在哪個水位。'
+  : '如果你手上已經有健檢數據或穿戴裝置數據，下一步比繼續看文章更有效的是先把資料整理起來。';
+
+const bridge = ctaBridge || defaultBridge;
 ---
 <!DOCTYPE html>
 <html lang="zh-TW">
@@ -51,6 +60,44 @@ const { title, description, pubDate, updatedDate, heroImage, headings = [], rela
 							</div>
 						)}
 						<slot />
+
+						<!-- ===== ARTICLE CTA ===== -->
+						<div class={`article-cta article-cta--${ctaType}`}>
+							<div class="article-cta__inner">
+								<span class="article-cta__eyebrow">下一步</span>
+								{isSoft ? (
+									<>
+										<h3 class="article-cta__title">先不要急著補，先看你現在屬於哪一型</h3>
+										<p class="article-cta__bridge">{bridge}</p>
+										<a href="/assessment" class="article-cta__btn">
+											⚡ 花 1 分鐘做身體警報風險評估
+										</a>
+										<p class="article-cta__note">
+											完成後可以把結果傳給我，我協助你整理目前比較值得優先關注的方向。
+										</p>
+										<div class="article-cta__secondary">
+											已有健檢數據？<a href="/prescan">直接填寫資料表 →</a>
+										</div>
+									</>
+								) : (
+									<>
+										<h3 class="article-cta__title">不要再盲測，先把現有數據整理起來</h3>
+										<p class="article-cta__bridge">{bridge}</p>
+										<a href="/prescan" class="article-cta__btn">
+											📊 填寫資料表，整理你的下一步方向
+										</a>
+										<p class="article-cta__note">
+											完成後我會協助你先整理目前最值得優先處理的項目與順序。
+										</p>
+										<div class="article-cta__secondary">
+											還沒做過評估？<a href="/assessment">先做 1 分鐘身體警報評估 →</a>
+										</div>
+									</>
+								)}
+							</div>
+						</div>
+						<!-- ===== /ARTICLE CTA ===== -->
+
 						<RelatedPosts posts={relatedPosts} />
 						<ShareButtons title={title} url={Astro.url.href} />
 					</div>
@@ -151,32 +198,116 @@ const { title, description, pubDate, updatedDate, heroImage, headings = [], rela
 		}
 	}
 
-	@media (max-width: 640px) {
-		main {
-			width: 100%;
-			padding: 0;
-		}
-
-		.hero-image {
-			margin-bottom: 1.25rem;
-			border-radius: 0;
-		}
-
-		.hero-image img {
-			border-radius: 0;
-		}
-
-		.prose {
-			padding: 0 1rem;
-		}
-
-		.title {
-			text-align: left;
-			padding: 0.75em 0;
-		}
-
-		.title h1 {
-			font-size: clamp(1.4rem, 6vw, 2rem);
-		}
+	/* ===== ARTICLE CTA ===== */
+	.article-cta {
+		margin: 3rem 0 2rem;
+		border-radius: 2px;
+		overflow: hidden;
 	}
+	.article-cta--soft {
+		background: rgba(26,140,130,0.06);
+		border: 1px solid rgba(26,140,130,0.18);
+		border-left: 4px solid #1a8c82;
+	}
+	.article-cta--hard {
+		background: #111820;
+		border: 1px solid rgba(255,255,255,0.06);
+		border-left: 4px solid #b8935a;
+	}
+	.article-cta__inner {
+		padding: 2rem 2.2rem;
+	}
+	.article-cta__eyebrow {
+		display: block;
+		font-family: 'DM Mono', monospace;
+		font-size: 0.65rem;
+		letter-spacing: 0.3em;
+		text-transform: uppercase;
+		margin-bottom: 0.6rem;
+	}
+	.article-cta--soft .article-cta__eyebrow { color: #1a8c82; }
+	.article-cta--hard .article-cta__eyebrow { color: #b8935a; }
+
+	.article-cta__title {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+		font-weight: 300;
+		line-height: 1.3;
+		margin: 0 0 1rem 0;
+	}
+	.article-cta--soft .article-cta__title { color: #111820; }
+	.article-cta--hard .article-cta__title { color: #ffffff; }
+
+	.article-cta__bridge {
+		font-size: 0.92rem;
+		line-height: 1.9;
+		font-weight: 300;
+		margin: 0 0 1.4rem 0;
+	}
+	.article-cta--soft .article-cta__bridge { color: #3a4a58; }
+	.article-cta--hard .article-cta__bridge { color: rgba(255,255,255,0.65); }
+
+	.article-cta__btn {
+		display: inline-block;
+		padding: 0.9rem 1.8rem;
+		border-radius: 2px;
+		text-decoration: none;
+		font-family: 'DM Mono', monospace;
+		font-size: 0.8rem;
+		letter-spacing: 0.12em;
+		background: #1a8c82;
+		color: #ffffff;
+		transition: all 0.25s;
+		margin-bottom: 1.1rem;
+	}
+	.article-cta__btn:hover {
+		background: #116b63;
+		transform: translateY(-2px);
+		box-shadow: 0 8px 20px rgba(26,140,130,0.28);
+	}
+	.article-cta--hard .article-cta__btn {
+		background: #b8935a;
+	}
+	.article-cta--hard .article-cta__btn:hover {
+		background: #9a7848;
+		box-shadow: 0 8px 20px rgba(184,147,90,0.28);
+	}
+
+	.article-cta__note {
+		font-size: 0.8rem;
+		line-height: 1.85;
+		font-weight: 300;
+		margin: 0 0 1.1rem 0;
+	}
+	.article-cta--soft .article-cta__note { color: #7a8fa0; }
+	.article-cta--hard .article-cta__note { color: rgba(255,255,255,0.38); }
+
+	.article-cta__secondary {
+		font-family: 'DM Mono', monospace;
+		font-size: 0.65rem;
+		letter-spacing: 0.06em;
+		padding-top: 1rem;
+		border-top: 1px solid;
+	}
+	.article-cta--soft .article-cta__secondary {
+		color: #7a8fa0;
+		border-color: rgba(26,140,130,0.15);
+	}
+	.article-cta--hard .article-cta__secondary {
+		color: rgba(255,255,255,0.28);
+		border-color: rgba(255,255,255,0.08);
+	}
+	.article-cta__secondary a {
+		margin-left: 0.4rem;
+		text-decoration: none;
+	}
+	.article-cta--soft .article-cta__secondary a { color: #1a8c82; }
+	.article-cta--hard .article-cta__secondary a { color: rgba(255,255,255,0.5); }
+	.article-cta__secondary a:hover { text-decoration: underline; }
+
+	@media (max-width: 640px) {
+		.article-cta__inner { padding: 1.5rem 1.2rem; }
+		.article-cta__btn { display: block; text-align: center; }
+	}
+	/* ===== /ARTICLE CTA ===== */
 </style>
