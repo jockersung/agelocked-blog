@@ -16,7 +16,7 @@ slug: "longevity-55-percent-genetics"
 
 這個數字是過去估計值的兩倍以上。
 
-過去我們以為基因頂多影響 20–25%，現在告訴你是 55%。
+過去我們以為基因頂多影響 20 – 25%，現在告訴你是 55%。
 
 第一個反應很正常：「那努力有什麼用？」
 
@@ -76,9 +76,9 @@ slug: "longevity-55-percent-genetics"
 
 過去 100 年，人類平均壽命大幅延長——不是因為我們的細胞變得更強，而是因為我們消滅了大量的「外部威脅」：結核病、鼠疫、難產、戰爭。
 
-抗生素讓更多人活過了50 歲。公共衛生讓更多人活過了70 歲。
+抗生素讓更多人活過了 50 歲。公共衛生讓更多人活過了 70 歲。
 
-但有一件事，100年來幾乎沒有改變： **人類細胞的內在老化速度。**
+但有一件事，100 年來幾乎沒有改變： **人類細胞的內在老化速度。**
 
 我們只是讓更多人活到了原本就設定好的那道牆——慢性病的高牆：心血管疾病、癌症、代謝疾病、神經退化疾病。
 
@@ -96,21 +96,21 @@ slug: "longevity-55-percent-genetics"
 
 65 歲出現第一個慢性病。
 
-之後15 - 20年，在診所、藥罐子和體力衰退之間度過。
+之後 15 - 20 年，在診所、藥罐子和體力衰退之間度過。
 
 85 歲離開。
 
-你活了85年，但最後四分之一的時間，是在管理身體的損壞。
+你活了 85 年，但最後四分之一的時間，是在管理身體的損壞。
 
 **版本 B｜慢性發炎被控制住的路徑**
 
 介入讓疾病發生延後20年。
 
-85歲之前維持大部分的生理功能。
+85 歲之前維持大部分的生理功能。
 
-之後3到5年的衰弱期。
+之後 3 - 5 年的衰弱期。
 
-90歲左右離開。
+90 歲左右離開。
 
 同樣或更長的壽命，但「生病」的時間被壓縮到極短。
 
@@ -170,13 +170,7 @@ slug: "longevity-55-percent-genetics"
 
 不只是問你「有沒有這個症狀」，而是幫你看清楚，這些症狀組合在一起指向什麼方向。
 
-![CTA](./CTA.png)
-
-**加我 LINE，我把清單傳給你。**
-
 你的45%，值得你認真對待。
-
-👉 [加LINE索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
 
 ---
 
@@ -187,6 +181,6 @@ slug: "longevity-55-percent-genetics"
 03. Eileen M Crimmins, 2015. [Lifespan and Healthspan: Past, Present, and Promise](https://pubmed.ncbi.nlm.nih.gov/26561272/). *Gerontologist.* 55(6):901–911.  
 04. Armin Garmany, Satsuki Yamada, Andre Terzic, 2021. [Longevity leap: mind the healthspan gap.](https://pubmed.ncbi.nlm.nih.gov/34556664/) *NPJ Regen Med.* 6(1):57.  
 (https://www.nature.com/articles/s43587-024-00702-3) *Nat Aging.* 4(11):1635-1642.  
-05. Yifan Yang, Avi Mayo, Tomer Levy, Naveh Raz, Ben Shenhar, Daniel F Jarosz, Uri Alon, 2025\. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.  
+05. Yifan Yang, Avi Mayo, Tomer Levy, Naveh Raz, Ben Shenhar, Daniel F Jarosz, Uri Alon, 2025. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.  
 (https://pubmed.ncbi.nlm.nih.gov/41224985/) *Nature.* 647(8089):S2-S5.  
 06. Ben Shenhar et al. , 2026. [Heritability of intrinsic human life span is about 50% when confounding factors are addressed.](https://pubmed.ncbi.nlm.nih.gov/41610249/)  *Science.* 391(6784):504-510.  
