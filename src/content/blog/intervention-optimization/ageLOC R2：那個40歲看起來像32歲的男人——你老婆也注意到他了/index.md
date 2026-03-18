@@ -5,10 +5,11 @@ pubDate: 2026-03-01
 heroImage: './ageLOCR2.png'
 tags: ['ageLOC R2', '男性抗衰老', '蟲草', 'Nrf2', '介入與調校']
 category: '介入與調校'
+ctaType: 'hard'
 slug: "ageloc-r2-cellular-renewal"
 ---
 
-同樣40歲出頭，但他看起來就是不像那個年紀。精神好、身形穩、眼神還有光——不是特別在健身，也沒有特別自律，就是狀態一直在那裡。
+同樣 40 歲出頭，但他看起來就是不像那個年紀。精神好、身形穩、眼神還有光——不是特別在健身，也沒有特別自律，就是狀態一直在那裡。
 
 你老婆不一定說出來，但她看得出來這件事。
 
@@ -30,7 +31,7 @@ slug: "ageloc-r2-cellular-renewal"
 
 ---
 
-## 男性30–50歲的老化，有一個共同的底層
+## 男性 30–50 歲的老化，有一個共同的底層
 
 前幾篇我們說到，慢性發炎（Inflammaging）是老化加速的核心機制——細胞的修復開關關掉、損耗在累積、能量輸出在下降。
 
@@ -158,15 +159,15 @@ R2 不是急性的效果——它針對的是細胞層級的耗損模式，改�
 ---
 
 **延伸閱讀：**
-- [20歲睡一覺就好，40歲睡八小時還是空——不是你變懶，是你的發電廠壞了](/blog/chronic-inflammation/mitochondria-energy-after-40/) ← E篇（男性Inflammaging症狀篇）
-- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
+- [20歲睡一覺就好，40歲睡八小時還是空——不是你變懶，是你的發電廠壞了](/blog/chronic-inflammation/mitochondria-energy-after-40/) 
+- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
 
 ---
 
 ## 參考資料
 
-01. Ning-Zhi Tan et al., 2011. [The lifespan-extending effect of Cordyceps sinensis Cs-4 in normal mice and its molecular mechanisms.](https://www.fasebj.org/) *FASEB.*
-02. Jie-Ying Yang et al., 2011. [An ageLOC Vitality formula improves endurance exercise in aged mice and energy metabolism in muscle mitochondria.](https://www.fasebj.org/) *FASEB.*
+01. Ning-Zhi Tan et al., 2011. [The lifespan-extending effect of Cordyceps sinensis Cs-4 in normal mice and its molecular mechanisms.](https://faseb.onlinelibrary.wiley.com/doi/abs/10.1096/fasebj.25.1_supplement.599.1) *FASEB.*
+02. Jie-Ying Yang et al., 2011. [An ageLOC Vitality formula improves endurance exercise in aged mice and energy metabolism in muscle mitochondria.](https://www.semanticscholar.org/paper/An-ageLOC-Vitality-formula-improves-endurance-in-in-Dong-Lu/238e25fbf2509319ce098ca212d25a78635bd380) *FASEB.*
 03. Zimei Wu et al., 2012. [ageLOC Vitality enhances sexual functions in normal and impotent models.](https://www.fasebj.org/) *FASEB.*
 04. Ning-Zhi Tan et al., 2013. [ageLOC Vitality improves memory and learning ability in memory impairment models.](https://www.fasebj.org/) *FASEB.*
 05. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression: role of dietary phytonutrients.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112-20.
