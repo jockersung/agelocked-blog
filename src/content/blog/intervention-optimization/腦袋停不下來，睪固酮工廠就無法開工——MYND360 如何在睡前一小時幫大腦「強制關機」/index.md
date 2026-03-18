@@ -6,6 +6,7 @@ heroImage: './MYND360舒眠膠囊.png'
 tags: ['男性健康', '睡眠品質', '睪固酮', 'MYND360', '酪蛋白胜肽', '番紅花', '山茶葉', '如新', '介入調校']
 category: '介入與調校'
 ctaType: 'hard'
+slug: 'mynd360-sleep-brain-shutdown'
 ---
 
 如果你已經讀過前面那篇關於睡眠與睪固酮的文章，你知道問題的結構了：
