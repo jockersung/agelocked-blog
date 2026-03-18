@@ -5,7 +5,6 @@ pubDate: 2026-03-11
 heroImage: './MYND360舒眠膠囊.png'
 tags: ['男性健康', '睡眠品質', '睪固酮', 'MYND360', '酪蛋白胜肽', '番紅花', '山茶葉', '如新', '介入調校']
 category: '介入與調校'
-ctaType: 'hard'
 slug:"mynd360-sleep-brain-shutdown"
 ---
 
