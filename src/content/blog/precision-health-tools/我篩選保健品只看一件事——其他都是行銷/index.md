@@ -133,6 +133,18 @@ slug: "supplement-one-thing-to-check"
 
 ---
 
+**這個系列的完整閱讀順序：**
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) 
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) 
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
+- [「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/fda-certification-myth/) 
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) 
+- 我篩選保健品只看一件事——其他都是行銷 ← 本篇（總結）
+
+想了解如何挑選國外品牌保健品？→ [怎麼挑選國外保健食品：NSF查詢、Amazon真偽辨別與台灣法規](/blog/precision-health-tools/supplement-import-guide/)
+
+---
+
 ## 選品之前還有一件更重要的事
 
 選到對的產品，是第二步。
@@ -141,20 +153,4 @@ slug: "supplement-one-thing-to-check"
 
 在不清楚自己的基準值之前選產品，等於不知道目的地就出發——你可能往對的方向走，也可能往錯的方向走，而且無法判斷走了多久之後有沒有抵達。
 
-如果你想從你的狀況出發，找到真正適合你的介入方向——
-
-**加我 LINE，告訴我你的目標和目前的狀況，我們一起找出從哪裡開始最有意義。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
-
----
-
-**這個系列的完整閱讀順序：**
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
-- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
-- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇
-- [「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/fda-certification-myth/) ← FDA篇
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← Nu Skin標準篇
-- 我篩選保健品只看一件事——其他都是行銷 ← 本篇（總結）
-
-想了解如何挑選國外品牌保健品？→ [怎麼挑選國外保健食品：NSF查詢、Amazon真偽辨別與台灣法規](/blog/precision-health-tools/supplement-import-guide/)
+如果你想從你的狀況出發，可以選一個來做：
