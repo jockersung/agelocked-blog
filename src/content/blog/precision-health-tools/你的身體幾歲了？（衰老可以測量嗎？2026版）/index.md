@@ -5,6 +5,7 @@ pubDate: 2026-02-21
 heroImage: './你的身體幾歲了.png'
 tags: ['抗氧化', '健康', '長壽']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "biological-age-measurement"
 ---
 
@@ -146,14 +147,6 @@ slug: "biological-age-measurement"
 建議每半年到一年進行一次核心檢測，看看你的保養是否真的幫身體換來了更多「青春額度」。
 
 記住，年齡只是一個數字，你的生物數據才是生命質量的真實反映。
-
----
-
-![CTA](./CTA.png)
-
-👇👇👇👇
-
-[「還沒測過嗎？加Line了解](https://lin.ee/jgugMvX)
 
 ---
 
