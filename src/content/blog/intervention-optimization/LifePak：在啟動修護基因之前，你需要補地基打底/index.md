@@ -5,6 +5,7 @@ pubDate: 2026-03-08
 heroImage: './lifepack家族.png'
 tags: ['LifePak', '植化素', 'Phytochemicals', 'Nrf2', '抗氧化', '微量營養素']
 category: '介入與調校'
+ctaType: 'hard'
 slug: "lifepak-foundation-nutrition"
 ---
 
@@ -172,19 +173,11 @@ LifePak 針對不同的生理需求分為三個配方：
 
 ---
 
-想根據你的 Prysm iO 分數，了解你現在適合從哪裡開始？
-
-**加我 LINE，我們一起看你的數字，設計一個對你來說有意義的起點。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
-- [你每天有夠吃蔬菜嗎？——你的細胞拿到的可能比你以為的少很多](/blog/body-signals/carotenoid-cell-absorption/) ← 植化素SEO篇
-- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) ← 第7篇
-- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan 產品篇
-- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) ← 第5篇
+- [你每天有夠吃蔬菜嗎？——你的細胞拿到的可能比你以為的少很多](/blog/body-signals/carotenoid-cell-absorption/) 
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) 
+- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/)
+- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/)
 
 ---
 
@@ -196,5 +189,5 @@ LifePak 針對不同的生理需求分為三個配方：
 04. Bettina Molin Johansen et al., 2017. [Skin carotenoids reflect antioxidant status and an antioxidant-rich diet.](https://pubmed.ncbi.nlm.nih.gov/28606264/) *J Dermatol Sci.* 86(3):207-213.
 05. Brenda M Roe et al., 2000. [Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings.](https://pubmed.ncbi.nlm.nih.gov/15735074/) *Am J Clin Nutr.* 80(2):396-403.
 06. Wen-Harn Pan et al., 2018. [Vegetable, fruit, and phytonutrient consumption patterns in Taiwan.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9332634/) *J Food Drug Anal.* 26(1):145-153.
-07. David Sinclair, Matthew LaPlante, 2019. *Lifespan: Why We Age—and Why We Don't Have To.* Atria Books.
+07. David Sinclair, Matthew LaPlante, 2019. [*Lifespan: Why We Age—and Why We Don't Have To.*](https://www.books.com.tw/products/F014444886?srsltid=AfmBOor_W4q70G6WIdwS2a9lNmlc6KuAC-WKgFO6Lr6uYlrWCTA04a3r) Atria Books.
 08. Pharmanex Quality Standards. Nu Skin Enterprises. 6S Quality Process overview. *(NSF/ConsumerLab/BSCG triple certification)*
