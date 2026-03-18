@@ -5,6 +5,7 @@ pubDate: 2026-02-24
 heroImage: './光譜指數.png'
 tags: ['抗氧化', 'Prysm-iO', '教學', '健康管理']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "prysm-io-score-guide"
 ---
 
@@ -210,11 +211,3 @@ App 會幫你把所有數值畫成趨勢圖——讓你看見：
 如果你想知道「我的數字，具體代表我最優先需要補什麼」——加我 LINE，我們用 15 分鐘把你的狀況說清楚。
 
 不是每個人都需要一樣的方案，但每個人都值得知道自己真正需要什麼。
-
-> 📌 每週諮詢名額有限，優先開放給透過本篇找來的讀者。
-
-![CTA](./CTA.png)
-
-👇 **加 LINE，帶著你的 Prysm 分數來聊**
-
-[立即加入 LINE 諮詢](https://lin.ee/jgugMvX)
