@@ -5,6 +5,7 @@ pubDate: 2026-03-09
 heroImage: './打爆保健品神話.png'
 tags: ['保健品選擇', '生物利用率', '消化系統', '以形補形', '胎盤素', '端粒酶']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "supplement-myths-debunked"
 ---
 
@@ -135,10 +136,10 @@ TA Sciences 在 2011 年的 9 人試驗中，端粒長度沒有顯著增加；20
 ---
 
 **延伸閱讀：**
-- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← Nu Skin標準篇
-- [Prysm iO 掃完之後，第一步先做這件事](/blog/intervention-optimization/lifepak-foundation-nutrition/) ← LifePak產品篇
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) 
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) 
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) 
+- [Prysm iO 掃完之後，第一步先做這件事](/blog/intervention-optimization/lifepak-foundation-nutrition/) 
 
 ---
 
