@@ -1,19 +1,12 @@
 ---
-
 title: '做完功能醫學檢測之後，然後呢？'
-
 description: '去診所做全套代謝評估與有機酸檢測，最後卻因為「太難執行」而放棄？健康保養不該把生活搞得天翻地覆，帶你看懂忙碌現代人真正需要的重啟策略。'
-
 pubDate: 2026-03-15
-
 heroImage: './功能醫學檢測落差.png'
-
 tags: ['功能醫學', '代謝評估', '心率變異度', '量化健康', '慢性發炎', '精準補充']
-
 category: '精準健康工具'
-
+ctaType: 'hard'
 slug: 'functional-medicine-execution-gap'
-
 ---
 
 這是在科學園區或高壓職場裡，非常常見的真實情境：
@@ -90,6 +83,13 @@ slug: 'functional-medicine-execution-gap'
 
 ---
 
+**延伸閱讀：**
+
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/)
+- [你上一次知道自己身體真正的狀態，是什麼時候？Prysm-iO 15秒揭開真相](/blog/precision-health-tools/prysm-io-15sec/)
+  
+---
+
 ## 保養身體，不該把生活搞得天翻地覆
 
 傳統的觀念習慣把你當成「病人」，要你找出所有的壞菌和毒素，然後過著苦行僧般的生活。
@@ -99,20 +99,6 @@ slug: 'functional-medicine-execution-gap'
 你不需要辭職去深山休養，也不需要花幾萬塊去做根本執行不了的嚴苛飲食療程。你需要的是在現有的條件下，用最科學、最省力的方式，找回該有的體力與專注力。
 
 如果你手邊剛好有一份健檢報告，而且你也戴著智慧穿戴裝置，你其實已經具備了改變狀態的所有素材。
-
-點擊下方連結，花三分鐘把現有數據填入我的 **【專屬掃描前資料表】**。傳送給我後，我會先幫你梳理出數據背後的代謝缺口。
-
-我們再來討論，該如何用最少的心力，為你配置最精準的保養方向。
-
-👉 **[填寫專屬資料表，了解你的專屬優化策略](/prescan/)**
-
----
-
-**延伸閱讀：**
-
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/)
-
-- [你上一次知道自己身體真正的狀態，是什麼時候？Prysm-iO 15秒揭開真相](/blog/precision-health-tools/prysm-io-15sec/)
 
 ---
 
