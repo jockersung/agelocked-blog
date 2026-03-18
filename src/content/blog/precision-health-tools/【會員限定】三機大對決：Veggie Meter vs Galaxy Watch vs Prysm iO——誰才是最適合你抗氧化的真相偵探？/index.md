@@ -6,6 +6,7 @@ heroImage: './三機對比.png'
 tags: ['抗氧化', '科技', 'Prysm-iO', '會員限定']
 memberOnly: true
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "antioxidant-scanner-comparison"
 ---
 
@@ -333,6 +334,7 @@ Prysm iO 是這條路線的現階段終點。
 
 → [Prysm iO 15 秒實測教學：測完之後，你的分數代表什麼？](/blog/precision-health-tools/prysm-io-score-guide/)
 
+---
 
 ## 參考資料
 
