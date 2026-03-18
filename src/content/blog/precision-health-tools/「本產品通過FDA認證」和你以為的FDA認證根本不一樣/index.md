@@ -5,6 +5,7 @@ pubDate: 2026-03-07
 heroImage: './本產品通過FDA認證和你想的不一樣.png'
 tags: ['保健品選購', 'FDA', '監管標準', '科學選品', '精準健康']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "fda-certification-myth"
 ---
 
@@ -122,19 +123,10 @@ FDA針對食品原料建立了GRAS（Generally Recognized As Safe）安全性認
 
 ---
 
-如果你想知道你目前在補的產品通過了哪些有意義的認證——
-
-**加我 LINE，我幫你看。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
-- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← Nu Skin標準篇
-
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) 
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/)
 ---
 
 ## 參考資料
