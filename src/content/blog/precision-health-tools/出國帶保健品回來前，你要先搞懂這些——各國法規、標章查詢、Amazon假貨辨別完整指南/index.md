@@ -186,11 +186,11 @@ NOW Foods 曾發現旗下 11 款保健品在 Amazon上 被偽造，由單一賣�
 
 這是另一層完全不同的問題——標章管的是安全，不管有效。
 
-**延伸閱讀（建議閱讀順序）：**
-- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← 安全≠有效，從SGS開始理解這個差距
-- [「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/fda-certification-myth/) ← FDA認證的真實意義
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← 用本篇的框架對照一個具體案例
-- [我篩選保健品只看一件事——其他都是行銷](/blog/precision-health-tools/supplement-one-thing-to-check/) ← 選品完整框架總結
+**延伸閱讀：**
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
+- [「本產品通過FDA認證」和你以為的FDA認證根本不一樣](/blog/precision-health-tools/fda-certification-myth/) 
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) 
+- [我篩選保健品只看一件事——其他都是行銷](/blog/precision-health-tools/supplement-one-thing-to-check/) 
 
 ---
 
