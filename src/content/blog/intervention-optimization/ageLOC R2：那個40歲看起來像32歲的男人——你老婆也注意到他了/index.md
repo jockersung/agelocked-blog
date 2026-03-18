@@ -168,7 +168,7 @@ R2 不是急性的效果——它針對的是細胞層級的耗損模式，改�
 
 01. Ning-Zhi Tan et al., 2011. [The lifespan-extending effect of Cordyceps sinensis Cs-4 in normal mice and its molecular mechanisms.](https://faseb.onlinelibrary.wiley.com/doi/abs/10.1096/fasebj.25.1_supplement.599.1) *FASEB.*
 02. Jie-Ying Yang et al., 2011. [An ageLOC Vitality formula improves endurance exercise in aged mice and energy metabolism in muscle mitochondria.](https://www.semanticscholar.org/paper/An-ageLOC-Vitality-formula-improves-endurance-in-in-Dong-Lu/238e25fbf2509319ce098ca212d25a78635bd380) *FASEB.*
-03. Zimei Wu et al., 2012. [ageLOC Vitality enhances sexual functions in normal and impotent models.](https://www.fasebj.org/) *FASEB.*
-04. Ning-Zhi Tan et al., 2013. [ageLOC Vitality improves memory and learning ability in memory impairment models.](https://www.fasebj.org/) *FASEB.*
+03. Zimei Wu et al., 2012. [ageLOC Vitality enhances sexual functions in normal and impotent models.](https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.26.1_supplement.1095.1) *FASEB.*
+04. Ning-Zhi Tan et al., 2013. [ageLOC Vitality improves memory and learning ability in memory impairment models.](https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.27.1_supplement.661.4) *FASEB.*
 05. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression: role of dietary phytonutrients.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112-20.
 06. Cheol-Koo Lee et al., 2004. [The impact of alpha-lipoic acid, coenzyme Q10 and caloric restriction on life span and gene expression patterns in mice.](https://pubmed.ncbi.nlm.nih.gov/15019971/) *Free Radic Biol Med.* 36(8):1043-57.
