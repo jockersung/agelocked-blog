@@ -143,20 +143,17 @@ CoQ10 是脂溶性成分，在一般粉末膠囊劑型中，吸收率極低—�
 
 ---
 
-你現在在補的東西，有沒有進到細胞？
-
-這個問題，可以從你的身體訊號開始觀察，也可以透過可量化的指標來追蹤。
-
-**加我 LINE，告訴我你目前在補什麼，我幫你看吸收設計是否合理。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
+**延伸閱讀：**
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) 
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/ ) 
+- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/)
 
 ---
 
-**延伸閱讀：**
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
-- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/ ) ← 第5篇
-- [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
+
+你現在在補的東西，有沒有進到細胞？
+
+這個問題，可以從你的身體訊號開始觀察，也可以透過可量化的指標來追蹤。
 
 ---
 
