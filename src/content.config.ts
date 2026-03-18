@@ -21,6 +21,10 @@ const blog = defineCollection({
 
 			// ── 選填：首頁精選 ──
 			featured: z.boolean().default(false),
+
+			// ── CTA 控制 ──
+			ctaType: z.enum(['soft', 'hard']).optional().default('soft'),
+			ctaBridge: z.string().optional().default(''),
 		}),
 });
 
