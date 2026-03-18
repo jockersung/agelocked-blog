@@ -5,6 +5,7 @@ pubDate: 2026-02-12
 heroImage: './健康不再憑感覺.png'
 tags: ['抗氧化', '科技', 'Prysm-iO']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "prysm-io-15sec"
 ---
 
@@ -80,21 +81,3 @@ Nu Skin 的 **Prysm iO** 用 25 年的光譜科學與 2,100 萬筆全球掃描�
 ![光譜指數](./光譜指數.png)
 
 ---
-
-想知道自己落在哪個區間，以及對你來說意味著什麼？
-
-可以跟我預約一次 Prysm iO 檢測。
-
-👇👇👇👇
-
-[加 LINE，聯絡我預約【Prysm iO 檢測】](https://lin.ee/jgugMvX)
-
----
-
-觀望的，可以先加我 LINE，領取【身體警報自我檢測清單】，先看看自己有幾分。
-
-![CTA](./CTA.png)
-
-👇👇👇👇
-
-[加 LINE，領取【身體警報自我檢測清單】](https://lin.ee/jgugMvX)
