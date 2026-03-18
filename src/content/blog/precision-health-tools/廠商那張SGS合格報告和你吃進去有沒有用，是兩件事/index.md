@@ -142,17 +142,7 @@ SGS 是對成品做檢測，不是對整個生產流程做評估。
 
 ---
 
-你現在在補的東西，通過的是哪一層的品質標準？
-
-如果你想把手上的產品拿出來對照這四個標準——
-
-**加我 LINE，告訴我你在用什麼，我給你具體的看法。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
-- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) ← 話術篇
-- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 吸收率篇
-- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) ← 第6篇
+- [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) 
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) 
+- [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) 
