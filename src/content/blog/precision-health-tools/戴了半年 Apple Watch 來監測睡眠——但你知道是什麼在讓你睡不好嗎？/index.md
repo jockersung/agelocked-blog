@@ -5,6 +5,7 @@ pubDate: 2026-03-04
 heroImage: './穿戴裝置監測.png'
 tags: ['穿戴裝置', 'HRV', 'Prysm iO', '精準健康', '生物標記', '細胞儲備']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "apple-watch-sleep-vs-root-cause"
 ---
 
@@ -179,14 +180,6 @@ Prysm iO 給你細胞層級的截面。
 
 ---
 
-想做一次 Prysm iO 掃描，了解你現在的細胞抗氧化儲備在哪個水位？
-
-**加我 LINE，我們來安排。**
-
-👉 [加 LINE 預約掃描](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
 - [2026《科學》研究長壽新論：壽命55％是基因決定的——那你現在用什麼速度在耗損另外45％？](/blog/chronic-inflammation/longevity-55-percent-genetics/)  
 - [你上一次知道自己身體真正的狀態，是什麼時候？Prysm-iO-15-秒揭開身體的抗氧化真相](/blog/precision-health-tools/prysm-io-15sec/) 
@@ -195,9 +188,9 @@ Prysm iO 給你細胞層級的截面。
 
 ## 參考資料
 
-01. Evenson KR et al., 2025. Independent validation of nocturnal HRV across 536 nights: Oura Gen4 vs ECG reference. *npj Digital Medicine.*
-02. Apple Inc., 2025. Apple Watch hypertension detection feature: FDA clearance study summary. 100,000 participant validation.
-03. Henriksen A et al., 2024. Systematic review of Whoop sleep staging accuracy. *Journal of Medical Internet Research.*
+01. Dial MB et al.,2025. [Validation of nocturnal resting heart rate and heart rate variability in consumer wearables.](https://pubmed.ncbi.nlm.nih.gov/40834291/) *Physiological Reports*. 13:e70527.
+02. Apple Inc., 2025. [Hypertension Notification Feature: Clinical Validation Study.](https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250507.pdf) FDA 510(k) Premarket Notification K250507. Cleared September 11, 2025.
+03. Schyvens AM et al., 2024. [Accuracy of Fitbit Charge 4, Garmin Vivosmart 4, and WHOOP Versus Polysomnography: Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/38557808/) *JMIR mHealth and uHealth.* 12:e52192.
 04. Athletech News, 2025. [How Wearables Are Evolving From Fitness Trackers to Health Systems.](https://athletechnews.com/how-wearables-are-evolving-from-fitness-trackers-to-health-systems/)
-05. Bohn T et al., 2017. Carotenoid tissue accumulation as a biomarker of antioxidant reserve: methodological considerations. *Molecular Nutrition & Food Research.*
-06. Smidt CR & Burke DS, 2004. Nutritional significance and measurement of carotenoids. *Current Topics in Nutraceutical Research.*
+05. Bohn T et al., 2017. [Host-related factors explaining interindividual variability of carotenoid bioavailability and tissue concentrations in humans.](https://pubmed.ncbi.nlm.nih.gov/28101967/) *Molecular Nutrition & Food Research.* 61(6):1600685.
+06. Smidt CR & Burke DS, 2004. Nutritional significance and measurement of carotenoids. *Current Topics in Nutraceutical Research.* 2(2):79–91.
