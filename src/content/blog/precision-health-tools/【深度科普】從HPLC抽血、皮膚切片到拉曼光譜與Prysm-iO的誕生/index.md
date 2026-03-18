@@ -5,6 +5,7 @@ pubDate: 2026-02-24
 heroImage: './從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png'
 tags: ['抗氧化', '科學史', 'Prysm-iO', '深度科普']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "carotenoid-rrs-science"
 ---
 
@@ -510,12 +511,6 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 **這 25 年的技術進化，最終都是為了讓你能隨時知道自己身體的真實狀態。**
 
-![CTA](./CTA.png)
-
-👇👇👇👇
-
-[還沒測過嗎？加Line了解](https://lin.ee/jgugMvX)
-
 ---
 
 ## 這段歷史對你意味著什麼？
@@ -531,7 +526,6 @@ Prysm iO 徹底拋棄了雷射發射器。
 從鑑定文藝復興名畫的顏料，到在火星上尋找生命跡象，再到 15 秒讀取你的抗氧化儲備——這都是同一個物理原理，同一群科學家，同一份對精準的堅持。
 
 > 想知道你的抗氧化儲備現在在哪個水位？[回到主篇了解 Prysm iO →](/blog/precision-health-tools/prysm-io-15sec/)
-
 
 ---
 
