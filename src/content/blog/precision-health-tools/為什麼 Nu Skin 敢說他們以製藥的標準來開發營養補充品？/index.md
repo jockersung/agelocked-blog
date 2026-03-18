@@ -5,6 +5,7 @@ pubDate: 2026-03-07
 heroImage: './NuSkin產品標準.png'
 tags: ['Nu Skin', '製藥標準', 'GMP', 'NSF', '保健品品質', '精準健康']
 category: '精準健康工具'
+ctaType: 'hard'
 slug: "nuskin-pharmaceutical-standard"
 ---
 
@@ -130,18 +131,10 @@ Nu Skin在 2011 年收購了 LifeGen Technologies，取得了其核心資產—�
 
 ---
 
-如果你想知道針對你的狀況，具體應該從哪個產品開始——
-
-**加我 LINE，告訴我你的目標和目前的狀況，我給你具體的建議。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
-- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← SGS篇（本篇前傳）
-- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) ← Youthspan產品篇
-- [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) ← R2產品篇
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
+- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) 
+- [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) 
 
 ---
 
