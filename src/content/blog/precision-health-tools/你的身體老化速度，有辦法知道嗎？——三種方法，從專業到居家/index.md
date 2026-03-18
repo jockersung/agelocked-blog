@@ -123,25 +123,9 @@ Prysm iO 用光譜技術，15秒掃描指尖，把這個數值轉換成一個顏
 
 ---
 
-想知道你的 Prysm iO 分數落在哪個區間，以及對你來說意味著什麼？
-
-**加我 LINE，我們安排一次掃描。**
-
-👉 [加 LINE 想知道自己的 Prysm iO 分數](https://line.me/ti/p/@fer7932k)
-
-![CTA](./CTA.png)
-
-或者，如果你想先從自我評估開始，我也有整理【身體警報自我檢測清單】，幫你把現在的身體訊號系統化整理，再決定下一步。
-
-**加LINE索取清單，或直接預約掃描——你決定從哪裡開始。**
-
-👉 [加 LINE 索取【身體警報自我檢測清單】](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
-- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](/blog/body-signals/normal-checkup-still-tired/) ← 第2篇
-- [活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？](/blog/chronic-inflammation/healthspan-vs-lifespan/) ← 第4篇
+- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](/blog/body-signals/normal-checkup-still-tired/) 
+- [活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？](/blog/chronic-inflammation/healthspan-vs-lifespan/)
 
 ---
 
