@@ -5,6 +5,7 @@ pubDate: 2026-03-04
 heroImage: './Youthspan.png'
 tags: ['ageLOC', 'Youthspan', '抗衰老', '基因表達', 'CRM', '介入']
 category: '介入與調校'
+ctaType: 'hard'
 slug: "ageloc-youthspan-longevity-genes"
 ---
 
@@ -108,13 +109,13 @@ Youthspan 的 13 種成分，是經過「基因微陣列技術」實驗數據篩
 
 ## 核心成分與它們在做的事
 
-**槲皮素（Quercetin）**——除了抗氧化和抑制NF-κB慢性發炎路徑，槲皮素的Senolytic特性是近年最受關注的方向——幫助清除體內的衰老細胞。衰老細胞是Inflammaging的主要來源，它們停止分裂但不死亡，持續釋放促發炎的SASP物質。清除它們，是從根本上減緩Inflammaging的介入。
+**槲皮素（Quercetin）**——除了抗氧化和抑制NF-κB慢性發炎路徑，槲皮素的Senolytic特性是近年最受關注的方向——幫助清除體內的衰老細胞。衰老細胞是 Inflammaging 的主要來源，它們停止分裂但不死亡，持續釋放促發炎的 SASP 物質。清除它們，是從根本上減緩 Inflammaging 的介入。
 
 **α-硫辛酸（ALA）**——既溶於水又溶於脂肪，是少數能在細胞所有環境中工作的抗氧化劑。它能活化AMPK路徑（細胞能量感應器），這正是熱量限制在代謝層面的關鍵機制之一。同時能將已消耗的維生素C和E還原回活性形式，讓抗氧化網絡持續運作。
 
 **蝦青素（Astaxanthin）**——分子結構長度剛好能橫跨細胞膜的雙層脂質，同時保護膜的內外兩側——這是大多數抗氧化劑做不到的。它也是Prysm iO掃描測量的類胡蘿蔔素家族成員，補充後掃描數值的變化可以量化追蹤效果。
 
-**白藜蘆醇（虎杖根萃取物）**——激活SIRT1長壽蛋白，是熱量限制最重要的下游效應之一。使用天然來源萃取，並經過吸收率驗證。**重要：** 白藜蘆醇研究一致顯示低劑量有效、高劑量反效果——配方中的劑量控制是關鍵。
+**白藜蘆醇（虎杖根萃取物）**——激活 SIRT1 長壽蛋白，是熱量限制最重要的下游效應之一。使用天然來源萃取，並經過吸收率驗證。**重要：** 白藜蘆醇研究一致顯示低劑量有效、高劑量反效果——配方中的劑量控制是關鍵。
 
 **紫玉米萃取物（富含花青素C3G）**——代謝彈性的調節因子，優化脂肪細胞訊號傳導，抑制慢性低度發炎。在模擬熱量限制的代謝層面效應中扮演關鍵角色。
  
@@ -186,18 +187,14 @@ Youthspan 用三十年的基因表達研究，把那個複雜的配比問題解�
 
 ---
 
+**延伸閱讀：**
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
+- [你的身體老化速度，有辦法知道嗎？](/blog/precision-health-tools/aging-speed-measurement-methods/)
+  
+---
 想了解 Youthspan 是否適合你現在的狀況？
 
-**加我 LINE，與我們聊一聊。**
-
-👉 [加 LINE 諮詢](https://line.me/ti/p/@fer7932k)
-
----
-
-**延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) ← Inflammaging篇
-- [你的身體老化速度，有辦法知道嗎？](/blog/precision-health-tools/aging-speed-measurement-methods/) ← Prysm iO 掃描說明
-
+**可以帶著你現在的狀況來聊一聊**
 ---
 
 ## 參考資料
