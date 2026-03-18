@@ -2,7 +2,7 @@
 title: '多酚不是在「清自由基」：它真正做的，更像幫細胞做一場重訓'
 description: '試管裡，多酚確實能直接抗氧化；但到了人體，真正重要的可能不是「清除自由基」，而是透過低劑量氧化還原訊號啟動 Nrf2 等防禦路徑，讓細胞把自己的保護系統拉起來。這種邏輯，和重訓後肌肉變強很像。'
 pubDate: 2026-03-18
-heroImage: './.多酚重訓細胞.png'
+heroImage: './多酚重訓細胞.png'
 category: '慢性發炎科學'
 slug: 'polyphenol-nrf2-antioxidant-myth'
 ---
