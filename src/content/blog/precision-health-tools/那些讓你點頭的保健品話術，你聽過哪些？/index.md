@@ -208,17 +208,7 @@ NMN 是近年來研究最活躍、市場最熱門的抗衰老成分之一，在�
 
 ---
 
-你現在在補的東西，問題問對了嗎？
-
-如果你想把目前的補充清單拿出來檢視——哪些有依據、哪些可以停、哪些可以調整——
-
-**加我 LINE，告訴我你在補什麼，我給你具體的看法。**
-
-👉 [加LINE諮詢](https://line.me/ti/p/@fer7932k)
-
----
-
 **延伸閱讀：**
-- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) ← 第4篇
-- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) ← 第5篇
-- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) ← C篇
+- [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) 
+- [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
+- [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
