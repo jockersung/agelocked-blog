@@ -116,6 +116,12 @@ Inflammaging 發生在「還沒生病」和「已經生病」之間的那個光�
 
 ---
 
+**延伸閱讀：**
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
+- [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/)
+
+---
+
 ## 下一步
 
 搞清楚你的症狀模式，是開始介入之前最重要的一步。
@@ -132,8 +138,3 @@ Inflammaging 發生在「還沒生病」和「已經生病」之間的那個光�
 
 我整理了一份【身體警報自我檢測清單】，幫你把這些訊號系統化整理，找出你的 Inflammaging 現在在哪個程度。
 
----
-
-**延伸閱讀：**
-- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
-- [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) 
