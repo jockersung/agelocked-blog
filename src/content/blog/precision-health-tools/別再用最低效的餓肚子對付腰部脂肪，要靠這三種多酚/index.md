@@ -192,7 +192,7 @@ COMT 是負責降解正腎上腺素（Norepinephrine，NE）的酵素。
 
 **當你終於知道問題出在哪裡，接下來到底該怎麼做。**
 
-系列第四篇：[ageLOC Meta 每代紫：不是亂補多酚，而是把三條代謝路徑一次補齊](/blog/precision-health-tools/ageloc-meta-clinical-protocol/)
+系列第四篇：[ageLOC Meta：不是亂補多酚，而是把三條代謝路徑一次補齊](/blog/precision-health-tools/ageloc-meta-clinical-protocol/)
 
 ---
 
