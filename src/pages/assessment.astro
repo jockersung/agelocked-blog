@@ -149,6 +149,25 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
       .btn-submit:hover { background: var(--teal-d); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(26,140,130,0.35); }
       .btn-submit:disabled { background: var(--muted); cursor: not-allowed; opacity: 0.5; box-shadow: none; transform: none; }
 
+      .next-step-box {
+        margin-top: 1.8rem; padding: 1.4rem 1.6rem;
+        background: var(--ink); border-radius: 2px;
+        border-left: 3px solid var(--gold);
+      }
+      .next-step-text {
+        font-size: 0.88rem; line-height: 1.9; color: rgba(255,255,255,0.7);
+        font-weight: 300; margin: 0 0 1.1rem 0;
+      }
+      .next-step-text strong { color: #ffffff; font-weight: 500; }
+      .next-step-btn {
+        display: inline-block; padding: 0.85rem 1.6rem;
+        background: var(--gold); color: #ffffff; text-decoration: none;
+        font-family: 'DM Mono', monospace; font-size: 0.78rem;
+        letter-spacing: 0.12em; border-radius: 2px;
+        transition: all 0.25s;
+      }
+      .next-step-btn:hover { background: #9a7848; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(184,147,90,0.3); }
+
       .submit-steps {
         display: flex; flex-direction: column; align-items: center; gap: 0.8rem;
       }
@@ -305,6 +324,13 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
           <div class="score-display"><span id="scoreNum">0</span> <span>/ 10</span></div>
           <div id="resultBadge" class="result-badge">測量中</div>
           <div id="resultText" class="result-text">請勾選上方符合的狀況以顯示評估結果。</div>
+          <div id="nextStepBox" class="next-step-box" style="display:none;">
+            <p class="next-step-text">
+              這份評估是第一步——它顯示的是你觀察到的症狀訊號。<br>
+              要看出<strong>真正的方向</strong>，需要把這份結果和你的健檢數據、穿戴裝置數據放在一起比對。
+            </p>
+            <a href="/prescan" class="next-step-btn">📊 下一步：填寫健檢資料表，完成數據比對</a>
+          </div>
         </div>
 
         <div class="submit-section">
@@ -368,11 +394,13 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
         if (score === 0) {
           resultBox.className = 'result-box hidden';
           copyBtn.disabled = true;
+          document.getElementById('nextStepBox').style.display = 'none';
           return;
         }
 
         copyBtn.disabled = false;
         resultBox.className = 'result-box show';
+        document.getElementById('nextStepBox').style.display = 'block';
 
         if (score <= 2) {
           resultBox.classList.add('green');
