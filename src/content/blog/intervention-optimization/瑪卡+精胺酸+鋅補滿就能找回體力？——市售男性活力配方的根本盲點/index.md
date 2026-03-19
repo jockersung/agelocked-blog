@@ -140,6 +140,7 @@ R2 日錠的核心機制是 **啟動 Nrf2 轉錄因子**，讓細胞自己生產
 ---
 
 **參考文獻：**
+
 01. Gonzales GF, et al. (2002).[Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men](https://pubmed.ncbi.nlm.nih.gov/12472620/) *Andrologia*, 34(6), 367–372.
 02. Melnikovova I, et al. (2015).[Effect of Lepidium meyenii Walp. on Semen Parameters and Serum Hormone Levels in Healthy Adult Men: A Double-Blind, Randomized, Placebo-Controlled Pilot Study](https://pubmed.ncbi.nlm.nih.gov/26421049/) *Evid Based Complement Alternat Med*, 2015:324369.
 03. Chen J, et al. (1999).[Effect of oral administration of high-dose nitric oxide donor L-arginine in men with organic erectile dysfunction: results of a double-blind, randomized, placebo-controlled study](https://pubmed.ncbi.nlm.nih.gov/10233492/) *BJU Int*, 83(3), 269–273.
