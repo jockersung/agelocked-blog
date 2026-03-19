@@ -10,7 +10,7 @@ slug: "mitochondria-energy-after-40"
 
 你有沒有想過，為什麼同樣是疲勞——
 
-20歲的疲勞睡一覺就好，40歲的疲勞卻像是怎麼充電都充不滿？
+20 歲的疲勞睡一覺就好，40 歲的疲勞卻像是怎麼充電都充不滿？
 
 答案不在你的意志力，也不在你的睡眠管理。
 
@@ -124,16 +124,16 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 
 ---
 
-知道了機制，下一步是了解你現在的狀況在哪裡。
-
-我整理了一份【身體警報自我檢測清單】，幫你系統化整理身體的訊號，找出你目前的細胞耗損模式。
-
----
-
 **延伸閱讀：**
 - [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) 
 - [不節食也能啟動長壽基因？CRM的概念](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
 - [那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) 
+
+---
+
+知道了機制，下一步是了解你現在的狀況在哪裡。
+
+我整理了一份【身體警報自我檢測清單】，幫你系統化整理身體的訊號，找出你目前的細胞耗損模式。
 
 ---
 
