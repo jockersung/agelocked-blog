@@ -17,7 +17,7 @@ slug: "visceral-fat-polyphenol-mechanism"
 
 不是「促進新陳代謝」這種含糊說法。是具體到：對哪個酵素、通過什麼訊號路徑、在哪項隨機對照試驗裡被量化確認。
 
-如果你對多酚還停留在『抗氧化＝清自由基』的印象，先看這篇。👉 [多酚不是在「清自由基」：它真正做的，更像幫細胞做一場重訓](/blog/chronic-inflammation/polyphenol-nrf2-antioxidant-myth/)
+如果你對多酚還停留在『抗氧化＝清自由基』的印象，先看這篇👉 [多酚不是在「清自由基」：它真正做的，更像幫細胞做一場重訓](/blog/chronic-inflammation/polyphenol-nrf2-antioxidant-myth/)。
 
 答案是三種多酚類化合物：**花青素（Anthocyanidin）、荔枝綠茶多酚（Oligonol®）、兒茶素（Catechin）**。
 
@@ -158,7 +158,7 @@ COMT 是負責降解 **正腎上腺素（Norepinephrine，NE）** 的酵素。
 
 在下一篇文章裡，我會直接幫你拆解：**到底哪些人適合吃 Meta？該怎麼吃？以及更重要的——你需要搭配什麼，才能讓它在你身上真正發揮效果？**
 
-👉 **系列第四篇**：[ageLOC Meta 每代紫——臨床劑量、使用策略與搭配建議](/blog/intervention-optimization/ageloc-meta-clinical-protocol/)
+👉 **系列第四篇**：[ageLOC Meta 每代紫：不是亂補多酚，而是把三條代謝路徑一次補齊](/blog/intervention-optimization/ageloc-meta-clinical-protocol/)
 
 ---
 
