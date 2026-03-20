@@ -4,8 +4,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = '找回餘裕的掃描前資料表 · AGELOCKED';
-const description = '資料越完整，我們越能找出你「理智線容易斷、體力透支」的科學底層原因。有的填、沒有的跳過就好——我們不談玄學，只用數據找回你撐起家庭的能量。';
+const title = '掃描前資料表 · AGELOCKED';
+const description = '資料越完整，當場討論越有方向。有的填、沒有的跳過就好——我會根據你提供的數據組合，梳理出最適合你的科學保養與生活調整方向。';
 ---
 
 <!doctype html>
@@ -38,6 +38,8 @@ const description = '資料越完整，我們越能找出你「理智線容易�
         --orange-p:rgba(184,92,26,0.07);
       }
 
+      * { box-sizing: border-box; }
+
       /* ── HEADER 區塊樣式 ── */
       .page-header {
         background: var(--ink);
@@ -49,41 +51,32 @@ const description = '資料越完整，我們越能找出你「理智線容易�
         position: absolute; inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(26,140,130,0.12) 0%, transparent 70%);
       }
-      .header-inner { max-width: 740px; margin: 0 auto; position: relative;
-      }
+      .header-inner { max-width: 740px; margin: 0 auto; position: relative; }
       .header-brand {
         font-family: 'DM Mono', monospace;
-        font-size: 0.62rem; letter-spacing: 0.4em; color: var(--gold);
+        font-size: 0.85rem; letter-spacing: 0.4em; color: var(--gold);
         text-transform: uppercase; margin-bottom: 1.4rem;
         display: flex; align-items: center; gap: 0.8rem;
       }
-      .header-brand::before { content: '◆'; font-size: 0.38rem;
-      }
+      .header-brand::before { content: '◆'; font-size: 0.5rem; }
       .page-title {
         font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(1.9rem, 4vw, 3rem);
-        font-weight: 300; color: #fff; line-height: 1.2;
+        font-size: clamp(2.1rem, 4vw, 3.2rem);
+        font-weight: 300; color: #fff; line-height: 1.3;
         margin-bottom: 0.8rem;
       }
-      .page-title em { font-style: italic; color: #6de8df;
-      }
+      .page-title em { font-style: italic; color: #6de8df; }
       .page-desc {
-        font-size: 0.9rem; color: rgba(255,255,255,0.48);
-        font-weight: 300; line-height: 1.9; max-width: 520px;
+        font-size: 1.15rem; color: rgba(255,255,255,0.7);
+        font-weight: 300; line-height: 1.9; max-width: 580px;
       }
 
       /* ── PROGRESS BAR ── */
-      .progress-wrap { background: rgba(255,255,255,0.05);
-        height: 2px; margin-top: 2rem; }
-      .progress-bar {
-        height: 100%;
-        background: var(--teal);
-        width: 0%; transition: width 0.4s ease;
-      }
+      .progress-wrap { background: rgba(255,255,255,0.05); height: 2px; margin-top: 2rem; }
+      .progress-bar { height: 100%; background: var(--teal); width: 0%; transition: width 0.4s ease; }
 
       /* ── FORM BODY ── */
-      .form-body { max-width: 740px;
-        margin: 0 auto; padding: 3rem 6vw 6rem; background: var(--bg); }
+      .form-body { max-width: 740px; margin: 0 auto; padding: 3rem 6vw 6rem; background: var(--bg); }
 
       /* Section */
       .form-section {
@@ -94,19 +87,14 @@ const description = '資料越完整，我們越能找出你「理智線容易�
         animation: fadeUp 0.5s ease both;
       }
       @keyframes fadeUp {
-        from { opacity: 0;
-        transform: translateY(12px); }
-        to   { opacity: 1; transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(12px); }
+        to   { opacity: 1; transform: translateY(0); }
       }
-      .form-section:nth-child(2) { animation-delay: 0.05s;
-      }
+      .form-section:nth-child(2) { animation-delay: 0.05s; }
       .form-section:nth-child(3) { animation-delay: 0.10s; }
-      .form-section:nth-child(4) { animation-delay: 0.15s;
-      }
+      .form-section:nth-child(4) { animation-delay: 0.15s; }
       .form-section:nth-child(5) { animation-delay: 0.20s; }
-      .form-section:nth-child(6) { animation-delay: 0.25s;
-      }
+      .form-section:nth-child(6) { animation-delay: 0.25s; }
 
       .section-head {
         padding: 1.4rem 1.8rem 1.2rem;
@@ -115,96 +103,81 @@ const description = '資料越完整，我們越能找出你「理智線容易�
       }
       .section-num {
         font-family: 'DM Mono', monospace;
-        font-size: 0.62rem;
+        font-size: 0.85rem;
         letter-spacing: 0.2em; color: var(--teal);
         background: var(--teal-p); padding: 0.2rem 0.55rem;
         border-radius: 1px; flex-shrink: 0; margin-top: 0.3rem;
       }
       .section-label-sm {
         font-family: 'DM Mono', monospace;
-        font-size: 0.6rem;
+        font-size: 0.85rem;
         letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase;
         margin-bottom: 0.3rem;
       }
       .section-h {
         font-family: 'Cormorant Garamond', serif;
-        font-size: 1.2rem; font-weight: 400; color: var(--ink);
+        font-size: 1.4rem; font-weight: 400; color: var(--ink); margin: 0;
       }
-      .section-body { padding: 1.6rem 1.8rem;
-      }
+      .section-body { padding: 1.6rem 1.8rem; }
 
       /* Fields */
-      .field { margin-bottom: 1.3rem;
-      }
-      .field:last-child { margin-bottom: 0;
-      }
+      .field { margin-bottom: 1.3rem; }
+      .field:last-child { margin-bottom: 0; }
       .field-label {
-        font-size: 0.82rem; font-weight: 400;
+        font-size: 1.05rem; font-weight: 400;
         color: var(--ink);
-        margin-bottom: 0.45rem; display: flex; align-items: center; gap: 0.5rem;
+        margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;
       }
       .field-optional {
         font-family: 'DM Mono', monospace;
-        font-size: 0.55rem;
+        font-size: 0.85rem;
         letter-spacing: 0.15em; color: var(--muted);
-        background: var(--surface); padding: 0.1rem 0.4rem; border-radius: 1px;
+        background: var(--surface); padding: 0.2rem 0.5rem; border-radius: 1px;
       }
       input[type="text"], input[type="number"], input[type="tel"], select, textarea {
         width: 100%;
         border: 1px solid var(--border);
-        border-radius: 2px; padding: 0.7rem 0.9rem;
-        font-family: 'Noto Serif TC', serif; font-size: 0.88rem;
+        border-radius: 2px; padding: 0.8rem 1rem;
+        font-family: 'Noto Serif TC', serif; font-size: 1.15rem;
         color: var(--ink); background: var(--bg);
         transition: border-color 0.2s, background 0.2s;
         appearance: none;
       }
-      input:focus, select:focus, textarea:focus {
-        outline: none;
-        border-color: var(--teal);
-        background: var(--bg2);
-      }
-      textarea { resize: vertical; min-height: 80px; line-height: 1.8;
-      }
+      input:focus, select:focus, textarea:focus { outline: none; border-color: var(--teal); background: var(--bg2); }
+      textarea { resize: vertical; min-height: 80px; line-height: 1.8; }
 
-      .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem;
-      }
-      .field-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.9rem;
-      }
+      .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+      .field-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.9rem; }
 
       /* Unit label */
-      .input-unit { position: relative;
-      }
-      .input-unit input { padding-right: 3.2rem;
-      }
+      .input-unit { position: relative; }
+      .input-unit input { padding-right: 3.5rem; }
       .unit-tag {
-        position: absolute; right: 0.8rem;
+        position: absolute; right: 1rem;
         top: 50%; transform: translateY(-50%);
-        font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--muted);
+        font-family: 'DM Mono', monospace; font-size: 0.9rem; color: var(--muted);
         pointer-events: none;
       }
 
       /* Checkbox group */
-      .check-grid { display: grid;
-        grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.2rem; }
+      .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 0.2rem; }
       .check-item {
         display: flex;
         align-items: flex-start; gap: 0.6rem;
-        padding: 0.7rem 0.9rem; border: 1px solid var(--border);
+        padding: 0.8rem 1rem; border: 1px solid var(--border);
         border-radius: 2px; cursor: pointer; transition: all 0.15s;
-        font-size: 0.83rem;
+        font-size: 1.05rem;
         color: var(--body); font-weight: 300; line-height: 1.5;
         background: var(--bg);
       }
-      .check-item:hover { border-color: var(--teal); background: var(--teal-p);
-      }
-      .check-item input { flex-shrink: 0; accent-color: var(--teal); margin-top: 0.15rem;
-      }
+      .check-item:hover { border-color: var(--teal); background: var(--teal-p); }
+      .check-item input { flex-shrink: 0; accent-color: var(--teal); margin-top: 0.2rem; transform: scale(1.3); }
 
       /* ── TG/HDL CALCULATOR ── */
       .calc-box {
         background: var(--ink);
         border-radius: 2px;
-        padding: 1.6rem 1.8rem; margin-top: 1.4rem;
+        padding: 1.8rem; margin-top: 1.8rem;
         position: relative; overflow: hidden;
       }
       .calc-box::before {
@@ -214,134 +187,114 @@ const description = '資料越完整，我們越能找出你「理智線容易�
       }
       .calc-label {
         font-family: 'DM Mono', monospace;
-        font-size: 0.6rem;
+        font-size: 0.85rem;
         letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase;
-        margin-bottom: 0.8rem; position: relative;
+        margin-bottom: 1rem; position: relative;
       }
       .calc-title {
         font-family: 'Cormorant Garamond', serif;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         color: #fff; font-weight: 300; margin-bottom: 1.2rem; position: relative; line-height: 1.5;
       }
-      .calc-inputs { display: grid;
-        grid-template-columns: 1fr 1fr auto; gap: 0.8rem; align-items: end; position: relative;
-      }
+      .calc-inputs { display: grid; grid-template-columns: 1fr 1fr auto; gap: 0.8rem; align-items: end; position: relative; }
       .calc-field label {
-        font-size: 0.75rem; color: rgba(255,255,255,0.5);
-        display: block; margin-bottom: 0.35rem; font-weight: 300;
+        font-size: 0.95rem; color: rgba(255,255,255,0.7);
+        display: block; margin-bottom: 0.5rem; font-weight: 300;
       }
       .calc-field input {
         background: rgba(255,255,255,0.07);
         border: 1px solid rgba(255,255,255,0.12);
-        color: #fff; font-family: 'DM Mono', monospace; font-size: 1rem;
-        padding: 0.65rem 0.8rem; width: 100%; border-radius: 2px;
+        color: #fff; font-family: 'DM Mono', monospace; font-size: 1.2rem;
+        padding: 0.8rem 1rem; width: 100%; border-radius: 2px;
         transition: border-color 0.2s;
       }
-      .calc-field input:focus { outline: none; border-color: var(--teal); background: rgba(26,140,130,0.1);
-      }
+      .calc-field input:focus { outline: none; border-color: var(--teal); background: rgba(26,140,130,0.1); }
       .calc-btn {
-        padding: 0.65rem 1.2rem; background: var(--teal);
+        padding: 0.8rem 1.4rem; background: var(--teal);
         color: #fff;
         border: none; border-radius: 2px; cursor: pointer;
-        font-family: 'DM Mono', monospace; font-size: 0.7rem;
+        font-family: 'DM Mono', monospace; font-size: 0.95rem;
         letter-spacing: 0.15em; text-transform: uppercase;
         transition: background 0.2s; white-space: nowrap;
       }
-      .calc-btn:hover { background: var(--teal-d);
-      }
+      .calc-btn:hover { background: var(--teal-d); }
 
       .calc-result {
-        margin-top: 1.2rem; padding: 1rem 1.2rem;
-        border-radius: 2px; font-size: 0.88rem;
+        margin-top: 1.4rem; padding: 1.2rem;
+        border-radius: 2px; font-size: 1.15rem;
         font-weight: 300; line-height: 1.8; display: none;
         position: relative;
       }
       .calc-result.show { display: block; }
-      .calc-result.green { background: rgba(26,122,80,0.15);
-        border: 1px solid rgba(26,122,80,0.3); }
-      .calc-result.orange { background: rgba(184,92,26,0.15); border: 1px solid rgba(184,92,26,0.3);
-      }
-      .calc-result.red { background: rgba(192,57,43,0.18); border: 1px solid rgba(192,57,43,0.35);
-      }
+      .calc-result.green { background: rgba(26,122,80,0.15); border: 1px solid rgba(26,122,80,0.3); }
+      .calc-result.orange { background: rgba(184,92,26,0.15); border: 1px solid rgba(184,92,26,0.3); }
+      .calc-result.red { background: rgba(192,57,43,0.18); border: 1px solid rgba(192,57,43,0.35); }
       .calc-result-ratio {
         font-family: 'Cormorant Garamond', serif;
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 300; display: block; margin-bottom: 0.4rem;
       }
-      .calc-result.green .calc-result-ratio { color: #4ade80;
-      }
-      .calc-result.orange .calc-result-ratio { color: #fb923c;
-      }
-      .calc-result.red .calc-result-ratio { color: #f87171;
-      }
-      .calc-result-text { color: rgba(255,255,255,0.75); font-size: 0.82rem;
-      }
+      .calc-result.green .calc-result-ratio { color: #4ade80; }
+      .calc-result.orange .calc-result-ratio { color: #fb923c; }
+      .calc-result.red .calc-result-ratio { color: #f87171; }
+      .calc-result-text { color: rgba(255,255,255,0.85); font-size: 1.1rem; }
       .calc-result-badge {
         font-family: 'DM Mono', monospace;
-        font-size: 0.6rem;
-        letter-spacing: 0.2em; padding: 0.15rem 0.5rem; border-radius: 1px;
+        font-size: 0.85rem;
+        letter-spacing: 0.2em; padding: 0.25rem 0.6rem; border-radius: 1px;
         display: inline-block; margin-bottom: 0.5rem;
       }
-      .calc-result.green .calc-result-badge { background: rgba(74,222,128,0.2); color: #4ade80;
-      }
-      .calc-result.orange .calc-result-badge { background: rgba(251,146,60,0.2); color: #fb923c;
-      }
-      .calc-result.red .calc-result-badge { background: rgba(248,113,113,0.2); color: #f87171;
-      }
+      .calc-result.green .calc-result-badge { background: rgba(74,222,128,0.2); color: #4ade80; }
+      .calc-result.orange .calc-result-badge { background: rgba(251,146,60,0.2); color: #fb923c; }
+      .calc-result.red .calc-result-badge { background: rgba(248,113,113,0.2); color: #f87171; }
 
       /* ── WATCH DATA SECTION ── */
       .watch-hint {
         background: var(--teal-p);
         border: 1px solid rgba(26,140,130,0.18);
-        border-radius: 2px; padding: 1rem 1.2rem;
-        font-size: 0.82rem; color: var(--body); font-weight: 300; line-height: 1.85;
-        margin-bottom: 1.2rem;
+        border-radius: 2px; padding: 1.2rem;
+        font-size: 1.05rem; color: var(--body); font-weight: 300; line-height: 1.85;
+        margin-bottom: 1.4rem;
       }
-      .watch-hint strong { color: var(--teal); font-weight: 500;
-      }
+      .watch-hint strong { color: var(--teal); font-weight: 500; }
       .watch-guide {
         background: var(--surface); border-radius: 2px;
-        padding: 1rem 1.2rem; margin-top: 1rem;
-        font-size: 0.78rem; color: var(--muted); font-weight: 300; line-height: 1.9;
+        padding: 1.2rem; margin-top: 1.4rem;
+        font-size: 1rem; color: var(--muted); font-weight: 300; line-height: 1.9;
       }
-      .watch-guide strong { color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.2rem;
-      }
+      .watch-guide strong { color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.4rem; }
 
       /* ── SUPPLEMENT LIST ── */
       .suppl-row {
         display: grid;
         grid-template-columns: 1fr auto auto;
-        gap: 0.6rem; align-items: center; margin-bottom: 0.5rem;
+        gap: 0.8rem; align-items: center; margin-bottom: 0.6rem;
       }
-      .suppl-row input { margin-bottom: 0;
-      }
+      .suppl-row input { margin-bottom: 0; }
       .suppl-add {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem;
+        font-size: 0.9rem;
         letter-spacing: 0.15em; color: var(--teal); text-transform: uppercase;
         background: none; border: 1px solid var(--teal); border-radius: 2px;
-        padding: 0.45rem 0.8rem;
+        padding: 0.6rem 1rem;
         cursor: pointer; transition: all 0.2s;
-        white-space: nowrap; margin-top: 0.5rem; display: inline-block;
+        white-space: nowrap; margin-top: 0.8rem; display: inline-block;
       }
-      .suppl-add:hover { background: var(--teal-p);
-      }
+      .suppl-add:hover { background: var(--teal-p); }
       .suppl-remove {
         background: none;
         border: 1px solid var(--border); border-radius: 2px;
-        padding: 0.45rem 0.6rem; cursor: pointer; color: var(--muted);
-        font-size: 0.75rem; transition: all 0.15s; line-height: 1;
+        padding: 0.6rem 0.8rem; cursor: pointer; color: var(--muted);
+        font-size: 1rem; transition: all 0.15s; line-height: 1;
       }
-      .suppl-remove:hover { border-color: var(--red); color: var(--red);
-      }
-      .suppl-qty { width: 80px !important;
-      }
+      .suppl-remove:hover { border-color: var(--red); color: var(--red); }
+      .suppl-qty { width: 100px !important; }
 
       /* ── SUBMIT ── */
       .submit-section {
         background: var(--ink);
         border-radius: 2px;
-        padding: 2rem 1.8rem; text-align: center;
+        padding: 3rem 2rem; text-align: center;
         position: relative; overflow: hidden;
       }
       .submit-section::before {
@@ -349,36 +302,35 @@ const description = '資料越完整，我們越能找出你「理智線容易�
         inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(26,140,130,0.12) 0%, transparent 70%);
       }
-      .submit-inner { position: relative;
-      }
+      .submit-inner { position: relative; }
       .submit-title {
         font-family: 'Cormorant Garamond', serif;
-        font-size: 1.4rem;
-        font-weight: 300; color: #fff; margin-bottom: 0.6rem;
+        font-size: 1.6rem;
+        font-weight: 300; color: #fff; margin-bottom: 0.8rem;
       }
       .submit-sub {
-        font-size: 0.8rem;
-        color: rgba(255,255,255,0.4);
-        font-weight: 300; line-height: 1.9; margin-bottom: 1.6rem;
+        font-size: 1.1rem;
+        color: rgba(255,255,255,0.7);
+        font-weight: 300; line-height: 1.9; margin-bottom: 1.8rem;
       }
       .btn-submit {
         display: inline-block;
         background: var(--teal); color: #fff;
-        padding: 1rem 3rem; border-radius: 2px; border: none; cursor: pointer;
-        font-family: 'DM Mono', monospace; font-size: 0.75rem;
+        padding: 1.2rem 3rem; border-radius: 2px; border: none; cursor: pointer;
+        font-family: 'DM Mono', monospace; font-size: 1.1rem;
         letter-spacing: 0.2em; text-transform: uppercase;
         transition: all 0.3s; text-decoration: none;
       }
       .btn-submit:hover { background: var(--teal-d);
         transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,140,130,0.35); }
       .submit-note {
-        margin-top: 1.5rem;
+        margin-top: 1.8rem;
         font-family: 'DM Mono', monospace;
-        font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.22);
+        font-size: 0.85rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.4);
       }
       .submit-steps {
         display: flex; flex-direction: column;
-        align-items: center; gap: 0.8rem;
+        align-items: center; gap: 1rem;
         margin-bottom: 0;
       }
       .submit-step {
@@ -387,37 +339,30 @@ const description = '資料越完整，我們越能找出你「理智線容易�
       }
       .step-num {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem; letter-spacing: 0.15em;
-        color: rgba(255,255,255,0.3); flex-shrink: 0;
+        font-size: 0.85rem; letter-spacing: 0.15em;
+        color: rgba(255,255,255,0.4); flex-shrink: 0;
       }
       .submit-arrow {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: rgba(255,255,255,0.2);
       }
       .btn-line {
         display: inline-flex;
         align-items: center; justify-content: center; gap: 0.6rem;
-        padding: 1rem 2.2rem; border-radius: 2px;
+        padding: 1.2rem 2.5rem; border-radius: 2px;
         background: #06C755; color: #ffffff; text-decoration: none;
-        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.15em;
+        font-family: 'DM Mono', monospace; font-size: 1.05rem; letter-spacing: 0.15em;
         text-transform: uppercase; transition: all 0.3s;
       }
-      .btn-line:hover { background: #05a847; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(6,199,85,0.35);
-      }
+      .btn-line:hover { background: #05a847; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(6,199,85,0.35); }
 
       @media (max-width: 600px) {
-        .field-row, .field-row-3 { grid-template-columns: 1fr;
-        }
-        .calc-inputs { grid-template-columns: 1fr 1fr;
-        }
-        .calc-btn { grid-column: span 2;
-        }
-        .check-grid { grid-template-columns: 1fr;
-        }
-        .suppl-row { grid-template-columns: 1fr auto;
-        }
-        .suppl-qty { display: none;
-        }
+        .field-row, .field-row-3 { grid-template-columns: 1fr; }
+        .calc-inputs { grid-template-columns: 1fr 1fr; }
+        .calc-btn { grid-column: span 2; }
+        .check-grid { grid-template-columns: 1fr; }
+        .suppl-row { grid-template-columns: 1fr auto; }
+        .suppl-qty { display: none; }
       }
     </style>
   </head>
@@ -428,9 +373,10 @@ const description = '資料越完整，我們越能找出你「理智線容易�
       <header class="page-header">
         <div class="header-inner">
           <div class="header-brand">AGELOCKED · 孫義坤</div>
-          <h1 class="page-title">找回餘裕的<em>掃描前資料表</em></h1>
+          <h1 class="page-title">掃描前<em>資料表</em></h1>
           <p class="page-desc">
-            資料越完整，我們越能找出你「理智線容易斷、體力透支」的科學底層原因。有的填、沒有的跳過就好——我們不談玄學，只用數據找回你撐起家庭的能量。
+            資料越完整，當場討論越有方向。有的填、沒有的跳過就好——
+            我會根據你提供的數據組合，梳理出最適合你的科學保養與生活調整方向。
           </p>
           <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
         </div>
@@ -442,7 +388,6 @@ const description = '資料越完整，我們越能找出你「理智線容易�
           <div class="section-head">
             <div class="section-num">01</div>
             <div class="section-title-wrap">
-    
               <div class="section-label-sm">Basic Info</div>
               <div class="section-h">基本資料</div>
             </div>
@@ -450,35 +395,30 @@ const description = '資料越完整，我們越能找出你「理智線容易�
           <div class="section-body">
             <div class="field-row">
               <div class="field">
-            
                 <div class="field-label">姓名</div>
                 <input type="text" id="name" placeholder="您的稱呼即可" />
               </div>
               <div class="field">
                 <div class="field-label">年齡</div>
                 <div class="input-unit">
-            
                   <input type="number" id="age" placeholder="例如：42" min="20" max="80" />
                   <span class="unit-tag">歲</span>
                 </div>
               </div>
             </div>
             <div class="field-row">
-              
               <div class="field">
                 <div class="field-label">性別</div>
                 <select id="gender">
                   <option value="">請選擇</option>
                   <option value="male">男性</option>
                   <option value="female">女性</option>
-        
                 </select>
               </div>
               <div class="field">
                 <div class="field-label">LINE ID <span class="field-optional">選填</span></div>
                 <input type="text" id="line_id" placeholder="方便後續追蹤" />
               </div>
-         
             </div>
           </div>
         </div>
@@ -488,81 +428,67 @@ const description = '資料越完整，我們越能找出你「理智線容易�
             <div class="section-num">02</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Blood Lipids</div>
-              <div class="section-h">血脂數據（看懂身體的發電效率）</div>
-  
+              <div class="section-h">血脂數據（常規檢查）</div>
             </div>
           </div>
           <div class="section-body">
-            <p style="font-size:0.82rem; color:var(--muted); font-weight:300; line-height:1.8; margin-bottom:1.5rem;">
-              這不是要看你有沒有生病，而是用來評估你身體「轉換能量的效率」。效率差，當然每天都覺得累。
-            </p>
             <div class="field-row-3">
               <div class="field">
                 <div class="field-label">三酸甘油酯 TG</div>
                 <div class="input-unit">
-      
                   <input type="number" id="tg" placeholder="150" step="1" oninput="autoCalc()" />
                   <span class="unit-tag">mg/dL</span>
                 </div>
               </div>
               <div class="field">
-                <div class="field-label">高密度脂蛋白 
-HDL</div>
+                <div class="field-label">高密度脂蛋白 HDL</div>
                 <div class="input-unit">
                   <input type="number" id="hdl" placeholder="50" step="1" oninput="autoCalc()" />
                   <span class="unit-tag">mg/dL</span>
                 </div>
               </div>
-          
               <div class="field">
                 <div class="field-label">空腹血糖 <span class="field-optional">選填</span></div>
                 <div class="input-unit">
                   <input type="number" id="glucose" placeholder="95" step="1" />
                   <span class="unit-tag">mg/dL</span>
                 </div>
- 
               </div>
             </div>
             <div class="field-row">
               <div class="field">
                 <div class="field-label">HbA1c 糖化血色素 <span class="field-optional">選填</span></div>
                 <div class="input-unit">
-          
                   <input type="number" id="hba1c" placeholder="5.6" step="0.1" />
                   <span class="unit-tag">%</span>
                 </div>
               </div>
               <div class="field">
-                <div class="field-label">hs-CRP 高敏 C 反應蛋白 <span class="field-optional">選填</span></div>
- 
+                <div class="field-label">hs-CRP 高敏感 C 反應蛋白 <span class="field-optional">選填</span></div>
                 <div class="input-unit">
                   <input type="number" id="hsCrp" placeholder="0.8" step="0.1" />
                   <span class="unit-tag">mg/L</span>
                 </div>
               </div>
-            
             </div>
 
             <div class="calc-box">
               <div class="calc-label">◆ 即時計算器</div>
-              <div class="calc-title">TG / HDL 比值<br><span style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">（找出你下午當機、理智線斷裂的隱藏密碼）</span></div>
+              <div class="calc-title">TG / HDL 比值——代謝彈性與能量轉換的趨勢參考</div>
               <div class="calc-inputs">
                 <div class="calc-field">
-                  <label>三酸甘油酯 TG</label>
-  
+                  <label>三酸甘油酯 TG（mg/dL）</label>
                   <input type="number" id="calc_tg" placeholder="150" oninput="syncCalc()" />
                 </div>
                 <div class="calc-field">
-                  <label>高密度脂蛋白 HDL</label>
+                  <label>高密度脂蛋白 HDL（mg/dL）</label>
                   <input type="number" id="calc_hdl" placeholder="50" oninput="syncCalc()" />
-    
                 </div>
                 <button class="calc-btn" onclick="calculate()">計算</button>
               </div>
               <div class="calc-result" id="calcResult">
                 <div class="calc-result-badge" id="calcBadge"></div>
                 <span class="calc-result-ratio" id="calcRatio"></span>
-    
                 <div class="calc-result-text" id="calcText"></div>
               </div>
             </div>
@@ -573,7 +499,6 @@ HDL</div>
         <div class="form-section">
           <div class="section-head">
             <div class="section-num">03</div>
-         
             <div class="section-title-wrap">
               <div class="section-label-sm">Body Metrics</div>
               <div class="section-h">體態數據</div>
@@ -582,34 +507,29 @@ HDL</div>
           <div class="section-body">
             <div class="field-row-3">
               <div class="field">
-    
                 <div class="field-label">腰圍</div>
                 <div class="input-unit">
                   <input type="number" id="waist" placeholder="88" step="0.5" />
                   <span class="unit-tag">cm</span>
                 </div>
-            
               </div>
               <div class="field">
                 <div class="field-label">體重 <span class="field-optional">選填</span></div>
                 <div class="input-unit">
                   <input type="number" id="weight" placeholder="70" step="0.1" />
                   <span class="unit-tag">kg</span>
-     
                 </div>
               </div>
               <div class="field">
                 <div class="field-label">身高 <span class="field-optional">選填</span></div>
                 <div class="input-unit">
                   <input type="number" id="height" placeholder="170" step="0.5" />
- 
                   <span class="unit-tag">cm</span>
                 </div>
               </div>
             </div>
-            <div class="field" style="margin-top:0.3rem;">
-              <div class="field-label" style="font-size:0.78rem;
-                color:var(--muted); font-weight:300;">
+            <div class="field" style="margin-top:0.8rem;">
+              <div class="field-label" style="font-size:1rem; color:var(--muted); font-weight:300;">
                 國健署代謝健康參考標準：男性腰圍 ≥ 90 cm ／ 女性腰圍 ≥ 80 cm
               </div>
             </div>
@@ -618,7 +538,6 @@ HDL</div>
 
         <div class="form-section">
           <div class="section-head">
-           
             <div class="section-num">04</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Wearable Data · 選填</div>
@@ -627,22 +546,19 @@ HDL</div>
           </div>
           <div class="section-body">
             <div class="watch-hint">
-      
-              <strong>為什麼需要看手錶數字？</strong>
-              靜止心率（RHR）與心率變異度（HRV）是 24 小時動態指標，能客觀反映出你<strong>現在的壓力負荷與睡眠是不是在「無效補眠」</strong>。
+              <strong>為什麼需要這個？</strong>
+              靜止心率（RHR）與心率變異度（HRV）是 24 小時動態指標，能反映出日常的壓力與體能恢復狀態。這將是我們後續討論生活型態調整方向的重要參考依據。
             </div>
 
             <div class="field">
               <div class="field-label">裝置品牌</div>
               <select id="watch_brand">
                 <option value="">無穿戴裝置</option>
-    
                 <option value="apple">Apple Watch</option>
                 <option value="garmin">Garmin</option>
                 <option value="galaxy">Samsung Galaxy Watch</option>
                 <option value="pixel">Google Pixel Watch</option>
                 <option value="whoop">Whoop</option>
-              
                 <option value="oura">Oura Ring</option>
                 <option value="other">其他</option>
               </select>
@@ -651,62 +567,67 @@ HDL</div>
             <div class="field-row">
               <div class="field">
                 <div class="field-label">近一個月平均靜止心率（RHR）</div>
-        
                 <div class="input-unit">
                   <input type="number" id="rhr" placeholder="62" step="1" />
                   <span class="unit-tag">bpm</span>
                 </div>
               </div>
               <div class="field">
-    
                 <div class="field-label">近一個月平均 HRV</div>
                 <div class="input-unit">
                   <input type="number" id="hrv" placeholder="38" step="1" />
                   <span class="unit-tag">ms</span>
                 </div>
-           
               </div>
             </div>
-            
+            <div class="field">
+              <div class="field-label">近期趨勢 <span class="field-optional">選填</span></div>
+              <select id="watch_trend">
+                <option value="">請選擇</option>
+                <option value="rhr_up">靜止心率近一個月緩步上升</option>
+                <option value="hrv_down">HRV 近一個月低於平常水準</option>
+                <option value="both">兩者都有</option>
+                <option value="stable">數值穩定</option>
+              </select>
+            </div>
+
             <div class="watch-guide">
-              <strong>怎麼找這個數字？</strong>
- 
-              Apple Watch：健康 App → 瀏覽 → 心臟 → 靜止心率 / 心率變異度<br>
+              <strong>怎麼找這個數字？</strong><br>
+              Apple Watch：健康 App → 瀏覽 → 心臟 → 靜止心率 / 心率變異度 → 截圖「過去一個月」趨勢圖<br>
               Garmin：Garmin Connect App → 心率區塊 → 靜止心率 / HRV 狀態<br>
               Galaxy Watch：Samsung Health App → 心率 / 壓力<br>
-                               
               Pixel Watch：Fitbit App → 健康指標 → 靜止心率 / 心率變異度<br>
+              Whoop：App 首頁下方 Health Monitor (健康監測) 或 Recovery (恢復) 頁面     
             </div>
           </div>
         </div>
 
         <div class="form-section">
-         
           <div class="section-head">
             <div class="section-num">05</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Body Signals</div>
-              <div class="section-h">日常痛點（勾選有感覺的）</div>
+              <div class="section-h">體力與日常感受（勾選有感覺的）</div>
             </div>
           </div>
           <div class="section-body">
-        
             <div class="check-grid">
-              <label class="check-item"><input type="checkbox" name="signal" value="理智線極薄" /> 下班看到家裡亂，理智線極容易斷裂</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="無效補眠" /> 週末睡滿，週一早上仍感沉重疲倦</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="體能斷層" /> 蹲下撿東西、陪小孩玩樂高覺得吃力</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="下午強制當機" /> 下午 2-4 點專注力渙散、腦霧</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="社交與伴侶失聯" /> 下班只想放空，沒力氣跟另一半說話</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="修復期嚴重拉長" /> 運動痠痛或小感冒拖很久才好</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="頑固的腰圍" /> 飲食沒變，但近兩年腹部脂肪越來越難減</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="神經煞車失靈" /> 晚上很累躺在床上，腦袋卻轉不停</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="fatigue_pm" /> 下午容易疲勞、體力下滑</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_enough_tired" /> 睡滿 7-8 小時起床仍感疲倦</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="belly_increase" /> 腹部脂肪近 1-2 年感覺有增加</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="brain_fog" /> 專注力不如以往、容易渙散</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="wound_slow" /> 體能或運動後的恢復變慢</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_poor" /> 睡眠品質不佳 / 容易中斷</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="muscle_loss" /> 肌肉量感覺較難維持</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="hair_gray" /> 白髮 / 掉髮問題</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="stress_high" /> 工作壓力高、日常難以放鬆</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="cold_long" /> 保護力感覺變差、容易小感冒</label>
             </div>
-            <div class="field" style="margin-top:1.2rem;">
-              <div class="field-label">目前最想優先解決的問題 <span class="field-optional">選填</span></div>
-              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，下班對小孩越來越沒耐心..."></textarea>
+            <div class="field" style="margin-top:1.5rem;">
+              <div class="field-label">目前在保養上最想優化的重點 <span class="field-optional">選填</span></div>
+              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，想提升下午的專注力與體力..."></textarea>
             </div>
           </div>
-      
         </div>
 
         <div class="form-section">
@@ -714,29 +635,25 @@ HDL</div>
             <div class="section-num">06</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Current Supplements</div>
-              <div class="section-h">目前盲測中的保健品</div>
+              <div class="section-h">目前在吃的保健品</div>
             </div>
-         
           </div>
           <div class="section-body">
-            <p style="font-size:0.82rem;
-              color:var(--muted); font-weight:300; line-height:1.8; margin-bottom:1.2rem;">
-              包含維他命、魚油、益生菌等。這能幫助我了解你可能正在「無效堆疊」哪些東西。
+            <p style="font-size:1.05rem; color:var(--muted); font-weight:300; line-height:1.8; margin-bottom:1.4rem;">
+              包含維他命、魚油、益生菌、Nu Skin 產品等任何補充品。這能幫助我了解目前的營養配置狀況。
             </p>
             <div id="supplList">
               <div class="suppl-row">
-                <input type="text" placeholder="產品名稱（例：LifePak、B群）" />
+                <input type="text" placeholder="產品名稱（例：LifePak、魚油）" />
                 <input type="text" class="suppl-qty" placeholder="每天幾顆" />
-  
                 <button class="suppl-remove" onclick="removeSuppl(this)">✕</button>
               </div>
             </div>
             <button class="suppl-add" onclick="addSuppl()">＋ 新增一項</button>
 
-            <div class="field" style="margin-top:1.4rem;">
-              <div class="field-label">吃完的真實感受 <span class="field-optional">選填</span></div>
-            
-              <textarea id="suppl_note" placeholder="例如：吃了一堆 B 群跟鐵劑，下午還是一樣想睡覺..."></textarea>
+            <div class="field" style="margin-top:1.8rem;">
+              <div class="field-label">補充後的感受或備註 <span class="field-optional">選填</span></div>
+              <textarea id="suppl_note" placeholder="例如：吃了半年某品牌的 B 群，感覺體力沒有明顯差別..."></textarea>
             </div>
           </div>
         </div>
@@ -746,23 +663,19 @@ HDL</div>
             <div class="submit-title">資料填寫完成</div>
             <p class="submit-sub">
               先複製資料，再開啟 LINE 貼上傳送給我即可
-  
             </p>
             <div class="submit-steps">
               <div class="submit-step">
                 <span class="step-num">1</span>
                 <button class="btn-submit" onclick="copyToLine()">📋 複製資料</button>
               </div>
-            
               <div class="submit-arrow">↓</div>
               <div class="submit-step">
                 <span class="step-num">2</span>
                 <a href="https://line.me/ti/p/@fer7932k" target="_blank" rel="noopener" class="btn-line">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
-                   
                     <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                   </svg>
-                  
                   開啟 LINE 傳送資料
                 </a>
               </div>
@@ -771,9 +684,7 @@ HDL</div>
           </div>
         </div>
         
-        <div style="font-size: 0.75rem;
-          color: var(--muted); margin-top: 2rem; padding: 0 1rem; text-align: center; font-weight: 300;
-          line-height: 1.6;">
+        <div style="font-size: 0.95rem; color: var(--muted); margin-top: 2rem; padding: 0 1rem; text-align: center; font-weight: 300; line-height: 1.6;">
           免責聲明：本表單與後續諮詢所提供之資訊、數據解析及營養建議，皆為日常健康促進與營養補充之參考，不具備醫療診斷、治療、減輕或預防任何疾病之功效。若有身體不適或明確醫療需求，請務必尋求專業醫師協助。
         </div>
 
@@ -787,8 +698,7 @@ HDL</div>
       function updateProgress() {
         const allInputs = [...document.querySelectorAll('input[type="text"], input[type="number"]:not(#calc_tg):not(#calc_hdl), select, textarea')];
         const totalInputs = allInputs.length;
-        const filled = allInputs.filter(el => el.value.trim() !== '' && el.value !== 
-          '').length;
+        const filled = allInputs.filter(el => el.value.trim() !== '' && el.value !== '').length;
         const hasCheck = document.querySelectorAll('input[type="checkbox"]:checked').length > 0 ? 2 : 0;
         const total = totalInputs + 2;
         const pct = Math.min(100, Math.round(((filled + hasCheck) / total) * 100));
@@ -799,7 +709,6 @@ HDL</div>
 
       // ── TG/HDL CALCULATOR ──
       function autoCalc() {
-  
         const tg = document.getElementById('tg').value;
         const hdl = document.getElementById('hdl').value;
         if (tg) document.getElementById('calc_tg').value = tg;
@@ -829,16 +738,16 @@ HDL</div>
         // 將回饋文字調整為合規的「能量與營養」用語
         if (val < 2) {
           res.classList.add('green');
-          badge.textContent = '發電效率良好';
-          text.textContent = `數值 ${val}。你的身體能量轉換效率良好。繼續維持現有習慣，這能讓你保有足夠的耐心面對家庭。`;
+          badge.textContent = '代謝彈性良好';
+          text.textContent = `TG/HDL = ${val}。你的代謝靈活度與能量轉換效率在良好範圍。建議繼續維持現有習慣，定期追蹤趨勢即可。`;
         } else if (val < 3.5) {
           res.classList.add('orange');
-          badge.textContent = '發電效率正在下滑';
-          text.textContent = `數值 ${val}。超過 2 代表身體維持能量的效率正在變差。這往往是下午強烈疲勞、理智線容易斷裂的隱藏生理原因，建議優先調整營養配置。`;
+          badge.textContent = '代謝彈性需注意';
+          text.textContent = `TG/HDL = ${val}。數值超過 2，代表身體維持能量轉換的效率可能正在降低。雖可能無紅字，但這往往是下午容易疲勞、體力下滑的隱藏因素之一，建議可開始調整日常營養配置。`;
         } else {
           res.classList.add('red');
-          badge.textContent = '代謝嚴重過勞';
-          text.textContent = `數值 ${val}。超過 3.5 顯示身體代謝已處於過勞狀態，能量嚴重漏電。盲目補充維他命已無太大意義，必須馬上找出源頭進行干預。`;
+          badge.textContent = '代謝負擔較高';
+          text.textContent = `TG/HDL = ${val}。數值超過 3.5，顯示身體目前的代謝負擔較為吃力，能量消耗與恢復可能受到影響。建議在後續討論時，優先梳理這部分的日常作息與飲食配置方向。`;
         }
       }
 
@@ -861,6 +770,61 @@ HDL</div>
 
       // ── COPY TO LINE ──
       function copyToLine() {
-        const name = document.getElementById('name').value ||
-          '（未填）';
-        const age = document.getElementById('age').value || '
+        const name = document.getElementById('name').value || '（未填）';
+        const age = document.getElementById('age').value || '（未填）';
+        const gender = document.getElementById('gender');
+        const genderText = gender.options[gender.selectedIndex].text || '（未填）';
+        const tg = document.getElementById('tg').value;
+        const hdl = document.getElementById('hdl').value;
+        const glucose = document.getElementById('glucose').value;
+        const hba1c = document.getElementById('hba1c').value;
+        const hsCrp = document.getElementById('hsCrp').value;
+        const waist = document.getElementById('waist').value;
+        const rhr = document.getElementById('rhr').value;
+        const hrv = document.getElementById('hrv').value;
+        const watchBrand = document.getElementById('watch_brand');
+        const watchText = watchBrand.options[watchBrand.selectedIndex].text;
+        const concern = document.getElementById('main_concern').value;
+        const supplNote = document.getElementById('suppl_note').value;
+
+        const signals = [...document.querySelectorAll('input[name="signal"]:checked')]
+          .map(el => el.parentElement.textContent.trim()).join('、') || '（未勾選）';
+
+        const supplRows = document.querySelectorAll('.suppl-row');
+        const suppls = [...supplRows].map(r => {
+          const inputs = r.querySelectorAll('input');
+          const name = inputs[0].value;
+          const qty = inputs[1]?.value;
+          if (!name) return null;
+          return qty ? `${name}（${qty}）` : name;
+        }).filter(Boolean).join('、') || '（無）';
+
+        let ratio = '';
+        if (tg && hdl) {
+          ratio = `\nTG/HDL 比值：${(parseFloat(tg)/parseFloat(hdl)).toFixed(2)}`;
+        }
+
+        const concernText = concern ? `\n\n▌主要優化方向\n${concern}` : '';
+        const supplNoteText = supplNote ? `\n\n▌補充品備註\n${supplNote}` : '';
+
+        const text = `【AGELOCKED 掃描前資料】\n\n▌基本資料\n姓名：${name}\n年齡：${age} 歲　性別：${genderText}\n\n▌血脂數據\n三酸甘油酯 TG：${tg || '（未填）'} mg/dL\n高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL\n空腹血糖：${glucose || '（未填）'} mg/dL\nHbA1c：${hba1c || '（未填）'}%\nhs-CRP：${hsCrp || '（未填）'} mg/L${ratio}\n\n▌體態數據\n腰圍：${waist || '（未填）'} cm\n\n▌穿戴裝置（${watchText}）\n靜止心率 RHR：${rhr || '（未填）'} bpm\nHRV：${hrv || '（未填）'} ms\n\n▌身體訊號\n${signals}\n\n▌目前保健品\n${suppls}${concernText}${supplNoteText}`;
+        navigator.clipboard.writeText(text).then(() => {
+          const btn = document.querySelector('.btn-submit');
+          btn.textContent = '✓ 已複製！請貼到 LINE 傳送';
+          btn.style.background = '#1a7a50';
+          setTimeout(() => {
+            btn.textContent = '📋 複製資料並傳送';
+            btn.style.background = '';
+          }, 3000);
+      
+        }).catch(() => {
+          const ta = document.createElement('textarea');
+          ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+          document.body.removeChild(ta);
+          alert('已複製！請開啟 LINE 貼上傳送給孫義坤。');
+        });
+      }
+    </script>
+  </body>
+</html>

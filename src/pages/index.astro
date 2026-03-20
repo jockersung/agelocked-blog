@@ -35,262 +35,96 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
       body { font-family: 'Noto Serif TC', serif; color: var(--body); background: var(--bg); margin: 0; }
 
       /* --- HERO --- */
-      .hero {
-        padding: 8rem 6vw 6rem;
-        background: var(--ink);
-        color: #fff;
-        position: relative;
-        overflow: hidden;
-      }
-      .hero-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-      }
-      .hero-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.75rem; letter-spacing: 0.3em;
-        color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem; display: block;
-      }
-      .hero-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(2.5rem, 4vw, 3.5rem);
-        font-weight: 300; line-height: 1.25; margin-bottom: 2rem; color: #fff;
-      }
+      .hero { padding: 8rem 6vw 6rem; background: var(--ink); color: #fff; position: relative; overflow: hidden; }
+      .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; }
+      .hero-label { font-family: 'DM Mono', monospace; font-size: 0.95rem; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem; display: block; }
+      .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.25; margin-bottom: 2rem; color: #fff; }
       .hero-title em { color: #6de8df; font-style: italic; }
       
-      .hero-checklist {
-        list-style: none;
-        padding: 0; margin: 0 0 2.5rem 0;
-      }
-      .hero-checklist li {
-        display: flex;
-        flex-direction: column; gap: 0.2rem;
-        padding: 0.95rem 0.8rem 0.95rem 2.4rem; position: relative;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-        font-weight: 300;
-      }
+      .hero-checklist { list-style: none; padding: 0; margin: 0 0 2.5rem 0; }
+      .hero-checklist li { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.95rem 0.8rem 0.95rem 2.4rem; position: relative; border-bottom: 1px solid rgba(255,255,255,0.08); font-weight: 300; }
       .hero-checklist li:last-child { border-bottom: none; }
-      .hero-checklist li::before {
-        content: '☑'; color: #6de8df;
-        font-size: 1rem;
-        position: absolute; left: 0.5rem; top: 1rem; flex-shrink: 0;
-      }
-      .li-main { font-size: 0.97rem; color: #fff; font-weight: 400; line-height: 1.5; }
-      .li-sub { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.65; font-weight: 300; }
+      .hero-checklist li::before { content: '☑'; color: #6de8df; font-size: 1.2rem; position: absolute; left: 0.5rem; top: 1rem; flex-shrink: 0; }
+      .li-main { font-size: 1.15rem; color: #fff; font-weight: 400; line-height: 1.6; }
+      .li-sub { font-size: 1.05rem; color: rgba(255,255,255,0.6); line-height: 1.7; font-weight: 300; }
 
       /* Hero CTA 按鈕組 */
-      .hero-cta-group {
-        display: flex;
-        flex-direction: column; gap: 0.9rem;
-      }
-      .btn-primary {
-        display: inline-flex;
-        align-items: center; justify-content: center;
-        padding: 1.2rem 2.5rem; background: var(--teal); color: #fff; text-decoration: none;
-        font-family: 'DM Mono', monospace; font-size: 0.9rem;
-        letter-spacing: 0.15em;
-        border-radius: 2px; transition: all 0.3s;
-      }
+      .hero-cta-group { display: flex; flex-direction: column; gap: 1rem; }
+      .btn-primary { display: inline-flex; align-items: center; justify-content: center; padding: 1.2rem 2.5rem; background: var(--teal); color: #fff; text-decoration: none; font-family: 'DM Mono', monospace; font-size: 1.15rem; letter-spacing: 0.15em; border-radius: 2px; transition: all 0.3s; }
       .btn-primary:hover { background: #6de8df; color: var(--ink); transform: translateY(-2px); }
-      .btn-secondary {
-        display: inline-flex;
-        align-items: center; justify-content: center;
-        padding: 1rem 2rem; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.7);
-        text-decoration: none; font-family: 'DM Mono', monospace;
-        font-size: 0.8rem;
-        letter-spacing: 0.15em; border-radius: 2px; transition: all 0.3s;
-      }
-      .btn-secondary:hover { border-color: rgba(255,255,255,0.6); color: #fff; }
+      .btn-secondary { display: inline-flex; align-items: center; justify-content: center; padding: 1rem 2rem; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.8); text-decoration: none; font-family: 'DM Mono', monospace; font-size: 1.05rem; letter-spacing: 0.15em; border-radius: 2px; transition: all 0.3s; }
+      .btn-secondary:hover { border-color: rgba(255,255,255,0.8); color: #fff; }
 
-      .hero-image-box {
-        width: 100%;
-        aspect-ratio: 4/5;
-        background: linear-gradient(135deg, rgba(26,140,130,0.1) 0%, rgba(255,255,255,0.05) 100%);
-        border: 1px solid rgba(255,255,255,0.1);
-        border-radius: 2px; display: flex; align-items: center; justify-content: center;
-        color: rgba(255,255,255,0.3); font-family: 'DM Mono', monospace; font-size: 0.8rem;
-        overflow: hidden;
-      }
+      .hero-image-box { width: 100%; aspect-ratio: 4/5; background: linear-gradient(135deg, rgba(26,140,130,0.1) 0%, rgba(255,255,255,0.05) 100%); border: 1px solid rgba(255,255,255,0.1); border-radius: 2px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.3); font-family: 'DM Mono', monospace; font-size: 1rem; overflow: hidden; }
       .hero-image-box img { width: 100%; height: 100%; object-fit: cover; }
 
       /* --- PAIN SECTION --- */
       .pain-section { padding: 6rem 6vw; background: var(--bg-warm); }
       .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
-      .section-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.7rem; letter-spacing: 0.3em;
-        color: var(--teal); margin-bottom: 1rem; display: block;
-      }
-      .section-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(2rem, 4vw, 2.8rem);
-        color: var(--ink); font-weight: 300; line-height: 1.3; margin: 0 0 1.5rem 0;
-      }
-      .section-subtitle {
-        font-size: 1.1rem; line-height: 2;
-        color: var(--body); font-weight: 300;
-      }
-      .pain-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;
-        max-width: 1000px; margin: 0 auto;
-      }
-      .pain-card {
-        background: #fff; padding: 2.5rem 2rem;
-        border-top: 3px solid var(--gold);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-radius: 2px;
-      }
-      .pain-card h3 { font-size: 1.2rem; color: var(--ink); margin-top: 0; margin-bottom: 0.6rem; }
-      .pain-card-tried {
-        font-size: 0.75rem; color: var(--muted);
-        font-weight: 400;
-        background: var(--bg); padding: 0.5rem 0.8rem;
-        border-left: 2px solid var(--border); margin-bottom: 0.9rem; line-height: 1.6;
-        font-family: 'DM Mono', monospace;
-        letter-spacing: 0.04em;
-      }
-      .pain-card p { font-size: 0.95rem; line-height: 1.8; color: var(--body); margin: 0; font-weight: 300; }
+      .section-label { font-family: 'DM Mono', monospace; font-size: 0.95rem; letter-spacing: 0.3em; color: var(--teal); margin-bottom: 1rem; display: block; }
+      .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 3rem); color: var(--ink); font-weight: 300; line-height: 1.3; margin: 0 0 1.5rem 0; }
+      .section-subtitle { font-size: 1.25rem; line-height: 2; color: var(--body); font-weight: 300; }
+      .pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; }
+      .pain-card { background: #fff; padding: 2.5rem 2rem; border-top: 3px solid var(--gold); box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-radius: 2px; }
+      .pain-card h3 { font-size: 1.35rem; color: var(--ink); margin-top: 0; margin-bottom: 0.8rem; }
+      .pain-card-tried { font-size: 1rem; color: var(--muted); font-weight: 400; background: var(--bg); padding: 0.6rem 1rem; border-left: 2px solid var(--border); margin-bottom: 1.2rem; line-height: 1.6; font-family: 'DM Mono', monospace; letter-spacing: 0.04em; }
+      .pain-card p { font-size: 1.15rem; line-height: 1.8; color: var(--body); margin: 0; font-weight: 300; }
 
       /* --- SOLUTION / COMPARE --- */
       .solution-section { padding: 6rem 6vw; background: #fff; }
-      .solution-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: start;
-      }
+      .solution-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: start; }
       .compare-box { padding: 2rem; background: var(--bg); border: 1px solid var(--border); border-left: 4px solid var(--muted); margin-bottom: 1.5rem; }
       .compare-box.mine { border-left-color: var(--teal); background: var(--teal-pale); }
-      .compare-title { font-size: 0.8rem; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 0.5rem; text-transform: uppercase; font-family: 'DM Mono', monospace;}
+      .compare-title { font-size: 1.05rem; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 0.6rem; text-transform: uppercase; font-family: 'DM Mono', monospace;}
       .compare-box.mine .compare-title { color: var(--teal); }
-      .compare-text { font-size: 1.05rem; color: var(--ink); font-weight: 400; line-height: 1.7; }
+      .compare-text { font-size: 1.2rem; color: var(--ink); font-weight: 400; line-height: 1.7; }
 
       /* USP 三維框架 */
-      .usp-framework {
-        margin-top: 1.2rem;
-        padding: 1.5rem;
-        background: var(--ink);
-        border-radius: 2px;
-      }
-      .usp-framework-title {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.65rem; letter-spacing: 0.25em;
-        color: #6de8df; text-transform: uppercase; margin-bottom: 1rem; display: block;
-      }
-      .usp-row {
-        display: flex; align-items: flex-start;
-        gap: 0.8rem;
-        padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.07);
-      }
+      .usp-framework { margin-top: 1.5rem; padding: 1.8rem; background: var(--ink); border-radius: 2px; }
+      .usp-framework-title { font-family: 'DM Mono', monospace; font-size: 0.9rem; letter-spacing: 0.25em; color: #6de8df; text-transform: uppercase; margin-bottom: 1.2rem; display: block; }
+      .usp-row { display: flex; align-items: flex-start; gap: 1rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
       .usp-row:last-child { border-bottom: none; }
-      .usp-tag {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.7rem;
-        color: var(--gold); white-space: nowrap; padding-top: 0.15rem; min-width: 6rem;
-      }
-      .usp-desc { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.6; font-weight: 300; }
+      .usp-tag { font-family: 'DM Mono', monospace; font-size: 0.95rem; color: var(--gold); white-space: nowrap; padding-top: 0.15rem; min-width: 6.5rem; }
+      .usp-desc { font-size: 1.1rem; color: rgba(255,255,255,0.7); line-height: 1.6; font-weight: 300; }
 
       /* --- AUTHORITY --- */
       .authority-section { padding: 6rem 6vw; background: var(--bg-warm); }
-      .authority-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: center;
-      }
-      .auth-text { font-size: 1.05rem; line-height: 2.1; color: var(--body); font-weight: 300; margin-bottom: 0; }
-      .auth-image-box {
-        width: 100%; aspect-ratio: 1;
-        border-radius: 2px;
-        background: var(--gold-pale); border: 1px solid var(--border-gold);
-        display: flex; align-items: center; justify-content: center;
-        color: var(--gold); font-family: 'DM Mono', monospace;
-        font-size: 0.8rem;
-        overflow: hidden; box-shadow: 8px 8px 0 var(--gold-pale);
-      }
+      .authority-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: center; }
+      .auth-text { font-size: 1.2rem; line-height: 2.1; color: var(--body); font-weight: 300; margin-bottom: 0; }
+      .auth-image-box { width: 100%; aspect-ratio: 1; border-radius: 2px; background: var(--gold-pale); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--gold); font-family: 'DM Mono', monospace; font-size: 1rem; overflow: hidden; box-shadow: 8px 8px 0 var(--gold-pale); }
       .auth-image-box img { width: 100%; height: 100%; object-fit: cover; }
 
       /* --- DELIVERABLE SECTION --- */
       .deliverable-section { padding: 6rem 6vw; background: #fff; }
-      .deliverable-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.5rem; max-width: 1000px; margin: 0 auto;
-      }
-      .deliverable-card {
-        padding: 2rem 1.75rem;
-        border: 1px solid var(--border);
-        border-top: 3px solid var(--teal);
-        border-radius: 2px;
-        background: var(--teal-pale);
-      }
-      .deliverable-num {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 2.5rem;
-        color: var(--teal); font-weight: 300; line-height: 1; margin-bottom: 0.75rem; display: block;
-      }
-      .deliverable-title {
-        font-size: 1rem; color: var(--ink); font-weight: 500; margin: 0 0 0.5rem 0;
-      }
-      .deliverable-desc {
-        font-size: 0.85rem; color: var(--muted); line-height: 1.75; margin: 0; font-weight: 300;
-      }
-      .deliverable-note {
-        max-width: 700px;
-        margin: 3rem auto 0; text-align: center;
-        font-size: 0.9rem; color: var(--body); line-height: 1.9; font-weight: 300;
-      }
+      .deliverable-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+      .deliverable-card { padding: 2rem 1.75rem; border: 1px solid var(--border); border-top: 3px solid var(--teal); border-radius: 2px; background: var(--teal-pale); }
+      .deliverable-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; color: var(--teal); font-weight: 300; line-height: 1; margin-bottom: 0.75rem; display: block; }
+      .deliverable-title { font-size: 1.25rem; color: var(--ink); font-weight: 500; margin: 0 0 0.8rem 0; }
+      .deliverable-desc { font-size: 1.1rem; color: var(--muted); line-height: 1.75; margin: 0; font-weight: 300; }
+      .deliverable-note { max-width: 700px; margin: 3.5rem auto 0; text-align: center; font-size: 1.15rem; color: var(--body); line-height: 1.9; font-weight: 300; }
 
       /* --- FEATURED ARTICLES --- */
       .featured-section { padding: 6rem 6vw; background: var(--bg-warm); }
-      .featured-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem; max-width: 1000px; margin: 0 auto;
-      }
-      .featured-card {
-        display: flex; flex-direction: column; gap: 0.75rem;
-        padding: 2rem 1.75rem; border: 1px solid var(--border);
-        border-top: 3px solid var(--teal); border-radius: 2px;
-        text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.2s;
-        background: #fff;
-      }
+      .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+      .featured-card { display: flex; flex-direction: column; gap: 0.8rem; padding: 2rem 1.75rem; border: 1px solid var(--border); border-top: 3px solid var(--teal); border-radius: 2px; text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.2s; background: #fff; }
       .featured-card:hover { box-shadow: 0 8px 28px rgba(26,140,130,0.10); transform: translateY(-3px); }
-      .featured-card-label {
-        font-family: 'DM Mono', monospace; font-size: 0.65rem;
-        letter-spacing: 0.2em; color: var(--teal); text-transform: uppercase;
-      }
-      .featured-card-title {
-        font-family: 'Noto Serif TC', serif; font-size: 1rem;
-        color: var(--ink); line-height: 1.6; margin: 0; font-weight: 500;
-      }
-      .featured-card-desc {
-        font-size: 0.85rem; color: var(--muted); line-height: 1.75;
-        margin: 0; font-weight: 300; flex: 1;
-      }
-      .featured-card-cta {
-        font-family: 'DM Mono', monospace; font-size: 0.72rem;
-        color: var(--teal); letter-spacing: 0.1em; margin-top: 0.25rem;
-      }
+      .featured-card-label { font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.2em; color: var(--teal); text-transform: uppercase; }
+      .featured-card-title { font-family: 'Noto Serif TC', serif; font-size: 1.2rem; color: var(--ink); line-height: 1.6; margin: 0; font-weight: 500; }
+      .featured-card-desc { font-size: 1.1rem; color: var(--muted); line-height: 1.75; margin: 0; font-weight: 300; flex: 1; }
+      .featured-card-cta { font-family: 'DM Mono', monospace; font-size: 0.95rem; color: var(--teal); letter-spacing: 0.1em; margin-top: 0.4rem; }
 
       /* --- CTA SECTION --- */
       .cta-section { padding: 6rem 6vw; background: var(--ink); color: #fff; text-align: center; }
-      .cta-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; margin-bottom: 1.5rem; }
-      .cta-sub { font-size: 1rem; color: rgba(255,255,255,0.6); margin-bottom: 3rem; font-weight: 300; line-height: 2;}
-      .cta-btn-group { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
-      .cta-divider {
-        font-family: 'DM Mono', monospace; font-size: 0.65rem;
-        color: rgba(255,255,255,0.3); letter-spacing: 0.2em;
-      }
+      .cta-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 300; margin-bottom: 1.5rem; }
+      .cta-sub { font-size: 1.2rem; color: rgba(255,255,255,0.7); margin-bottom: 3rem; font-weight: 300; line-height: 2;}
+      .cta-btn-group { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+      .cta-divider { font-family: 'DM Mono', monospace; font-size: 0.95rem; color: rgba(255,255,255,0.4); letter-spacing: 0.2em; }
 
       @media (max-width: 900px) {
         .hero-inner, .solution-grid, .authority-grid { grid-template-columns: 1fr; gap: 3rem; }
         .hero-image-box { aspect-ratio: 16/9; }
         .cta-btn-group { width: 100%; }
-        .cta-btn-group .btn-primary,
-        .cta-btn-group .btn-secondary { width: 100%; max-width: 400px; }
+        .cta-btn-group .btn-primary, .cta-btn-group .btn-secondary { width: 100%; max-width: 400px; }
       }
     </style>
   </head>
@@ -305,16 +139,24 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
           
           <ul class="hero-checklist">
             <li>
-              <span class="li-main">下班回到家看到碗沒洗、小孩又在鬧，理智線瞬間斷掉？</span>
-              <span class="li-sub">週末補眠也補不回神清氣爽。當細胞能量見底，一點點生活瑣事都能引爆情緒。</span>
+              <span class="li-main">明明睡了 8 小時，一到下午就腦霧</span>
+              <span class="li-sub">咖啡只撐一小時，然後又塌下去。腦袋就是轉不動，你自己也知道，但沒辦法。</span>
             </li>
             <li>
-              <span class="li-main">42 歲後體力斷層式下滑，蹲下撿東西、陪孩子玩都感到吃力？</span>
-              <span class="li-sub">孩子精力正旺盛，你卻開始感受到體力往下掉，這種落差比觀念不合更難調整。</span>
+              <span class="li-main">B 群吃了、鐵劑試了、朋友推薦的也買了——還是一樣累</span>
+              <span class="li-sub">你開始懷疑是不是自己體質的問題，而不是補充品的問題。</span>
             </li>
             <li>
-              <span class="li-main">體檢報告滿江紅，卻沒有餘裕研究複雜的保健品？</span>
-              <span class="li-sub">醫生說要注意保養，但你光是應付生活與工作就耗盡全力，哪來的時間管自己。</span>
+              <span class="li-main">每年體檢都有紅字，醫生說多休息</span>
+              <span class="li-sub">出了診間，沒有一件事可以改變。紅字明年還在。</span>
+            </li>
+            <li>
+              <span class="li-main">感冒剛好，嘴破又來；嘴破好了，肩頸又卡住</span>
+              <span class="li-sub">不是大病，但從來沒有「完全正常」的狀態，身體一直有事。</span>
+            </li>
+            <li>
+              <span class="li-main">以前可以撐到晚上九點還清醒</span>
+              <span class="li-sub">現在下午四點之後，你就在等今天結束。你知道這不對，但不知道從哪裡改。</span>
             </li>
           </ul>
 
@@ -325,7 +167,7 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
         </div>
         
         <div class="hero-image-box">
-          <Image src={heroImg} alt="生醫數據投影" />
+          <Image src={heroImg} alt="在清晨找回生活餘裕與健康數據" />
         </div>
       </div>
     </section>
@@ -335,7 +177,7 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
         <span class="section-label">根本原因</span>
         <h2 class="section-title">以為只是「初老」？<br>其實是你的身體在<em style="font-style:italic;color:var(--teal);">無限期加班</em></h2>
         <p class="section-subtitle">
-          當健康崩壞，你失去的不只是體力，還有面對孩子耍賴時的耐心，以及與伴侶好好說話的空間。這就是你正在累積的<strong>「健康技術債」</strong>。從生醫角度來看，這些症狀不是獨立的，而是與長期<strong>慢性低度發炎</strong>高度相關。<strong style="color:var(--teal);">幸好，生活型態是可以系統性調整的。</strong>
+          很多人看到上面的狀況，都覺得「年紀到了」或是「太累而已」。但從生醫角度來看，這些症狀不是獨立的。研究顯示，這類症狀組合與長期<strong>慢性低度發炎</strong>高度相關。<strong style="color:var(--teal);">幸好，生活型態是可以系統性調整的。</strong>
         </p>
       </div>
       <div class="pain-grid">
@@ -362,7 +204,7 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
         <div>
           <span class="section-label">思維轉換</span>
           <h2 class="section-title">為什麼試了這麼多，還是沒用？</h2>
-          <p style="margin-top: 1.5rem; line-height: 2; font-weight: 300;">因為傳統的方式是「頭痛醫頭」。面對慢性發炎這種全身性的問題，你需要的是把症狀連起來看、找到共同的根本原因，而不是一個症狀配一個保健品。</p>
+          <p style="margin-top: 1.5rem; line-height: 2; font-weight: 300; font-size: 1.15rem;">因為傳統的方式是「頭痛醫頭」。面對慢性發炎這種全身性的問題，你需要的是把症狀連起來看、找到共同的根本原因，而不是一個症狀配一個保健品。</p>
         </div>
         <div>
           <div class="compare-box">
@@ -395,17 +237,16 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
     <section class="authority-section">
       <div class="authority-grid">
         <div class="auth-image-box">
-          <Image src={profileImg} alt="profile" />
+           <Image src={profileImg} alt="profile" />
         </div>
         <div>
           <span class="section-label" style="margin-bottom: 1rem;">專業底線</span>
           <h2 class="section-title" style="margin-bottom: 2rem;">我不賣奇蹟，<br>只看科學實證與數據</h2>
           <p class="auth-text">
-            在醫療體系負責幫醫師整理臨床實驗數據的 15 年裡，我深知一件事：真正有效的健康管理，絕對不是靠行銷話術。
+            國立陽明交通大學應用化學 · 國立清華大學分子醫學背景。
+            15 年協助臨床醫師解讀研究數據、撰寫醫學論文——我在醫療體系裡做的，就是把複雜的生醫數據轉化成可以決策的語言。
             <br><br>
-            但 42 歲這年，看近的不清楚才醒悟我也開始老花，健檢紅字醫生說差不多叫我要注意保養不然就要開始吃慢性病的藥。我深知那種<strong>「小孩精力正旺，你卻體力見底」</strong>的無力感。我不賣奇蹟，我只想幫你用科學找回撐起家庭的能量。
-            <br><br>
-            <strong>帶上你的健檢數據，我們一起對照科學文獻，找回你該有的生活餘裕。</strong>
+            現在我把同樣的方法用在你身上。<strong>帶上你的健檢數據，對照科學研究文獻，了解數字背後可能的生活型態意義。</strong>
           </p>
         </div>
       </div>
@@ -447,7 +288,7 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
     <section class="featured-section">
       <div class="section-header">
         <span class="section-label">先搞懂這三件事</span>
-        <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem);">很多人說讀完這三篇，才終於看懂自己的健檢報告</h2>
+        <h2 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.4rem);">很多人說讀完這三篇，才終於看懂自己的健檢報告</h2>
       </div>
       <div class="featured-grid">
         <a href="/blog/body-signals/normal-checkup-still-tired" class="featured-card">
@@ -470,7 +311,7 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
         </a>
       </div>
       <div style="text-align:center; margin-top: 3rem;">
-        <a href="/blog" style="font-family:'DM Mono',monospace; font-size:0.8rem; letter-spacing:0.15em; color:var(--teal); text-decoration:none; border-bottom: 1px solid var(--teal); padding-bottom: 2px;">查看全部文章 →</a>
+        <a href="/blog" style="font-family:'DM Mono',monospace; font-size:1.05rem; letter-spacing:0.15em; color:var(--teal); text-decoration:none; border-bottom: 1px solid var(--teal); padding-bottom: 2px;">查看全部文章 →</a>
       </div>
     </section>
 
@@ -481,18 +322,18 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
         完成評估後，傳送你的結果，獲取個人化的 90 天生活調整優先建議。
       </p>
       <div class="cta-btn-group">
-        <a href="/prescan" class="btn-primary" style="font-size: 1rem; padding: 1.2rem 3rem;">
+        <a href="/prescan" class="btn-primary" style="font-size: 1.15rem; padding: 1.2rem 3rem;">
           📊 帶健檢數據來，直接整理方向
         </a>
         <span class="cta-divider">— 還沒有健檢數據？ —</span>
-        <a href="/assessment" class="btn-secondary" style="font-size:0.85rem;">
+        <a href="/assessment" class="btn-secondary" style="font-size:1.05rem;">
           ⚡ 先做 1 分鐘身體警報評估
         </a>
       </div>
     </section>
 
     <div style="background:var(--bg); border-top: 1px solid var(--border); padding: 1.5rem 6vw; text-align:center;">
-      <p style="font-family:'DM Mono',monospace; font-size:0.65rem; color:var(--muted); line-height:1.9; letter-spacing:0.04em; max-width:800px; margin:0 auto;">
+      <p style="font-family:'DM Mono',monospace; font-size:0.9rem; color:var(--muted); line-height:1.9; letter-spacing:0.04em; max-width:800px; margin:0 auto;">
         本網站內容為健康教育資訊，不構成醫療診斷、治療或處方建議。所有數據分析與生活調整建議均為非醫療性健康管理參考，不取代合格醫師或醫事人員之診斷與治療。如有健康疑慮，請諮詢合格醫療專業人員。
       </p>
     </div>

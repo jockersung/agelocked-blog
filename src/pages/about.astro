@@ -5,8 +5,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import profileImg from './profile.webp';
 
-const title = '關於孫義坤｜用科學數據幫你找出慢性發炎根本原因的生醫顧問';
-const description = '過去15年我在醫療體系負責幫醫師從海量數據中整理患者生病原因。現在，我用這套研究邏輯，幫把健康排最後的你找回被慢性發炎偷走的體力。';
+const title = '關於孫義坤｜幫你找回生活餘裕的生醫數據專員';
+const description = '過去15年我在醫療體系處理海量數據。但42歲這年我才發現，真正的無力感是小孩精力正旺，你卻體力見底。我用生醫專長，幫你找回撐起家庭的能量與餘裕。';
 ---
 
 <!doctype html>
@@ -36,7 +36,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       }
 
       * { box-sizing: border-box; }
-      body { font-family: 'Noto Serif TC', serif; color: var(--body); background: var(--bg2); }
+      body { font-family: 'Noto Serif TC', serif; color: var(--body); background: var(--bg2); margin: 0; }
 
       /* ── HERO ── */
       .about-hero {
@@ -58,7 +58,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       }
       .hero-eyebrow {
         font-family: 'DM Mono', monospace;
-        font-size: 0.66rem; letter-spacing: 0.4em;
+        font-size: 0.9rem; letter-spacing: 0.4em;
         color: var(--gold); text-transform: uppercase;
         display: flex; align-items: center; gap: 0.8rem;
         margin-bottom: 1.6rem;
@@ -72,14 +72,14 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       }
       .about-title {
         font-family: 'Cormorant Garamond', serif;
-        font-size: 1.25rem; font-weight: 300; font-style: italic;
+        font-size: 1.45rem; font-weight: 300; font-style: italic;
         color: var(--teal); margin-bottom: 1.8rem;
       }
       .hero-divider { width: 36px; height: 1.5px; background: var(--gold); margin-bottom: 1.8rem; }
       .about-tagline {
-        font-size: 1.05rem;
+        font-size: 1.25rem;
         font-weight: 300; color: var(--body);
-        line-height: 2; max-width: 420px;
+        line-height: 2; max-width: 480px;
       }
       .about-tagline strong { color: var(--ink); font-weight: 500; }
 
@@ -91,8 +91,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         border-radius: 2px;
         border: 1px solid var(--border-gold);
         box-shadow: 8px 8px 0 var(--gold-pale);
-        display: block;
-        margin-left: auto;
+        display: block; margin-left: auto;
       }
       .about-credentials {
         margin-top: 1.8rem;
@@ -100,17 +99,17 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       }
       .credential {
         font-family: 'DM Mono', monospace;
-        font-size: 0.7rem; letter-spacing: 0.13em; color: var(--muted);
+        font-size: 0.95rem; letter-spacing: 0.13em; color: var(--muted);
         display: flex; align-items: center; gap: 0.7rem;
       }
       .credential::before { content: '◆'; font-size: 0.38rem; color: var(--teal); }
 
       /* ── STORY SECTION ── */
-      .story-wrap { max-width: 760px; margin: 0 auto; padding: 6rem 6vw; }
+      .story-wrap { max-width: 800px; margin: 0 auto; padding: 6rem 6vw; }
 
       .section-label {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem; letter-spacing: 0.4em;
+        font-size: 0.9rem; letter-spacing: 0.4em;
         color: var(--teal); text-transform: uppercase;
         display: flex; align-items: center; gap: 0.8rem;
         margin-bottom: 1.4rem;
@@ -119,7 +118,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
 
       .section-label-gold {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem; letter-spacing: 0.4em;
+        font-size: 0.9rem; letter-spacing: 0.4em;
         color: var(--gold); text-transform: uppercase;
         display: flex; align-items: center; gap: 0.8rem;
         margin-bottom: 1.4rem;
@@ -128,14 +127,14 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
 
       .section-title {
         font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(1.8rem, 3vw, 2.6rem);
-        font-weight: 300; line-height: 1.25; color: var(--ink);
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 300; line-height: 1.3; color: var(--ink);
         margin: 0 0 1.4rem;
       }
       .section-title em { font-style: italic; color: var(--teal); }
 
       .body-text {
-        font-size: 0.97rem; color: var(--body);
+        font-size: 1.2rem; color: var(--body);
         line-height: 2.2; font-weight: 300; margin-bottom: 1.2rem;
       }
       .body-text:last-child { margin-bottom: 0; }
@@ -150,7 +149,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         background: var(--gold-pale);
         margin: 2.4rem 0;
         font-family: 'Cormorant Garamond', serif;
-        font-size: 1.25rem; font-style: italic;
+        font-size: 1.45rem; font-style: italic;
         color: var(--ink); line-height: 1.75;
       }
 
@@ -162,7 +161,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         background: var(--bg);
         border: 1px solid var(--border);
         border-left: 2.5px solid var(--teal);
-        font-size: 0.91rem; color: var(--body);
+        font-size: 1.15rem; color: var(--body);
         font-weight: 300; line-height: 1.75;
         border-radius: 0 2px 2px 0;
       }
@@ -173,72 +172,77 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0;
       }
       .approach-card {
-        padding: 1.6rem 1.8rem; background: var(--bg); border: 1px solid var(--border);
-        border-radius: 2px; font-size: 0.88rem; font-weight: 300;
+        padding: 1.8rem;
+        background: var(--bg); border: 1px solid var(--border);
+        border-radius: 2px; font-size: 1.1rem; font-weight: 300;
         color: var(--body); line-height: 1.9;
       }
       .approach-card.mine {
-        background: var(--teal-pale); border-color: var(--teal); border-top: 2.5px solid var(--teal);
+        background: var(--teal-pale); border-color: var(--teal);
+        border-top: 2.5px solid var(--teal);
       }
       .approach-card-label {
-        font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.25em;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.85rem; letter-spacing: 0.25em;
         color: var(--muted); text-transform: uppercase; margin-bottom: 0.6rem;
       }
       .approach-card.mine .approach-card-label { color: var(--teal); }
       .approach-card-title {
-        font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--ink);
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.35rem; font-weight: 400; color: var(--ink);
         margin-bottom: 0.7rem;
       }
 
       /* 主題格 */
       .topics-section { padding: 5rem 6vw; background: var(--bg-warm); }
-      .topics-inner { max-width: 760px; margin: 0 auto; }
+      .topics-inner { max-width: 800px; margin: 0 auto; }
       .topics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
       .topic {
-        padding: 1.4rem 1.6rem; background: var(--bg2); border: 1px solid var(--border);
-        border-radius: 2px; font-size: 0.88rem; color: var(--body);
+        padding: 1.6rem; background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 2px; font-size: 1.1rem; color: var(--body);
         font-weight: 300; line-height: 1.75; transition: border-color 0.2s, background 0.2s;
       }
       .topic:hover { border-color: var(--teal); background: var(--teal-pale); }
       .topic strong {
-        display: block; color: var(--ink); font-weight: 400; margin-bottom: 0.3rem;
-        font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
+        display: block; color: var(--ink);
+        font-weight: 400; margin-bottom: 0.3rem;
+        font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
       }
 
-      /* CTA 區 */
+      /* CTA 區 (與 Index 同步) */
       .contact-section {
-        padding: 6rem 6vw; background: var(--ink); text-align: center; position: relative; overflow: hidden;
+        padding: 6rem 6vw;
+        background: var(--ink); text-align: center; position: relative; overflow: hidden;
       }
       .contact-section::before {
-        content: ''; position: absolute; inset: 0; pointer-events: none;
+        content: '';
+        position: absolute; inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(26,140,130,0.14) 0%, transparent 70%);
       }
-      .contact-inner { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
+      .contact-inner { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
       .contact-label {
-        font-family: 'DM Mono', monospace; font-size: 0.65rem;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.9rem;
         letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.6rem;
       }
       .contact-title {
-        font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300;
-        line-height: 1.2; color: #fff; margin-bottom: 1.2rem;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 300;
+        line-height: 1.25; color: #fff; margin-bottom: 1.2rem;
       }
       .contact-title em { font-style: italic; color: #6de8df; }
       .contact-sub {
-        font-size: 0.95rem; color: rgba(255,255,255,0.5); line-height: 2.1; font-weight: 300; margin-bottom: 2.8rem;
+        font-size: 1.2rem; color: rgba(255,255,255,0.7);
+        line-height: 2; font-weight: 300; margin-bottom: 3rem;
       }
-      .contact-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-      .btn-teal {
-        padding: 1rem 2.6rem; background: var(--teal); color: #fff;
-        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em;
-        text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all 0.3s; display: inline-block;
-      }
-      .btn-teal:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(26,140,130,0.35); color: #fff; }
-      .btn-outline {
-        padding: 1rem 2.2rem; background: transparent; color: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.22);
-        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
-      }
-      .btn-outline:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
-      .contact-note { margin-top: 1.8rem; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.28); }
+      .cta-btn-group { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+      .btn-primary { display: inline-flex; align-items: center; justify-content: center; padding: 1.2rem 2.5rem; background: var(--teal); color: #fff; text-decoration: none; font-family: 'DM Mono', monospace; font-size: 1.15rem; letter-spacing: 0.15em; border-radius: 2px; transition: all 0.3s; width: 100%; max-width: 400px; }
+      .btn-primary:hover { background: #6de8df; color: var(--ink); transform: translateY(-2px); }
+      .btn-secondary { display: inline-flex; align-items: center; justify-content: center; padding: 1rem 2rem; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.8); text-decoration: none; font-family: 'DM Mono', monospace; font-size: 1.05rem; letter-spacing: 0.15em; border-radius: 2px; transition: all 0.3s; width: 100%; max-width: 400px; }
+      .btn-secondary:hover { border-color: rgba(255,255,255,0.8); color: #fff; }
+      .cta-divider { font-family: 'DM Mono', monospace; font-size: 0.95rem; color: rgba(255,255,255,0.4); letter-spacing: 0.2em; }
+      .contact-note { margin-top: 1.8rem; font-family: 'DM Mono', monospace; font-size: 0.9rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.3); }
 
       /* ── Responsive ── */
       @media (max-width: 760px) {
@@ -254,13 +258,13 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
 
     <section class="about-hero">
       <div>
-        <div class="hero-eyebrow">高階健康專案經理</div>
+        <div class="hero-eyebrow">生物醫學專員 · 醫療研究15年</div>
         <h1 class="about-name">孫義坤</h1>
-        <div class="about-title">用科學數據幫你「除錯」的生醫專員</div>
+        <div class="about-title">用科學數據幫你「重開機」的同路人</div>
         <div class="hero-divider"></div>
         <p class="about-tagline">
-          過去 15 年，我在醫療體系負責幫醫師從海量數據中整理患者的生病原因，並發表成國際論文。<br><br>
-          現在，我用這套研究邏輯，幫把健康排最後的你用科學數據<strong>『除錯』</strong>，找回被慢性發炎偷走的體力。
+          過去 15 年，我在醫療體系負責幫醫師從海量數據中尋找生病的原因。<br><br>
+          現在，身為同樣在 40 歲後感受到體力斷層的家長，我用這套嚴謹的研究邏輯，幫你清償健康技術債，找回能對家人溫和堅定的<strong>『生活餘裕』</strong>。
         </p>
       </div>
       <div class="about-photo-wrap">
@@ -268,7 +272,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         <div class="about-credentials">
           <span class="credential">陽明交通大學 應用化學系</span>
           <span class="credential">清華大學 分子醫學研究所</span>
-          <span class="credential">醫療體系研究工作 15 年</span>
+          <span class="credential">醫療體系臨床研究分析 15 年</span>
           <span class="credential">抗衰老生物技術研究應用</span>
         </div>
       </div>
@@ -276,28 +280,26 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
 
     <div class="story-wrap">
 
-      <div class="section-label">指出產業亂象</div>
+      <div class="section-label">指出盲點</div>
       <h2 class="section-title">
-        我發現把健康排最後的人，很常忽視健康<br>
-        <em>結果就是頭痛醫頭腳痛醫腳</em>
+        把健康排最後，<br>
+        <em>是因為你把家人跟工作排在前面</em>
       </h2>
 
       <p class="body-text">
-        我發現醫療體系跟一般大眾之間有道牆：病患在診間只有幾分鐘，醫師能給你的只是簡單的結論或藥物；而市面上的保健品廣告又吹得太神。結果，把健康排最後的這群人，只能用最沒有效率的方式管理健康。
+        這幾年接觸不少家長與高壓工作者，我聽大家說著類似的困擾，慢慢歸納出一個感覺：很多時候我們不是不想管健康，是真的沒有那個力氣。高壓的環境、長工時、小孩的教養...當生活把你榨乾，你只能用最直覺的方式「頭痛醫頭」，累了吞 B 群，嘴破塗藥膏。
       </p>
       
       <div class="approach-compare">
         <div class="approach-card">
           <div class="approach-card-label">一般做法</div>
-          <div class="approach-card-title">症狀 → 對應產品</div>
-          感冒不好就多休息。嘴破就說補B群。
-          眼睛乾就點眼藥水。每個症狀一個答案——
-          你買了一堆，症狀還是一直輪流出現。
+          <div class="approach-card-title">症狀 → 盲目堆疊</div>
+          健檢紅字就買對應的保健品，睡不飽就猛灌咖啡。沒有時間深究原因，最後錢花了，下班看到小孩沒寫作業，理智線還是瞬間斷裂。
         </div>
         <div class="approach-card mine">
           <div class="approach-card-label">我的做法</div>
-          <div class="approach-card-title">連起來看，找出系統 Bug</div>
-          用醫療研究邏輯，幫你整理這些症狀背後的共同模式。找到讓「慢性發炎」在你身上持續的底層原因，從那裡介入，症狀才會真正好轉。
+          <div class="approach-card-title">數據比對 → 系統性除錯</div>
+          用醫療研究邏輯，把你手邊零散的數據連起來看。找到讓「慢性低度發炎」在你身上持續的漏電點，把耐心與情緒空間還給你的家人。
         </div>
       </div>
 
@@ -306,59 +308,64 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       <div class="section-label-gold">我的專業壁壘</div>
       <h2 class="section-title">
         我不賣奇蹟，<br>
-        <em>我只看科學實證與數據</em>
+        <em>因為我深知體力見底的無力感</em>
       </h2>
 
       <p class="body-text">
-        在做醫學研究的這些年，我學會了如何從最嚴謹的實驗與數據中找答案。我不賣奇蹟，也不講玄學。我只提供具備數據證實、且在科學文獻上有明確證據的健康管理路徑，幫你找出體檢紅字背後的系統漏洞。
+        42 歲這年，看近的不清楚才醒悟我也開始老花，健檢紅字醫生也叫我要注意保養。我深知那種「小孩精力正旺，你卻只想滑手機放空」的強烈挫折感。這種落差有時候比觀念不合更難調整。
+      </p>
+      <p class="body-text">
+        正因為我也在其中掙扎，所以我絕不用行銷話術唬弄你。在做醫學研究的這些年，我學會了從最嚴謹的數據中找答案。我們不靠感覺，只看科學實證與文獻說話。
       </p>
 
       <hr class="divider" />
 
       <div class="section-label">我的使命</div>
       <h2 class="section-title">
-        別在準備享受下半場時，<br>
-        <em>才發現還不完的技術債</em>
+        養小孩已經夠難了，<br>
+        <em>別讓健康債吃掉你的餘裕</em>
       </h2>
 
       <p class="body-text">
-        我建立 Agelocked 的初衷很簡單：希望讓這些撐起台灣產業的菁英，不需要在事業巔峰、準備享受人生下半場的時候，才發現身體早已累積了無法償還的技術債。
+        我建立 Agelocked 的初衷很簡單：我們都在資源短缺的情況下，想辦法把日子過下去。我希望能用科學的力量，幫你守住三樣最基本的東西：面對生活的餘裕、自己的健康、以及與伴侶並肩作戰的合夥關係。
       </p>
 
       <div class="observe-list">
-        <div class="observe-item">體檢紅字看了不知道怎麼辦，醫生說多休息，但你不知道從哪裡開始「除錯」。</div>
-        <div class="observe-item">買過一堆保健品，但只是「頭痛醫頭」，症狀依舊輪流出現。</div>
-        <div class="observe-item">工作型態短期內不會改變，需要在現有高壓條件下，找到最有效率的科學介入點。</div>
+        <div class="observe-item">下班看到碗沒洗、小孩鬧，理智線極薄瞬間斷掉，事後又覺得內疚。</div>
+        <div class="observe-item">蹲下撿東西就閃到腰，週末補眠也補不回神清氣爽，體能出現斷層。</div>
+        <div class="observe-item">體檢報告有紅字，卻連好好坐下來研究自己該吃什麼的餘裕都沒有。</div>
       </div>
 
-    </div><section class="topics-section">
+    </div>
+
+    <section class="topics-section">
       <div class="topics-inner">
         <div class="section-label">這裡寫什麼</div>
         <h2 class="section-title">
           你會在這裡<br>
           <em>找到什麼</em>
         </h2>
-        <p class="body-text" style="max-width:520px;">
-          每篇文章都從你真實搜尋過的問題出發，
-          用醫療研究的邏輯幫你看懂症狀背後的原因，
+        <p class="body-text" style="max-width:560px;">
+          每篇文章都從你真實經歷過的「生活痛點」出發，
+          用醫療研究的邏輯幫你看懂症狀背後的科學原因，
           而不是單純給你一個產品建議。
         </p>
         <div class="topics-grid">
           <div class="topic">
             <strong>免疫與慢性發炎</strong>
-            感冒一直不好、嘴破反覆——為什麼頭痛醫頭永遠解決不了
+            感冒拖很久、嘴破反覆——為什麼小毛病總是輪流找上你
           </div>
           <div class="topic">
             <strong>細胞修復與粒線體</strong>
-            從細胞層級理解為什麼你的身體修復速度跟不上損耗
+            從細胞層級理解，為什麼週末睡滿 8 小時你還是覺得累
           </div>
           <div class="topic">
             <strong>體檢報告解讀</strong>
-            紅字背後真正代表什麼，以及你能做什麼
+            紅字背後真正代表什麼，以及它如何吃掉你的生活餘裕
           </div>
           <div class="topic">
             <strong>抗氧化與補充方向</strong>
-            什麼真的有用、什麼只是你以為有用
+            什麼成分真的有科學實證，什麼只是你花錢買心安
           </div>
         </div>
       </div>
@@ -367,24 +374,21 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
     <section class="contact-section">
       <div class="contact-inner">
         <div class="contact-label">下一步行動</div>
-        <h2 class="contact-title">
-          停止一個個追症狀，<br>
-          <em>先找出共同的根本原因</em>
-        </h2>
+        <h2 class="contact-title">停止盲目補充，先整理身體發出的訊號</h2>
         <p class="contact-sub">
-          如果你也厭倦了無效的補充與不斷輪流出現的小毛病，<br>
-          歡迎直接私訊我你手邊那份讓你無解的體檢報告，<br>
-          或者索取【抗發炎自我檢測清單】。
+          帶上你的健檢數據與症狀紀錄，對照科學研究文獻找出可能的關聯。<br>
+          完成評估後，傳送你的結果，獲取個人化的 90 天生活調整優先建議。
         </p>
-        <div class="contact-btns">
-          <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal">
-            💬 加 LINE 索取檢測清單
+        <div class="cta-btn-group">
+          <a href="/prescan" class="btn-primary">
+            📊 帶健檢數據來，直接整理方向
           </a>
-          <a href="mailto:sunyikun0729@gmail.com" class="btn-outline">
-            📧 用 Email 聯絡我
+          <span class="cta-divider">— 還沒有健檢數據？ —</span>
+          <a href="/assessment" class="btn-secondary">
+            ⚡ 先做 1 分鐘身體警報評估
           </a>
         </div>
-        <div class="contact-note">不推銷產品 · 先用數據搞清楚你的狀況再說</div>
+        <div class="contact-note">資料僅用於諮詢參考 · 不推銷產品</div>
       </div>
     </section>
 
