@@ -56,7 +56,7 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
       .btn-secondary:hover { border-color: rgba(255,255,255,0.8); color: #fff; }
 
       .hero-image-box { width: 100%; aspect-ratio: 4/5; background: linear-gradient(135deg, rgba(26,140,130,0.1) 0%, rgba(255,255,255,0.05) 100%); border: 1px solid rgba(255,255,255,0.1); border-radius: 2px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.3); font-family: 'DM Mono', monospace; font-size: 1rem; overflow: hidden; }
-      .hero-image-box img { width: 100%; height: 100%; object-fit: cover; }
+      .hero-image-box img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 
       /* --- PAIN SECTION --- */
       .pain-section { padding: 6rem 6vw; background: var(--bg-warm); }
@@ -124,8 +124,11 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
 
       @media (max-width: 900px) {
         .hero-inner, .solution-grid, .authority-grid { grid-template-columns: 1fr; gap: 3rem; }
-        .hero-image-box { aspect-ratio: 16/9; }
-        .auth-image-box { width: 60%; max-width: 260px; } /* 手機版再微縮小，避免單行佔太大 */
+        
+        /* 修正手機版 Hero 圖片比例與大小 */
+        .hero-image-box { aspect-ratio: 4/5; max-width: 400px; margin: 0 auto; } 
+        
+        .auth-image-box { width: 60%; max-width: 260px; } 
         .cta-btn-group { width: 100%; }
         .cta-btn-group .btn-primary, .cta-btn-group .btn-secondary { width: 100%; max-width: 400px; }
       }
