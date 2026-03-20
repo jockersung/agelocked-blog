@@ -159,12 +159,14 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
       .submit-sub { font-size: 1.1rem; color: rgba(255,255,255,0.7); font-weight: 300; line-height: 1.8; margin-bottom: 1.8rem; }
       
       .btn-submit {
-        display: inline-block;
+        display: block;
+        width: 100%;
         background: var(--teal); color: #fff;
         padding: 1.2rem 3rem; border-radius: 2px; border: none; cursor: pointer;
         font-family: 'DM Mono', monospace; font-size: 1.1rem;
         letter-spacing: 0.2em; 
         text-transform: uppercase; transition: all 0.3s;
+        text-align: center;
       }
       .btn-submit:hover { background: var(--teal-d); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(26,140,130,0.35); }
       .btn-submit:disabled { background: var(--muted); cursor: not-allowed; opacity: 0.5; box-shadow: none; transform: none; }
@@ -200,7 +202,8 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
       }
       .submit-arrow { font-size: 1.2rem; color: rgba(255,255,255,0.2); }
       .btn-line {
-        display: inline-flex;
+        display: flex;
+        width: 100%;
         align-items: center; justify-content: center; gap: 0.6rem;
         padding: 1.1rem 2.2rem; border-radius: 2px;
         background: #06C755; color: #ffffff; text-decoration: none;

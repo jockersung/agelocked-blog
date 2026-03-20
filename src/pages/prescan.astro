@@ -150,8 +150,8 @@ const description = '資料越完整，當場討論越有方向。有的填、�
       .field-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.9rem; }
 
       /* Unit label */
-      .input-unit { position: relative; }
-      .input-unit input { padding-right: 3.5rem; }
+      .input-unit { position: relative; display: block; width: 100%; }
+      .input-unit input { width: 100%; padding-right: 3.5rem; }
       .unit-tag {
         position: absolute; right: 1rem;
         top: 50%; transform: translateY(-50%);
@@ -662,8 +662,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           <div class="submit-inner">
             <div class="submit-title">資料填寫完成</div>
             <p class="submit-sub">
-              複製資料後貼到 LINE 傳給我，系統收到後會立即回覆。<br>
-              我會先幫你看三件事：哪一條最值得優先處理、症狀和數據有沒有在講同一件事、是否適合現在就介入補充策略。
+              先複製資料，再開啟 LINE 貼上傳送給我即可
             </p>
             <div class="submit-steps">
               <div class="submit-step">
@@ -677,7 +676,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
                     <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                   </svg>
-                  開啟 LINE 貼上資料
+                  開啟 LINE 傳送資料
                 </a>
               </div>
             </div>
@@ -808,10 +807,10 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         const concernText = concern ? `\n\n▌主要優化方向\n${concern}` : '';
         const supplNoteText = supplNote ? `\n\n▌補充品備註\n${supplNote}` : '';
 
-        const text = `【AGELOCKED 掃描前資料】\n\n▌基本資料\n姓名：${name}\n年齡：${age} 歲　性別：${genderText}\n\n▌血脂數據\n三酸甘油酯 TG：${tg || '（未填）'} mg/dL\n高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL\n空腹血糖：${glucose || '（未填）'} mg/dL\nHbA1c：${hba1c || '（未填）'}%\nhs-CRP：${hsCrp || '（未填）'} mg/L${ratio}\n\n▌體態數據\n腰圍：${waist || '（未填）'} cm\n\n▌穿戴裝置（${watchText}）\n靜止心率 RHR：${rhr || '（未填）'} bpm\nHRV：${hrv || '（未填）'} ms\n\n▌身體訊號\n${signals}\n\n▌目前保健品\n${suppls}${concernText}${supplNoteText}\n\n請幫我排一下，我現在最該先處理什麼。`;
+        const text = `【AGELOCKED 掃描前資料】\n\n▌基本資料\n姓名：${name}\n年齡：${age} 歲　性別：${genderText}\n\n▌血脂數據\n三酸甘油酯 TG：${tg || '（未填）'} mg/dL\n高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL\n空腹血糖：${glucose || '（未填）'} mg/dL\nHbA1c：${hba1c || '（未填）'}%\nhs-CRP：${hsCrp || '（未填）'} mg/L${ratio}\n\n▌體態數據\n腰圍：${waist || '（未填）'} cm\n\n▌穿戴裝置（${watchText}）\n靜止心率 RHR：${rhr || '（未填）'} bpm\nHRV：${hrv || '（未填）'} ms\n\n▌身體訊號\n${signals}\n\n▌目前保健品\n${suppls}${concernText}${supplNoteText}`;
         navigator.clipboard.writeText(text).then(() => {
           const btn = document.querySelector('.btn-submit');
-          btn.textContent = '✓ 已複製！請開啟 LINE 貼上傳送';
+          btn.textContent = '✓ 已複製！請貼到 LINE 傳送';
           btn.style.background = '#1a7a50';
           setTimeout(() => {
             btn.textContent = '📋 複製資料並傳送';
