@@ -83,10 +83,10 @@ const description = '過去15年我在醫療體系處理海量數據。但42歲�
       }
       .about-tagline strong { color: var(--ink); font-weight: 500; }
 
-      /* 照片側 */
+      /* 照片側 (縮小至原本 75%) */
       .about-photo-wrap { position: relative; }
       .about-photo {
-        width: 100%; max-width: 340px;
+        width: 100%; max-width: 255px; /* 由 340px 縮小至 255px */
         aspect-ratio: 1; object-fit: cover; object-position: center top;
         border-radius: 2px;
         border: 1px solid var(--border-gold);
@@ -96,6 +96,7 @@ const description = '過去15年我在醫療體系處理海量數據。但42歲�
       .about-credentials {
         margin-top: 1.8rem;
         display: flex; flex-direction: column; gap: 0.5rem;
+        max-width: 255px; margin-left: auto; /* 讓文字跟照片寬度齊平 */
       }
       .credential {
         font-family: 'DM Mono', monospace;
@@ -247,7 +248,8 @@ const description = '過去15年我在醫療體系處理海量數據。但42歲�
       /* ── Responsive ── */
       @media (max-width: 760px) {
         .about-hero { grid-template-columns: 1fr; padding: 5rem 5vw 4rem; }
-        .about-photo { max-width: 220px; margin: 0 auto; }
+        .about-photo { max-width: 170px; margin: 0 auto; } /* 手機版同步縮小 */
+        .about-credentials { max-width: 100%; margin-top: 1.5rem; align-items: center; } /* 手機版文字置中對齊 */
         .approach-compare { grid-template-columns: 1fr; }
         .topics-grid { grid-template-columns: 1fr; }
       }
@@ -268,7 +270,7 @@ const description = '過去15年我在醫療體系處理海量數據。但42歲�
         </p>
       </div>
       <div class="about-photo-wrap">
-        <Image src={profileImg} alt="孫義坤" class="about-photo" width={340} height={340} />
+        <Image src={profileImg} alt="孫義坤" class="about-photo" width={255} height={255} />
         <div class="about-credentials">
           <span class="credential">陽明交通大學 應用化學系</span>
           <span class="credential">清華大學 分子醫學研究所</span>
