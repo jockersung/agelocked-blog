@@ -5,14 +5,17 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import profileImg from './profile.webp';
 
-const title = '關於孫義坤｜用科學數據幫你梳理體能耗損根本原因的生醫顧問';
-const description = '過去15年我在醫療體系負責幫醫師從海量數據中整理患者生病原因。現在，我用這套研究邏輯，幫把健康排最後的你找回被過度消耗的體力。';
+const title = '關於孫義坤｜用科學數據幫你找出慢性發炎根本原因的生醫顧問';
+const description = '過去15年我在醫療體系負責幫醫師從海量數據中整理患者生病原因。現在，我用這套研究邏輯，幫把健康排最後的你找回被慢性發炎偷走的體力。';
 ---
 
 <!doctype html>
 <html lang="zh-TW">
   <head>
     <BaseHead title={title} description={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet" />
     <style>
       :root {
         --teal:      #1a8c82;
@@ -154,8 +157,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       /* 觀察清單 */
       .observe-list { display: flex; flex-direction: column; gap: 0.7rem; margin: 2rem 0; }
       .observe-item {
-        display: flex;
-        gap: 1rem;
+        display: flex; gap: 1rem;
         padding: 1rem 1.4rem;
         background: var(--bg);
         border: 1px solid var(--border);
@@ -168,153 +170,74 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
 
       /* 方式比較 */
       .approach-compare {
-        display: grid;
-        grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0;
       }
       .approach-card {
-        padding: 1.6rem 1.8rem;
-        background: var(--bg); border: 1px solid var(--border);
+        padding: 1.6rem 1.8rem; background: var(--bg); border: 1px solid var(--border);
         border-radius: 2px; font-size: 0.88rem; font-weight: 300;
         color: var(--body); line-height: 1.9;
       }
       .approach-card.mine {
-        background: var(--teal-pale); border-color: var(--teal);
-        border-top: 2.5px solid var(--teal);
+        background: var(--teal-pale); border-color: var(--teal); border-top: 2.5px solid var(--teal);
       }
       .approach-card-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.62rem; letter-spacing: 0.25em;
+        font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.25em;
         color: var(--muted); text-transform: uppercase; margin-bottom: 0.6rem;
       }
       .approach-card.mine .approach-card-label { color: var(--teal); }
       .approach-card-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.2rem; font-weight: 400; color: var(--ink);
+        font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--ink);
         margin-bottom: 0.7rem;
       }
-
-      /* ── 服務方案雙軌 ── */
-      .plans-section { padding: 5rem 6vw; background: var(--bg2); }
-      .plans-inner { max-width: 760px; margin: 0 auto; }
-      .plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 2rem; }
-      .plan-card {
-        border: 1px solid var(--border);
-        border-radius: 2px;
-        padding: 2rem 2rem 1.8rem; background: var(--bg);
-        display: flex; flex-direction: column; gap: 0;
-      }
-      .plan-card.plan-remote { border-top: 2.5px solid var(--teal); }
-      .plan-card.plan-onsite { border-top: 2.5px solid var(--gold); }
-      .plan-badge {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.6rem;
-        letter-spacing: 0.3em; text-transform: uppercase;
-        padding: 0.25rem 0.7rem; border-radius: 1px; display: inline-block;
-        margin-bottom: 1rem; align-self: flex-start;
-      }
-      .plan-remote .plan-badge { background: var(--teal-pale); color: var(--teal); }
-      .plan-onsite .plan-badge { background: var(--gold-pale); color: var(--gold); }
-      .plan-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.35rem;
-        font-weight: 400; color: var(--ink); margin-bottom: 0.35rem;
-      }
-      .plan-sub { font-size: 0.8rem; color: var(--muted); margin-bottom: 1.2rem; font-weight: 300; }
-      .plan-divider { border: none; border-top: 1px solid var(--border); margin: 0 0 1.2rem; }
-      .plan-steps { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.4rem; }
-      .plan-step {
-        font-size: 0.85rem; font-weight: 300;
-        color: var(--body);
-        line-height: 1.75; display: flex; gap: 0.7rem;
-      }
-      .plan-step-num {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.65rem;
-        color: var(--muted); flex-shrink: 0; padding-top: 0.25rem;
-      }
-      .plan-data {
-        background: var(--surface);
-        border-radius: 2px;
-        padding: 0.9rem 1rem; margin-bottom: 1.2rem;
-        font-size: 0.8rem; color: var(--muted); font-weight: 300; line-height: 1.8;
-      }
-      .plan-data strong { color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.25rem; }
-      .plan-tagline {
-        font-size: 0.82rem; font-style: italic;
-        color: var(--teal);
-        font-family: 'Cormorant Garamond', serif; line-height: 1.6;
-        margin-top: auto; padding-top: 1rem;
-        border-top: 1px solid var(--border);
-      }
-      .plan-onsite .plan-tagline { color: var(--gold); }
-
-      /* 免責聲明 */
-      .disclaimer-text {
-        font-size: 0.75rem; color: var(--muted); margin-top: 2rem; 
-        text-align: center; font-weight: 300; line-height: 1.6;
-      }
-
-      @media (max-width: 760px) { .plans-grid { grid-template-columns: 1fr; } }
 
       /* 主題格 */
       .topics-section { padding: 5rem 6vw; background: var(--bg-warm); }
       .topics-inner { max-width: 760px; margin: 0 auto; }
       .topics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
       .topic {
-        padding: 1.4rem 1.6rem; background: var(--bg2);
-        border: 1px solid var(--border);
+        padding: 1.4rem 1.6rem; background: var(--bg2); border: 1px solid var(--border);
         border-radius: 2px; font-size: 0.88rem; color: var(--body);
         font-weight: 300; line-height: 1.75; transition: border-color 0.2s, background 0.2s;
       }
       .topic:hover { border-color: var(--teal); background: var(--teal-pale); }
       .topic strong {
-        display: block; color: var(--ink);
-        font-weight: 400; margin-bottom: 0.3rem;
+        display: block; color: var(--ink); font-weight: 400; margin-bottom: 0.3rem;
         font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
       }
 
       /* CTA 區 */
       .contact-section {
-        padding: 6rem 6vw;
-        background: var(--ink); text-align: center; position: relative; overflow: hidden;
+        padding: 6rem 6vw; background: var(--ink); text-align: center; position: relative; overflow: hidden;
       }
       .contact-section::before {
-        content: '';
-        position: absolute; inset: 0; pointer-events: none;
+        content: ''; position: absolute; inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(26,140,130,0.14) 0%, transparent 70%);
       }
       .contact-inner { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
       .contact-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.65rem;
+        font-family: 'DM Mono', monospace; font-size: 0.65rem;
         letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.6rem;
       }
       .contact-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300;
+        font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300;
         line-height: 1.2; color: #fff; margin-bottom: 1.2rem;
       }
       .contact-title em { font-style: italic; color: #6de8df; }
       .contact-sub {
-        font-size: 0.95rem; color: rgba(255,255,255,0.5);
-        line-height: 2.1; font-weight: 300; margin-bottom: 2.8rem;
+        font-size: 0.95rem; color: rgba(255,255,255,0.5); line-height: 2.1; font-weight: 300; margin-bottom: 2.8rem;
       }
       .contact-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
       .btn-teal {
-        padding: 1rem 2.6rem;
-        background: var(--teal); color: #fff;
+        padding: 1rem 2.6rem; background: var(--teal); color: #fff;
         font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em;
-        text-transform: uppercase; border-radius: 2px; text-decoration: none;
-        transition: all 0.3s; display: inline-block;
+        text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all 0.3s; display: inline-block;
       }
       .btn-teal:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(26,140,130,0.35); color: #fff; }
       .btn-outline {
-        padding: 1rem 2.2rem;
-        background: transparent; color: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.22);
-        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; border-radius: 2px;
-        text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
+        padding: 1rem 2.2rem; background: transparent; color: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.22);
+        font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; border-radius: 2px; text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
       }
-      .btn-outline:hover { border-color: var(--teal); color: #6de8df; background: rgba(26,140,130,0.1); }
+      .btn-outline:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
       .contact-note { margin-top: 1.8rem; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.28); }
 
       /* ── Responsive ── */
@@ -337,7 +260,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         <div class="hero-divider"></div>
         <p class="about-tagline">
           過去 15 年，我在醫療體系負責幫醫師從海量數據中整理患者的生病原因，並發表成國際論文。<br><br>
-          現在，我用這套研究邏輯，帶著你的常規健康數據一起做 Prysm iO 掃描——<strong>把兩份數字拼成一張完整的代謝地圖</strong>，讓你看懂分數背後代表的防護力，而不只是拿到一個數字。
+          現在，我用這套研究邏輯，幫把健康排最後的你用科學數據<strong>『除錯』</strong>，找回被慢性發炎偷走的體力。
         </p>
       </div>
       <div class="about-photo-wrap">
@@ -346,8 +269,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
           <span class="credential">陽明交通大學 應用化學系</span>
           <span class="credential">清華大學 分子醫學研究所</span>
           <span class="credential">醫療體系研究工作 15 年</span>
-          <span class="credential">協助醫師學術論文寫作</span>
-          <span class="credential">ageLOC 抗衰老生技研究應用</span>
+          <span class="credential">抗衰老生物技術研究應用</span>
         </div>
       </div>
     </section>
@@ -356,12 +278,12 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
 
       <div class="section-label">指出產業亂象</div>
       <h2 class="section-title">
-        你在事業上講求精準數據，<br>
-        <em>對待身體卻用最低效的方式「盲測」</em>
+        我發現把健康排最後的人，很常忽視健康<br>
+        <em>結果就是頭痛醫頭腳痛醫腳</em>
       </h2>
 
       <p class="body-text">
-        我發現醫療體系跟一般大眾之間有道牆：病患在診間只有幾分鐘，醫師能給你的只是簡單的結論或藥物；而市面上的保健品廣告又吹得太神。結果，這群撐起台灣產業的高壓菁英，明明是最需要精準數據的人，卻只能用「頭痛醫頭、盲吃保健品」這種最沒有效率的方式管理健康資本。
+        我發現醫療體系跟一般大眾之間有道牆：病患在診間只有幾分鐘，醫師能給你的只是簡單的結論或藥物；而市面上的保健品廣告又吹得太神。結果，把健康排最後的這群人，只能用最沒有效率的方式管理健康。
       </p>
       
       <div class="approach-compare">
@@ -374,8 +296,8 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         </div>
         <div class="approach-card mine">
           <div class="approach-card-label">我的做法</div>
-          <div class="approach-card-title">常規數據 × 掃描數值 → 找出營養缺口</div>
-          掃描前先收集你的血糖、三酸甘油酯、腰圍與生活作息。掃描當場，我把兩份數字交叉比對，告訴你數值背後可能隱藏的營養缺口與代謝耗損——而不是只說「分數低要補類胡蘿蔔素」。
+          <div class="approach-card-title">連起來看，找出系統 Bug</div>
+          用醫療研究邏輯，幫你整理這些症狀背後的共同模式。找到讓「慢性發炎」在你身上持續的底層原因，從那裡介入，症狀才會真正好轉。
         </div>
       </div>
 
@@ -388,14 +310,7 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       </h2>
 
       <p class="body-text">
-        在做醫學研究的這些年，我學會了如何從最嚴謹的實驗與數據中找答案。我協助醫師撰寫學術論文——這代表我的科學理解力，已經達到醫師同儕認可的層次。我不賣奇蹟，也不講玄學。我提供的每一個建議，都有 PubMed 文獻與臨床數據支撐。
-      </p>
-     
-      <p class="body-text">
-        這也是為什麼，除了協助你梳理健康指標趨勢，我更導入了 <strong>Prysm iO 光學掃描</strong>等客觀量化工具。只有當耗損與發炎程度可以被精準測量時，我們才能找出保養漏洞，並驗證介入方案是否真的有效。
-      </p>
-      <p class="body-text">
-        醫療體系幫你排除疾病。<strong>我則幫你梳理數字背後的保養機制，以及你的下一步。</strong>
+        在做醫學研究的這些年，我學會了如何從最嚴謹的實驗與數據中找答案。我不賣奇蹟，也不講玄學。我只提供具備數據證實、且在科學文獻上有明確證據的健康管理路徑，幫你找出體檢紅字背後的系統漏洞。
       </p>
 
       <hr class="divider" />
@@ -411,73 +326,12 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       </p>
 
       <div class="observe-list">
-        <div class="observe-item">健康檢查數字出現波動不知道怎麼辦，醫生說多休息，但你不知道從哪裡開始「優化」。</div>
-        <div class="observe-item">買過一堆保健品，但只是「頭痛醫頭」，疲勞感依舊輪流出現。</div>
+        <div class="observe-item">體檢紅字看了不知道怎麼辦，醫生說多休息，但你不知道從哪裡開始「除錯」。</div>
+        <div class="observe-item">買過一堆保健品，但只是「頭痛醫頭」，症狀依舊輪流出現。</div>
         <div class="observe-item">工作型態短期內不會改變，需要在現有高壓條件下，找到最有效率的科學介入點。</div>
       </div>
 
-    </div>
-
-    <section class="plans-section">
-      <div class="plans-inner">
-        <div class="section-label">服務方案</div>
-        <h2 class="section-title">
-          不管你在哪，<br>
-          <em>數據在手就能開始</em>
-        </h2>
-        <p class="body-text" style="max-width:520px;">
-          Prysm iO 掃描是加分項，不是門票。你手邊的常規檢測數據和手腕上的手錶，已經藏著足夠的線索——差的只是一個懂得轉譯的人。
-        </p>
-        <div class="plans-grid">
-
-          <div class="plan-card plan-remote">
-            <span class="plan-badge">方案 A · 遠距</span>
-            <div class="plan-title">線上健康趨勢探討與營養諮詢</div>
-            <div class="plan-sub">全台、海外皆可 · LINE / 視訊</div>
-            <hr class="plan-divider" />
-            <div class="plan-data">
-              <strong>您可以準備的數據</strong>
-              最近一次常規檢查數據（做為日常保養參考）<br>
-              Apple Watch / Garmin 的 HRV 與靜止心率截圖（選填）<br>
-              目前在吃的保健品清單
-            </div>
-            <div class="plan-steps">
-              <div class="plan-step"><span class="plan-step-num">01</span><span>彙整您的日常作息與現有數據，幫助您了解數字背後可能代表的「營養流失」與「體力耗損」趨勢</span></div>
-              <div class="plan-step"><span class="plan-step-num">02</span><span>LINE 或視訊 45 分鐘，一起梳理生活型態的盲點，並提供符合科學邏輯的「日常保健品配置建議」</span></div>
-              <div class="plan-step"><span class="plan-step-num">03</span><span>透過穿戴裝置的公開數據（如心率趨勢）作為日常保養的參考指標，線上即可完成進度討論</span></div>
-            </div>
-            <div class="plan-tagline">「你不必出門，只要提供現有數據，我們就能一起找出優化體力的科學保養路徑。」</div>
-          </div>
-
-          <div class="plan-card plan-onsite">
-            <span class="plan-badge">方案 B · 實體</span>
-            <div class="plan-title">Prysm iO 掃描 + 綜合防護力評估</div>
-            <div class="plan-sub">高雄面對面 · 含光學掃描指數</div>
-            <hr class="plan-divider" />
-            <div class="plan-data">
-              <strong>您可以準備的數據</strong>
-              最近一次常規檢查數據（紙本或電子檔皆可）<br>
-              手錶 HRV 與靜止心率截圖（選填）<br>
-              若有其他進階健康管理數據請一併帶來
-            </div>
-            <div class="plan-steps">
-              <div class="plan-step"><span class="plan-step-num">01</span><span>參考您的日常健康數據與作息，協助您建立個人化的「營養保養基準線」</span></div>
-              <div class="plan-step"><span class="plan-step-num">02</span><span>透過 Prysm iO 光學掃描，只要 15 秒即可取得您目前的「抗氧化防護網指數」</span></div>
-              <div class="plan-step"><span class="plan-step-num">03</span><span>結合作息、手錶趨勢與掃描分數，為您規劃專屬的「90天高效營養補充計畫」</span></div>
-            </div>
-            <div class="plan-tagline">「科學化數據 × 光學掃描指數，用最講求實證的方式升級你的健康資本——在高雄。」</div>
-          </div>
-
-        </div>
-
-        <div class="disclaimer-text">
-          免責聲明：本網站與諮詢服務所提供之資訊、掃描分數及營養建議，皆為日常健康促進與營養補充之參考，不具備醫療診斷、治療、減輕或預防任何疾病之功效。若有身體不適或明確疾病，請務必尋求專業醫師協助。
-        </div>
-
-      </div>
-    </section>
-
-    <section class="topics-section">
+    </div><section class="topics-section">
       <div class="topics-inner">
         <div class="section-label">這裡寫什麼</div>
         <h2 class="section-title">
@@ -486,25 +340,25 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
         </h2>
         <p class="body-text" style="max-width:520px;">
           每篇文章都從你真實搜尋過的問題出發，
-          用醫療研究的邏輯幫你看懂日常耗損背後的原因，
+          用醫療研究的邏輯幫你看懂症狀背後的原因，
           而不是單純給你一個產品建議。
         </p>
         <div class="topics-grid">
           <div class="topic">
-            <strong>慢性發炎與老化機制</strong>
-            從 NF-κB、SASP 到 Inflammaging——為什麼你的身體修復速度跟不上損耗
+            <strong>免疫與慢性發炎</strong>
+            感冒一直不好、嘴破反覆——為什麼頭痛醫頭永遠解決不了
           </div>
           <div class="topic">
-            <strong>內臟脂肪與代謝迴路</strong>
-            胰島素阻抗 × 皮質醇 × 睪固酮三個迴路如何互相強化，讓少吃多動越來越難
+            <strong>細胞修復與粒線體</strong>
+            從細胞層級理解為什麼你的身體修復速度跟不上損耗
           </div>
           <div class="topic">
-            <strong>Prysm iO 掃描解讀</strong>
-            類胡蘿蔔素分數背後代表什麼，如何搭配常規數值讀出真正的防護狀態
+            <strong>體檢報告解讀</strong>
+            紅字背後真正代表什麼，以及你能做什麼
           </div>
           <div class="topic">
-            <strong>精準補充與成分科學</strong>
-            花青素、Oligonol®、Nrf2 路徑——什麼有 RCT 數據支持、什麼只是行銷話術
+            <strong>抗氧化與補充方向</strong>
+            什麼真的有用、什麼只是你以為有用
           </div>
         </div>
       </div>
@@ -514,24 +368,23 @@ const description = '過去15年我在醫療體系負責幫醫師從海量數據
       <div class="contact-inner">
         <div class="contact-label">下一步行動</div>
         <h2 class="contact-title">
-          帶著你的常規數據，<br>
-          <em>我們一起把趨勢讀懂</em>
+          停止一個個追症狀，<br>
+          <em>先找出共同的根本原因</em>
         </h2>
         <p class="contact-sub">
-          掃描前請準備：空腹血糖、三酸甘油酯、腰圍、目前在吃的保健品清單。<br>
-          有的帶、沒有的跳過——資料越完整，當場解析越精準。<br><br>
-          或者先加 LINE，索取【細胞效能自我檢測清單】，<br>
-          釐清你最需要優先處理的保養缺口。
+          如果你也厭倦了無效的補充與不斷輪流出現的小毛病，<br>
+          歡迎直接私訊我你手邊那份讓你無解的體檢報告，<br>
+          或者索取【抗發炎自我檢測清單】。
         </p>
         <div class="contact-btns">
           <a href="https://line.me/ti/p/@fer7932k" target="_blank" class="btn-teal">
-            💬 加 LINE 索取細胞效能清單
+            💬 加 LINE 索取檢測清單
           </a>
-          <a href="/prescan" class="btn-outline">
-            📊 填寫專屬前導資料表
+          <a href="mailto:sunyikun0729@gmail.com" class="btn-outline">
+            📧 用 Email 聯絡我
           </a>
         </div>
-        <div class="contact-note">不只給你一個分數 · 幫你讀懂分數背後的代謝狀態</div>
+        <div class="contact-note">不推銷產品 · 先用數據搞清楚你的狀況再說</div>
       </div>
     </section>
 
