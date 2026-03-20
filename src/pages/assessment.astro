@@ -34,352 +34,201 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
         --orange-p:rgba(184,92,26,0.07);
       }
 
-      * { box-sizing: border-box; }
-
       /* ── HEADER 區塊樣式 ── */
       .page-header {
         background: var(--ink);
         padding: 4rem 6vw 3.5rem;
-        position: relative;
-        overflow: hidden;
+        position: relative; overflow: hidden;
         text-align: center;
       }
       .page-header::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
+        content: ''; position: absolute;
+        inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(184,147,90,0.15) 0%, transparent 70%);
       }
-      .header-inner {
-        max-width: 680px;
-        margin: 0 auto;
-        position: relative;
+      .header-inner { max-width: 680px; margin: 0 auto; position: relative;
       }
       .header-brand {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem;
-        letter-spacing: 0.4em;
-        color: var(--gold);
-        text-transform: uppercase;
-        margin-bottom: 1.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.8rem;
+        font-size: 0.65rem; letter-spacing: 0.4em; 
+        color: var(--gold); text-transform: uppercase; margin-bottom: 1.4rem;
+        display: flex; align-items: center; justify-content: center; gap: 0.8rem;
       }
-      .header-brand::before, .header-brand::after {
-        content: '◆';
-        font-size: 0.38rem;
+      .header-brand::before, .header-brand::after { content: '◆'; font-size: 0.38rem;
       }
       .page-title {
         font-family: 'Cormorant Garamond', serif;
         font-size: clamp(2rem, 4vw, 3rem);
-        font-weight: 300;
-        color: #fff;
-        line-height: 1.3;
-        margin-bottom: 1.2rem;
+        font-weight: 300; color: #fff; line-height: 1.3; margin-bottom: 1.2rem;
       }
-      .page-title em {
-        font-style: italic;
-        color: #6de8df;
+      .page-title em { font-style: italic; color: #6de8df;
       }
       .page-desc {
-        font-size: 0.95rem;
-        color: rgba(255,255,255,0.6);
-        font-weight: 300;
-        line-height: 2;
-        max-width: 580px;
-        margin: 0 auto;
+        font-size: 0.95rem; color: rgba(255,255,255,0.6);
+        font-weight: 300; line-height: 2; max-width: 580px; margin: 0 auto;
       }
 
       /* ── FORM BODY ── */
-      .form-body {
-        max-width: 740px;
-        margin: -2rem auto 4rem;
-        padding: 0 6vw;
-        position: relative;
-        z-index: 2;
+      .form-body { max-width: 740px;
+        margin: -2rem auto 4rem; padding: 0 6vw; position: relative; z-index: 2;
       }
       
       .quiz-section {
         background: var(--bg2);
         border: 1px solid var(--border);
-        border-radius: 2px;
-        margin-bottom: 2rem;
+        border-radius: 2px; margin-bottom: 2rem;
         box-shadow: 0 10px 30px rgba(0,0,0,0.03);
       }
       
-      .quiz-category {
-        padding: 2rem 2.5rem;
-        border-bottom: 1px solid var(--border);
-      }
-      .quiz-category:last-child {
-        border-bottom: none;
+      .quiz-category { padding: 2rem 2.5rem;
+        border-bottom: 1px solid var(--border); }
+      .quiz-category:last-child { border-bottom: none;
       }
       
-      .cat-head {
-        margin-bottom: 1.5rem;
+      .cat-head { margin-bottom: 1.5rem;
       }
       .cat-label {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem;
-        letter-spacing: 0.25em;
-        color: var(--teal);
-        background: var(--teal-p);
-        padding: 0.3rem 0.6rem;
-        border-radius: 1px;
-        display: inline-block;
-        margin-bottom: 0.8rem;
+        font-size: 0.65rem; letter-spacing: 0.25em; 
+        color: var(--teal); background: var(--teal-p); padding: 0.3rem 0.6rem; 
+        border-radius: 1px; display: inline-block; margin-bottom: 0.8rem;
       }
-      .cat-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.4rem;
-        font-weight: 400;
-        color: var(--ink);
+      .cat-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--ink);
       }
 
       /* Checkbox Items */
-      .check-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-      }
+      .check-list { display: flex;
+        flex-direction: column; gap: 0.8rem; }
       .check-item {
         display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 1.2rem 1.4rem;
-        border: 1px solid var(--border);
-        border-radius: 2px;
-        cursor: pointer;
-        transition: all 0.2s;
+        align-items: flex-start; gap: 1rem;
+        padding: 1.2rem 1.4rem; border: 1px solid var(--border);
+        border-radius: 2px; cursor: pointer; transition: all 0.2s;
         background: var(--bg);
-        position: relative;
-        overflow: hidden;
+        position: relative; overflow: hidden;
       }
-      .check-item:hover {
-        border-color: var(--teal);
-        background: var(--teal-p);
+      .check-item:hover { border-color: var(--teal); background: var(--teal-p);
       }
-      .check-item.active {
-        border-color: var(--teal);
-        background: var(--bg2);
-        box-shadow: 0 4px 12px rgba(26,140,130,0.08);
+      .check-item.active { border-color: var(--teal); background: var(--bg2); box-shadow: 0 4px 12px rgba(26,140,130,0.08);
       }
       .check-item.active::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: var(--teal);
+        content: ''; position: absolute;
+        left: 0; top: 0; bottom: 0; width: 3px; background: var(--teal);
       }
       
-      .check-item input {
-        flex-shrink: 0;
-        accent-color: var(--teal);
-        margin-top: 0.3rem;
-        transform: scale(1.2);
-        cursor: pointer;
+      .check-item input { flex-shrink: 0; accent-color: var(--teal);
+        margin-top: 0.3rem; transform: scale(1.2); cursor: pointer; }
+      .check-content { display: flex; flex-direction: column; gap: 0.3rem;
       }
-      .check-content {
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
+      .check-title { font-size: 0.95rem; font-weight: 500; color: var(--ink);
       }
-      .check-title {
-        font-size: 0.95rem;
-        font-weight: 500;
-        color: var(--ink);
-      }
-      .check-desc {
-        font-size: 0.85rem;
-        color: var(--muted);
-        font-weight: 300;
-        line-height: 1.6;
+      .check-desc { font-size: 0.85rem; color: var(--muted); font-weight: 300; line-height: 1.6;
       }
 
       /* ── RESULT BOX ── */
       .result-box {
         background: var(--surface);
         border: 1px solid var(--border);
-        border-radius: 2px;
-        padding: 2.5rem;
-        margin-bottom: 2rem;
-        text-align: center;
-        transition: all 0.3s;
+        border-radius: 2px; padding: 2.5rem; margin-bottom: 2rem;
+        text-align: center; transition: all 0.3s;
       }
-      .result-box.hidden {
-        opacity: 0;
-        transform: translateY(20px);
-        pointer-events: none;
-        display: none;
+      .result-box.hidden { opacity: 0; transform: translateY(20px); pointer-events: none; display: none;
       }
-      .result-box.show {
-        opacity: 1;
-        transform: translateY(0);
-        display: block;
-        animation: fadeUp 0.5s ease;
+      .result-box.show { opacity: 1; transform: translateY(0); display: block; animation: fadeUp 0.5s ease;
       }
       
       .score-display {
         font-family: 'Cormorant Garamond', serif;
-        font-size: 3.5rem;
-        font-weight: 300;
-        color: var(--ink);
-        margin-bottom: 0.5rem;
-        line-height: 1;
+        font-size: 3.5rem; 
+        font-weight: 300; color: var(--ink); margin-bottom: 0.5rem; line-height: 1;
       }
-      .score-display span {
-        font-size: 1.5rem;
-        color: var(--muted);
+      .score-display span { font-size: 1.5rem; color: var(--muted);
       }
       
       .result-badge {
         font-family: 'DM Mono', monospace;
-        font-size: 0.75rem;
-        letter-spacing: 0.15em;
-        padding: 0.4rem 1rem;
-        border-radius: 2px;
-        display: inline-block;
-        margin-bottom: 1.2rem;
+        font-size: 0.75rem; letter-spacing: 0.15em;
+        padding: 0.4rem 1rem; border-radius: 2px; display: inline-block; margin-bottom: 1.2rem;
       }
-      .result-box.green .result-badge { background: rgba(26,122,80,0.15); color: var(--green); }
-      .result-box.orange .result-badge { background: rgba(184,92,26,0.15); color: var(--orange); }
-      .result-box.red .result-badge { background: rgba(192,57,43,0.12); color: var(--red); }
+      .result-box.green .result-badge { background: rgba(26,122,80,0.15); color: var(--green);
+      }
+      .result-box.orange .result-badge { background: rgba(184,92,26,0.15); color: var(--orange);
+      }
+      .result-box.red .result-badge { background: rgba(192,57,43,0.12); color: var(--red);
+      }
       
-      .result-text {
-        font-size: 0.95rem;
-        color: var(--body);
-        font-weight: 300;
-        line-height: 1.9;
-        max-width: 560px;
-        margin: 0 auto;
-      }
-      .result-text strong {
-        color: var(--ink);
-        font-weight: 500;
+      .result-text { font-size: 0.95rem; color: var(--body); font-weight: 300;
+        line-height: 1.9; max-width: 560px; margin: 0 auto; }
+      .result-text strong { color: var(--ink); font-weight: 500;
       }
 
       /* ── SUBMIT SECTION ── */
       .submit-section {
         background: var(--ink);
-        border-radius: 2px;
-        padding: 2.5rem 2rem;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
+        border-radius: 2px; padding: 2.5rem 2rem; text-align: center;
+        position: relative; overflow: hidden;
       }
       .submit-section::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
+        content: ''; position: absolute;
+        inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(26,140,130,0.15) 0%, transparent 70%);
       }
-      .submit-inner {
-        position: relative;
-        z-index: 1;
+      .submit-inner { position: relative; z-index: 1;
       }
-      .submit-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: #fff;
-        margin-bottom: 0.8rem;
+      .submit-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300; color: #fff; margin-bottom: 0.8rem;
       }
-      .submit-sub {
-        font-size: 0.85rem;
-        color: rgba(255,255,255,0.6);
-        font-weight: 300;
-        line-height: 1.8;
-        margin-bottom: 1.8rem;
+      .submit-sub { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 300; line-height: 1.8; margin-bottom: 1.8rem;
       }
       
       .btn-submit {
         display: inline-block;
-        background: var(--teal);
-        color: #fff;
-        padding: 1.1rem 3rem;
-        border-radius: 2px;
-        border: none;
-        cursor: pointer;
-        font-family: 'DM Mono', monospace;
-        font-size: 0.8rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        transition: all 0.3s;
+        background: var(--teal); color: #fff;
+        padding: 1.1rem 3rem; border-radius: 2px; border: none; cursor: pointer;
+        font-family: 'DM Mono', monospace; font-size: 0.8rem;
+        letter-spacing: 0.2em; 
+        text-transform: uppercase; transition: all 0.3s;
       }
-      .btn-submit:hover {
-        background: var(--teal-d);
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(26,140,130,0.35);
-      }
-      .btn-submit:disabled {
-        background: var(--muted);
-        cursor: not-allowed;
-        opacity: 0.5;
-        box-shadow: none;
-        transform: none;
-      }
+      .btn-submit:hover { background: var(--teal-d); transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(26,140,130,0.35); }
+      .btn-submit:disabled { background: var(--muted); cursor: not-allowed; opacity: 0.5;
+        box-shadow: none; transform: none; }
 
       .next-step-box {
         margin-top: 1.8rem;
         padding: 1.4rem 1.6rem;
-        background: var(--ink);
-        border-radius: 2px;
+        background: var(--ink); border-radius: 2px;
         border-left: 3px solid var(--gold);
       }
       .next-step-text {
-        font-size: 0.88rem;
-        line-height: 1.9;
+        font-size: 0.88rem; line-height: 1.9;
         color: rgba(255,255,255,0.7);
-        font-weight: 300;
-        margin: 0 0 1.1rem 0;
+        font-weight: 300; margin: 0 0 1.1rem 0;
       }
-      .next-step-text strong {
-        color: #ffffff;
-        font-weight: 500;
-      }
+      .next-step-text strong { color: #ffffff;
+        font-weight: 500; }
       .next-step-btn {
         display: inline-block;
         padding: 0.85rem 1.6rem;
-        background: var(--gold);
-        color: #ffffff;
-        text-decoration: none;
-        font-family: 'DM Mono', monospace;
-        font-size: 0.78rem;
-        letter-spacing: 0.12em;
-        border-radius: 2px;
+        background: var(--gold); color: #ffffff; text-decoration: none;
+        font-family: 'DM Mono', monospace; font-size: 0.78rem;
+        letter-spacing: 0.12em; border-radius: 2px;
         transition: all 0.25s;
       }
-      .next-step-btn:hover {
-        background: #9a7848;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(184,147,90,0.3);
+      .next-step-btn:hover { background: #9a7848; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(184,147,90,0.3);
       }
 
       .submit-steps {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
+        display: flex; flex-direction: column;
+        align-items: center; gap: 0.8rem;
       }
       .submit-step {
         display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        width: 100%;
-        justify-content: center;
+        align-items: center; gap: 0.8rem; width: 100%; justify-content: center;
       }
       .step-num {
         font-family: 'DM Mono', monospace;
-        font-size: 0.65rem;
-        letter-spacing: 0.15em;
-        color: rgba(255,255,255,0.3);
-        flex-shrink: 0;
+        font-size: 0.65rem; letter-spacing: 0.15em;
+        color: rgba(255,255,255,0.3); flex-shrink: 0;
       }
       .submit-arrow {
         font-size: 1rem;
@@ -387,36 +236,31 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
       }
       .btn-line {
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.6rem;
-        padding: 1.1rem 2.2rem;
-        border-radius: 2px;
-        background: #06C755;
-        color: #ffffff;
-        text-decoration: none;
-        font-family: 'DM Mono', monospace;
-        font-size: 0.8rem;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        transition: all 0.3s;
+        align-items: center; justify-content: center; gap: 0.6rem;
+        padding: 1.1rem 2.2rem; border-radius: 2px;
+        background: #06C755; color: #ffffff; text-decoration: none;
+        font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.15em;
+        text-transform: uppercase; transition: all 0.3s;
       }
-      .btn-line:hover {
-        background: #05a847;
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(6,199,85,0.35);
+      .btn-line:hover { background: #05a847; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(6,199,85,0.35);
       }
       
       @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(15px); }
-        to   { opacity: 1; transform: translateY(0); }
+        from { opacity: 0;
+        transform: translateY(15px); }
+        to   { opacity: 1; transform: translateY(0);
+        }
       }
 
       @media (max-width: 600px) {
-        .page-header { padding: 3rem 5vw 2.5rem; }
-        .quiz-category { padding: 1.5rem; }
-        .check-item { padding: 1rem; }
-        .result-box { padding: 1.5rem; }
+        .page-header { padding: 3rem 5vw 2.5rem;
+        }
+        .quiz-category { padding: 1.5rem;
+        }
+        .check-item { padding: 1rem;
+        }
+        .result-box { padding: 1.5rem;
+        }
       }
     </style>
   </head>
@@ -429,7 +273,7 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
           <div class="header-brand">AGELOCKED · 專屬評估</div>
           <h1 class="page-title">身體警報與餘裕流失<br><em>自我評估清單</em></h1>
           <p class="page-desc">
-            標準健檢找的是「疾病」，但我們生活更需要的是「餘裕」。花 1 分鐘，勾選你過去 3 個月內頻繁出現的真實狀況，幫你找出理智線容易斷裂、體能斷層的底層原因。
+            標準健檢找的是「疾病」，但生活更需要的是「餘裕」。花 1 分鐘，勾選你過去 3 個月內頻繁出現的真實狀況，幫你找出理智線容易斷裂、體能斷層的底層原因。
           </p>
         </div>
       </header>
@@ -532,6 +376,7 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
 
         <div id="resultBox" class="result-box hidden">
           <div class="score-display"><span id="scoreNum">0</span> <span>/ 9</span></div>
+         
           <div id="resultBadge" class="result-badge">測量中</div>
           <div id="resultText" class="result-text">請勾選上方符合的狀況以顯示評估結果。</div>
           <div id="nextStepBox" class="next-step-box" style="display:none;">
@@ -556,6 +401,7 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
                 <button class="btn-submit" id="copyBtn" onclick="copyResult()" disabled>📋 複製評估結果</button>
               </div>
               <div class="submit-arrow">↓</div>
+   
               <div class="submit-step">
                 <span class="step-num">2</span>
                 <a href="https://line.me/ti/p/@fer7932k" target="_blank" rel="noopener" class="btn-line">
@@ -569,7 +415,8 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
           </div>
         </div>
         
-        <div style="font-size: 0.75rem; color: var(--muted); margin-top: 1.5rem; text-align: center; font-weight: 300;">
+        <div style="font-size: 0.75rem;
+          color: var(--muted); margin-top: 1.5rem; text-align: center; font-weight: 300;">
           免責聲明：本表單為自我評估工具，不具備醫療診斷之功效。若有明確疾病請就醫。
         </div>
 
@@ -584,7 +431,8 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
         const label = checkbox.closest('.check-item');
         if (checkbox.checked) {
           label.classList.add('active');
-        } else {
+        } 
+        else {
           label.classList.remove('active');
         }
         calculateScore();
@@ -647,6 +495,7 @@ const description = '標準健檢找的是疾病，但生活找的是「餘裕�
             btn.textContent = '📋 複製評估結果並傳送';
             btn.style.background = '';
           }, 3500);
+      
         }).catch(() => {
           const ta = document.createElement('textarea');
           ta.value = textToCopy; ta.style.position = 'fixed'; ta.style.opacity = '0';
