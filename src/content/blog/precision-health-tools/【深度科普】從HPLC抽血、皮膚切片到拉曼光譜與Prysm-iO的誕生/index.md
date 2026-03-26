@@ -430,7 +430,9 @@ Veggie Meter 不只是測量儀器，更成為評估國家公衛政策、追蹤�
 
 但工程師們面臨一個終極難題：
 
-**Prysm iO 的核心技術路徑，是直接建立在 Gellermann-Ermakov 陣營的壓力式反射光譜研究上。** 在血液干擾的處理策略上，Prysm iO 沿用了 Gellermann 的物理排血路徑；而柏林夏里特陣營（Lademann/Darvin）的 MSRRS 成果，則是 Galaxy Watch 的學術根基，兩條路線各有明確的技術傳承。
+**Prysm iO 的核心技術路徑，是直接建立在 Gellermann-Ermakov 陣營的壓力式反射光譜研究上。** 
+
+在血液干擾的處理策略上，Prysm iO 沿用了 Gellermann 的物理排血路徑；而柏林夏里特陣營（Lademann/Darvin）的 MSRRS 成果，則是 Galaxy Watch 的學術根基，兩條路線各有明確的技術傳承。
 
 > **怎麼在使用便宜、無雷射危險的「反射式白光硬體（RS）」的同時，獲得媲美昂貴「拉曼雷射光譜（RRS）」的黃金標準精確度？**
 
