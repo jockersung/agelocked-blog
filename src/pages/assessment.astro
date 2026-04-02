@@ -217,6 +217,27 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
         to   { opacity: 1; transform: translateY(0); }
       }
 
+      /* ── PART INSIGHT BLOCK ── */
+      .part-insight {
+        margin-top: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        background: var(--ink);
+        border-left: 3px solid var(--gold);
+        border-radius: 2px;
+        text-align: left;
+      }
+      .part-insight-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.8rem; letter-spacing: 0.25em;
+        color: var(--gold); text-transform: uppercase;
+        margin-bottom: 0.6rem;
+      }
+      .part-insight-text {
+        font-size: 1.05rem; color: rgba(255,255,255,0.75);
+        font-weight: 300; line-height: 1.85;
+      }
+      .part-insight-text strong { color: #ffffff; font-weight: 500; }
+
       @media (max-width: 600px) {
         .page-header { padding: 3rem 5vw 2.5rem; }
         .quiz-category { padding: 1.5rem; }
@@ -347,6 +368,10 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
          
           <div id="resultBadge" class="result-badge">測量中</div>
           <div id="resultText" class="result-text">請勾選上方符合的狀況以顯示評估結果。</div>
+          <div id="partInsight" class="part-insight" style="display:none;">
+            <div class="part-insight-label">◆ 數據缺口提醒</div>
+            <div id="partInsightText" class="part-insight-text"></div>
+          </div>
           <div id="nextStepBox" class="next-step-box" style="display:none;">
             <p class="next-step-text">
               這份評估是第一步——它顯示的是你觀察到的症狀訊號。<br>
@@ -392,6 +417,56 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
     <Footer />
 
     <script is:inline>
+      // ── 各 PART 數據缺口對應提醒 ──
+      const PART_INSIGHTS = [
+        {
+          name: '能量與神經系統',
+          text: '你的訊號主要集中在<strong>能量與神經系統</strong>。這類症狀與 HRV（心率變異度）下滑及皮質醇失衡高度相關——光憑症狀無法判斷是壓力負荷還是代謝問題所致。要精準定位根因，需要對照你的穿戴數據與 hs-CRP 數值。',
+          prescan: '📊 下一步：填寫健檢資料表，對照 HRV 與 hs-CRP'
+        },
+        {
+          name: '代謝與體態訊號',
+          text: '你的訊號主要集中在<strong>代謝系統</strong>。這類症狀與 TG/HDL 比值偏高及 HbA1c 趨勢直接相關——很多人這兩個數字都「還在正常範圍」，但已在臨界邊緣。光看症狀無法判斷嚴重程度，需要血液數據交叉對位才能確認。',
+          prescan: '📊 下一步：填寫健檢資料表，對照 TG/HDL 與 HbA1c'
+        },
+        {
+          name: '修復與免疫防護網',
+          text: '你的訊號主要集中在<strong>修復與免疫系統</strong>。這類症狀與體內 hs-CRP（高敏感 C 反應蛋白）長期偏高高度相關——這個數字在常規健檢中常被忽略，但它是慢性發炎最直接的指標。要確認發炎源頭，必須結合客觀的血液數據。',
+          prescan: '📊 下一步：填寫健檢資料表，對照 hs-CRP 與發炎指標'
+        }
+      ];
+
+      function getTopPart() {
+        const categories = document.querySelectorAll('.quiz-category');
+        let maxCount = 0;
+        let topIndex = 0;
+        categories.forEach((cat, i) => {
+          const count = cat.querySelectorAll('input[name="alarm"]:checked').length;
+          if (count > maxCount) { maxCount = count; topIndex = i; }
+        });
+        return { topIndex, maxCount };
+      }
+
+      function updatePartInsight(score) {
+        const insightBox = document.getElementById('partInsight');
+        const insightText = document.getElementById('partInsightText');
+        const nextStepBtn = document.querySelector('.next-step-btn');
+
+        if (score === 0) {
+          insightBox.style.display = 'none';
+          return;
+        }
+
+        const { topIndex, maxCount } = getTopPart();
+        const insight = PART_INSIGHTS[topIndex];
+
+        insightText.innerHTML = insight.text;
+        insightBox.style.display = 'block';
+
+        // 同步更新 prescan 按鈕文字
+        if (nextStepBtn) nextStepBtn.textContent = insight.prescan;
+      }
+
       function toggleActive(checkbox) {
         const label = checkbox.closest('.check-item');
         if (checkbox.checked) {
@@ -418,6 +493,7 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
           resultBox.className = 'result-box hidden';
           copyBtn.disabled = true;
           document.getElementById('nextStepBox').style.display = 'none';
+          document.getElementById('partInsight').style.display = 'none';
           return;
         }
 
@@ -432,12 +508,14 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
         } else if (score <= 5) {
           resultBox.classList.add('orange');
           badge.textContent = '需留意的身體訊號';
-          text.innerHTML = '你的健檢報告可能很漂亮，但身體已經開始給出警告訊號。研究顯示，這類症狀組合與慢性低度發炎及壓力負荷高度相關。此時盲目補充一般的維他命效果有限，你需要的是針對生活型態根本原因的系統性調整。';
+          text.innerHTML = '你的健檢報告可能很漂亮，但身體已經開始給出警告訊號。研究顯示，這類症狀組合與慢性低度發炎及壓力負荷高度相關。這個階段光靠補充保健品往往感覺效果有限，因為問題出在訊號源頭，不在補充量——你需要的是針對根本原因的系統性調整。';
         } else {
           resultBox.classList.add('red');
           badge.textContent = '多重身體警報訊號';
-          text.innerHTML = '你觀察到的訊號數量較多，身體在多個面向同時發出警報。這類狀況通常伴隨著代謝彈性下降與整體恢復力的明顯變化。強烈建議停止盲目測試保健品，先進行客觀的數據比對，再討論生活型態調整方向。';
+          text.innerHTML = '你觀察到的訊號數量較多，身體在多個面向同時發出警報。慢性發炎已經在你的細胞軟體裡製造了大量亂碼，蓋過了年輕時的原始指令。現在你需要的不是再多加一罐保健品——而是透過數據對位，先找到干擾源頭。';
         }
+
+        updatePartInsight(score);
       }
 
       function copyResult() {
