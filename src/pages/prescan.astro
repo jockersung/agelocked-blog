@@ -248,6 +248,20 @@ const description = '資料越完整，當場討論越有方向。有的填、�
       .calc-result.orange .calc-result-badge { background: rgba(251,146,60,0.2); color: #fb923c; }
       .calc-result.red .calc-result-badge { background: rgba(248,113,113,0.2); color: #f87171; }
 
+      /* ── BMI RESULT ── */
+      .bmi-result {
+        margin-top: 0.8rem; padding: 0.9rem 1rem;
+        border-radius: 2px; font-size: 1.05rem;
+        font-weight: 300; line-height: 1.7; display: none;
+        background: var(--teal-p); border: 1px solid rgba(26,140,130,0.18);
+        color: var(--body);
+      }
+      .bmi-result.show { display: block; }
+      .bmi-value {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.6rem; color: var(--teal); display: inline; margin-right: 0.5rem;
+      }
+
       /* ── WATCH DATA SECTION ── */
       .watch-hint {
         background: var(--teal-p);
@@ -346,6 +360,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         font-size: 1.2rem;
         color: rgba(255,255,255,0.2);
       }
+      /* ── LINE BUTTON：disabled 狀態 ── */
       .btn-line {
         display: inline-flex;
         align-items: center; justify-content: center; gap: 0.6rem;
@@ -353,8 +368,22 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         background: #06C755; color: #ffffff; text-decoration: none;
         font-family: 'DM Mono', monospace; font-size: 1.05rem; letter-spacing: 0.15em;
         text-transform: uppercase; transition: all 0.3s;
+        pointer-events: auto;
       }
       .btn-line:hover { background: #05a847; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(6,199,85,0.35); }
+      .btn-line.disabled {
+        background: rgba(255,255,255,0.1);
+        color: rgba(255,255,255,0.3);
+        pointer-events: none; cursor: not-allowed;
+        transform: none; box-shadow: none;
+      }
+      .btn-line-hint {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.85rem; letter-spacing: 0.15em;
+        color: rgba(255,255,255,0.35); margin-top: 0.8rem;
+        display: none;
+      }
+      .btn-line.disabled + .btn-line-hint { display: block; }
 
       @media (max-width: 600px) {
         .field-row, .field-row-3 { grid-template-columns: 1fr; }
@@ -383,7 +412,8 @@ const description = '資料越完整，當場討論越有方向。有的填、�
       </header>
 
       <div class="form-body">
-        
+
+        <!-- ══ 01 基本資料（移除 LINE ID） ══ -->
         <div class="form-section">
           <div class="section-head">
             <div class="section-num">01</div>
@@ -415,17 +445,88 @@ const description = '資料越完整，當場討論越有方向。有的填、�
                   <option value="female">女性</option>
                 </select>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ 02 身體訊號（原 05，移到第二位——摩擦力最低，先建立投入感） ══ -->
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">02</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Body Signals</div>
+              <div class="section-h">體力與日常感受（勾選有感覺的）</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="check-grid">
+              <label class="check-item"><input type="checkbox" name="signal" value="fatigue_pm" /> 下午容易疲勞、體力下滑</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_enough_tired" /> 睡滿 7-8 小時起床仍感疲倦</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="belly_increase" /> 腹部脂肪近 1-2 年感覺有增加</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="brain_fog" /> 專注力不如以往、容易渙散</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="wound_slow" /> 體能或運動後的恢復變慢</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="sleep_poor" /> 睡眠品質不佳 / 容易中斷</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="muscle_loss" /> 肌肉量感覺較難維持</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="hair_gray" /> 白髮 / 掉髮問題</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="stress_high" /> 工作壓力高、日常難以放鬆</label>
+              <label class="check-item"><input type="checkbox" name="signal" value="cold_long" /> 保護力感覺變差、容易小感冒</label>
+            </div>
+            <div class="field" style="margin-top:1.5rem;">
+              <div class="field-label">目前在保養上最想優化的重點 <span class="field-optional">選填</span></div>
+              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，想提升下午的專注力與體力..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ 03 體態數據（原 03，加入 BMI 自動計算） ══ -->
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">03</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">Body Metrics</div>
+              <div class="section-h">體態數據</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="field-row-3">
               <div class="field">
-                <div class="field-label">LINE ID <span class="field-optional">選填</span></div>
-                <input type="text" id="line_id" placeholder="方便後續追蹤" />
+                <div class="field-label">腰圍</div>
+                <div class="input-unit">
+                  <input type="number" id="waist" placeholder="88" step="0.5" />
+                  <span class="unit-tag">cm</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">體重 <span class="field-optional">選填</span></div>
+                <div class="input-unit">
+                  <input type="number" id="weight" placeholder="70" step="0.1" oninput="calcBMI()" />
+                  <span class="unit-tag">kg</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label">身高 <span class="field-optional">選填</span></div>
+                <div class="input-unit">
+                  <input type="number" id="height" placeholder="170" step="0.5" oninput="calcBMI()" />
+                  <span class="unit-tag">cm</span>
+                </div>
+              </div>
+            </div>
+            <!-- BMI 自動計算結果 -->
+            <div class="bmi-result" id="bmiResult">
+              BMI <span class="bmi-value" id="bmiValue"></span><span id="bmiLabel"></span>
+            </div>
+            <div class="field" style="margin-top:0.8rem;">
+              <div class="field-label" style="font-size:1rem; color:var(--muted); font-weight:300;">
+                國健署代謝健康參考標準：男性腰圍 ≥ 90 cm ／ 女性腰圍 ≥ 80 cm
               </div>
             </div>
           </div>
         </div>
 
+        <!-- ══ 04 血脂數據（原 02，移到第四位——需要健檢報告，摩擦力較高） ══ -->
         <div class="form-section">
           <div class="section-head">
-            <div class="section-num">02</div>
+            <div class="section-num">04</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Blood Lipids</div>
               <div class="section-h">血脂數據（常規檢查）</div>
@@ -496,49 +597,10 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           </div>
         </div>
 
+        <!-- ══ 05 穿戴裝置數據（原 04） ══ -->
         <div class="form-section">
           <div class="section-head">
-            <div class="section-num">03</div>
-            <div class="section-title-wrap">
-              <div class="section-label-sm">Body Metrics</div>
-              <div class="section-h">體態數據</div>
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="field-row-3">
-              <div class="field">
-                <div class="field-label">腰圍</div>
-                <div class="input-unit">
-                  <input type="number" id="waist" placeholder="88" step="0.5" />
-                  <span class="unit-tag">cm</span>
-                </div>
-              </div>
-              <div class="field">
-                <div class="field-label">體重 <span class="field-optional">選填</span></div>
-                <div class="input-unit">
-                  <input type="number" id="weight" placeholder="70" step="0.1" />
-                  <span class="unit-tag">kg</span>
-                </div>
-              </div>
-              <div class="field">
-                <div class="field-label">身高 <span class="field-optional">選填</span></div>
-                <div class="input-unit">
-                  <input type="number" id="height" placeholder="170" step="0.5" />
-                  <span class="unit-tag">cm</span>
-                </div>
-              </div>
-            </div>
-            <div class="field" style="margin-top:0.8rem;">
-              <div class="field-label" style="font-size:1rem; color:var(--muted); font-weight:300;">
-                國健署代謝健康參考標準：男性腰圍 ≥ 90 cm ／ 女性腰圍 ≥ 80 cm
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-section">
-          <div class="section-head">
-            <div class="section-num">04</div>
+            <div class="section-num">05</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Wearable Data · 選填</div>
               <div class="section-h">穿戴裝置數據</div>
@@ -597,39 +659,12 @@ const description = '資料越完整，當場討論越有方向。有的填、�
               Garmin：Garmin Connect App → 心率區塊 → 靜止心率 / HRV 狀態<br>
               Galaxy Watch：Samsung Health App → 心率 / 壓力<br>
               Pixel Watch：Fitbit App → 健康指標 → 靜止心率 / 心率變異度<br>
-              Whoop：App 首頁下方 Health Monitor (健康監測) 或 Recovery (恢復) 頁面     
+              Whoop：App 首頁下方 Health Monitor (健康監測) 或 Recovery (恢復) 頁面
             </div>
           </div>
         </div>
 
-        <div class="form-section">
-          <div class="section-head">
-            <div class="section-num">05</div>
-            <div class="section-title-wrap">
-              <div class="section-label-sm">Body Signals</div>
-              <div class="section-h">體力與日常感受（勾選有感覺的）</div>
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="check-grid">
-              <label class="check-item"><input type="checkbox" name="signal" value="fatigue_pm" /> 下午容易疲勞、體力下滑</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="sleep_enough_tired" /> 睡滿 7-8 小時起床仍感疲倦</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="belly_increase" /> 腹部脂肪近 1-2 年感覺有增加</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="brain_fog" /> 專注力不如以往、容易渙散</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="wound_slow" /> 體能或運動後的恢復變慢</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="sleep_poor" /> 睡眠品質不佳 / 容易中斷</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="muscle_loss" /> 肌肉量感覺較難維持</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="hair_gray" /> 白髮 / 掉髮問題</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="stress_high" /> 工作壓力高、日常難以放鬆</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="cold_long" /> 保護力感覺變差、容易小感冒</label>
-            </div>
-            <div class="field" style="margin-top:1.5rem;">
-              <div class="field-label">目前在保養上最想優化的重點 <span class="field-optional">選填</span></div>
-              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，想提升下午的專注力與體力..."></textarea>
-            </div>
-          </div>
-        </div>
-
+        <!-- ══ 06 目前在吃的保健品（原 06） ══ -->
         <div class="form-section">
           <div class="section-head">
             <div class="section-num">06</div>
@@ -658,6 +693,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           </div>
         </div>
 
+        <!-- ══ 提交區 ══ -->
         <div class="submit-section">
           <div class="submit-inner">
             <div class="submit-title">資料填寫完成</div>
@@ -672,20 +708,21 @@ const description = '資料越完整，當場討論越有方向。有的填、�
               <div class="submit-arrow">↓</div>
               <div class="submit-step">
                 <span class="step-num">2</span>
-                <a href="https://line.me/ti/p/@fer7932k" target="_blank" rel="noopener" class="btn-line">
+                <a id="lineBtn" href="https://line.me/ti/p/@fer7932k" target="_blank" rel="noopener" class="btn-line disabled">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
                     <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                   </svg>
                   開啟 LINE 傳送資料
                 </a>
+                <div class="btn-line-hint">請先填寫姓名，並至少勾選一項身體訊號</div>
               </div>
             </div>
             <div class="submit-note">資料僅用於諮詢參考 · 不會轉傳或儲存至第三方</div>
           </div>
         </div>
-        
+
         <div style="font-size: 0.95rem; color: var(--muted); margin-top: 2rem; padding: 0 1rem; text-align: center; font-weight: 300; line-height: 1.6;">
-          免責聲明：本表單與後續諮詢所提供之資訊、數據解析及營養建議，皆為日常健康促進與營養補充之參考，不具備醫療診斷、治療、減輕或預防任何疾病之功效。若有身體不適或明確醫療需求，請務必尋求專業醫師協助。
+          免責聲明：本表單與後續諮詢所提供之資訊、數據解析及營養建議，皆為日常健康促進與營養補充之參考，不具備醫療診斷、治療、減輕或預防任何疾病之功效。若有身體不適或明確醫療需求，請務請尋求專業醫師協助。
         </div>
 
       </div>
@@ -703,9 +740,39 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         const total = totalInputs + 2;
         const pct = Math.min(100, Math.round(((filled + hasCheck) / total) * 100));
         document.getElementById('progressBar').style.width = pct + '%';
+        checkLineReady();
       }
       document.addEventListener('input', updateProgress);
       document.addEventListener('change', updateProgress);
+
+      // ── LINE BUTTON GATE：姓名已填 + 至少一個訊號勾選 ──
+      function checkLineReady() {
+        const name = document.getElementById('name').value.trim();
+        const hasSignal = document.querySelectorAll('input[name="signal"]:checked').length > 0;
+        const btn = document.getElementById('lineBtn');
+        if (name && hasSignal) {
+          btn.classList.remove('disabled');
+        } else {
+          btn.classList.add('disabled');
+        }
+      }
+
+      // ── BMI 自動計算 ──
+      function calcBMI() {
+        const weight = parseFloat(document.getElementById('weight').value);
+        const height = parseFloat(document.getElementById('height').value);
+        const result = document.getElementById('bmiResult');
+        const bmiVal = document.getElementById('bmiValue');
+        const bmiLabel = document.getElementById('bmiLabel');
+        if (!weight || !height || height === 0) { result.classList.remove('show'); return; }
+        const bmi = (weight / ((height / 100) ** 2)).toFixed(1);
+        bmiVal.textContent = bmi;
+        if (bmi < 18.5) bmiLabel.textContent = '（體重過輕）';
+        else if (bmi < 24) bmiLabel.textContent = '（正常範圍）';
+        else if (bmi < 27) bmiLabel.textContent = '（過重）';
+        else bmiLabel.textContent = '（肥胖）';
+        result.classList.add('show');
+      }
 
       // ── TG/HDL CALCULATOR ──
       function autoCalc() {
@@ -735,7 +802,6 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         ratio.textContent = val;
         res.className = 'calc-result show';
 
-        // 將回饋文字調整為合規的「能量與營養」用語
         if (val < 2) {
           res.classList.add('green');
           badge.textContent = '代謝彈性良好';
@@ -768,46 +834,91 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         if (rows.length > 1) btn.closest('.suppl-row').remove();
       }
 
-      // ── COPY TO LINE ──
+      // ── COPY TO LINE（補上 weight、height、BMI、watch_trend） ──
       function copyToLine() {
         const name = document.getElementById('name').value || '（未填）';
         const age = document.getElementById('age').value || '（未填）';
         const gender = document.getElementById('gender');
         const genderText = gender.options[gender.selectedIndex].text || '（未填）';
+
+        // 體態
+        const waist = document.getElementById('waist').value;
+        const weight = document.getElementById('weight').value;
+        const height = document.getElementById('height').value;
+        let bmiText = '';
+        if (weight && height) {
+          const bmi = (parseFloat(weight) / ((parseFloat(height) / 100) ** 2)).toFixed(1);
+          bmiText = `\n體重：${weight} kg　身高：${height} cm　BMI：${bmi}`;
+        } else {
+          if (weight) bmiText = `\n體重：${weight} kg`;
+          if (height) bmiText += `　身高：${height} cm`;
+        }
+
+        // 血脂
         const tg = document.getElementById('tg').value;
         const hdl = document.getElementById('hdl').value;
         const glucose = document.getElementById('glucose').value;
         const hba1c = document.getElementById('hba1c').value;
         const hsCrp = document.getElementById('hsCrp').value;
-        const waist = document.getElementById('waist').value;
+        let ratio = '';
+        if (tg && hdl) ratio = `\nTG/HDL 比值：${(parseFloat(tg)/parseFloat(hdl)).toFixed(2)}`;
+
+        // 穿戴
         const rhr = document.getElementById('rhr').value;
         const hrv = document.getElementById('hrv').value;
         const watchBrand = document.getElementById('watch_brand');
         const watchText = watchBrand.options[watchBrand.selectedIndex].text;
-        const concern = document.getElementById('main_concern').value;
-        const supplNote = document.getElementById('suppl_note').value;
+        const watchTrend = document.getElementById('watch_trend');
+        const watchTrendText = watchTrend.options[watchTrend.selectedIndex].text;
+        const watchTrendLine = watchTrendText && watchTrendText !== '請選擇' ? `\n近期趨勢：${watchTrendText}` : '';
 
+        // 訊號
         const signals = [...document.querySelectorAll('input[name="signal"]:checked')]
           .map(el => el.parentElement.textContent.trim()).join('、') || '（未勾選）';
 
+        // 目標
+        const concern = document.getElementById('main_concern').value;
+        const concernText = concern ? `\n\n▌主要優化方向\n${concern}` : '';
+
+        // 保健品
+        const supplNote = document.getElementById('suppl_note').value;
         const supplRows = document.querySelectorAll('.suppl-row');
         const suppls = [...supplRows].map(r => {
           const inputs = r.querySelectorAll('input');
-          const name = inputs[0].value;
+          const n = inputs[0].value;
           const qty = inputs[1]?.value;
-          if (!name) return null;
-          return qty ? `${name}（${qty}）` : name;
+          if (!n) return null;
+          return qty ? `${n}（${qty}）` : n;
         }).filter(Boolean).join('、') || '（無）';
-
-        let ratio = '';
-        if (tg && hdl) {
-          ratio = `\nTG/HDL 比值：${(parseFloat(tg)/parseFloat(hdl)).toFixed(2)}`;
-        }
-
-        const concernText = concern ? `\n\n▌主要優化方向\n${concern}` : '';
         const supplNoteText = supplNote ? `\n\n▌補充品備註\n${supplNote}` : '';
 
-        const text = `【AGELOCKED 掃描前資料】\n\n▌基本資料\n姓名：${name}\n年齡：${age} 歲　性別：${genderText}\n\n▌血脂數據\n三酸甘油酯 TG：${tg || '（未填）'} mg/dL\n高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL\n空腹血糖：${glucose || '（未填）'} mg/dL\nHbA1c：${hba1c || '（未填）'}%\nhs-CRP：${hsCrp || '（未填）'} mg/L${ratio}\n\n▌體態數據\n腰圍：${waist || '（未填）'} cm\n\n▌穿戴裝置（${watchText}）\n靜止心率 RHR：${rhr || '（未填）'} bpm\nHRV：${hrv || '（未填）'} ms\n\n▌身體訊號\n${signals}\n\n▌目前保健品\n${suppls}${concernText}${supplNoteText}`;
+        const text =
+`【AGELOCKED 掃描前資料】
+
+▌基本資料
+姓名：${name}
+年齡：${age} 歲　性別：${genderText}
+
+▌體態數據
+腰圍：${waist || '（未填）'} cm${bmiText}
+
+▌血脂數據
+三酸甘油酯 TG：${tg || '（未填）'} mg/dL
+高密度脂蛋白 HDL：${hdl || '（未填）'} mg/dL
+空腹血糖：${glucose || '（未填）'} mg/dL
+HbA1c：${hba1c || '（未填）'}%
+hs-CRP：${hsCrp || '（未填）'} mg/L${ratio}
+
+▌穿戴裝置（${watchText}）
+靜止心率 RHR：${rhr || '（未填）'} bpm
+HRV：${hrv || '（未填）'} ms${watchTrendLine}
+
+▌身體訊號
+${signals}
+
+▌目前保健品
+${suppls}${concernText}${supplNoteText}`;
+
         navigator.clipboard.writeText(text).then(() => {
           const btn = document.querySelector('.btn-submit');
           btn.textContent = '✓ 已複製！請貼到 LINE 傳送';
@@ -816,7 +927,6 @@ const description = '資料越完整，當場討論越有方向。有的填、�
             btn.textContent = '📋 複製資料並傳送';
             btn.style.background = '';
           }, 3000);
-      
         }).catch(() => {
           const ta = document.createElement('textarea');
           ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
