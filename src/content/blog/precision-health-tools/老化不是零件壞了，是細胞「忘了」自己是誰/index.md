@@ -180,7 +180,7 @@ Sinclair 在 WGS 演講中提到了一個讓很多人意外的數據：
 
 ---
 
-## 參考文獻
+## 參考資料
 
 1. Yücel, A. D., & Gladyshev, V. N. (2026). [Systemic epigenetic dysregulation as a driver of ageing and a therapeutic target.](https://pubmed.ncbi.nlm.nih.gov/41896334/) *Nature Reviews Molecular Cell Biology*. — 最新機制綜述
 2. Yang, J.-H., et al. (2023). [Loss of Epigenetic Information as a cause of mammalian aging.](https://pubmed.ncbi.nlm.nih.gov/36638792/) *Cell*, 186(2), 305–326. — 因果關係確認的核心論文
