@@ -31,6 +31,33 @@ const bridge = ctaBridge || defaultBridge;
 <html lang="zh-TW">
 	<head>
 		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": title,
+			"description": description,
+			"datePublished": pubDate.toISOString(),
+			"dateModified": (updatedDate ?? pubDate).toISOString(),
+			"image": heroImage ? `https://agelocked.com${heroImage}` : "https://agelocked.com/og-default.jpg",
+			"author": {
+				"@type": "Person",
+				"name": "YiKun",
+				"url": "https://agelocked.com"
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "AGELOCKED",
+				"url": "https://agelocked.com",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "https://agelocked.com/favicon.svg"
+				}
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": Astro.url.href
+			}
+		})} />
 	</head>
 	<body>
 		<ReadingProgress />
