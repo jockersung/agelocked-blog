@@ -58,6 +58,29 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
 
+<!-- JSON-LD: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AGELOCKED",
+  "url": "https://agelocked.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://agelocked.com/favicon.svg"
+  },
+  "description": "專為 40–50 歲高壓族群設計的精準健康品牌，以抗老科學結合 ageLOC/Pharmanex 產品與 Prysm iO 類胡蘿蔔素掃描技術。",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "https://line.me/ti/p/@fer7932k"
+  },
+  "sameAs": [
+    "https://line.me/ti/p/@fer7932k"
+  ]
+}
+</script>
+
 <!-- Google Analytics GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JPQ34N5BN"></script>
 <script>
