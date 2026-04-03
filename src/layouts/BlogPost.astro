@@ -16,7 +16,7 @@ type Props = CollectionEntry<'blog'>['data'] & {
 	relatedPosts?: CollectionEntry<'blog'>[];
 };
 
-const { title, description, pubDate, updatedDate, heroImage, headings = [], relatedPosts = [], ctaType = 'soft', ctaBridge = '' } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, headings = [], relatedPosts = [], ctaType = 'soft', ctaBridge = '', faq = [] } = Astro.props;
 
 // CTA 文字設定
 const isSoft = ctaType !== 'hard';
@@ -58,6 +58,20 @@ const bridge = ctaBridge || defaultBridge;
 				"@id": Astro.url.href
 			}
 		})} />
+	{faq.length > 0 && (
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": faq.map((item: { question: string; answer: string }) => ({
+				"@type": "Question",
+				"name": item.question,
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": item.answer
+				}
+			}))
+		})} />
+	)}
 	</head>
 	<body>
 		<ReadingProgress />
