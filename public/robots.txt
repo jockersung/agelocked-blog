@@ -1,0 +1,70 @@
+# robots.txt for agelocked.com
+
+# 一般搜尋引擎
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bravebot
+Allow: /
+
+# AI 訓練爬蟲
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: xAI-Grok
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: CohereBot
+Allow: /
+
+# 全域設定
+User-agent: *
+Allow: /
+
+Sitemap: https://agelocked.com/sitemap-index.xml
+Llms-txt: https://agelocked.com/llms.txt
