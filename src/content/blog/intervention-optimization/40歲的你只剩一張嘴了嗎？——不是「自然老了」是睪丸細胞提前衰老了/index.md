@@ -156,8 +156,8 @@ ctaType: 'hard'
 
 ## 參考資料
 
-01. Xing D, Jin Y, Jin B, 2024. [A narrative review on inflammaging and late-onset hypogonadism.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10827931/) *Frontiers in Endocrinology.* 14:1291389.
-02. 2025 Review. [Mechanisms of Leydig Cell Aging and Obesity-Related Hypogonadism in Men.](https://pmc.ncbi.nlm.nih.gov/articles/PMC12330297/) *PMC.*
-03. 2025 Review. [Testicular immunosenescence: a key player in age-related spermatogenic decline.](https://pmc.ncbi.nlm.nih.gov/articles/PMC12380779/) *Frontiers in Cell and Developmental Biology.*
-04. 2026 Review. [When Testosterone Fades: Leydig Cell Aging Shaped by Environmental Toxicants, Metabolic Dysfunction, and Testicular Niche Crosstalk.](https://www.mdpi.com/2073-4409/15/2/158) *Cells.* 15(2):158.
-05. Frontiers in Endocrinology, 2023. [Involvement of p38 MAPK in Leydig cell aging and age-related decline in testosterone.](https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2023.1088249/full)
+01. Dong Xing, Yihan Jin, Baofang Jin, 2024. [A narrative review on inflammaging and late-onset hypogonadism.](https://pubmed.ncbi.nlm.nih.gov/38298378/) *Front Endocrinol (Lausanne).* 15:1291389.
+02. Xinshuang Huang, et al., 2025. [Mechanisms of Leydig Cell Aging and Obesity-Related Hypogonadism in Men: A Review.](https://pubmed.ncbi.nlm.nih.gov/40753451/) *Med Sci Monit.* 31:e948180.
+03. Ming-Wei Zhan, et al., 2025. [Testicular immunosenescence: a key player in age-related spermatogenic decline.](https://pubmed.ncbi.nlm.nih.gov/40881351/) *Front Cell Dev Biol.* 13:1669826.
+04. Aris Kaltsas, et al., 2026. [When Testosterone Fades: Leydig Cell Aging Shaped by Environmental Toxicants, Metabolic Dysfunction, and Testicular Niche Crosstalk.](https://pubmed.ncbi.nlm.nih.gov/41597234/) *Cells.* 15(2):158.
+05. Dandan Luo, et al., 2023. [Involvement of p38 MAPK in Leydig cell aging and age-related decline in testosterone.](https://pubmed.ncbi.nlm.nih.gov/36950685/) *Front Endocrinol (Lausanne).* 14:1088249.
