@@ -312,3 +312,5 @@ NO 不足讓血管更僵硬，同時破壞 AQP4 的正常排列——這個水�
 14. Dagum, P et al., 2025. [A wireless device for continuous measurement of brain parenchymal resistance tracks glymphatic function in humans.](https://pubmed.ncbi.nlm.nih.gov/40425804/) *Nat Biomed Eng.* 9(10):1656-1676.
 15. Disouky A et al., 2026. [Human hippocampal neurogenesis in adulthood, ageing and Alzheimer's disease.](https://pubmed.ncbi.nlm.nih.gov/41741649/) *Nature* 10.1038/s41586-026-10169-4.
 16. Xin Shi et al., 2026. [The protein RAB5IF promotes BDNF signaling by stimulating the SUMOylation of Gαi1/3 to reduce depressive-like behaviors in mice.](https://www.science.org/doi/10.1126/scisignal.aec8898) *Science Signaling* 19(931)
+17. Mestre, H., et al., 2018. [Flow of cerebrospinal fluid is driven by arterial pulsations and is reduced in hypertension.](https://www.nature.com/articles/s41467-018-07318-3) *Nat Commun* 9(4878)
+18. Mortensen, K. N., et al., 2019. [Impaired glymphatic transport in spontaneously hypertensive rats.](https://pubmed.ncbi.nlm.nih.gov/31209176/) *J Neurosci* 39(32):6365-6377. 
