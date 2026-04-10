@@ -90,20 +90,36 @@ const { title, description, image = FallbackImage } = Astro.props;
   gtag('config', 'G-9JPQ34N5BN');
 </script>
 
-<!-- GA4 軟 CTA：LINE 連結點擊追蹤 -->
-<script is:inline>
-  document.addEventListener('click', function(e) {
-    const link = e.target.closest('a');
-    if (!link || !link.href) return;
+  <!-- GA4 CTA 追蹤：軟 / 硬 -->
+  <script is:inline>
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (!link || !link.href) return;
+      const text = (link.innerText || link.textContent || '').trim();
+      const page = window.location.pathname;
 
-    if (link.href.includes('line.me')) {
-      gtag('event', 'cta_click', {
-          cta_type: 'soft',
-          cta_name: 'LINE連結',
-          link_url: link.href,
-          link_text: (link.innerText || link.textContent || '').trim(),
-          page_path: window.location.pathname
-      });
-    }
-  });
-</script>
+      // 軟 CTA：LINE 連結
+      if (link.href.includes('line.me')) {
+        gtag('event', 'cta_click', {
+          cta_type: 'soft', cta_name: 'LINE連結',
+          link_url: link.href, link_text: text, page_path: page
+        });
+      }
+
+      // 軟 CTA：身體警報評估
+      if (link.href.includes('/assessment')) {
+        gtag('event', 'cta_click', {
+          cta_type: 'soft', cta_name: '身體警報評估',
+          link_url: link.href, link_text: text, page_path: page
+        });
+      }
+
+      // 硬 CTA：健檢數據填資料
+      if (link.href.includes('/prescan')) {
+        gtag('event', 'cta_click', {
+          cta_type: 'hard', cta_name: '健檢數據填資料',
+          link_url: link.href, link_text: text, page_path: page
+        });
+      }
+    });
+  </script>
