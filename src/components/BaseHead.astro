@@ -83,9 +83,9 @@ const { title, description, image = FallbackImage } = Astro.props;
 
 <!-- Google Analytics GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JPQ34N5BN"></script>
-<script>
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  window.gtag = function(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-9JPQ34N5BN');
 </script>
