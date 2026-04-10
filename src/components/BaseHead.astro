@@ -97,6 +97,7 @@ const { title, description, image = FallbackImage } = Astro.props;
       if (!link || !link.href) return;
       const text = (link.innerText || link.textContent || '').trim();
       const page = window.location.pathname;
+      if (typeof gtag === 'undefined') return;     // ← 加這一行就好
 
       // 軟 CTA：LINE 連結
       if (link.href.includes('line.me')) {
