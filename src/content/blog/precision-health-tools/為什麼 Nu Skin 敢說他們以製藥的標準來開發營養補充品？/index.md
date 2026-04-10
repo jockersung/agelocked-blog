@@ -99,6 +99,20 @@ Pharmanex的核心品管機制是 **6S品質流程**，六個英文 S 代表六�
 
 **Standardization（標準化）**——透過嚴格的製程標準化，確保每顆膠囊中每個活性成分的含量完全一致。一般保健品原料（尤其是植物萃取）各批次的有效成分濃度可能差異很大，標準化流程解決這個問題。
 
+這不是理論問題，而是已經在補給品市場發生的事。
+
+2024年底，《International Journal of Sport Nutrition and Exercise Metabolism》發表了一項由跑者自費發起的研究——他們覺得某款標榜「全天然、稻米製作」的能量果膠吃起來沒感覺，於是集資送實驗室化驗。
+
+結果出來，該品牌（Spring Energy Awesome Sauce）的誤差遠超業界容許的 ±20%：
+
+- 能量標示 180 大卡，實測 53 大卡
+- 碳水標示 45 克，實測 12.5 克
+- 鈉含量短少近 80%
+
+原因正是天然食材本身的不確定性——稻米、水果泥的能量密度隨產季水分和烹調方式劇烈波動，在沒有標準化分析流程的情況下，每批次的實際含量根本無法控制。
+
+**天然不等於穩定。標準化，是讓「天然」變得可信賴的那道工序。**
+
 **Safety（安全性）**——收集並審查原料歷史使用記錄和安全數據，確認使用的有效成分濃度基於臨床研究確認有效的劑量，並根據已發表的數據設定安全上限。
 
 **Substantiation（科學佐證）**——Pharmanex只發布有已記錄的臨床前和臨床研究佐證的產品聲明。現有臨床數據會被系統性審查，必要時Pharmanex會贊助並主導自家產品的臨床試驗，研究結果提交至主要國際期刊接受同行評審。
@@ -146,3 +160,4 @@ Nu Skin在 2011 年收購了 LifeGen Technologies，取得了其核心資產—�
 04. Nu Skin Enterprises. LifeGen Technologies Acquisition. PR Newswire, December 14, 2011.
 05. C K Lee, R G Klopp, R Weindruch, T A Prolla, 1999. [Gene expression profile of aging and its retardation by caloric restriction.](https://pubmed.ncbi.nlm.nih.gov/10464095/) *Science.* 285(5432):1390–3.
 06. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression: role of dietary phytonutrients.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112–20.
+07. Tiller, N. B., et al., 2024. [What's (Not) in Your Supplement? An Energy and Macronutrient Analysis of Commercially Available Carbohydrate Gels.](https://pubmed.ncbi.nlm.nih.gov/39579757/) *Int J Sport Nutr Exerc Metab.* 35(2):162-170.
