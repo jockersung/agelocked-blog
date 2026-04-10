@@ -89,3 +89,21 @@ const { title, description, image = FallbackImage } = Astro.props;
   gtag('js', new Date());
   gtag('config', 'G-9JPQ34N5BN');
 </script>
+
+<!-- GA4 軟 CTA：LINE 連結點擊追蹤 -->
+<script is:inline>
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (!link || !link.href) return;
+
+    if (link.href.includes('line.me')) {
+      gtag('event', 'cta_click', {
+          cta_type: 'soft',
+          cta_name: 'LINE連結',
+          link_url: link.href,
+          link_text: (link.innerText || link.textContent || '').trim(),
+          page_path: window.location.pathname
+      });
+    }
+  });
+</script>
