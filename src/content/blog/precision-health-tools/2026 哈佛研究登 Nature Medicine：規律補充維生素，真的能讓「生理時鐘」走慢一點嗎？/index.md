@@ -14,7 +14,9 @@ slug: 'multivitamin-lifepak-slow-aging-clock'
 
 2026年3月，刊登在 *Nature Medicine* 的一項研究，給了一個值得認真看待的新答案。
 
-研究發現，對年長者來說，每天補充綜合維生素，可能讓身體的生物老化速度變慢一點。研究團隊把這個變化換算後，約等於 **2 年內少了 4 個月的生物老化**。
+研究發現，對年長者來說，每天補充綜合維生素，可能讓身體的生物老化速度變慢一點。
+
+研究團隊把這個變化換算後，約等於 **2 年內少了 4 個月的生物老化**。
 
 這不是「吃了就回春」。但它告訴我們一件事：
 
@@ -28,13 +30,17 @@ slug: 'multivitamin-lifepak-slow-aging-clock'
 
 你的戶籍年齡記的是你出生了幾年，但你的細胞不讀戶籍。
 
-細胞老化的速度，由 **DNA 甲基化模式（DNA methylation）** 決定。隨著年齡增長，DNA 上特定位點的甲基化程度會以可預測的方式改變，這些改變可以被測量，換算成一個數字——你的「生物年齡」。
+細胞老化的速度，由 **DNA 甲基化模式（DNA methylation）** 決定。
+
+隨著年齡增長 DNA 上特定位點的甲基化程度會以可預測的方式改變，這些改變可以被測量，換算成一個數字——你的「生物年齡」。
 
 這就是**表觀遺傳老化時鐘（epigenetic aging clock）**。
 
 它的意義不只是好奇心。研究顯示，生物年齡比戶籍年齡更能預測全因死亡率、慢性病風險、和認知功能衰退。
 
-兩個同樣 5 0歲的人，表觀遺傳時鐘測出的生物年齡可能差到10歲以上。那個差距，才是他們身體真正的狀態。（關於[生物年齡的測量方法](/blog/precision-health-tools/biological-age-measurement/)，這篇有完整說明。）
+兩個同樣 50 歲的人，表觀遺傳時鐘測出的生物年齡可能差到 10 歲以上。
+
+那個差距才是他們身體真正的狀態。（關於[生物年齡的測量方法](/blog/precision-health-tools/biological-age-measurement/)，這篇有完整說明。）
 
 ---
 
@@ -79,6 +85,14 @@ slug: 'multivitamin-lifepak-slow-aging-clock'
 
 第二代時鐘的意義更重要。它們改變了，代表的不只是「你看起來幾歲」，而是「你的死亡風險曲線正在移動」。
 
+這個選擇有獨立的科學依據。
+
+2025 年 *Nature Communications* 發表了迄今最大規模的老化時鐘比較研究，橫跨 14 種表觀遺傳時鐘、追蹤 174 種疾病結果。
+
+結論顯示：PhenoAge 與 GrimAge 對疾病風險的預測能力全面地優於第一代時鐘。
+
+這也解釋了為什麼 COSMOS 研究裡，變化最清楚的恰好是這兩個——它們離真實的健康結果，比其他時鐘更近。
+
 **2. 基線生物年齡越大，效果越明顯**
 
 基線時生物年齡已超前於實際年齡的受試者，PCGrimAge 的改善效果（−0.236）遠大於生物年齡正常者（−0.013），兩組交互作用達統計顯著（p=0.041）。
@@ -97,8 +111,8 @@ slug: 'multivitamin-lifepak-slow-aging-clock'
 
 COSMOS 試驗不只有表觀遺傳的數據。同一批受試者的認知功能分析也顯示：
 
-- 每日服用綜合維生素的老年人，全腦認知老化速度 **減緩了約60%**
-- 這個保護效果相當於讓大腦的認知狀態比實際年齡 **年輕約2歲**
+- 每日服用綜合維生素的老年人，全腦認知老化速度 **減緩了約 60%**
+- 這個保護效果相當於讓大腦的認知狀態比實際年齡 **年輕約 2 歲**
 - 對片段記憶（Episodic Memory）的保護效果最為顯著
 
 生物年齡和認知功能，兩個方向的數據方向一致。
@@ -119,7 +133,9 @@ COSMOS 試驗不只有表觀遺傳的數據。同一批受試者的認知功能�
 
 葉酸、維生素 B₁₂ 等甲基化輔因子，是維持 DNA 甲基化模式穩定的關鍵。
 
-長期輕度缺乏，會讓表觀遺傳的維護出現偏差，加速熵增。類胡蘿蔔素則構成抗氧化防禦網絡，保護 DNA 免於氧化損傷。
+長期輕度缺乏，會讓表觀遺傳的維護出現偏差，加速熵增。
+
+類胡蘿蔔素則構成抗氧化防禦網絡，保護 DNA 免於氧化損傷。
 
 當這兩個缺口被填補，細胞的修復機制才能在正常效率下運作。
 
@@ -132,6 +148,7 @@ COSMOS 試驗不只有表觀遺傳的數據。同一批受試者的認知功能�
 | 干預方式 | 主要成分 | 老化指標變化 | 備註 |
 |---|---|---|---|
 | 基礎綜合維生素 | 藥妝店等級 Centrum Silver | 每年慢老約 0.1–0.2 歲 | 門檻低、適合長期補缺口 |
+| Omega-3 + 維生素 D + 運動 | DO-HEALTH 試驗設計 | Omega-3 單獨對新型時鐘有小幅放緩；三者合併效果略有疊加，約等於慢老數個月 | 2025年 *Nature Aging* RCT，777 名老年人，追蹤 3 年 |
 | 高階複合配方 | 含 Omega-3、D、C、植萃（LifePak 邏輯）| 高風險群有顯著改善空間 | 更全面的細胞層級支持 |
 | 系統性生活干預 | 高營養飲食＋運動＋睡眠＋減壓 | 8週內生物年齡年輕約 3.23 歲 | 效果最強，但執行門檻高 |
 
@@ -143,7 +160,7 @@ COSMOS 試驗不只有表觀遺傳的數據。同一批受試者的認知功能�
 
 **這篇研究測試的產品不是 LifePak，而是 Centrum Silver。**
 
-我不能直接說「研究證明 LifePak 能讓表觀遺傳時鐘放緩」。這樣寫不精準，也不負責任。
+我不能直接說「研究證明 LifePak 能讓表觀遺傳時鐘放緩」。這樣寫不精準也不負責任。
 
 但這篇研究確實讓以 LifePak 為代表的多營養素配方更值得被認真討論。
 
@@ -159,13 +176,17 @@ COSMOS 研究的機制指向「類胡蘿蔔素和葉酸缺口是加速老化的�
 
 ## 這篇研究的限制，你應該知道
 
-**受試者主要是 70 歲以上的美國老年人，89% 為白人。** 能否直接外推到 40–50 歲的亞洲族群，需要謹慎。
+**受試者主要是 70 歲以上的美國老年人，89% 為白人。** 還不能直接外推到 40–50 歲的亞洲族群，需要謹慎評估。
 
 **4 個月的差異，臨床意義仍不確定。** 表觀遺傳時鐘改變和實際疾病風險之間的因果關係，還在建立中。
 
 **效果主要出現在有缺口的人身上。** 飲食已很均衡、血中微量營養素正常的人，這篇研究支持的效果有限。
 
 哥倫比亞大學流行病學家、DunedinPACE 時鐘發明者 Daniel Belsky 在同期評論中提到：表觀遺傳時鐘是評估綜合維生素類介入的理想終點——因為這類補充品本來就不是針對單一疾病，而是系統性影響多個老化相關路徑。
+
+更值得留意的是，2026 年 *EBioMedicine* 的一篇編輯評論也直接點出：這些老化時鐘雖然前景可期，但距離成為臨床診斷工具仍有一段距離。
+
+科學家還在努力釐清，當時鐘的指針移動時，背後對應的生理變化究竟是什麼。換句話說，時鐘能測，測了能解讀，但測了之後能精準介入——這條路，仍在鋪設中。
 
 補充品的問題從來不是「有沒有效」，而是 **對誰、在什麼基礎上、有多大幅度**。
 
@@ -183,7 +204,7 @@ Prysm iO 光學掃描測的正是你皮膚的類胡蘿蔔素儲量，配合健�
 
 **抗老不一定要從複雜開始。先知道自己的缺口在哪裡，才知道從哪裡補。**
 
----
+--
 
 ## 延伸閱讀
 
@@ -205,9 +226,14 @@ Prysm iO 光學掃描測的正是你皮膚的類胡蘿蔔素儲量，配合健�
 
 ## 參考資料
 
-01. Li S, Hamaya R, Zhu H, Chen BH, Pereira AC, Ivey KL, Rist PM, Manson JE, Dong Y, Sesso HD, 2026. [Effects of daily multivitamin–multimineral and cocoa extract supplementation on epigenetic aging clocks in the COSMOS randomized clinical trial.](https://doi.org/10.1038/s41591-026-04239-3) *Nature Medicine.* [doi:10.1038/s41591-026-04239-3]
-02. Belsky DW, Ryan CP, 2026. [A daily multivitamin slows the ticking of epigenetic clocks.](https://doi.org/10.1038/s41591-026-04249-1) *Nature Medicine.* [doi:10.1038/s41591-026-04249-1]
-03. Harvard Gazette. [Daily multivitamin may slow biological aging.](https://news.harvard.edu/gazette/story/2026/03/daily-multivitamin-may-slow-biological-aging/) Published March 9, 2026. 
-04. Mass General Brigham. [COSMOS Trial Results Show Daily Multivitamin Use May Slow Aging.](https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/daily-multivitamin-use-may-slow-aging) Published March 9, 2026.
+01. Li S, et al., 2026. [Effects of daily multivitamin–multimineral and cocoa extract supplementation on epigenetic aging clocks in the COSMOS randomized clinical trial.](https://pubmed.ncbi.nlm.nih.gov/41803341/) *Nature Medicine.* 32(3):1012-1022.
+02. Cami N Christopheret, et al., 2026. [Effects of Randomized Multivitamin Supplementation on Carotenoids and α-Tocopherol in the COcoa Supplement and Multivitamin Outcomes Study.](https://pubmed.ncbi.nlm.nih.gov/41587736/) *J Acad Nutr Diet. *  126(5):156299.
+03. Belsky DW, Ryan CP, 2026. [A daily multivitamin slows the ticking of epigenetic clocks.](https://pubmed.ncbi.nlm.nih.gov/41803340/) *Nature Medicine.* 32(3):810-811.
+04. Harvard Gazette. [Daily multivitamin may slow biological aging.](https://news.harvard.edu/gazette/story/2026/03/daily-multivitamin-may-slow-biological-aging/) Published March 9, 2026. 
+04. Mass General Brigham. [COSMOS Trial Results Show Daily Multivitamin Use May Slow Biological Aging.](https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/daily-multivitamin-use-may-slow-aging) Published March 9, 2026.
+05. Bischoff-Ferrari HA, Gängler S, Wieczorek M, et al., 2025. [Individual and additive effects of vitamin D, omega-3 and exercise on DNA methylation clocks of biological aging in older adults from the DO-HEALTH trial.](https://pubmed.ncbi.nlm.nih.gov/39900648/) *Nat Aging.* 5(3):376-385.
+06. Mavrommatis C, Belsky DW, Ying K, et al., 2025. [An unbiased comparison of 14 epigenetic clocks in relation to 174 incident disease outcomes.](https://pubmed.ncbi.nlm.nih.gov/41402269/) *Nat Commun.* 16(1):11164.
+07. EBioMedicine Editorial, 2026. [Epigenetic clocks: advancing biological age measures towards meaningful clinical use.](https://pubmed.ncbi.nlm.nih.gov/41688162/) *EBioMedicine.* 124:106175.
+08. Chirag M Vyas, et al., 2024. [Effect of multivitamin-mineral supplementation versus placebo on cognitive function: results from the clinic subcohort of the COcoa Supplement and Multivitamin Outcomes Study (COSMOS) randomized clinical trial and meta-analysis of 3 cognitive studies within COSMOS.](https://pubmed.ncbi.nlm.nih.gov/38244989/) *Am J Clin Nutr.* 119(3):692-701.
 ---
 
