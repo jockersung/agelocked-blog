@@ -3,8 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = '成為 AGELOCKED 創作者夥伴｜垂直領域健康創作者聯盟';
-const description = '我們不是在找下線，我們在找有自己聲音、有自己受眾、願意用科學框架說話的健康創作者。';
+const title = '成為 AGELOCKED 創作者夥伴｜內容中台 × 互補型創作者聯盟';
+const description = '我們不是在找下線，也不是在找業配對象。我們在找專業互補、受眾不重疊、願意用科學框架說話的健康創作者，一起把各自的影響力變成真實收入。';
 ---
 
 <!doctype html>
@@ -40,15 +40,11 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
       .join-hero {
         padding: 7rem 6vw 5rem;
         background: var(--bg2);
-        position: relative;
-        overflow: hidden;
-        max-width: 860px;
-        margin: 0 auto;
+        position: relative; overflow: hidden;
+        max-width: 860px; margin: 0 auto;
       }
       .join-hero::before {
-        content: '';
-        position: absolute;
-        inset: 0; pointer-events: none;
+        content: ''; position: absolute; inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 60% 50% at 90% 20%, rgba(26,140,130,0.06) 0%, transparent 65%),
                     radial-gradient(ellipse 30% 40% at 5% 90%, rgba(184,147,90,0.05) 0%, transparent 60%);
       }
@@ -56,15 +52,13 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
         font-family: 'DM Mono', monospace;
         font-size: 0.9rem; letter-spacing: 0.4em;
         color: var(--gold); text-transform: uppercase;
-        display: flex; align-items: center; gap: 0.8rem;
-        margin-bottom: 1.6rem;
+        display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.6rem;
       }
       .hero-eyebrow::before { content: ''; width: 22px; height: 1px; background: var(--gold); }
       .join-heading {
         font-family: 'Cormorant Garamond', serif;
         font-size: clamp(2.4rem, 5vw, 3.8rem);
-        font-weight: 300; line-height: 1.2; color: var(--ink);
-        margin: 0 0 1.2rem;
+        font-weight: 300; line-height: 1.2; color: var(--ink); margin: 0 0 1.2rem;
       }
       .join-heading em { font-style: italic; color: var(--teal); }
       .hero-divider { width: 36px; height: 1.5px; background: var(--gold); margin-bottom: 1.8rem; }
@@ -78,28 +72,23 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
       .content-wrap { max-width: 800px; margin: 0 auto; padding: 0 6vw 6rem; }
 
       .section-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.9rem; letter-spacing: 0.4em;
+        font-family: 'DM Mono', monospace; font-size: 0.9rem; letter-spacing: 0.4em;
         color: var(--teal); text-transform: uppercase;
-        display: flex; align-items: center; gap: 0.8rem;
-        margin-bottom: 1.4rem;
+        display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.4rem;
       }
       .section-label::before { content: '◆'; font-size: 0.38rem; }
 
       .section-label-gold {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.9rem; letter-spacing: 0.4em;
+        font-family: 'DM Mono', monospace; font-size: 0.9rem; letter-spacing: 0.4em;
         color: var(--gold); text-transform: uppercase;
-        display: flex; align-items: center; gap: 0.8rem;
-        margin-bottom: 1.4rem;
+        display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.4rem;
       }
       .section-label-gold::before { content: '◆'; font-size: 0.38rem; }
 
       .section-title {
         font-family: 'Cormorant Garamond', serif;
         font-size: clamp(1.9rem, 3.5vw, 2.6rem);
-        font-weight: 300; line-height: 1.35; color: var(--ink);
-        margin: 0 0 1.4rem;
+        font-weight: 300; line-height: 1.35; color: var(--ink); margin: 0 0 1.4rem;
       }
       .section-title em { font-style: italic; color: var(--teal); }
 
@@ -107,118 +96,154 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
         font-size: 1.15rem; color: var(--body);
         line-height: 2.2; font-weight: 300; margin-bottom: 1.2rem;
       }
-      .body-text:last-child { margin-bottom: 0; }
       .body-text strong { color: var(--ink); font-weight: 500; }
 
       .divider { border: none; border-top: 1px solid var(--border); margin: 4rem 0; }
 
-      /* 資源卡片 */
-      .resource-grid {
-        display: grid; grid-template-columns: 1fr 1fr;
-        gap: 1rem; margin: 2rem 0;
+      /* 內容中台圖示 */
+      .hub-diagram {
+        margin: 2.4rem 0; background: var(--ink);
+        border-radius: 2px; padding: 2.4rem 2rem;
+        position: relative; overflow: hidden;
       }
-      .resource-card {
-        padding: 1.8rem;
-        background: var(--bg);
+      .hub-diagram::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(26,140,130,0.12) 0%, transparent 70%);
+      }
+      .hub-inner { position: relative; z-index: 1; }
+      .hub-label {
+        font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.35em;
+        color: var(--teal); text-transform: uppercase; text-align: center; margin-bottom: 1.4rem;
+      }
+      .hub-center {
+        background: var(--teal); border-radius: 2px;
+        padding: 1.4rem; text-align: center; margin-bottom: 1.2rem;
+      }
+      .hub-center-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.4rem; color: #fff; font-weight: 400; margin-bottom: 0.8rem;
+      }
+      .hub-resources { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+      .hub-resource {
+        background: rgba(0,0,0,0.25); padding: 0.5rem 0.8rem;
+        font-family: 'DM Mono', monospace; font-size: 0.85rem;
+        color: rgba(255,255,255,0.8); letter-spacing: 0.05em; text-align: center;
+      }
+      .hub-arrow {
+        text-align: center; font-family: 'DM Mono', monospace;
+        font-size: 0.9rem; color: rgba(255,255,255,0.35);
+        letter-spacing: 0.2em; margin: 1rem 0;
+      }
+      .hub-creators { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+      .hub-creator {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(26,140,130,0.3);
+        border-top: 2px solid var(--teal);
+        padding: 0.8rem 1rem;
+        font-size: 1rem; color: rgba(255,255,255,0.75);
+        font-weight: 300; line-height: 1.5;
+      }
+      .hub-creator strong {
+        display: block; font-family: 'DM Mono', monospace;
+        font-size: 0.8rem; color: #6de8df;
+        letter-spacing: 0.1em; margin-bottom: 0.2rem; font-weight: 400;
+      }
+      .hub-tagline {
+        margin-top: 1.4rem; text-align: center;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.15rem; font-style: italic; color: rgba(255,255,255,0.55);
+      }
+
+      /* 三個篩選條件 */
+      .criteria-grid { display: flex; flex-direction: column; gap: 1rem; margin: 2rem 0; }
+      .criterion {
+        display: flex; gap: 1.6rem; align-items: flex-start;
+        padding: 1.6rem; background: var(--bg);
         border: 1px solid var(--border);
         border-left: 2.5px solid var(--teal);
         border-radius: 0 2px 2px 0;
-        font-size: 1.1rem; color: var(--body);
-        font-weight: 300; line-height: 1.85;
+      }
+      .criterion-num {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.4rem; font-weight: 300;
+        color: var(--teal); line-height: 1; min-width: 2rem;
+      }
+      .criterion-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.3rem; font-weight: 400; color: var(--ink); margin-bottom: 0.4rem;
+      }
+      .criterion-text {
+        font-size: 1.1rem; color: var(--body); font-weight: 300; line-height: 1.85;
+      }
+      .criterion-text strong { color: var(--ink); font-weight: 500; }
+
+      /* 資源卡片 */
+      .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+      .resource-card {
+        padding: 1.8rem; background: var(--bg);
+        border: 1px solid var(--border); border-left: 2.5px solid var(--teal);
+        border-radius: 0 2px 2px 0;
+        font-size: 1.1rem; color: var(--body); font-weight: 300; line-height: 1.85;
       }
       .resource-card strong {
         display: block; color: var(--ink); font-weight: 500;
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.25rem; margin-bottom: 0.5rem;
+        font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; margin-bottom: 0.5rem;
       }
-
-      /* 流程步驟 */
-      .steps { display: flex; flex-direction: column; gap: 0; margin: 2rem 0; }
-      .step {
-        display: flex; gap: 1.6rem; align-items: flex-start;
-        padding: 1.6rem 0;
-        border-bottom: 1px solid var(--border);
-      }
-      .step:last-child { border-bottom: none; }
-      .step-num {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 2.2rem; font-weight: 300;
-        color: var(--teal); line-height: 1;
-        min-width: 2rem; padding-top: 0.1rem;
-      }
-      .step-body {}
-      .step-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.3rem; font-weight: 400; color: var(--ink);
-        margin-bottom: 0.4rem;
-      }
-      .step-text {
-        font-size: 1.1rem; color: var(--body);
-        font-weight: 300; line-height: 1.85;
-      }
-
-      /* 不適合區塊 */
-      .not-fit-list { display: flex; flex-direction: column; gap: 0.7rem; margin: 2rem 0; }
-      .not-fit-item {
-        display: flex; gap: 1rem; align-items: flex-start;
-        padding: 1rem 1.4rem;
-        background: var(--bg);
-        border: 1px solid var(--border);
-        border-radius: 2px;
-        font-size: 1.1rem; color: var(--muted);
-        font-weight: 300; line-height: 1.75;
-      }
-      .not-fit-item::before {
-        content: '×';
-        font-family: 'DM Mono', monospace;
-        color: var(--gold); font-size: 1rem;
-        min-width: 1rem; margin-top: 0.1rem;
-      }
-
-      /* 適合區塊 */
-      .fit-list { display: flex; flex-direction: column; gap: 0.7rem; margin: 2rem 0; }
-      .fit-item {
-        display: flex; gap: 1rem; align-items: flex-start;
-        padding: 1rem 1.4rem;
-        background: var(--teal-pale);
-        border: 1px solid var(--border);
-        border-left: 2.5px solid var(--teal);
-        border-radius: 0 2px 2px 0;
-        font-size: 1.1rem; color: var(--body);
-        font-weight: 300; line-height: 1.75;
-      }
-      .fit-item strong { color: var(--ink); font-weight: 500; }
 
       /* 引用塊 */
       .pullquote {
-        border-left: 3px solid var(--gold);
-        padding: 1.4rem 2rem;
-        background: var(--gold-pale);
-        margin: 2.4rem 0;
+        border-left: 3px solid var(--gold); padding: 1.4rem 2rem;
+        background: var(--gold-pale); margin: 2.4rem 0;
         font-family: 'Cormorant Garamond', serif;
-        font-size: 1.4rem; font-style: italic;
-        color: var(--ink); line-height: 1.75;
+        font-size: 1.4rem; font-style: italic; color: var(--ink); line-height: 1.75;
       }
 
-      /* ── WARM SECTION ── */
+      /* 步驟 */
+      .steps { display: flex; flex-direction: column; gap: 0; margin: 2rem 0; }
+      .step {
+        display: flex; gap: 1.6rem; align-items: flex-start;
+        padding: 1.6rem 0; border-bottom: 1px solid var(--border);
+      }
+      .step:last-child { border-bottom: none; }
+      .step-num {
+        font-family: 'Cormorant Garamond', serif; font-size: 2.2rem;
+        font-weight: 300; color: var(--teal); line-height: 1; min-width: 2rem; padding-top: 0.1rem;
+      }
+      .step-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.3rem; font-weight: 400; color: var(--ink); margin-bottom: 0.4rem;
+      }
+      .step-text { font-size: 1.1rem; color: var(--body); font-weight: 300; line-height: 1.85; }
+
+      /* 不適合 */
+      .not-fit-list { display: flex; flex-direction: column; gap: 0.7rem; margin: 2rem 0; }
+      .not-fit-item {
+        display: flex; gap: 1rem; align-items: flex-start;
+        padding: 1rem 1.4rem; background: var(--bg);
+        border: 1px solid var(--border); border-radius: 2px;
+        font-size: 1.1rem; color: var(--muted); font-weight: 300; line-height: 1.75;
+      }
+      .not-fit-item::before {
+        content: '×'; font-family: 'DM Mono', monospace;
+        color: var(--gold); font-size: 1rem; min-width: 1rem; margin-top: 0.1rem;
+      }
+
+      /* ── WARM ── */
       .warm-section { padding: 5rem 6vw; background: var(--bg-warm); }
       .warm-inner { max-width: 800px; margin: 0 auto; }
 
       /* ── CTA ── */
       .contact-section {
-        padding: 6rem 6vw;
-        background: var(--ink); text-align: center;
+        padding: 6rem 6vw; background: var(--ink); text-align: center;
         position: relative; overflow: hidden;
       }
       .contact-section::before {
-        content: '';
-        position: absolute; inset: 0; pointer-events: none;
+        content: ''; position: absolute; inset: 0; pointer-events: none;
         background: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(26,140,130,0.14) 0%, transparent 70%);
       }
       .contact-inner { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
       .contact-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.9rem; letter-spacing: 0.4em;
+        font-family: 'DM Mono', monospace; font-size: 0.9rem; letter-spacing: 0.4em;
         color: var(--gold); text-transform: uppercase; margin-bottom: 1.6rem;
       }
       .contact-title {
@@ -236,21 +261,20 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
         display: inline-flex; align-items: center; justify-content: center;
         padding: 1.2rem 2.5rem; background: var(--teal); color: #fff;
         text-decoration: none; font-family: 'DM Mono', monospace;
-        font-size: 1.1rem; letter-spacing: 0.15em;
-        border-radius: 2px; transition: all 0.3s;
-        width: 100%; max-width: 400px;
+        font-size: 1.1rem; letter-spacing: 0.15em; border-radius: 2px;
+        transition: all 0.3s; width: 100%; max-width: 400px;
       }
       .btn-primary:hover { background: #6de8df; color: var(--ink); transform: translateY(-2px); }
       .contact-note {
         margin-top: 2rem; font-family: 'DM Mono', monospace;
-        font-size: 0.88rem; letter-spacing: 0.2em;
-        color: rgba(255,255,255,0.3);
+        font-size: 0.88rem; letter-spacing: 0.2em; color: rgba(255,255,255,0.3);
       }
 
-      /* ── Responsive ── */
       @media (max-width: 760px) {
         .join-hero { padding: 5rem 5vw 3rem; }
         .resource-grid { grid-template-columns: 1fr; }
+        .hub-resources { grid-template-columns: 1fr; }
+        .hub-creators { grid-template-columns: 1fr; }
       }
     </style>
   </head>
@@ -259,122 +283,171 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
 
     <!-- HERO -->
     <section class="join-hero">
-      <div class="hero-eyebrow">Vertical Creator Collective · 創作者夥伴計畫</div>
+      <div class="hero-eyebrow">Vertical Creator Collective · 互補型創作者聯盟</div>
       <h1 class="join-heading">
-        我們不是在找下線，<br>
-        <em>我們在找有自己聲音的人</em>
+        你留下來，<br>
+        <em>是因為在這裡會讓自己變得更好</em>
       </h1>
       <div class="hero-divider"></div>
       <p class="join-lead">
-        你有專業背景，你有真實的受眾，你相信用數據說話比用話術說話更能建立長期信任——<br><br>
-        但你還沒有找到一個讓這些東西<strong>完整變現</strong>的路徑。
+        我們不是在找下線，也不是在找業配對象。<br><br>
+        我們在找<strong>專業互補、受眾不重疊、內容邏輯一致</strong>的健康創作者——
+        一起把各自的影響力，變成真實的、可追蹤的收入。
       </p>
     </section>
 
-    <!-- MAIN CONTENT -->
     <div class="content-wrap">
 
-      <!-- 你是這樣的人嗎 -->
-      <div class="section-label-gold">適合對象</div>
+      <!-- 內容中台 -->
+      <div class="section-label">合作架構</div>
       <h2 class="section-title">
-        你是這樣的人嗎？
+        AGELOCKED 是內容中台，<br>
+        <em>不是你的上線</em>
       </h2>
+      <p class="body-text">
+        傳統直銷的上線負責給話術、拉人頭。我們做的事完全不同——
+        我們持續產出科學框架、內容資產與測量工具，
+        讓你跟上這個速度比自己從零開始便宜太多。
+        你還是你，只是多了一個不需要自己建的知識底層。
+      </p>
 
-      <div class="fit-list">
-        <div class="fit-item"><strong>護理師／物理治療師</strong>——有專業信用，缺少商業變現路徑</div>
-        <div class="fit-item"><strong>健身教練／瑜伽老師</strong>——有學員信任，缺少產品延伸</div>
-        <div class="fit-item"><strong>職場媽媽 KOL</strong>——有生活內容，缺少科學框架與工具</div>
-        <div class="fit-item"><strong>任何有受眾、有表達欲的健康領域創作者</strong>——想讓內容真正對應到收入</div>
+      <div class="hub-diagram">
+        <div class="hub-inner">
+          <div class="hub-label">內容中台結構</div>
+          <div class="hub-center">
+            <div class="hub-center-title">AGELOCKED 內容中台</div>
+            <div class="hub-resources">
+              <div class="hub-resource">科學框架 & 文章庫</div>
+              <div class="hub-resource">Prysm iO 掃描工具</div>
+              <div class="hub-resource">研究解讀能力</div>
+              <div class="hub-resource">集體流量互導</div>
+            </div>
+          </div>
+          <div class="hub-arrow">↓ 各自面對各自的受眾 ↓</div>
+          <div class="hub-creators">
+            <div class="hub-creator"><strong>護理師 IP</strong>慢性病族群</div>
+            <div class="hub-creator"><strong>健身教練 IP</strong>健身平台期族群</div>
+            <div class="hub-creator"><strong>心理師 IP</strong>職業倦怠族群</div>
+            <div class="hub-creator"><strong>媽媽 KOL</strong>照顧者族群</div>
+          </div>
+          <div class="hub-tagline">他們各自有受眾，共用同一套科學框架與轉換工具</div>
+        </div>
       </div>
 
       <hr class="divider" />
 
-      <!-- 我們提供什麼 -->
-      <div class="section-label">你能得到什麼</div>
+      <!-- 三個篩選條件 -->
+      <div class="section-label-gold">篩選條件</div>
       <h2 class="section-title">
-        不是話術訓練，<br>
-        <em>是真實可用的資源</em>
+        我們找的是<em>互補型</em>創作者，<br>
+        不是忠誠度高的人
+      </h2>
+      <p class="body-text">
+        找到對的人比找到很多人更重要。三個條件同時符合，加入之後才是真正的加乘，而不是競爭或浪費。
+      </p>
+
+      <div class="criteria-grid">
+        <div class="criterion">
+          <div class="criterion-num">01</div>
+          <div>
+            <div class="criterion-title">專業領域與我們互補</div>
+            <div class="criterion-text">
+              護理、物理治療、心理、健身、營養——<strong>有專業信用，但還沒有清楚的變現路徑</strong>。
+              你的專業不需要跟我們一樣，只需要在健康這個大垂直裡扮演不同角色。
+            </div>
+          </div>
+        </div>
+        <div class="criterion">
+          <div class="criterion-num">02</div>
+          <div>
+            <div class="criterion-title">受眾與我們不重疊</div>
+            <div class="criterion-text">
+              你的受眾不等於我們的受眾。<strong>加入之後是擴大整體觸及，不是內部競爭</strong>。
+              不同入口、不同人群，最終指向同一個轉換路徑，這才是聯盟的意義。
+            </div>
+          </div>
+        </div>
+        <div class="criterion">
+          <div class="criterion-num">03</div>
+          <div>
+            <div class="criterion-title">內容邏輯與我們一致</div>
+            <div class="criterion-text">
+              相信數據說話，不依賴話術或情感煽動。<strong>科學敘事是我們唯一共同的語言</strong>。
+              你不需要認同所有細節，但必須相信這是對的方向。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- 資源 -->
+      <div class="section-label">共用資源</div>
+      <h2 class="section-title">
+        單打獨鬥拿不到的，<br>
+        <em>在這裡是基本配備</em>
       </h2>
 
       <div class="resource-grid">
         <div class="resource-card">
           <strong>科學內容框架</strong>
-          45 篇以上深度文章，涵蓋慢性發炎、粒線體、睡眠、壓力、抗氧化機制。你可以直接引用、改寫，不需要從零建立內容信用。
+          45 篇以上深度文章，涵蓋慢性發炎、粒線體、睡眠、壓力、抗氧化機制。直接引用、改寫，不需要從零建立內容信用。
         </div>
         <div class="resource-card">
           <strong>Prysm iO 操作培訓</strong>
-          類胡蘿蔔素掃描是我們最難被複製的差異點。我們教你如何解讀數據、帶動對話，讓你的角色從推銷者變成解讀者。
+          如新獨有的類胡蘿蔔素掃描工具。教你如何解讀數據、帶動對話，把你的角色從推銷者變成解讀者。
         </div>
         <div class="resource-card">
-          <strong>已建立的受眾認知</strong>
-          AGELOCKED 的讀者對「數據型健康管理」已有基本認知。你不需要從頭教育市場，可以直接在這個基礎上延伸。
+          <strong>研究解讀的速度</strong>
+          新研究持續更新。跟上我們的產出速度，比自己追 PubMed 省下大量時間與認知成本。
         </div>
         <div class="resource-card">
-          <strong>透明的轉換收入</strong>
-          你的內容產生的每一筆轉換，直接對應到你的收入。不靠人情，不靠話術，完全取決於你的受眾信任你的程度。
+          <strong>集體流量互導</strong>
+          聯盟內的創作者可以互相導流。你的受眾遇到其他夥伴更擅長的問題，有人接住，不會白白流失。
         </div>
+      </div>
+
+      <div class="pullquote">
+        你的每一筆轉換，直接對應到你的收入——<br>
+        不靠人情，不靠話術，完全取決於你的受眾信任你的程度。
       </div>
 
       <hr class="divider" />
 
-      <!-- 怎麼合作 -->
-      <div class="section-label">合作方式</div>
+      <!-- 合作節奏 -->
+      <div class="section-label">合作節奏</div>
       <h2 class="section-title">
-        你還是你，<br>
-        <em>只是多了一條清楚的路徑</em>
+        90 天試合作期，<br>
+        <em>雙方都有退路</em>
       </h2>
-
-      <p class="body-text">
-        我們不要求你放棄現有的定位或受眾。你用自己的聲音，面對自己的受眾，談你本來就在談的健康議題。
-        在合適的節點，帶入數據工具或具體介入方案，有興趣的受眾自然走向轉換。
-      </p>
 
       <div class="steps">
         <div class="step">
           <div class="step-num">01</div>
-          <div class="step-body">
+          <div>
             <div class="step-title">用你自己的聲音說話</div>
             <div class="step-text">內容還是你的，受眾還是你的。我們提供科學框架，你決定怎麼用在自己的社群裡。</div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">02</div>
-          <div class="step-body">
+          <div>
             <div class="step-title">在合適節點帶入工具</div>
-            <div class="step-text">Prysm iO 掃描讓數據說話，不需要你有說服力，客戶看到自己的分數，問題自然浮現。</div>
+            <div class="step-text">Prysm iO 掃描讓數據說話，不需要你有說服力。客戶看到自己的分數，問題自然浮現。</div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">03</div>
-          <div class="step-body">
-            <div class="step-title">轉換直接對應收入</div>
-            <div class="step-text">依合作產品線的官方制度執行，透明可追蹤，你的成果完全由自己的受眾信任決定。</div>
+          <div>
+            <div class="step-title">90 天後一起看數據決定下一步</div>
+            <div class="step-text">沒有壓力，沒有沉沒成本。雙方都有完整資訊再決定要不要繼續。乾淨的開始，乾淨的邊界。</div>
           </div>
         </div>
       </div>
 
-      <hr class="divider" />
-
-      <!-- 90天試合作 -->
-      <div class="section-label-gold">門檻設計</div>
-      <h2 class="section-title">
-        90 天試合作期，<br>
-        <em>雙方都有退路</em>
-      </h2>
-
-      <p class="body-text">
-        我們不要求任何人一開始就全面投入。
-      </p>
-
-      <div class="pullquote">
-        第一個 90 天，你用框架寫內容、學工具操作、觀察受眾反應。
-        我們一起看數據，再決定下一步。
-        沒有壓力，沒有沉沒成本，只有清楚的事實。
-      </div>
-
     </div>
 
-    <!-- 不適合的人 (暖色背景) -->
+    <!-- 不適合的人 -->
     <section class="warm-section">
       <div class="warm-inner">
         <div class="section-label-gold">主動篩選</div>
@@ -383,13 +456,13 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
           <em>如果你是……</em>
         </h2>
         <p class="body-text" style="max-width:560px;">
-          我們寫這段不是要排斥人，而是因為找到對的人比找到很多人更重要。
+          我們在找的不是最多人，是最對的人。這幾種情況加入之後對雙方都是消耗，不如一開始就說清楚。
         </p>
         <div class="not-fit-list">
-          <div class="not-fit-item">想快速賺錢、短期看到回報的人——IP需要長期耕耘</div>
-          <div class="not-fit-item">還沒有固定受眾或內容產出習慣的人</div>
-          <div class="not-fit-item">對健康產品沒有真實信念、只是在找業配機會的人</div>
-          <div class="not-fit-item">不願意學習數據工具、偏好話術型銷售的人</div>
+          <div class="not-fit-item">已經有大量受眾的成熟 IP——如新對你來說只是眾多選項之一，這不是我們要的關係</div>
+          <div class="not-fit-item">沒有固定受眾或內容產出習慣的人——框架給你，你也需要有地方用它</div>
+          <div class="not-fit-item">受眾跟 AGELOCKED 高度重疊的人——加入後是競爭，不是擴大</div>
+          <div class="not-fit-item">偏好話術型銷售、不相信數據敘事的人——內容邏輯不一致，合作很難長久</div>
         </div>
       </div>
     </section>
@@ -399,20 +472,20 @@ const description = '我們不是在找下線，我們在找有自己聲音、�
       <div class="contact-inner">
         <div class="contact-label">下一步行動</div>
         <h2 class="contact-title">
-          看到這裡覺得<br>
-          <em>「這在說的就是我」？</em>
+          三個條件都符合？<br>
+          <em>我們來聊聊</em>
         </h2>
         <p class="contact-sub">
-          加 LINE 跟我們說你的背景和你在做的事。<br>
-          我們不會立刻給你一份合約，我們會先聊，<br>
-          看雙方的方向是不是真的對齊。
+          加 LINE 跟我們說你的背景、你在做的事、你的受眾大概是誰。<br>
+          我們不會立刻給你一份合約，<br>
+          我們會先確認方向是不是真的對齊。
         </p>
         <div class="cta-btn-group">
           <a href="https://line.me/ti/p/@fer7932k" class="btn-primary">
             → 加入 LINE 開始對話
           </a>
         </div>
-        <div class="contact-note">目前為小規模精選合作 · 我們在找的不是最多人，是最對的人</div>
+        <div class="contact-note">目前小規模精選合作 · 找互補的人，不是找最多的人</div>
       </div>
     </section>
 
