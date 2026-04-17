@@ -68,7 +68,9 @@ GLP-1 進入身體後，很快會被 DPP-4 酶分解。但這個「被分解」�
 - 恢復受損細胞的 ATP 儲備池
 - 防止粒線體膜通透性轉換孔（mPTP）異常開啟，阻斷細胞凋亡訊號
 
-更特別的是，它在**幾乎沒有 GLP-1R 的肝臟細胞**同樣有效。這意味著 GLP-1 藥物對粒線體的保護效果，有一部分完全繞過受體層面，直接在細胞器層次發生。
+更特別的是，它在**幾乎沒有 GLP-1R 的肝臟細胞**同樣有效。
+
+這意味著 GLP-1 藥物對粒線體的保護效果，有一部分完全繞過受體層面，直接在細胞器層次發生。
 
 ---
 
@@ -122,6 +124,20 @@ GLP-1 能直接活化 IGF-1R、能促進粒線體生物生成、能抑制發炎�
 
 ---
 
+## 補充：口服版本現在也有了
+
+如果你對 GLP-1 藥物有興趣、但不想打針，目前口服選項已有實質進展：
+
+**瑞倍適（Rybelsus）**是口服 Semaglutide，台灣已核准，但主適應症是第二型糖尿病，且服藥後 30 分鐘內禁食禁水，使用較繁瑣。
+
+**Wegovy pill** 同樣是 Semaglutide 口服版（25 mg），2025 年 12 月 FDA 核准用於減重，OASIS 4 試驗 64 週平均減重 16.6%，效果接近注射版。服藥仍需空腹等 30 分鐘。
+
+**Foundayo（orforglipron）** 是禮來 2026 年 4 月 FDA 核准的小分子非胜肽口服藥，最大優勢是**完全不限進食時間**，ATTAIN-1 試驗 72 週平均減重 12.4%。
+
+這三個選項的詳細比較——包括副作用、費用、停藥後復胖——在這篇有完整說明：[2026 年 GLP-1 藥物完整臨床指南](/blog/intervention-optimization/glp1-clinical-guide-tirzepatide/)
+
+---
+
 ## 科學誠實的一面：臨床試驗的落差
 
 GLP-1 藥物在神經退化性疾病上的三期臨床試驗，結果比預期保守——值得正視。
@@ -171,3 +187,6 @@ GLP-1 藥物是目前少數能同時觸及代謝、IGF-1 軸、粒線體生物�
 13. Philip Scheltens et al., 2025, [Baseline characteristics from evoke and evoke+: Two phase 3 randomized placebo‐controlled trials of semaglutide in participants with early‐stage symptomatic Alzheimer's disease](https://pmc.ncbi.nlm.nih.gov/articles/PMC12789876/) *Alzheimers Dement (NY)* 12(1):e70200.
 14. Sarah J Shemtov et al., 2026, [The longevity effects of reduced IGF-1 signaling depend on the stability of the mitochondrial genome](https://pubmed.ncbi.nlm.nih.gov/41931604/) *Sci Adv* 12(14):eaea4279.
 15. Couzin-Frankel J., 2023, [Breakthrough of the year: obesity meets its match](https://pubmed.ncbi.nlm.nih.gov/38096291/) *Science* 382(6676):1226-1227.
+16. Novo Nordisk, 2025-12-22, [Wegovy pill approved in the US as first oral GLP-1 for weight management](https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=916472) *Novo Nordisk Press Release*
+17. Eli Lilly, 2026-04-01, [FDA approves Lilly's Foundayo (orforglipron), the only GLP-1 pill for weight loss that can be taken any time of day without food or water restrictions](https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill) *Eli Lilly Press Release*
+
