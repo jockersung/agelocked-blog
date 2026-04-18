@@ -95,6 +95,12 @@ tirzepatide 是雙重受體促效劑，同時作用於 GLP-1R 和 GIPR。
 **如果你用猛健樂副作用特別嚴重：**
 GIPR 基因變異是目前最有力的遺傳解釋。如果嘔吐反應在慢慢加量後仍然無法緩解，和醫師討論換用純 GLP-1 藥物（如 Semaglutide）是合理的選項。
 
+另一個值得試試的低成本方法：標準化生薑咀嚼片。
+
+2026 年 4 月發表於 Medscape 的隨機雙盲試驗（Balaban MD et al.，78 位受試者）顯示，生薑的活性成分走 5-HT3 受體拮抗路徑，和 GIPR 缺陷導致的緩衝失效是不同迴路，理論上可以提供補償。
+
+試驗中 96.2% 的生薑組受試者噁心感有所減輕（安慰劑組 87.9%），且沒有額外副作用。有噁心感時吃 2 粒，一天最多 4 粒，安全性高、費用低，不失為等待換藥或劑量調整期間的實用緩解手段。
+
 **這個研究還不能直接用來做藥物選擇：**
 目前的效果量相對保守，尚未達到足以在臨床常規實踐中直接據此選藥的水準。但研究方向已經很清楚：未來精準醫療的框架下，基因篩查很可能成為 GLP-1 處方決策的參考依據之一。
 
@@ -128,3 +134,4 @@ GLP-1 藥物之所以在抗老科學界受到重視，是因為它直接作用�
 02. Loos RJF, 2026-04-08, [Genetics reveal why people respond differently to GLP-1 weight-loss drugs](https://www.nature.com/articles/d41586-026-00905-1) *Nature* （News & Views）
 03. 23andMe Research Institute, 2026-04-08, [New 23andMe research institute study identifies genetic predictors for GLP-1 weight loss efficacy and side effects](https://mediacenter.23andme.com/press-releases/new-23andme-research-institute-study-identifies-genetic-predictors-for-glp-1-weight-loss-efficacy-and-side-effects/) *23andMe Media Center*
 04. Neeland IJ et al., 2024. [Changes in lean body mass with glucagon-like peptide-1-based therapies and mitigation strategies](https://pubmed.ncbi.nlm.nih.gov/38937282/) *Diabetes Obes Metab.* Suppl 4:16-27.
+05. Balaban DH et al., 2026, [Ginger dietary supplement may ease GLP-1-related nausea](https://www.medscape.com/viewarticle/ginger-dietary-supplement-may-ease-glp-1-related-nausea2026a1000bk9icd=login_success_email_match_fpf&fbclid=IwY2xjawRPo5FleHRuA2FlbQIxMABicmlkETFjbTA0Tzk3UHNtZnF3NnMwc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlIrn1nNXyHwBGqWJHNdN42zSnjaTccMltusRe_ovaimFLH5FPi0wAezLz6o_aem_eJpcYh1s-QFllzbYnt-XBw&form=fpf](https://www.medscape.com/viewarticle/ginger-dietary-supplement-may-ease-glp-1-related-nausea-2026a1000bk9icd=login_success_email_match_fpf&fbclid=IwY2xjawRPo5FleHRuA2FlbQIxMABicmlkETFjbTA0Tzk3UHNtZnF3NnMwc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlIrn1nNXyHwBGqWJHNdN42zSnjaTccMltusRe_ovaimFLH5FPi0wAezLz6o_aem_eJpcYh1s-QFllzbYnt-XBw&form=fpf)](https://www.medscape.com/viewarticle/ginger-dietary-supplement-may-ease-glp-1-related-nausea-2026a1000bk9?icd=login_success_email_match_fpf&fbclid=IwY2xjawRPo5FleHRuA2FlbQIxMABicmlkETFjbTA0Tzk3UHNtZnF3NnMwc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlIrn1nNXyHwBGqWJHNdN42zSnjaTccMltusRe_ovaimFLH5FPi0wAezLz6o_aem_eJpcYh1s-QFllzbYnt-XBw&form=fpf)) *Medscape Medical News*
