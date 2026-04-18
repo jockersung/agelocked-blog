@@ -61,7 +61,30 @@ Tirzepatide 組平均減重 **20.2%**，Semaglutide 組 **14.7%**。
 
 兩個藥物最常見的副作用都是腸胃相關：噁心、腹瀉、便秘、嘔吐。
 
-這些反應通常在前幾週最明顯，隨著身體適應逐漸緩解。**從低劑量開始、慢慢加量，是降低副作用的標準做法。**
+這些反應通常在前幾週最明顯，隨著身體適應逐漸緩解。從低劑量開始、慢慢加量，是降低副作用的標準做法。
+
+噁心嘔吐的實用補充：生薑
+
+2026 年 4 月 《Medscape》 報導了第一個專門針對 GLP-1 副作用的生薑隨機雙盲試驗（Balaban MD et al.，78 位受試者，14 天）。
+
+結果：主要終點（整體噁心嚴重度）生薑組下降 3.7 分 vs 安慰劑 3.0 分，差距未達統計顯著（P=0.286）。
+
+但次要指標上，生薑組有 96.2% 的人噁心感有所減輕，安慰劑組為 87.9%，這個差異統計上顯著。改善輕中度噁心的比例生薑組也明顯優於安慰劑。兩組都沒有出現額外不良反應。
+
+為什麼生薑對噁心有效？生薑的活性成分薑酚（Gingerols）和薑烯酚（Shogaols）具有天然的 5-HT3 受體拮抗作用——這和臨床止吐藥（如 Ondansetron）的作用機轉相同。
+
+同時，生薑還能促進胃蠕動，對抗 GLP-1 讓胃排空變慢的副作用。
+
+怎麼用：研究使用的是標準化生薑咀嚼片（Advanced Herbals，原本是暈車用途），不是生薑茶或薑糖。有噁心感時服用 2 粒，一天最多 4 粒。藥局或網路均可取得，費用極低，安全性高。
+
+特別值得注意的族群：如果你帶有 GIPR 基因變異（rs1800437），使用猛健樂時噁心嘔吐的風險本來就偏高——這是因為 GIP 受體的天然「緩衝」機制在這類人身上效果較弱。
+
+生薑透過 5-HT3 拮抗路徑發揮作用，和 GIPR 缺陷是不同的迴路，理論上可以提供額外補償。
+
+關於基因如何影響你對 GLP-1 的反應，可以參考：[打了瘦瘦針沒效？或副作用特別嚴重？答案可能在你的基因裡](/blog/body-signals/glp1-genetics-response-variation/)
+需要注意：這是 pilot trial，樣本數不大，主要終點未達統計顯著。
+
+但副作用風險幾乎為零，願意嘗試的話沒有太大理由反對。
 
 幾個特別要注意的禁忌症，使用前務必和醫師確認：
 
@@ -164,15 +187,17 @@ GLP-1 藥物的效果，依賴你的代謝基礎、身體組成、發炎程度�
 
 ## 參考資料
 
-01. Wilding JPH et al.（STEP-1）, 2021, [Once-weekly semaglutide in adults with overweight or obesity](https://pubmed.ncbi.nlm.nih.gov/33567185/) *N Engl J Med*
-02. Jastreboff AM et al.（SURMOUNT-1）, 2022, [Tirzepatide once weekly for the treatment of obesity](https://pubmed.ncbi.nlm.nih.gov/35658024/) *N Engl J Med*
-03. Rubino DM et al.（STEP-4）, 2021, [Effect of continued weekly subcutaneous semaglutide vs placebo on weight loss maintenance](https://pubmed.ncbi.nlm.nih.gov/33755728/) *JAMA*
-04. Aronne LJ et al.（SURMOUNT-4）, 2024, [Continued treatment with tirzepatide for maintenance of weight reduction](https://pubmed.ncbi.nlm.nih.gov/38078870/) *JAMA*
-05. Aronne LJ et al.（SURMOUNT-5）, 2025, [Tirzepatide as compared with semaglutide for the treatment of obesity](https://pubmed.ncbi.nlm.nih.gov/40353578/) *N Engl J Med*
-06. Rosenstock J et al.（Orforglipron Phase 3）, 2025, [Orforglipron, an oral small-molecule GLP-1 receptor agonist, in early type 2 diabetes](https://pubmed.ncbi.nlm.nih.gov/40544435/) *N Engl J Med*
+01. Wilding JPH et al. （STEP-1）, 2021, [Once-Weekly Semaglutide in Adults with Overweight or Obesity](https://pubmed.ncbi.nlm.nih.gov/33567185/) *N Engl J Med* 384(11):989-1002.
+02. Jastreboff AM et al.（SURMOUNT-1）, 2022, [Tirzepatide Once Weekly for the Treatment of Obesity](https://pubmed.ncbi.nlm.nih.gov/35658024/) *N Engl J Med* 387(3):205-216.
+03. Rubino DM et al.（STEP-4）, 2021, [Effect of Continued Weekly Subcutaneous Semaglutide vs Placebo on Weight Loss Maintenance in Adults With Overweight or Obesity: The STEP 4 Randomized Clinical Trial](https://pubmed.ncbi.nlm.nih.gov/33755728/) *JAMA* 325(14):1414-1425.
+04. Aronne LJ et al.（SURMOUNT-4）, 2024, [Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial](https://pubmed.ncbi.nlm.nih.gov/38078870/) *JAMA* 331(1):38-48.
+05. Aronne LJ et al.（SURMOUNT-5）, 2025, [Tirzepatide as Compared with Semaglutide for the Treatment of Obesity](https://pubmed.ncbi.nlm.nih.gov/40353578/) *N Engl J Med* 393(1):26-36.
+06. Rosenstock J et al.（Orforglipron Phase 3）, 2025, [Orforglipron, an oral small-molecule GLP-1 receptor agonist, in early type 2 diabetes](https://pubmed.ncbi.nlm.nih.gov/40544435/) *N Engl J Med* 393(11):1065-1076.
 07. Eli Lilly, 2026-04-01, [FDA approves Lilly's Foundayo (orforglipron), the only GLP-1 pill for weight loss that can be taken any time of day without food or water restrictions](https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill) *Eli Lilly Press Release*
 08. FDA, 2026, [FDA approves first new molecular entity under National Priority Voucher Program](https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program) *FDA.gov*
 09. Novo Nordisk, 2025-12-22, [Wegovy pill approved in the US as first oral GLP-1 for weight management](https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=916472) *Novo Nordisk Press Release*
-10. Wharton S et al.（OASIS 4）, 2025, [Oral semaglutide 25 mg in adults with overweight or obesity](https://www.nejm.org/doi/10.1056/NEJMoa2500969) *N Engl J Med*
+10. Wharton S et al.（OASIS 4）, 2025, [Oral Semaglutide at a Dose of 25 mg in Adults with Overweight or Obesity](https://pubmed.ncbi.nlm.nih.gov/40934115/) *N Engl J Med* 393(11):1077-1087.
 11. Su QJ et al., 2026, [Genetic predictors of GLP1 receptor agonist weight loss and side effects](https://www.nature.com/articles/s41586-026-10330-z) *Nature*
-12. Neeland IJ, Linge J, Birkenfeld AL., 2024, [Changes in lean body mass with glucagon-like peptide-1-based therapies and mitigation strategies](https://pubmed.ncbi.nlm.nih.gov/38937282/) *Diabetes, Obesity and Metabolism*
+12. Neeland IJ et al., 2024, [Changes in lean body mass with glucagon-like peptide-1-based therapies and mitigation strategies](https://pubmed.ncbi.nlm.nih.gov/38937282/) *Diabetes, Obes Metab.* Suppl 4:16-27.
+13. Balaban DH et al., 2026, [Ginger dietary supplement may ease GLP-1-related nausea](https://www.medscape.com/viewarticle/ginger-dietary-supplement-may-ease-glp-1-related-nausea2026a1000bk9icd=login_success_email_match_fpf&fbclid=IwY2xjawRPo5FleHRuA2FlbQIxMABicmlkETFjbTA0Tzk3UHNtZnF3NnMwc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlIrn1nNXyHwBGqWJHNdN42zSnjaTccMltusRe_ovaimFLH5FPi0wAezLz6o_aem_eJpcYh1s-QFllzbYnt-XBw&form=fpf](https://www.medscape.com/viewarticle/ginger-dietary-supplement-may-ease-glp-1-related-nausea-2026a1000bk9icd=login_success_email_match_fpf&fbclid=IwY2xjawRPo5FleHRuA2FlbQIxMABicmlkETFjbTA0Tzk3UHNtZnF3NnMwc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlIrn1nNXyHwBGqWJHNdN42zSnjaTccMltusRe_ovaimFLH5FPi0wAezLz6o_aem_eJpcYh1s-QFllzbYnt-XBw&form=fpf)](https://www.medscape.com/viewarticle/ginger-dietary-supplement-may-ease-glp-1-related-nausea-2026a1000bk9?icd=login_success_email_match_fpf&fbclid=IwY2xjawRPo5FleHRuA2FlbQIxMABicmlkETFjbTA0Tzk3UHNtZnF3NnMwc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlIrn1nNXyHwBGqWJHNdN42zSnjaTccMltusRe_ovaimFLH5FPi0wAezLz6o_aem_eJpcYh1s-QFllzbYnt-XBw&form=fpf)) *Medscape Medical News*
+
