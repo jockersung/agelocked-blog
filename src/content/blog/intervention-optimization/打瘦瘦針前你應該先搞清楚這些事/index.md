@@ -178,7 +178,7 @@ GLP-1 藥物的效果，依賴你的代謝基礎、身體組成、發炎程度�
 
 ## 延伸閱讀
 
-- [瘦瘦針不只讓你瘦——它正在改變你體內的老化基因](/blog/chronic-inflammation/glp1-gene-aging-reversal/)
+- [瘦瘦針不只讓你瘦——它正在改變你體內的老化基因](/blog/chronic-inflammation/glp1-aging-gene-expression/)
 - [打了瘦瘦針沒效？或副作用特別嚴重？答案可能在你的基因裡](/blog/body-signals/glp1-genetics-response-variation/)
 - [抑制 IGF-1 還不夠——壽命的關鍵，藏在你的粒線體 DNA 裡](/blog/chronic-inflammation/igf1-mitochondria-dna-longevity/)
 

@@ -1,9 +1,10 @@
 ---
 title: '越睡越累？熬夜催老？《Nature》雙重解密：大腦的物理大清洗與全身抗老「最佳睡眠時數」！'
+description: '《Nature》50萬人大規模研究：睡眠不足真正的代價不是疲勞，而是老化速度。從大腦每晚的物理清洗到全身抗老，解析你的「最佳睡眠時數」。'
 pubDate: 2026-05-18
 heroImage: "./最佳睡眠時數.png"
-category: '慢性發炎'
-ctaType: 'line'
+category: '慢性發炎科學'
+ctaType: 'soft'
 slug: 'sleep-duration-biological-aging'
 ---
 

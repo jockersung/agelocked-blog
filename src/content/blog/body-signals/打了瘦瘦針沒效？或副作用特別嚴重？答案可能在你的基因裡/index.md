@@ -122,7 +122,7 @@ GLP-1 藥物之所以在抗老科學界受到重視，是因為它直接作用�
 
 ## 延伸閱讀
 
-- [瘦瘦針不只讓你瘦——它正在改變你體內的老化基因](/blog/chronic-inflammation/glp1-gene-aging-reversal/)
+- [瘦瘦針不只讓你瘦——它正在改變你體內的老化基因](/blog/chronic-inflammation/glp1-aging-gene-expression/)
 - [抑制 IGF-1 還不夠——壽命的關鍵，藏在你的粒線體 DNA 裡](/blog/chronic-inflammation/igf1-mitochondria-dna-longevity/)
 - [表觀遺傳時鐘：你的生物年齡，和身分證上的數字不一樣](/blog/chronic-inflammation/multivitamin-lifepak-slow-aging-clock/)
 

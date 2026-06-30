@@ -120,7 +120,7 @@ mtDNA 突變累積 → 粒線體功能下降 → 細胞能量不足 → **氧化
 
 然而這篇研究的邏輯同樣適用：如果個體的粒線體 DNA 穩定性已經受損，GLP-1 對長壽路徑的調節效果，可能同樣會打折扣。
 
-關於 GLP-1 如何影響基因老化模式，可以參考：[GLP-1 確認了一件事：逆轉基因老化模式](/blog/intervention-optimization/glp1-gene-aging-reversal/)。
+關於 GLP-1 如何影響基因老化模式，可以參考：[GLP-1 確認了一件事：逆轉基因老化模式](/blog/chronic-inflammation/glp1-gene-aging-reversal/)。
 
 而對現在的你來說，最實際的問題是：**你的粒線體基礎狀態怎麼樣？**
 

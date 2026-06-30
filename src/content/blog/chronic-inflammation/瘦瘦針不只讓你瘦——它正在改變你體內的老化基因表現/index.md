@@ -5,7 +5,7 @@ pubDate: 2026-04-16
 heroImage: './瘦瘦針改變你體內的老化基因表現.png'
 tags: ["GLP-1", "瘦瘦針", "抗老化", "IGF-1", "慢性發炎", "粒線體", "基因老化", "肌少症"]
 category: "慢性發炎科學"
-slug: glp1-gene-aging-reversal
+slug: glp1-aging-gene-expression
 ---
 
 你身邊一定有人打過瘦瘦針。
