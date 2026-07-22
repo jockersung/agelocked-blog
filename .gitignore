@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Cowork 工作資料夾（掃描報告、skill 草稿、備份 patch）
+漏斗網站架設私域收集社群文章發布/
