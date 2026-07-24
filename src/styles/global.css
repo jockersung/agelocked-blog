@@ -124,6 +124,18 @@ img {
   border-radius: 2px;
 }
 
+/* ── 文章內頁圖片統一尺寸（hero + 內文插圖）──
+   用圖庫主流比例 11:6（2816×1536），contain 不裁切，
+   少數異比例圖只會在四周留一點底色，不會切到圖解文字。 */
+.hero-image img,
+.prose img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 11 / 6;
+  object-fit: contain;
+  background: var(--surface);
+}
+
 /* ── 表格 ── */
 table {
   width: 100%;
