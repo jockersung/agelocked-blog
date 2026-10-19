@@ -154,3 +154,10 @@ slug: "supplement-one-thing-to-check"
 在不清楚自己的基準值之前選產品，等於不知道目的地就出發，你可能往對的方向走，也可能往錯的方向走，而且無法判斷走了多久之後有沒有抵達。
 
 如果你想從你的狀況出發，可以選一個來做：
+
+
+## 參考資料
+
+1. [保健品M型化平均消費增54% 熟齡網購勢力漸起](<https://www.kantarworldpanel.com/tw/news/2023-H2-health-supplement-market-trends>)。Kantar原始市場研究摘要；未查得 DOI，來源頁已核對（2026-10-19）。
+2. [Questions and Answers on Dietary Supplements](<https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements>). FDA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。
+3. Crawford Cindy, Avula Bharathi, Lindsey Andrea T. et al. (2022). Analysis of Select Dietary Supplement Products Marketed to Support or Boost the Immune System. *JAMA Network Open*, 5(8):e2226040. DOI：[10.1001/jamanetworkopen.2022.26040](<https://doi.org/10.1001/jamanetworkopen.2022.26040>)。

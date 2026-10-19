@@ -212,3 +212,10 @@ NMN 是近年來研究最活躍、市場最熱門的抗衰老成分之一，在�
 - [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) 
 - [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
 - [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
+
+
+## 參考資料
+
+1. [Questions and Answers on Dietary Supplements](<https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements>). FDA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。
+2. [Is It Really FDA Approved?](<https://www.fda.gov/consumers/consumer-updates/it-really-fda-approved>). FDA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。
+3. Crawford Cindy, Avula Bharathi, Lindsey Andrea T. et al. (2022). Analysis of Select Dietary Supplement Products Marketed to Support or Boost the Immune System. *JAMA Network Open*, 5(8):e2226040. DOI：[10.1001/jamanetworkopen.2022.26040](<https://doi.org/10.1001/jamanetworkopen.2022.26040>)。

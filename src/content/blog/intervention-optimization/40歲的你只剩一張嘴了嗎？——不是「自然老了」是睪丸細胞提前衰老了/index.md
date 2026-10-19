@@ -156,8 +156,8 @@ ctaType: 'hard'
 
 ## 參考資料
 
-01. Dong Xing, Yihan Jin, Baofang Jin, 2024. [A narrative review on inflammaging and late-onset hypogonadism.](https://pubmed.ncbi.nlm.nih.gov/38298378/) *Front Endocrinol (Lausanne).* 15:1291389.
-02. Xinshuang Huang, et al., 2025. [Mechanisms of Leydig Cell Aging and Obesity-Related Hypogonadism in Men: A Review.](https://pubmed.ncbi.nlm.nih.gov/40753451/) *Med Sci Monit.* 31:e948180.
-03. Ming-Wei Zhan, et al., 2025. [Testicular immunosenescence: a key player in age-related spermatogenic decline.](https://pubmed.ncbi.nlm.nih.gov/40881351/) *Front Cell Dev Biol.* 13:1669826.
-04. Aris Kaltsas, et al., 2026. [When Testosterone Fades: Leydig Cell Aging Shaped by Environmental Toxicants, Metabolic Dysfunction, and Testicular Niche Crosstalk.](https://pubmed.ncbi.nlm.nih.gov/41597234/) *Cells.* 15(2):158.
-05. Dandan Luo, et al., 2023. [Involvement of p38 MAPK in Leydig cell aging and age-related decline in testosterone.](https://pubmed.ncbi.nlm.nih.gov/36950685/) *Front Endocrinol (Lausanne).* 14:1088249.
+01. Xing Dong, Jin Yihan, Jin Baofang (2024). A narrative review on inflammaging and late-onset hypogonadism. *Frontiers in Endocrinology*, 15:1291389. DOI：[10.3389/fendo.2024.1291389](<https://doi.org/10.3389/fendo.2024.1291389>)。
+02. Huang Xinshuang, Zhao Hui, Wu Xiaodong et al. (2025). Mechanisms of Leydig Cell Aging and Obesity-Related Hypogonadism in Men: A Review. *Medical Science Monitor*, 31. DOI：[10.12659/MSM.948180](<https://doi.org/10.12659/MSM.948180>)。
+03. Zhan Ming-Wei, Zhou Mu-Hua, Zhao Bin-Bin et al. (2025). Testicular immunosenescence: a key player in age-related spermatogenic decline. *Frontiers in Cell and Developmental Biology*, 13:1669826. DOI：[10.3389/fcell.2025.1669826](<https://doi.org/10.3389/fcell.2025.1669826>)。
+04. Kaltsas Aris, Dimitriadis Fotios, Zachariou Athanasios et al. (2026). When Testosterone Fades: Leydig Cell Aging Shaped by Environmental Toxicants, Metabolic Dysfunction, and Testicular Niche Crosstalk. *Cells*, 15(2):158. DOI：[10.3390/cells15020158](<https://doi.org/10.3390/cells15020158>)。
+05. Luo Dandan, Qi Xiangyu, Xu Xiaoqin et al. (2023). Involvement of p38 MAPK in Leydig cell aging and age-related decline in testosterone. *Frontiers in Endocrinology*, 14:1088249. DOI：[10.3389/fendo.2023.1088249](<https://doi.org/10.3389/fendo.2023.1088249>)。

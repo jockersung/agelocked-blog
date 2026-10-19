@@ -183,11 +183,11 @@ LifePak 針對不同的生理需求分為三個配方：
 
 ## 參考資料
 
-01. Bernhard Watzl, 2008. [Anti-inflammatory effects of plant-based foods and of their constituents.](https://pubmed.ncbi.nlm.nih.gov/18845701/) *Int J Vitam Nutr Res.* 78(6):293-8.
-02. Bharat B Aggarwal, Shishir Shishodia, 2006. [Molecular targets of dietary agents for prevention and therapy of cancer.](https://pubmed.ncbi.nlm.nih.gov/16563357/) *Biochem Pharmacol.* 71(10):1397-421.
-03. Tissa R Hata et al., 2000. [Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin.](https://pubmed.ncbi.nlm.nih.gov/10951274/) *J Invest Dermatol.* 115(3):441-448.
-04. Bettina Molin Johansen et al., 2017. [Skin carotenoids reflect antioxidant status and an antioxidant-rich diet.](https://pubmed.ncbi.nlm.nih.gov/28606264/) *J Dermatol Sci.* 86(3):207-213.
-05. Brenda M Roe et al., 2000. [Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings.](https://pubmed.ncbi.nlm.nih.gov/15735074/) *Am J Clin Nutr.* 80(2):396-403.
-06. Wen-Harn Pan et al., 2018. [Vegetable, fruit, and phytonutrient consumption patterns in Taiwan.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9332634/) *J Food Drug Anal.* 26(1):145-153.
-07. David Sinclair, Matthew LaPlante, 2019. [*Lifespan: Why We Age—and Why We Don't Have To.*](https://www.books.com.tw/products/F014444886?srsltid=AfmBOor_W4q70G6WIdwS2a9lNmlc6KuAC-WKgFO6Lr6uYlrWCTA04a3r) Atria Books.
-08. Pharmanex Quality Standards. Nu Skin Enterprises. 6S Quality Process overview. *(NSF/ConsumerLab/BSCG triple certification)*
+01. Watzl Bernhard (2008). Anti-inflammatory Effects of Plant-based Foods and of their Constituents. *International Journal for Vitamin and Nutrition Research*, 78(6):293-298. DOI：[10.1024/0300-9831.78.6.293](<https://doi.org/10.1024/0300-9831.78.6.293>)。
+02. Aggarwal Bharat B., Shishodia Shishir (2006). Molecular targets of dietary agents for prevention and therapy of cancer. *Biochemical Pharmacology*, 71(10):1397-1421. DOI：[10.1016/j.bcp.2006.02.009](<https://doi.org/10.1016/j.bcp.2006.02.009>)。
+03. Hata Tissa R., Scholz Theresa A., Pershing Lynn K. et al. (2000). Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin. *Journal of Investigative Dermatology*, 115(3):441-448. DOI：[10.1046/j.1523-1747.2000.00060.x](<https://doi.org/10.1046/j.1523-1747.2000.00060.x>)。
+04. Jahns Lisa, Johnson LuAnn K, Conrad Zach et al. (2019). Concurrent validity of skin carotenoid status as a concentration biomarker of vegetable and fruit intake compared to multiple 24-h recalls and plasma carotenoid concentrations across one year: a cohort study. *Nutrition Journal*, 18(1):78. DOI：[10.1186/s12937-019-0500-0](<https://doi.org/10.1186/s12937-019-0500-0>)。
+05. Brown Melody J, Ferruzzi Mario G, Nguyen Minhthy L et al. (2004). Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings as measured with electrochemical detection. *The American Journal of Clinical Nutrition*, 80(2):396-403. DOI：[10.1093/ajcn/80.2.396](<https://doi.org/10.1093/ajcn/80.2.396>)。
+06. Pan Wen-Harn, Yeh Nai-Hua, Yang Ray-Yu et al. (2018). Vegetable, fruit, and phytonutrient consumption patterns in Taiwan. *Journal of Food and Drug Analysis*, 26(1):145-153. DOI：[10.1016/j.jfda.2016.12.015](<https://doi.org/10.1016/j.jfda.2016.12.015>)。
+07. [Lifespan: Why We Age—and Why We Don’t Have To](<https://www.simonandschuster.com/books/Lifespan/David-Sinclair/9781501191978>). 出版社書籍頁。未查得 DOI；來源身分已核對（2026-10-19）。
+08. [Pharmanex 6S Quality Process](<https://api.nuskin.com/content/dam/office/n_america/shared/en/pharmanex_products/6s_flyer.pdf>). Nu Skin官方製程文件；此文件不作為三重認證之證據。未查得 DOI；來源身分已核對（2026-10-19）。

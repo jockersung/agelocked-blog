@@ -130,8 +130,8 @@ slug: "fasting-mimicking-diet-5days"
 
 ## 參考資料
 
-01. Sebastian Brandhorst et al., 2024. [Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk.](https://pubmed.ncbi.nlm.nih.gov/38383456/) *Nat Commun.* 15(1):1309.
-02. Luigi Fontana, Linda Partridge, 2015. [Promoting health and longevity through diet: from model organisms to humans.](https://pubmed.ncbi.nlm.nih.gov/25815989/) *Cell.* 161(1):106-118.
-03. R Waziry et al., 2023. [Effect of long-term caloric restriction on DNA methylation measures of biological aging in healthy adults from the CALERIE trial.](https://pubmed.ncbi.nlm.nih.gov/36949220/) *Nat Aging.* 3(3):248-257.
-04. Claudio Vernieri et al., 2022. [Fasting-Mimicking Diet Is Safe and Reshapes Metabolism and Antitumor Immunity in Patients with Cancer.](https://pubmed.ncbi.nlm.nih.gov/34789537/) *Cancer Discov.* 12(1):90-107.
-05. Mark P Mattson, Valter D Longo, Michelle Harvie, 2017. [Impact of intermittent fasting on health and disease processes.](https://pubmed.ncbi.nlm.nih.gov/27810402/) *Ageing Res Rev.* 39:46-58.
+01. Brandhorst Sebastian, Levine Morgan E., Wei Min et al. (2024). Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk. *Nature Communications*, 15(1):1309. DOI：[10.1038/s41467-024-45260-9](<https://doi.org/10.1038/s41467-024-45260-9>)。
+02. Fontana Luigi, Partridge Linda (2015). Promoting Health and Longevity through Diet: From Model Organisms to Humans. *Cell*, 161(1):106-118. DOI：[10.1016/j.cell.2015.02.020](<https://doi.org/10.1016/j.cell.2015.02.020>)。
+03. Waziry R., Ryan C. P., Corcoran D. L. et al. (2023). Effect of long-term caloric restriction on DNA methylation measures of biological aging in healthy adults from the CALERIE trial. *Nature Aging*. DOI：[10.1038/s43587-022-00357-y](<https://doi.org/10.1038/s43587-022-00357-y>)。
+04. Vernieri Claudio, Fucà Giovanni, Ligorio Francesca et al. (2021). Fasting-Mimicking Diet Is Safe and Reshapes Metabolism and Antitumor Immunity in Patients with Cancer. *Cancer Discovery*, 12(1):90-107. DOI：[10.1158/2159-8290.CD-21-0030](<https://doi.org/10.1158/2159-8290.CD-21-0030>)。
+05. Mattson Mark P., Longo Valter D., Harvie Michelle (2017). Impact of intermittent fasting on health and disease processes. *Ageing Research Reviews*, 39:46-58. DOI：[10.1016/j.arr.2016.10.005](<https://doi.org/10.1016/j.arr.2016.10.005>)。

@@ -196,13 +196,13 @@ NOW Foods 曾發現旗下 11 款保健品在 Amazon上 被偽造，由單一賣�
 
 ## 參考資料
 
-01. 日本消費者廳（Consumer Affairs Agency）機能性表示食品資料庫
-02. 韓國食品藥物安全部（MFDS）健康機能食品法規
-03. 美國DSHEA（Dietary Supplement Health and Education Act）1994
-04. 加拿大衛生部（Health Canada）Natural Health Products Regulations
-05. 澳洲TGA（Therapeutic Goods Administration）Complementary Medicine 管制架構
-06. 歐盟 Regulation (EC) No 1924/2006 食品營養及健康訴求規則
-07. USADA. Athlete Advisory: Always Verify Third-Party Certified Logos on Supplements. 2024.
-08. ConsumerLab.com. How to Avoid Buying Counterfeit Supplements Online. 2025.
-09. University of Mississippi / Uniformed Services University. Immune-support supplement testing study. 2022.
-10. 許朝凱. 國內外保健食品管理制度概況. 食品生技, 2007.
+01. [機能性表示食品について](<https://www.caa.go.jp/policies/policy/food_labeling/foods_with_function_claims>). 日本消費者廳官方制度及公表資料庫入口。未查得 DOI；來源身分已核對（2026-10-19）。
+02. [Health Functional Foods: Labeling](<https://www.mfds.go.kr/mfds/eng/html/sub01/MFDS-DE01-10-05-L0001.jsp>). 韓國MFDS官方說明，載明Health Functional Foods Act第17、18條。未查得 DOI；來源身分已核對（2026-10-19）。
+03. [Dietary Supplement Health and Education Act of 1994, Public Law 103-417](<https://www.congress.gov/bill/103rd-congress/senate-bill/784/text>). 美國國會法律原文。未查得 DOI；來源身分已核對（2026-10-19）。
+04. [Natural Health Products Regulations (SOR/2003-196)](<https://lois.justice.gc.ca/eng/regulations/SOR-2003-196/FullText.html>). 加拿大司法部法規原文。未查得 DOI；來源身分已核對（2026-10-19）。
+05. [Understanding listed and registered complementary medicine regulation](<https://www.tga.gov.au/resources/guidance/understanding-listed-and-registered-complementary-medicine-regulation>). 澳洲TGA官方指引。未查得 DOI；來源身分已核對（2026-10-19）。
+06. [Regulation (EC) No 1924/2006](<https://eur-lex.europa.eu/eli/reg/2006/1924/oj/eng>). 歐盟法規原文。未查得 DOI；來源身分已核對（2026-10-19）。
+07. [Athlete Advisory: Always Verify Third-Party Certified Logos on Dietary Supplements](<https://www.usada.org/dietary-supplements/verify-third-party-logos-supplements/>). USADA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。
+08. [Where to Safely Buy Real Vitamins and Supplements Online, Not Fakes or Counterfeits](<https://www.consumerlab.com/answers/avoid-counterfeit-supplements/counterfeit-supplements/>). ConsumerLab原始文章；部分內容可能需訂閱。未查得 DOI；來源身分已核對（2026-10-19）。
+09. Crawford Cindy, Avula Bharathi, Lindsey Andrea T. et al. (2022). Analysis of Select Dietary Supplement Products Marketed to Support or Boost the Immune System. *JAMA Network Open*, 5(8):e2226040. DOI：[10.1001/jamanetworkopen.2022.26040](<https://doi.org/10.1001/jamanetworkopen.2022.26040>)。
+10. [國內外保健食品管理制度概況](<https://www.biotaiwan.org.tw/image_doc/11/04國內外保健食品管理制度概況.pdf>). 原刊PDF，許朝凱，農業生技產業季刊第11期（2007）；更正原刊名食品生技。未查得 DOI；來源身分已核對（2026-10-19）。

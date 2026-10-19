@@ -195,9 +195,9 @@ SIRT1 的激活可以反過來增強 Nrf2 的核內停留時間，兩條路徑�
 
 ## 參考資料
 
-01. Harman D, 1956. [Aging: a theory based on free radical and radiation chemistry.](https://pubmed.ncbi.nlm.nih.gov/13332224/) *J Gerontol.* 11(3):298-300.
-02. Ristow M, Schmeisser K, 2014. [Mitohormesis: Promoting Health and Lifespan by Increased Levels of Reactive Oxygen Species (ROS).](https://pubmed.ncbi.nlm.nih.gov/24910588/) *Dose Response.* 12(2):288-341.
-03. Suzuki T et al., 2020. [Regulation of Nrf2 by Mitochondrial Reactive Oxygen Species in Physiology and Pathology.](https://pubmed.ncbi.nlm.nih.gov/32079324/) *Biomolecules.* 10(2):320.
-04. Ristow M et al., 2009. [Antioxidants prevent health-promoting effects of physical exercise in humans.](https://pubmed.ncbi.nlm.nih.gov/19433800/) *PNAS.* 106(21):8665-8670.
-05. Zhang D, 2018. [Reactive Oxygen Species, NRF2 Signaling, and Human Aging and Diseases.](https://academic.oup.com/innovateage/article/2/suppl_1/220/5169261) *Innovation in Aging.* 2(Suppl 1):220.
-06. Pomatto LCD, Davies KJA, 2018. [The role of declining adaptive homeostasis in ageing.](https://pubmed.ncbi.nlm.nih.gov/28758193/) *J Physiol.* 596(12):2275-2289.
+01. Harman D. (1956). Aging: A Theory Based on Free Radical and Radiation Chemistry. *Journal of Gerontology*, 11(3):298-300. DOI：[10.1093/geronj/11.3.298](<https://doi.org/10.1093/geronj/11.3.298>)。
+02. Ristow Michael, Schmeisser Kathrin (2014). Mitohormesis: Promoting Health and Lifespan by Increased Levels of Reactive Oxygen Species (ROS). *Dose-Response*, 12(2):dose-response.13-035.Ristow. DOI：[10.2203/dose-response.13-035.Ristow](<https://doi.org/10.2203/dose-response.13-035.Ristow>)。
+03. Kasai Shuya, Shimizu Sunao, Tatara Yota et al. (2020). Regulation of Nrf2 by Mitochondrial Reactive Oxygen Species in Physiology and Pathology. *Biomolecules*, 10(2):320. DOI：[10.3390/biom10020320](<https://doi.org/10.3390/biom10020320>)。
+04. Ristow Michael, Zarse Kim, Oberbach Andreas et al. (2009). Antioxidants prevent health-promoting effects of physical exercise in humans. *Proceedings of the National Academy of Sciences*, 106(21):8665-8670. DOI：[10.1073/pnas.0903485106](<https://doi.org/10.1073/pnas.0903485106>)。
+05. Zhang D (2018). REACTIVE OXYGEN SPECIES, NRF2 SIGNALING, AND HUMAN AGING AND DISEASES. *Innovation in Aging*, 2(suppl_1):220-220. DOI：[10.1093/geroni/igy023.812](<https://doi.org/10.1093/geroni/igy023.812>)。
+06. Pomatto Laura C. D., Davies Kelvin J. A. (2017). The role of declining adaptive homeostasis in ageing. *The Journal of Physiology*, 595(24):7275-7309. DOI：[10.1113/jp275072](<https://doi.org/10.1113/jp275072>)。

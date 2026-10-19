@@ -182,10 +182,10 @@ Sinclair 在 WGS 演講中提到了一個讓很多人意外的數據：
 
 ## 參考資料
 
-1. Yücel, A. D., & Gladyshev, V. N. (2026). [Systemic epigenetic dysregulation as a driver of ageing and a therapeutic target.](https://pubmed.ncbi.nlm.nih.gov/41896334/) *Nature Reviews Molecular Cell Biology*. — 最新機制綜述
-2. Yang, J.-H., et al. (2023). [Loss of Epigenetic Information as a cause of mammalian aging.](https://pubmed.ncbi.nlm.nih.gov/36638792/) *Cell*, 186(2), 305–326. — 因果關係確認的核心論文
-3. Lu, Y., et al. (2020). [Reprogramming to recover youthful epigenetic information and restore vision.](https://pubmed.ncbi.nlm.nih.gov/33268865/) *Nature*, 588, 124–129. — OSK 逆轉視力的原始實驗
-4. Ying, K., Gladyshev, V. N., et al. (2024). [Causality-enriched epigenetic age uncouples damage and adaptation.](https://pubmed.ncbi.nlm.nih.gov/38243142/) *Nature Aging*. — DamAge vs. AdaptAge 區分框架
-5. Liang, R., et al. (2024). [Epigenetic Clocks: Beyond Biological Age, Using the Past to Predict the Present and Future.](https://pubmed.ncbi.nlm.nih.gov/39751861/) *Aging and Disease*, 16(6), 3520–3545. — 表觀遺傳鐘演進與預測能力
-6. MIT Technology Review (2026, January 27). [The first human test of a rejuvenation method will begin "shortly".](https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/) — Life Biosciences FDA IND 核准報導
-7. [WGS 2026 - The Science of Living Longer and Better](https://www.youtube.com/watch?v=BVkcjSqIVzU&t=694s) — 75% 動物模型數據、2.5 年癌症數字、38 兆美元經濟數據來源
+1. Yücel A. Doğa, Gladyshev Vadim N. (2026). Systemic epigenetic dysregulation as a driver of ageing and a therapeutic target. *Nature Reviews Molecular Cell Biology*, 27(7):528-542. DOI：[10.1038/s41580-026-00958-0](<https://doi.org/10.1038/s41580-026-00958-0>)。
+2. Yang Jae-Hyun, Hayano Motoshi, Griffin Patrick T. et al. (2023). Loss of epigenetic information as a cause of mammalian aging. *Cell*, 186(2):305-326.e27. DOI：[10.1016/j.cell.2022.12.027](<https://doi.org/10.1016/j.cell.2022.12.027>)。
+3. Lu Yuancheng, Brommer Benedikt, Tian Xiao et al. (2020). Reprogramming to recover youthful epigenetic information and restore vision. *Nature*, 588(7836):124-129. DOI：[10.1038/s41586-020-2975-4](<https://doi.org/10.1038/s41586-020-2975-4>)。
+4. Ying Kejun, Liu Hanna, Tarkhov Andrei E. et al. (2024). Causality-enriched epigenetic age uncouples damage and adaptation. *Nature Aging*, 4(2):231-246. DOI：[10.1038/s43587-023-00557-0](<https://doi.org/10.1038/s43587-023-00557-0>)。
+5. Liang Runyu, Tang Qiang, Chen Jia et al. (2024). Epigenetic Clocks: Beyond Biological Age, Using the Past to Predict the Present and Future. *Aging and disease*, 0. DOI：[10.14336/AD.2024.1495](<https://doi.org/10.14336/AD.2024.1495>)。
+6. MIT Technology Review (2026, January 27). [The first human test of a rejuvenation method will begin "shortly".](https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/) — Life Biosciences FDA IND 核准報導。未查得 DOI；來源頁題名已核對（2026-10-19）。
+7. [World Governments Summit: The Science of Living Longer – and Better - Plenary Session](<https://www.youtube.com/watch?v=BVkcjSqIVzU&t=694s>). 原始論壇影片；僅核對影片身分，影片中的數據不是已驗證的臨床結論。未查得 DOI；來源身分已核對（2026-10-19）。

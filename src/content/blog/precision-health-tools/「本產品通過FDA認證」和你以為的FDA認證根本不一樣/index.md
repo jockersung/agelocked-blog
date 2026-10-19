@@ -131,8 +131,8 @@ FDA針對食品原料建立了GRAS（Generally Recognized As Safe）安全性認
 
 ## 參考資料
 
-01. U.S. Food and Drug Administration. [Questions and Answers on Dietary Supplements.](https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements)
-02. U.S. Food and Drug Administration. [FDA 101: Dietary Supplements.](https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements)
-03. U.S. Food and Drug Administration. [Is It Really 'FDA Approved?'](https://www.fda.gov/consumers/consumer-updates/it-really-fda-approved)
-04. Dietary Supplement Health and Education Act of 1994, Public Law 103-417, 103rd Congress.
-05. Pieter A Cohen, 2015. [Too Little, Too Late: Ineffective Regulation of Dietary Supplements in the United States.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4330859/) *JAMA Intern Med.*
+01. [Questions and Answers on Dietary Supplements](<https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements>). FDA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。
+02. [FDA 101: Dietary Supplements](<https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements>). FDA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。
+03. [Is It Really FDA Approved?](<https://www.fda.gov/consumers/consumer-updates/it-really-fda-approved>). FDA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。
+04. [Dietary Supplement Health and Education Act of 1994, Public Law 103-417](<https://www.congress.gov/bill/103rd-congress/senate-bill/784/text>). 美國國會法律原文。未查得 DOI；來源身分已核對（2026-10-19）。
+05. Starr Ranjani R. (2015). Too Little, Too Late: Ineffective Regulation of Dietary Supplements in the United States. *American Journal of Public Health*, 105(3):478-485. DOI：[10.2105/ajph.2014.302348](<https://doi.org/10.2105/ajph.2014.302348>)。

@@ -139,7 +139,7 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 
 ## 參考資料
 
-01. Pénélope A Andreux et al., 2019. [The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans.](https://pubmed.ncbi.nlm.nih.gov/31226288/) *Nat Metab.* 1(6):595-603.
-02. Amazed Singh et al., 2022. [Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults.](https://pubmed.ncbi.nlm.nih.gov/35679046/) *Cell Rep Med.* 3(5):100633.
-03. Ki Wung Chung, Hae Young Chung, 2019. [The Effects of Calorie Restriction on Autophagy.](https://pubmed.ncbi.nlm.nih.gov/31817038/) *Nutrients.* 11(12):2923.
-04. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112-20.
+01. Andreux Pénélope A., Blanco-Bose William, Ryu Dongryeol et al. (2019). The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans. *Nature Metabolism*, 1(6):595-603. DOI：[10.1038/s42255-019-0073-4](<https://doi.org/10.1038/s42255-019-0073-4>)。
+02. Singh Anurag, D’Amico Davide, Andreux Pénélope A. et al. (2022). Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults. *Cell Reports Medicine*, 3(5):100633. DOI：[10.1016/j.xcrm.2022.100633](<https://doi.org/10.1016/j.xcrm.2022.100633>)。
+03. Chung Ki Wung, Chung Hae Young (2019). The Effects of Calorie Restriction on Autophagy: Role on Aging Intervention. *Nutrients*, 11(12):2923. DOI：[10.3390/nu11122923](<https://doi.org/10.3390/nu11122923>)。
+04. Mastaloudis Angela, Wood Steven M. (2012). Age‐related changes in cellular protection, purification, and inflammation‐related gene expression: role of dietary phytonutrients. *Annals of the New York Academy of Sciences*, 1259(1):112-120. DOI：[10.1111/j.1749-6632.2012.06610.x](<https://doi.org/10.1111/j.1749-6632.2012.06610.x>)。

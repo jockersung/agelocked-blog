@@ -113,9 +113,9 @@ slug: "carotenoid-cell-absorption"
 
 ## 參考資料
 
-01. 衛生福利部國民健康署, 2022. [國民營養健康狀況變遷調查成果報告 2017–2020 年](https://www.hpa.gov.tw/Pages/List.aspx?nodeid=3998)（第二波，2022年5月發布）.
-02. 衛生福利部國民健康署, 2016. [國民營養健康狀況變遷調查成果報告 2013–2016 年](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=3999&pid=11145)（第一波，2022年5月發布）.
-03. Brenda M Roe et al., 2013. [Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings.](https://pubmed.ncbi.nlm.nih.gov/15735074/) *Am J Clin Nutr.* 80(2):396-403.
-04. Achim Bub et al., 2000. [Moderate intervention with carotenoid-rich vegetable products reduces lipid peroxidation in young, healthy male subjects.](https://pubmed.ncbi.nlm.nih.gov/10648262/) *J Nutr.* 130(9):2200-6.
-05. Werner Gellermann et al., 2002. [Noninvasive laser Raman detection of carotenoid skin pigmentation in volunteers.](https://pubmed.ncbi.nlm.nih.gov/12428194/) *J Invest Dermatol.* 119(6):1420-5.
-06. Jess D Whittaker et al., 2021. [Urolithin A: a diet-derived metabolite with effects on aging and healthspan.](https://pubmed.ncbi.nlm.nih.gov/34433748/) *Nutrients.* 13(8):2552.
+01. [國民營養健康狀況變遷調查成果報告2017–2020年](<https://www.hpa.gov.tw/EngPages/Detail.aspx?nodeid=3999&pid=15562>). 國民健康署官方報告。未查得 DOI；來源身分已核對（2026-10-19）。
+02. 衛生福利部國民健康署, 2016. [國民營養健康狀況變遷調查成果報告 2013–2016 年](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=3999&pid=11145)（第一波，2022年5月發布）.。未查得 DOI；來源頁題名已核對（2026-10-19）。
+03. Brown Melody J, Ferruzzi Mario G, Nguyen Minhthy L et al. (2004). Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings as measured with electrochemical detection. *The American Journal of Clinical Nutrition*, 80(2):396-403. DOI：[10.1093/ajcn/80.2.396](<https://doi.org/10.1093/ajcn/80.2.396>)。
+04. Bub Achim, Watzl Bernhard, Delincée Henry et al. (2000). Moderate Intervention with Carotenoid-Rich Vegetable Products Reduces Lipid Peroxidation in Men. *The Journal of Nutrition*, 130(9):2200-2206. DOI：[10.1093/jn/130.9.2200](<https://doi.org/10.1093/jn/130.9.2200>)。
+05. Hata T R, Scholz T A, Ermakov I V et al. (2000). Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin. *Journal of Investigative Dermatology*, 115(3):441-448. DOI：[10.1046/j.1523-1747.2000.00060.x](<https://doi.org/10.1046/j.1523-1747.2000.00060.x>)。 [PubMed：10951281](https://pubmed.ncbi.nlm.nih.gov/10951281/)。
+06. Singh Anurag, D’Amico Davide, Andreux Pénélope A. et al. (2022). Direct supplementation with Urolithin A overcomes limitations of dietary exposure and gut microbiome variability in healthy adults to achieve consistent levels across the population. *European Journal of Clinical Nutrition*, 76(2):297-308. DOI：[10.1038/s41430-021-00950-1](<https://doi.org/10.1038/s41430-021-00950-1>)。

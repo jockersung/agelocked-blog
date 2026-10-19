@@ -151,14 +151,14 @@ Inflammaging 不是感染，不是急性發炎。它是一種長年慢慢燒的�
 
 ## 參考資料
 
-01. Conboy IM et al., 2005. [Rejuvenation of aged progenitor cells by exposure to a young systemic environment.](https://pubmed.ncbi.nlm.nih.gov/15716955/) *Nature.* 433(7027):760-764.
-02. Villeda SA et al., 2011. [The ageing systemic milieu negatively regulates neurogenesis and cognitive function.](https://pubmed.ncbi.nlm.nih.gov/21886162/) *Nature.* 477(7362):90-94.
-03. Villeda SA et al., 2014. [Young blood reverses age-related impairments in cognitive function and synaptic plasticity in mice.](https://pubmed.ncbi.nlm.nih.gov/24912090/) *Nat Med.* 20(6):659-663.
-04. Castellano JM et al., 2017. [Human umbilical cord plasma proteins revitalize hippocampal function in aged mice.](https://pubmed.ncbi.nlm.nih.gov/28297716/) *Nature.* 544(7651):488-492.
-05. Mehdipour M et al., 2020. [Rejuvenation of three germ layers tissues by exchanging old blood plasma with saline-albumin.](https://pubmed.ncbi.nlm.nih.gov/32867120/) *Aging (Albany NY).* 12(18):18011-18032.
-06. Franceschi C, Campisi J, 2014. [Chronic inflammation (inflammaging) and its potential contribution to age-associated diseases.](https://pubmed.ncbi.nlm.nih.gov/24833586/) *J Gerontol A Biol Sci Med Sci.* 69 Suppl 1:S4-9.
-07. Campisi J, 2013. [Aging, cellular senescence, and cancer.](https://pubmed.ncbi.nlm.nih.gov/23140366/) *Annu Rev Physiol.* 75:685-705.
-08. Chen X et al., 2024. [Small extracellular vesicles from young plasma reverse age-related functional declines by improving mitochondrial energy metabolism.](https://doi.org/10.1038/s43587-024-00612-4) *Nat Aging.*
-09. White JP et al., 2023. [Epigenetic reprogramming from heterochronic parabiosis.](https://www.sciencedaily.com/releases/2023/07/230727144010.htm) *Nature Aging* (Duke University).
-10. Lagunas-Rangel FA, 2024. [Aging insights from heterochronic parabiosis models.](https://pubmed.ncbi.nlm.nih.gov/39154047/) *npj Aging.* 10(1):38.
-11. Gulej R et al., 2024. [Rejuvenation of cerebromicrovascular function in aged mice through heterochronic parabiosis.](https://pubmed.ncbi.nlm.nih.gov/38123890/) *Geroscience.* 46(1):327-347.
+01. Conboy Irina M., Conboy Michael J., Wagers Amy J. et al. (2005). Rejuvenation of aged progenitor cells by exposure to a young systemic environment. *Nature*, 433(7027):760-764. DOI：[10.1038/nature03260](<https://doi.org/10.1038/nature03260>)。
+02. Villeda Saul A., Luo Jian, Mosher Kira I. et al. (2011). The ageing systemic milieu negatively regulates neurogenesis and cognitive function. *Nature*, 477(7362):90-94. DOI：[10.1038/nature10357](<https://doi.org/10.1038/nature10357>)。
+03. Villeda Saul A, Plambeck Kristopher E, Middeldorp Jinte et al. (2014). Young blood reverses age-related impairments in cognitive function and synaptic plasticity in mice. *Nature Medicine*, 20(6):659-663. DOI：[10.1038/nm.3569](<https://doi.org/10.1038/nm.3569>)。
+04. Castellano Joseph M., Mosher Kira I., Abbey Rachelle J. et al. (2017). Human umbilical cord plasma proteins revitalize hippocampal function in aged mice. *Nature*, 544(7651):488-492. DOI：[10.1038/nature22067](<https://doi.org/10.1038/nature22067>)。
+05. Mehdipour Melod, Skinner Colin, Wong Nathan et al. (2020). Rejuvenation of three germ layers tissues by exchanging old blood plasma with saline-albumin.. *Aging*, 12(10):8790. DOI：[10.18632/aging.103418](<https://doi.org/10.18632/aging.103418>)。
+06. Franceschi C., Campisi J. (2014). Chronic Inflammation (Inflammaging) and Its Potential Contribution to Age-Associated Diseases. *The Journals of Gerontology Series A: Biological Sciences and Medical Sciences*, 69(Suppl 1):S4-S9. DOI：[10.1093/gerona/glu057](<https://doi.org/10.1093/gerona/glu057>)。
+07. Campisi Judith (2013). Aging, Cellular Senescence, and Cancer. *Annual Review of Physiology*, 75(1):685-705. DOI：[10.1146/annurev-physiol-030212-183653](<https://doi.org/10.1146/annurev-physiol-030212-183653>)。
+08. Chen Xiaorui, Luo Yang, Zhu Qing et al. (2024). Small extracellular vesicles from young plasma reverse age-related functional declines by improving mitochondrial energy metabolism. *Nature Aging*, 4(6):814-838. DOI：[10.1038/s43587-024-00612-4](<https://doi.org/10.1038/s43587-024-00612-4>)。
+09. Zhang Bohan, Lee David E., Trapp Alexandre et al. (2023). Multi-omic rejuvenation and lifespan extension on exposure to youthful circulation. *Nature Aging*, 3(8):948-964. DOI：[10.1038/s43587-023-00451-9](<https://doi.org/10.1038/s43587-023-00451-9>)。
+10. Lagunas-Rangel Francisco Alejandro (2024). Aging insights from heterochronic parabiosis models. *npj Aging*, 10(1):38. DOI：[10.1038/s41514-024-00166-0](<https://doi.org/10.1038/s41514-024-00166-0>)。
+11. Gulej Rafal, Nyúl-Tóth Ádám, Csik Boglarka et al. (2023). Rejuvenation of cerebromicrovascular function in aged mice through heterochronic parabiosis: insights into neurovascular coupling and the impact of young blood factors. *GeroScience*, 46(1):327-347. DOI：[10.1007/s11357-023-01039-2](<https://doi.org/10.1007/s11357-023-01039-2>)。

@@ -1,0 +1,4 @@
+openpyxl>=3.1.5,<4
+Pillow>=11.3,<14
+PyYAML>=6.0.3,<7
+matplotlib>=3.9,<4

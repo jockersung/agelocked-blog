@@ -146,3 +146,9 @@ SGS 是對成品做檢測，不是對整個生產流程做評估。
 - [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) 
 - [平平都花一樣的錢，為什麼他有感但你沒感覺？](/blog/precision-health-tools/supplement-bioavailability-gap/) 
 - [為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？](/blog/precision-health-tools/nuskin-pharmaceutical-standard/) 
+
+
+## 參考資料
+
+1. [SGS’s Chemical Solutions Laboratories Expand to Include Vitamin Testing](<https://www.sgs.com/en/news/2021/04/sgss-chemical-solutions-laboratories-in-harrisburg-pennsylvania-expand-to-include-vitamin-testing>)。SGS官方測試服務說明；未查得 DOI，來源頁已核對（2026-10-19）。
+2. [Questions and Answers on Dietary Supplements](<https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements>). FDA官方說明。未查得 DOI；來源身分已核對（2026-10-19）。

@@ -143,10 +143,10 @@ Richard Cawthon 在 2003 年的 *Lancet* 研究中追蹤了 143 名 60 歲以上
 
 ## 參考資料
 
-01. Carol W Greider, Elizabeth H Blackburn, 1985. [Identification of a specific telomere terminal transferase activity in tetrahymena extracts.](https://www.cell.com/fulltext/0092-8674%2885%2990170-9) *Cell.* 43(2):405-413.
-02. Richard M Cawthon et al., 2003. [Association between telomere length in blood and mortality in people aged 60 years or older.](https://pubmed.ncbi.nlm.nih.gov/12573379/) *Lancet.* 361(9355):393-5.
-03. Elissa S Epel et al., 2004. [Accelerated telomere shortening in response to life stress.](https://pubmed.ncbi.nlm.nih.gov/15574496/) *Proc Natl Acad Sci USA.* 101(49):17312-5.
-04. Joshua Denham et al., 2016. [Telomere Length Maintenance and Cardio-Metabolic Disease Prevention Through Exercise Training.](https://pubmed.ncbi.nlm.nih.gov/26914269/) *Sports Med.* 46(9):1213-1237.
-05. Judith Campisi, 2013. [Aging, cellular senescence, and cancer.](https://pubmed.ncbi.nlm.nih.gov/23140366/) *Annu Rev Physiol.* 75:685-705.
-06. Vera Gorbunova et al., 2021. [The role of retrotransposable elements in ageing and age-associated diseases.](https://pubmed.ncbi.nlm.nih.gov/34290424/) *Nature.* 596(7870):43-53.
-07. Kathryn Demanelis et al., 2020. [Determinants of telomere length across human tissues.](https://pubmed.ncbi.nlm.nih.gov/32913074/) *Science.* 369(6509):eaaz6876.
+01. Greider Carol W., Blackburn Elizabeth H. (1985). Identification of a specific telomere terminal transferase activity in tetrahymena extracts. *Cell*, 43(2):405-413. DOI：[10.1016/0092-8674(85)90170-9](<https://doi.org/10.1016/0092-8674%2885%2990170-9>)。
+02. Cawthon Richard M, Smith Ken R, O'Brien Elizabeth et al. (2003). Association between telomere length in blood and mortality in people aged 60 years or older. *The Lancet*, 361(9355):393-395. DOI：[10.1016/S0140-6736(03)12384-7](<https://doi.org/10.1016/S0140-6736%2803%2912384-7>)。
+03. Epel Elissa S., Blackburn Elizabeth H., Lin Jue et al. (2004). Accelerated telomere shortening in response to life stress. *Proceedings of the National Academy of Sciences*, 101(49):17312-17315. DOI：[10.1073/pnas.0407162101](<https://doi.org/10.1073/pnas.0407162101>)。
+04. Denham Joshua, O’Brien Brendan J., Charchar Fadi J. (2016). Telomere Length Maintenance and Cardio-Metabolic Disease Prevention Through Exercise Training. *Sports Medicine*, 46(9):1213-1237. DOI：[10.1007/s40279-016-0482-4](<https://doi.org/10.1007/s40279-016-0482-4>)。
+05. Campisi Judith (2013). Aging, Cellular Senescence, and Cancer. *Annual Review of Physiology*, 75(1):685-705. DOI：[10.1146/annurev-physiol-030212-183653](<https://doi.org/10.1146/annurev-physiol-030212-183653>)。
+06. Gorbunova Vera, Seluanov Andrei, Mita Paolo et al. (2021). The role of retrotransposable elements in ageing and age-associated diseases. *Nature*, 596(7870):43-53. DOI：[10.1038/s41586-021-03542-y](<https://doi.org/10.1038/s41586-021-03542-y>)。
+07. Demanelis Kathryn, Jasmine Farzana, Chen Lin S. et al. (2020). Determinants of telomere length across human tissues. *Science*, 369(6509):eaaz6876. DOI：[10.1126/science.aaz6876](<https://doi.org/10.1126/science.aaz6876>)。

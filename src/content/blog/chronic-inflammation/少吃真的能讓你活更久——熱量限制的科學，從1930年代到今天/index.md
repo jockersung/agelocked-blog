@@ -221,9 +221,9 @@ mTOR 被抑制有什麼好處？
 
 ## 參考資料
 
-01. Clive M McCay, Mary F Crowell, Lewis A Maynard, 1935. [The effect of retarded growth upon the length of life span and upon the ultimate body size.](https://pubmed.ncbi.nlm.nih.gov/13925718/) *J Nutr.* 10(1):63-79.
-02. Julie A Mattison et al., 2017. [Caloric restriction improves health and survival of rhesus monkeys.](https://pubmed.ncbi.nlm.nih.gov/28094793/) *Nat Commun.* 8:14063.
-03. O Spadaro et al., 2022. [Caloric restriction in humans reveals immunometabolic regulators of health span.](https://pubmed.ncbi.nlm.nih.gov/35084972/) *Science.* 375(6581):671-677.
-04. Yaru Liang et al., 2018. [Calorie restriction is the most reasonable anti-ageing intervention: a meta-analysis of survival curves.](https://pubmed.ncbi.nlm.nih.gov/29695755/) *Sci Rep.* 8(1):5779.
-05. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
-06. Ki Wung Chung, Hae Young Chung, 2019. [The Effects of Calorie Restriction on Autophagy: Role on Aging Intervention.](https://pubmed.ncbi.nlm.nih.gov/31817038/) *Nutrients.* 11(12):2923.
+01. McCay C.M., Crowell Mary F., Maynard L.A. (1935). The Effect of Retarded Growth Upon the Length of Life Span and Upon the Ultimate Body Size. *The Journal of Nutrition*, 10(1):63-79. DOI：[10.1093/jn/10.1.63](<https://doi.org/10.1093/jn/10.1.63>)。
+02. Mattison Julie A., Colman Ricki J., Beasley T. Mark et al. (2017). Caloric restriction improves health and survival of rhesus monkeys. *Nature Communications*, 8(1):14063. DOI：[10.1038/ncomms14063](<https://doi.org/10.1038/ncomms14063>)。
+03. Spadaro O., Youm Y., Shchukina I. et al. (2022). Caloric restriction in humans reveals immunometabolic regulators of health span. *Science*, 375(6581):671-677. DOI：[10.1126/science.abg7292](<https://doi.org/10.1126/science.abg7292>)。
+04. Liang Yaru, Liu Chang, Lu Maoyang et al. (2018). Calorie restriction is the most reasonable anti-ageing intervention: a meta-analysis of survival curves. *Scientific Reports*, 8(1):5779. DOI：[10.1038/s41598-018-24146-z](<https://doi.org/10.1038/s41598-018-24146-z>)。
+05. Madeo Frank, Carmona-Gutierrez Didac, Hofer Sebastian J. et al. (2019). Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential. *Cell Metabolism*, 29(3):592-610. DOI：[10.1016/j.cmet.2019.01.018](<https://doi.org/10.1016/j.cmet.2019.01.018>)。
+06. Chung Ki Wung, Chung Hae Young (2019). The Effects of Calorie Restriction on Autophagy: Role on Aging Intervention. *Nutrients*, 11(12):2923. DOI：[10.3390/nu11122923](<https://doi.org/10.3390/nu11122923>)。

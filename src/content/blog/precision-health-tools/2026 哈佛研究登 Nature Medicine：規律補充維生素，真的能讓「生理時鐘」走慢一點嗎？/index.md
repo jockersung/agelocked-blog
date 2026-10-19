@@ -75,7 +75,7 @@ slug: 'multivitamin-lifepak-slow-aging-clock'
 
 2 年累積，相當於生物老化軌跡比安慰劑組慢約 **4 個月**。
 
-![PCGrimAge變化軌跡](./PCGrimAge變化軌跡.png)
+![PCGrimAge變化軌跡](./PCGrimAge變化軌跡-agelocked-217.webp)
 
 三個值得特別注意的細節：
 
@@ -226,14 +226,14 @@ Prysm iO 光學掃描測的正是你皮膚的類胡蘿蔔素儲量，配合健�
 
 ## 參考資料
 
-01. Li S, et al., 2026. [Effects of daily multivitamin–multimineral and cocoa extract supplementation on epigenetic aging clocks in the COSMOS randomized clinical trial.](https://pubmed.ncbi.nlm.nih.gov/41803341/) *Nature Medicine.* 32(3):1012-1022.
-02. Cami N Christopheret, et al., 2026. [Effects of Randomized Multivitamin Supplementation on Carotenoids and α-Tocopherol in the COcoa Supplement and Multivitamin Outcomes Study.](https://pubmed.ncbi.nlm.nih.gov/41587736/) *J Acad Nutr Diet. *  126(5):156299.
-03. Belsky DW, Ryan CP, 2026. [A daily multivitamin slows the ticking of epigenetic clocks.](https://pubmed.ncbi.nlm.nih.gov/41803340/) *Nature Medicine.* 32(3):810-811.
-04. Harvard Gazette. [Daily multivitamin may slow biological aging.](https://news.harvard.edu/gazette/story/2026/03/daily-multivitamin-may-slow-biological-aging/) Published March 9, 2026. 
-04. Mass General Brigham. [COSMOS Trial Results Show Daily Multivitamin Use May Slow Biological Aging.](https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/daily-multivitamin-use-may-slow-aging) Published March 9, 2026.
-05. Bischoff-Ferrari HA, Gängler S, Wieczorek M, et al., 2025. [Individual and additive effects of vitamin D, omega-3 and exercise on DNA methylation clocks of biological aging in older adults from the DO-HEALTH trial.](https://pubmed.ncbi.nlm.nih.gov/39900648/) *Nat Aging.* 5(3):376-385.
-06. Mavrommatis C, Belsky DW, Ying K, et al., 2025. [An unbiased comparison of 14 epigenetic clocks in relation to 174 incident disease outcomes.](https://pubmed.ncbi.nlm.nih.gov/41402269/) *Nat Commun.* 16(1):11164.
-07. EBioMedicine Editorial, 2026. [Epigenetic clocks: advancing biological age measures towards meaningful clinical use.](https://pubmed.ncbi.nlm.nih.gov/41688162/) *EBioMedicine.* 124:106175.
-08. Chirag M Vyas, et al., 2024. [Effect of multivitamin-mineral supplementation versus placebo on cognitive function: results from the clinic subcohort of the COcoa Supplement and Multivitamin Outcomes Study (COSMOS) randomized clinical trial and meta-analysis of 3 cognitive studies within COSMOS.](https://pubmed.ncbi.nlm.nih.gov/38244989/) *Am J Clin Nutr.* 119(3):692-701.
+01. Li Sidong, Hamaya Rikuta, Zhu Haidong et al. (2026). Effects of daily multivitamin–multimineral and cocoa extract supplementation on epigenetic aging clocks in the COSMOS randomized clinical trial. *Nature Medicine*, 32(3):1012-1022. DOI：[10.1038/s41591-026-04239-3](<https://doi.org/10.1038/s41591-026-04239-3>)。
+02. Christopher Cami N., Erdman John W., Kim Eunjung et al. (2026). Effects of Randomized Multivitamin Supplementation on Carotenoids and α-Tocopherol in the COcoa Supplement and Multivitamin Outcomes Study. *Journal of the Academy of Nutrition and Dietetics*, 126(5):156299. DOI：[10.1016/j.jand.2026.156299](<https://doi.org/10.1016/j.jand.2026.156299>)。
+03. Belsky Daniel W., Ryan Calen P. (2026). A daily multivitamin slows the ticking of epigenetic clocks. *Nature Medicine*, 32(3):810-811. DOI：[10.1038/s41591-026-04249-1](<https://doi.org/10.1038/s41591-026-04249-1>)。
+04. Harvard Gazette. [Daily multivitamin may slow biological aging.](https://news.harvard.edu/gazette/story/2026/03/daily-multivitamin-may-slow-biological-aging/) Published March 9, 2026.。未查得 DOI；來源頁題名已核對（2026-10-19）。
+04. [COSMOS Trial Results Show Daily Multivitamin Use May Slow Biological Aging](<https://news.massgeneralbrigham.org/en/daily-multivitamin-use-may-slow-aging>). Mass General Brigham官方新聞稿。未查得 DOI；來源身分已核對（2026-10-19）。
+05. Bischoff-Ferrari Heike A., Gängler Stephanie, Wieczorek Maud et al. (2025). Individual and additive effects of vitamin D, omega-3 and exercise on DNA methylation clocks of biological aging in older adults from the DO-HEALTH trial. *Nature Aging*, 5(3):376-385. DOI：[10.1038/s43587-024-00793-y](<https://doi.org/10.1038/s43587-024-00793-y>)。
+06. Mavrommatis Christos, Belsky Daniel W., Ying Kejun et al. (2025). An unbiased comparison of 14 epigenetic clocks in relation to 174 incident disease outcomes. *Nature Communications*, 16(1):11164. DOI：[10.1038/s41467-025-66106-y](<https://doi.org/10.1038/s41467-025-66106-y>)。
+07. eBioMedicine (2026). Epigenetic clocks: advancing biological age measures towards meaningful clinical use. *eBioMedicine*, 124:106175. DOI：[10.1016/j.ebiom.2026.106175](<https://doi.org/10.1016/j.ebiom.2026.106175>)。
+08. Vyas Chirag M, Manson JoAnn E, Sesso Howard D et al. (2024). Effect of multivitamin-mineral supplementation versus placebo on cognitive function: results from the clinic subcohort of the COcoa Supplement and Multivitamin Outcomes Study (COSMOS) randomized clinical trial and meta-analysis of 3 cognitive studies within COSMOS. *The American Journal of Clinical Nutrition*, 119(3):692-701. DOI：[10.1016/j.ajcnut.2023.12.011](<https://doi.org/10.1016/j.ajcnut.2023.12.011>)。
 ---
 

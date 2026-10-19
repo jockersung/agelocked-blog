@@ -189,9 +189,9 @@ Prysm iO 給你細胞層級的截面。
 
 ## 參考資料
 
-01. Dial MB et al.,2025. [Validation of nocturnal resting heart rate and heart rate variability in consumer wearables.](https://pubmed.ncbi.nlm.nih.gov/40834291/) *Physiological Reports*. 13:e70527.
-02. Apple Inc., 2025. [Hypertension Notification Feature: Clinical Validation Study.](https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250507.pdf) FDA 510(k) Premarket Notification K250507. Cleared September 11, 2025.
-03. Schyvens AM et al., 2024. [Accuracy of Fitbit Charge 4, Garmin Vivosmart 4, and WHOOP Versus Polysomnography: Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/38557808/) *JMIR mHealth and uHealth.* 12:e52192.
-04. Athletech News, 2025. [How Wearables Are Evolving From Fitness Trackers to Health Systems.](https://athletechnews.com/how-wearables-are-evolving-from-fitness-trackers-to-health-systems/)
-05. Bohn T et al., 2017. [Host-related factors explaining interindividual variability of carotenoid bioavailability and tissue concentrations in humans.](https://pubmed.ncbi.nlm.nih.gov/28101967/) *Molecular Nutrition & Food Research.* 61(6):1600685.
-06. Smidt CR & Burke DS, 2004. Nutritional significance and measurement of carotenoids. *Current Topics in Nutraceutical Research.* 2(2):79–91.
+01. Dial Michael B., Hollander Margaret E., Vatne Emaly A. et al. (2025). Validation of nocturnal resting heart rate and heart rate variability in consumer wearables. *Physiological Reports*, 13(16):e70527. DOI：[10.14814/phy2.70527](<https://doi.org/10.14814/phy2.70527>)。
+02. [Hypertension Notification Feature: K250507](<https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250507.pdf>). FDA 510(k)原始文件。未查得 DOI；來源身分已核對（2026-10-19）。
+03. Schyvens An-Marie, Van Oost Nina Catharina, Aerts Jean-Marie et al. (2024). Accuracy of Fitbit Charge 4, Garmin Vivosmart 4, and WHOOP Versus Polysomnography: Systematic Review. *JMIR mHealth and uHealth*, 12:e52192-e52192. DOI：[10.2196/52192](<https://doi.org/10.2196/52192>)。
+04. [How Wearables Are Evolving From Fitness Trackers to Health Systems](<https://athletechnews.com/how-wearables-are-evolving-from-fitness-trackers-to-health-systems/>). Elizabeth Ostertag，Athletech News，2025-12-31；原始新聞頁題名與作者已核對。未查得 DOI；來源身分已核對（2026-10-19）。
+05. Bohn Torsten, Desmarchelier Charles, Dragsted Lars O. et al. (2017). Host‐related factors explaining interindividual variability of carotenoid bioavailability and tissue concentrations in humans. *Molecular Nutrition &amp; Food Research*, 61(6):1600685. DOI：[10.1002/mnfr.201600685](<https://doi.org/10.1002/mnfr.201600685>)。
+06. Smidt CR, Burke DS (2004). [Nutritional significance and measurement of carotenoids.](<https://www.researchgate.net/publication/279765631_Nutritional_significance_and_measurement_of_carotenoids>) *Current Topics in Nutraceutical Research*, 2(2):79–91。未查得 DOI；ResearchGate書目頁之題名、作者與卷頁已核對（2026-10-19），未取得全文。

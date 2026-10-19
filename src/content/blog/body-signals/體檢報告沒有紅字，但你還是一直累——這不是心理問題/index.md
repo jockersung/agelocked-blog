@@ -128,3 +128,9 @@ ctaBridge: "我看了十五年的臨床數據，最常見的落差就是「報�
 我整理了一份[【身體警報自我檢測清單】](/assessment)，從慢性發炎的角度設計，不只是問你「有沒有這個症狀」，而是幫你看症狀組合背後可能指向的方向。
 
 這份清單幫助你去思考要不要多驗幾項，比「我最近身體不太好，只需要多休息就好」被動思考來得更需要。
+
+
+## 參考資料
+
+1. Franceschi C., Campisi J. (2014). Chronic Inflammation (Inflammaging) and Its Potential Contribution to Age-Associated Diseases. *The Journals of Gerontology Series A: Biological Sciences and Medical Sciences*, 69(Suppl 1):S4-S9. DOI：[10.1093/gerona/glu057](<https://doi.org/10.1093/gerona/glu057>)。
+2. Ferrucci Luigi, Fabbri Elisa (2018). Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty. *Nature Reviews Cardiology*, 15(9):505-522. DOI：[10.1038/s41569-018-0064-2](<https://doi.org/10.1038/s41569-018-0064-2>)。

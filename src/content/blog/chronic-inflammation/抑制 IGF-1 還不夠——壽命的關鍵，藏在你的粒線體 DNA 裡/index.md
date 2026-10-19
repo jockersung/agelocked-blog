@@ -142,4 +142,4 @@ mtDNA 突變累積 → 粒線體功能下降 → 細胞能量不足 → **氧化
 
 **參考資料**
 
-01. Jimenez-Hidalgo et al., 2026. [he longevity effects of reduced IGF-1 signaling depend on the stability of the mitochondrial genome.](https://pubmed.ncbi.nlm.nih.gov/41931604/)  *Sci Adv* 12(14):eaea4279.
+01. Shemtov Sarah J., McGann Eric, Carrillo Lucy et al. (2026). The longevity effects of reduced IGF-1 signaling depend on the stability of the mitochondrial genome. *Science Advances*, 12(14):eaea4279. DOI：[10.1126/sciadv.aea4279](<https://doi.org/10.1126/sciadv.aea4279>)。

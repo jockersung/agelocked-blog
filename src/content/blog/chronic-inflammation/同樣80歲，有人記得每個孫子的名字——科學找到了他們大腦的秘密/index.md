@@ -155,4 +155,4 @@ Healthspan，從現在就開始計算。
 
 ## 參考資料
 
-01. Disouky A et al., 2026. [Human hippocampal neurogenesis in adulthood, ageing and Alzheimer's disease.](https://pubmed.ncbi.nlm.nih.gov/41741649/) *Nature* 10.1038/s41586-026-10169-4.
+01. Disouky Ahmed, Sanborn Mark A., Sabitha K. R. et al. (2026). Human hippocampal neurogenesis in adulthood, ageing and Alzheimer’s disease. *Nature*, 652(8112):1264-1273. DOI：[10.1038/s41586-026-10169-4](<https://doi.org/10.1038/s41586-026-10169-4>)。

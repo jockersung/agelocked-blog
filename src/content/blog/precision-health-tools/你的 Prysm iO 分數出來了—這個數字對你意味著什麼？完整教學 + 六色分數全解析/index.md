@@ -211,3 +211,9 @@ App 會幫你把所有數值畫成趨勢圖，讓你看見：
 如果你想知道「我的數字，具體代表我最優先需要補什麼」，加我 LINE，我們用 15 分鐘把你的狀況說清楚。
 
 不是每個人都需要一樣的方案，但每個人都值得知道自己真正需要什麼。
+
+
+## 參考資料
+
+1.  (2026). Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans. *Food &amp; Nutrition Journal*, 11(1). DOI：[10.29011/2575-7091.100334](<https://doi.org/10.29011/2575-7091.100334>)。
+2. [Prysm iO User’s Manual and Warranty](<https://www.nuskin.com/content/dam/eu-library/website-content/products/pharmanex/prysm-io/device-care/prysm-io-user-manual-en.pdf>)。Nu Skin官方操作手冊；非臨床診斷效能證據；未查得 DOI，來源頁已核對（2026-10-19）。

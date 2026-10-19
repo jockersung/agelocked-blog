@@ -136,9 +136,9 @@ M 型的 M，可以是 Male，可以是 Middle-aged，也可以是 Mitochondria�
 
 ## 參考資料
 
-01. Karger et al., 2023. [Cellular Senescence: Ageing and Androgenetic Alopecia.](https://karger.com/drm/article/239/4/533/836627/) *Dermatology.* 239(4):533-547.
-02. Ru DT, Jie LY, Yu JS et al., 2025. [Progress on mitochondria and hair follicle development in androgenetic alopecia: relationships and therapeutic perspectives.](https://link.springer.com/article/10.1186/s13287-025-04182-z) *Stem Cell Research & Therapy.* 16:44.
-03. Xiao Y, Zhang Y, Deng S et al., 2025. [Immune and non-immune interactions in the pathogenesis of androgenetic alopecia.](https://pubmed.ncbi.nlm.nih.gov/39966675/) *Clinical Reviews in Allergy & Immunology.* 68(1):22.
-04. Mahé YF et al., 2000. [Androgenetic alopecia and microinflammation.](https://pubmed.ncbi.nlm.nih.gov/10940115/) *International Journal of Dermatology.* 39:576–584.
-05. Jung YH et al., 2022. [Cyanidin 3-O-arabinoside suppresses DHT-induced dermal papilla cell senescence by modulating p38-dependent ER-mitochondria contacts.](https://pubmed.ncbi.nlm.nih.gov/35246215/) *Journal of Biomedical Science.* 29:17.
-06. Oiwoh SO et al., 2024. [Androgenetic alopecia: a review.](https://journals.lww.com/npmj/fulltext/2024/31020/androgenetic_alopecia__a_review.1.aspx) *The Nigerian Postgraduate Medical Journal.* 31:85–92.
+01. Deng Yongqiong, Wang Mengxue, He Yuxin et al. (2023). Cellular Senescence: Ageing and Androgenetic Alopecia. *Dermatology*, 239(4):533-541. DOI：[10.1159/000530681](<https://doi.org/10.1159/000530681>)。
+02. Dong Ting-ru, Li Yu-jie, Jin Shi-yu et al. (2025). Progress on mitochondria and hair follicle development in androgenetic alopecia: relationships and therapeutic perspectives. *Stem Cell Research &amp; Therapy*, 16(1):44. DOI：[10.1186/s13287-025-04182-z](<https://doi.org/10.1186/s13287-025-04182-z>)。
+03. Xiao Yu, Zhang Yi, Deng Shuting et al. (2025). Immune and Non-immune Interactions in the Pathogenesis of Androgenetic Alopecia.. *Clinical reviews in allergy & immunology*, 68(1):22. DOI：[10.1007/s12016-025-09034-5](<https://doi.org/10.1007/s12016-025-09034-5>)。
+04. Mahé Yann F., Michelet Jean‐François, Billoni Nelly et al. (2000). Androgenetic alopecia and microinflammation. *International Journal of Dermatology*, 39(8):576-584. DOI：[10.1046/j.1365-4362.2000.00612.x](<https://doi.org/10.1046/j.1365-4362.2000.00612.x>)。
+05. Jung Young Hyun, Chae Chang Woo, Choi Gee Euhn et al. (2022). Cyanidin 3-O-arabinoside suppresses DHT-induced dermal papilla cell senescence by modulating p38-dependent ER-mitochondria contacts. *Journal of Biomedical Science*, 29(1):17. DOI：[10.1186/s12929-022-00800-7](<https://doi.org/10.1186/s12929-022-00800-7>)。
+06. Oiwoh Sebastine Oseghae, Enitan Ademola Olusegun, Adegbosin Olubola Titilope et al. (2024). Androgenetic Alopecia: A Review. *Nigerian Postgraduate Medical Journal*, 31(2):85-92. DOI：[10.4103/npmj.npmj_47_24](<https://doi.org/10.4103/npmj.npmj_47_24>)。

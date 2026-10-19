@@ -143,3 +143,10 @@ Inflammaging 發生在「還沒生病」和「已經生病」之間的那個光�
 
 我整理了一份[【身體警報自我檢測清單】](/assessment)，幫你把這些訊號系統化整理，找出你的 Inflammaging 現在在哪個程度。
 
+
+
+## 參考資料
+
+1. FRANCESCHI CLAUDIO, BONAFÈ MASSIMILIANO, VALENSIN SILVANA et al. (2000). Inflamm‐aging: An Evolutionary Perspective on Immunosenescence. *Annals of the New York Academy of Sciences*, 908(1):244-254. DOI：[10.1111/j.1749-6632.2000.tb06651.x](<https://doi.org/10.1111/j.1749-6632.2000.tb06651.x>)。
+2. Xing Dong, Jin Yihan, Jin Baofang (2024). A narrative review on inflammaging and late-onset hypogonadism. *Frontiers in Endocrinology*, 15:1291389. DOI：[10.3389/fendo.2024.1291389](<https://doi.org/10.3389/fendo.2024.1291389>)。
+3. Leproult Rachel (2011). Effect of 1 Week of Sleep Restriction on Testosterone Levels in Young Healthy Men. *JAMA*, 305(21):2173. DOI：[10.1001/jama.2011.710](<https://doi.org/10.1001/jama.2011.710>)。

@@ -131,3 +131,9 @@ slug: 'aging-quantified-bryan-johnson-blueprint'
 - [壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？](/blog/chronic-inflammation/longevity-55-percent-genetics/) 
 
 ---
+
+
+## 參考資料
+
+1. [Bryan Johnson’s Evening Routine](<https://blueprint.bryanjohnson.com/en-au/blogs/news/bryan-johnsons-evening-routine>)。作者官方自我紀錄；不是對一般族群的隨機對照試驗；未查得 DOI，來源頁已核對（2026-10-19）。
+2. Fultz Nina E., Bonmassar Giorgio, Setsompop Kawin et al. (2019). Coupled electrophysiological, hemodynamic, and cerebrospinal fluid oscillations in human sleep. *Science*, 366(6465):628-631. DOI：[10.1126/science.aax5440](<https://doi.org/10.1126/science.aax5440>)。

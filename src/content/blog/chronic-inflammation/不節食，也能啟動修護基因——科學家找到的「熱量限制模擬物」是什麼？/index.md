@@ -178,9 +178,9 @@ CRM 的研究方向，把「抗老化」從「感覺學」推進到了「精準�
 
 ## 參考資料
 
-01. Jamie L Barger et al., 2008. [A low dose of dietary resveratrol partially mimics caloric restriction and retards aging parameters in mice.](https://pubmed.ncbi.nlm.nih.gov/18545640/) *PLoS One.* 3(6):e2264.
-02. Eva Serna et al., 2020. [A Novel Micronutrient Blend Mimics Calorie Restriction Transcriptomics in Multiple Tissues of Mice and Increases Lifespan and Mobility in C. elegans.](https://pubmed.ncbi.nlm.nih.gov/32046035/) *Nutrients.* 12(2):486.
-03. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
-04. Donald K Ingram et al., 2006. [Calorie restriction mimetics: an emerging research field.](https://pubmed.ncbi.nlm.nih.gov/16529597/) *Aging Cell.* 5(2):97-108.
-05. Cheol-Koo Lee et al., 2004. [The impact of alpha-lipoic acid, coenzyme Q10 and caloric restriction on life span and gene expression patterns in mice.](https://pubmed.ncbi.nlm.nih.gov/15019971/) *Free Radic Biol Med.* 36(8):1043-57.
-06. Zoe E Gillespie et al., 2016. [Better Living through Chemistry: Caloric Restriction (CR) and CR Mimetics Alter Genome Function to Promote Increased Health and Lifespan.](https://pubmed.ncbi.nlm.nih.gov/27563319/) *Front Genet.* 7:142.
+01. Barger Jamie L., Kayo Tsuyoshi, Vann James M. et al. (2008). A Low Dose of Dietary Resveratrol Partially Mimics Caloric Restriction and Retards Aging Parameters in Mice. *PLoS ONE*, 3(6):e2264. DOI：[10.1371/journal.pone.0002264](<https://doi.org/10.1371/journal.pone.0002264>)。
+02. Serna Eva, Mastaloudis Angela, Martorell Patricia et al. (2020). A Novel Micronutrient Blend Mimics Calorie Restriction Transcriptomics in Multiple Tissues of Mice and Increases Lifespan and Mobility in C. elegans. *Nutrients*, 12(2):486. DOI：[10.3390/nu12020486](<https://doi.org/10.3390/nu12020486>)。
+03. Madeo Frank, Carmona-Gutierrez Didac, Hofer Sebastian J. et al. (2019). Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential. *Cell Metabolism*, 29(3):592-610. DOI：[10.1016/j.cmet.2019.01.018](<https://doi.org/10.1016/j.cmet.2019.01.018>)。
+04. Ingram Donald K., Zhu Min, Mamczarz Jacek et al. (2006). Calorie restriction mimetics: an emerging research field. *Aging Cell*, 5(2):97-108. DOI：[10.1111/j.1474-9726.2006.00202.x](<https://doi.org/10.1111/j.1474-9726.2006.00202.x>)。
+05. Lee Cheol-Koo, Pugh Thomas D, Klopp Roger G et al. (2004). The impact of α-lipoic acid, coenzyme Q10 and caloric restriction on life span and gene expression patterns in mice. *Free Radical Biology and Medicine*, 36(8):1043-1057. DOI：[10.1016/j.freeradbiomed.2004.01.015](<https://doi.org/10.1016/j.freeradbiomed.2004.01.015>)。
+06. Gillespie Zoe E., Pickering Joshua, Eskiw Christopher H. (2016). Better Living through Chemistry: Caloric Restriction (CR) and CR Mimetics Alter Genome Function to Promote Increased Health and Lifespan. *Frontiers in Genetics*, 7. DOI：[10.3389/fgene.2016.00142](<https://doi.org/10.3389/fgene.2016.00142>)。

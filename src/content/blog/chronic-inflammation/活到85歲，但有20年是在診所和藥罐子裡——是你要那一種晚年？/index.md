@@ -163,8 +163,8 @@ slug: "healthspan-vs-lifespan"
 
 ## 參考資料
 
-01. J F Fries, 1980. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.
-02. Eileen M Crimmins, 2015. [Lifespan and Healthspan: Past, Present, and Promise.](https://pubmed.ncbi.nlm.nih.gov/26561272/) *Gerontologist.* 55(6):901–911.
-03. Armin Garmany, Satsuki Yamada, Andre Terzic, 2021. [Longevity leap: mind the healthspan gap.](https://pubmed.ncbi.nlm.nih.gov/34556664/) *NPJ Regen Med.* 6(1):57.
-04. Yifan Yang et al., 2025. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.
-05. Armin Garmany, Andre Terzic, 2025. [Healthspan-lifespan gap differs in magnitude and disease contribution across world regions.](https://pubmed.ncbi.nlm.nih.gov/40890374/) *Commun Med (Lond).* 5(1):381.
+01. Fries James F. (1980). Aging, Natural Death, and the Compression of Morbidity. *New England Journal of Medicine*, 303(3):130-135. DOI：[10.1056/NEJM198007173030304](<https://doi.org/10.1056/NEJM198007173030304>)。
+02. Crimmins Eileen M. (2015). Lifespan and Healthspan: Past, Present, and Promise. *The Gerontologist*, 55(6):901-911. DOI：[10.1093/geront/gnv130](<https://doi.org/10.1093/geront/gnv130>)。
+03. Garmany Armin, Yamada Satsuki, Terzic Andre (2021). Longevity leap: mind the healthspan gap. *npj Regenerative Medicine*, 6(1):57. DOI：[10.1038/s41536-021-00169-5](<https://doi.org/10.1038/s41536-021-00169-5>)。
+04. Yang Yifan, Mayo Avi, Levy Tomer et al. (2025). Compression of morbidity by interventions that steepen the survival curve. *Nature Communications*, 16(1):3340. DOI：[10.1038/s41467-025-57807-5](<https://doi.org/10.1038/s41467-025-57807-5>)。
+05. Garmany Armin, Terzic Andre (2025). Healthspan-lifespan gap differs in magnitude and disease contribution across world regions. *Communications Medicine*, 5(1):381. DOI：[10.1038/s43856-025-01111-2](<https://doi.org/10.1038/s43856-025-01111-2>)。

@@ -108,6 +108,6 @@ ctaBridge: "腰圍是最誠實的代謝指標，但它只告訴你結果。先�
 
 ## 參考資料
 
-01. Pontzer H, et al. (2021). [Daily energy expenditure through the human life course.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8370708/) *Science*, 373(6556), 808–812.
-02. Tchernof A, Despres JP. (2013). [Pathophysiology of human visceral obesity: an update.](https://pubmed.ncbi.nlm.nih.gov/23303913/) *Physiol Rev*, 93(1), 359–404.
-03. Hotamisligil GS. (2017). [Inflammation, metaflammation and immunometabolic disorders.](https://pubmed.ncbi.nlm.nih.gov/28179656/) *Nature*, 542(7640), 177–185.
+01. Pontzer Herman, Yamada Yosuke, Sagayama Hiroyuki et al. (2021). Daily energy expenditure through the human life course. *Science*, 373(6556):808-812. DOI：[10.1126/science.abe5017](<https://doi.org/10.1126/science.abe5017>)。
+02. Tchernof André, Després Jean-Pierre (2013). Pathophysiology of Human Visceral Obesity: An Update. *Physiological Reviews*, 93(1):359-404. DOI：[10.1152/physrev.00033.2011](<https://doi.org/10.1152/physrev.00033.2011>)。
+03. Hotamisligil Gökhan S. (2017). Inflammation, metaflammation and immunometabolic disorders. *Nature*, 542(7640):177-185. DOI：[10.1038/nature21363](<https://doi.org/10.1038/nature21363>)。

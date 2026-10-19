@@ -183,8 +183,8 @@ Nrf2 通路的激活，可以透過蘿蔔硫素等植化素達到。
 
 ## 參考資料
 
-01. David E Harrison et al., 2009. [Rapamycin fed late in life extends lifespan in genetically heterogeneous mice.](https://pubmed.ncbi.nlm.nih.gov/19587680/) *Nature.* 460(7253):392-5.
-02. Nir Barzilai et al., 2016. [Metformin as a Tool to Target Aging.](https://pubmed.ncbi.nlm.nih.gov/27304501/) *Cell Metab.* 23(6):1060-1065.
-03. Junzhe Huang et al., 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/39719089/) *Cell Metab.* 37(12):2362-2380.e8.
-04. Frank Madeo et al., 2019. [Caloric Restriction Mimetics against Age-Associated Disease.](https://pubmed.ncbi.nlm.nih.gov/30849361/) *Cell Metab.* 29(3):592-610.
-05. Sebastian Brandhorst et al., 2024. [Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk.](https://pubmed.ncbi.nlm.nih.gov/38383456/) *Nat Commun.* 15(1):1309.
+01. Harrison David E., Strong Randy, Sharp Zelton Dave et al. (2009). Rapamycin fed late in life extends lifespan in genetically heterogeneous mice. *Nature*, 460(7253):392-395. DOI：[10.1038/nature08221](<https://doi.org/10.1038/nature08221>)。
+02. Barzilai Nir, Crandall Jill P., Kritchevsky Stephen B. et al. (2016). Metformin as a Tool to Target Aging. *Cell Metabolism*, 23(6):1060-1065. DOI：[10.1016/j.cmet.2016.05.011](<https://doi.org/10.1016/j.cmet.2016.05.011>)。
+03. Huang Junzhe, Kwok Andrew J., Li Jason Chak Yan et al. (2025). Body-wide multi-omic counteraction of aging with GLP-1R agonism. *Cell Metabolism*, 37(12):2362-2380.e8. DOI：[10.1016/j.cmet.2025.10.014](<https://doi.org/10.1016/j.cmet.2025.10.014>)。
+04. Madeo Frank, Carmona-Gutierrez Didac, Hofer Sebastian J. et al. (2019). Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential. *Cell Metabolism*, 29(3):592-610. DOI：[10.1016/j.cmet.2019.01.018](<https://doi.org/10.1016/j.cmet.2019.01.018>)。
+05. Brandhorst Sebastian, Levine Morgan E., Wei Min et al. (2024). Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk. *Nature Communications*, 15(1):1309. DOI：[10.1038/s41467-024-45260-9](<https://doi.org/10.1038/s41467-024-45260-9>)。
