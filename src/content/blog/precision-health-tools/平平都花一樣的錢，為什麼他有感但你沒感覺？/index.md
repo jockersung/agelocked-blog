@@ -161,7 +161,7 @@ CoQ10 是脂溶性成分，在一般粉末膠囊劑型中，吸收率極低，�
 
 ## 參考資料
 
-01. Prasad S et al., 2014. [Curcumin and its analogues: a potential natural compound against HIV infection and AIDS.](https://pubmed.ncbi.nlm.nih.gov/25233534/) *Food Funct.* 5(9):1992-2003.
-02. Shaikh J et al., 2009. [Nanoparticle encapsulation improves oral bioavailability of curcumin by at least 9-fold when compared to curcumin administered with piperine as absorption enhancer.](https://pubmed.ncbi.nlm.nih.gov/19768725/) *Eur J Pharm Sci.* 37(3-4):223-30.
-03. Shils ME, Olson JA, Shike M, Ross AC, 1999. Modern Nutrition in Health and Disease. 9th ed. Lippincott Williams & Wilkins.
-04. Pénélope A Andreux et al., 2019. [The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans.](https://pubmed.ncbi.nlm.nih.gov/31226288/) *Nat Metab.* 1(6):595-603.
+01. Prasad Sahdeo, Tyagi Amit K. (2015). Curcumin and its analogues: a potential natural compound against HIV infection and AIDS. *Food &amp; Function*, 6(11):3412-3419. DOI：[10.1039/c5fo00485c](<https://doi.org/10.1039/c5fo00485c>)。
+02. Shaikh J., Ankola D.D., Beniwal V. et al. (2009). Nanoparticle encapsulation improves oral bioavailability of curcumin by at least 9-fold when compared to curcumin administered with piperine as absorption enhancer. *European Journal of Pharmaceutical Sciences*, 37(3-4):223-230. DOI：[10.1016/j.ejps.2009.02.019](<https://doi.org/10.1016/j.ejps.2009.02.019>)。
+03. [Modern nutrition in health and disease](<https://search.worldcat.org/title/39605414>). WorldCat 1999年第9版書目。未查得 DOI；來源身分已核對（2026-10-19）。
+04. Andreux Pénélope A., Blanco-Bose William, Ryu Dongryeol et al. (2019). The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans. *Nature Metabolism*, 1(6):595-603. DOI：[10.1038/s42255-019-0073-4](<https://doi.org/10.1038/s42255-019-0073-4>)。

@@ -121,5 +121,5 @@ mTOR 是我們在前幾篇反覆提到的概念，它是細胞的「生長感應
 
 ## 參考資料
 
-01. Junzhe Huang et al., 2025. [Body-wide multi-omic counteraction of aging with GLP-1R agonism.](https://pubmed.ncbi.nlm.nih.gov/39719089/) *Cell Metab.* 37(12):2362-2380.e8.
-02. Francesca Celletti, Jeremy Farrar, Luz De Regil, 2025. [World Health Organization Guideline on the Use and Indications of Glucagon-Like Peptide-1 Therapies for the Treatment of Obesity in Adults.](https://jamanetwork.com/journals/jama/fullarticle/2833914) *JAMA.*
+01. Huang Junzhe, Kwok Andrew J., Li Jason Chak Yan et al. (2025). Body-wide multi-omic counteraction of aging with GLP-1R agonism. *Cell Metabolism*, 37(12):2362-2380.e8. DOI：[10.1016/j.cmet.2025.10.014](<https://doi.org/10.1016/j.cmet.2025.10.014>)。
+02. Celletti Francesca, Farrar Jeremy, De Regil Luz (2026). World Health Organization Guideline on the Use and Indications of Glucagon-Like Peptide-1 Therapies for the Treatment of Obesity in Adults.. *JAMA*, 335(5):434. DOI：[10.1001/jama.2025.24288](<https://doi.org/10.1001/jama.2025.24288>)。

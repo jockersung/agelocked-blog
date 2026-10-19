@@ -153,19 +153,19 @@ ctaBridge: "凡是能被測量的，就能被改進。量化的第一步不用�
 
 ## 參考資料
 
-01. Steve Horvath, 2013. [DNA methylation age of human tissues and cell types.](https://pubmed.ncbi.nlm.nih.gov/24138928/) *Genome Biol.* 14(10):R115.
-02. Morgan E Levine et al., 2018. [An epigenetic biomarker of aging for lifespan and healthspan.](https://pubmed.ncbi.nlm.nih.gov/29676998/) *Aging (Albany NY)*. 10(4):573–591.
-03. Ake T Lu et al., 2019. [DNA methylation GrimAge strongly predicts lifespan and healthspan.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/) *Aging (Albany NY)*. 11(2):303–327.
-04. Daniel W Belsky et al., 2022. [DunedinPACE, a DNA methylation biomarker of the pace of aging.](https://pubmed.ncbi.nlm.nih.gov/35029144/) *Elife.* 11:e73420.
-05. David H Meyer, Björn Schumacher, 2021. [BiT age: A transcriptome‐based aging clock near the theoretical limit of accuracy.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7963339/) *Aging Cell.* 20(3):e13320.
-06. Caio M P F Batalha et al., 2025. [A combination of differential expression and network connectivity analyses identifies a common set of RNA splicing and processing genes altered with age across human tissues.](https://pubmed.ncbi.nlm.nih.gov/41460210/) *Aging (Albany NY)*. 17(12):2916–2949.
-07. Zeming Wu et al., 2023. [Deciphering RNA m6A regulation in aging.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10577575/) *Aging Cell.* 22(10):e13972.
-08. Jasminka Krištić et al., 2014. [Glycans are a novel biomarker of chronological and biological ages.](https://pubmed.ncbi.nlm.nih.gov/24325898/) *J Gerontol A Biol Sci Med Sci.* 69(7):779–89.
-09. Yu Guo et al., 2024. [Plasma proteomic profiles predict future dementia in healthy adults.](https://pubmed.ncbi.nlm.nih.gov/38347190/) *Nat Aging.* 4(2):247–260.
-10. Heidi Ledford. [Blood test holds promise for predicting when Alzheimer's symptoms will start.](https://www.nature.com/articles/d41586-026-00531-x) *Nature.*
-11. Xiaotao Shen et al., 2024. [Nonlinear dynamics of multi-omics profiles during human aging.](https://www.nature.com/articles/s43587-024-00692-2) *Nature Aging.* 4:1619–1634.
-12. Rubén López-Bueno et al., 2022. [Thresholds of handgrip strength for all-cause, cancer, and cardiovascular mortality.](https://pubmed.ncbi.nlm.nih.gov/36332759/) *Ageing Res Rev.* 82:101778.
-13. Jesse R Poganik et al., 2023. [Biological age is increased by stress and restored upon recovery.](https://pubmed.ncbi.nlm.nih.gov/37086720/) *Cell Metab.* 35(5):807–820.e5.
-14. Jijuan Zhang et al., 2025. [Plasma Proteomics Reveals Biomarkers and Undulating Changes in Metabolic Aging.](https://pubmed.ncbi.nlm.nih.gov/41356597/) *Research (Wash D C).* 8:1004.
-15. Runyu Liang et al., 2024. [Epigenetic Clocks: Beyond Biological Age, Using the Past to Predict the Present and Future.](https://pubmed.ncbi.nlm.nih.gov/39751861/) *Aging Dis.* 16(6):3520–3545.
-16. Tomasz Wilmanski et al., 2021. [Gut microbiome pattern reflects healthy ageing and predicts survival in humans.](https://pubmed.ncbi.nlm.nih.gov/33619379/) *Nat Metab.* 3(2):274–286.
+01. Horvath Steve (2013). DNA methylation age of human tissues and cell types. *Genome Biology*, 14(10):3156. DOI：[10.1186/gb-2013-14-10-r115](<https://doi.org/10.1186/gb-2013-14-10-r115>)。
+02. Levine Morgan E., Lu Ake T., Quach Austin et al. (2018). An epigenetic biomarker of aging for lifespan and healthspan. *Aging*, 10(4):573-591. DOI：[10.18632/aging.101414](<https://doi.org/10.18632/aging.101414>)。
+03. Lu Ake T., Quach Austin, Wilson James G. et al. (2019). DNA methylation GrimAge strongly predicts lifespan and healthspan. *Aging*, 11(2):303-327. DOI：[10.18632/aging.101684](<https://doi.org/10.18632/aging.101684>)。
+04. Belsky Daniel W, Caspi Avshalom, Corcoran David L et al. (2022). DunedinPACE, a DNA methylation biomarker of the pace of aging. *eLife*, 11:e73420. DOI：[10.7554/eLife.73420](<https://doi.org/10.7554/eLife.73420>)。
+05. Meyer David H., Schumacher Björn (2021). BiT age: A transcriptome‐based aging clock near the theoretical limit of accuracy. *Aging Cell*, 20(3):e13320. DOI：[10.1111/acel.13320](<https://doi.org/10.1111/acel.13320>)。
+06. Batalha Caio M.P.F., Fujita André, de Souza-Pinto Nadja C. (2025). A combination of differential expression and network connectivity analyses identifies a common set of RNA splicing and processing genes altered with age across human tissues. *Aging*, 17(12):2916-2949. DOI：[10.18632/aging.206347](<https://doi.org/10.18632/aging.206347>)。
+07. Wu Zeming, Ren Jie, Liu Guang‐Hui (2023). Deciphering RNA m 6 A regulation in aging: Perspectives on current advances and future directions. *Aging Cell*, 22(10):e13972. DOI：[10.1111/acel.13972](<https://doi.org/10.1111/acel.13972>)。
+08. Krištić Jasminka, Vučković Frano, Menni Cristina et al. (2013). Glycans Are a Novel Biomarker of Chronological and Biological Ages. *The Journals of Gerontology: Series A*, 69(7):779-789. DOI：[10.1093/gerona/glt190](<https://doi.org/10.1093/gerona/glt190>)。
+09. Guo Yu, You Jia, Zhang Yi et al. (2024). Plasma proteomic profiles predict future dementia in healthy adults. *Nature Aging*, 4(2):247-260. DOI：[10.1038/s43587-023-00565-0](<https://doi.org/10.1038/s43587-023-00565-0>)。
+10. Ledford Heidi (2026). Blood test holds promise for predicting when Alzheimer’s symptoms will start. *Nature*. DOI：[10.1038/d41586-026-00531-x](<https://doi.org/10.1038/d41586-026-00531-x>)。
+11. Shen Xiaotao, Wang Chuchu, Zhou Xin et al. (2024). Nonlinear dynamics of multi-omics profiles during human aging. *Nature Aging*, 4(11):1619-1634. DOI：[10.1038/s43587-024-00692-2](<https://doi.org/10.1038/s43587-024-00692-2>)。
+12. López-Bueno Rubén, Andersen Lars Louis, Koyanagi Ai et al. (2022). Thresholds of handgrip strength for all-cause, cancer, and cardiovascular mortality: A systematic review with dose-response meta-analysis. *Ageing Research Reviews*, 82:101778. DOI：[10.1016/j.arr.2022.101778](<https://doi.org/10.1016/j.arr.2022.101778>)。
+13. Poganik Jesse R., Zhang Bohan, Baht Gurpreet S. et al. (2023). Biological age is increased by stress and restored upon recovery. *Cell Metabolism*, 35(5):807-820.e5. DOI：[10.1016/j.cmet.2023.03.015](<https://doi.org/10.1016/j.cmet.2023.03.015>)。
+14. Zhang Jijuan, Yu Hancheng, Xiong Yurong et al. (2025). Plasma Proteomics Reveals Biomarkers and Undulating Changes in Metabolic Aging. *Research*, 8:1004. DOI：[10.34133/research.1004](<https://doi.org/10.34133/research.1004>)。
+15. Liang Runyu, Tang Qiang, Chen Jia et al. (2024). Epigenetic Clocks: Beyond Biological Age, Using the Past to Predict the Present and Future. *Aging and disease*, 0. DOI：[10.14336/AD.2024.1495](<https://doi.org/10.14336/AD.2024.1495>)。
+16. Wilmanski Tomasz, Diener Christian, Rappaport Noa et al. (2021). Gut microbiome pattern reflects healthy ageing and predicts survival in humans. *Nature Metabolism*, 3(2):274-286. DOI：[10.1038/s42255-021-00348-0](<https://doi.org/10.1038/s42255-021-00348-0>)。

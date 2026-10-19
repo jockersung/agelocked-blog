@@ -191,9 +191,9 @@ slug: 'polyphenol-nrf2-antioxidant-myth'
 
 ## 參考資料
 
-01. Kanner J, 2020. [Polyphenols by Generating H₂O₂, Affect Cell Redox Signaling, Inhibit PTPs and Activate Nrf2 Axis for Adaptation and Cell Surviving: In Vitro, In Vivo and Human Health.](https://pubmed.ncbi.nlm.nih.gov/32867057/) *Antioxidants*, 9(9):797.
-02. Bjelakovic G et al., 2007. [Mortality in randomized trials of antioxidant supplements for primary and secondary prevention: systematic review and meta-analysis.](https://pubmed.ncbi.nlm.nih.gov/17327526/) *JAMA*, 297(8):842–857. 
-03. Bjelakovic G et al., 2012. [Antioxidant supplements for prevention of mortality in healthy participants and patients with various diseases.](https://pubmed.ncbi.nlm.nih.gov/22419320/) *Cochrane Database of Systematic Reviews*, (3):CD007176. 
-04. Forman HJ et al., 2014. [How do nutritional antioxidants really work: nucleophilic tone and para-hormesis versus free radical scavenging in vivo.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3852196/) *Free Radical Biology and Medicine*, 66:24–35.
-05. Di Lorenzo C et al., 2021. [Polyphenols and Human Health: The Role of Bioavailability.](https://pubmed.ncbi.nlm.nih.gov/33477894/) *Nutrients*, 13(1):273.
+01. Kanner Joseph (2020). Polyphenols by Generating H2O2, Affect Cell Redox Signaling, Inhibit PTPs and Activate Nrf2 Axis for Adaptation and Cell Surviving: In Vitro, In Vivo and Human Health. *Antioxidants*, 9(9):797. DOI：[10.3390/antiox9090797](<https://doi.org/10.3390/antiox9090797>)。
+02. Bjelakovic Goran, Nikolova Dimitrinka, Gluud Lise Lotte et al. (2007). Mortality in Randomized Trials of Antioxidant Supplements for Primary and Secondary Prevention. *JAMA*, 297(8):842. DOI：[10.1001/jama.297.8.842](<https://doi.org/10.1001/jama.297.8.842>)。
+03. Bjelakovic Goran, Nikolova Dimitrinka, Gluud Lise Lotte et al. (2012). Antioxidant supplements for prevention of mortality in healthy participants and patients with various diseases. *Cochrane Database of Systematic Reviews*, 2012(3). DOI：[10.1002/14651858.CD007176.pub2](<https://doi.org/10.1002/14651858.CD007176.pub2>)。
+04. Forman Henry J., Davies Kelvin J.A., Ursini Fulvio (2014). How do nutritional antioxidants really work: Nucleophilic tone and para-hormesis versus free radical scavenging in vivo. *Free Radical Biology and Medicine*, 66:24-35. DOI：[10.1016/j.freeradbiomed.2013.05.045](<https://doi.org/10.1016/j.freeradbiomed.2013.05.045>)。
+05. Di Lorenzo Chiara, Colombo Francesca, Biella Simone et al. (2021). Polyphenols and Human Health: The Role of Bioavailability. *Nutrients*, 13(1):273. DOI：[10.3390/nu13010273](<https://doi.org/10.3390/nu13010273>)。
 ---

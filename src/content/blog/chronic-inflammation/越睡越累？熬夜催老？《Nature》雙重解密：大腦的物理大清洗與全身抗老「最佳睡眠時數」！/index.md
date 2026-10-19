@@ -166,8 +166,8 @@ slug: 'sleep-duration-biological-aging'
 **參考文獻**
 
 
-1. The MULTI Consortium., O'Toole, C.K., Song, Z. et al. Sleep chart of biological ageing clocks in middle and late life. *Nature* (2026).
-2. Rorsman HO, Muller MA, Liu PZ, et al. Sleep pressure accumulates in a voltage-gated lipid peroxidation memory. *Nature* 2025;641(8061):232–239.
+1. , O’Toole Cliodhna Kate, Song Zhiyuan et al. (2026). Sleep chart of biological ageing clocks in middle and late life. *Nature*. DOI：[10.1038/s41586-026-10524-5](<https://doi.org/10.1038/s41586-026-10524-5>)。
+2. Rorsman H. Olof, Müller Max A., Liu Patrick Z. et al. (2025). Sleep pressure accumulates in a voltage-gated lipid peroxidation memory. *Nature*, 641(8061):232-239. DOI：[10.1038/s41586-025-08734-4](<https://doi.org/10.1038/s41586-025-08734-4>)。
 
 ---
 

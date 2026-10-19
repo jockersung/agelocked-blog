@@ -141,14 +141,14 @@ R2 日錠的核心機制是 **啟動 Nrf2 轉錄因子**，讓細胞自己生產
 
 **參考文獻：**
 
-01. Gonzales GF, et al. (2002).[Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men](https://pubmed.ncbi.nlm.nih.gov/12472620/) *Andrologia*, 34(6), 367–372.
-02. Melnikovova I, et al. (2015).[Effect of Lepidium meyenii Walp. on Semen Parameters and Serum Hormone Levels in Healthy Adult Men: A Double-Blind, Randomized, Placebo-Controlled Pilot Study](https://pubmed.ncbi.nlm.nih.gov/26421049/) *Evid Based Complement Alternat Med*, 2015:324369.
-03. Chen J, et al. (1999).[Effect of oral administration of high-dose nitric oxide donor L-arginine in men with organic erectile dysfunction: results of a double-blind, randomized, placebo-controlled study](https://pubmed.ncbi.nlm.nih.gov/10233492/) *BJU Int*, 83(3), 269–273.
-04. Schwedhelm E, et al. (2008).[Pharmacokinetic and pharmacodynamic properties of oral L-citrulline and L-arginine: impact on nitric oxide metabolism](https://pubmed.ncbi.nlm.nih.gov/17662090/) *Br J Clin Pharmacol*, 65(1), 51–59.
-05. Prasad AS, et al. (1996).[Zinc status and serum testosterone levels of healthy adults](https://pubmed.ncbi.nlm.nih.gov/8875519/) *Nutrition*, 12(5), 344–348.
-06. Short KR, et al. (2005).[Decline in skeletal muscle mitochondrial function with aging in humans](https://pubmed.ncbi.nlm.nih.gov/15800038/) *PNAS*, 102(15), 5618–5623.
-07. Sykiotis GP, Bohmann D. (2010).[Barriers to the implementation of the UK HIV testing guidelines in secondary care: how many are medical?](https://pubmed.ncbi.nlm.nih.gov/20215628/) *Sci Signal*, 3(112), re3.
-08. Li W, Kong AN. (2009).[Vocal fold augmentation with calcium hydroxylapatite: twelve-month report](https://pubmed.ncbi.nlm.nih.gov/19274731/) *Mol Carcinog*, 48(2), 91–104.
-09. Youle RJ, Narendra DP. (2011).[Mechanisms of mitophagy](https://pubmed.ncbi.nlm.nih.gov/21179058/) *Nat Rev Mol Cell Biol*, 12(1), 9–14.
+01. Gonzales G. F., Cordova A., Vega K. et al. (2002). Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men. *Andrologia*, 34(6):367-372. DOI：[10.1046/j.1439-0272.2002.00519.x](<https://doi.org/10.1046/j.1439-0272.2002.00519.x>)。
+02. Melnikovova Ingrid, Fait Tomas, Kolarova Michaela et al. (2015). Effect of Lepidium meyenii Walp. on Semen Parameters and Serum Hormone Levels in Healthy Adult Men: A Double-Blind, Randomized, Placebo-Controlled Pilot Study. *Evidence-Based Complementary and Alternative Medicine*, 2015:1-6. DOI：[10.1155/2015/324369](<https://doi.org/10.1155/2015/324369>)。
+03. Chen, Wollman, Chernichovsky et al. (1999). Effect of oral administration of high‐dose nitric oxide donor l‐arginine in men with organic erectile dysfunction: results of a double‐blind, randomized, placebo‐controlled study. *BJU International*, 83(3):269-273. DOI：[10.1046/j.1464-410x.1999.00906.x](<https://doi.org/10.1046/j.1464-410x.1999.00906.x>)。
+04. Schwedhelm Edzard, Maas Renke, Freese Ralf et al. (2007). Pharmacokinetic and pharmacodynamic properties of oral L‐citrulline and L‐arginine: impact on nitric oxide metabolism. *British Journal of Clinical Pharmacology*, 65(1):51-59. DOI：[10.1111/j.1365-2125.2007.02990.x](<https://doi.org/10.1111/j.1365-2125.2007.02990.x>)。
+05. Prasad Ananda S., Mantzoros Chris S., Beck Frances W.J. et al. (1996). Zinc status and serum testosterone levels of healthy adults. *Nutrition*, 12(5):344-348. DOI：[10.1016/s0899-9007(96)80058-x](<https://doi.org/10.1016/s0899-9007%2896%2980058-x>)。
+06. Short Kevin R., Bigelow Maureen L., Kahl Jane et al. (2005). Decline in skeletal muscle mitochondrial function with aging in humans. *Proceedings of the National Academy of Sciences*, 102(15):5618-5623. DOI：[10.1073/pnas.0501559102](<https://doi.org/10.1073/pnas.0501559102>)。
+07. Warwick Z (2010). Barriers to the implementation of the UK HIV testing guidelines in secondary care: how many are medical?. *International Journal of STD &amp; AIDS*, 21(3):205-206. DOI：[10.1258/ijsa.2009.009269](<https://doi.org/10.1258/ijsa.2009.009269>)。
+08. Rosen Clark A., Gartner‐Schmidt Jackie, Casiano Roy et al. (2009). Vocal fold augmentation with calcium hydroxylapatite: Twelve‐month report. *The Laryngoscope*, 119(5):1033-1041. DOI：[10.1002/lary.20126](<https://doi.org/10.1002/lary.20126>)。
+09. Youle Richard J., Narendra Derek P. (2010). Mechanisms of mitophagy. *Nature Reviews Molecular Cell Biology*, 12(1):9-14. DOI：[10.1038/nrm3028](<https://doi.org/10.1038/nrm3028>)。
 
 > *免責聲明：本文所提供之資訊與文獻探討，皆為日常健康促進與保養參考，不具備醫療診斷、治療、減輕或預防任何疾病之功效。若有明確醫療需求，請務必尋求專業醫師協助。*

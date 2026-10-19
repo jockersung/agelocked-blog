@@ -1,0 +1,31 @@
+repo_root: ..
+excel: inputs/excel/AGELOCKED-ChatGPT產圖清單.xlsx
+manual: inputs/manuals/AGELOCKED-ChatGPT產圖作業手冊.md
+archive: agelocked-image-unify.zip
+expected_tasks: 221
+provider: openai
+model: gpt-image-2
+quality: medium
+api_size: 1536x1024
+dry_run: true
+max_concurrent_requests: 2
+max_retries: 3
+max_budget_usd: 10
+request_timeout_seconds: 240
+max_retry_delay_seconds: 60
+webp_quality: 85
+existing_drafts_resolved: true
+request_reserve_usd: 0.25
+pricing:
+  verified_date: '2026-10-19'
+  source: https://developers.openai.com/api/docs/guides/image-generation
+  model: gpt-image-2
+  size: 1536x1024
+  quality: medium
+  output_estimate_usd: 0.041
+  text_input_per_million: 5
+  image_input_per_million: 8
+  image_output_per_million: 30
+  input_allowance_low_usd: 0.005
+  input_allowance_high_usd: 0.15
+preferred_execution: codex_builtin

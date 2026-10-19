@@ -189,8 +189,8 @@ Hb(O₂)ₙ + H⁺ + CO₂ ⇌ Hb(H⁺)(CO₂) + nO₂
 
 ## 參考資料
 
-01. Vierra J., et al., 2022. [Effects of sleep deprivation and 4-7-8 breathing control on heart rate variability, blood pressure, blood glucose, and endothelial function in healthy young adults.](https://pubmed.ncbi.nlm.nih.gov/35822447/) *Physiological Reports.* 10(13):e15389.
-02. Kurt Aktaş G. & İlgin V., 2023. [The Effect of Deep Breathing Exercise and 4-7-8 Breathing Techniques Applied to Patients After Bariatric Surgery on Anxiety and Quality of Life.](https://pubmed.ncbi.nlm.nih.gov/36480101/) *Obesity Surgery.* 33:920–929.
-03. Marchant J., 2025. [Comparing the Effects of Square, 4-7-8, and 6 Breaths-per-Minute Breathing Conditions on Heart Rate Variability, CO₂ Levels, and Mood.](https://pubmed.ncbi.nlm.nih.gov/39864026/) *Brigham Young University Thesis.* 50(2):261-276.
-04. Weil A., 2015. The 4-7-8 Breathing Exercise. DrWeil.com.
-05. Winter L. B., 1981. *Relax and Win: Championship Performance.* A.S. Barnes.
+01. Vierra Jaruwan, Boonla Orachorn, Prasertsri Piyapong (2022). Effects of sleep deprivation and 4‐7‐8 breathing control on heart rate variability, blood pressure, blood glucose, and endothelial function in healthy young adults. *Physiological Reports*, 10(13). DOI：[10.14814/phy2.15389](<https://doi.org/10.14814/phy2.15389>)。
+02. Aktaş Gülfidan Kurt, İlgin Vesile Eskici (2022). The Effect of Deep Breathing Exercise and 4–7-8 Breathing Techniques Applied to Patients After Bariatric Surgery on Anxiety and Quality of Life. *Obesity Surgery*, 33(3):920-929. DOI：[10.1007/s11695-022-06405-1](<https://doi.org/10.1007/s11695-022-06405-1>)。
+03. Marchant Joshua, Khazan Inna, Cressman Mikel et al. (2025). Comparing the Effects of Square, 4–7-8, and 6 Breaths-per-Minute Breathing Conditions on Heart Rate Variability, CO2 Levels, and Mood. *Applied Psychophysiology and Biofeedback*, 50(2):261-276. DOI：[10.1007/s10484-025-09688-z](<https://doi.org/10.1007/s10484-025-09688-z>)。
+04. [Breathing Exercises: 4-7-8 Breath](<https://www.drweil.com/videos-features/videos/breathing-exercises-4-7-8-breath/>). 作者官方示範影片。未查得 DOI；來源身分已核對（2026-10-19）。
+05. [Relax and win: Championship performance in whatever you do](<https://search.worldcat.org/title/301430911>). WorldCat 1981年版書目。未查得 DOI；來源身分已核對（2026-10-19）。

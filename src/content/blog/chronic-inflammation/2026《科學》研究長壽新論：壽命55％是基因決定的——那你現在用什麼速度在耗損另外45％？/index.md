@@ -176,11 +176,11 @@ slug: "longevity-55-percent-genetics"
 
 ## 參考資料
   
-01. L HAYFLICK, P S MOORHEAD, 1961.[The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.  
-02. J F Fries, 1980. [Aging, natural death, and the compression of morbidity.](https://pubmed.ncbi.nlm.nih.gov/7383070/) *N Engl J Med.* 303(3):130-5.  
-03. Eileen M Crimmins, 2015. [Lifespan and Healthspan: Past, Present, and Promise](https://pubmed.ncbi.nlm.nih.gov/26561272/). *Gerontologist.* 55(6):901–911.  
-04. Armin Garmany, Satsuki Yamada, Andre Terzic, 2021. [Longevity leap: mind the healthspan gap.](https://pubmed.ncbi.nlm.nih.gov/34556664/) *NPJ Regen Med.* 6(1):57.  
+01. Hayflick L., Moorhead P.S. (1961). The serial cultivation of human diploid cell strains. *Experimental Cell Research*, 25(3):585-621. DOI：[10.1016/0014-4827(61)90192-6](<https://doi.org/10.1016/0014-4827%2861%2990192-6>)。
+02. Fries James F. (1980). Aging, Natural Death, and the Compression of Morbidity. *New England Journal of Medicine*, 303(3):130-135. DOI：[10.1056/NEJM198007173030304](<https://doi.org/10.1056/NEJM198007173030304>)。
+03. Crimmins Eileen M. (2015). Lifespan and Healthspan: Past, Present, and Promise. *The Gerontologist*, 55(6):901-911. DOI：[10.1093/geront/gnv130](<https://doi.org/10.1093/geront/gnv130>)。
+04. Garmany Armin, Yamada Satsuki, Terzic Andre (2021). Longevity leap: mind the healthspan gap. *npj Regenerative Medicine*, 6(1):57. DOI：[10.1038/s41536-021-00169-5](<https://doi.org/10.1038/s41536-021-00169-5>)。
 (https://www.nature.com/articles/s43587-024-00702-3) *Nat Aging.* 4(11):1635-1642.  
-05. Yifan Yang, Avi Mayo, Tomer Levy, Naveh Raz, Ben Shenhar, Daniel F Jarosz, Uri Alon, 2025. [Compression of morbidity by interventions that steepen the survival curve.](https://pubmed.ncbi.nlm.nih.gov/40199852/) *Nat Commun.* 16(1):3340.  
+05. Yang Yifan, Mayo Avi, Levy Tomer et al. (2025). Compression of morbidity by interventions that steepen the survival curve. *Nature Communications*, 16(1):3340. DOI：[10.1038/s41467-025-57807-5](<https://doi.org/10.1038/s41467-025-57807-5>)。
 (https://pubmed.ncbi.nlm.nih.gov/41224985/) *Nature.* 647(8089):S2-S5.  
-06. Ben Shenhar et al. , 2026. [Heritability of intrinsic human life span is about 50% when confounding factors are addressed.](https://pubmed.ncbi.nlm.nih.gov/41610249/)  *Science.* 391(6784):504-510.  
+06. Shenhar Ben, Pridham Glen, De Oliveira Thaís Lopes et al. (2026). Heritability of intrinsic human life span is about 50% when confounding factors are addressed. *Science*, 391(6784):504-510. DOI：[10.1126/science.adz1187](<https://doi.org/10.1126/science.adz1187>)。

@@ -157,10 +157,10 @@ Nu Skin在 2011 年收購了 LifeGen Technologies，取得了其核心資產，�
 
 ## 參考資料
 
-01. Pharmanex 6S Quality Process. [Nu Skin official documentation.](https://www.nuskin.com/content/nuskin/en_US/products/pharmanex/science/partnerships.html)
-02. Pharmanex LifePak was the first multivitamin product in the world to pass top three safety certification tests: NSF, ConsumerLab, & BSCG.
-03. Pharmanex is one of the only supplement companies to have products listed in the Physician's Desk Reference (PDR).
-04. Nu Skin Enterprises. LifeGen Technologies Acquisition. PR Newswire, December 14, 2011.
-05. C K Lee, R G Klopp, R Weindruch, T A Prolla, 1999. [Gene expression profile of aging and its retardation by caloric restriction.](https://pubmed.ncbi.nlm.nih.gov/10464095/) *Science.* 285(5432):1390–3.
-06. Angela Mastaloudis, Steven M Wood, 2012. [Age-related changes in cellular protection, purification, and inflammation-related gene expression: role of dietary phytonutrients.](https://pubmed.ncbi.nlm.nih.gov/22834398/) *Ann N Y Acad Sci.* 1259:112–20.
-07. Tiller, N. B., et al., 2024. [What's (Not) in Your Supplement? An Energy and Macronutrient Analysis of Commercially Available Carbohydrate Gels.](https://pubmed.ncbi.nlm.nih.gov/39579757/) *Int J Sport Nutr Exerc Metab.* 35(2):162-170.
+01. [Pharmanex 6S Quality Process](<https://api.nuskin.com/content/dam/office/n_america/shared/en/pharmanex_products/6s_flyer.pdf>). Nu Skin官方製程文件；原連結其實指向LifeGen Acquisition，已更正。未查得 DOI；來源身分已核對（2026-10-19）。
+02. [Nu Skin Enterprises 2005 Annual Report Shareholder’s Letter](<https://www.sec.gov/Archives/edgar/data/1021561/000102156106000019/ex99-1.htm>). 公司向SEC提交之2005年度股東信；記載當年三重認證，不能據此聲稱所有現售產品批次仍有認證。未查得 DOI；來源身分已核對（2026-10-19）。
+03. [The Prescribers’ Digital Reference (PDR) Claim Policies](<https://www.nuskin.com/content/dam/sea/bn/home_page/regulatory_corner/BN-Compliance-Advisory-PDR-poster.pdf>). Nu Skin官方合規文件；PDR收錄不等於FDA核准或療效認證。未查得 DOI；來源身分已核對（2026-10-19）。
+04. [Nu Skin Enterprises Acquires LifeGen Technologies](<https://www.prnewswire.com/news-releases/nu-skin-enterprises-acquires-lifegen-technologies-135569723.html>). Nu Skin原始新聞稿，2011-12-14。未查得 DOI；來源身分已核對（2026-10-19）。
+05. Lee Cheol-Koo, Klopp Roger G., Weindruch Richard et al. (1999). Gene Expression Profile of Aging and Its Retardation by Caloric Restriction. *Science*, 285(5432):1390-1393. DOI：[10.1126/science.285.5432.1390](<https://doi.org/10.1126/science.285.5432.1390>)。
+06. Mastaloudis Angela, Wood Steven M. (2012). Age‐related changes in cellular protection, purification, and inflammation‐related gene expression: role of dietary phytonutrients. *Annals of the New York Academy of Sciences*, 1259(1):112-120. DOI：[10.1111/j.1749-6632.2012.06610.x](<https://doi.org/10.1111/j.1749-6632.2012.06610.x>)。
+07. Tiller Nicholas B., Burke Louise M., Howe Stephanie M. et al. (2025). What’s (Not) in Your Supplement? An Energy and Macronutrient Analysis of Commercially Available Carbohydrate Gels. *International Journal of Sport Nutrition and Exercise Metabolism*, 35(2):162-170. DOI：[10.1123/ijsnem.2024-0174](<https://doi.org/10.1123/ijsnem.2024-0174>)。

@@ -118,6 +118,6 @@ ctaBridge: "這三個訊號同時出現就不是巧合，是同一個系統的�
 
 ## 參考資料
 
-01. Claudio Franceschi, Judith Campisi, 2014. [Chronic inflammation (inflammaging) and its potential contribution to age-associated diseases.](https://pubmed.ncbi.nlm.nih.gov/24833586/) *J Gerontol A Biol Sci Med Sci.* 69 Suppl 1:S4-9.
-02. Luigi Ferrucci, Elisa Fabbri, 2018. [Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty.](https://pubmed.ncbi.nlm.nih.gov/30228304/) *Nat Rev Cardiol.* 15(9):505-522.
-03. Tamara Tchkonia et al., 2013. [Cellular senescence and the senescent secretory phenotype: therapeutic opportunities.](https://pubmed.ncbi.nlm.nih.gov/23863708/) *J Clin Invest.* 123(3):966-72.
+01. Franceschi C., Campisi J. (2014). Chronic Inflammation (Inflammaging) and Its Potential Contribution to Age-Associated Diseases. *The Journals of Gerontology Series A: Biological Sciences and Medical Sciences*, 69(Suppl 1):S4-S9. DOI：[10.1093/gerona/glu057](<https://doi.org/10.1093/gerona/glu057>)。
+02. Ferrucci Luigi, Fabbri Elisa (2018). Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty. *Nature Reviews Cardiology*, 15(9):505-522. DOI：[10.1038/s41569-018-0064-2](<https://doi.org/10.1038/s41569-018-0064-2>)。
+03. Tchkonia Tamara, Zhu Yi, van Deursen Jan et al. (2013). Cellular senescence and the senescent secretory phenotype: therapeutic opportunities. *Journal of Clinical Investigation*, 123(3):966-972. DOI：[10.1172/jci64098](<https://doi.org/10.1172/jci64098>)。

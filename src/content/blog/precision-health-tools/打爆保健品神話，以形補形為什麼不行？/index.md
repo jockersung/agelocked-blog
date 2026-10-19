@@ -145,9 +145,9 @@ TA Sciences 在 2011 年的 9 人試驗中，端粒長度沒有顯著增加；20
 
 ## 參考資料
 
-01. A G Bodnar et al., 1998. [Extension of life-span by introduction of telomerase into normal human cells.](https://pubmed.ncbi.nlm.nih.gov/9454332/) *Science.* 279(5349):349-52.
-02. W C Hahn et al., 1999. [Creation of human tumour cells with defined genetic elements.](https://pubmed.ncbi.nlm.nih.gov/10440377/) *Nature.* 400(6743):464-8.
-03. Laura Salvador et al., 2016. [A Natural Product Telomerase Activator Lengthens Telomeres in Humans: A Randomized, Double Blind, and Placebo Controlled Study.](https://pubmed.ncbi.nlm.nih.gov/26950204/) *Rejuvenation Research.* 19(6):478-484.
-04. Richard M Cawthon et al., 2003. [Association between telomere length in blood and mortality in people aged 60 years or older.](https://pubmed.ncbi.nlm.nih.gov/12573379/) *Lancet.* 361(9355):393-5.
-05. Brenda M Roe et al., 2000. [Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings.](https://pubmed.ncbi.nlm.nih.gov/15735074/) *Am J Clin Nutr.* 80(2):396-403.
-06. 康寧醫院婦產科, 2019. [胎盤素的迷思！](http://www.knh.org.tw/sub/women-children/113/119)
+01. Bodnar Andrea G., Ouellette Michel, Frolkis Maria et al. (1998). Extension of Life-Span by Introduction of Telomerase into Normal Human Cells. *Science*, 279(5349):349-352. DOI：[10.1126/science.279.5349.349](<https://doi.org/10.1126/science.279.5349.349>)。
+02. Hahn William C., Counter Christopher M., Lundberg Ante S. et al. (1999). Creation of human tumour cells with defined genetic elements. *Nature*, 400(6743):464-468. DOI：[10.1038/22780](<https://doi.org/10.1038/22780>)。
+03. Salvador Laura, Singaravelu Gunasekaran, Harley Calvin B. et al. (2016). A Natural Product Telomerase Activator Lengthens Telomeres in Humans: A Randomized, Double Blind, and Placebo Controlled Study. *Rejuvenation Research*, 19(6):478-484. DOI：[10.1089/rej.2015.1793](<https://doi.org/10.1089/rej.2015.1793>)。
+04. Cawthon Richard M, Smith Ken R, O'Brien Elizabeth et al. (2003). Association between telomere length in blood and mortality in people aged 60 years or older. *The Lancet*, 361(9355):393-395. DOI：[10.1016/S0140-6736(03)12384-7](<https://doi.org/10.1016/S0140-6736%2803%2912384-7>)。
+05. Brown Melody J, Ferruzzi Mario G, Nguyen Minhthy L et al. (2004). Carotenoid bioavailability is higher from salads ingested with full-fat than with fat-reduced salad dressings as measured with electrochemical detection. *The American Journal of Clinical Nutrition*, 80(2):396-403. DOI：[10.1093/ajcn/80.2.396](<https://doi.org/10.1093/ajcn/80.2.396>)。
+06. [胎盤素的迷思！](<http://www.knh.org.tw/sub/women-children/113/119>). 康寧醫院原始衛教文章，網頁題名已核對。未查得 DOI；來源身分已核對（2026-10-19）。

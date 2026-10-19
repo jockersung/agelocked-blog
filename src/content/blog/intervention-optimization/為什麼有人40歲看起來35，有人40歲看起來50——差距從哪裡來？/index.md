@@ -247,3 +247,9 @@ YouthSpan 需要至少 3 - 6 個月才能看到效果，這是科學機制決定
 - [ageLOC R2：那個40歲看起來像32歲的男人](/blog/intervention-optimization/ageloc-r2-cellular-renewal/)
 - [你上一次知道自己身體真正的狀態，是什麼時候？](/blog/precision-health-tools/prysm-io-15sec/)
 
+
+
+## 參考資料
+
+1. Serna Eva, Mastaloudis Angela, Martorell Patricia et al. (2020). A Novel Micronutrient Blend Mimics Calorie Restriction Transcriptomics in Multiple Tissues of Mice and Increases Lifespan and Mobility in C. elegans. *Nutrients*, 12(2):486. DOI：[10.3390/nu12020486](<https://doi.org/10.3390/nu12020486>)。
+2. Mastaloudis Angela, Sheth Chandni, Hester Shelly N. et al. (2020). Supplementation with a putative calorie restriction mimetic micronutrient blend increases glutathione concentrations and improves neuroenergetics in brain of healthy middle-aged men and women. *Free Radical Biology and Medicine*, 153:112-121. DOI：[10.1016/j.freeradbiomed.2020.04.017](<https://doi.org/10.1016/j.freeradbiomed.2020.04.017>)。

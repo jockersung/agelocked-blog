@@ -105,3 +105,10 @@ ctaBridge: "如果你手邊已經有健檢報告、也戴著穿戴裝置，素�
 
 > *免責聲明：本文所提供之資訊與營養建議，皆為日常健康促進與保養參考，不具備醫療診斷、治療、減輕或預防任何疾病之功效。若有明確醫療需求，請務必尋求專業醫師協助。*
 
+
+
+## 參考資料
+
+1.  (2026). Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans. *Food &amp; Nutrition Journal*, 11(1). DOI：[10.29011/2575-7091.100334](<https://doi.org/10.29011/2575-7091.100334>)。
+2. Mayne Susan T, Cartmel Brenda, Scarmo Stephanie et al. (2010). Noninvasive assessment of dermal carotenoids as a biomarker of fruit and vegetable intake. *The American Journal of Clinical Nutrition*, 92(4):794-800. DOI：[10.3945/ajcn.2010.29707](<https://doi.org/10.3945/ajcn.2010.29707>)。
+3. Poganik Jesse R., Zhang Bohan, Baht Gurpreet S. et al. (2023). Biological age is increased by stress and restored upon recovery. *Cell Metabolism*, 35(5):807-820.e5. DOI：[10.1016/j.cmet.2023.03.015](<https://doi.org/10.1016/j.cmet.2023.03.015>)。

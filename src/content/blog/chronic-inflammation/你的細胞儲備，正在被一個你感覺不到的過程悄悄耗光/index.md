@@ -159,11 +159,11 @@ NAD+ 下降 → Sirtuins 失活 → 端粒修復能力下降 → 端粒縮短加
 
 ## 參考資料
 
-01. David Sinclair, Matthew LaPlante, 2019. *Lifespan: Why We Age—and Why We Don't Have To.* Atria Books. *(NAD+ depletion and aging overview)*
-02. Ana P Gomes et al., 2013. [Declining NAD+ Induces a Pseudohypoxic State Disrupting Nuclear-Mitochondrial Communication during Aging.](https://pubmed.ncbi.nlm.nih.gov/24360282/) *Cell.* 155(7):1624-38.
-03. Evandro F Fang et al., 2017. [NAD+ Replenishment Improves Lifespan and Healthspan in Ataxia Telangiectasia Models via Mitophagy and DNA Repair.](https://pubmed.ncbi.nlm.nih.gov/28738407/) *Cell Metab.* 26(6):856-858.
-04. Ji-Hye Paik et al., 2021. [Mitochondrial dysfunction and Parkinson's disease: new mechanistic insights from iPSC-based disease models.](https://pubmed.ncbi.nlm.nih.gov/25802991/) *EMBO Rep.* 16(2):98-108.
-05. Thomas A Rando, Howard Y Chang, 2012. [Aging, rejuvenation, and epigenetic reprogramming: resetting the aging clock.](https://pubmed.ncbi.nlm.nih.gov/22245968/) *Cell.* 148(1-2):46-57.
-06. Richard M Cawthon et al., 2003. [Association between telomere length in blood and mortality in people aged 60 years or older.](https://pubmed.ncbi.nlm.nih.gov/12559262/) *Lancet.* 361(9355):393-5.
-07. Luigi Ferrucci, Elisa Fabbri, 2018. [Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty.](https://pubmed.ncbi.nlm.nih.gov/30228304/) *Nat Rev Cardiol.* 15(9):505-522.
-08. Vera Gorbunova et al., 2021. [The role of retrotransposable elements in ageing and age-associated diseases.](https://pubmed.ncbi.nlm.nih.gov/34290424/) *Nature.* 596(7870):43-53.
+01. [Lifespan: Why We Age—and Why We Don’t Have To](<https://www.simonandschuster.com/books/Lifespan/David-Sinclair/9781501191978>). 出版社書籍頁。未查得 DOI；來源身分已核對（2026-10-19）。
+02. Gomes Ana P., Price Nathan L., Ling Alvin J.Y. et al. (2013). Declining NAD+ Induces a Pseudohypoxic State Disrupting Nuclear-Mitochondrial Communication during Aging. *Cell*, 155(7):1624-1638. DOI：[10.1016/j.cell.2013.11.037](<https://doi.org/10.1016/j.cell.2013.11.037>)。
+03. Fang Evandro Fei, Kassahun Henok, Croteau Deborah L. et al. (2016). NAD + Replenishment Improves Lifespan and Healthspan in Ataxia Telangiectasia Models via Mitophagy and DNA Repair. *Cell Metabolism*, 24(4):566-581. DOI：[10.1016/j.cmet.2016.09.004](<https://doi.org/10.1016/j.cmet.2016.09.004>)。
+04. Guilbaud Emma, Sarosiek Kristopher A, Galluzzi Lorenzo (2024). Inflammation and mitophagy are mitochondrial checkpoints to aging. *Nature Communications*, 15(1):3375. DOI：[10.1038/s41467-024-47840-1](<https://doi.org/10.1038/s41467-024-47840-1>)。
+05. Rando Thomas A., Chang Howard Y. (2012). Aging, Rejuvenation, and Epigenetic Reprogramming: Resetting the Aging Clock. *Cell*, 148(1-2):46-57. DOI：[10.1016/j.cell.2012.01.003](<https://doi.org/10.1016/j.cell.2012.01.003>)。
+06. Cawthon Richard M, Smith Ken R, O'Brien Elizabeth et al. (2003). Association between telomere length in blood and mortality in people aged 60 years or older. *The Lancet*, 361(9355):393-395. DOI：[10.1016/s0140-6736(03)12384-7](<https://doi.org/10.1016/s0140-6736%2803%2912384-7>)。
+07. Ferrucci Luigi, Fabbri Elisa (2018). Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty. *Nature Reviews Cardiology*, 15(9):505-522. DOI：[10.1038/s41569-018-0064-2](<https://doi.org/10.1038/s41569-018-0064-2>)。
+08. Gorbunova Vera, Seluanov Andrei, Mita Paolo et al. (2021). The role of retrotransposable elements in ageing and age-associated diseases. *Nature*, 596(7870):43-53. DOI：[10.1038/s41586-021-03542-y](<https://doi.org/10.1038/s41586-021-03542-y>)。

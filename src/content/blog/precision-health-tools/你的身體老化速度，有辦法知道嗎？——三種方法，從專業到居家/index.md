@@ -131,6 +131,6 @@ Prysm iO 用光譜技術，15秒掃描指尖，把這個數值轉換成一個顏
 
 ## 參考資料
 
-01. L Hayflick, P S Moorhead, 1961. [The serial cultivation of human diploid cell strains.](https://pubmed.ncbi.nlm.nih.gov/13905658/) *Exp Cell Res.* 25:585-621.
-02. I F Benzie, J J Strain, 1996. [The Ferric Reducing Ability of Plasma (FRAP) as a Measure of Antioxidant Power.](https://pubmed.ncbi.nlm.nih.gov/8660627/) *Analytical Biochemistry.* 239(1):70–76.
-03. Tissa R. Hata et al., 2000. [Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin.](https://www.sciencedirect.com/science/article/pii/S0022202X15409923) *J Invest Dermatol.* 115(3):441-448.
+01. Hayflick L., Moorhead P.S. (1961). The serial cultivation of human diploid cell strains. *Experimental Cell Research*, 25(3):585-621. DOI：[10.1016/0014-4827(61)90192-6](<https://doi.org/10.1016/0014-4827%2861%2990192-6>)。
+02. Benzie Iris F.F., Strain J.J. (1996). The Ferric Reducing Ability of Plasma (FRAP) as a Measure of “Antioxidant Power”: The FRAP Assay. *Analytical Biochemistry*, 239(1):70-76. DOI：[10.1006/abio.1996.0292](<https://doi.org/10.1006/abio.1996.0292>)。
+03. Hata Tissa R., Scholz Theresa A., Pershing Lynn K. et al. (2000). Non-Invasive Raman Spectroscopic Detection of Carotenoids in Human Skin. *Journal of Investigative Dermatology*, 115(3):441-448. DOI：[10.1046/j.1523-1747.2000.00060.x](<https://doi.org/10.1046/j.1523-1747.2000.00060.x>)。

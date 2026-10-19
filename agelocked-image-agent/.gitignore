@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.log
+*.zip
+*.xlsx
+__pycache__/
+*.pyc
+.venv/
+.deps/
+inputs/
+tasks/
+outputs/
+config/approval.json
+config/approval.history.json

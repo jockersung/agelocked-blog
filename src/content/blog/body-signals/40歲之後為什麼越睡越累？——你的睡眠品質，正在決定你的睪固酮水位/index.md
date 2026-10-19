@@ -125,9 +125,9 @@ slug: "sleep-quality-testosterone"
 ## 參考資料
 
 
-01. Leproult R, Van Cauter E, 2011. [Effect of 1 week of sleep restriction on testosterone levels in young healthy men.](https://pubmed.ncbi.nlm.nih.gov/21632481/) *JAMA.* 305(21):2173–2174.
-02. Liu PY, Reddy RT, 2022. [Sleep, testosterone and cortisol balance, and ageing men.](https://pmc.ncbi.nlm.nih.gov/articles/PMC9510302/) *Reviews in Endocrine and Metabolic Disorders.* 23:1251–1266.
-03. Wittert G, 2014. [The relationship between sleep disorders and testosterone in men.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3955336/) *Asian Journal of Andrology.* 16(2):262–265.
-04. Barrett-Connor E et al., 2008. [The association of testosterone levels with overall sleep quality, sleep architecture, and sleep-disordered breathing.](https://pmc.ncbi.nlm.nih.gov/articles/PMC2453053/) *Journal of Clinical Endocrinology & Metabolism.* 93(7):2602–2609.
-05. Penev PD, 2007. [Association between sleep and morning testosterone levels in older men.](https://pubmed.ncbi.nlm.nih.gov/17520786/) *Sleep.* 30(4):427–432.
-06. Su L et al., 2021. [Effect of partial and total sleep deprivation on serum testosterone in healthy males: a systematic review and meta-analysis.](https://pubmed.ncbi.nlm.nih.gov/34801825/) *Andrologia.* 53(10):e14235.
+01. Leproult Rachel (2011). Effect of 1 Week of Sleep Restriction on Testosterone Levels in Young Healthy Men. *JAMA*, 305(21):2173. DOI：[10.1001/jama.2011.710](<https://doi.org/10.1001/jama.2011.710>)。
+02. Liu Peter Y., Reddy Radha T. (2022). Sleep, testosterone and cortisol balance, and ageing men. *Reviews in Endocrine and Metabolic Disorders*, 23(6):1323-1339. DOI：[10.1007/s11154-022-09755-4](<https://doi.org/10.1007/s11154-022-09755-4>)。
+03. Wittert Gary (2014). The relationship between sleep disorders and testosterone in men. *Asian Journal of Andrology*, 16(2):262. DOI：[10.4103/1008-682x.122586](<https://doi.org/10.4103/1008-682x.122586>)。
+04. Barrett-Connor Elizabeth, Dam Thuy-Tien, Stone Katie et al. (2008). The Association of Testosterone Levels with Overall Sleep Quality, Sleep Architecture, and Sleep-Disordered Breathing. *The Journal of Clinical Endocrinology &amp; Metabolism*, 93(7):2602-2609. DOI：[10.1210/jc.2007-2622](<https://doi.org/10.1210/jc.2007-2622>)。
+05. Penev Plamen D. (2007). Association Between Sleep and Morning Testosterone Levels In Older Men. *Sleep*, 30(4):427-432. DOI：[10.1093/sleep/30.4.427](<https://doi.org/10.1093/sleep/30.4.427>)。
+06. Su Liang, Zhang Si-zheng, Zhu Jian et al. (2021). Effect of partial and total sleep deprivation on serum testosterone in healthy males: a systematic review and meta-analysis. *Sleep Medicine*, 88:267-273. DOI：[10.1016/j.sleep.2021.10.031](<https://doi.org/10.1016/j.sleep.2021.10.031>)。

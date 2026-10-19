@@ -159,3 +159,9 @@ slug: "emperor-longevity-modern-science"
 👉 **[少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天](/blog/chronic-inflammation/caloric-restriction-longevity-science/)**
 
 ---
+
+
+## 參考資料
+
+1. López-Otín Carlos, Blasco Maria A., Partridge Linda et al. (2023). Hallmarks of aging: An expanding universe. *Cell*, 186(2):243-278. DOI：[10.1016/j.cell.2022.11.001](<https://doi.org/10.1016/j.cell.2022.11.001>)。
+2. Madeo Frank, Carmona-Gutierrez Didac, Hofer Sebastian J. et al. (2019). Caloric Restriction Mimetics against Age-Associated Disease: Targets, Mechanisms, and Therapeutic Potential. *Cell Metabolism*, 29(3):592-610. DOI：[10.1016/j.cmet.2019.01.018](<https://doi.org/10.1016/j.cmet.2019.01.018>)。

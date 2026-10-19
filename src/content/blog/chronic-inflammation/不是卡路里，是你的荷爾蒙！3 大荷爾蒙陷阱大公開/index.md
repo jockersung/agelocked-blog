@@ -135,9 +135,9 @@ slug: "visceral-fat-three-cycles"
 
 ## 參考資料
 
-01. Tchernof A, Despres JP. (2013). [Pathophysiology of human visceral obesity: an update.](https://pubmed.ncbi.nlm.nih.gov/23303913/) *Physiol Rev*, 93(1), 359–404.
-02. Bjorntorp P. (2001). [Do stress reactions cause abdominal obesity and comorbidities?](https://pubmed.ncbi.nlm.nih.gov/12119665/) *Obes Rev*, 2(2), 73–86.
-03. Vermeulen A, et al. (2002). [Testosterone, body composition and aging.](https://pubmed.ncbi.nlm.nih.gov/10442580/) *J Endocrinol Invest*, 22(5 Suppl), 110–116.
-04. Hotamisligil GS. (2017). [Inflammation, metaflammation and immunometabolic disorders.](https://pubmed.ncbi.nlm.nih.gov/28179656/) *Nature*, 542(7640), 177–185.
-05. Cildir G, et al. (2013). [Chronic adipose tissue inflammation: all immune cells on the stage.](https://pubmed.ncbi.nlm.nih.gov/23746697/) *Trends Mol Med*, 19(8), 487–500.
-06. Mohamad NV, et al. (2016). [The relationship between circulating testosterone and inflammatory cytokines in men.](https://pubmed.ncbi.nlm.nih.gov/29925283/) *Aging Male*, 19(4), 251–257.
+01. Tchernof André, Després Jean-Pierre (2013). Pathophysiology of Human Visceral Obesity: An Update. *Physiological Reviews*, 93(1):359-404. DOI：[10.1152/physrev.00033.2011](<https://doi.org/10.1152/physrev.00033.2011>)。
+02. Björntorp P. (2001). Do stress reactions cause abdominal obesity and comorbidities?. *Obesity Reviews*, 2(2):73-86. DOI：[10.1046/j.1467-789x.2001.00027.x](<https://doi.org/10.1046/j.1467-789x.2001.00027.x>)。
+03. Vermeulen A, et al. (2002). [Testosterone, body composition and aging.](https://pubmed.ncbi.nlm.nih.gov/10442580/) *J Endocrinol Invest*, 22(5 Suppl), 110–116.。PubMed未列DOI；題名與來源已核對（2026-10-19）。
+04. Hotamisligil Gökhan S. (2017). Inflammation, metaflammation and immunometabolic disorders. *Nature*, 542(7640):177-185. DOI：[10.1038/nature21363](<https://doi.org/10.1038/nature21363>)。
+05. Cildir Gökhan, Akıncılar Semih Can, Tergaonkar Vinay (2013). Chronic adipose tissue inflammation: all immune cells on the stage. *Trends in Molecular Medicine*, 19(8):487-500. DOI：[10.1016/j.molmed.2013.05.001](<https://doi.org/10.1016/j.molmed.2013.05.001>)。
+06. Mohamad Nur-Vaizura, Wong Sok Kuan, Wan Hasan Wan Nuraini et al. (2018). The relationship between circulating testosterone and inflammatory cytokines in men. *The Aging Male*, 22(2):129-140. DOI：[10.1080/13685538.2018.1482487](<https://doi.org/10.1080/13685538.2018.1482487>)。

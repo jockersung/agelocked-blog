@@ -145,4 +145,4 @@ RAB5IF 減少後，會導致粒線體製造的 ATP 量下降，造成 SUMO2（�
 
 ## 參考資料
 
-01. Xin Shi et al., 2026. [The protein RAB5IF promotes BDNF signaling by stimulating the SUMOylation of Gαi1/3 to reduce depressive-like behaviors in mice.](https://www.science.org/doi/10.1126/scisignal.aec8898) *Science Signaling* 19(931)
+01. Shi Xin, Liu Han-qi, Cai Shi-zhong et al. (2026). The protein RAB5IF promotes BDNF signaling by stimulating the SUMOylation of Gα i1/3 to reduce depressive-like behaviors in mice. *Science Signaling*, 19(931):eaec8898. DOI：[10.1126/scisignal.aec8898](<https://doi.org/10.1126/scisignal.aec8898>)。

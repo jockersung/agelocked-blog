@@ -81,3 +81,9 @@ Nu Skin 的 **Prysm iO** 用 25 年的光譜科學與 2,100 萬筆全球掃描�
 ![光譜指數](./光譜指數.png)
 
 ---
+
+
+## 參考資料
+
+1.  (2026). Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans. *Food &amp; Nutrition Journal*, 11(1). DOI：[10.29011/2575-7091.100334](<https://doi.org/10.29011/2575-7091.100334>)。
+2. [Prysm iO User’s Manual and Warranty](<https://www.nuskin.com/content/dam/eu-library/website-content/products/pharmanex/prysm-io/device-care/prysm-io-user-manual-en.pdf>)。Nu Skin官方操作手冊；非臨床診斷效能證據；未查得 DOI，來源頁已核對（2026-10-19）。

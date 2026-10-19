@@ -186,10 +186,10 @@ Franceschi 自己在後續研究中強調：老化的速度因人而異，個體
 
 ## 參考資料
 
-01. Claudio Franceschi et al., 2000. [Inflamm-aging. An evolutionary perspective on immunosenescence.](https://pubmed.ncbi.nlm.nih.gov/11193541/) *Ann N Y Acad Sci.* 908:244-54.
-02. Claudio Franceschi, Judith Campisi, 2014. [Chronic inflammation (inflammaging) and its potential contribution to age-associated diseases.](https://pubmed.ncbi.nlm.nih.gov/24833586/) *J Gerontol A Biol Sci Med Sci.* 69 Suppl 1:S4-9.
-03. Judith Campisi et al., 2019. [From discoveries in ageing research to therapeutics for healthy ageing.](https://pubmed.ncbi.nlm.nih.gov/31371892/) *Nature.* 571(7764):183-192.
-04. Bharat B Aggarwal et al., 2004. [Nuclear factor-κB: its role in health and disease.](https://pubmed.ncbi.nlm.nih.gov/15226807/) *J Mol Med.* 82(7):434-48.
-05. Luigi Ferrucci, Elisa Fabbri, 2018. [Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty.](https://pubmed.ncbi.nlm.nih.gov/30228304/) *Nat Rev Cardiol.* 15(9):505-522.
-06. Jan M van Deursen, 2014. [The role of senescent cells in ageing.](https://pubmed.ncbi.nlm.nih.gov/24940187/) *Nature.* 509(7501):439-46.
-07. Tamara Tchkonia et al., 2013. [Cellular senescence and the senescent secretory phenotype: therapeutic opportunities.](https://pubmed.ncbi.nlm.nih.gov/23863708/) *J Clin Invest.* 123(3):966-72.
+01. FRANCESCHI CLAUDIO, BONAFÈ MASSIMILIANO, VALENSIN SILVANA et al. (2000). Inflamm‐aging: An Evolutionary Perspective on Immunosenescence. *Annals of the New York Academy of Sciences*, 908(1):244-254. DOI：[10.1111/j.1749-6632.2000.tb06651.x](<https://doi.org/10.1111/j.1749-6632.2000.tb06651.x>)。
+02. Franceschi C., Campisi J. (2014). Chronic Inflammation (Inflammaging) and Its Potential Contribution to Age-Associated Diseases. *The Journals of Gerontology Series A: Biological Sciences and Medical Sciences*, 69(Suppl 1):S4-S9. DOI：[10.1093/gerona/glu057](<https://doi.org/10.1093/gerona/glu057>)。
+03. Campisi Judith, Kapahi Pankaj, Lithgow Gordon J. et al. (2019). From discoveries in ageing research to therapeutics for healthy ageing. *Nature*, 571(7764):183-192. DOI：[10.1038/s41586-019-1365-2](<https://doi.org/10.1038/s41586-019-1365-2>)。
+04. Kumar Ashok, Takada Yasunari, Boriek AladinM. et al. (2004). Nuclear factor-κB: its role in health and disease. *Journal of Molecular Medicine*, 82(7). DOI：[10.1007/s00109-004-0555-y](<https://doi.org/10.1007/s00109-004-0555-y>)。
+05. Ferrucci Luigi, Fabbri Elisa (2018). Inflammageing: chronic inflammation in ageing, cardiovascular disease, and frailty. *Nature Reviews Cardiology*, 15(9):505-522. DOI：[10.1038/s41569-018-0064-2](<https://doi.org/10.1038/s41569-018-0064-2>)。
+06. van Deursen Jan M. (2014). The role of senescent cells in ageing. *Nature*, 509(7501):439-446. DOI：[10.1038/nature13193](<https://doi.org/10.1038/nature13193>)。
+07. Tchkonia Tamara, Zhu Yi, van Deursen Jan et al. (2013). Cellular senescence and the senescent secretory phenotype: therapeutic opportunities. *Journal of Clinical Investigation*, 123(3):966-972. DOI：[10.1172/jci64098](<https://doi.org/10.1172/jci64098>)。
