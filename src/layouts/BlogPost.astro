@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import type { MarkdownHeading } from 'astro';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
@@ -26,11 +26,17 @@ const defaultBridge = isSoft
   : '如果你手上已經有健檢數據或穿戴裝置數據，下一步比繼續看文章更有效的是先把資料整理起來。';
 
 const bridge = ctaBridge || defaultBridge;
+
+// 社群分享圖：用每篇自己的封面，縮成 1200×630 JPG
+const ogImage = heroImage
+  ? await getImage({ src: heroImage, width: 1200, height: 630, fit: 'cover', format: 'jpg', quality: 80 })
+  : undefined;
+const ogImageUrl = ogImage ? new URL(ogImage.src, Astro.site ?? Astro.url).href : undefined;
 ---
 <!DOCTYPE html>
 <html lang="zh-TW">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={ogImage ? ({ src: ogImage.src } as any) : undefined} />
 		<script type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
 			"@type": "Article",
@@ -38,7 +44,7 @@ const bridge = ctaBridge || defaultBridge;
 			"description": description,
 			"datePublished": pubDate.toISOString(),
 			"dateModified": (updatedDate ?? pubDate).toISOString(),
-			"image": heroImage ? `https://agelocked.com${heroImage}` : "https://agelocked.com/og-default.jpg",
+			"image": ogImageUrl ?? "https://agelocked.com/agelockedlogo.webp",
 			"author": {
 				"@type": "Person",
 				"name": "YiKun",
