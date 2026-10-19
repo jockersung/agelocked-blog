@@ -31,6 +31,7 @@ URL：https://line.me/ti/p/@fer7932k
 任務開始前，依任務類型載入對應 SKILL：
 
 - **文章撰寫、起草、修改內容：** 讀取 `.claude/skills/article-writer/SKILL.md`
+- **配圖、封面、產品圖、圖片提示語：** 讀取專案根目錄的 `IMAGE-STYLE.md`
 - **技術修改（元件、slug、redirects、Astro 設定）：** 讀取 `.claude/skills/site-editor/SKILL.md`
 - **內容策略（漏斗規劃、缺口分析、文章排程）：** 讀取 `.claude/skills/content-strategist/SKILL.md`
 
