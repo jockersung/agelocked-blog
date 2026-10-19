@@ -69,7 +69,8 @@
 
 - Content Collections 的 schema 在 `src/content/config.ts`，新增 frontmatter 欄位前先確認
 - `astro.config.mjs` 修改前備份現有設定
-- 圖片放 `public/`，引用用絕對路徑 `/images/xxx.jpg`
+- 文章圖片和 `index.md` 放在同一個資料夾，frontmatter 與內文用相對路徑（`./cover.png`），建置時會自動壓縮轉檔；只有全站共用素材（logo、favicon）放 `public/`
+- 圖片風格、檔名、尺寸依 `IMAGE-STYLE.md`
 - MDX 檔案可使用元件，`.md` 不行
 
 ---
