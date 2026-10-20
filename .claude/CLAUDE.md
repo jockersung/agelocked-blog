@@ -30,7 +30,7 @@ URL：https://line.me/ti/p/@fer7932k
 
 任務開始前，依任務類型載入對應 SKILL：
 
-- **文章撰寫、起草、修改內容：** 讀取 `.claude/skills/article-writer/SKILL.md`
+- **文章撰寫、起草、修改內容：** 讀取 `.claude/skills/article-writer/SKILL.md`；交稿前必跑其中的「交稿前必查清單」
 - **配圖、封面、產品圖、圖片提示語：** 讀取專案根目錄的 `IMAGE-STYLE.md`
 - **技術修改（元件、slug、redirects、Astro 設定）：** 讀取 `.claude/skills/site-editor/SKILL.md`
 - **內容策略（漏斗規劃、缺口分析、文章排程）：** 讀取 `.claude/skills/content-strategist/SKILL.md`
@@ -39,5 +39,5 @@ URL：https://line.me/ti/p/@fer7932k
 
 - 禁止出現「科技人」「菁英」「百萬年薪」等舊版 TA 語言
 - 禁止 slug 使用中文字元
-- 禁止單篇出現多個不同 CTA
+- 禁止單篇出現多個不同 CTA（CTA 由版面自動加上，內文不另寫；用 frontmatter 的 ctaType／ctaBridge 控制）
 - 禁止引用無 DOI 的科學數據（例外見 article-writer SKILL「引用規範」：政府統計、廠商技術文件等可附官方網址引用）
