@@ -24,15 +24,15 @@ slug: "sleep-quality-testosterone"
 
 你體內大部分的睪固酮是在睡著之後製造的。
 
-具體來說，是在 **慢波睡眠（Slow Wave Sleep，SWS）** 期間，也就是俗稱的「深眠」階段，這是一整夜睡眠裡代謝活動最旺盛、荷爾蒙分泌最集中的時段。
+具體來說，睪固酮在入睡後隨著一個個完整的睡眠週期（深眠、淺眠、REM 輪流出現）逐步上升。研究看到的是：睡眠越完整、越不被切斷，夜間的上升越明顯。
 
 睾固酮在入睡後開始上升，在清晨達到當天最高峰，然後在整個白天逐漸下降。
 
-這個製造過程需要一個前提：**至少連續三小時、結構完整的睡眠**。
+以色列的睡眠實驗觀察到，夜間睪固酮的上升，需要大約 **連續三小時、結構完整的睡眠** 才會出現。
 
 睡眠被打斷，或者深眠比例太低，睪固酮的夜間分泌節律就會被擾亂。
 
-不是變少一點，是那個節律的高峰直接消失。
+同一個實驗裡，睡眠被反覆打斷的那幾晚，睪固酮夜間的上升幅度明顯變小。
 
 ![睪固酮夜間節律 × 深眠](./睪固酮夜間節律 × 深眠.png)
 
@@ -84,9 +84,9 @@ slug: "sleep-quality-testosterone"
 
 **就算你躺在床上的時間沒有變，你真正在深眠的時間已經比二十年前少了。**
 
-而偏偏深眠是睪固酮製造最集中的時段。深眠縮短，睪固酮的夜間製造窗口就跟著縮小。
+睡眠結構變碎、深眠變少，睪固酮在夜間能爬升的空間也就跟著變小。
 
-這不是你「睡眠品質比較差」，這是中年男性睡眠生理的正常變化，但它的下游效應，是睪固酮水位的結構性下滑。
+深眠隨年齡變少是常見的變化，但「常見」不等於「不用管」。它的下游效應，是睪固酮水位的結構性下滑；而睡眠被切碎的程度，是你可以介入的部分。
 
 一個研究 65 歲以上健康男性的世代研究發現，睪固酮濃度較低的男性，同時有更低的睡眠效率、更多的夜間醒來、更少的慢波睡眠時間，以及更高的睡眠呼吸中止指數，這個關聯在調整了年齡和體重指數之後仍然存在。
 
@@ -96,15 +96,22 @@ slug: "sleep-quality-testosterone"
 
 把這兩條線拉在一起：
 
-深眠縮短 → 睪固酮夜間製造窗口消失  
+睡眠被切碎、深眠縮短 → 睪固酮夜間上升變小  
 睡眠不足 → 皮質醇偏高 → 進一步抑制睪固酮合成  
 
 這不是兩個獨立的問題，而是一個互相強化的迴圈。
 
 而這個迴圈的切入點，比你想像的更具體，**從睡眠品質開始，最能同時影響多個節點。**
 
-如果你想知道怎麼具體切斷這個惡性迴圈，矽谷富豪布萊恩・強生的做法很值得參考：他發現只要控制『睡前心率』，就能大幅改善深眠。
-**→ [延伸閱讀：為什麼你睡滿8小時還是累？矽谷富豪的抗老實驗證實：問題出在你的「睡前心率」](/blog/ibody-signals/aging-quantified-bryan-johnson-blueprint/)
+## 今晚就可以先做的三件事
+
+1. **固定起床時間**，週末也一樣。起床時間固定，入睡時間才會跟著穩定，睡眠週期比較不容易被切碎。
+2. **睡前 3～4 小時吃完晚餐、睡前不喝酒**。酒精會讓上半夜睡得沉、下半夜醒得多，剛好打斷後半段的睡眠週期。
+3. **如果另一半說你會打呼、你白天常想睡**，請找睡眠門診評估睡眠呼吸中止症。它是睡眠被切碎最常被忽略的原因，也和睪固酮偏低有關。
+
+矽谷富豪布萊恩・強生在自己身上做過一個實驗：他觀察到睡前心率越低，當晚的睡眠分數越好。這是一個人的紀錄，不是臨床試驗，但他的做法可以參考：
+
+**→ [延伸閱讀：為什麼你睡滿8小時還是累？矽谷富豪的抗老實驗：問題出在你的「睡前心率」](/blog/body-signals/aging-quantified-bryan-johnson-blueprint/)**
 
 ---
 
@@ -112,7 +119,7 @@ slug: "sleep-quality-testosterone"
 
 中年男性的疲勞，從來不是單一問題的結果。
 
-睡眠品質、睪固酮水位、皮質醇節律、鎂的礦物質狀態，這些變數環環相扣，在你不知道的情況下，正在決定你每天早上起床時感受到的狀態。
+睡眠品質、睪固酮水位、皮質醇節律，這些變數環環相扣，在你不知道的情況下，正在決定你每天早上起床時感受到的狀態。
 
 這篇文章的出發點是睡眠，但它的終點其實是：**你的荷爾蒙環境是否支持你的身體繼續正常運作。**
 
@@ -131,3 +138,4 @@ slug: "sleep-quality-testosterone"
 04. Barrett-Connor Elizabeth, Dam Thuy-Tien, Stone Katie et al. (2008). The Association of Testosterone Levels with Overall Sleep Quality, Sleep Architecture, and Sleep-Disordered Breathing. *The Journal of Clinical Endocrinology &amp; Metabolism*, 93(7):2602-2609. DOI：[10.1210/jc.2007-2622](<https://doi.org/10.1210/jc.2007-2622>)。
 05. Penev Plamen D. (2007). Association Between Sleep and Morning Testosterone Levels In Older Men. *Sleep*, 30(4):427-432. DOI：[10.1093/sleep/30.4.427](<https://doi.org/10.1093/sleep/30.4.427>)。
 06. Su Liang, Zhang Si-zheng, Zhu Jian et al. (2021). Effect of partial and total sleep deprivation on serum testosterone in healthy males: a systematic review and meta-analysis. *Sleep Medicine*, 88:267-273. DOI：[10.1016/j.sleep.2021.10.031](<https://doi.org/10.1016/j.sleep.2021.10.031>)。
+07. Luboshitzky Rafael, Zabari Ziva, Shen-Orr Zila et al. (2001). Disruption of the Nocturnal Testosterone Rhythm by Sleep Fragmentation in Normal Men. *The Journal of Clinical Endocrinology & Metabolism*, 86(3):1134-1139. DOI：[10.1210/jcem.86.3.7296](<https://doi.org/10.1210/jcem.86.3.7296>)。

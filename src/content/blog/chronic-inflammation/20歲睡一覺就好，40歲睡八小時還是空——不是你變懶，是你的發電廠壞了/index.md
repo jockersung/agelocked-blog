@@ -6,6 +6,7 @@ heroImage: './20歲睡一覺就好40歲睡八小時還是空.png'
 tags: ['尿石素', 'Urolithin A', '粒線體', '自噬', '抗衰老']
 category: '慢性發炎科學'
 slug: "mitochondria-energy-after-40"
+ctaBridge: '知道了機制，下一步是了解你現在的狀況。先花 1 分鐘做評估，找出你目前的細胞耗損模式。'
 ---
 
 你有沒有想過，為什麼同樣是疲勞——
@@ -58,7 +59,7 @@ slug: "mitochondria-energy-after-40"
 
 尿石素（Urolithin A，UA）是目前老化研究中最受關注的成分之一，原因就在這裡：
 
-**它是目前已知能最有效重新激活粒線體自噬的天然化合物。**
+**它是目前研究最多、能重新激活粒線體自噬的天然化合物之一。**
 
 尿石素的來源是石榴、莓果類和核桃中的多酚成分（鞣花單寧，Ellagitannin），這些多酚在腸道細菌的代謝作用下，轉化為尿石素。
 
@@ -82,9 +83,9 @@ slug: "mitochondria-energy-after-40"
 
 ---
 
-## 這和 B 篇、C 篇說的邏輯是同一件事
+## 這和熱量限制的邏輯是同一件事
 
-前幾篇我們說到，熱量限制（CR）能抑制 mTOR，mTOR 被抑制後自噬被激活，細胞開始清除垃圾，這是 CR 抗老化效果的核心機制之一。
+在[〈少吃真的能讓你活更久〉](/blog/chronic-inflammation/caloric-restriction-longevity-science/)和[〈不節食也能啟動長壽基因？〉](/blog/chronic-inflammation/caloric-restriction-mimetics-science/)兩篇我們說到，熱量限制（CR）能抑制 mTOR，mTOR 被抑制後自噬被激活，細胞開始清除垃圾，這是 CR 抗老化效果的核心機制之一。
 
 尿石素做的，是這個機制鏈裡的最後一步的直接激活，不需要靠熱量限制，不需要靠 mTOR 的間接路徑，直接啟動粒線體自噬。
 
@@ -102,7 +103,7 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 
 隨著年齡增長，Nrf2 的活性下降，這是老化細胞的氧化防禦能力越來越弱的原因之一。
 
-激活 Nrf2 的天然成分中，**蘿蔔硫素（Sulforaphane）** 是目前已知效果最強、研究最充分的選項。
+激活 Nrf2 的天然成分中，**蘿蔔硫素（Sulforaphane）** 是研究最充分的選項之一。
 
 它來自青花椰菜籽萃取物，進入細胞後直接觸發 Nrf2 進入細胞核，啟動整套抗氧化和解毒酶的合成。
 
@@ -118,7 +119,7 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 
 這兩個方向，加在一起，才是完整的細胞維護策略：一方面清除已經累積的損傷，一方面強化防止新損傷的系統。
 
-而這兩個方向，正好分別對應到 ageLOC R2 日錠和夜錠的設計邏輯。
+你不一定需要補充品才能走這兩條路：規律運動本身就會促進粒線體自噬，十字花科蔬菜（青花菜、青花菜芽）則是蘿蔔硫素最直接的食物來源。
 
 ![粒線體自噬vsNrf2兩條路徑](./粒線體自噬vsNrf2兩條路徑.png)
 
@@ -127,13 +128,9 @@ Nrf2 是細胞核裡的轉錄因子，負責調控一系列抗氧化酶和解毒
 **延伸閱讀：**
 - [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) 
 - [不節食也能啟動長壽基因？CRM的概念](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
-- [那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) 
+- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) 
 
 ---
-
-知道了機制，下一步是了解你現在的狀況在哪裡。
-
-我整理了一份【身體警報自我檢測清單】，幫你系統化整理身體的訊號，找出你目前的細胞耗損模式。
 
 ---
 

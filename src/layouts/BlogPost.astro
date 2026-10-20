@@ -145,6 +145,10 @@ const ogImageUrl = ogImage ? new URL(ogImage.src, Astro.site ?? Astro.url).href 
 						</div>
 						<!-- ===== /ARTICLE CTA ===== -->
 
+						<p class="article-disclosure">
+							利益揭露：本站作者為 Nu Skin 經銷商，文中提到的 Nu Skin 產品與作者有利益關係。文章內容為健康知識分享，不能取代醫師的診斷與治療；營養補充品不具治療疾病的效果。
+						</p>
+
 						<RelatedPosts posts={relatedPosts} />
 						<ShareButtons title={title} url={Astro.url.href} />
 					</div>
@@ -268,6 +272,14 @@ const ogImageUrl = ogImage ? new URL(ogImage.src, Astro.site ?? Astro.url).href 
 			display: block;
 			margin-bottom: 2rem;
 		}
+	}
+
+	/* ===== DISCLOSURE ===== */
+	.article-disclosure {
+		margin: 0 0 2rem;
+		font-size: 0.78rem;
+		line-height: 1.7;
+		color: #6b7785;
 	}
 
 	/* ===== ARTICLE CTA ===== */

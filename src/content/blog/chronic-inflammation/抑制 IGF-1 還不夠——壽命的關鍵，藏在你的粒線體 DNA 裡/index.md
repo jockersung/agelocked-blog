@@ -6,6 +6,7 @@ heroImage: './壽命的關鍵在粒線體DNA.png'
 tags: ["粒線體", "IGF-1", "抗老科學", "粒線體DNA", "長壽機制"]
 category: "慢性發炎科學"
 slug: igf1-mitochondria-dna-longevity
+ctaBridge: '粒線體狀態量不到，但身體訊號看得到。先花 1 分鐘做評估，看看你目前處於哪個狀態。'
 ---
 
 你聽過「少吃就能長壽」這個說法嗎？
@@ -98,12 +99,12 @@ mtDNA 突變累積 → 粒線體功能下降 → 細胞能量不足 → **氧化
 
 換句話說：
 
-> 如果你的粒線體 DNA 已經開始累積損傷，光靠調整飲食或單一訊號路徑，可能遠遠不夠。
+> 這是用「粒線體 DNA 特別容易出錯」的突變小鼠做的研究。一般人沒辦法知道自己的粒線體 DNA 狀態，所以不能直接套用。它給的啟發是：抗老不能只看單一訊號路徑。
 
-更全面的策略應該包含：
+從這個角度，比較全面的方向包含：
 
 1. **降低 mtDNA 損傷的來源**：氧化壓力與**慢性發炎是最主要的兩個源頭**。NF-κB 驅動的持續低度發炎會直接攻擊粒線體膜與 DNA，這也是為什麼抗發炎介入（Omega-3、多酚類、AMPK 活化劑）在抗老研究中反覆出現
-2. **支援粒線體的複製與修復能力**：CoQ10、NAD⁺ 前驅物（NMN/NR）、α-硫辛酸等有文獻支持的成分，主要作用點都在粒線體層
+2. **支援粒線體的品質**：目前證據最強的是規律運動（尤其是有氧與間歇訓練），它會直接刺激粒線體生成與汰舊換新。CoQ10、NAD⁺ 前驅物（NMN/NR）、α-硫辛酸等成分有動物與小型人體研究，效果仍待確認
 3. **在多個層次同時介入**，而不是只針對 IGF-1 或 mTOR，發炎控制是基礎，mtDNA 穩定是前提，訊號路徑調控才是加速器
 
 ---
@@ -120,7 +121,7 @@ mtDNA 突變累積 → 粒線體功能下降 → 細胞能量不足 → **氧化
 
 然而這篇研究的邏輯同樣適用：如果個體的粒線體 DNA 穩定性已經受損，GLP-1 對長壽路徑的調節效果，可能同樣會打折扣。
 
-關於 GLP-1 如何影響基因老化模式，可以參考：[GLP-1 確認了一件事：逆轉基因老化模式](/blog/chronic-inflammation/glp1-gene-aging-reversal/)。
+關於 GLP-1 如何影響基因老化模式，可以參考：[GLP-1 小鼠研究的新發現：逆轉基因老化模式](/blog/chronic-inflammation/glp1-gene-aging-reversal/)。
 
 而對現在的你來說，最實際的問題是：**你的粒線體基礎狀態怎麼樣？**
 
@@ -128,18 +129,16 @@ mtDNA 突變累積 → 粒線體功能下降 → 細胞能量不足 → **氧化
 
 慢性疲勞、下午注意力渙散、睡眠品質差，這些訊號，可能比你想的更早出現。
 
-想知道你的身體目前處於哪個狀態？
-
 ---
 
 ## 延伸閱讀
 
 - [你以為只是「壓力大」——但科學發現，它正在改變你大腦裡的蛋白質](/blog/body-signals/stress-mitochondria-bdnf-depression/)
 - [睡眠與大腦清除系統：glymphatic 機制如何影響你的老化速度](/blog/chronic-inflammation/sleep-glymphatic-brain-detox/)
-- [表觀遺傳時鐘：你的生物年齡，和身分證上的數字不一樣](/blog/chronic-inflammation/multivitamin-lifepak-slow-aging-clock/)
+- [你的身體幾歲了？（衰老可以測量嗎？2026版）](/blog/precision-health-tools/biological-age-measurement/)
 
 ---
 
-**參考資料**
+## 參考資料
 
 01. Shemtov Sarah J., McGann Eric, Carrillo Lucy et al. (2026). The longevity effects of reduced IGF-1 signaling depend on the stability of the mitochondrial genome. *Science Advances*, 12(14):eaea4279. DOI：[10.1126/sciadv.aea4279](<https://doi.org/10.1126/sciadv.aea4279>)。

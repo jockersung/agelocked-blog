@@ -13,6 +13,8 @@ Nu Skin 說他們的營養補充品是以製藥的標準來開發，第一次聽
 
 但如果你去參觀過他們在中國湖州的大中華創新園區，或是美國猶他州的總部實驗室，聽完工作人員說明之後，你會開始理解為什麼他們敢說這句話。
 
+先揭露：我是 Nu Skin 的經銷商，和這家公司有利益關係。所以這篇我盡量只寫查得到的事實，也會寫出哪些地方「還不算製藥等級」。
+
 這篇先說清楚食品製造標準和製藥製造標準的差距，再逐一對照 Nu Skin 實際達到了哪些具體標準。
 
 ---
@@ -58,20 +60,20 @@ Nu Skin 的 Pharmanex 營養補充品，已取得以下具體認證：
 **湖州保健品生產基地工廠認證歷程：**
 - 2005年：通過GMP認證
 - 2009年：通過ISO 9001品質管理系統認證
-- 2015年：通過ISO 14001環境管理、ISO 18001職業健康安全認證
+- 2015年：通過ISO 14001環境管理、OHSAS 18001 職業健康安全認證（現已改版為 ISO 45001）
 - 2017年：通過ISO 22000食品安全管理系統認證
 
 整個廠區由德國 Pharma Consult 公司設計，廠房佈局、設施與設備符合 GB50073-2001 潔淨廠房規範，人流物流獨立佈局，從源頭避免交叉污染。
 
-目前 Nu Skin 的營養補充品生產標準，至少達到 cGMP 等級以上。
+要誠實說：上面這些是保健食品 GMP 和國際管理系統（品質、環境、食品安全）的認證，**不等於藥品的 PIC/S GMP**。所以比較精確的說法是：Nu Skin 用「接近製藥的思維」在開發與管理保健品（例如潔淨廠房、原料標準化、臨床試驗），而不是「用藥品等級生產」。
 
 ** NSF 認證**
 
-Pharmanex 的 LifePak 通過了 NSF 的配方和毒理學全面審查，符合 FDA cGMP、NSF、ANSI 合規標準，NSF 是全球保健品製造領域最嚴格的第三方認證機構之一，NSF 認證提供業界領先的 GMP 審核，包含明確的審核流程、嚴重性分級系統，以及零售商和製造商要求的卓越行業規範。
+Pharmanex 的 LifePak 通過了 NSF 的配方和毒理學全面審查，NSF 是保健品領域公認嚴格的第三方認證機構之一，它的 GMP 審核有明確的流程與缺失分級。
 
 **三重第三方認證（LifePak）**
 
-Pharmanex LifePak是全球第一個同時通過 NSF、ConsumerLab 及 BSCG 三項認證的綜合維生素產品：
+2005 年，Pharmanex LifePak 同時取得 NSF、ConsumerLab 及 BSCG 三項第三方認證（來源：Pharmanex 2005 年新聞稿；認證是否持續有效，請以各機構官網查詢為準）：
 
 NSF，配方與毒理學全面審查、cGMP合規  
 ConsumerLab，成分獨立驗證，LifePak在六個類別中通過評估  
@@ -79,9 +81,7 @@ BSCG，確認不含IOC、WADA、USADA、NFL、NCAA等機構列管的80種以上�
 
 **PDR收錄（醫師桌上參考手冊）**
 
-Pharmanex是少數在PDR（Physician's Desk Reference，醫師桌上參考手冊）中收錄產品的保健品公司，目前有 7 款產品列入，包括ageLOC R2，PDR 雖不要求 FDA 批准，但收錄的補充品必須通過品質篩選，且廠商必須能夠用科學數據佐證其訴求。
-
-PDR 是醫師在臨床用藥決策時參考的專業資料庫，一個保健品品牌在這個資料庫裡出現，代表它的研究品質達到了可以被醫療專業人員參考的水準。
+Pharmanex是少數在PDR（Physician's Desk Reference，醫師桌上參考手冊）中收錄產品的保健品公司，目前有 7 款產品列入，包括ageLOC R2，PDR 不要求 FDA 批准。要知道的是，PDR 裡保健品的資料多半是由廠商提供，收錄代表醫療人員查得到這個產品的資訊，不等於醫學界背書它的效果。
 
 ![NuSkin有通過的認證](./NuSkin有通過的認證.png)
 
@@ -134,7 +134,7 @@ Nu Skin在 2011 年收購了 LifeGen Technologies，取得了其核心資產，�
 
 ---
 
-## 這不是廣告，是標準對照
+## 怎麼用這篇
 
 說清楚這件事的目的，不是要你閉著眼睛相信 Nu Skin 說的每一句話。
 
@@ -142,16 +142,16 @@ Nu Skin在 2011 年收購了 LifeGen Technologies，取得了其核心資產，�
 
 能回答這四個問題的品牌，不多。
 
-能用具體數據、獨立第三方認證、以及醫師資料庫收錄來回答這四個問題的品牌，更少。
+能用具體數據和獨立第三方認證來回答這四個問題的品牌，更少。
 
-這個稀缺性，才是「製藥標準開發保健品」這句話真正的含義。
+包括 Nu Skin 在內，任何品牌說的「製藥標準」，你都可以拿這四個問題去對照，自己判斷。
 
 ---
 
 **延伸閱讀：**
 - [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
-- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能/](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) 
-- [ageLOC R2：那個40歲看起來像32歲的男人——你老婆也注意到他了](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) 
+- [ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) 
+- [ageLOC R2：那個40歲看起來像32歲的男人，細胞在夜裡做了什麼？](/blog/intervention-optimization/ageloc-r2-cellular-renewal/) 
 
 ---
 
@@ -164,3 +164,4 @@ Nu Skin在 2011 年收購了 LifeGen Technologies，取得了其核心資產，�
 05. Lee Cheol-Koo, Klopp Roger G., Weindruch Richard et al. (1999). Gene Expression Profile of Aging and Its Retardation by Caloric Restriction. *Science*, 285(5432):1390-1393. DOI：[10.1126/science.285.5432.1390](<https://doi.org/10.1126/science.285.5432.1390>)。
 06. Mastaloudis Angela, Wood Steven M. (2012). Age‐related changes in cellular protection, purification, and inflammation‐related gene expression: role of dietary phytonutrients. *Annals of the New York Academy of Sciences*, 1259(1):112-120. DOI：[10.1111/j.1749-6632.2012.06610.x](<https://doi.org/10.1111/j.1749-6632.2012.06610.x>)。
 07. Tiller Nicholas B., Burke Louise M., Howe Stephanie M. et al. (2025). What’s (Not) in Your Supplement? An Energy and Macronutrient Analysis of Commercially Available Carbohydrate Gels. *International Journal of Sport Nutrition and Exercise Metabolism*, 35(2):162-170. DOI：[10.1123/ijsnem.2024-0174](<https://doi.org/10.1123/ijsnem.2024-0174>)。
+08. SupplySide Supplement Journal。Pharmanex Product Passes Certifications（Pharmanex 公司新聞稿轉載）。2005。<https://www.supplysidesj.com/certification/pharmanex-product-passes-certifications>

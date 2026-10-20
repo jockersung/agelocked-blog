@@ -107,7 +107,7 @@ slug: "carotenoid-cell-absorption"
 **延伸閱讀：**
 - [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/) 
 - [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) 
-- [Prysm iO 分數偏低的人，第一步先做這件事](/blog/intervention-optimization/lifepak-foundation-nutrition/) 
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
 
 ---
 

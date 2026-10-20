@@ -6,6 +6,7 @@ heroImage: './選購國外保健品.png'
 tags: ['國外保健品', '保健品選購', '各國法規', 'NSF認證', 'Amazon', '精準健康']
 category: '精準健康工具'
 slug: "supplement-import-guide"
+ctaType: 'hard'
 ---
 
 快過年出國，或是朋友請你帶伴手禮，在藥妝店面對一整排外國字的保健品，你怎麼判斷值不值得買？
@@ -73,7 +74,7 @@ slug: "supplement-import-guide"
 
 加拿大是全球保健食品管理最嚴格的國家之一。
 
-自2014年起，所有在加拿大進口、生產、銷售的自然保健品（NHPs）都必須經過以風險為基礎的審查，由衛生部（Health Canada）核發許可。
+自 2004 年《天然保健品法規》生效起，所有在加拿大進口、生產、銷售的自然保健品（NHPs）都必須經過以風險為基礎的審查，由衛生部（Health Canada）核發許可。
 
 通過的產品沒有認證標章，而是核發 **8位數的自然產品批號（NPN）**或順勢療法藥品批號（DIN-HM），並要求生產、進口、貼標、包裝、運輸及存儲全程符合加拿大GMP標準。
 
@@ -85,7 +86,7 @@ slug: "supplement-import-guide"
 
 ### 🇦🇺 澳洲
 
-澳洲是全球極少數用製藥等級法規來管理保健品的國家。
+澳洲是全球極少數把保健品放在「藥品法規」底下管理的國家。
 
 保健品被稱為「輔助藥品（Complementary Medicine）」，由澳洲藥物管理局（TGA）監管，同一個機構也監管處方藥與疫苗。
 
@@ -95,7 +96,7 @@ TGA 要求所有原料廠符合 TGA 規範、產品必須在通過 PIC/S GMP 認
 
 **怎麼查**：前往[澳洲政府AUST L查詢頁面](https://www.tga.gov.au/resources/artg)輸入號碼確認是否合法登記。
 
-澳洲出產且有 AUST L 號碼的保健品，管制標準接近藥品等級，是購買信心最高的來源之一。
+要分清楚的是：AUST L 是「登錄制」，廠商自行保證功效宣稱有依據，TGA 上市前不審查功效，事後抽查；但生產端必須符合 PIC/S GMP，品質管理的門檻很高。所以 AUST L 代表的是 **品質與安全有把關**，不代表功效經過政府審查（AUST R 才有）。
 
 ---
 
@@ -115,7 +116,7 @@ TGA 要求所有原料廠符合 TGA 規範、產品必須在通過 PIC/S GMP 認
 
 **假貨問題比你想像的嚴重**
 
-2022 年一項研究測試了 30 款在 Amazon 販售的免疫保健品，結果只有 13 款含有標示所列的成分且沒有其他問題，換句話說，57% 的受測產品是假的或標示不實的。
+2022 年一項研究測試了 30 款在 Amazon 販售的免疫保健品，結果只有 13 款的成分與標示相符且沒有其他問題。換句話說，57% 的受測產品標示不準確（成分不符、含量不符或含未標示成分），不一定是假貨，但都不是你以為買到的東西。
 
 NOW Foods 曾發現旗下 11 款保健品在 Amazon上 被偽造，由單一賣家販售；Fungi Perfecti 則發現 23 個假冒店面在販售他們的 Host Defense 產品，部分甚至含有未標示的過敏原。
 
@@ -139,7 +140,7 @@ NOW Foods 曾發現旗下 11 款保健品在 Amazon上 被偽造，由單一賣�
 
 **法規面**
 
-台灣 TFDA 對進口保健品的規定：個人自用攜帶入境，每種產品以** 6瓶（盒）為限**，總量不超過合理個人使用量。
+台灣 TFDA 對進口保健品的規定：個人自用攜帶入境，錠狀、膠囊狀食品 **每種最多 12 瓶（盒），所有種類合計不超過 36 瓶**，超過就要向食藥署申請輸入查驗。
 
 尤其幫帶幫買的人最要注意，超量可能在海關被扣查。
 
@@ -164,7 +165,8 @@ NOW Foods 曾發現旗下 11 款保健品在 Amazon上 被偽造，由單一賣�
 在藥妝店看到一個陌生的外國保健品，45 秒內的決策邏輯：
 
 **第一步：確認產地國的法規等級**
-澳洲AUST L、加拿大NPN、日本FOSHU標章 → 政府實質審查，可信度高
+加拿大NPN、日本FOSHU標章 → 政府事前審查，可信度高
+澳洲AUST L → 生產品質把關嚴格，但功效未經事前審查
 美國產品、日本FFC → 看第三方認證標章（NSF/USP/ConsumerLab）
 其他產地 → 更謹慎
 
@@ -174,7 +176,7 @@ NOW Foods 曾發現旗下 11 款保健品在 Amazon上 被偽造，由單一賣�
 有NPN號碼 → 加拿大衛生部官網查詢
 
 **第三步：對照選品框架**
-這個產品的功效，有沒有人體臨床試驗？劑量是否符合有效範圍？（見[保健品選擇如果只能看一件事，就看這個](#)）
+這個產品的功效，有沒有人體臨床試驗？劑量是否符合有效範圍？（見[我篩選保健品只看一件事](/blog/precision-health-tools/supplement-one-thing-to-check/)）
 
 三步走完，你對一個陌生的外國保健品就有了基本的判斷。
 
@@ -206,3 +208,4 @@ NOW Foods 曾發現旗下 11 款保健品在 Amazon上 被偽造，由單一賣�
 08. [Where to Safely Buy Real Vitamins and Supplements Online, Not Fakes or Counterfeits](<https://www.consumerlab.com/answers/avoid-counterfeit-supplements/counterfeit-supplements/>). ConsumerLab原始文章；部分內容可能需訂閱。未查得 DOI；來源身分已核對（2026-10-19）。
 09. Crawford Cindy, Avula Bharathi, Lindsey Andrea T. et al. (2022). Analysis of Select Dietary Supplement Products Marketed to Support or Boost the Immune System. *JAMA Network Open*, 5(8):e2226040. DOI：[10.1001/jamanetworkopen.2022.26040](<https://doi.org/10.1001/jamanetworkopen.2022.26040>)。
 10. [國內外保健食品管理制度概況](<https://www.biotaiwan.org.tw/image_doc/11/04國內外保健食品管理制度概況.pdf>). 原刊PDF，許朝凱，農業生技產業季刊第11期（2007）；更正原刊名食品生技。未查得 DOI；來源身分已核對（2026-10-19）。
+11. 衛生福利部。入境旅客攜帶自用錠狀、膠囊狀食品限量說明。衛生福利部網站。<https://mohw.gov.tw/cp-16-82861-1.html>
