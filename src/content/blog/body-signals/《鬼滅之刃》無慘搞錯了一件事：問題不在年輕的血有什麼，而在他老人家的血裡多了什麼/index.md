@@ -60,9 +60,11 @@ Conboy 團隊發現了一件非常戲劇性的事：
 
 Ambrosia 公司一瓶 8,000 美元，專門提供 25 歲以下捐血者的血漿輸注服務。Bryan Johnson 也把這個列入他的長壽實驗項目。
 
+2019 年 2 月，美國 FDA 發出警示：年輕捐血者的血漿輸注，沒有任何證實的抗老或治療效果，反而有感染、嚴重過敏反應、急性肺損傷等風險。Ambrosia 隨後暫停了服務。這不是一個可以去嘗試的選項。
+
 2023 年，杜克大學（Duke University）在 *Nature Aging* 發表了一項長期追蹤研究：他們讓老年老鼠和年輕老鼠共生數週後再分離，測量老年老鼠的 **表觀遺傳時鐘**（生物年齡指標），發現血液和肝臟組織的生物年齡顯著逆轉，而且 **分離兩個月後效果仍然持續**。
 
-換算成人類尺度，相當於讓一個 50 歲的人與 18 歲的人共享循環系統八年，效果可延長壽命達八年。
+這批老鼠的壽命也有小幅延長。但這是動物實驗，不能直接換算成人類能多活幾年。
 
 但科學家本人，沒有這麼樂觀。
 
@@ -141,6 +143,14 @@ Inflammaging 不是感染，不是急性發炎。它是一種長年慢慢燒的�
 
 這不是一個可以靠「換一批血」解決的問題。這是你每一天的身體狀態，在每一天默默決定的事。
 
+目前證據比較一致、你今天就做得到的方向有三個：
+
+- **規律運動**：每週累積 150 分鐘中等強度的有氧運動，加上兩次肌力訓練。
+- **睡眠**：固定作息，睡滿 7 小時左右。
+- **飲食**：多蔬果、少加工食品，控制腰圍。
+
+這三件事為什麼能壓低慢性發炎，下一篇會說清楚。
+
 ---
 
 **接下來讀這篇：**
@@ -162,3 +172,4 @@ Inflammaging 不是感染，不是急性發炎。它是一種長年慢慢燒的�
 09. Zhang Bohan, Lee David E., Trapp Alexandre et al. (2023). Multi-omic rejuvenation and lifespan extension on exposure to youthful circulation. *Nature Aging*, 3(8):948-964. DOI：[10.1038/s43587-023-00451-9](<https://doi.org/10.1038/s43587-023-00451-9>)。
 10. Lagunas-Rangel Francisco Alejandro (2024). Aging insights from heterochronic parabiosis models. *npj Aging*, 10(1):38. DOI：[10.1038/s41514-024-00166-0](<https://doi.org/10.1038/s41514-024-00166-0>)。
 11. Gulej Rafal, Nyúl-Tóth Ádám, Csik Boglarka et al. (2023). Rejuvenation of cerebromicrovascular function in aged mice through heterochronic parabiosis: insights into neurovascular coupling and the impact of young blood factors. *GeroScience*, 46(1):327-347. DOI：[10.1007/s11357-023-01039-2](<https://doi.org/10.1007/s11357-023-01039-2>)。
+12. U.S. Food and Drug Administration。Important Information about Young Donor Plasma Infusions for Profit。FDA Safety Communication，2019。<https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/important-information-about-young-donor-plasma-infusions-profit>

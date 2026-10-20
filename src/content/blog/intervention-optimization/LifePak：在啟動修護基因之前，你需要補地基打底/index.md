@@ -61,7 +61,7 @@ Youthspan 的作用是什麼？它透過 CRM（熱量限制模擬）激活 AMPK�
 
 **現代食物的植化素含量在下降。** 
 
-農業土壤退化和品種改良優先考慮產量，同樣份量的蔬果，現在的植化素含量和 50 年前相比可能下降了 5–40%，視品種和產地而異。
+農業土壤退化和品種改良優先考慮產量，美國一項比較 1950 年與 1999 年農業部資料的研究發現，同樣份量的蔬菜，部分維生素與礦物質含量下降了約 5–40%，視營養素和品種而異。
 
 這四個原因疊加，讓「多吃蔬菜」的效果，遠不如大多數人以為的那麼直接。
 
@@ -107,7 +107,7 @@ LifePak 的植化素複合配方是它和一般綜合維他命最大的分水嶺
 
 成分之間的達峰時間和吸收競爭，在配方設計階段就已經被考慮進去。
 
-**製藥等級的品管標準**：Pharmanex LifePak 是全球第一個同時通過 NSF、ConsumerLab 及 BSCG 三項認證的綜合維生素產品，這個標準高於一般保健品法規的要求。
+**第三方品質認證**：2005 年，Pharmanex LifePak 取得 NSF International、ConsumerLab.com 與 BSCG 三個第三方機構的認證，確認成分與標示相符、不含列管禁藥（來源：Pharmanex 2005 年新聞稿）。這些認證說的是品質與標示正確，不是功效。
 
 ---
 
@@ -133,9 +133,9 @@ LifePak 的植化素複合配方是它和一般綜合維他命最大的分水嶺
 
 根據這個邏輯，建議的使用順序是：
 
-**第一個月**：單獨使用 LifePak，每天按時服用，同時調整飲食品質。四週後做一次 Prysm iO 掃描，確認抗氧化水位是否在上升。
+**前三個月**：單獨使用 LifePak，每天按時服用，同時調整飲食品質。四週後做第一次 Prysm iO 掃描，看分數有沒有開始往上；之後每個月掃一次，看趨勢。
 
-**使用三個月水位上升之後**：加入 Youthspan。這時候細胞環境的基礎已經補好，Nrf2 通路有足夠的植化素支撐，Youthspan 激活的修復機制才有完整的原物料可以工作。
+**三個月後，分數穩定上升了**：再考慮加入 Youthspan。這時候細胞環境的基礎已經補好，Nrf2 通路有足夠的植化素支撐，Youthspan 激活的修復機制才有完整的原物料可以工作。
 
 **持續追蹤**：每三個月一次 Prysm iO 掃描，用數字確認整體策略是否有效，而不是靠感覺猜。
 
@@ -149,7 +149,7 @@ LifePak 針對不同的生理需求分為三個配方：
 
 **LifePak（20歲以上男性）**：完整的微量營養素和植化素基礎配方，支持整體代謝和抗氧化功能。
 
-**LifePak Women（20歲以上女性）**，在基礎配方上增加鐵質（補充月經流失）、葉酸（支持細胞分裂）、額外的鈣質、維他命 D（骨密度維護）和肌醇，還特別加入當歸濃縮物、月見草油、琉璃苣萃取物，對於平衡女性生理機能（經前症候群）有卓越功效。
+**LifePak Women（20歲以上女性）**，在基礎配方上增加鐵質（補充月經流失）、葉酸（支持細胞分裂）、額外的鈣質、維他命 D（骨密度維護）和肌醇，還加入當歸濃縮物、月見草油、琉璃苣萃取物。
 
 **LifePak Prime（40歲以上）**：針對細胞老化加速階段調整劑量，增加輔酶 Q10（粒線體能量支持）、α-硫辛酸（跨水脂兩相的抗氧化），並提高幾個關鍵植化素的濃度。
 
@@ -191,3 +191,4 @@ LifePak 針對不同的生理需求分為三個配方：
 06. Pan Wen-Harn, Yeh Nai-Hua, Yang Ray-Yu et al. (2018). Vegetable, fruit, and phytonutrient consumption patterns in Taiwan. *Journal of Food and Drug Analysis*, 26(1):145-153. DOI：[10.1016/j.jfda.2016.12.015](<https://doi.org/10.1016/j.jfda.2016.12.015>)。
 07. [Lifespan: Why We Age—and Why We Don’t Have To](<https://www.simonandschuster.com/books/Lifespan/David-Sinclair/9781501191978>). 出版社書籍頁。未查得 DOI；來源身分已核對（2026-10-19）。
 08. [Pharmanex 6S Quality Process](<https://api.nuskin.com/content/dam/office/n_america/shared/en/pharmanex_products/6s_flyer.pdf>). Nu Skin官方製程文件；此文件不作為三重認證之證據。未查得 DOI；來源身分已核對（2026-10-19）。
+09. SupplySide Supplement Journal。Pharmanex Product Passes Certifications（Pharmanex 公司新聞稿轉載）。2005。<https://www.supplysidesj.com/certification/pharmanex-product-passes-certifications>

@@ -1,7 +1,7 @@
 ---
 
-title: "肚子變大、容易累？《Nature》最新研究：其實連你的大腦也一起在退化"
-description: "你以為肚子變大只是代謝變差？2026 年《Nature》研究分析 355,997 個細胞核，確認成年人海馬迴仍有神經新生，但慢性發炎與皮質醇偏高正同步破壞你的大腦。透過 Prysm iO 掃描與健檢數據，找出保護大腦的關鍵介入點。"
+title: "肚子變大、容易累？慢性發炎不只傷身體，也可能正在影響你的大腦"
+description: "你以為肚子變大只是代謝變差？2026 年《Nature》研究分析 355,997 個細胞核，確認成年人海馬迴仍有神經新生，但慢性發炎與皮質醇偏高正同步破壞你的大腦。透過健檢數據與生活習慣，找出保護大腦的關鍵介入點。"
 heroImage: "./慢性發炎抑制海馬迴神經新生.png"
 pubDate: 2026-03-18
 tags: ["神經新生", "失智症", "阿茲海默", "慢性發炎", "葉黃素", "類胡蘿蔔素", "BDNF", "超級老年人"]
@@ -115,13 +115,13 @@ slug: "neurogenesis-inflammaging-cognitive-resilience"
 
 ### 你的 Prysm iO 掃描數字代表什麼
 
-多項研究確認，視網膜黃斑色素光密度（MPOD）與大腦類胡蘿蔔素濃度高度相關，兩者都反映全身的類胡蘿蔔素儲備狀態。
+多項研究發現，視網膜黃斑色素光密度（MPOD，也就是眼睛黃斑部累積的葉黃素與玉米黃素多寡）與大腦中的葉黃素濃度相關。
 
 2013 年愛爾蘭老化縱貫研究（n=4,453 名 50 歲以上成年人）：MPOD 偏低者，在整體認知、前瞻性記憶、反應速度、執行功能表現均顯著較差。
 
 2014 年研究（n=108 名老年人）：MPOD 水準與整體認知、語文學習、回憶、處理速度、知覺速度均顯著正相關。
 
-**你的 Prysm iO 掃描分數，不只是皮膚抗氧化指數，它是你大腦長期神經保護儲備的間接窗口。**
+要說清楚的是：這些研究量的是「眼睛黃斑部的色素」，不是 Prysm iO 量的「皮膚類胡蘿蔔素」。兩者都和飲食中的類胡蘿蔔素攝取有關，但 Prysm iO 分數不能拿來推估大腦的保護儲備。它能告訴你的，是你最近幾週蔬果與抗氧化營養吃得夠不夠。
 
 ---
 
@@ -143,11 +143,9 @@ slug: "neurogenesis-inflammaging-cognitive-resilience"
 
 補充品是運動效果的放大器，不是替代品。
 
-**③ 用 Prysm iO 掃描確認類胡蘿蔔素儲備**
+**③ 把中年的失智風險因子顧好**
 
-掃描本身 15 秒，但搭配你的健檢數字一起解讀，才能告訴你：抗神經發炎的那層保護，你現在的儲備是充足還是已在耗損。
-
-這是「你現在的大腦風險程度」最直接的量化方式之一。
+2024 年《刺胳針》失智症委員會列出的可改變風險因子裡，中年最重要的幾個是：聽力損失、高 LDL 膽固醇、高血壓、糖尿病、缺乏運動。定期健檢、該治療的就治療，是保護大腦最實際的做法。如果你已經發現記憶力明顯變差，請找神經內科或記憶門診評估。
 
 ---
 
@@ -170,3 +168,4 @@ slug: "neurogenesis-inflammaging-cognitive-resilience"
 09. Feeney Joanne, Finucane Ciarán, Savva George M. et al. (2013). Low macular pigment optical density is associated with lower cognitive performance in a large, population-based sample of older adults. *Neurobiology of Aging*, 34(11):2449-2456. DOI：[10.1016/j.neurobiolaging.2013.05.007](<https://doi.org/10.1016/j.neurobiolaging.2013.05.007>)。
 10. Vishwanathan R., Iannaccone A., Scott T. M. et al. (2014). Macular pigment optical density is related to cognitive function in older people. *Age and Ageing*, 43(2):271-275. DOI：[10.1093/ageing/aft210](<https://doi.org/10.1093/ageing/aft210>)。
 11. ORHAN Cemal, ERTEN Füsun, ER Beşir et al. (2021). Lutein/zeaxanthin isomers regulate neurotrophic factors and synaptic plasticity in trained rats. *TURKISH JOURNAL OF MEDICAL SCIENCES*, 51(4):2167-2176. DOI：[10.3906/sag-2101-264](<https://doi.org/10.3906/sag-2101-264>)。
+12. Livingston Gill, Huntley Jonathan, Liu Kathy Y. et al. (2024). Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission. *The Lancet*, 404(10452):572-628. DOI：[10.1016/S0140-6736(24)01296-0](<https://doi.org/10.1016/S0140-6736(24)01296-0>)。

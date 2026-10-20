@@ -17,6 +17,8 @@ slug: 'hypertension-glymphatic-dementia'
 
 這個清洗系統，叫做類淋巴系統（Glymphatic System）。
 
+（先說明：類淋巴系統在睡眠中如何運作，學界仍在爭論。2024 年也有小鼠研究發現，睡眠時大腦清除速度反而較慢。但「高血壓會傷害大腦的小血管」這件事，證據是很一致的。）
+
 它在你睡覺的時候運作，負責沖走大腦白天產生的代謝廢物，包括與阿茲海默症直接相關的β-澱粉樣蛋白（Aβ）和 Tau 蛋白。
 
 如果這套系統長期無法好好運作，這些蛋白質就會在神經組織裡一點一點積累。
@@ -116,7 +118,7 @@ AQP4 是星狀膠質細胞上的水通道，是讓腦脊髓液滲入腦組織的
 
 **夜間血壓的重要性**：研究發現，夜間血壓未下降（Non-dipping）的人，類淋巴系統的清洗效率指標（DTI-ALPS指數）通常更低。也就是說，睡眠期間大腦洗得更不乾淨。夜間血壓，只有持續監測才能發現。
 
-**血管年齡 vs 生理年齡**：脈搏波傳導速度（PWV）是衡量血管彈性的金標準。現代穿戴式裝置已可將其轉換為「血管年齡」，如果你的血管年齡顯著高於生理年齡，這是類淋巴系統效率正在下降的早期警訊。
+**血管年齡 vs 生理年齡**：脈搏波傳導速度（PWV）是衡量血管彈性的金標準。現代穿戴式裝置已可將其轉換為「血管年齡」，如果你的血管年齡顯著高於實際年齡，代表血管彈性在變差，值得和醫師討論血壓與心血管風險。
 
 ![血壓監測](./血壓監測.png)    
 
@@ -130,10 +132,12 @@ AQP4 是星狀膠質細胞上的水通道，是讓腦脊髓液滲入腦組織的
 
 **睡眠品質**：這裡形成一個雙向關係，高血壓損害睡眠期間的類淋巴清洗，而睡眠不足又會讓血壓更難控制。改善睡眠品質，本身就是血壓管理的一部分。
 
-**營養介入（有研究支持）**：
+**按時服藥**：如果醫師已經開了降血壓藥，按時吃、定期回診，是保護大腦最直接的一步。下面的營養介入只是輔助，不能取代降血壓藥。
+
+**營養介入（有小型研究支持，正在服藥者請先問醫師）**：
 - **維生素K2（MK-7形式）**：激活基質Gla蛋白，將鈣從血管壁引導至骨骼，減少血管鈣化，改善血管順應性
 - **L-瓜胺酸**：提升血漿精胺酸濃度，促進NO生成，改善內皮依賴性血管舒張
-- **Omega-3（EPA/DHA）**：連續12週每日4g，可有效降低中心動脈僵硬度
+- **Omega-3（EPA/DHA）**：研究中降低動脈僵硬度用的劑量偏高（每日可達 4 g，已接近處方等級）。高劑量會增加出血風險，正在服用抗凝血或抗血小板藥物者，務必先和醫師討論
 - **碧容健（法國海岸松樹皮萃取，Pycnogenol）**：上調eNOS活性，提升NO，改善微循環
 
 ![血壓介入策略](./血壓介入策略.png)          
@@ -190,3 +194,4 @@ AQP4 是星狀膠質細胞上的水通道，是讓腦脊髓液滲入腦組織的
 08. Chu Zhenyu, Wei Yao, Hao Yan et al. (2021). Clinical effectiveness of fish oil on arterial stiffness: A systematic review and meta-analysis of randomized controlled trials. *Nutrition, Metabolism and Cardiovascular Diseases*, 31(5):1339-1348. DOI：[10.1016/j.numecd.2020.12.033](<https://doi.org/10.1016/j.numecd.2020.12.033>)。
 09. Knapen Marjo H. J., Braam Lavienja A. J. L. M., Drummen Nadja E. et al. (2015). Menaquinone-7 supplementation improves arterial stiffness in healthy postmenopausal women. *Thrombosis and Haemostasis*, 113(05):1135-1144. DOI：[10.1160/TH14-08-0675](<https://doi.org/10.1160/TH14-08-0675>)。
 10. Wang Tzung-Dau, Chiang Chern-En, Chao Ting-Hsing et al. (2022). 2022 Guidelines of the Taiwan Society of Cardiology and the Taiwan Hypertension Society for the Management of Hypertension.. *Acta Cardiologica Sinica*, 38(3):225. DOI：[10.6515/ACS.202205_38(3).20220321A](<https://doi.org/10.6515/ACS.202205_38%283%29.20220321A>)。
+11. Miao Andrawus, Luo Tianyuan, Hsieh Bryan et al. (2024). Brain clearance is reduced during sleep and anesthesia. *Nature Neuroscience*, 27(6):1046-1050. DOI：[10.1038/s41593-024-01638-y](<https://doi.org/10.1038/s41593-024-01638-y>)。

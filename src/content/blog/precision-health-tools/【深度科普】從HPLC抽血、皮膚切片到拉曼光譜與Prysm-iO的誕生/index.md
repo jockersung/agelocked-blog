@@ -33,13 +33,13 @@ HPLC 是一種精密的化學分離技術，流程是這樣的：
 
 整個流程耗時數天，對設備和操作人員的要求極高，費用昂貴，且每個步驟都有出錯的可能。
 
-但更根本的問題是：**血液中的類胡蘿蔔素半衰期極短。**
+但更根本的問題是：**血液中的類胡蘿蔔素，很容易受到最近飲食的影響。**
 
-研究顯示，你昨天吃了一大盤紅蘿蔔，今天血液數值就會明顯升高；但如果你連續三天沒吃蔬果，數值又會迅速下滑。血液記錄的只是「最近 24 小時的飲食快照」，而非你長期健康狀態的真實反映。
+你這幾天吃了一大盤紅蘿蔔，血液數值就會明顯升高；連續一段時間沒吃蔬果，數值又會往下掉。血液反映的比較像是「最近幾天到幾週的飲食」，而且抽血前一兩餐吃了什麼也會干擾，不容易代表你長期的狀態。
 
-想想你這個月的生活：熬夜、外食、趕不完的會議。你有多久沒有真正吃到足夠的蔬果了？血液數值說不定還看起來「還好」，但那只是因為你昨天剛好吃了一頓沙拉。
+想想你這個月的生活：熬夜、外食、趕不完的會議。你有多久沒有真正吃到足夠的蔬果了？血液數值說不定還看起來「還好」，但那可能只是因為你這幾天剛好吃了幾頓沙拉。
 
-> **「血液告訴你的，是你昨天吃了什麼；而科學家真正想知道的，是你過去幾週的生活習慣。」**
+> **「血液比較像你最近幾天吃了什麼；科學家真正想知道的，是你長期的生活習慣。」**
 
 這讓流行病學家和臨床研究者非常頭痛：大規模人群研究中，很難每次都在相同飲食條件下採血，數據波動大到幾乎無法比較。
 
@@ -83,11 +83,11 @@ Bernstein 醫師的畢生研究目標，是對抗一種叫做 **老年性黃斑�
 
 這兩種黃色色素就像體內太陽眼鏡，會吸收高能量的藍光，保護視網膜細胞不被氧化破壞。
 
-**Bernstein 醫師知道，葉黃素和玉米黃素含量高的人，得 AMD 的機率會大幅降低。**
+**Bernstein 醫師的研究方向是：葉黃素和玉米黃素含量高，可能和 AMD 風險較低有關。**
 
 問題是：怎麼測量？
 
-在 2000 年左右，唯一的方法是等患者死後解剖眼球。
+在 2000 年左右，能用的方法很有限：最準確的是分析捐贈者死後的眼球組織；活體方法（例如異色閃爍光度法）則需要受試者高度配合，結果也容易受影響。
 
 或者只能靠主觀的視力測試，但那時視力已經開始退化了，根本來不及預防。
 
@@ -161,9 +161,9 @@ Gellermann 發現，**共振可以把原本微弱到幾乎察覺不到的拉曼�
 
 結果發表在 **2000 年**的《皮膚病學研究雜誌》（*Journal of Investigative Dermatology*）：
 
-**非侵入性的光學掃描數據，與破壞組織的化學分析數據，完美吻合。**
+**非侵入性的光學掃描數據，與破壞組織的化學分析數據，高度相關。**
 
-這證明了光學掃描是絕對準確的。
+這證明了光學掃描能可靠地反映皮膚裡的類胡蘿蔔素濃度。
 
 接著，研究團隊開始掃描活體人類的五個不同身體部位。
 
@@ -175,7 +175,7 @@ Gellermann 發現，**共振可以把原本微弱到幾乎察覺不到的拉曼�
 - 手掌的角質層特別厚，這正是脂溶性類胡蘿蔔素最愛囤積的地方
 - 相較於其他部位，手掌較不受黑色素深淺影響，光學讀數更純粹
 
-這也是為什麼後來所有掃描儀都採用「手掌測量」的科學基礎。
+這也是早期拉曼掃描儀（例如 S3）採用「手掌測量」的科學基礎。後來的反射光譜裝置（Veggie Meter、Prysm iO）則改用指尖，因為指尖比較容易用按壓的方式把血液推開。
 
 ### 拉曼光譜不是新技術，它已經在很多領域證明自己了
 
@@ -294,14 +294,6 @@ Gellermann 博士創立了兩家公司（Nutriscan, Inc. 與 Caroderm, Inc.）�
 - 如果你的飲食充滿加工食品，又經常熬夜抽菸，掃描出來的分數就會慘不忍睹
 - 但如果你開始大量攝取色彩鮮豔的蔬果，並服用高品質營養品，幾個月後，你就能親眼看見自己的 SCS 分數顯著攀升
 
-這項技術甚至成為了流行文化的一部分。
-
-**在美國著名的日間醫療脫口秀中，知名心臟外科醫師 Dr. Mehmet Oz 在節目現場直接使用掃描儀檢測觀眾的抗氧化指數。** 
-
-結果的差異之大，讓現場觀眾與電視機前的人都感到震驚，極大提升了大眾對抗氧化健康的認知。
-
-![奧茲醫師節目上測抗氧化指數](./奧茲醫師節目上測抗氧化指數.png)
-
 ### 但質疑也來了：這會不會只是商業噱頭？
 
 樹大招風。當這項原本純粹的醫學技術被整合進直銷企業的商業模式，用來佐證營養品效用時，自然會引來質疑：
@@ -400,7 +392,7 @@ Longevity Link 開發的產品叫 **Veggie Meter®**，由 Gellermann 博士與 
 
 **公衛數據揭開的社會真相**
 
-RS 反射式技術雖然在個體精確度上（誤差率約 0.5%-14%）略遜於拉曼技術（誤差率約 5%），但因為夠便宜、夠堅固，Veggie Meter® 迅速成為全球營養流行病學家的標準配備。
+RS 反射式技術在個體精確度上略遜於拉曼技術，但因為夠便宜、夠堅固，Veggie Meter® 迅速成為全球營養流行病學家的標準配備。
 
 在一項發表於《營養學》（*Nutrients*）的研究中，研究人員將 Veggie Meter 帶入低收入社區，針對近 300 名參與「婦女、嬰兒和兒童特別補充營養計畫（WIC）」的成人檢測。
 
@@ -432,7 +424,7 @@ Veggie Meter 不只是測量儀器，更成為評估國家公衛政策、追蹤�
 
 **Prysm iO 的核心技術路徑，是直接建立在 Gellermann-Ermakov 陣營的壓力式反射光譜研究上。** 
 
-在血液干擾的處理策略上，Prysm iO 沿用了 Gellermann 的物理排血路徑；而柏林夏里特陣營（Lademann/Darvin）的 MSRRS 成果，則是 Galaxy Watch 的學術根基，兩條路線各有明確的技術傳承。
+在血液干擾的處理策略上，Prysm iO 沿用了 Gellermann 的物理排血路徑。（三星 Galaxy Watch 則是三星自行研發、與首爾大學合作，詳見[〈三機大對決〉](/blog/precision-health-tools/antioxidant-scanner-comparison/)。）
 
 > **怎麼在使用便宜、無雷射危險的「反射式白光硬體（RS）」的同時，獲得媲美昂貴「拉曼雷射光譜（RRS）」的黃金標準精確度？**
 
@@ -453,8 +445,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 **但 Prysm iO 的運作方式像一把光學散彈槍。**
 
 當你將食指輕觸在 Prysm iO 迷你掃描鏡頭上時，在短短 **15 秒**內：
-- 設備以每秒超過 **6,000 次**的速度採樣
-- 單次掃描累積高達 **70,000+ 次**超光譜吸收測量
+- 單次掃描累積超過 **700,000 次**超光譜吸收測量（2026 年原廠更新後的數字）
 
 這種高密度採樣，能極度細緻地描繪出白光在穿透表皮、角質層並與血管交錯時，各種波長被吸收與反射的複雜圖形。
 
@@ -470,15 +461,15 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 在過去二十年間，他們在全球近 50 個國家部署了無數台基於高精準度拉曼雷射（RRS）的 BioPhotonic 掃描儀，透過這些儀器，累積了一個包含超過 1,000 萬人次、總數高達 **2,100 萬筆**的高純度拉曼抗氧化資料庫。
 
-軟體工程師們將這個龐大的黃金標準資料庫，餵給了 Prysm iO 背後的 AI 演算法。
+軟體工程師們將這個龐大的拉曼掃描資料庫，餵給了 Prysm iO 背後的 AI 演算法。
 
 **人工智慧透過深度學習，學會了如何從 Spectral Rai 收集到的混亂、龐雜的高光譜反射數據中，精準剔除雜訊干擾，並將結果「校準」回拉曼技術應有的準確度水準。**
 
-透過這層 AI 校準濾鏡，一台沒有配備昂貴雷射的輕巧裝置，居然能輸出與專業醫療實驗室同等級的精確數值，這個數值被命名為「Prysm 分數」。
+透過這層 AI 校準濾鏡，一台沒有配備昂貴雷射的輕巧裝置，能輸出和拉曼雷射掃描儀接近的數值，這個數值被命名為「Prysm 分數」。
 
 ![光譜指數](./光譜指數.png)
 
-**2025 年的終極臨床對決：AI 是真的還是吹牛？**
+**2026 年的臨床驗證：AI 是真的還是吹牛？**
 
 科學界對任何宣稱「靠軟體就能彌補硬體極限」的說法，向來嚴格懷疑。
 
@@ -496,7 +487,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 研究人員使用「決定係數（R²）」來判定勝負。R² 代表機器預測結果與抽血真實結果的吻合程度；R² = 1 代表預測完全無誤。
 
-在充滿變數的人體試驗中，R² 達到 0.70 以上就已經是極度強大的相關性。
+在光學和血液這兩個不同的生理隔間之間，R² 達到 0.70 以上算是很強的相關，但也代表仍有一部分差異無法解釋，單次數值會有誤差。
 
 **結果揭曉：**
 
@@ -507,7 +498,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 ![PrysmiO與S3分別跟血液比較](./PrysmiO與S3分別跟血液比較.png)
 
-**Prysm iO 成功證明：透過大量高光譜數據捕捉結合 AI，一台小巧、個人化且無雷射危險的 RS 設備，完全可以達到等同於昂貴 RRS 設備的臨床級預測準確度。**
+**這項研究顯示：在預測血液類胡蘿蔔素濃度這件事上，小巧、無雷射的 Prysm iO，和昂貴的 S3 雷射掃描儀表現接近。**（要說明的是，研究作者群包含 Nu Skin 研究人員。）
 
 那個年代，想知道自己的抗氧化數值是一件需要「特地安排」的事。
 
@@ -521,9 +512,9 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 看完這五個階段，有一件事變得很清楚：
 
-**Prysm iO 不是一個新發明，它是二十五年科學積累的終點。**
+**Prysm iO 不是憑空出現的新發明，它建立在二十五年的科學積累上。**
 
-每一個你看到的「15 秒」、「70,000+ 次擷取」、「2,100 萬筆數據」背後，都是真實的研究者用真實的受試者、一步一步驗證出來的。
+每一個你看到的「15 秒」、「700,000+ 次擷取」、「2,100 萬筆數據」背後，都是真實的研究者用真實的受試者、一步一步驗證出來的。
 
 這也是為什麼我對這個工具有信心，不是因為它看起來很科技，是因為我親眼看過這段歷史。
 
@@ -545,7 +536,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 08. Ermakov Igor V., Gellermann Werner (2010). Validation model for Raman based skin carotenoid detection. *Archives of Biochemistry and Biophysics*, 504(1):40-49. DOI：[10.1016/j.abb.2010.07.023](<https://doi.org/10.1016/j.abb.2010.07.023>)。
 09. Ermakov Igor V., Gellermann Werner (2012). Dermal carotenoid measurements via pressure mediated reflection spectroscopy. *Journal of Biophotonics*, 5(7):559-570. DOI：[10.1002/jbio.201100122](<https://doi.org/10.1002/jbio.201100122>)。
 10. Mayne Susan T., Cartmel Brenda, Scarmo Stephanie et al. (2013). Resonance Raman spectroscopic evaluation of skin carotenoids as a biomarker of carotenoid status for human studies. *Archives of Biochemistry and Biophysics*, 539(2):163-170. DOI：[10.1016/j.abb.2013.06.007](<https://doi.org/10.1016/j.abb.2013.06.007>)。
-11.  (2026). Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans. *Food &amp; Nutrition Journal*, 11(1). DOI：[10.29011/2575-7091.100334](<https://doi.org/10.29011/2575-7091.100334>)。
+11. Riggs Melanie et al. (2026). Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans. *Food &amp; Nutrition Journal*, 11(1). DOI：[10.29011/2575-7091.100334](<https://doi.org/10.29011/2575-7091.100334>)。
 12. Di Noia Jennifer, Gellermann Werner (2021). Use of the Spectroscopy-Based Veggie Meter® to Objectively Assess Fruit and Vegetable Intake in Low-Income Adults. *Nutrients*, 13(7):2270. DOI：[10.3390/nu13072270](<https://doi.org/10.3390/nu13072270>)。
 13. Maxim E Darvin, Björn Magnussen, Jürgen Lademann, Wolfgang Köcher, 2016. Multiple spatially resolved reflection spectroscopy for in vivo determination of carotenoids in human skin and blood. *Laser Phys. Lett.* 13(9):095601.。 DOI：[10.1088/1612-2011/13/9/095601](<https://doi.org/10.1088/1612-2011/13/9/095601>)。
 14. Knaggs Helen, Lephart Edwin (2025). Global Lifetime Non-invasive Spectroscopy-based RRS Quantification of Skin Carotenoids Provides Evidence for Enhancing the Human Healthspan – A Narrative Review. **. DOI：[10.20944/preprints202507.0634.v1](<https://doi.org/10.20944/preprints202507.0634.v1>)。

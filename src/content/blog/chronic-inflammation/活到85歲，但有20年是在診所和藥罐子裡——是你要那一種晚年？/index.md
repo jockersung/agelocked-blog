@@ -1,11 +1,12 @@
 ---
-title: '活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？'
-description: '人類平均壽命在延長，但健康壽命和最大壽命之間的落差也在擴大——全球平均超過9年。這篇說清楚 Healthspan 和 Lifespan 的差別，以及你現在的選擇怎麼決定你走哪條路。'
+title: '活到85歲，但有20年是在診所和藥罐子裡——你要哪一種晚年？'
+description: '人類平均壽命在延長，但健康壽命和壽命之間的落差也在擴大——全球平均超過9年。這篇說清楚 Healthspan 和 Lifespan 的差別，以及你現在的選擇怎麼決定你走哪條路。'
 pubDate: 2026-03-02
 heroImage: './哪一種晚年.png'
 tags: ['抗氧化', '健康', '長壽']
 category: '慢性發炎科學'
 slug: "healthspan-vs-lifespan"
+ctaBridge: '把你的訊號整理清楚，是第一步。花 1 分鐘做評估，看看這些症狀組合起來，有沒有呈現出一個早期的模式。'
 ---
 
 有一個問題，大部分人從來沒有認真想過：
@@ -28,7 +29,7 @@ slug: "healthspan-vs-lifespan"
 
 但有一組數字很少被拿出來講：
 
-**健康壽命（Healthspan）和最大壽命（Lifespan）之間的落差，正在擴大。**
+**健康壽命（Healthspan）和壽命（Lifespan）之間的落差，正在擴大。**
 
 2021 年，發表在《NPJ Regenerative Medicine》的研究指出：人類活得更久了，但健康的時間並沒有等比例延長。
 
@@ -44,7 +45,7 @@ slug: "healthspan-vs-lifespan"
 
 ## Lifespan 和 Healthspan，是兩條不同的線
 
-**Lifespan（最大壽命）** 是你活到幾歲。這條線正在被現代醫療持續往右拉。
+**Lifespan（壽命）** 是你活到幾歲。這條線正在被現代醫療持續往右拉。
 
 **Healthspan（健康壽命）** 是你在「身體功能完好、不依賴藥物維持日常生活」的狀態下活到幾歲。
 
@@ -141,23 +142,17 @@ slug: "healthspan-vs-lifespan"
 
 而是「我的細胞修復速度，現在還跟得上損耗速度嗎？」，這是 Healthspan 的問題，大部分的體檢沒有在量這個。
 
-如果你現在有疲勞、反覆感冒、睡眠品質不穩定、修復變慢這類訊號，這些不是要你去看醫生。
+如果你現在有疲勞、反覆感冒、睡眠品質不穩定、修復變慢這類訊號，先確認不是需要就醫的問題：症狀持續好幾個月、越來越嚴重，或伴隨體重莫名下降、發燒、夜間盜汗，請先看醫師。
 
-這是你的身體在告訴你，你的 Healthspan 曲線已經開始往下走了。
+排除這些之後，這些訊號是你的身體在告訴你，你的 Healthspan 曲線已經開始往下走了。
 
 在它往下走之前介入，跟等它走了一段才處理，是完全不同的事。
 
 ---
 
-## 第一步：把你的訊號整理清楚
-
-我整理了一份【身體警報自我檢測清單】，從 Healthspan 的角度設計，不只是問你有沒有症狀，是幫你看這些症狀組合起來，有沒有呈現出一個早期的模式。
-
----
-
 **延伸閱讀：**
-- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](agelocked-blog\src\content\blog\body-signals\normal-checkup-still-tired/) 
-- [壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？](agelocked-blog\src\content\blog\chronic-inflammation\longevity-55-percent-genetics/) 
+- [體檢報告沒有紅字，但你還是一直累——這不是心理問題](/blog/body-signals/normal-checkup-still-tired/) 
+- [壽命約一半由基因決定——另外一半，你正在用什麼速度耗損？](/blog/chronic-inflammation/longevity-55-percent-genetics/) 
 
 ---
 

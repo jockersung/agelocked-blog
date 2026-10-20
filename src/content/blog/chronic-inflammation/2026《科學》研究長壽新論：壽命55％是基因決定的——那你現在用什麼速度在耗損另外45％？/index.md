@@ -1,22 +1,23 @@
 ---
-title: '2026《科學》研究長壽新論：壽命55%是基因決定的——那你現在用什麼速度在耗損另外45%？'
-description: '基因影響55%硬體與長壽的關係'
+title: '2026《科學》研究長壽新論：壽命約一半由基因決定——另外一半，你正在用什麼速度耗損？'
+description: '2026 年《科學》雙胞胎研究估計，排除意外與傳染病後，壽命差異約一半和基因有關。另一半，是你每天的生活與慢性發炎在決定。'
 pubDate: 2026-02-12
 heroImage: './2026長壽新論.png'
 tags: ['抗氧化', '健康', '長壽']
 category: '慢性發炎科學'
 slug: "longevity-55-percent-genetics"
+ctaBridge: '你的疲勞、感冒頻率、睡眠和修復速度，放在一起看才看得出方向。先花 1 分鐘做評估，看看這些訊號組合指向哪裡。'
 ---
 
 2026年1月，以色列魏茲曼科學研究所（Weizmann Institute of Science）在《科學》（Science）期刊發表了一項研究。
 
 結論讓很多人心涼了半截：
 
-**在排除意外和傳染病之後，人類內在衰老速度的差異，有 55% 是由基因決定的。**
+**在排除意外和傳染病之後，人類「內在壽命」的差異，大約有一半（約 50%）和基因有關。**
 
 這個數字是過去估計值的兩倍以上。
 
-過去我們以為基因頂多影響 20 – 25%，現在告訴你是 55%。
+過去我們以為基因頂多影響 20 – 25%，現在告訴你大約是一半。
 
 第一個反應很正常：「那努力有什麼用？」
 
@@ -36,11 +37,11 @@ slug: "longevity-55-percent-genetics"
 
 所以它仍然非常重要。」
 
-換句話說：55% 是天花板的高度，45% 決定你能不能夠得到天花板。
+換句話說：基因決定天花板的高度，另一半決定你能不能夠得到天花板。
 
 **但有一件事比「能活多久」更值得你思考：**
 
-你現在，正在用什麼速度耗損那45%？
+你現在，正在用什麼速度耗損你能掌握的那一半？
 
 ---
 
@@ -60,7 +61,7 @@ slug: "longevity-55-percent-genetics"
 
 它是免疫系統長期處於低度活化的狀態，消耗細胞資源、讓修復速度變慢、讓能量轉換效率下降。
 
-一點一點，在你感覺不到的地方，把你本來有的那 45% 提前用掉。
+一點一點，在你感覺不到的地方，把你本來能掌握的那一半提前用掉。
 
 這就是為什麼：
 
@@ -84,13 +85,15 @@ slug: "longevity-55-percent-genetics"
 
 現代醫療很擅長在你撞牆之後幫你撐著。但它沒有辦法讓你不撞牆，或者讓你晚一點才撞。
 
-那個「晚一點」，就是你的 45% 在做的事。
+那個「晚一點」，就是你能掌握的那一半在做的事。
 
 ---
 
 ## 真正的問題：你打算花多久時間「生病」？
 
 這不是哲學問題，是數學問題。
+
+以下兩個版本是示意情境，用來說明「壓縮發病率」的概念，不是研究算出來的數字。
 
 **版本 A｜現代醫療的平均路徑**
 
@@ -144,11 +147,11 @@ slug: "longevity-55-percent-genetics"
 
 ---
 
-## 你不能改變 55%，但你可以決定 45% 怎麼用
+## 你不能改變基因那一半，但你可以決定另一半怎麼用
 
 回到那項研究。基因設定了你的建築結構。這件事沒得商量。
 
-但有沒有慢性發炎持續腐蝕你的細胞、有沒有讓修復速度跟上損耗速度，這件事，是 45% 裡面你現在就可以介入的部分。
+但有沒有慢性發炎持續腐蝕你的細胞、有沒有讓修復速度跟上損耗速度，這件事，是你現在就可以介入的部分。
 
 不是等你 60 歲感覺明顯衰退才開始。
 
@@ -166,11 +169,7 @@ slug: "longevity-55-percent-genetics"
 
 把這些訊號系統化整理，才能看出它們背後有沒有共同的模式，才能知道從哪裡開始。
 
-我整理了一份【身體警報自我檢測清單】，幫你把常見的慢性發炎訊號做有結構的自我評估。
-
-不只是問你「有沒有這個症狀」，是幫你看清楚，這些症狀組合在一起指向什麼方向。
-
-你的45%，值得你認真對待。
+你能掌握的那一半，值得你認真對待。
 
 ---
 
@@ -180,7 +179,5 @@ slug: "longevity-55-percent-genetics"
 02. Fries James F. (1980). Aging, Natural Death, and the Compression of Morbidity. *New England Journal of Medicine*, 303(3):130-135. DOI：[10.1056/NEJM198007173030304](<https://doi.org/10.1056/NEJM198007173030304>)。
 03. Crimmins Eileen M. (2015). Lifespan and Healthspan: Past, Present, and Promise. *The Gerontologist*, 55(6):901-911. DOI：[10.1093/geront/gnv130](<https://doi.org/10.1093/geront/gnv130>)。
 04. Garmany Armin, Yamada Satsuki, Terzic Andre (2021). Longevity leap: mind the healthspan gap. *npj Regenerative Medicine*, 6(1):57. DOI：[10.1038/s41536-021-00169-5](<https://doi.org/10.1038/s41536-021-00169-5>)。
-(https://www.nature.com/articles/s43587-024-00702-3) *Nat Aging.* 4(11):1635-1642.  
 05. Yang Yifan, Mayo Avi, Levy Tomer et al. (2025). Compression of morbidity by interventions that steepen the survival curve. *Nature Communications*, 16(1):3340. DOI：[10.1038/s41467-025-57807-5](<https://doi.org/10.1038/s41467-025-57807-5>)。
-(https://pubmed.ncbi.nlm.nih.gov/41224985/) *Nature.* 647(8089):S2-S5.  
 06. Shenhar Ben, Pridham Glen, De Oliveira Thaís Lopes et al. (2026). Heritability of intrinsic human life span is about 50% when confounding factors are addressed. *Science*, 391(6784):504-510. DOI：[10.1126/science.adz1187](<https://doi.org/10.1126/science.adz1187>)。

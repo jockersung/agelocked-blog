@@ -99,7 +99,7 @@ Hb(O₂)ₙ + H⁺ + CO₂ ⇌ Hb(H⁺)(CO₂) + nO₂
 |:---|:---|:---|:---|
 | 美軍睡眠法（Bud Winter） | 快速入睡 | 肌肉放鬆＋意象 | 戰場疲勞恢復 |
 | 方盒呼吸（Box Breathing） | 冷靜警覺 | 4-4-4-4 | 戰鬥/決策前 |
-| * *4-7-8 呼吸法** | **入睡/深度放鬆** | ** 4-7-8 ** | **睡前/急性焦慮** |
+| **4-7-8 呼吸法** | **入睡/深度放鬆** | **4-7-8** | **睡前/急性焦慮** |
 
 4-7-8 之所以被掛上「美軍」，主要是網路傳播中「呼吸法」與「軍隊效能」兩個標籤被強行結合，並非來自五角大樓的官方訓練手冊。
 
@@ -183,7 +183,7 @@ Hb(O₂)ₙ + H⁺ + CO₂ ⇌ Hb(H⁺)(CO₂) + nO₂
 
 - [你每晚都有一個清洗大腦的機會——但大多數人都錯過了](/blog/chronic-inflammation/sleep-glymphatic-brain-detox/)
 - [壓力正在改變你大腦裡的蛋白質——從粒線體到情緒的分子路徑](/blog/body-signals/stress-mitochondria-bdnf-depression/)
-- [MYND360如何在睡前一小時幫大腦強制關機](/blog/intervention-optimization/mynd360-sleep-brain-shutdown/)
+- [你每晚都有一個清洗大腦的機會——但大多數人都錯過了](/blog/chronic-inflammation/sleep-glymphatic-brain-detox/)
 
 ---
 

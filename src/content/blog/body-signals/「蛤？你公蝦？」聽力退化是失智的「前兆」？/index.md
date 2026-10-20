@@ -147,9 +147,9 @@ slug: "hearing-loss-dementia-signal"
 **70 歲以上**
 七成的人有明顯聽力問題。很多人到了這個階段才考慮助聽器，但大量毛細胞已不可逆地消失了。
 
-一項關鍵的動物研究發現，**預防性干預在早期開始，效果顯著；但到了中年才開始，效果幾乎消失。**
+動物研究發現，保護措施越早開始，效果越明顯。這不代表中年才開始就沒用，而是代表越早開始，你能保住的毛細胞越多。
 
-你現在 30 – 50 歲，**正在預防窗口的末班車上**。
+你現在 30 – 50 歲，**還在能做最多事情的時候**。
 
 ---
 
@@ -164,6 +164,16 @@ slug: "hearing-loss-dementia-signal"
 方向對了，介入才有意義。方向打偏，補再多也是繞路，甚至有些成分在錯誤的劑量下會反效果。
 
 **有了基準，才知道從哪裡開始。**
+
+## 證據最強的兩件事：聽力檢查和助聽器
+
+講了這麼多細胞機制，有兩件事的證據比任何補充品都強：
+
+**第一，定期做聽力檢查。** 40 歲之後，如果你開會常聽漏、看電視音量越開越大，就去耳鼻喉科做一次純音聽力檢查。聽力損失越早發現，越有處理空間。
+
+**第二，該配助聽器就配。** 2024 年《刺胳針》失智症委員會把聽力損失列為中年最大的可改變失智風險因子之一。2023 年 ACHIEVE 隨機試驗發現，對失智風險本來就較高的長者，配戴助聽器並接受聽力照護三年，認知退化速度明顯比較慢。
+
+很多人拖到 70 歲才考慮助聽器。這兩件事，越早做越好。
 
 ---
 
@@ -205,3 +215,5 @@ slug: "hearing-loss-dementia-signal"
 12. Le Prell Colleen G., Hughes Larry F., Miller Josef M. (2007). Free radical scavengers vitamins A, C, and E plus magnesium reduce noise trauma. *Free Radical Biology and Medicine*, 42(9):1454-1463. DOI：[10.1016/j.freeradbiomed.2007.02.008](<https://doi.org/10.1016/j.freeradbiomed.2007.02.008>)。
 13. Zhou Zhongming, Han Yanyan (2024). Association between oxidative balance score and hearing loss: a cross-sectional study from the NHANES database. *Frontiers in Nutrition*, 11:1375545. DOI：[10.3389/fnut.2024.1375545](<https://doi.org/10.3389/fnut.2024.1375545>)。
 14. Szczepek Agnieszka J., Olze Heidi (2026). Coenzyme Q10 in Hearing Disorders: Replacement Therapy in Mitochondrial Deafness and Neuroprotective Use in Acquired Hearing Loss. *Journal of Otorhinolaryngology, Hearing and Balance Medicine*, 7(1):8. DOI：[10.3390/ohbm7010008](<https://doi.org/10.3390/ohbm7010008>)。
+15. Lin Frank R., Pike James R., Albert Marilyn S. et al. (2023). Hearing intervention versus health education control to reduce cognitive decline in older adults with hearing loss in the USA (ACHIEVE): a multicentre, randomised controlled trial. *The Lancet*, 402(10404):786-797. DOI：[10.1016/S0140-6736(23)01406-X](<https://doi.org/10.1016/S0140-6736(23)01406-X>)。
+16. Livingston Gill, Huntley Jonathan, Liu Kathy Y. et al. (2024). Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission. *The Lancet*, 404(10452):572-628. DOI：[10.1016/S0140-6736(24)01296-0](<https://doi.org/10.1016/S0140-6736(24)01296-0>)。
