@@ -2,7 +2,7 @@
 title: '2026 哈佛研究登 Nature Medicine：規律補充維生素，真的能讓「生理時鐘」走慢一點嗎？'
 description: '第一個用大規模 RCT 直接測量綜合維生素對表觀遺傳老化時鐘影響的研究。每日補充，PCGrimAge 與 PCPhenoAge 顯著放緩，換算約慢老4個月。效果最大的，是那些細胞早已在加速老化的人。'
 pubDate: 2026-03-18
-heroImage: "./複方維生素減緩生理時鐘.png"
+heroImage: "./複方維生素減緩生理時鐘-agelocked-103-20261021.webp"
 category: '精準健康工具'
 ctaType: 'hard'
 slug: 'multivitamin-lifepak-slow-aging-clock'
@@ -75,7 +75,7 @@ slug: 'multivitamin-lifepak-slow-aging-clock'
 
 2 年累積，相當於生物老化軌跡比安慰劑組慢約 **4 個月**。
 
-![PCGrimAge變化軌跡](./PCGrimAge變化軌跡-agelocked-217.webp)
+![PCGrimAge變化軌跡](./PCGrimAge變化軌跡-agelocked-217-20261021.webp)
 
 三個值得特別注意的細節：
 
@@ -139,7 +139,7 @@ COSMOS 試驗不只有表觀遺傳的數據。同一批受試者的認知功能�
 
 當這兩個缺口被填補，細胞的修復機制才能在正常效率下運作。
 
-![營養缺口與老化速率](./營養缺口與老化速率.png)
+![營養缺口與老化速率](./營養缺口與老化速率-agelocked-186-20261021.webp)
 
 ---
 

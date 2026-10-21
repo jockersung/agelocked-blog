@@ -2,7 +2,7 @@
 title: 'Nu Skin CoQ10：為什麼劑型比劑量更重要'
 description: '同樣是CoQ10，為什麼有人吃了有感、有人完全沒反應？關鍵不在劑量，在你的身體能吸收多少。這篇說清楚環糊精包覆技術解決了什麼問題。'
 pubDate: 2026-03-03
-heroImage: './CoQ10.png'
+heroImage: "./CoQ10-agelocked-016-20261021.webp"
 tags: ['CoQ10', '輔酶Q10', '粒線體', '抗衰老', '介入']
 category: '介入與調校'
 ctaType: 'hard'

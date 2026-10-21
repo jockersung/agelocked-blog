@@ -2,7 +2,7 @@
 title: '二千多年前秦始皇派人去找的東西，現代科學最近才找到'
 description: '從秦始皇的徐福東渡，到唐朝皇帝一個個死於仙丹中毒——人類對「長壽」的執念從未停止。但古人用了幾千年走的彎路，現代科學花了一百年才找到正確方向。'
 pubDate: 2026-03-11
-heroImage: './找了兩千年的東西.png'
+heroImage: "./找了兩千年的東西-agelocked-002-20261021.webp"
 tags: ['抗衰老', '科學']
 category: '身體訊號解讀'
 slug: "emperor-longevity-modern-science"
@@ -46,7 +46,7 @@ slug: "emperor-longevity-modern-science"
 
 幾千年前的人不懂這個，情有可原。問題是，我們現在懂得多少？
 
-![古代煉丹術](./古代煉丹術.png)
+![古代煉丹術](./古代煉丹術-agelocked-003-20261021.webp)
 
 ---
 
@@ -100,7 +100,7 @@ slug: "emperor-longevity-modern-science"
 
 就算你把所有洞都堵住，水還是會從裂縫流出去。還是會老。
 
-![浴缸比喻老化多路徑](./浴缸比喻老化多路徑.png)
+![浴缸比喻老化多路徑](./浴缸比喻老化多路徑-agelocked-123-20261021.webp)
 
 ---
 

@@ -2,7 +2,7 @@
 title: "打了瘦瘦針沒效？或副作用特別嚴重？答案可能在你的基因裡"
 description: "2026 年 4 月，Nature 刊出首個大規模遺傳研究，找到直接影響 GLP-1 藥物效果與副作用的基因變異。你的反應，可能從基因就決定了一半。"
 pubDate: 2026-04-17
-heroImage: './打了瘦瘦針結果每個人都不一樣.png'
+heroImage: "./打了瘦瘦針結果每個人都不一樣-agelocked-071-20261021.webp"
 tags: ["GLP-1", "瘦瘦針", "基因", "藥物反應", "精準醫療", "副作用", "猛健樂", "semaglutide"]
 category: "身體訊號解讀"
 slug: glp1-genetics-response-variation
@@ -33,7 +33,7 @@ slug: glp1-genetics-response-variation
 
 找到這裡，在科學上有明確的生物機制支撐，不是統計巧合。
 
-![兩個基因兩種差異](./兩個基因兩種差異.png)
+![兩個基因兩種差異](./兩個基因兩種差異-agelocked-131-20261021.webp)
 
 ---
 
@@ -81,7 +81,7 @@ tirzepatide 是雙重受體促效劑，同時作用於 GLP-1R 和 GIPR。
 
 把基因和其他因素合在一起看，研究中每個人出現噁心或嘔吐的機率，從 **5% 到 78%** 都有，差距非常大。
 
-![GIPR 緩衝機制示意](./GIPR 緩衝機制示意.png)
+![GIPR 緩衝機制示意](./GIPR 緩衝機制示意-agelocked-132-20261021.webp)
 
 ---
 

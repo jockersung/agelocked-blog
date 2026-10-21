@@ -2,7 +2,7 @@
 title: '「蛤？你公蝦？」聽力退化是失智的「前兆」？'
 description: '你的耳朵正在悄悄罷工。你以為只是別人說話不清楚。其實，是你的耳朵裡有一群細胞正在死去——而且死了就不會再長回來。'
 pubDate: 2026-03-11
-heroImage: './蛤？你公蝦？.png'
+heroImage: "./蛤？你公蝦？-agelocked-001-20261021.webp"
 tags: ['聽力退化', '抗衰老', '失智']
 category: '身體訊號解讀'
 slug: "hearing-loss-dementia-signal"
@@ -58,7 +58,7 @@ slug: "hearing-loss-dementia-signal"
 
 你現在幾歲、磚頭還剩多少，決定了你的聽力還能用多久。
 
-![耳蝸構造](./耳蝸構造.png)
+![耳蝸構造](./耳蝸構造-agelocked-121-20261021.webp)
 
 ---
 
@@ -110,7 +110,7 @@ slug: "hearing-loss-dementia-signal"
 
 結論很明確：**能不能維持 Nrf2 的活性，直接決定你耳朵的壽命。**
 
-![Nrf2訊號通路](./Nrf2訊號通路.png)
+![Nrf2訊號通路](./Nrf2訊號通路-agelocked-122-20261021.webp)
 
 ---
 
