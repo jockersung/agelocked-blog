@@ -135,7 +135,7 @@ HRV 告訴你身體每天修得好不好。皮膚類胡蘿蔔素則反映你的�
 13. Billman GE. The LF/HF ratio does not accurately measure cardiac sympatho-vagal balance. *Front Physiol*. 2013;4:26. https://doi.org/10.3389/fphys.2013.00026
 14. Schmalenberger KM, et al. A systematic review and meta-analysis of within-person changes in cardiac vagal activity across the menstrual cycle. *J Clin Med*. 2019;8:1946. https://doi.org/10.3390/jcm8111946
 15. Kleiger RE, et al. Decreased heart rate variability and its association with increased mortality after acute myocardial infarction. *Am J Cardiol*. 1987;59:256–262. https://doi.org/10.1016/0002-9149(87)90795-8
-16. Jarczok MN, et al. Heart rate variability in the prediction of mortality: a systematic review and meta-analysis of healthy and patient populations. *Neurosci Biobehav Rev*. 2022;143:104907. https://pubmed.ncbi.nlm.nih.gov/36243195/
+16. Jarczok MN, et al. Heart rate variability in the prediction of mortality: a systematic review and meta-analysis of healthy and patient populations. *Neurosci Biobehav Rev*. 2022;143:104907. DOI：[10.1016/j.neubiorev.2022.104907](https://doi.org/10.1016/j.neubiorev.2022.104907)
 17. Tegegne BS, et al. Phenotypic but not genetically predicted heart rate variability associated with all-cause mortality. *Commun Biol*. 2023;6:1013. https://doi.org/10.1038/s42003-023-05376-y
-18. Effects of exercise training on heart rate variability in healthy adults: a systematic review and meta-analysis of randomized controlled trials. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11250637/
+18. Effects of exercise training on heart rate variability in healthy adults: a systematic review and meta-analysis of randomized controlled trials. 2024. DOI：[10.7759/cureus.62465](https://doi.org/10.7759/cureus.62465)
 19. 高明見。應用心率變異性評估自律神經功能的意義和臨床應用。《台灣醫界》2025;68(8):439–444。https://www.tma.tw/ltk/114680805.pdf
