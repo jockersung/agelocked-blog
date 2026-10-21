@@ -1,7 +1,7 @@
 ---
 title: "三個數字一起看：血液、HRV、皮膚類胡蘿蔔素的 6 種常見組合"
 description: "hs-CRP 正常但 HRV 一直掉？血液沒問題但 Prysm 分數偏低？單一數字很容易誤判，三條線索交叉看，才知道問題出在發炎、恢復還是防禦。"
-pubDate: 2026-11-30
+pubDate: 2026-10-19
 heroImage: "./cover-agelocked-060-20261021.webp"
 tags: ["慢性發炎", "hs-CRP", "HRV", "Prysm iO", "類胡蘿蔔素", "健康數據"]
 category: "精準健康工具"
