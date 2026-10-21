@@ -1,7 +1,7 @@
 ---
 title: "每日、每月、每年：一套個人化的身體追蹤節奏"
 description: "手錶每天戴、Prysm iO 每月測、血液每年驗。三種頻率對應三種變化速度，再依照最弱的那個系統補對缺口。給忙碌的你一套做得到的追蹤計畫。"
-pubDate: 2026-12-07
+pubDate: 2026-10-19
 heroImage: "./cover-agelocked-063-20261021.webp"
 tags: ["健康管理", "追蹤", "Prysm iO", "HRV", "血液檢查", "營養補充"]
 category: "介入與調校"

@@ -1,7 +1,7 @@
 ---
 title: "CRP 看大火，hs-CRP 看小火：低度慢性發炎怎麼驗、怎麼讀"
 description: "同樣是 C 反應蛋白，CRP 和 hs-CRP 看的是兩種火。1、3、10 這三個數字怎麼解讀？為什麼驗一次不夠？什麼情況會讓數值失真？一篇講清楚。"
-pubDate: 2026-11-02
+pubDate: 2026-10-19
 heroImage: "./cover-agelocked-045-20261021.webp"
 tags: ["hs-CRP", "C反應蛋白", "慢性發炎", "心血管風險", "血液檢查"]
 category: "慢性發炎科學"

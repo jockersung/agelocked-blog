@@ -1,7 +1,7 @@
 ---
 title: "ApoB 為什麼比 LDL 更準？數車子，比秤貨物更能看出塞車風險"
 description: "LDL 正常，血管就安全嗎？ApoB 計算的是真正會鑽進血管壁的脂蛋白顆粒數。肚子大、三酸甘油脂高的人，最容易出現 LDL 正常、ApoB 偏高的落差。"
-pubDate: 2026-11-16
+pubDate: 2026-10-19
 heroImage: "./cover-agelocked-051-20261021.webp"
 tags: ["ApoB", "LDL", "血脂", "動脈硬化", "代謝症候群", "精準檢測"]
 category: "精準健康工具"

@@ -1,7 +1,7 @@
 ---
 title: "健檢沒紅字，也值得多看的 5 個數字"
 description: "成人健檢全綠，不代表身體沒有壓力。HbA1c、TG/HDL 比值、hs-CRP、ApoB、Lp(a)，這 5 個數字能看見報告裡看不到的早期變化，其中一個你現在就能自己算。"
-pubDate: 2026-10-26
+pubDate: 2026-10-19
 heroImage: "./cover-agelocked-042-20261021.webp"
 tags: ["健康檢查", "成人健檢", "HbA1c", "hs-CRP", "ApoB", "Lp(a)", "三酸甘油脂"]
 category: "身體訊號解讀"
