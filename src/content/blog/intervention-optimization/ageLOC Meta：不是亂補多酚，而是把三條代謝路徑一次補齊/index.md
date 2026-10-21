@@ -2,7 +2,7 @@
 title: "ageLOC Meta：不是亂補多酚，而是把三條代謝路徑一次補齊"
 description: "前三篇講的是內臟脂肪的訊號問題，這篇講的是解法：ageLOC Meta 每代紫為什麼這樣配、誰最適合、怎麼用，才不會把好成分吃成沒感覺。"
 pubDate: 2026-03-19
-heroImage: "./ageLOCMeta.png"
+heroImage: "./ageLOCMeta-agelocked-017-20261021.webp"
 tags: ["ageLOC Meta", "每代紫", "花青素", "Oligonol", "內臟脂肪", "代謝介入"]
 category: "介入與調校"
 slug: "ageloc-meta-clinical-protocol"

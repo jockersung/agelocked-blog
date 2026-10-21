@@ -2,7 +2,7 @@
 title: '40歲的你只剩一張嘴了嗎？——不是「自然老了」是睪丸細胞提前衰老了'
 description: '台灣40歲以上男性三分之一有荷爾蒙低下症狀。你以為是壓力和年紀的問題，但科學指出一個更精確的答案：睪丸裡的細胞，被慢性發炎提前殺死了。'
 pubDate: 2026-03-09
-heroImage: './中年男子只剩一張嘴.png'
+heroImage: "./中年男子只剩一張嘴-agelocked-013-20261021.webp"
 tags: ['男性健康', '睪固酮', '雄性素', '性功能', 'LOH', '晚發性性腺功能低下', 'Inflammaging', '慢性發炎']
 category: '介入與調校'
 slug: "testosterone-cell-aging-40"

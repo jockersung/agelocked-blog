@@ -2,7 +2,7 @@
 title: 'GLP-1 小鼠研究的新發現：逆轉基因老化模式，可能讓全身器官一起變年輕'
 description: '香港中文大學團隊在《Cell Metabolism》發表的研究，首次從多組學層面證實：逆轉老化的基因表達模式，能讓心臟、肌肉、大腦同步抗衰老——而且這個效果不依賴減重。'
 pubDate: 2026-03-01
-heroImage: './GLP1抗老.png'
+heroImage: "./GLP1抗老-agelocked-080-20261021.webp"
 tags: ['抗衰老', '基因表達', 'mTOR', '慢性發炎科學', 'Cell Metabolism']
 category: '慢性發炎科學'
 slug: "glp1-gene-aging-reversal"

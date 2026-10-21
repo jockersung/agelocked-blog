@@ -2,7 +2,7 @@
 title: 'LifePak：在啟動修護基因之前，你需要補地基打底'
 description: '很多人掃完 Prysm iO 之後問我：「那我要吃 Youthspan 嗎？」答案是：要，但順序很重要。這篇說清楚為什麼 LifePak 是第一步，Youthspan 是第二步。'
 pubDate: 2026-03-08
-heroImage: './lifepack家族.png'
+heroImage: "./lifepack家族-agelocked-014-20261021.webp"
 tags: ['LifePak', '植化素', 'Phytochemicals', 'Nrf2', '抗氧化', '微量營養素']
 category: '介入與調校'
 ctaType: 'hard'
@@ -34,6 +34,12 @@ Youthspan 的作用是什麼？它透過 CRM（熱量限制模擬）激活 AMPK�
 蓋房子的比喻是這樣的：Youthspan 是讓工人準時到場、工作效率翻倍的管理系統。LifePak 是確保倉庫裡有足夠磚頭、鋼筋、水泥的後勤。
 
 管理系統再好，倉庫是空的，房子蓋不起來。
+
+---
+
+![兩層介入架構](./兩層介入架構-agelocked-180-20261021.webp)
+
+*▲ 營養基礎與訊號路徑的概念分類，不代表特定品牌之間已證實的協同療效。*
 
 ---
 
@@ -85,7 +91,7 @@ Youthspan 的作用是什麼？它透過 CRM（熱量限制模擬）激活 AMPK�
 
 LifePak 的植化素配方來自多種濃縮蔬果萃取物，涵蓋茄紅素、葉黃素、β-胡蘿蔔素、蝦青素、花青素等主要抗氧化家族，對應蔬果「彩虹飲食」裡的五個顏色帶，是現代飲食最難靠日常攝取補足的那一層。
 
-![LifePak多層抗氧化](./LifePak多層抗氧化.png)
+![LifePak多層抗氧化](./LifePak多層抗氧化-agelocked-179-20261021.webp)
 
 ---
 
@@ -155,7 +161,6 @@ LifePak 針對不同的生理需求分為三個配方：
 
 40 歲以後，細胞儲備的消耗速度加快，LifePak Prime 的配方設計對應的就是這個階段的需求。
 
-![兩層介入架構](./兩層介入架構.png)
 
 ---
 

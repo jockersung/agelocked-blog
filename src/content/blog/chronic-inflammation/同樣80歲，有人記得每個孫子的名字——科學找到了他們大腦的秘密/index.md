@@ -2,7 +2,7 @@
 title: '同樣80歲，有人記得每個孫子的名字——科學找到了他們大腦的秘密'
 description: '2026年《Nature》大規模人類海馬迴研究，分析355,997個細胞核，揭示Super-agers維持認知韌性的分子機制。大腦老化不只是年齡問題，而是神經新生機制能否被維持的問題。'
 pubDate: 2026-04-03
-heroImage: './80歲記憶不退化秘密.png'
+heroImage: "./80歲記憶不退化秘密-agelocked-085-20261021.webp"
 tags: ['神經新生', 'Super-agers', 'Healthspan', '阿茲海默症', '認知韌性', '海馬迴', 'BDNF', '大腦老化']
 category: '慢性發炎科學'
 ctaType: 'soft'
@@ -70,7 +70,7 @@ slug: 'super-agers-neurogenesis-healthspan'
 
 **神經新生（Neurogenesis），在成年後並沒有完全停止。**
 
-![神經生長與可塑性](./神經生長與可塑性.png)
+![神經生長與可塑性](./神經生長與可塑性-agelocked-157-20261021.webp)
 
 ---
 
@@ -85,7 +85,7 @@ slug: 'super-agers-neurogenesis-healthspan'
 
 老化，是整個基因表現程式被重新改寫的過程。不是細胞變少而已，是大腦的分子語言，從「生長與修復」切換到「發炎與凋零」。
 
-![大腦從生長模式到發炎模式](./大腦從生長模式到發炎模式.png)> 
+![大腦從生長模式到發炎模式](./大腦從生長模式到發炎模式-agelocked-158-20261021.webp)>
 ---
 
 ### ③ 阿茲海默症的影響，在你察覺之前就已經開始
@@ -114,7 +114,9 @@ slug: 'super-agers-neurogenesis-healthspan'
 
 這提示一件重要的事：認知好壞不只是年齡問題，是大腦是否維持健康的神經新生機制。
 
-![SuperagersVS一般老年人](./SuperagersVS一般老年人.png)
+![超級高齡者與其他組別的分子韌性分數](./SuperagersVS一般老年人-agelocked-208-20261021.webp)
+
+*▲ 原論文圖 4E 的分子韌性分數，彙整 DEG／DAR 訊號；不是神經元新生率、細胞數或治療效果。來源：DOI 10.1038/s41586-026-10161-4。*
 
 ---
 
@@ -130,7 +132,7 @@ slug: 'super-agers-neurogenesis-healthspan'
 
 這三者會形成惡性循環：壓力導致發炎，發炎影響睡眠，睡眠不足又加重壓力反應，同時從三個方向壓制神經新生。
 
-![壓力發炎睡眠形成惡性循環](./壓力發炎睡眠形成惡性循環.png)
+![壓力發炎睡眠形成惡性循環](./壓力發炎睡眠形成惡性循環-agelocked-159-20261021.webp)
 
 ---
 

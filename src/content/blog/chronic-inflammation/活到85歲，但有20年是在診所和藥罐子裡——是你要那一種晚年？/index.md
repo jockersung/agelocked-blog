@@ -2,7 +2,7 @@
 title: '活到85歲，但有20年是在診所和藥罐子裡——你要哪一種晚年？'
 description: '人類平均壽命在延長，但健康壽命和壽命之間的落差也在擴大——全球平均超過9年。這篇說清楚 Healthspan 和 Lifespan 的差別，以及你現在的選擇怎麼決定你走哪條路。'
 pubDate: 2026-03-02
-heroImage: './哪一種晚年.png'
+heroImage: "./哪一種晚年-agelocked-092-20261021.webp"
 tags: ['抗氧化', '健康', '長壽']
 category: '慢性發炎科學'
 slug: "healthspan-vs-lifespan"
@@ -61,7 +61,7 @@ ctaBridge: '把你的訊號整理清楚，是第一步。花 1 分鐘做評估�
 
 你還活著，但你的生活已經不是你的了。
 
-![Healthspan vs Lifespan 落差](./Healthspan vs Lifespan 落差.png)
+![Healthspan vs Lifespan 落差](./Healthspan vs Lifespan 落差-agelocked-168-20261021.webp)
 
 ---
 
@@ -130,7 +130,9 @@ ctaBridge: '把你的訊號整理清楚，是第一步。花 1 分鐘做評估�
 
 **版本 A 和 B 的差別，不是發生在你 60 歲的那個選擇，而是你 40 歲的那個選擇。**
 
-![壓縮發病率：兩條路徑對比](./壓縮發病率：兩條路徑對比.png)
+![壓縮發病率：兩條路徑對比](./壓縮發病率：兩條路徑對比-agelocked-210-20261021.webp)
+
+*▲ 健康期與疾病期的概念對比；沒有指定年齡、延壽年數或介入效果量。*
 
 ---
 

@@ -2,7 +2,7 @@
 title: '【深度科普】從抽血到 15 秒掃描：人類花了二十年才解決的這個問題'
 description: '完整還原抗氧化測量技術的五階段演化史——從 HPLC 抽血、皮膚切片，到拉曼光譜與 Prysm iO 的誕生'
 pubDate: 2026-02-24
-heroImage: './從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生.png'
+heroImage: "./從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生-agelocked-105-20261021.webp"
 tags: ['抗氧化', '科學史', 'Prysm-iO', '深度科普']
 category: '精準健康工具'
 ctaType: 'hard'
@@ -71,7 +71,7 @@ HPLC 是一種精密的化學分離技術，流程是這樣的：
 
 **物理學家** Werner Gellermann 博士（專精雷射與光學）和 **眼科醫師** Paul S. Bernstein 醫師（視網膜專家）
 
-![Gellermann博士Bernstein醫師](./Gellermann博士Bernstein醫師.png)
+![Gellermann博士Bernstein醫師](./Gellermann博士Bernstein醫師-agelocked-028-20261021.webp)
 
 Bernstein 醫師的畢生研究目標，是對抗一種叫做 **老年性黃斑部病變（AMD）** 的眼疾。
 
@@ -278,7 +278,7 @@ Gellermann 博士創立了兩家公司（Nutriscan, Inc. 與 Caroderm, Inc.）�
 
 這款產品成功贏得了 **2014 年國際設計傑出獎（IDEA）銅獎**，被評為該年度消費者世界最佳產品。
 
-![生物光子掃描儀演進](./生物光子掃描儀演進.png)
+![生物光子掃描儀演進](./生物光子掃描儀演進-agelocked-189-20261021.webp)
 
 ### 社會影響：從「盲目信仰」到「即時回饋」
 
@@ -388,7 +388,7 @@ Longevity Link 開發的產品叫 **Veggie Meter®**，由 Gellermann 博士與 
 
 這項創新在 **2012 年**發表於《生物光子學雜誌》（*Journal of Biophotonics*）。經過多族群臨床驗證，確認不論膚色深淺皆能精準讀取，設備內建演算法會自動補償黑色素、殘餘血紅素與組織散射的干擾。
 
-![veggie-meter](./veggie-meter.png)
+![veggie-meter](./veggie-meter-agelocked-190-20261021.webp)
 
 **公衛數據揭開的社會真相**
 
@@ -467,7 +467,7 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 透過這層 AI 校準濾鏡，一台沒有配備昂貴雷射的輕巧裝置，能輸出和拉曼雷射掃描儀接近的數值，這個數值被命名為「Prysm 分數」。
 
-![光譜指數](./光譜指數.png)
+![光譜指數](./光譜指數-agelocked-218-20261021.webp)
 
 **2026 年的臨床驗證：AI 是真的還是吹牛？**
 
@@ -496,7 +496,9 @@ Prysm iO 徹底拋棄了雷射發射器。
 
 報告清楚指出：兩台機器的斜率、範圍、數據輪廓幾乎完全相同。
 
-![PrysmiO與S3分別跟血液比較](./PrysmiO與S3分別跟血液比較.png)
+![Prysm iO 與 S3 對血液 HPLC 的決定係數摘要](./PrysmiO與S3分別跟血液比較-agelocked-030-20261021.webp)
+
+*▲ 97 人研究公布的 R² 摘要：Prysm iO 0.7659、S3 0.7789；不重建未取得的個人散點資料。來源：DOI 10.29011/2575-7091.100334。*
 
 **這項研究顯示：在預測血液類胡蘿蔔素濃度這件事上，小巧、無雷射的 Prysm iO，和昂貴的 S3 雷射掃描儀表現接近。**（要說明的是，研究作者群包含 Nu Skin 研究人員。）
 

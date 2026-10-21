@@ -2,7 +2,7 @@
 title: '出國帶保健品回來前，你要先搞懂這些——各國法規、標章查詢、Amazon假貨辨別完整指南'
 description: '從日本、韓國、美國、加拿大、澳洲到歐盟，不同國家的保健品法規差距很大。這篇整理各國認證標章怎麼看、怎麼查NSF資料庫、為什麼Amazon保健品有假貨風險，以及帶回台灣的法規與保存注意事項。'
 pubDate: 2026-03-07
-heroImage: './選購國外保健品.png'
+heroImage: "./選購國外保健品-agelocked-109-20261021.webp"
 tags: ['國外保健品', '保健品選購', '各國法規', 'NSF認證', 'Amazon', '精準健康']
 category: '精準健康工具'
 slug: "supplement-import-guide"

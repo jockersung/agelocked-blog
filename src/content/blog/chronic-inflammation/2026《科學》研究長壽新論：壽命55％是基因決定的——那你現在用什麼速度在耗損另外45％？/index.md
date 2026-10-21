@@ -2,7 +2,7 @@
 title: '2026《科學》研究長壽新論：壽命約一半由基因決定——另外一半，你正在用什麼速度耗損？'
 description: '2026 年《科學》雙胞胎研究估計，排除意外與傳染病後，壽命差異約一半和基因有關。另一半，是你每天的生活與慢性發炎在決定。'
 pubDate: 2026-02-12
-heroImage: './2026長壽新論.png'
+heroImage: "./2026長壽新論-agelocked-078-20261021.webp"
 tags: ['抗氧化', '健康', '長壽']
 category: '慢性發炎科學'
 slug: "longevity-55-percent-genetics"

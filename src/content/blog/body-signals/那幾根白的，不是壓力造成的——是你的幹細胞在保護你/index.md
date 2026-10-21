@@ -2,7 +2,7 @@
 title: '那幾根白的，不只是壓力造成的——也可能是你的幹細胞在保護你'
 description: '白頭髮一直被當成壓力或老化的象徵。但最新科學給了一個完全不同的解釋：那是你的身體在做一個保護性的選擇。而且，它不只是在說頭皮的事。'
 pubDate: 2026-03-11
-heroImage: './白髮保護.png'
+heroImage: "./白髮保護-agelocked-076-20261021.webp"
 tags: ['男性健康', '白頭髮', '白髮', '黑色素幹細胞', '細胞衰老', 'DNA損傷', '氧化壓力', 'Inflammaging']
 category: '身體訊號解讀'
 slug: "white-hair-stem-cells"
