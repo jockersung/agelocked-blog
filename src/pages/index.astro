@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import HealthIsland from '../components/HealthIsland.astro';
 import { Image } from 'astro:assets';
 import heroImg from '../assets/生活空間感.png';
 import profileImg from '../assets/profile.webp';
@@ -135,6 +136,8 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
     </style>
   </head>
   <body>
+    <!-- 健康島：預設蓋在首頁上，可一鍵切回下面這份原本的首頁（讀者的選擇會被記住） -->
+    <HealthIsland mode="home" />
     <Header />
 
     <section class="hero">

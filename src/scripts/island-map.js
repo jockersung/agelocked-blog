@@ -1,33 +1,72 @@
-// 健康島 /map 的 3D 引擎。資料在 build 時由 src/pages/map.astro 產生，放在 #map-data。
+// 健康島 3D 引擎（首頁與 /map 共用）。資料在 build 時由 src/components/HealthIsland.astro 產生，放在 #map-data。
 const DATA = JSON.parse(document.getElementById('map-data').textContent);
 { // 萬聖節南瓜燈只在 10/10–11/1 出現
   const d=new Date(), m=d.getMonth()+1, day=d.getDate(); DATA.theme={ halloween:(m===10&&day>=10)||(m===11&&day<=1) }; }
 
 /* ================= boot ================= */
+// mode=home：蓋在原本首頁上，可一鍵切回文字首頁（記住選擇）；mode=page：/map，可切換文字版文章地圖
 const $ = s => document.querySelector(s);
+const ROOT = $('#island-root'), MODE = ROOT.dataset.mode;
 const loader = $('#loader'), loadMsg = $('#loadMsg');
 const QS = new URLSearchParams(location.search);
 const AUDIT = QS.has('audit');
-// 裝置分級：lite = 直接顯示文字版；low = 3D 但減量
+const PREF = 'agelocked-home-view';
+const pref = { get(){ try{ return localStorage.getItem(PREF); }catch(e){ return null; } }, set(v){ try{ localStorage.setItem(PREF,v); }catch(e){} } };
+const track = (ev,p)=>{ try{ window.gtag&&gtag('event',ev,p||{}); }catch(e){} };
+// 裝置分級：lite = 不開 3D；low = 3D 但減量
 const gpu = (()=>{ try{ const c=document.createElement('canvas'); return !!(c.getContext('webgl2')||c.getContext('webgl')); }catch(e){ return false; } })();
 const mem = navigator.deviceMemory||8, cores = navigator.hardwareConcurrency||8, saveData = !!(navigator.connection&&navigator.connection.saveData);
 const LITE = QS.has('3d') ? false : (QS.has('lite') || !gpu || saveData || mem<=2 || cores<=2);
 const LOW = mem<=4 || cores<=4;
-function showFallback(reason){
-  const fb=$('#fallback'); fb.hidden=false; loader.hidden=true;
-  const r=$('#fbReason'); if(r) r.textContent=reason||'';
-  ['#leftcol','#side','#hud','#hudToggle','#legend','#log','#disclaimer','#stage'].forEach(s=>{ const el=$(s); if(el) el.hidden=true; });
-  try{ window.gtag&&gtag('event','map_lite',{reason:reason||'lite'}); }catch(e){}
-}
-document.getElementById('fbTry')?.addEventListener('click',()=>{ location.search='?3d'; });
-if(AUDIT) document.querySelectorAll('[data-audit-only]').forEach(el=>el.hidden=false);
-(async()=>{
-  if(LITE){ showFallback(!gpu?'你的瀏覽器沒有開啟 3D 繪圖，先用文字版瀏覽。':'為了不拖慢你的手機，先用文字版瀏覽。'); return; }
-  $('#fallback').hidden=true;
-  const slowTimer = setTimeout(()=>{ if(!loader.classList.contains('gone') && !loader.classList.contains('err')) loadMsg.textContent='連線較慢，仍在下載 3D 引擎…'; }, 12000);
-  try { await main(); } catch(e){ console.error(e); showFallback('3D 地圖載入失敗，先用文字版瀏覽。'); }
+const UI = ['#leftcol','#side','#hud','#hudToggle','#legend','#log','#disclaimer','#stage'];
+let started = false, PAUSED = false; const savedUI = {};
+
+async function boot3D(){
+  started = true; loader.hidden = false;
+  const slowTimer = setTimeout(()=>{ if(!loader.classList.contains('gone')) loadMsg.textContent='連線較慢，仍在下載 3D 引擎…'; }, 12000);
+  try { await main(); }
+  catch(e){ console.error(e); started=false; if(MODE==='page') showFallback('3D 地圖載入失敗，先用文字版瀏覽。'); else goText(true); }
   clearTimeout(slowTimer);
-})();
+}
+// ── /map：3D 與文字版文章地圖互切 ──
+function showFallback(reason){
+  const fb=$('#fallback'); if(!fb) return; fb.hidden=false; loader.hidden=true; PAUSED=true;
+  const r=$('#fbReason'); if(r) r.textContent=reason||'';
+  UI.forEach(s=>{ const el=$(s); if(el){ savedUI[s]=el.hidden; el.hidden=true; } });
+  track('map_view',{mode:'text',reason:reason?'auto':'click'});
+}
+function show3D(){
+  if(!started){ location.search='?3d'; return; }
+  $('#fallback').hidden=true; UI.forEach(s=>{ const el=$(s); if(el) el.hidden=!!savedUI[s]; });
+  PAUSED=false; window.__islandWake&&window.__islandWake(); track('map_view',{mode:'3d'});
+}
+// ── 首頁：健康島與原本的文字首頁互切 ──
+function goText(auto){
+  ROOT.hidden=true; document.documentElement.classList.remove('island-on'); PAUSED=true;
+  const ob=$('#islandOpen'); if(ob) ob.hidden=false;
+  if(!auto){ pref.set('text'); track('home_view',{mode:'text'}); window.scrollTo(0,0); }
+}
+async function goIsland(){
+  ROOT.hidden=false; document.documentElement.classList.add('island-on');
+  const ob=$('#islandOpen'); if(ob) ob.hidden=true;
+  pref.set('island'); track('home_view',{mode:'island'});
+  PAUSED=false; if(!started) await boot3D(); else window.__islandWake&&window.__islandWake();
+}
+
+if(AUDIT) document.querySelectorAll('[data-audit-only]').forEach(el=>el.hidden=false);
+$('#tText')?.addEventListener('click',()=> MODE==='home' ? goText(false) : showFallback(''));
+$('#toText')?.addEventListener('click',()=>goText(false));
+$('#islandOpen')?.addEventListener('click',goIsland);
+$('#fbTry')?.addEventListener('click',show3D);
+if(MODE==='home'){
+  // 首頁的初始狀態由元件裡的 inline script 先決定（避免閃一下原本首頁）
+  if(ROOT.hidden){ $('#islandOpen').hidden=false; }
+  else if(LITE){ goText(true); }
+  else boot3D();
+} else {
+  if(LITE) showFallback(!gpu?'你的瀏覽器沒有開啟 3D 繪圖，先用文字版瀏覽。':'為了不拖慢你的手機，先用文字版瀏覽。');
+  else { $('#fallback').hidden=true; boot3D(); }
+}
 
 async function main(){
 const THREE = await import('three');
@@ -579,7 +618,7 @@ function badgeTex(kind){ const c=document.createElement('canvas'); c.width=c.hei
   g.stroke(); const t=new THREE.CanvasTexture(c); t.colorSpace=THREE.SRGBColorSpace; return t; }
 const badgeMats={}; Object.keys(CARRY).forEach(k=>badgeMats[k]=new THREE.SpriteMaterial({map:badgeTex(k),depthWrite:false}));
 const sprites=walkers.map(w=>{ const s=new THREE.Sprite(badgeMats[w.carry]); s.scale.set(.17,.17,1); s.visible=false; scene.add(s); return s; });
-const tags=walkers.map(w=>{ const el=document.createElement('div'); el.className='tag'; el.textContent='正在搬 '+CARRY[w.carry]; const o=new CSS2DObject(el); o.visible=false; scene.add(o); return o; });
+const tags=walkers.map(w=>{ const el=document.createElement('div'); el.className='wtag'; el.textContent='正在搬 '+CARRY[w.carry]; const o=new CSS2DObject(el); o.visible=false; scene.add(o); return o; });
 
 /* ---------- flow tubes ---------- */
 const flowMeshes = DATA.flows.map((f,fi)=>{ const fp=flowPaths[fi]; const cp=new THREE.CurvePath();
@@ -667,8 +706,8 @@ function flyTo(obj,off){ const target=obj.clone(); const offset=off.clone();
   startFly(target.clone().add(offset),target); }
 function startFly(pos,target){ if(reduced){ camera.position.copy(pos); controls.target.copy(target); controls.update(); dirty=true; return; }
   fly={t0:performance.now(),p0:camera.position.clone(),t0v:controls.target.clone(),p1:pos,t1:target}; }
-function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?64:a>.8?72:98; }
-function panoTarget(){ const t=center.clone(); if(mqMobile.matches){ t.x+=1.6; t.z+=5; } else { t.z+=5; if(!$('#side').hidden) t.x+=3.6; } return t; }
+function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?64:a>.8?72:124; }
+function panoTarget(){ const t=center.clone(); if(mqMobile.matches){ t.x-=0.6; t.z+=0.5; } else { t.z+=5; if(!$('#side').hidden) t.x+=3.6; } return t; }
 function panorama(){ const dir=new THREE.Vector3(.16,.8,.58).normalize(); const t=panoTarget(); if(st.bird){ startFly(t.clone().add(new THREE.Vector3(.01,84,12)),t); return; } startFly(t.clone().addScaledVector(dir,panoDist()),t); }
 
 /* ---------- cards ---------- */
@@ -840,7 +879,7 @@ renderer.domElement.addEventListener('pointerup',e=>{ if(!down) return; const mo
     if(o.userData.flow!==undefined){ selectFlow(o.userData.flow); return; }
     if(o.isInstancedMesh){ const ow=o.userData.owners[h.instanceId]; if(!ow) continue; if(itemById[ow]){ selectItem(ow); return; } if(ow.startsWith('isl:')){ selectIsland(+ow.slice(4)); return; } continue; }
     if(o.userData.island!==undefined){ selectIsland(o.userData.island); return; } } });
-addEventListener('keydown',e=>{ if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
+addEventListener('keydown',e=>{ if(PAUSED) return; if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
   if(e.key==='Escape'){ if(!$('#help').hidden){ $('#help').hidden=true; lsSet('agelocked-island-help','1'); return; } closeCard(); return; }
   const off=camera.position.clone().sub(controls.target); const sph=new THREE.Spherical().setFromVector3(off);
   if(e.key==='ArrowLeft') sph.theta-=.12; else if(e.key==='ArrowRight') sph.theta+=.12;
@@ -886,8 +925,9 @@ function placeLabels(){ const ui=uiEls.filter(e=>!e.hidden&&e.offsetParent!==nul
     if(ns!=='hide') placed.push(rect(ns==='full'?fw:cw,2)); } }
 
 /* ---------- resize ---------- */
-function resize(){ const w=stage.clientWidth, h=stage.clientHeight; renderer.setSize(w,h); labelRenderer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix(); dirty=true; }
+function resize(){ const w=stage.clientWidth, h=stage.clientHeight; if(!w||!h) return; renderer.setSize(w,h); labelRenderer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix(); dirty=true; }
 new ResizeObserver(resize).observe(stage); resize();
+window.__islandWake=()=>{ resize(); dirty=true; };
 mqReduce.addEventListener('change',e=>{ reduced=e.matches; flowMeshes.forEach((m,i)=>{ m.material.uniforms.uStyle.value=reduced?1:({official:0,thematic:1,pending:2})[DATA.flows[i].evidence]; m.material.uniforms.uTime.value=0; }); dirty=true; });
 if(reduced) flowMeshes.forEach(m=>m.material.uniforms.uStyle.value=1);
 
@@ -900,7 +940,7 @@ if(!lsGet('agelocked-island-help')) showHelp();
 if(AUDIT){ setSide(true); setTab('h'); }
 
 let last=performance.now(), logT=0;
-function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/1000,.08); last=now;
+function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/1000,.08); last=now; if(PAUSED) return;
   if(fly){ const t=clamp((now-fly.t0)/800,0,1); const k=t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2; camera.position.lerpVectors(fly.p0,fly.p1,k); controls.target.lerpVectors(fly.t0v,fly.t1,k); if(t>=1) fly=null; dirty=true; }
   if(controls.update()) dirty=true;
   const running=!st.pause&&!reduced;

@@ -1,0 +1,223 @@
+---
+interface Props { mode: 'home' | 'page' }
+const { mode } = Astro.props;
+// 健康島元件：首頁（mode=home，蓋在原本首頁上，可一鍵切回文字首頁）與 /map（mode=page，附文字版文章地圖）共用。
+// 資料在 build 時從 content collection 產生；島嶼排列在 src/data/island-map.ts。
+// 加上 ?audit 會顯示內部用的「連結檢查」；?lite 強制文字版、?3d 強制 3D。
+import { getCollection } from 'astro:content';
+import { getUrlSlug } from '../utils/categories';
+import { ISLANDS, LAND, DAY_CYCLE, FLOW_MIN, STEPS, DEFAULT_MODEL } from '../data/island-map';
+import '../styles/island-map.css';
+
+const TIER: Record<string, number> = { '身體訊號解讀': 1, '慢性發炎科學': 2, '精準健康工具': 3, '介入與調校': 4 };
+const posts = await getCollection('blog');
+const bySlug = new Map(posts.map((p) => {
+  const urlSlug = getUrlSlug(p);
+  const slug = urlSlug.split('/').pop() as string;
+  const out = new Set<string>();
+  for (const m of (p.body ?? '').matchAll(/\]\((?:https?:\/\/(?:www\.)?agelocked\.com)?\/blog\/[^/]+\/([^/)\s#]+)\/?/g)) if (m[1] !== slug) out.add(m[1]);
+  return [slug, { slug, url: `/blog/${urlSlug}/`, tier: TIER[p.data.category] ?? 1, title: p.data.title, sum: p.data.description, out: [...out] }];
+}));
+
+// 短名：取標題第一個斷句前的部分
+const shortName = (t: string) => {
+  const s = t.replace(/^[【「《]/, '').split(/——|—|：|？|\?|，|！|。|｜/)[0].trim();
+  return s.length > 10 ? s.slice(0, 10) + '…' : s;
+};
+
+const MAX_PER_ISLAND = 7;
+const placed = new Set<string>();
+const missing: string[] = [];
+const islands = ISLANDS.map((isl) => ({
+  ...isl,
+  items: isl.items.flatMap((it) => {
+    if (it.page) return [{ id: it.page.id, name: it.name, model: it.model, tier: it.page.tier, desc: it.page.title, facts: it.facts ?? [], url: it.page.url, page: true }];
+    const a = it.slug ? bySlug.get(it.slug) : undefined;
+    if (!a) { if (it.slug) missing.push(it.slug); return []; }
+    placed.add(a.slug);
+    return [{ id: a.slug, name: it.name, model: it.model, tier: a.tier, desc: a.title, facts: it.facts ?? [], url: a.url }];
+  }),
+}));
+// 新文章自動上島：同一步、文章最少的島；都滿了就找最接近那一步、還有空位的島
+const unplaced: string[] = [];
+for (const a of bySlug.values()) {
+  if (placed.has(a.slug)) continue;
+  const open = islands.filter((i) => i.items.length < MAX_PER_ISLAND)
+    .sort((x, y) => Math.abs(x.tier - a.tier) - Math.abs(y.tier - a.tier) || x.items.length - y.items.length);
+  if (!open.length) { unplaced.push(a.slug); continue; }
+  open[0].items.push({ id: a.slug, name: shortName(a.title), model: DEFAULT_MODEL[a.tier], tier: a.tier, desc: a.title, facts: [], url: a.url });
+  placed.add(a.slug);
+}
+
+const articles = Object.fromEntries([...bySlug.values()].map((a) => [a.slug, { sum: a.sum, out: a.out.filter((s) => bySlug.has(s)) }]));
+const data = {
+  city: 'AGELOCKED',
+  steps: STEPS,
+  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/blog' },
+  islands, land: LAND, flowMin: FLOW_MIN,
+  dayCycle: DAY_CYCLE.map((d) => ({ ...d, items: d.items.filter((s: string) => placed.has(s) || s.startsWith('page-')) })),
+  articles, missing, unplaced,
+};
+const total = bySlug.size;
+const json = JSON.stringify(data).replace(/</g, '\\u003c');
+
+// 文字版（弱裝置、不支援 3D、搜尋引擎與 AI 爬蟲都讀這一份）
+const byStep = [1, 2, 3, 4].map((t) => ({ t, step: STEPS[t]!, islands: islands.filter((i) => i.tier === t) }));
+const title = `健康島：${total} 篇文章的閱讀地圖｜AGELOCKED`;
+const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台灣地圖：從察覺身體訊號、找出慢性發炎的原因、用數據量測，到開始調整，照著路徑一步步讀。`;
+---
+
+<div id="island-root" class="map-page" data-mode={mode} hidden={mode === 'home'}>
+<noscript><style>#island-root #loader{display:none}</style></noscript>
+
+{mode === 'page' && (
+<section id="fallback" aria-labelledby="fbTitle">
+  <div class="fb-in">
+    <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
+    <h1 id="fbTitle">健康島：{total} 篇文章的閱讀路徑</h1>
+    <p class="lead">給把健康排最後的你。這些文章依四個步驟排列：先察覺訊號，再找出原因，接著用數據量測，最後開始調整。不知道從哪裡讀起，就從第 1 步開始。</p>
+    <p class="lead" id="fbReason"></p>
+    <div class="fb-actions">
+      <a class="pri" href="/assessment/">身體警報訊號評估清單（1 分鐘）</a>
+      <a class="sec2" href="/prescan/">有健檢報告：填寫掃描前資料表</a>
+      <button class="sec2" id="fbTry" type="button">開啟 3D 地圖</button>
+      <a class="sec2" href="/about/">作者：孫義坤</a>
+      <a class="sec2" href="/">回首頁</a>
+    </div>
+    {byStep.map(({ t, step, islands: isls }) => (
+      <>
+        <div class="fb-step"><b>{t}</b><h2>{step.name}</h2><span>{step.what}</span></div>
+        {isls.map((isl) => (
+          <div class="fb-isl">
+            <h3><i style={`background:${isl.color}`}></i>{isl.name}</h3>
+            <p>{isl.summary}</p>
+            <ul>
+              {isl.items.map((it) => (
+                <li><a href={it.url}>{it.desc}<small>{it.page ? '' : articles[it.id]?.sum}</small></a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </>
+    ))}
+    <p class="fb-foot">本網站內容為健康教育資訊，不構成醫療診斷、治療或處方建議。</p>
+  </div>
+</section>
+)}
+
+
+<div id="stage"></div>
+
+<div id="loader" role="status">
+  <div class="ld-inner">
+    <div class="eyebrow">AGELOCKED · 身體重開機計畫</div>
+    <div class="ld-big">正在組合健康島…</div>
+    <div class="ld-msg" id="loadMsg">載入 3D 引擎中</div>
+  </div>
+</div>
+
+<div id="leftcol">
+  <div id="brand" class="glass">
+    <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
+    <h1>身體重開機 <span>健康島</span></h1>
+    <p>給把健康排最後的你。{total} 篇文章沿台灣由北往南排成一條閱讀路徑：察覺訊號、找出原因、量測確認、開始調整。</p>
+    {mode === 'home'
+      ? <button class="home-link" id="toText" type="button">切換成文字版首頁 →</button>
+      : <a class="home-link" href="/">← 回 AGELOCKED 首頁</a>}
+  </div>
+  <nav id="tools" class="glass" aria-label="視角工具">
+    <button class="btn" id="tPano" title="回到全景"><b>⌂</b>全景</button>
+    <button class="btn" id="tList" aria-pressed="true" title="主題清單"><b>☰</b>清單</button>
+    <button class="btn" id="tAbout" title="作者孫義坤"><b>i</b>作者</button>
+    <button class="btn" id="tHelp" title="操作說明"><b>?</b>說明</button>
+    <button class="btn" id="tText" title={mode === 'home' ? '切換成原本的文字首頁' : '切換成文字版文章地圖'}><b>文</b>文字版</button>
+  </nav>
+  <aside id="card" hidden aria-live="polite">
+    <div class="handle" data-sheet="card"></div>
+    <button class="btn" id="cardClose" aria-label="關閉卡片">×</button>
+    <div id="cardBody"></div>
+  </aside>
+</div>
+
+<aside id="side" class="glass" aria-label="主題清單">
+  <div class="handle" data-sheet="side"></div>
+  <div class="side-top">
+    <input id="search" type="search" placeholder="搜尋主題或細項，例如：睡眠、HRV" autocomplete="off">
+    <div class="tabs" role="tablist">
+      <button class="btn" id="tabT" aria-pressed="true">健康主題</button>
+      <button class="btn" id="tabF" aria-pressed="false">內容流動</button>
+      <button class="btn" id="tabH" aria-pressed="false" hidden data-audit-only>連結檢查</button>
+    </div>
+  </div>
+  <div id="list"></div>
+</aside>
+
+<section id="log" class="glass" hidden aria-label="城市日誌">
+  <div class="log-h">島嶼日誌<span class="live">LIVE</span></div>
+  <select id="logFilter" aria-label="依流動篩選"><option value="">全部流動</option></select>
+  <ul id="logList"></ul>
+</section>
+
+<div id="legend" class="glass" hidden>
+  <span class="ev"><i></i>帶往下一步</span>
+  <span class="ev"><i class="thematic"></i>同一步延伸</span>
+  <span class="ev"><i class="pending"></i>帶回前一步</span>
+</div>
+
+<div id="hud" class="glass">
+  <div id="clock"><b id="clockT">10:00</b><span id="clockS">上午工作</span></div>
+  <button class="btn" data-time="360"><b>06</b>清晨</button>
+  <button class="btn" data-time="720"><b>12</b>白天</button>
+  <button class="btn" data-time="1080"><b>18</b>黃昏</button>
+  <button class="btn" data-time="1260"><b>21</b>夜晚</button>
+  <div class="hud-sep"></div>
+  <button class="btn" data-tog="tags" aria-pressed="false"><b>✎</b>名牌</button>
+  <button class="btn" data-tog="carry" aria-pressed="true"><b>⇄</b>搬運</button>
+  <button class="btn" data-tog="flows" aria-pressed="false"><b>⌁</b>流動線</button>
+  <button class="btn" data-tog="pause" aria-pressed="false"><b>Ⅱ</b>暫停</button>
+  <button class="btn" data-tog="bird" aria-pressed="false"><b>◎</b>鳥瞰</button>
+  <button class="btn" data-tog="log" aria-pressed="false"><b>≡</b>日誌</button>
+  <button class="btn" id="hudCheck"><b>✚</b>健檢</button>
+  <button class="btn" data-tog="audit" aria-pressed="false" hidden data-audit-only><b>⚑</b>連結檢查</button>
+</div>
+<button class="btn glass" id="hudToggle" aria-expanded="false">◷ 時間</button>
+
+<div id="help" hidden>
+  <div class="help-box" role="dialog" aria-labelledby="helpT">
+    <div class="eyebrow">怎麼逛這座島</div>
+    <h2 id="helpT">三步看懂健康島</h2>
+    <ol>
+      <li><span>點一座<b>島</b>，看這個健康主題底下有哪些細項，以及它和哪些島互相導流。</span></li>
+      <li><span>點島上的<b>小建物</b>或號碼 ①②③，每一棟都是網站上的一篇文章，可以直接點去讀全文。</span></li>
+      <li><span>用下方<b>時段</b>與開關，看一天之中哪些身體訊號亮起，小人如何把內容搬往下一層。</span></li>
+    </ol>
+    <button class="btn" id="helpOk">開始逛</button>
+  </div>
+</div>
+
+<p id="disclaimer">內容為健康教育資訊，不構成醫療診斷或建議</p>
+
+
+</div>
+{mode === 'home' && (
+  <script is:inline>
+    // 在首頁內容畫出來之前決定要不要先蓋上健康島，避免閃一下原本首頁
+    (function(){ try{
+      var q=location.search, p=null; try{ p=localStorage.getItem('agelocked-home-view'); }catch(e){}
+      var m=navigator.deviceMemory||8, c=navigator.hardwareConcurrency||8, s=navigator.connection&&navigator.connection.saveData;
+      var force=/[?&]3d/.test(q), lite=/[?&]lite/.test(q)||s||m<=2||c<=2;
+      var r=document.getElementById('island-root');
+      if(r && (force || (!lite && p!=='text'))){ r.hidden=false; document.documentElement.classList.add('island-on'); }
+    }catch(e){} })();
+  </script>
+)}
+{mode === 'home' && (
+  <button id="islandOpen" class="island-open" type="button" hidden>
+    <span aria-hidden="true">🏝</span> 逛健康島
+  </button>
+)}
+{mode === 'home' && <noscript><style>#island-root{display:none!important}</style></noscript>}
+<script type="application/json" id="map-data" set:html={json}></script>
+<script>
+  import '../scripts/island-map.js';
+</script>
