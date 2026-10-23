@@ -695,11 +695,11 @@ function pathBlock(it){ const t=it.tier;
   const lis=[1,2,3,4].map(k=>`<li class="${k<t?'done':k===t?'on':''}"><i>${k<t?'✓':k}</i>${STEP(k).short}</li>`).join('');
   let next='';
   if(t<4){ const n=nextFor(it); if(n) next=`<button class="next" data-item="${n.id}"><small>下一步 · ${esc(STEP(t+1).name)}</small><b>${esc(itemById[n.id].name)}</b><span style="font-size:11.5px;color:var(--m-muted)">${esc(n.via)}</span></button>`; }
-  else next=`<a class="next" href="${DATA.links.prescan}"><small>下一步 · 帶數據來</small><b>填寫健檢資料表，排出你的 90 天優先順序</b></a>`;
+  else next=`<a class="next" href="${DATA.links.prescan}"><small>下一步 · 帶數據來</small><b>填寫掃描前資料表，排出你的 90 天優先順序</b></a>`;
   return `<div class="path"><h3>這篇是閱讀路徑的<b>第 ${t} 步：${esc(STEP(t).name)}</b></h3><ol class="steps">${lis}</ol><p>${esc(STEP(t).what)}</p>${next}</div>`; }
 function flowChip(fi){ const f=DATA.flows[fi]; return `<button class="chip" data-flow="${fi}">${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</button>`; }
-function ctaFor(t){ return t<=2?`<a class="cta soft" href="${DATA.links.assessment}">先做 1 分鐘身體警報評估 →</a>`
-  :`<a class="cta" href="${DATA.links.prescan}">帶健檢數據來，整理優先方向 →</a>`; }
+function ctaFor(t){ return t<=2?`<a class="cta soft" href="${DATA.links.assessment}">身體警報訊號評估清單（1 分鐘）→</a>`
+  :`<a class="cta" href="${DATA.links.prescan}">填寫掃描前資料表，整理優先方向 →</a>`; }
 function cardIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
   return `<div class="c-head"><span class="c-num">${String(i+1).padStart(2,'0')}</span><div><div class="eyebrow">健康主題島${LANDMARKS[s.landmark]?' · 地標：'+LANDMARKS[s.landmark].name:''}</div>${tierChip(s.tier)}</div></div>
   <h2>${esc(s.name)}</h2><p>${esc(s.summary)}</p>
@@ -752,6 +752,19 @@ function selectFlow(fi){ sel={type:'flow',fi}; openCard(cardFlow(fi)); afterSele
   flyTo(mid,OFF_ISL.clone().multiplyScalar(clamp(fp.len/9,1,1.9))); }
 function selectWalker(wi){ sel={type:'walker',wi}; openCard(cardWalker(wi)); afterSelect(); flyTo(walkers[wi].pos.clone(),OFF_ITEM); }
 
+function cardCheck(){ return `<div class="eyebrow">開始你的健檢</div><h2>先從哪一個開始？</h2>
+  <p>把地圖上讀到的身體訊號，換成你自己的數據。</p>
+  <a class="choice" href="${DATA.links.prescan}"><small>有健檢報告</small><b>填寫掃描前資料表 →</b><span>帶上血液報告和穿戴裝置數據，整理出 90 天生活調整的優先順序。</span></a>
+  <a class="choice" href="${DATA.links.assessment}"><small>還沒有數據</small><b>身體警報訊號評估清單 →</b><span>約 1 分鐘，先看看身體哪些訊號正在亮燈。</span></a>`; }
+function cardAbout(){ return `<div class="eyebrow">關於我</div><h2 class="about-name">孫義坤 <small>生醫數據專員</small></h2>
+  <p>幫你找回生活餘裕。這張地圖上的每一篇文章，都是我把研究文獻轉成白話寫成的。</p>
+  <ul class="creds"><li>國立陽明交通大學應用化學、國立清華大學分子醫學背景</li><li>15 年協助臨床醫師解讀研究數據、撰寫醫學論文</li><li>帶上你的健檢數據，對照科學研究文獻，了解數字背後可能的生活型態意義</li></ul>
+  <p class="motto">我不賣奇蹟，只看科學實證與數據。</p>
+  <a class="cta read" href="${DATA.links.about}">看完整介紹 →</a>
+  <button class="chip" id="aboutCheck" style="margin-top:10px">開始你的健檢</button>`; }
+function openSpecial(kind){ sel=null; openCard(kind==='about'?cardAbout():cardCheck()); afterSelect(); document.body.classList.remove('hud-open'); if(mqMobile.matches) $('#card').style.height='62vh';
+  const b=document.getElementById('aboutCheck'); if(b) b.onclick=()=>openSpecial('check'); }
+
 /* ---------- sidebar list ---------- */
 let tab='t';
 function renderList(){ const q=$('#search').value.trim().toLowerCase(); const L=$('#list'); const si=islOfSel();
@@ -802,7 +815,9 @@ document.querySelectorAll('.handle').forEach(h=>{ const sheet=h.parentElement; l
   h.addEventListener('pointerup',()=>{ y0=null; }); });
 // help
 function showHelp(){ $('#help').hidden=false; $('#helpOk').focus(); }
-$('#tHelp').onclick=showHelp; $('#helpOk').onclick=()=>{ $('#help').hidden=true; lsSet('agelocked-island-help','1'); };
+$('#tHelp').onclick=showHelp;
+$('#tAbout').onclick=()=>openSpecial('about');
+$('#hudCheck').onclick=()=>openSpecial('check'); $('#helpOk').onclick=()=>{ $('#help').hidden=true; lsSet('agelocked-island-help','1'); };
 // log
 const logSel=$('#logFilter'); DATA.flows.forEach((f,fi)=>{ const o=document.createElement('option'); o.value=fi; o.textContent=islById[f.from].name+' → '+islById[f.to].name; logSel.appendChild(o); });
 const logs=[]; let logDirty=false;
