@@ -1,0 +1,19 @@
+---
+// /map：健康島獨立頁（附文字版文章地圖）。元件在 src/components/HealthIsland.astro。
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import HealthIsland from '../components/HealthIsland.astro';
+const total = (await getCollection('blog')).length;
+const title = `健康島：${total} 篇文章的閱讀地圖｜AGELOCKED`;
+const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台灣地圖：從察覺身體訊號、找出慢性發炎的原因、用數據量測，到開始調整，照著路徑一步步讀。`;
+---
+
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <BaseHead title={title} description={description} />
+</head>
+<body>
+  <HealthIsland mode="page" />
+</body>
+</html>
