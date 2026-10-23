@@ -76,7 +76,7 @@ Object.entries(outLinks).forEach(([a,ts])=>ts.forEach(b=>{ const k=dirOf(a,b); d
   const key=A.island+'>'+B.island; if(!pairMap.has(key)) pairMap.set(key,{a:A.island,b:B.island,links:[],d:{down:0,same:0,up:0}}); const pr=pairMap.get(key); pr.links.push([a,b]); pr.d[k]++; }));
 const totalLinks=dirStat.down+dirStat.same+dirStat.up;
 DATA.flows=[...pairMap.values()].filter(pr=>pr.links.length>=(DATA.flowMin||2)).sort((x,y)=>y.links.length-x.links.length).map((pr,i)=>{ const A=ISL[pr.a],B=ISL[pr.b]; const dom=['down','same','up'].sort((x,y)=>pr.d[y]-pr.d[x])[0];
-  return { id:'f'+(i+1), from:A.id, to:B.id, carry:A.carry, role:A.role, links:pr.links, d:pr.d, count:pr.links.length, evidence:{down:'official',same:'thematic',up:'pending'}[dom], label:`${pr.links.length} 條內文連結` }; });
+  return { id:'f'+(i+1), from:A.id, to:B.id, carry:A.carry, role:A.role, links:pr.links, d:pr.d, count:pr.links.length, evidence:{down:'official',same:'thematic',up:'pending'}[dom], label:`${pr.links.length} 篇文章互相連結` }; });
 
 /* ---------- renderer / scene ---------- */
 const stage = $('#stage');
@@ -703,11 +703,11 @@ function ctaFor(t){ return t<=2?`<a class="cta soft" href="${DATA.links.assessme
 function cardIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
   return `<div class="c-head"><span class="c-num">${String(i+1).padStart(2,'0')}</span><div><div class="eyebrow">健康主題島${LANDMARKS[s.landmark]?' · 地標：'+LANDMARKS[s.landmark].name:''}</div>${tierChip(s.tier)}</div></div>
   <h2>${esc(s.name)}</h2><p>${esc(s.summary)}</p>
-  <div class="tiles">${(()=>{ const ids=s.items.map(it=>it.id); const out=ids.reduce((n,id)=>n+outLinks[id].filter(t=>itemById[t].island!==i).length,0), inn=ids.reduce((n,id)=>n+inLinks[id].filter(t=>itemById[t].island!==i).length,0), orph=ids.filter(id=>orphans.has(id)).length;
-    return `<div class="tile"><b>${out}<small>條</small></b><span>連往其他島</span></div><div class="tile"><b>${inn}<small>條</small></b><span>從其他島連入</span></div><div class="tile"><b>${orph}<small>篇</small></b><span>孤兒文章</span></div>`; })()}</div>
+  ${AUDIT?`<div class="tiles">${(()=>{ const ids=s.items.map(it=>it.id); const out=ids.reduce((n,id)=>n+outLinks[id].filter(t=>itemById[t].island!==i).length,0), inn=ids.reduce((n,id)=>n+inLinks[id].filter(t=>itemById[t].island!==i).length,0), orph=ids.filter(id=>orphans.has(id)).length;
+    return `<div class="tile"><b>${out}<small>條</small></b><span>連往其他島</span></div><div class="tile"><b>${inn}<small>條</small></b><span>從其他島連入</span></div><div class="tile"><b>${orph}<small>篇</small></b><span>孤兒文章</span></div>`; })()}</div>`:''}
   <div class="sec">島上文章 · ${s.items.length}</div>
-  <ul class="ilist">${s.items.map(it=>`<li><button data-item="${it.id}"><span class="n">${CIRC[it.k]}</span>${esc(it.name)}${orphans.has(it.id)?'<small class="fo">孤兒</small>':''}${deadEnds.has(it.id)?'<small class="fd">死路</small>':''}</button></li>`).join('')}</ul>
-  ${fl.length?`<div class="sec">內文連結流動（≥ ${DATA.flowMin||2} 條）</div><div class="chips">${fl.map(([f,fi])=>flowChip(fi)).join('')}</div>`:''}
+  <ul class="ilist">${s.items.map(it=>`<li><button data-item="${it.id}"><span class="n">${CIRC[it.k]}</span>${esc(it.name)}${AUDIT&&orphans.has(it.id)?'<small class="fo">孤兒</small>':''}${AUDIT&&deadEnds.has(it.id)?'<small class="fd">死路</small>':''}</button></li>`).join('')}</ul>
+  ${fl.length?`<div class="sec">通往其他島的路</div><div class="chips">${fl.map(([f,fi])=>flowChip(fi)).join('')}</div>`:''}
   ${ctaFor(s.tier)}`; }
 function numTile(fact){ const m=fact.match(/(\d[\d,]*(?:\.\d+)?)(?:\s*[–-]\s*(\d+))?\s*(年代|mg\/L|%|秒|分鐘|小時|天|週|篇|項|個|年|次|種|步|位|份|條|張|下|頁|件|歲|公分|色|台|大|多)?/); if(!m) return '';
   return `<div class="tile"><b>${m[1]}${m[2]?'–'+m[2]:''}${m[3]?`<small>${m[3]}</small>`:''}</b><span>${esc(fact)}</span></div>`; }
@@ -716,27 +716,27 @@ function cardItem(id){ const it=itemById[id], s=ISL[it.island];
   <canvas class="thumb" id="thumb" width="320" height="320" aria-label="${esc(it.name)} 模型縮圖"></canvas>
   <blockquote class="tq">${esc(it.desc)}</blockquote>
   ${it.sum?`<p>${esc(it.sum)}</p>`:''}
-  ${orphans.has(id)||deadEnds.has(id)?`<div class="chips" style="margin-bottom:10px">${orphans.has(id)?'<span class="flag orphan">孤兒文章：沒有任何文章連到這篇</span>':''}${deadEnds.has(id)?'<span class="flag dead">死路：內文沒有連出去</span>':''}</div>`:''}
+  ${AUDIT&&(orphans.has(id)||deadEnds.has(id))?`<div class="chips" style="margin-bottom:10px">${orphans.has(id)?'<span class="flag orphan">孤兒文章：沒有任何文章連到這篇</span>':''}${deadEnds.has(id)?'<span class="flag dead">死路：內文沒有連出去</span>':''}</div>`:''}
   ${it.facts.length?`<div class="tiles">${it.facts.slice(0,3).map(numTile).join('')}</div>`:''}
   ${it.url?`<a class="cta read" href="${it.url}" data-read="${it.id}">${it.page?'前往這一頁':'閱讀全文'} →</a>`:''}
   <div class="sec">閱讀路徑</div>${pathBlock(it)}
-  ${it.page?'':`<div class="sec">內文連出 · ${outLinks[id].length}</div>${outLinks[id].length?`<ul class="ilist lk">${outLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">這篇沒有連到其他文章。</p>'}
-  <div class="sec">被連入 · ${inLinks[id].length}</div>${inLinks[id].length?`<ul class="ilist lk">${inLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">還沒有文章連到這篇。</p>'}`}
+  ${it.page?'':`<div class="sec">延伸閱讀 · ${outLinks[id].length}</div>${outLinks[id].length?`<ul class="ilist lk">${outLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">這篇沒有延伸閱讀。</p>'}
+  <div class="sec">從這些文章讀過來 · ${inLinks[id].length}</div>${inLinks[id].length?`<ul class="ilist lk">${inLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">還沒有其他文章提到這篇。</p>'}`}
   ${activeItems.has(id)?`<p style="margin-top:12px"><span class="tier" style="background:#fcf3c2;color:#6b5a12">此刻亮起 · ${esc(DATA.dayCycle[activeSlot].name)}</span></p>`:''}
   <div class="sec">所屬島嶼</div><div class="chips"><button class="chip" data-isl="${s.i}">${esc(s.name)}</button></div>
   ${ctaFor(it.tier)}`; }
 const EVL={official:'帶往下一步',thematic:'同一步延伸',pending:'帶回前一步'};
 const linkBtn=id=>`<li><button data-item="${id}"><span class="n">${itemById[id].tier}</span>${esc(itemById[id].name)}<small>${esc(ISL[itemById[id].island].name)}</small></button></li>`;
 function cardFlow(fi){ const f=DATA.flows[fi]; const n=walkers.filter(w=>w.fi===fi).length;
-  return `<div class="eyebrow">內文連結流動</div><h2>${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</h2>
+  return `<div class="eyebrow">文章之間的路</div><h2>${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</h2>
   <div class="flowrow"><button class="chip" data-isl="${islById[f.from].i}">${esc(islById[f.from].name)}</button>→<button class="chip" data-isl="${islById[f.to].i}">${esc(islById[f.to].name)}</button></div>
-  <p style="margin-top:10px"><span class="ev"><i class="${f.evidence}"></i>多數連結是${EVL[f.evidence]}</span></p>
-  <div class="tiles"><div class="tile"><b>${f.d.down}<small>條</small></b><span>帶往下一步</span></div><div class="tile"><b>${f.d.same}<small>條</small></b><span>同一步延伸</span></div><div class="tile"><b>${f.d.up}<small>條</small></b><span>帶回前一步</span></div></div>
-  <div class="sec">實際連結 · ${f.count}</div>
+  ${AUDIT?`<p style="margin-top:10px"><span class="ev"><i class="${f.evidence}"></i>多數連結是${EVL[f.evidence]}</span></p>
+  <div class="tiles"><div class="tile"><b>${f.d.down}<small>條</small></b><span>帶往下一步</span></div><div class="tile"><b>${f.d.same}<small>條</small></b><span>同一步延伸</span></div><div class="tile"><b>${f.d.up}<small>條</small></b><span>帶回前一步</span></div></div>`:''}
+  <div class="sec">這條路上的文章 · ${f.count}</div>
   <ul class="ilist lk">${f.links.map(([a,b])=>`<li><button data-item="${a}"><span class="n">${itemById[a].tier}</span>${esc(itemById[a].name)}<small>→ ${esc(itemById[b].name)} · 第 ${itemById[b].tier} 步</small></button></li>`).join('')}</ul>
   <p style="margin-top:12px;color:var(--m-muted);font-size:12.5px">${n} 位居民在這條路上搬運「${esc(CARRY[f.carry])}」。</p>`; }
 function cardWalker(wi){ const w=walkers[wi], f=DATA.flows[w.fi];
-  return `<div class="eyebrow">島上居民</div><h2>${ROLES[w.role].name}</h2><p>正在搬 <b>${esc(CARRY[w.carry])}</b>，往返於 ${esc(islById[f.from].name)} 與 ${esc(islById[f.to].name)} 之間。這條路上有 ${f.count} 條真實的內文連結。</p>
+  return `<div class="eyebrow">島上居民</div><h2>${ROLES[w.role].name}</h2><p>正在搬 <b>${esc(CARRY[w.carry])}</b>，往返於 ${esc(islById[f.from].name)} 與 ${esc(islById[f.to].name)} 之間。這條路上有 ${f.count} 組文章互相連結。</p>
   <div class="sec">所在流動</div><div class="chips">${flowChip(w.fi)}</div>`; }
 function renderThumb(id){ const cv=document.getElementById('thumb'); if(!cv) return; const it=itemById[id];
   const pr=renderer.getPixelRatio(), S=160, cam=new THREE.PerspectiveCamera(30,1,.1,200); const d=it.scale*2.3+.5;
@@ -772,7 +772,7 @@ function renderList(){ const q=$('#search').value.trim().toLowerCase(); const L=
       <div class="sec"><span class="sw dd"></span>死路文章 · ${deadEnds.size}</div><p class="note">內文沒有連出去，讀者讀完只剩版型的相關文章和 CTA。</p><div class="sub">${lst(deadEnds)}</div>
       <p class="note">資料來源：agelocked-blog 原始碼的內文連結，不含版型自動產生的「相關文章」區塊。打開下方「連結檢查」開關，可在島上標出這些文章。</p></div>`; }
   else { const fs=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>!q||(f.label+islById[f.from].name+islById[f.to].name).toLowerCase().includes(q));
-    L.innerHTML=fs.map(([f,fi])=>`<button class="frow" data-flow="${fi}"><b>${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</b><small><span class="ev"><i class="${f.evidence}"></i></span> ${esc(f.label)} · 多數${EVL[f.evidence]}</small></button>`).join('')||'<div class="empty">找不到符合的流動。</div>'; }
+    L.innerHTML=fs.map(([f,fi])=>`<button class="frow" data-flow="${fi}"><b>${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</b><small><span class="ev"><i class="${f.evidence}"></i></span> ${esc(f.label)}${AUDIT?' · 多數'+EVL[f.evidence]:''}</small></button>`).join('')||'<div class="empty">找不到符合的流動。</div>'; }
   L.querySelectorAll('summary[data-isl]').forEach(b=>b.addEventListener('click',()=>selectIsland(+b.dataset.isl)));
   L.querySelectorAll('[data-item]').forEach(b=>b.onclick=e=>{ if(e.metaKey||e.ctrlKey||e.shiftKey||e.button===1) return; e.preventDefault(); selectItem(b.dataset.item); });
   L.querySelectorAll('[data-flow]').forEach(b=>b.onclick=()=>selectFlow(+b.dataset.flow)); }
