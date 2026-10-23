@@ -124,6 +124,8 @@ Inflammaging 發生在「還沒生病」和「已經生病」之間的那個光�
 **延伸閱讀：**
 - [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
 - [40歲之後，你的身體發電廠正在罷工](/blog/chronic-inflammation/mitochondria-energy-after-40/)
+- [《鬼滅之刃》無慘搞錯了一件事：問題不在年輕的血有什麼，而在他老人家的血裡多了什麼](/blog/body-signals/demon-slayer-aging-blood/)
+- [那幾根白的，不只是壓力造成的——也可能是你的幹細胞在保護你](/blog/body-signals/white-hair-stem-cells/)
 
 ---
 

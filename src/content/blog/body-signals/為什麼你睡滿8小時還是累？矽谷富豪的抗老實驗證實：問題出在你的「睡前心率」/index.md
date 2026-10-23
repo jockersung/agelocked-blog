@@ -130,6 +130,7 @@ ctaBridge: '就像布萊恩的藍圖計畫，一切都從測量開始。先花 1
 **延伸閱讀：**
 - [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
 - [壽命約一半由基因決定——另外一半，你正在用什麼速度耗損？](/blog/chronic-inflammation/longevity-55-percent-genetics/) 
+- [二千多年前秦始皇派人去找的東西，現代科學最近才找到](/blog/body-signals/emperor-longevity-modern-science/)
 
 ---
 

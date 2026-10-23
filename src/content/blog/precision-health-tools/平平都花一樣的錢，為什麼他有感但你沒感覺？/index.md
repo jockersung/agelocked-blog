@@ -147,6 +147,7 @@ CoQ10 是脂溶性成分，在一般粉末膠囊劑型中，吸收率極低，�
 - [那些讓你點頭的保健品話術，你聽過哪些？](/blog/precision-health-tools/supplement-marketing-tactics/) 
 - [廠商那張SGS合格報告和你吃進去有沒有用，是兩件事](/blog/precision-health-tools/sgs-report-vs-efficacy/) 
 - [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/)
+- [Nu Skin CoQ10：為什麼劑型比劑量更重要](/blog/intervention-optimization/nuskin-coq10-bioavailability/)
 
 ---
 

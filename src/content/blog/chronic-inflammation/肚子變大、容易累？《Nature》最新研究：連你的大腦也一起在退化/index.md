@@ -155,6 +155,12 @@ slug: "neurogenesis-inflammaging-cognitive-resilience"
 
 ---
 
+**延伸閱讀：**
+- [同樣80歲，有人記得每個孫子的名字——科學找到了他們大腦的秘密](/blog/chronic-inflammation/super-agers-neurogenesis-healthspan/)
+- [你上一次知道自己身體真正的狀態，是什麼時候？Prysm iO 15 秒看見你的抗氧化水位](/blog/precision-health-tools/prysm-io-15sec/)
+
+---
+
 ## 參考資料
 
 01. Disouky Ahmed, Sanborn Mark A., Sabitha K. R. et al. (2026). Human hippocampal neurogenesis in adulthood, ageing and Alzheimer’s disease. *Nature*, 652(8112):1264-1273. DOI：[10.1038/s41586-026-10169-4](<https://doi.org/10.1038/s41586-026-10169-4>)。

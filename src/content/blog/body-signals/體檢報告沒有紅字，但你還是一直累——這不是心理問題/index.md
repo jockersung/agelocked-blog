@@ -129,6 +129,15 @@ ctaBridge: "我在健康領域看了十五年的數據，最常見的落差就�
 
 
 
+---
+
+**延伸閱讀：**
+- [健檢沒紅字，也值得多看的 5 個數字](/blog/body-signals/checkup-five-numbers/)
+- [CRP 看大火，hs-CRP 看小火：低度慢性發炎怎麼驗、怎麼讀](/blog/chronic-inflammation/hs-crp-low-grade-inflammation/)
+- [一把火，三處煙：慢性發炎看不見，可以從哪三個地方找線索](/blog/chronic-inflammation/inflammation-three-clues/)
+
+---
+
 ## 參考資料
 
 1. Franceschi C., Campisi J. (2014). Chronic Inflammation (Inflammaging) and Its Potential Contribution to Age-Associated Diseases. *The Journals of Gerontology Series A: Biological Sciences and Medical Sciences*, 69(Suppl 1):S4-S9. DOI：[10.1093/gerona/glu057](<https://doi.org/10.1093/gerona/glu057>)。

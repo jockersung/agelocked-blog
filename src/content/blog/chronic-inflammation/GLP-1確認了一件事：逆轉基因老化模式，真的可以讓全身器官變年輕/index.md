@@ -107,6 +107,7 @@ mTOR 是我們在前幾篇反覆提到的概念，它是細胞的「生長感應
 **延伸閱讀：**
 - [不節食也能啟動長壽基因？CRM 的概念和 DNA 微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
 - [ageLOC Youthspan：不節食，也能啟動修護基因](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/) 
+- [老化不是零件壞了，是細胞「忘了」自己是誰](/blog/precision-health-tools/epigenetic-dysregulation-2026-nature-review/)
 
 ---
 

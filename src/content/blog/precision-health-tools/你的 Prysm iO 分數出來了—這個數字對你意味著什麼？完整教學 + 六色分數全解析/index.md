@@ -202,6 +202,15 @@ App 會幫你把所有數值畫成趨勢圖，讓你看見：
 不是每個人都需要一樣的方案，但每個人都值得知道自己真正需要什麼。
 
 
+---
+
+**延伸閱讀：**
+- [三個數字一起看：血液、HRV、皮膚類胡蘿蔔素的 6 種常見組合](/blog/precision-health-tools/three-clues-cross-reading/)
+- [每日、每月、每年：一套個人化的身體追蹤節奏](/blog/intervention-optimization/tracking-rhythm/)
+- [LifePak：在啟動修護基因之前，你需要補地基打底](/blog/intervention-optimization/lifepak-foundation-nutrition/)
+
+---
+
 ## 參考資料
 
 1. Riggs Melanie et al. (2026). Validation of a New Non-invasive Personalized RS-Skin Carotenoid Scanner (Prysm iO) versus the BioPhotonic Scanner S3 RRS Device for Estimating Carotenoid Levels in Humans. *Food &amp; Nutrition Journal*, 11(1). DOI：[10.29011/2575-7091.100334](<https://doi.org/10.29011/2575-7091.100334>)。

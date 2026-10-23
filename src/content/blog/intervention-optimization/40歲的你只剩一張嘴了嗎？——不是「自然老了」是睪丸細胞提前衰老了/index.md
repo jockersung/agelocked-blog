@@ -152,6 +152,11 @@ ctaType: 'hard'
 
 ---
 
+**延伸閱讀：**
+- [瑪卡加精胺酸，為什麼吃了還是沒感覺？——市售男性活力配方的根本盲點](/blog/intervention-optimization/maca-arginine-vs-ageloc-r2/)
+
+---
+
 ## 參考資料
 
 01. Xing Dong, Jin Yihan, Jin Baofang (2024). A narrative review on inflammaging and late-onset hypogonadism. *Frontiers in Endocrinology*, 15:1291389. DOI：[10.3389/fendo.2024.1291389](<https://doi.org/10.3389/fendo.2024.1291389>)。

@@ -102,6 +102,11 @@ ctaBridge: "腰圍是最誠實的代謝指標，但它只告訴你結果。先�
 
 ---
 
+**延伸閱讀：**
+- [間歇性斷食做不到？這個每月5天的版本，臨床數據說生理年齡可以倒退](/blog/chronic-inflammation/fasting-mimicking-diet-5days/)
+
+---
+
 ## 參考資料
 
 01. Pontzer Herman, Yamada Yosuke, Sagayama Hiroyuki et al. (2021). Daily energy expenditure through the human life course. *Science*, 373(6556):808-812. DOI：[10.1126/science.abe5017](<https://doi.org/10.1126/science.abe5017>)。

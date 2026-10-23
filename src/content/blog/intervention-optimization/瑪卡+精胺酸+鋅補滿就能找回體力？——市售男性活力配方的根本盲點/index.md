@@ -114,6 +114,12 @@ ctaBridge: '把你的靜止心率、HRV、TG/HDL 填進資料表，我會先幫�
 
 ---
 
+**延伸閱讀：**
+- [ageLOC R2：那個40歲看起來像32歲的男人，細胞在夜裡做了什麼？](/blog/intervention-optimization/ageloc-r2-cellular-renewal/)
+- [40歲的你只剩一張嘴了嗎？——不是「自然老了」是睪丸細胞提前衰老了](/blog/intervention-optimization/testosterone-cell-aging-40/)
+
+---
+
 ## 參考資料
 
 01. Gonzales G. F., Cordova A., Vega K. et al. (2002). Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men. *Andrologia*, 34(6):367-372. DOI：[10.1046/j.1439-0272.2002.00519.x](<https://doi.org/10.1046/j.1439-0272.2002.00519.x>)。

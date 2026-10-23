@@ -154,6 +154,7 @@ R2 是營養補充品，不是藥物，不能治療或改善任何疾病。疲�
 **延伸閱讀：**
 - [20歲睡一覺就好，40歲睡八小時還是空——不是你變懶，是你的發電廠壞了](/blog/chronic-inflammation/mitochondria-energy-after-40/) 
 - [不節食也能啟動長壽基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
+- [瑪卡加精胺酸，為什麼吃了還是沒感覺？——市售男性活力配方的根本盲點](/blog/intervention-optimization/maca-arginine-vs-ageloc-r2/)
 
 ---
 

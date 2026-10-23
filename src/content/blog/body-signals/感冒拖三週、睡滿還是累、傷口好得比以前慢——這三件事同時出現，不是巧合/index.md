@@ -119,6 +119,13 @@ ctaBridge: "這三個訊號同時出現就不是巧合，是同一個系統的�
 
 ---
 
+**延伸閱讀：**
+- [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/)
+- [你的細胞儲備，正在被一個你感覺不到的過程悄悄耗光](/blog/chronic-inflammation/cell-reserve-chronic-depletion/)
+- [一把火，三處煙：慢性發炎看不見，可以從哪三個地方找線索](/blog/chronic-inflammation/inflammation-three-clues/)
+
+---
+
 ## 參考資料
 
 01. Franceschi C., Campisi J. (2014). Chronic Inflammation (Inflammaging) and Its Potential Contribution to Age-Associated Diseases. *The Journals of Gerontology Series A: Biological Sciences and Medical Sciences*, 69(Suppl 1):S4-S9. DOI：[10.1093/gerona/glu057](<https://doi.org/10.1093/gerona/glu057>)。

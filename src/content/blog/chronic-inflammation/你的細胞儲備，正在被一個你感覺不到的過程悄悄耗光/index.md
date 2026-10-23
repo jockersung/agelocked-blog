@@ -155,6 +155,8 @@ NAD+ 下降 → Sirtuins 失活 → 端粒修復能力下降 → 端粒縮短加
 - [抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學](/blog/chronic-inflammation/anti-inflammation-anti-aging/) 
 - [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/) 
 - [不節食也能啟動修護基因？CRM的概念和DNA微陣列技術](/blog/chronic-inflammation/caloric-restriction-mimetics-science/) 
+- [抗衰老明星 NMN 真的能達到抗衰老的目的嗎？](/blog/chronic-inflammation/nmn-anti-aging-review/)
+- [細胞內建的倒數計時器——端粒，它決定你老化的速度](/blog/chronic-inflammation/telomere-aging-clock/)
 
 ---
 

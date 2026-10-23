@@ -141,6 +141,11 @@ MeSCs或卡住，或退場，或被周圍的 H₂O₂ 直接漂白，三種結�
 
 ---
 
+**延伸閱讀：**
+- [細胞內建的倒數計時器——端粒，它決定你老化的速度](/blog/chronic-inflammation/telomere-aging-clock/)
+
+---
+
 ## 參考資料
 
 01. Sun Qi, Lee Wendy, Hu Hai et al. (2023). Dedifferentiation maintains melanocyte stem cells in a dynamic niche. *Nature*, 616(7958):774-782. DOI：[10.1038/s41586-023-05960-6](<https://doi.org/10.1038/s41586-023-05960-6>)。
