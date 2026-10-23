@@ -756,7 +756,7 @@ function cardCheck(){ return `<div class="eyebrow">開始你的健檢</div><h2>�
   <p>把地圖上讀到的身體訊號，換成你自己的數據。</p>
   <a class="choice" href="${DATA.links.prescan}"><small>有健檢報告</small><b>填寫掃描前資料表 →</b><span>帶上血液報告和穿戴裝置數據，整理出 90 天生活調整的優先順序。</span></a>
   <a class="choice" href="${DATA.links.assessment}"><small>還沒有數據</small><b>身體警報訊號評估清單 →</b><span>約 1 分鐘，先看看身體哪些訊號正在亮燈。</span></a>`; }
-function cardAbout(){ return `<div class="eyebrow">關於我</div><h2 class="about-name">孫義坤 <small>生醫數據專員</small></h2>
+function cardAbout(){ return `<div class="eyebrow">作者</div><h2 class="about-name">孫義坤 <small>生醫數據專員</small></h2>
   <p>幫你找回生活餘裕。這張地圖上的每一篇文章，都是我把研究文獻轉成白話寫成的。</p>
   <ul class="creds"><li>國立陽明交通大學應用化學、國立清華大學分子醫學背景</li><li>15 年協助臨床醫師解讀研究數據、撰寫醫學論文</li><li>帶上你的健檢數據，對照科學研究文獻，了解數字背後可能的生活型態意義</li></ul>
   <p class="motto">我不賣奇蹟，只看科學實證與數據。</p>
