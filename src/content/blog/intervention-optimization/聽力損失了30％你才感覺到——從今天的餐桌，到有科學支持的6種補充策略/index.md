@@ -161,6 +161,7 @@ CoQ10的良好食物來源，同時含豐富 Omega-3，改善內耳血流。
 **延伸閱讀：**
 - [「蛤？你公蝦？」聽力退化是失智的「前兆」？](/blog/body-signals/hearing-loss-dementia-signal/) ← 聽力退化原因篇
 - [你的身體老化速度，有辦法知道嗎？](/blog/precision-health-tools/aging-speed-measurement-methods/) ← Prysm iO 掃描說明
+- [Nu Skin CoQ10：為什麼劑型比劑量更重要](/blog/intervention-optimization/nuskin-coq10-bioavailability/)
 
 ---
 

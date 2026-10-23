@@ -173,6 +173,12 @@ ctaBridge: '你的疲勞、感冒頻率、睡眠和修復速度，放在一起�
 
 ---
 
+**延伸閱讀：**
+- [老化不是零件壞了，是細胞「忘了」自己是誰](/blog/precision-health-tools/epigenetic-dysregulation-2026-nature-review/)
+- [你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家](/blog/precision-health-tools/aging-speed-measurement-methods/)
+
+---
+
 ## 參考資料
   
 01. Hayflick L., Moorhead P.S. (1961). The serial cultivation of human diploid cell strains. *Experimental Cell Research*, 25(3):585-621. DOI：[10.1016/0014-4827(61)90192-6](<https://doi.org/10.1016/0014-4827%2861%2990192-6>)。

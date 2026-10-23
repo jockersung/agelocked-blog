@@ -127,6 +127,12 @@ M 型的 M，可以是 Male，可以是 Middle-aged，也可以是 Mitochondria�
 
 ---
 
+**延伸閱讀：**
+- [《鬼滅之刃》無慘搞錯了一件事：問題不在年輕的血有什麼，而在他老人家的血裡多了什麼](/blog/body-signals/demon-slayer-aging-blood/)
+- [那幾根白的，不只是壓力造成的——也可能是你的幹細胞在保護你](/blog/body-signals/white-hair-stem-cells/)
+
+---
+
 ## 參考資料
 
 01. Deng Yongqiong, Wang Mengxue, He Yuxin et al. (2023). Cellular Senescence: Ageing and Androgenetic Alopecia. *Dermatology*, 239(4):533-541. DOI：[10.1159/000530681](<https://doi.org/10.1159/000530681>)。

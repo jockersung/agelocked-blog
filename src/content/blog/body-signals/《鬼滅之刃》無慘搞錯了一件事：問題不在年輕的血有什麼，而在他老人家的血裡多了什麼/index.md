@@ -159,6 +159,11 @@ Inflammaging 不是感染，不是急性發炎。它是一種長年慢慢燒的�
 
 ---
 
+**延伸閱讀：**
+- [二千多年前秦始皇派人去找的東西，現代科學最近才找到](/blog/body-signals/emperor-longevity-modern-science/)
+
+---
+
 ## 參考資料
 
 01. Conboy Irina M., Conboy Michael J., Wagers Amy J. et al. (2005). Rejuvenation of aged progenitor cells by exposure to a young systemic environment. *Nature*, 433(7027):760-764. DOI：[10.1038/nature03260](<https://doi.org/10.1038/nature03260>)。

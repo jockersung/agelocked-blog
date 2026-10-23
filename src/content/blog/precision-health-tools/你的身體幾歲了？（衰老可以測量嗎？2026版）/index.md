@@ -153,6 +153,11 @@ ctaBridge: "凡是能被測量的，就能被改進。量化的第一步不用�
 
 ---
 
+**延伸閱讀：**
+- [為什麼有人40歲看起來35，有人40歲看起來50——差距從哪裡來？](/blog/intervention-optimization/biological-age-gap-youthspan/)
+
+---
+
 ## 參考資料
 
 01. Horvath Steve (2013). DNA methylation age of human tissues and cell types. *Genome Biology*, 14(10):3156. DOI：[10.1186/gb-2013-14-10-r115](<https://doi.org/10.1186/gb-2013-14-10-r115>)。

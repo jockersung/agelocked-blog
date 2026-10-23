@@ -174,6 +174,7 @@ CRM 的研究方向，把「抗老化」從「感覺學」推進到了「精準�
 
 - [少吃真的能讓你活更久——熱量限制的科學](/blog/chronic-inflammation/caloric-restriction-longevity-science/) 
 - [ageLOC Youthspan：不節食，也能啟動修護基因功能](/blog/intervention-optimization/ageloc-youthspan-longevity-genes/)
+- [雷帕黴素、二甲雙胍、GLP-1——抗老化藥物的科學很真實，但有些事情你需要知道](/blog/chronic-inflammation/longevity-drugs-science/)
 
 ---
 

@@ -121,6 +121,7 @@ GLP-1 藥物之所以在抗老科學界受到重視，是因為動物和細胞�
 - [瘦瘦針不只讓你瘦——它正在改變你體內的老化基因](/blog/chronic-inflammation/glp1-aging-gene-expression/)
 - [抑制 IGF-1 還不夠——壽命的關鍵，藏在你的粒線體 DNA 裡](/blog/chronic-inflammation/igf1-mitochondria-dna-longevity/)
 - [你的身體幾歲了？（衰老可以測量嗎？2026版）](/blog/precision-health-tools/biological-age-measurement/)
+- [雷帕黴素、二甲雙胍、GLP-1——抗老化藥物的科學很真實，但有些事情你需要知道](/blog/chronic-inflammation/longevity-drugs-science/)
 
 ---
 

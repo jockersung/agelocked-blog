@@ -142,6 +142,7 @@ RAB5IF 減少後，會導致粒線體製造的 ATP 量下降，造成 SUMO2（�
 
 - [你每晚都有一個清洗大腦的機會——但大多數人都錯過了](/blog/chronic-inflammation/sleep-glymphatic-brain-detox/)
 - [同樣80歲，有人記得每個孫子的名字——科學找到了他們大腦的秘密](/blog/chronic-inflammation/super-agers-neurogenesis-healthspan/)
+- [肚子變大、容易累？慢性發炎不只傷身體，也可能正在影響你的大腦](/blog/chronic-inflammation/neurogenesis-inflammaging-cognitive-resilience/)
 
 ---
 

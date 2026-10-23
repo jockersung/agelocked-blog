@@ -123,6 +123,7 @@ Prysm iO 用光譜技術，15秒掃描指尖，把這個數值轉換成一個顏
 **延伸閱讀：**
 - [體檢報告沒有紅字，但你還是一直累——這不是心理問題](/blog/body-signals/normal-checkup-still-tired/) 
 - [活到85歲，但有20年是在診所和藥罐子裡——是你要那一種晚年？](/blog/chronic-inflammation/healthspan-vs-lifespan/)
+- [為什麼有人40歲看起來35，有人40歲看起來50——差距從哪裡來？](/blog/intervention-optimization/biological-age-gap-youthspan/)
 
 ---
 

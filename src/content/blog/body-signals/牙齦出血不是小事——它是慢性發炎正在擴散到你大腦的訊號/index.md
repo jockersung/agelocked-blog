@@ -171,6 +171,11 @@ P. gingivalis 觸發 **兩個阿茲海默症的核心病理**：
 
 ---
 
+**延伸閱讀：**
+- [肚子變大、容易累？慢性發炎不只傷身體，也可能正在影響你的大腦](/blog/chronic-inflammation/neurogenesis-inflammaging-cognitive-resilience/)
+
+---
+
 ## 參考資料
 
 01. Dominy Stephen S., Lynch Casey, Ermini Florian et al. (2019). Porphyromonas gingivalis in Alzheimer’s disease brains: Evidence for disease causation and treatment with small-molecule inhibitors. *Science Advances*, 5(1):eaau3333. DOI：[10.1126/sciadv.aau3333](<https://doi.org/10.1126/sciadv.aau3333>)。
