@@ -43,7 +43,10 @@ jobs:
           node-version: 22
 
       - name: 安裝 ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        # 用 ffmpeg-static 下載現成執行檔，比 apt-get 快很多
+        run: |
+          npm i --prefix /tmp/ff --no-audit --no-fund ffmpeg-static@5.2.0
+          echo "FFMPEG=$(node -p "require('/tmp/ff/node_modules/ffmpeg-static')")" >> "$GITHUB_ENV"
 
       - name: 產生語音
         env:
