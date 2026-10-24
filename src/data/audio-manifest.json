@@ -438,5 +438,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "apob-vs-ldl": {
+    "seconds": 336,
+    "hash": "29e6710de7ef2339",
+    "file": "/audio/apob-vs-ldl.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "hrv-recovery-guide": {
+    "seconds": 587,
+    "hash": "e271c6651d2d97c3",
+    "file": "/audio/hrv-recovery-guide.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "fda-certification-myth": {
+    "seconds": 589,
+    "hash": "e423338ea6ba50bb",
+    "file": "/audio/fda-certification-myth.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "antioxidant-scanner-comparison": {
+    "seconds": 1883,
+    "hash": "2212da3683229b6a",
+    "file": "/audio/antioxidant-scanner-comparison.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "carotenoid-rrs-science": {
+    "seconds": 2314,
+    "hash": "386924cebdc21af3",
+    "file": "/audio/carotenoid-rrs-science.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "three-clues-cross-reading": {
+    "seconds": 497,
+    "hash": "844ad5a788e15f40",
+    "file": "/audio/three-clues-cross-reading.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }

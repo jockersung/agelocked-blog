@@ -1,10 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。
-apob-vs-ldl
-hrv-recovery-guide
-fda-certification-myth
-antioxidant-scanner-comparison
-carotenoid-rrs-science
-three-clues-cross-reading
 prysm-io-15sec
 prysm-io-score-guide
 biological-age-measurement
