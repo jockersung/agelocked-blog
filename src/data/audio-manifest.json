@@ -294,5 +294,13 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "telomere-aging-clock": {
+    "seconds": 595,
+    "hash": "5cb3f30f436c20fc",
+    "file": "/audio/telomere-aging-clock.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }

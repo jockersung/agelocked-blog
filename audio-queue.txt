@@ -1,5 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空。
-telomere-aging-clock
 neurogenesis-inflammaging-cognitive-resilience
 sleep-duration-biological-aging
 fasting-mimicking-diet-5days
