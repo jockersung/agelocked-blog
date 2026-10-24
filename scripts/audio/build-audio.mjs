@@ -17,7 +17,7 @@ const MANIFEST = join(ROOT, 'src/data/audio-manifest.json');
 const QUEUE = join(ROOT, 'audio-queue.txt');
 const MODEL = process.env.GEMINI_TTS_MODEL || 'gemini-3.8-flash-tts';
 const API = 'https://generativelanguage.googleapis.com/v1beta';
-const STYLE = '台灣華語。像一個懂科學的朋友在聊天，溫和、清楚、不急，段落之間自然停頓。';
+const STYLE = '台灣華語。這是一集健康 podcast：主持人像懂科學的朋友在跟聽眾聊天，親切、有精神、不急，段落之間自然停頓，重點處稍微放慢。';
 const CHUNK = 1400; // 每次請求的字數上限（約 5 分鐘語音）
 const SR = 24000;
 
@@ -32,13 +32,19 @@ function parse(file) {
   const m = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
   const fm = m ? m[1] : ''; const body = m ? m[2] : raw;
   const get = (k) => { const r = fm.match(new RegExp(`^${k}:\\s*["']?(.*?)["']?\\s*$`, 'm')); return r ? r[1] : ''; };
-  return { file, slug: get('slug'), title: get('title'), body };
+  return { file, slug: get('slug'), title: get('title'), cta: get('ctaType') === 'hard' ? 'hard' : 'soft', body };
 }
 const ARTICLES = walk(BLOG).map(parse).filter((a) => a.slug);
 const bySlug = new Map(ARTICLES.map((a) => [a.slug, a]));
 
 // ── 把 Markdown 轉成要唸的稿子 ───────────────────────────
 const DICT = Object.entries(JSON.parse(readFileSync(join(ROOT, 'scripts/audio/pronounce.json'), 'utf8'))).filter(([k]) => !k.startsWith('_')).sort((a, b) => b[0].length - a[0].length);
+// Podcast 開場與結尾。結尾 CTA 跟著文章 frontmatter 的 ctaType：soft → 身體警報訊號評估清單，hard → 掃描前資料表
+const INTRO = (title) => `大家好，我是健康島主 Jason。今天要跟大家分享的是：${title}。`;
+const OUTRO = {
+  soft: '好，今天就分享到這裡。如果你聽完覺得，欸，這好像在說我，歡迎到我的網站 age locked 點 com，花一分鐘做「身體警報訊號評估清單」，先看看你的身體現在有哪些訊號在亮燈。今天提到的研究和參考文獻，也都整理在網站的文章裡。我是 Jason，我們下次見。',
+  hard: '好，今天就分享到這裡。如果你手上已經有健檢報告，歡迎到我的網站 age locked 點 com，填寫「掃描前資料表」，把你的數據整理起來，看看接下來九十天，最值得先調整的是哪一件事。今天提到的研究和參考文獻，也都整理在網站的文章裡。我是 Jason，我們下次見。',
+};
 export function toScript(a) {
   let t = a.body.replace(/\r/g, '');
   t = t.split(/\n#{1,6}\s*(?:參考資料|參考文獻|學術文獻|References)/)[0];
@@ -61,7 +67,7 @@ export function toScript(a) {
   for (const [k, v] of DICT) t = t.split(k).join(v);
   const paras = t.split(/\n\s*\n/).map((p) => p.replace(/\s*\n\s*/g, '').trim()).filter((p) => p && !/^[，。、\s]*$/.test(p));
   const title = DICT.reduce((s, [k, v]) => s.split(k).join(v), a.title.replace(/——|—/g, '，'));
-  return [`這是 age locked，我是孫義坤。這一篇是：${title}。`, ...paras, '以上就是這一篇。文章裡提到的研究和參考文獻，都整理在網頁上。'];
+  return [INTRO(title), ...paras, OUTRO[a.cta]];
 }
 function chunks(paras) {
   const out = []; let cur = '';
