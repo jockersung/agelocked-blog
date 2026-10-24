@@ -40,10 +40,10 @@ const bySlug = new Map(ARTICLES.map((a) => [a.slug, a]));
 // ── 把 Markdown 轉成要唸的稿子 ───────────────────────────
 const DICT = Object.entries(JSON.parse(readFileSync(join(ROOT, 'scripts/audio/pronounce.json'), 'utf8'))).filter(([k]) => !k.startsWith('_')).sort((a, b) => b[0].length - a[0].length);
 // Podcast 開場與結尾。結尾 CTA 跟著文章 frontmatter 的 ctaType：soft → 身體警報訊號評估清單，hard → 掃描前資料表
-const INTRO = (title) => `大家好，我是健康島主 Jason。今天要跟大家分享的是：${title}。`;
+const INTRO = (title) => `大家好，我是健康島島主 Jason！今天要跟大家分享一個很多人都忽略的事：${title}。`;
 const OUTRO = {
-  soft: '好，今天就分享到這裡。如果你聽完覺得，欸，這好像在說我，歡迎到我的網站 age locked 點 com，花一分鐘做「身體警報訊號評估清單」，先看看你的身體現在有哪些訊號在亮燈。今天提到的研究和參考文獻，也都整理在網站的文章裡。我是 Jason，我們下次見。',
-  hard: '好，今天就分享到這裡。如果你手上已經有健檢報告，歡迎到我的網站 age locked 點 com，填寫「掃描前資料表」，把你的數據整理起來，看看接下來九十天，最值得先調整的是哪一件事。今天提到的研究和參考文獻，也都整理在網站的文章裡。我是 Jason，我們下次見。',
+  soft: '好，今天就分享到這裡。如果你聽完覺得，欸，這好像在說我，歡迎到我的網站 age locked 點 com，花一分鐘做「身體警報訊號評估清單」，先看看你的身體現在有哪些訊號在亮燈。今天提到的研究和參考文獻，也都整理在網站的文章裡。我是健康島島主 Jason，我們下次見！',
+  hard: '好，今天就分享到這裡。如果你手上已經有健檢報告，歡迎到我的網站 age locked 點 com，填寫「掃描前資料表」，把你的數據整理起來，看看接下來九十天，最值得先調整的是哪一件事。今天提到的研究和參考文獻，也都整理在網站的文章裡。我是健康島島主 Jason，我們下次見！',
 };
 export function toScript(a) {
   let t = a.body.replace(/\r/g, '');
