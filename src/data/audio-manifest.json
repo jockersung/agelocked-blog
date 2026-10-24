@@ -534,5 +534,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "visceral-fat-polyphenol-mechanism": {
+    "seconds": 799,
+    "hash": "cb95660595071960",
+    "file": "/audio/visceral-fat-polyphenol-mechanism.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "supplement-bioavailability-gap": {
+    "seconds": 643,
+    "hash": "fab22ddf0b646515",
+    "file": "/audio/supplement-bioavailability-gap.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "sgs-report-vs-efficacy": {
+    "seconds": 529,
+    "hash": "f79468969965514d",
+    "file": "/audio/sgs-report-vs-efficacy.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "supplement-one-thing-to-check": {
+    "seconds": 615,
+    "hash": "1b262e5f6fa898e6",
+    "file": "/audio/supplement-one-thing-to-check.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "apple-watch-sleep-vs-root-cause": {
+    "seconds": 669,
+    "hash": "1aa7945bd2accdcd",
+    "file": "/audio/apple-watch-sleep-vs-root-cause.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "supplement-myths-debunked": {
+    "seconds": 597,
+    "hash": "f3d9f01b0eebb9a1",
+    "file": "/audio/supplement-myths-debunked.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
