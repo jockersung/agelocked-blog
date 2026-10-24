@@ -121,7 +121,7 @@ async function tts(text, voice) {
   if (!audio?.data) throw new Error('Gemini 回應裡沒有音訊：' + JSON.stringify(j).slice(0, 300));
   return Buffer.from(audio.data, 'base64');
 }
-const ff = (a, input) => execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', ...a], { input, maxBuffer: 1 << 30 });
+const ff = (a, input) => execFileSync(process.env.FFMPEG || 'ffmpeg', ['-hide_banner', '-loglevel', 'error', ...a], { input, maxBuffer: 1 << 30 });
 async function render(a, voice) {
   const paras = toScript(a); const parts = chunks(paras);
   const pcm = []; const gap = Buffer.alloc(Math.round(SR * 0.45) * 2);
