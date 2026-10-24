@@ -152,8 +152,8 @@
     "updated": "2026-10-24"
   },
   "hs-crp-low-grade-inflammation": {
-    "seconds": 92,
-    "hash": "ffd2fa427abaf23d",
+    "seconds": 335,
+    "hash": "c2dc9b0c78473e95",
     "file": "/audio/hs-crp-low-grade-inflammation.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
@@ -299,6 +299,46 @@
     "seconds": 595,
     "hash": "5cb3f30f436c20fc",
     "file": "/audio/telomere-aging-clock.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "neurogenesis-inflammaging-cognitive-resilience": {
+    "seconds": 812,
+    "hash": "d868eeb1b2dcf343",
+    "file": "/audio/neurogenesis-inflammaging-cognitive-resilience.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "sleep-duration-biological-aging": {
+    "seconds": 653,
+    "hash": "68e417109486011c",
+    "file": "/audio/sleep-duration-biological-aging.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "fasting-mimicking-diet-5days": {
+    "seconds": 454,
+    "hash": "9a895b13f7785432",
+    "file": "/audio/fasting-mimicking-diet-5days.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "longevity-drugs-science": {
+    "seconds": 839,
+    "hash": "fc89fcb73b788811",
+    "file": "/audio/longevity-drugs-science.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "testosterone-cell-aging-40": {
+    "seconds": 657,
+    "hash": "e7cea5a2b4d4efdf",
+    "file": "/audio/testosterone-cell-aging-40.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
