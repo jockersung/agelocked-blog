@@ -6,5 +6,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "sleep-quality-testosterone": {
+    "seconds": 487,
+    "hash": "c92c77e30fdef085",
+    "file": "/audio/sleep-quality-testosterone.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "demon-slayer-aging-blood": {
+    "seconds": 674,
+    "hash": "c21e1bfb698e7c38",
+    "file": "/audio/demon-slayer-aging-blood.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "hearing-loss-dementia-signal": {
+    "seconds": 667,
+    "hash": "7a0c692f08f26a18",
+    "file": "/audio/hearing-loss-dementia-signal.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "emperor-longevity-modern-science": {
+    "seconds": 513,
+    "hash": "2e485e96a129a03a",
+    "file": "/audio/emperor-longevity-modern-science.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "stress-mitochondria-bdnf-depression": {
+    "seconds": 486,
+    "hash": "4c16b51bbd23e749",
+    "file": "/audio/stress-mitochondria-bdnf-depression.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "carotenoid-cell-absorption": {
+    "seconds": 489,
+    "hash": "f3e1d163a95a43c6",
+    "file": "/audio/carotenoid-cell-absorption.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
