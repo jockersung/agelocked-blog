@@ -150,5 +150,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "hs-crp-low-grade-inflammation": {
+    "seconds": 92,
+    "hash": "ffd2fa427abaf23d",
+    "file": "/audio/hs-crp-low-grade-inflammation.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "glp1-gene-aging-reversal": {
+    "seconds": 451,
+    "hash": "ab64f205a757b63f",
+    "file": "/audio/glp1-gene-aging-reversal.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "lpa-genetic-risk": {
+    "seconds": 345,
+    "hash": "a94b1b8a2d14ca5d",
+    "file": "/audio/lpa-genetic-risk.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "inflammation-three-clues": {
+    "seconds": 488,
+    "hash": "3384477f2bfcb3a7",
+    "file": "/audio/inflammation-three-clues.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "visceral-fat-three-cycles": {
+    "seconds": 490,
+    "hash": "6c085ebc6a48ac13",
+    "file": "/audio/visceral-fat-three-cycles.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "caloric-restriction-mimetics-science": {
+    "seconds": 837,
+    "hash": "a58745cae65a60b2",
+    "file": "/audio/caloric-restriction-mimetics-science.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }

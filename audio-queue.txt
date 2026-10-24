@@ -1,10 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空。
-hs-crp-low-grade-inflammation
-glp1-gene-aging-reversal
-lpa-genetic-risk
-inflammation-three-clues
-visceral-fat-three-cycles
-caloric-restriction-mimetics-science
 sleep-glymphatic-brain-detox
 cell-reserve-chronic-depletion
 hypertension-glymphatic-dementia
