@@ -1,5 +1,6 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。
 # 2026-10-24 03:40 UTC 失敗：neurogenesis-inflammaging-cognitive-resilience：今日額度已用完（429）：{"error":{"message":"Rate limit exceeded for model gemini-3.8-flash-tts (limit: 100 requests per day on Tier 1). Please retry in 3h19m9s or upgrade your tier at https://ai.dev/rate-limit.","code":"too_many_requests"}}
+hs-crp-low-grade-inflammation
 neurogenesis-inflammaging-cognitive-resilience
 sleep-duration-biological-aging
 fasting-mimicking-diet-5days

@@ -53,7 +53,8 @@ export function toScript(a) {
   t = t.replace(/```[\s\S]*?```/g, '');
   t = t.replace(/(^\|.*\|\s*$\n?)+/gm, '\n（這裡有一張表格，可以在網頁上看。）\n');
   t = t.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
-  t = t.replace(/<[^>]+>/g, '');
+  t = t.replace(/<\/?[a-zA-Z][^<>\n]*>/g, ''); // 只拿掉真正的 HTML 標籤，保留「< 1」「> 3」這類比較符號
+  t = t.replace(/\s*<\s*(?=\d)/g, ' 小於 ').replace(/\s*>\s*(?=\d)/g, ' 大於 ').replace(/≥\s*/g, '大於等於 ').replace(/≤\s*/g, '小於等於 ');
   t = t.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1');
   t = t.replace(/https?:\/\/\S+/g, '');
   t = t.replace(/^\s*(?:-{3,}|\*{3,})\s*$/gm, '');
