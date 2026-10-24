@@ -84,11 +84,14 @@ const hashOf = (paras) => createHash('sha256').update(MODEL + '|' + STYLE + '|' 
 
 // ── Gemini TTS ───────────────────────────────────────
 const KEY = process.env.GEMINI_API_KEY;
+class QuotaError extends Error {}
+const isDaily = (body) => /per.?day|PerDay|daily|RESOURCE_EXHAUSTED[\s\S]*quota/i.test(body);
 async function api(path, init = {}, tries = 5) {
   for (let i = 0; ; i++) {
     const r = await fetch(API + path, { ...init, headers: { 'x-goog-api-key': KEY, 'Content-Type': 'application/json', ...(init.headers || {}) } });
     if (r.ok) return r.json();
     const body = await r.text();
+    if (r.status === 429 && isDaily(body)) throw new QuotaError(`今日額度已用完（429）：${body.slice(0, 300)}`);
     if (i < tries - 1 && (r.status === 429 || r.status >= 500)) { const wait = 2 ** i * 8000; console.log(`  API ${r.status}，${wait / 1000} 秒後重試`); await new Promise((s) => setTimeout(s, wait)); continue; }
     throw new Error(`Gemini API ${r.status}: ${body.slice(0, 400)}`);
   }
@@ -178,15 +181,17 @@ if (flag('--dry-run')) {
 if (!list.length) { console.log('沒有需要產生的語音。'); process.exit(0); }
 if (!KEY) { console.log('::warning::還沒設定 GEMINI_API_KEY（GitHub → Settings → Secrets and variables → Actions），這次略過語音產生。'); process.exit(0); }
 const voice = VOICE;
-const failed = []; let done = 0;
+const failed = []; let done = 0; const reasons = []; let quotaHit = false; let processed = 0;
 const LIMIT = Number(opt('--limit') || process.env.AUDIO_LIMIT || 0) || Infinity;
 for (const s of list.slice(0, LIMIT)) {
-  const a = bySlug.get(s); console.log(`▶ ${s}`);
+  const a = bySlug.get(s); console.log(`▶ ${s}`); processed++;
   try { const r = await render(a, voice); manifest[s] = { ...r, file: `/audio/${s}.mp3`, model: MODEL, voice, updated: new Date().toISOString().slice(0, 10) }; done++; writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n'); }
-  catch (e) { console.log(`  ✗ 失敗：${e.message}`); failed.push(s); }
+  catch (e) { console.log(`  ✗ 失敗：${e.message}`); failed.push(s); reasons.push(`${s}：${String(e.message).replace(/\s+/g, ' ').slice(0, 240)}`); if (e instanceof QuotaError) { quotaHit = true; break; } }
 }
 // 佇列只留下失敗和這次沒輪到的
-const leftover = [...failed, ...list.slice(LIMIT)];
-if (existsSync(QUEUE)) writeFileSync(QUEUE, ['# 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空。', ...leftover].join('\n') + '\n');
+const leftover = [...failed, ...list.slice(processed)];
+const stamp = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
+if (existsSync(QUEUE)) writeFileSync(QUEUE, ['# 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。', ...reasons.slice(0, 3).map((r) => `# ${stamp} 失敗：${r}`), ...leftover].join('\n') + '\n');
 console.log(`完成 ${done} 篇${failed.length ? `，失敗 ${failed.length} 篇：${failed.join(', ')}` : ''}${list.length > LIMIT ? `，還有 ${list.length - LIMIT} 篇留到下次` : ''}`);
+if (quotaHit) process.exit(3);
 if (failed.length && !done) process.exit(1);
