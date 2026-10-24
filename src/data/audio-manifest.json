@@ -486,5 +486,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "prysm-io-15sec": {
+    "seconds": 248,
+    "hash": "24a079a142982faa",
+    "file": "/audio/prysm-io-15sec.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "prysm-io-score-guide": {
+    "seconds": 630,
+    "hash": "da082f5f33b21851",
+    "file": "/audio/prysm-io-score-guide.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "biological-age-measurement": {
+    "seconds": 601,
+    "hash": "ec9cd1bd56ab2fd4",
+    "file": "/audio/biological-age-measurement.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "aging-speed-measurement-methods": {
+    "seconds": 488,
+    "hash": "108d2bc2a5686695",
+    "file": "/audio/aging-speed-measurement-methods.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "functional-medicine-execution-gap": {
+    "seconds": 457,
+    "hash": "0251e93d8c1769b1",
+    "file": "/audio/functional-medicine-execution-gap.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "supplement-import-guide": {
+    "seconds": 1137,
+    "hash": "f0f24858c6f26126",
+    "file": "/audio/supplement-import-guide.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
