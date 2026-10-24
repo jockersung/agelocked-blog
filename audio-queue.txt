@@ -1,10 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空。
-caloric-restriction-longevity-science
-igf1-mitochondria-dna-longevity
-anti-inflammation-anti-aging
-nmn-anti-aging-review
-healthspan-vs-lifespan
-glp1-aging-gene-expression
 telomere-aging-clock
 neurogenesis-inflammaging-cognitive-resilience
 sleep-duration-biological-aging

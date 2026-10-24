@@ -246,5 +246,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "caloric-restriction-longevity-science": {
+    "seconds": 825,
+    "hash": "bf56e994d50a7611",
+    "file": "/audio/caloric-restriction-longevity-science.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "igf1-mitochondria-dna-longevity": {
+    "seconds": 552,
+    "hash": "31e402473b0d2ea6",
+    "file": "/audio/igf1-mitochondria-dna-longevity.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "anti-inflammation-anti-aging": {
+    "seconds": 733,
+    "hash": "b78c5be3f14ae852",
+    "file": "/audio/anti-inflammation-anti-aging.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "nmn-anti-aging-review": {
+    "seconds": 932,
+    "hash": "33e11f54f973ed34",
+    "file": "/audio/nmn-anti-aging-review.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "healthspan-vs-lifespan": {
+    "seconds": 472,
+    "hash": "3c59e3a04eca1b7c",
+    "file": "/audio/healthspan-vs-lifespan.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "glp1-aging-gene-expression": {
+    "seconds": 855,
+    "hash": "7cfd7205c54acdae",
+    "file": "/audio/glp1-aging-gene-expression.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
