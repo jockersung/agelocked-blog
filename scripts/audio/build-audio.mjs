@@ -17,7 +17,7 @@ const MANIFEST = join(ROOT, 'src/data/audio-manifest.json');
 const QUEUE = join(ROOT, 'audio-queue.txt');
 const MODEL = process.env.GEMINI_TTS_MODEL || 'gemini-3.8-flash-tts';
 const API = 'https://generativelanguage.googleapis.com/v1beta';
-const STYLE = '台灣華語。這是一集健康 podcast：主持人像懂科學的朋友在跟聽眾聊天，親切、有精神、不急，段落之間自然停頓，重點處稍微放慢。';
+const STYLE = '台灣華語。這是一集健康 podcast，主持人帶著笑意跟聽眾聊天：聲音明亮、有精神、音調稍微上揚，抑揚頓挫明顯，不要低沉也不要平淡；講到驚訝或重點的地方語氣要有起伏，像在跟朋友分享一個很想讓對方知道的發現。語速中等偏快，段落之間自然停頓。';
 const CHUNK = 1400; // 每次請求的字數上限（約 5 分鐘語音）
 const SR = 24000;
 
@@ -106,7 +106,11 @@ async function findVoice() {
     console.log('專案裡的自訂聲音：'); all.filter((v) => String(v.id || '').startsWith('voice_')).forEach((v) => console.log(' ', v.id, name(v)));
     throw new Error('找不到名稱含「AGELOCKED」的聲音。請在 GitHub Secrets 加上 GEMINI_VOICE_ID，或確認金鑰屬於建立該聲音的專案。');
   }
-  const v = mine[0]; console.log(`使用聲音：${name(v)}（${v.id || v.name}）`);
+  // 有好幾個符合時，用最新建立的那一個（重新複製聲音後會自動換用新的）
+  const t = (v) => Date.parse(v.create_time || v.createTime || v.update_time || v.updateTime || '') || 0;
+  const ver = (v) => Number((name(v).match(/v(\d+)\s*$/i) || [0, 1])[1]); // 名稱結尾 v2、v3… 版本越大越優先
+  mine.sort((a, b) => ver(b) - ver(a) || t(b) - t(a));
+  const v = mine[0]; console.log(`使用聲音：${name(v)}（${v.id || v.name}）${mine.length > 1 ? `，另有 ${mine.length - 1} 個同名聲音未使用` : ''}`);
   return String(v.id || v.name).replace(/^.*\/(voice_)/, '$1');
 }
 async function tts(text, voice) {
@@ -141,7 +145,8 @@ async function render(a, voice) {
 
 // ── 決定要做哪幾篇 ─────────────────────────────────────
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
-const stale = (a) => !manifest[a.slug] || manifest[a.slug].hash !== hashOf(toScript(a)) || !existsSync(join(OUT, `${a.slug}.mp3`));
+let VOICE = null; // 換了聲音，已經做好的語音也算過期
+const stale = (a) => !manifest[a.slug] || manifest[a.slug].hash !== hashOf(toScript(a)) || !existsSync(join(OUT, `${a.slug}.mp3`)) || (VOICE && manifest[a.slug].voice !== VOICE);
 function targets() {
   const want = new Set(); let all = false;
   const add = (s) => { s = s.trim(); if (!s || s.startsWith('#')) return; if (s === 'all') all = true; else if (bySlug.has(s)) want.add(s); else console.log(`略過不存在的 slug：${s}`); };
@@ -154,12 +159,15 @@ function targets() {
     try { changed = execFileSync('git', ['diff', '--name-only', process.env.BEFORE, 'HEAD', '--', 'src/content/blog'], { encoding: 'utf8' }); } catch { /* 淺層 clone 找不到 before 就略過 */ }
     for (const f of changed.split('\n').filter(Boolean)) { const a = ARTICLES.find((x) => x.file.endsWith(f)); if (a && (manifest[a.slug] || process.env.AUTO_NEW === '1')) want.add(a.slug); }
   }
+  // 換了聲音：已經有語音的文章全部重錄
+  if (VOICE) for (const [s, m] of Object.entries(manifest)) if (m.voice !== VOICE && bySlug.has(s)) want.add(s);
   const list = all ? ARTICLES.map((a) => a.slug) : [...want];
   const force = flag('--force');
   return list.filter((s) => force || stale(bySlug.get(s)));
 }
 
 // ── 主程式 ────────────────────────────────────────────
+if (KEY && !flag('--dry-run')) VOICE = await findVoice();
 const list = targets();
 if (flag('--dry-run')) {
   const dir = opt('--out') || join(tmpdir(), 'audio-scripts'); mkdirSync(dir, { recursive: true });
@@ -168,12 +176,12 @@ if (flag('--dry-run')) {
 }
 if (!list.length) { console.log('沒有需要產生的語音。'); process.exit(0); }
 if (!KEY) { console.log('::warning::還沒設定 GEMINI_API_KEY（GitHub → Settings → Secrets and variables → Actions），這次略過語音產生。'); process.exit(0); }
-const voice = await findVoice();
+const voice = VOICE;
 const failed = []; let done = 0;
 const LIMIT = Number(opt('--limit') || process.env.AUDIO_LIMIT || 0) || Infinity;
 for (const s of list.slice(0, LIMIT)) {
   const a = bySlug.get(s); console.log(`▶ ${s}`);
-  try { const r = await render(a, voice); manifest[s] = { ...r, file: `/audio/${s}.mp3`, model: MODEL, updated: new Date().toISOString().slice(0, 10) }; done++; writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n'); }
+  try { const r = await render(a, voice); manifest[s] = { ...r, file: `/audio/${s}.mp3`, model: MODEL, voice, updated: new Date().toISOString().slice(0, 10) }; done++; writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n'); }
   catch (e) { console.log(`  ✗ 失敗：${e.message}`); failed.push(s); }
 }
 // 佇列只留下失敗和這次沒輪到的
