@@ -342,5 +342,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "lifepak-foundation-nutrition": {
+    "seconds": 656,
+    "hash": "b0fdd9ce0c685ed6",
+    "file": "/audio/lifepak-foundation-nutrition.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "mynd360-sleep-brain-shutdown": {
+    "seconds": 710,
+    "hash": "8b671464deaa6748",
+    "file": "/audio/mynd360-sleep-brain-shutdown.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "nuskin-coq10-bioavailability": {
+    "seconds": 384,
+    "hash": "fced666dab61c8a6",
+    "file": "/audio/nuskin-coq10-bioavailability.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "ageloc-meta-clinical-protocol": {
+    "seconds": 866,
+    "hash": "674a7e642d059a42",
+    "file": "/audio/ageloc-meta-clinical-protocol.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "ageloc-r2-cellular-renewal": {
+    "seconds": 601,
+    "hash": "6fe85108af8cff0a",
+    "file": "/audio/ageloc-r2-cellular-renewal.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "ageloc-youthspan-longevity-genes": {
+    "seconds": 939,
+    "hash": "fd1e3de1236743d9",
+    "file": "/audio/ageloc-youthspan-longevity-genes.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }

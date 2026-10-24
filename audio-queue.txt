@@ -1,10 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。
-lifepak-foundation-nutrition
-mynd360-sleep-brain-shutdown
-nuskin-coq10-bioavailability
-ageloc-meta-clinical-protocol
-ageloc-r2-cellular-renewal
-ageloc-youthspan-longevity-genes
 glp1-clinical-guide-tirzepatide
 tracking-rhythm
 biological-age-gap-youthspan
