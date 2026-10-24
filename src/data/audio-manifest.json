@@ -54,5 +54,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "checkup-five-numbers": {
+    "seconds": 559,
+    "hash": "7fd7c2c562b54d37",
+    "file": "/audio/checkup-five-numbers.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "male-fatigue-after-40": {
+    "seconds": 447,
+    "hash": "5e02bab40dd8ebf8",
+    "file": "/audio/male-fatigue-after-40.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "three-signs-chronic-inflammation": {
+    "seconds": 456,
+    "hash": "02068943f5bc66e4",
+    "file": "/audio/three-signs-chronic-inflammation.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "glp1-genetics-response-variation": {
+    "seconds": 528,
+    "hash": "ddadefc3dc8bdfec",
+    "file": "/audio/glp1-genetics-response-variation.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "aging-quantified-bryan-johnson-blueprint": {
+    "seconds": 533,
+    "hash": "34ed4488a450c422",
+    "file": "/audio/aging-quantified-bryan-johnson-blueprint.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "gum-bleeding-brain-inflammation": {
+    "seconds": 724,
+    "hash": "9bbd748d6a42b908",
+    "file": "/audio/gum-bleeding-brain-inflammation.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
