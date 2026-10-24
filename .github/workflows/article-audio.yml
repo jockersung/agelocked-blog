@@ -16,6 +16,9 @@ on:
       - 'audio-queue.txt'
       - 'scripts/audio/**'
       - '.github/workflows/article-audio.yml'
+  schedule:
+    # 每天台灣時間 16:40 續做佇列（Gemini 每日額度在美西午夜重置）
+    - cron: '40 8 * * *'
   workflow_dispatch:
     inputs:
       slugs:
@@ -28,7 +31,7 @@ permissions:
 
 concurrency:
   group: article-audio
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   audio:
@@ -62,7 +65,7 @@ jobs:
           git config user.name "agelocked-audio-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for round in $(seq 1 25); do
-            node scripts/audio/build-audio.mjs --ci --limit 6 || true
+            set +e; node scripts/audio/build-audio.mjs --ci --limit 6; code=$?; set -e
             git add public/audio src/data/audio-manifest.json audio-queue.txt
             if ! git diff --cached --quiet; then
               n=$(git diff --cached --name-only -- public/audio | grep -c '\.mp3$' || true)
@@ -70,6 +73,7 @@ jobs:
               ok=0; for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push -q && ok=1 && break; sleep 5; done
               [ "$ok" = 1 ] || exit 1
             fi
+            [ "$code" = 3 ] && { echo "今日額度用完，明天自動續做"; break; }
             # 佇列清空（只剩註解）就結束；只帶入一次 BEFORE/INPUT，避免重複處理
             export BEFORE= INPUT_SLUGS=
             grep -qvE '^\s*(#|$)' audio-queue.txt || break
