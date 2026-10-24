@@ -1,9 +1,10 @@
 {
   "normal-checkup-still-tired": {
-    "seconds": 393,
-    "hash": "e0bfb3b581fb490b",
+    "seconds": 374,
+    "hash": "d289d60e80dbe03f",
     "file": "/audio/normal-checkup-still-tired.mp3",
     "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
   }
 }
