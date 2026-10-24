@@ -1,10 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空。
-478-breathing-sleep-vagus-nerve
-visceral-fat-metabolic-signal
-white-hair-stem-cells
-hairline-recession-warning
-longevity-55-percent-genetics
-mitochondria-energy-after-40
 hs-crp-low-grade-inflammation
 glp1-gene-aging-reversal
 lpa-genetic-risk

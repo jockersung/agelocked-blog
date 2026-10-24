@@ -102,5 +102,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "478-breathing-sleep-vagus-nerve": {
+    "seconds": 723,
+    "hash": "f8740c7562cc9419",
+    "file": "/audio/478-breathing-sleep-vagus-nerve.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "visceral-fat-metabolic-signal": {
+    "seconds": 339,
+    "hash": "85f1530a9a364a32",
+    "file": "/audio/visceral-fat-metabolic-signal.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "white-hair-stem-cells": {
+    "seconds": 628,
+    "hash": "ca8dbc7180f6fc2b",
+    "file": "/audio/white-hair-stem-cells.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "hairline-recession-warning": {
+    "seconds": 552,
+    "hash": "c5ab4b4e1202bf6b",
+    "file": "/audio/hairline-recession-warning.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "longevity-55-percent-genetics": {
+    "seconds": 514,
+    "hash": "54fd2e9bfd974d5b",
+    "file": "/audio/longevity-55-percent-genetics.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "mitochondria-energy-after-40": {
+    "seconds": 441,
+    "hash": "53f467a465bb1291",
+    "file": "/audio/mitochondria-energy-after-40.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
