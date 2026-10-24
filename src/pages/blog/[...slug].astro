@@ -40,6 +40,6 @@ const categoryFallback = allPosts
 const related = [...seriesPosts, ...categoryFallback].slice(0, 3);
 ---
 
-<BlogPost {...post.data} headings={headings} relatedPosts={related}>
+<BlogPost {...post.data} headings={headings} relatedPosts={related} audioSlug={getUrlSlug(post).split('/').pop()}>
 	<Content />
 </BlogPost>
