@@ -51,22 +51,26 @@ jobs:
           npm i --prefix /tmp/ff --no-audit --no-fund ffmpeg-static@5.2.0
           echo "FFMPEG=$(node -p "require('/tmp/ff/node_modules/ffmpeg-static')")" >> "$GITHUB_ENV"
 
-      - name: 產生語音
+      - name: 產生語音並分批提交
+        # 每 6 篇提交一次：中途失敗也不會白做，網站會邊做邊上線
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_VOICE_ID: ${{ secrets.GEMINI_VOICE_ID }}
           BEFORE: ${{ github.event.before }}
           INPUT_SLUGS: ${{ github.event.inputs.slugs }}
-        run: node scripts/audio/build-audio.mjs --ci
-
-      - name: 提交音檔
         run: |
           git config user.name "agelocked-audio-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/audio src/data/audio-manifest.json audio-queue.txt
-          if git diff --cached --quiet; then echo "沒有新的音檔"; exit 0; fi
-          n=$(git diff --cached --name-only -- public/audio | grep -c '\.mp3$' || true)
-          git commit -m "語音版：更新 ${n} 篇文章音檔"
-          # 期間若有其他提交，以這次剛產生的音檔為準
-          for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push && exit 0; sleep 5; done
-          exit 1
+          for round in $(seq 1 25); do
+            node scripts/audio/build-audio.mjs --ci --limit 6 || true
+            git add public/audio src/data/audio-manifest.json audio-queue.txt
+            if ! git diff --cached --quiet; then
+              n=$(git diff --cached --name-only -- public/audio | grep -c '\.mp3$' || true)
+              git commit -q -m "語音版：更新 ${n} 篇文章音檔"
+              ok=0; for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push -q && ok=1 && break; sleep 5; done
+              [ "$ok" = 1 ] || exit 1
+            fi
+            # 佇列清空（只剩註解）就結束；只帶入一次 BEFORE/INPUT，避免重複處理
+            export BEFORE= INPUT_SLUGS=
+            grep -qvE '^\s*(#|$)' audio-queue.txt || break
+          done
