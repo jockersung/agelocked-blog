@@ -390,5 +390,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "glp1-clinical-guide-tirzepatide": {
+    "seconds": 611,
+    "hash": "57cc108e01939ae0",
+    "file": "/audio/glp1-clinical-guide-tirzepatide.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "tracking-rhythm": {
+    "seconds": 277,
+    "hash": "c31bc0722996a959",
+    "file": "/audio/tracking-rhythm.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "biological-age-gap-youthspan": {
+    "seconds": 782,
+    "hash": "30f58d99afb5c4b0",
+    "file": "/audio/biological-age-gap-youthspan.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "maca-arginine-vs-ageloc-r2": {
+    "seconds": 516,
+    "hash": "ae17816defb62d51",
+    "file": "/audio/maca-arginine-vs-ageloc-r2.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "hearing-loss-supplement-strategy": {
+    "seconds": 720,
+    "hash": "8a6a3f4ef11a9000",
+    "file": "/audio/hearing-loss-supplement-strategy.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "multivitamin-lifepak-slow-aging-clock": {
+    "seconds": 935,
+    "hash": "db6d2a1e94c3a6f3",
+    "file": "/audio/multivitamin-lifepak-slow-aging-clock.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
