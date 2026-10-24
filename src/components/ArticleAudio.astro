@@ -1,0 +1,54 @@
+---
+// 文章語音版播放器：有音檔（src/data/audio-manifest.json）才會出現。
+import manifest from '../data/audio-manifest.json';
+interface Props { slug: string }
+const { slug } = Astro.props;
+const entry = (manifest as Record<string, { file: string; seconds: number }>)[slug];
+const minutes = entry ? Math.max(1, Math.round(entry.seconds / 60)) : 0;
+---
+{entry && (
+  <section class="listen" data-slug={slug} aria-label="文章語音版">
+    <div class="listen__head">
+      <span class="listen__icon" aria-hidden="true">🎧</span>
+      <div>
+        <strong>用聽的</strong>
+        <span class="listen__meta">約 {minutes} 分鐘 · 作者本人聲音（AI 合成）</span>
+      </div>
+    </div>
+    <audio class="listen__audio" controls preload="none" src={entry.file}></audio>
+    <div class="listen__speed" role="group" aria-label="播放速度">
+      {[0.9, 1, 1.25, 1.5].map((r) => (
+        <button type="button" data-rate={r} aria-pressed={r === 1 ? 'true' : 'false'}>{r}×</button>
+      ))}
+    </div>
+  </section>
+)}
+
+<script>
+  document.querySelectorAll<HTMLElement>('.listen').forEach((box) => {
+    const audio = box.querySelector('audio')!;
+    const slug = box.dataset.slug;
+    const btns = box.querySelectorAll<HTMLButtonElement>('[data-rate]');
+    const send = (ev: string, p: Record<string, unknown> = {}) => { try { (window as any).gtag?.('event', ev, { slug, ...p }); } catch {} };
+    let saved = 1; try { saved = Number(localStorage.getItem('agelocked-audio-rate')) || 1; } catch {}
+    const setRate = (r: number) => { audio.playbackRate = r; btns.forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.rate) === r))); try { localStorage.setItem('agelocked-audio-rate', String(r)); } catch {} };
+    setRate(saved);
+    btns.forEach((b) => b.addEventListener('click', () => setRate(Number(b.dataset.rate))));
+    audio.addEventListener('play', () => { audio.playbackRate = Number([...btns].find((b) => b.getAttribute('aria-pressed') === 'true')?.dataset.rate || 1); send('audio_play'); }, { once: false });
+    audio.addEventListener('ended', () => send('audio_complete'));
+    let half = false; audio.addEventListener('timeupdate', () => { if (!half && audio.duration && audio.currentTime / audio.duration > 0.5) { half = true; send('audio_half'); } });
+  });
+</script>
+
+<style>
+  .listen { margin: 0 0 2rem; padding: 1rem 1.1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--teal-pale); display: grid; gap: .7rem; }
+  .listen__head { display: flex; align-items: center; gap: .7rem; }
+  .listen__icon { font-size: 1.5rem; line-height: 1; }
+  .listen__head strong { display: block; color: var(--ink); font-family: 'Noto Serif TC', serif; font-size: 1.05rem; }
+  .listen__meta { display: block; line-height: 1.5; font-family: 'DM Mono', monospace; font-size: .78rem; letter-spacing: .04em; color: var(--muted); }
+  .listen__audio { width: 100%; }
+  .listen__speed { display: flex; gap: .4rem; flex-wrap: wrap; }
+  .listen__speed button { min-height: 36px; min-width: 52px; border: 1px solid var(--border); border-radius: 999px; background: #fff; color: var(--body); font: 400 .85rem 'DM Mono', monospace; cursor: pointer; }
+  .listen__speed button[aria-pressed='true'] { background: var(--teal); border-color: var(--teal); color: #fff; }
+  .listen__speed button:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+</style>

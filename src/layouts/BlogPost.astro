@@ -10,13 +10,15 @@ import ReadingProgress from '../components/ReadingProgress.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import TableOfContents from '../components/TableOfContents.astro';
+import ArticleAudio from '../components/ArticleAudio.astro';
 
 type Props = CollectionEntry<'blog'>['data'] & {
 	headings?: MarkdownHeading[];
 	relatedPosts?: CollectionEntry<'blog'>[];
+	audioSlug?: string;
 };
 
-const { title, description, pubDate, updatedDate, heroImage, headings = [], relatedPosts = [], ctaType = 'soft', ctaBridge = '', faq = [] } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, headings = [], relatedPosts = [], ctaType = 'soft', ctaBridge = '', faq = [], audioSlug = '' } = Astro.props;
 
 // CTA 文字設定
 const isSoft = ctaType !== 'hard';
@@ -101,6 +103,7 @@ const ogImageUrl = ogImage ? new URL(ogImage.src, Astro.site ?? Astro.url).href 
 							<h1>{title}</h1>
 							<hr />
 						</div>
+						{audioSlug && <ArticleAudio slug={audioSlug} />}
 						{headings.length > 0 && (
 							<div class="toc-inline">
 								<TableOfContents headings={headings} />

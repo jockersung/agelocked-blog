@@ -1,0 +1,65 @@
+# 文章語音版：用 Gemini TTS（作者本人複製聲音）產生 MP3，放進 public/audio/ 後自動提交，Cloudflare Pages 會跟著重新部署。
+# 唯一要設定的東西：GitHub → Settings → Secrets and variables → Actions → New repository secret
+#   名稱 GEMINI_API_KEY，值貼上 Google AI Studio 的 API 金鑰（要和「AGELOCKED本人聲音」在同一個專案）
+#
+# 什麼時候會跑：
+#   - audio-queue.txt 有寫 slug（或 all）並推上 main
+#   - 已經有語音的文章被修改並推上 main（只重錄有變的那幾篇）
+#   - 在 Actions 頁手動按 Run workflow
+name: 文章語音版
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/blog/**'
+      - 'audio-queue.txt'
+      - 'scripts/audio/**'
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: '要產生語音的文章 slug（空白分隔）；填 all 代表全部'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: article-audio
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 安裝 ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: 產生語音
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_VOICE_ID: ${{ secrets.GEMINI_VOICE_ID }}
+          BEFORE: ${{ github.event.before }}
+          INPUT_SLUGS: ${{ github.event.inputs.slugs }}
+        run: node scripts/audio/build-audio.mjs --ci
+
+      - name: 提交音檔
+        run: |
+          git config user.name "agelocked-audio-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/audio src/data/audio-manifest.json audio-queue.txt
+          if git diff --cached --quiet; then echo "沒有新的音檔"; exit 0; fi
+          n=$(git diff --cached --name-only -- public/audio | grep -c '\.mp3$' || true)
+          git commit -m "語音版：更新 ${n} 篇文章音檔"
+          git pull --rebase -q origin main
+          git push
