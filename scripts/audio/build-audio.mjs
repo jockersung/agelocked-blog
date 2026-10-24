@@ -17,7 +17,7 @@ const MANIFEST = join(ROOT, 'src/data/audio-manifest.json');
 const QUEUE = join(ROOT, 'audio-queue.txt');
 const MODEL = process.env.GEMINI_TTS_MODEL || 'gemini-3.8-flash-tts';
 const API = 'https://generativelanguage.googleapis.com/v1beta';
-const STYLE = '台灣華語。這是一集健康 podcast：主持人像懂科學的朋友在跟聽眾聊天，親切、有精神、不急，段落之間自然停頓，重點處稍微放慢。';
+const STYLE = '台灣華語。這是一集健康 podcast，主持人帶著笑意跟聽眾聊天：聲音明亮、有精神、音調稍微上揚，抑揚頓挫明顯，不要低沉也不要平淡；講到驚訝或重點的地方語氣要有起伏，像在跟朋友分享一個很想讓對方知道的發現。語速中等偏快，段落之間自然停頓。';
 const CHUNK = 1400; // 每次請求的字數上限（約 5 分鐘語音）
 const SR = 24000;
 
