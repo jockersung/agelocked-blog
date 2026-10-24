@@ -108,7 +108,8 @@ async function findVoice() {
   }
   // 有好幾個符合時，用最新建立的那一個（重新複製聲音後會自動換用新的）
   const t = (v) => Date.parse(v.create_time || v.createTime || v.update_time || v.updateTime || '') || 0;
-  mine.sort((a, b) => t(b) - t(a) || name(b).localeCompare(name(a)));
+  const ver = (v) => Number((name(v).match(/v(\d+)\s*$/i) || [0, 1])[1]); // 名稱結尾 v2、v3… 版本越大越優先
+  mine.sort((a, b) => ver(b) - ver(a) || t(b) - t(a));
   const v = mine[0]; console.log(`使用聲音：${name(v)}（${v.id || v.name}）${mine.length > 1 ? `，另有 ${mine.length - 1} 個同名聲音未使用` : ''}`);
   return String(v.id || v.name).replace(/^.*\/(voice_)/, '$1');
 }
