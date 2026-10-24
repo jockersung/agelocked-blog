@@ -15,6 +15,7 @@ on:
       - 'src/content/blog/**'
       - 'audio-queue.txt'
       - 'scripts/audio/**'
+      - '.github/workflows/article-audio.yml'
   workflow_dispatch:
     inputs:
       slugs:
@@ -36,6 +37,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # 一律用最新的 main（前一次排隊的語音提交才看得到）
+          ref: main
           fetch-depth: 50
 
       - uses: actions/setup-node@v4
@@ -64,5 +67,6 @@ jobs:
           if git diff --cached --quiet; then echo "沒有新的音檔"; exit 0; fi
           n=$(git diff --cached --name-only -- public/audio | grep -c '\.mp3$' || true)
           git commit -m "語音版：更新 ${n} 篇文章音檔"
-          git pull --rebase -q origin main
-          git push
+          # 期間若有其他提交，以這次剛產生的音檔為準
+          for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push && exit 0; sleep 5; done
+          exit 1
