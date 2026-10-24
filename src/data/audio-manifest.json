@@ -582,5 +582,37 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "nuskin-pharmaceutical-standard": {
+    "seconds": 743,
+    "hash": "3dfd767d63ea6943",
+    "file": "/audio/nuskin-pharmaceutical-standard.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "wearable-choose-guide": {
+    "seconds": 398,
+    "hash": "962c877e0c81d338",
+    "file": "/audio/wearable-choose-guide.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "epigenetic-dysregulation-2026-nature-review": {
+    "seconds": 694,
+    "hash": "fbf7449614d93edc",
+    "file": "/audio/epigenetic-dysregulation-2026-nature-review.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "supplement-marketing-tactics": {
+    "seconds": 745,
+    "hash": "172e7e2d70d1b39e",
+    "file": "/audio/supplement-marketing-tactics.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
