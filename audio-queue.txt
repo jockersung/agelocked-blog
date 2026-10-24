@@ -1,10 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空。
-sleep-glymphatic-brain-detox
-cell-reserve-chronic-depletion
-hypertension-glymphatic-dementia
-super-agers-neurogenesis-healthspan
-free-radical-two-faces
-polyphenol-nrf2-antioxidant-myth
 caloric-restriction-longevity-science
 igf1-mitochondria-dna-longevity
 anti-inflammation-anti-aging

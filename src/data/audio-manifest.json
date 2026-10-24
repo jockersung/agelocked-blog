@@ -198,5 +198,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
+  },
+  "sleep-glymphatic-brain-detox": {
+    "seconds": 1307,
+    "hash": "59b41e8cbbf4f26a",
+    "file": "/audio/sleep-glymphatic-brain-detox.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "cell-reserve-chronic-depletion": {
+    "seconds": 660,
+    "hash": "5c222f7dead71211",
+    "file": "/audio/cell-reserve-chronic-depletion.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "hypertension-glymphatic-dementia": {
+    "seconds": 756,
+    "hash": "d879c4d98a30e0e1",
+    "file": "/audio/hypertension-glymphatic-dementia.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "super-agers-neurogenesis-healthspan": {
+    "seconds": 460,
+    "hash": "2ce7cb731dd8f0a2",
+    "file": "/audio/super-agers-neurogenesis-healthspan.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "free-radical-two-faces": {
+    "seconds": 744,
+    "hash": "5fb4e31aa6fa30a2",
+    "file": "/audio/free-radical-two-faces.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
+  },
+  "polyphenol-nrf2-antioxidant-myth": {
+    "seconds": 1161,
+    "hash": "e692ab910746e132",
+    "file": "/audio/polyphenol-nrf2-antioxidant-myth.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-24"
   }
 }
