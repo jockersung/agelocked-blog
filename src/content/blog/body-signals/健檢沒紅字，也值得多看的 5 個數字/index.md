@@ -2,7 +2,7 @@
 title: "健檢沒紅字，還要看什麼？5 個值得和醫師討論的數字"
 description: "先看健檢報告驗過哪些項目，再認識 HbA1c、TG/HDL、hs-CRP、ApoB、Lp(a) 的用途與限制，整理值得和醫師討論的問題。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.svg"
+heroImage: "./cover-editorial-20261025.webp"
 tags: ["健康檢查", "成人健檢", "HbA1c", "hs-CRP", "ApoB", "Lp(a)", "三酸甘油脂"]
 category: "身體訊號解讀"
 slug: checkup-five-numbers

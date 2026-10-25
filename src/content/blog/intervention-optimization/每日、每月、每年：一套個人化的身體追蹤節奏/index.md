@@ -2,7 +2,7 @@
 title: "數據都在手機裡，然後呢？做一份能持續的身體追蹤表"
 description: "用日期、工具、結果、當時狀況與問題五個欄位，把已有健康資料整理好；追蹤頻率依項目與個人醫療需求安排。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.svg"
+heroImage: "./cover-editorial-20261025.webp"
 tags: ["健康管理", "追蹤", "Prysm iO", "HRV", "血液檢查", "營養補充"]
 category: "介入與調校"
 slug: tracking-rhythm

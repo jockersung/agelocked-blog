@@ -2,7 +2,7 @@
 title: "LDL 看起來還好，為什麼醫師還會看 ApoB？"
 description: "LDL-C 看膽固醇總量，ApoB 提供脂蛋白顆粒數量線索。了解何時可能有額外用途，以及應該帶去門診的問題。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.svg"
+heroImage: "./cover-editorial-20261025.webp"
 tags: ["ApoB", "LDL", "血脂", "動脈硬化", "代謝症候群", "精準檢測"]
 category: "精準健康工具"
 slug: apob-vs-ldl

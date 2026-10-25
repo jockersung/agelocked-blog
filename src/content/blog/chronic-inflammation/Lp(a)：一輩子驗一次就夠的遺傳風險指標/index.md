@@ -2,7 +2,7 @@
 title: "家人年輕就心肌梗塞？認識 Lp(a) 這條遺傳風險線索"
 description: "家人年輕就有心血管疾病，值得認識 Lp(a)。了解一生至少驗一次的意義、單位限制與門診可以討論的問題。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.svg"
+heroImage: "./cover-editorial-20261025.webp"
 tags: ["Lp(a)", "脂蛋白a", "遺傳", "心血管風險", "家族史", "血液檢查"]
 category: "慢性發炎科學"
 slug: lpa-genetic-risk

@@ -2,7 +2,7 @@
 title: "慢性發炎怎麼找線索？先分清血液、HRV、皮膚量測各在看什麼"
 description: "血液、HRV、皮膚分數不同步怎麼辦？先分清各項用途，再用六種資料整理情境提出問題，不把量測組合當成診斷。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.svg"
+heroImage: "./cover-editorial-20261025.webp"
 tags: ["慢性發炎", "發炎老化", "hs-CRP", "HRV", "Prysm iO", "類胡蘿蔔素"]
 category: "慢性發炎科學"
 slug: inflammation-three-clues
