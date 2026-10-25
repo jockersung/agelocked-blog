@@ -61,7 +61,7 @@ ctaBridge: '把你的訊號整理清楚，是第一步。花 1 分鐘做評估�
 
 你還活著，但你的生活已經不是你的了。
 
-![Healthspan vs Lifespan 落差](./Healthspan vs Lifespan 落差-agelocked-168-20261021.webp)
+![Healthspan vs Lifespan 落差](<./Healthspan vs Lifespan 落差-agelocked-168-20261021.webp>)
 
 ---
 
