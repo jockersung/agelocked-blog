@@ -201,13 +201,13 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
 </div>
 {mode === 'home' && (
   <script is:inline>
-    // 在首頁內容畫出來之前決定要不要先蓋上健康島，避免閃一下原本首頁
+    // 每次直接進首頁都先顯示健康島；舊的文字版偏好不再跳過入口。
     (function(){ try{
-      var q=location.search, p=null; try{ p=localStorage.getItem('agelocked-home-view'); }catch(e){}
+      var q=location.search;
       var m=navigator.deviceMemory||8, c=navigator.hardwareConcurrency||8, s=navigator.connection&&navigator.connection.saveData;
       var force=/[?&]3d/.test(q), lite=/[?&]lite/.test(q)||s||m<=2||c<=2;
       var r=document.getElementById('island-root');
-      if(r && (force || (!lite && p!=='text'))){ r.hidden=false; document.documentElement.classList.add('island-on'); }
+      if(r && (force || !lite)){ r.hidden=false; document.documentElement.classList.add('island-on'); }
     }catch(e){} })();
   </script>
 )}

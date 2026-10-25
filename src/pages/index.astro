@@ -35,6 +35,11 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
       * { box-sizing: border-box; }
       body { font-family: 'Noto Serif TC', serif; color: var(--body); background: var(--bg); margin: 0; }
 
+      .island-home-entry { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 6vw; background:#e5f0eb; color:#1f5c5c; font-family:'Noto Serif TC',serif; }
+      .island-home-entry a { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:.6rem 1rem; border-radius:8px; background:#1f5c5c; color:white; font-weight:700; white-space:nowrap; text-decoration:none; }
+      .island-home-entry a:focus-visible { outline:3px solid #e0a43a; outline-offset:3px; }
+      @media(max-width:600px) { .island-home-entry { flex-wrap:wrap; } .island-home-entry a { width:100%; } }
+
       /* --- HERO --- */
       .hero { padding: 8rem 6vw 6rem; background: var(--ink); color: #fff; position: relative; overflow: hidden; }
       .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; }
@@ -136,9 +141,14 @@ const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學
     </style>
   </head>
   <body>
-    <!-- 健康島：預設蓋在首頁上，可一鍵切回下面這份原本的首頁（讀者的選擇會被記住） -->
+    <!-- 健康島：每次進入首頁都預設顯示，可切換下方文字版 -->
     <HealthIsland mode="home" />
     <Header />
+
+    <nav class="island-home-entry" aria-label="健康島入口">
+      <span>🏝 用健康島地圖，探索身體訊號與文章</span>
+      <a href="/?3d">進入健康島 →</a>
+    </nav>
 
     <section class="hero">
       <div class="hero-inner">
