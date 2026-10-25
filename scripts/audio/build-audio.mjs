@@ -108,14 +108,14 @@ async function findVoice() {
   const name = (v) => v.display_name || v.displayName || v.name || '';
   const mine = all.filter((v) => /AGELOCKED|本人/i.test(name(v)) && String(v.id || v.name || '').includes('voice_'));
   if (!mine.length) {
-    console.log('專案裡的自訂聲音：'); all.filter((v) => String(v.id || '').startsWith('voice_')).forEach((v) => console.log(' ', v.id, name(v)));
+    console.log('專案裡的自訂聲音：'); all.filter((v) => String(v.id || '').startsWith('voice_')).forEach((v) => console.log(' ', name(v)));
     throw new Error('找不到名稱含「AGELOCKED」的聲音。請在 GitHub Secrets 加上 GEMINI_VOICE_ID，或確認金鑰屬於建立該聲音的專案。');
   }
   // 有好幾個符合時，用最新建立的那一個（重新複製聲音後會自動換用新的）
   const t = (v) => Date.parse(v.create_time || v.createTime || v.update_time || v.updateTime || '') || 0;
   const ver = (v) => Number((name(v).match(/v(\d+)\s*$/i) || [0, 1])[1]); // 名稱結尾 v2、v3… 版本越大越優先
   mine.sort((a, b) => ver(b) - ver(a) || t(b) - t(a));
-  const v = mine[0]; console.log(`使用聲音：${name(v)}（${v.id || v.name}）${mine.length > 1 ? `，另有 ${mine.length - 1} 個同名聲音未使用` : ''}`);
+  const v = mine[0]; console.log(`使用聲音：${name(v)}${mine.length > 1 ? `，另有 ${mine.length - 1} 個同名聲音未使用` : ''}`);
   return String(v.id || v.name).replace(/^.*\/(voice_)/, '$1');
 }
 async function tts(text, voice) {
@@ -159,15 +159,16 @@ function targets() {
   const add = (s) => { s = s.trim(); if (!s || s.startsWith('#')) return; if (s.startsWith('!')) { s = s.slice(1).trim(); FORCED.add(s); } if (s === 'all') all = true; else if (bySlug.has(s)) want.add(s); else console.log(`略過不存在的 slug：${s}`); };
   (opt('--only') || '').split(/[\s,]+/).forEach(add);
   (process.env.INPUT_SLUGS || '').split(/[\s,]+/).forEach(add);
-  if (existsSync(QUEUE)) readFileSync(QUEUE, 'utf8').split('\n').forEach(add);
-  if (flag('--ci') && process.env.BEFORE && !/^0+$/.test(process.env.BEFORE)) {
+  // --only is an explicit scope: do not consume unrelated queued work.
+  if (!opt('--only') && existsSync(QUEUE)) readFileSync(QUEUE, 'utf8').split('\n').forEach(add);
+  if (!opt('--only') && flag('--ci') && process.env.BEFORE && !/^0+$/.test(process.env.BEFORE)) {
     // 這次推送有改到、而且「已經有語音」的文章 → 重新產生；新文章 → 產生
     let changed = '';
     try { changed = execFileSync('git', ['diff', '--name-only', process.env.BEFORE, 'HEAD', '--', 'src/content/blog'], { encoding: 'utf8' }); } catch { /* 淺層 clone 找不到 before 就略過 */ }
     for (const f of changed.split('\n').filter(Boolean)) { const a = ARTICLES.find((x) => x.file.endsWith(f)); if (a && (manifest[a.slug] || process.env.AUTO_NEW === '1')) want.add(a.slug); }
   }
   // 換了聲音：已經有語音的文章全部重錄
-  if (VOICE) for (const [s, m] of Object.entries(manifest)) if (m.voice !== VOICE && bySlug.has(s)) want.add(s);
+  if (VOICE && !opt('--only')) for (const [s, m] of Object.entries(manifest)) if (m.voice !== VOICE && bySlug.has(s)) want.add(s);
   const list = all ? ARTICLES.map((a) => a.slug) : [...want];
   const force = flag('--force');
   return list.filter((s) => force || FORCED.has(s) || stale(bySlug.get(s)));
@@ -178,7 +179,14 @@ if (KEY && !flag('--dry-run')) VOICE = await findVoice();
 const list = targets();
 if (flag('--dry-run')) {
   const dir = opt('--out') || join(tmpdir(), 'audio-scripts'); mkdirSync(dir, { recursive: true });
-  for (const s of list.length ? list : [ARTICLES[0].slug]) { const p = toScript(bySlug.get(s)); writeFileSync(join(dir, `${s}.txt`), chunks(p).join('\n\n=====（分段）=====\n\n')); console.log(`${s}：${p.join('').length} 字，${chunks(p).length} 段 → ${join(dir, s + '.txt')}`); }
+  const plan = [];
+  for (const s of list) {
+    const a = bySlug.get(s); const p = toScript(a); const parts = chunks(p);
+    writeFileSync(join(dir, `${s}.txt`), parts.join('\n\n=====（分段）=====\n\n'));
+    plan.push({ slug: s, title: a.title, hash: hashOf(p), model: MODEL, tempo: TEMPO, style: STYLE, sample_rate: SR, parts });
+    console.log(`${s}：${p.join('').length} 字，${parts.length} 段`);
+  }
+  writeFileSync(join(dir, 'plan.json'), JSON.stringify(plan, null, 2) + '\n');
   process.exit(0);
 }
 if (!list.length) { console.log('沒有需要產生的語音。'); process.exit(0); }
@@ -192,7 +200,10 @@ for (const s of list.slice(0, LIMIT)) {
   catch (e) { console.log(`  ✗ 失敗：${e.message}`); failed.push(s); reasons.push(`${s}：${String(e.message).replace(/\s+/g, ' ').slice(0, 240)}`); if (e instanceof QuotaError) { quotaHit = true; break; } }
 }
 // 佇列只留下失敗和這次沒輪到的
-const leftover = [...failed, ...list.slice(processed)].map((s) => (FORCED.has(s) ? '!' + s : s));
+const unrelated = opt('--only') && existsSync(QUEUE)
+  ? readFileSync(QUEUE, 'utf8').split('\n').map((s) => s.trim()).filter((s) => s && !s.startsWith('#') && !list.includes(s.replace(/^!/, '')))
+  : [];
+const leftover = [...new Set([...unrelated, ...[...failed, ...list.slice(processed)].map((s) => (FORCED.has(s) ? '!' + s : s))])];
 const stamp = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
 if (existsSync(QUEUE)) writeFileSync(QUEUE, ['# 要產生語音的文章 slug，一行一篇；寫 all 代表全部；slug 前加 ! 代表強制重錄。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。', ...reasons.slice(0, 3).map((r) => `# ${stamp} 失敗：${r}`), ...leftover].join('\n') + '\n');
 console.log(`完成 ${done} 篇${failed.length ? `，失敗 ${failed.length} 篇：${failed.join(', ')}` : ''}${list.length > LIMIT ? `，還有 ${list.length - LIMIT} 篇留到下次` : ''}`);

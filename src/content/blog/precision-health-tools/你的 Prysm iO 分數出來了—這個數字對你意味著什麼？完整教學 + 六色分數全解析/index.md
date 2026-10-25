@@ -205,8 +205,8 @@ App 會幫你把所有數值畫成趨勢圖，讓你看見：
 ---
 
 **延伸閱讀：**
-- [三個數字一起看：血液、HRV、皮膚類胡蘿蔔素的 6 種常見組合](/blog/precision-health-tools/three-clues-cross-reading/)
-- [每日、每月、每年：一套個人化的身體追蹤節奏](/blog/intervention-optimization/tracking-rhythm/)
+- [慢性發炎怎麼找線索？先分清血液、HRV、皮膚量測各在看什麼](/blog/chronic-inflammation/inflammation-three-clues/)
+- [數據都在手機裡，然後呢？做一份能持續的身體追蹤表](/blog/intervention-optimization/tracking-rhythm/)
 - [LifePak：在啟動修護基因之前，你需要補地基打底](/blog/intervention-optimization/lifepak-foundation-nutrition/)
 
 ---

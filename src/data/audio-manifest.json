@@ -1,11 +1,11 @@
 {
   "normal-checkup-still-tired": {
-    "seconds": 436,
-    "hash": "a3b79dccfc7ffb43",
-    "file": "/audio/normal-checkup-still-tired.mp3",
+    "seconds": 468,
+    "hash": "9b692f53a8bcd932",
+    "file": "/audio/normal-checkup-still-tired-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "sleep-quality-testosterone": {
     "seconds": 487,
@@ -56,9 +56,9 @@
     "updated": "2026-10-24"
   },
   "checkup-five-numbers": {
-    "seconds": 406,
-    "hash": "7fd7c2c562b54d37",
-    "file": "/audio/checkup-five-numbers.mp3",
+    "seconds": 422,
+    "hash": "f7f51b4fcf891ec5",
+    "file": "/audio/checkup-five-numbers-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-25"
@@ -72,12 +72,12 @@
     "updated": "2026-10-24"
   },
   "three-signs-chronic-inflammation": {
-    "seconds": 456,
+    "seconds": 438,
     "hash": "02068943f5bc66e4",
-    "file": "/audio/three-signs-chronic-inflammation.mp3",
+    "file": "/audio/three-signs-chronic-inflammation-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "glp1-genetics-response-variation": {
     "seconds": 528,
@@ -152,12 +152,12 @@
     "updated": "2026-10-24"
   },
   "hs-crp-low-grade-inflammation": {
-    "seconds": 335,
-    "hash": "c2dc9b0c78473e95",
-    "file": "/audio/hs-crp-low-grade-inflammation.mp3",
+    "seconds": 356,
+    "hash": "90b61b1efb3db49e",
+    "file": "/audio/hs-crp-low-grade-inflammation-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "glp1-gene-aging-reversal": {
     "seconds": 451,
@@ -168,20 +168,20 @@
     "updated": "2026-10-24"
   },
   "lpa-genetic-risk": {
-    "seconds": 345,
-    "hash": "a94b1b8a2d14ca5d",
-    "file": "/audio/lpa-genetic-risk.mp3",
+    "seconds": 294,
+    "hash": "30c36a949868e445",
+    "file": "/audio/lpa-genetic-risk-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "inflammation-three-clues": {
-    "seconds": 488,
-    "hash": "3384477f2bfcb3a7",
-    "file": "/audio/inflammation-three-clues.mp3",
+    "seconds": 405,
+    "hash": "b324199e4bf47cc6",
+    "file": "/audio/inflammation-three-clues-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "visceral-fat-three-cycles": {
     "seconds": 490,
@@ -400,12 +400,12 @@
     "updated": "2026-10-24"
   },
   "tracking-rhythm": {
-    "seconds": 277,
-    "hash": "c31bc0722996a959",
-    "file": "/audio/tracking-rhythm.mp3",
+    "seconds": 294,
+    "hash": "9db13eb24c1b806c",
+    "file": "/audio/tracking-rhythm-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "biological-age-gap-youthspan": {
     "seconds": 782,
@@ -440,20 +440,20 @@
     "updated": "2026-10-24"
   },
   "apob-vs-ldl": {
-    "seconds": 336,
-    "hash": "29e6710de7ef2339",
-    "file": "/audio/apob-vs-ldl.mp3",
+    "seconds": 307,
+    "hash": "8f10b20d6050d3e0",
+    "file": "/audio/apob-vs-ldl-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "hrv-recovery-guide": {
-    "seconds": 587,
-    "hash": "e271c6651d2d97c3",
-    "file": "/audio/hrv-recovery-guide.mp3",
+    "seconds": 337,
+    "hash": "8b686a176bc2c181",
+    "file": "/audio/hrv-recovery-guide-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "fda-certification-myth": {
     "seconds": 589,
@@ -479,14 +479,6 @@
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-24"
   },
-  "three-clues-cross-reading": {
-    "seconds": 497,
-    "hash": "844ad5a788e15f40",
-    "file": "/audio/three-clues-cross-reading.mp3",
-    "model": "gemini-3.8-flash-tts",
-    "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
-  },
   "prysm-io-15sec": {
     "seconds": 248,
     "hash": "24a079a142982faa",
@@ -496,12 +488,12 @@
     "updated": "2026-10-24"
   },
   "prysm-io-score-guide": {
-    "seconds": 630,
+    "seconds": 619,
     "hash": "da082f5f33b21851",
-    "file": "/audio/prysm-io-score-guide.mp3",
+    "file": "/audio/prysm-io-score-guide-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "biological-age-measurement": {
     "seconds": 601,
@@ -592,12 +584,12 @@
     "updated": "2026-10-24"
   },
   "wearable-choose-guide": {
-    "seconds": 398,
-    "hash": "962c877e0c81d338",
-    "file": "/audio/wearable-choose-guide.mp3",
+    "seconds": 298,
+    "hash": "5bbc193eb1b2ff31",
+    "file": "/audio/wearable-choose-guide-20261025.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "epigenetic-dysregulation-2026-nature-review": {
     "seconds": 694,
