@@ -132,9 +132,9 @@ ctaBridge: "我在健康領域看了十五年的數據，最常見的落差就�
 ---
 
 **延伸閱讀：**
-- [健檢沒紅字，也值得多看的 5 個數字](/blog/body-signals/checkup-five-numbers/)
-- [CRP 看大火，hs-CRP 看小火：低度慢性發炎怎麼驗、怎麼讀](/blog/chronic-inflammation/hs-crp-low-grade-inflammation/)
-- [一把火，三處煙：慢性發炎看不見，可以從哪三個地方找線索](/blog/chronic-inflammation/inflammation-three-clues/)
+- [健檢沒紅字，還要看什麼？5 個值得和醫師討論的數字](/blog/body-signals/checkup-five-numbers/)
+- [CRP 正常，還需要看 hs-CRP 嗎？先看單位，再讀數字](/blog/chronic-inflammation/hs-crp-low-grade-inflammation/)
+- [慢性發炎怎麼找線索？先分清血液、HRV、皮膚量測各在看什麼](/blog/chronic-inflammation/inflammation-three-clues/)
 
 ---
 
