@@ -46,6 +46,8 @@ slug: "neurogenesis-inflammaging-cognitive-resilience"
 
 ---
 
+![神經新生、突觸可塑性、認知功能的概念圖解](./body-extra-051-20261025.webp)
+
 ## 為什麼肚子變大、容易累，會影響大腦？
 
 這背後有三個互相連動的機制，正在同步改寫你的身體與大腦：
@@ -160,6 +162,8 @@ slug: "neurogenesis-inflammaging-cognitive-resilience"
 - [你上一次知道自己身體真正的狀態，是什麼時候？Prysm iO 15 秒看見你的抗氧化水位](/blog/precision-health-tools/prysm-io-15sec/)
 
 ---
+
+![睡眠與作息、活動與生活、認知困擾的概念圖解](./body-extra-052-20261025.webp)
 
 ## 參考資料
 

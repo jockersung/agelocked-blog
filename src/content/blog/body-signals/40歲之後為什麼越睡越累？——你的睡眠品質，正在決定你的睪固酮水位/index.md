@@ -56,6 +56,8 @@ slug: "sleep-quality-testosterone"
 
 ---
 
+![整理作息、注意持續困擾、與醫師討論的概念圖解](./body-extra-078-20261025.webp)
+
 ## 睪固酮和皮質醇是蹺蹺板
 
 睡眠不足對男性荷爾蒙的影響，不只是直接抑制睪固酮的製造，還有另一條路徑：**透過皮質醇間接壓制睾固酮的合成**。
@@ -128,6 +130,8 @@ slug: "sleep-quality-testosterone"
 **→ [40歲的你只剩一張嘴了嗎？——不是「自然老了」是睪丸細胞提前衰老了](/blog/intervention-optimization/testosterone-cell-aging-40/)**
 
 ---
+
+![睡眠時數、主觀感受、必要的評估的概念圖解](./body-extra-077-20261025.webp)
 
 ## 參考資料
 
