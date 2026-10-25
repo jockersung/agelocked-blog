@@ -152,9 +152,11 @@ async function render(a, voice) {
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
 let VOICE = null; // 換了聲音，已經做好的語音也算過期
 const stale = (a) => !manifest[a.slug] || manifest[a.slug].hash !== hashOf(toScript(a)) || !existsSync(join(OUT, `${a.slug}.mp3`)) || (VOICE && manifest[a.slug].voice !== VOICE);
+const FORCED = new Set();
 function targets() {
   const want = new Set(); let all = false;
-  const add = (s) => { s = s.trim(); if (!s || s.startsWith('#')) return; if (s === 'all') all = true; else if (bySlug.has(s)) want.add(s); else console.log(`略過不存在的 slug：${s}`); };
+  // 佇列裡以 ! 開頭的 slug：就算內容沒變也強制重錄
+  const add = (s) => { s = s.trim(); if (!s || s.startsWith('#')) return; if (s.startsWith('!')) { s = s.slice(1).trim(); FORCED.add(s); } if (s === 'all') all = true; else if (bySlug.has(s)) want.add(s); else console.log(`略過不存在的 slug：${s}`); };
   (opt('--only') || '').split(/[\s,]+/).forEach(add);
   (process.env.INPUT_SLUGS || '').split(/[\s,]+/).forEach(add);
   if (existsSync(QUEUE)) readFileSync(QUEUE, 'utf8').split('\n').forEach(add);
@@ -168,7 +170,7 @@ function targets() {
   if (VOICE) for (const [s, m] of Object.entries(manifest)) if (m.voice !== VOICE && bySlug.has(s)) want.add(s);
   const list = all ? ARTICLES.map((a) => a.slug) : [...want];
   const force = flag('--force');
-  return list.filter((s) => force || stale(bySlug.get(s)));
+  return list.filter((s) => force || FORCED.has(s) || stale(bySlug.get(s)));
 }
 
 // ── 主程式 ────────────────────────────────────────────
@@ -190,9 +192,9 @@ for (const s of list.slice(0, LIMIT)) {
   catch (e) { console.log(`  ✗ 失敗：${e.message}`); failed.push(s); reasons.push(`${s}：${String(e.message).replace(/\s+/g, ' ').slice(0, 240)}`); if (e instanceof QuotaError) { quotaHit = true; break; } }
 }
 // 佇列只留下失敗和這次沒輪到的
-const leftover = [...failed, ...list.slice(processed)];
+const leftover = [...failed, ...list.slice(processed)].map((s) => (FORCED.has(s) ? '!' + s : s));
 const stamp = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
-if (existsSync(QUEUE)) writeFileSync(QUEUE, ['# 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。', ...reasons.slice(0, 3).map((r) => `# ${stamp} 失敗：${r}`), ...leftover].join('\n') + '\n');
+if (existsSync(QUEUE)) writeFileSync(QUEUE, ['# 要產生語音的文章 slug，一行一篇；寫 all 代表全部；slug 前加 ! 代表強制重錄。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。', ...reasons.slice(0, 3).map((r) => `# ${stamp} 失敗：${r}`), ...leftover].join('\n') + '\n');
 console.log(`完成 ${done} 篇${failed.length ? `，失敗 ${failed.length} 篇：${failed.join(', ')}` : ''}${list.length > LIMIT ? `，還有 ${list.length - LIMIT} 篇留到下次` : ''}`);
 if (quotaHit) process.exit(3);
 if (failed.length && !done) process.exit(1);
