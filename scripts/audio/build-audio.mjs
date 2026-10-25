@@ -29,7 +29,10 @@ const opt = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : un
 // ── 讀文章 ─────────────────────────────────────────────
 function walk(dir) { return readdirSync(dir, { withFileTypes: true }).flatMap((d) => d.isDirectory() ? walk(join(dir, d.name)) : /\.mdx?$/.test(d.name) ? [join(dir, d.name)] : []); }
 function parse(file) {
-  const raw = readFileSync(file, 'utf8');
+  return parseSource(file, readFileSync(file, 'utf8'));
+}
+function parseSource(file, raw) {
+  raw = raw.replace(/\r/g, '');
   const m = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
   const fm = m ? m[1] : ''; const body = m ? m[2] : raw;
   const get = (k) => { const r = fm.match(new RegExp(`^${k}:\\s*["']?(.*?)["']?\\s*$`, 'm')); return r ? r[1] : ''; };
@@ -164,8 +167,17 @@ function targets() {
   if (!opt('--only') && flag('--ci') && process.env.BEFORE && !/^0+$/.test(process.env.BEFORE)) {
     // 這次推送有改到、而且「已經有語音」的文章 → 重新產生；新文章 → 產生
     let changed = '';
-    try { changed = execFileSync('git', ['diff', '--name-only', process.env.BEFORE, 'HEAD', '--', 'src/content/blog'], { encoding: 'utf8' }); } catch { /* 淺層 clone 找不到 before 就略過 */ }
-    for (const f of changed.split('\n').filter(Boolean)) { const a = ARTICLES.find((x) => x.file.endsWith(f)); if (a && (manifest[a.slug] || process.env.AUTO_NEW === '1')) want.add(a.slug); }
+    try { changed = execFileSync('git', ['diff', '--name-only', '-z', process.env.BEFORE, 'HEAD', '--', 'src/content/blog'], { encoding: 'utf8' }); } catch { /* 淺層 clone 找不到 before 就略過 */ }
+    for (const f of changed.split('\0').filter(Boolean)) {
+      const a = ARTICLES.find((x) => x.file.replaceAll('\\', '/').endsWith(f));
+      if (!a || (!manifest[a.slug] && process.env.AUTO_NEW !== '1')) continue;
+      let speechChanged = true;
+      try {
+        const old = parseSource(f, execFileSync('git', ['show', `${process.env.BEFORE}:${f}`], { encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }));
+        speechChanged = hashOf(toScript(old)) !== hashOf(toScript(a));
+      } catch { /* 新文章或歷史不可用：保留原先的更新判斷 */ }
+      if (speechChanged) want.add(a.slug);
+    }
   }
   // 換了聲音：已經有語音的文章全部重錄
   if (VOICE && !opt('--only')) for (const [s, m] of Object.entries(manifest)) if (m.voice !== VOICE && bySlug.has(s)) want.add(s);

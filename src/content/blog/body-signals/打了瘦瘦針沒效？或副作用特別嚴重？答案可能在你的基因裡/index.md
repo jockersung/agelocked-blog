@@ -61,6 +61,8 @@ slug: glp1-genetics-response-variation
 
 ---
 
+![基因差異、使用條件、個人狀況的概念圖解](./body-extra-107-20261025.webp)
+
 ## 第二個發現：GIPR 基因影響你會不會嘔吐
 
 這個發現更有臨床意義。

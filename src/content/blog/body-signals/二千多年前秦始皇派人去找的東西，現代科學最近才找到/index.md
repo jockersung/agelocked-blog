@@ -124,6 +124,8 @@ slug: "emperor-longevity-modern-science"
 
 ---
 
+![AMPK／mTOR、Sirtuins、Nrf2的概念圖解](./body-extra-106-20261025.webp)
+
 ## 那什麼方法能同時影響這些路徑？
 
 1934年，康奈爾大學的麥凱（Clive McCay）教授做了一個改變歷史的實驗：

@@ -99,6 +99,8 @@ P. gingivalis 觸發 **兩個阿茲海默症的核心病理**：
 
 ---
 
+![牙菌斑、牙齦狀況、牙周檢查的概念圖解](./body-extra-075-20261025.webp)
+
 ## 這和你整體的老化速度有什麼關係
 
 這裡需要引入一個比較大的框架。
@@ -175,6 +177,8 @@ P. gingivalis 觸發 **兩個阿茲海默症的核心病理**：
 - [肚子變大、容易累？慢性發炎不只傷身體，也可能正在影響你的大腦](/blog/chronic-inflammation/neurogenesis-inflammaging-cognitive-resilience/)
 
 ---
+
+![留意反覆出血、尋求牙科評估、依建議追蹤的概念圖解](./body-extra-076-20261025.webp)
 
 ## 參考資料
 
