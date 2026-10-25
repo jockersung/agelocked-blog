@@ -2,7 +2,7 @@
 title: "手錶說 HRV 偏低，今天該擔心嗎？先看這 4 件事"
 description: "HRV 偏低先看資料品質、指標算法、個人趨勢與近期事件。理解用途與限制，不把單次通知當成發炎或恢復診斷。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.svg"
+heroImage: "./cover-editorial-20261025.webp"
 tags: ["HRV", "心率變異度", "自律神經", "睡眠", "恢復", "穿戴裝置"]
 category: "精準健康工具"
 slug: hrv-recovery-guide

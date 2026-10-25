@@ -2,7 +2,7 @@
 title: "手錶還是戒指？先問你要量運動、睡眠，還是 HRV"
 description: "先決定要量運動心率、睡眠還是 HRV，再比較配戴、續航與對應研究；看清型號、樣本與演算法限制。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.svg"
+heroImage: "./cover-editorial-20261025.webp"
 tags: ["穿戴裝置", "智慧手錶", "智慧戒指", "HRV", "睡眠追蹤", "心率"]
 category: "精準健康工具"
 slug: wearable-choose-guide
