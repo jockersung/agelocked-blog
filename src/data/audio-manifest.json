@@ -56,12 +56,12 @@
     "updated": "2026-10-24"
   },
   "checkup-five-numbers": {
-    "seconds": 559,
+    "seconds": 406,
     "hash": "7fd7c2c562b54d37",
     "file": "/audio/checkup-five-numbers.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "male-fatigue-after-40": {
     "seconds": 447,
@@ -192,12 +192,12 @@
     "updated": "2026-10-24"
   },
   "caloric-restriction-mimetics-science": {
-    "seconds": 837,
+    "seconds": 620,
     "hash": "a58745cae65a60b2",
     "file": "/audio/caloric-restriction-mimetics-science.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "sleep-glymphatic-brain-detox": {
     "seconds": 1307,
@@ -240,12 +240,12 @@
     "updated": "2026-10-24"
   },
   "polyphenol-nrf2-antioxidant-myth": {
-    "seconds": 1161,
+    "seconds": 738,
     "hash": "e692ab910746e132",
     "file": "/audio/polyphenol-nrf2-antioxidant-myth.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
-    "updated": "2026-10-24"
+    "updated": "2026-10-25"
   },
   "caloric-restriction-longevity-science": {
     "seconds": 825,
