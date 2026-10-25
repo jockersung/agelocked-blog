@@ -1,1 +1,4 @@
-# 要產生語音的文章 slug，一行一篇；寫 all 代表全部。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。
+# 要產生語音的文章 slug，一行一篇；寫 all 代表全部；slug 前加 ! 代表強制重錄。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。
+!polyphenol-nrf2-antioxidant-myth
+!checkup-five-numbers
+!caloric-restriction-mimetics-science
