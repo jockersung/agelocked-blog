@@ -2,7 +2,7 @@
 title: '2026 哈佛研究登 Nature Medicine：規律補充維生素，真的能讓「生理時鐘」走慢一點嗎？'
 description: '第一個用大規模 RCT 直接測量綜合維生素對表觀遺傳老化時鐘影響的研究。每日補充，PCGrimAge 與 PCPhenoAge 顯著放緩，換算約慢老4個月。效果最大的，是那些細胞早已在加速老化的人。'
 pubDate: 2026-03-18
-heroImage: "./複方維生素減緩生理時鐘-agelocked-103-20261021.webp"
+heroImage: "./editorial-103-20261026.webp"
 category: '精準健康工具'
 ctaType: 'hard'
 slug: 'multivitamin-lifepak-slow-aging-clock'

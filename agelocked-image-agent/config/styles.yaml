@@ -12,12 +12,13 @@ cover_size:
 inline_size:
 - 2400
 - 1350
-style: Flat Editorial Health Illustration
+style: Warm Textured Editorial Health Illustration + Minimal Editorial Infographics
 general_anchors:
 - outputs/png/ChatGPT 圖像 2026年10月19日 下午01_03_02-2.png
 - outputs/png/ChatGPT 圖像 2026年10月19日 下午01_03_09-5.png
 product_anchors: []
 cover_title_policy: full_article_title_large_type_max_two_lines
-anchor_status: user-provided preview references; not approved final artwork
-inline_illustration_text_policy: no_article_title_no_extra_text
+anchor_status: approved supplemental-image references, 2026-10-25
+inline_illustration_text_policy: preserve_source_labels_no_added_title
 chart_text_policy: only_verified_axes_units_legends_and_sources_no_article_title
+style_profile_config: config/style_profiles.yaml

@@ -2,7 +2,7 @@
 title: '大多數男人沒有意識到——40歲之後的疲勞，和20歲的疲勞不一樣'
 description: '體力下降、睡醒還累、記憶力開始出空白——你以為是壓力，以為是老了。但這些症狀有一個共同的底層原因，而且它從30歲就已經開始了。'
 pubDate: 2026-03-11
-heroImage: "./中年男性疲憊-agelocked-004-20261021.webp"
+heroImage: "./editorial-004-20261026.webp"
 tags: ['男性健康', 'Inflammaging', '慢性發炎', '疲勞', '身體訊號']
 category: '身體訊號解讀'
 slug: "male-fatigue-after-40"
@@ -39,7 +39,7 @@ ctaBridge: "40 歲的疲勞是一組症狀模式，不是單一症狀。把時�
 
 **性功能**：性慾下降的頻率增加。不是完全沒有，是「有氣也沒什麼力」的狀態變多了。
 
-![晨勃慢](./晨勃慢-agelocked-005-20261021.webp)
+![晨勃慢](./editorial-005-20261026.webp)
 
 ---
 
@@ -65,7 +65,7 @@ Inflammaging 是「Inflammation」和「Aging」的合成詞，2000 年由義大
 
 慢慢偷走你對身體的控制力。
 
-![Inflammaging全身性發炎](./Inflammaging全身性發炎-agelocked-129-20261021.webp)
+![Inflammaging全身性發炎](./editorial-129-20261026.webp)
 
 ---
 

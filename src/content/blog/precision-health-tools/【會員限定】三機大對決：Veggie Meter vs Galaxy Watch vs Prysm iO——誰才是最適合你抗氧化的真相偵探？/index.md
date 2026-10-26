@@ -2,7 +2,7 @@
 title: '三機大對決：Veggie Meter® vs Galaxy Watch 8 vs Prysm iO™——誰才是你抗氧化的真相偵探？'
 description: '深入解析三大反射光譜裝置的技術哲學、科學基礎與實際定位差異，以及 Prysm iO 的完整使用教學'
 pubDate: 2026-02-24
-heroImage: "./三機對比-agelocked-022-20261021.webp"
+heroImage: "./editorial-022-20261026.webp"
 tags: ['抗氧化', '科技', 'Prysm-iO']
 memberOnly: true
 category: '精準健康工具'

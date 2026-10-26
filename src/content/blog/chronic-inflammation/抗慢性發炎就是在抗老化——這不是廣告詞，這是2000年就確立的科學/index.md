@@ -2,14 +2,14 @@
 title: '抗慢性發炎就是在抗老化——這不是廣告詞，這是2000年就確立的科學'
 description: '2000年，義大利老年醫學家 Claudio Franceschi 在頂級期刊提出了一個概念，二十年後成為老化生物學裡引用次數最高的理論之一。這篇說清楚它為什麼重要。'
 pubDate: 2026-03-01
-heroImage: "./抗慢性發炎就是抗老化-agelocked-090-20261021.webp"
+heroImage: "./editorial-090-20261026.webp"
 tags: ['Inflammaging', '慢性發炎', 'NF-κB', 'SASP', '老化機制', 'IL-6']
 category: '慢性發炎科學'
 slug: "anti-inflammation-anti-aging"
 ctaBridge: "Inflammaging 不是命定的，但你得先知道自己現在走到哪裡。花一分鐘把疲勞、睡眠、修復速度這些訊號整理成一個可以判讀的模式。"
 ---
 
-![抗慢性發炎就是抗老化](./抗慢性發炎就是抗老化-agelocked-164-20261021.webp)
+![抗慢性發炎就是抗老化](./editorial-164-20261026.webp)
 
 你有沒有想過，為什麼老化和慢性病幾乎總是一起出現？
 

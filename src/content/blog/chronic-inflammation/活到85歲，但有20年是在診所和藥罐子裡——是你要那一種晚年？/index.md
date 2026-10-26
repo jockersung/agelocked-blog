@@ -2,7 +2,7 @@
 title: '活到85歲，但有20年是在診所和藥罐子裡——你要哪一種晚年？'
 description: '人類平均壽命在延長，但健康壽命和壽命之間的落差也在擴大——全球平均超過9年。這篇說清楚 Healthspan 和 Lifespan 的差別，以及你現在的選擇怎麼決定你走哪條路。'
 pubDate: 2026-03-02
-heroImage: "./哪一種晚年-agelocked-092-20261021.webp"
+heroImage: "./editorial-092-20261026.webp"
 tags: ['抗氧化', '健康', '長壽']
 category: '慢性發炎科學'
 slug: "healthspan-vs-lifespan"

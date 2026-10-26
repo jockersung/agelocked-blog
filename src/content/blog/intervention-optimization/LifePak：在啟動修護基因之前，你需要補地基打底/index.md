@@ -2,7 +2,7 @@
 title: 'LifePak：在啟動修護基因之前，你需要補地基打底'
 description: '很多人掃完 Prysm iO 之後問我：「那我要吃 Youthspan 嗎？」答案是：要，但順序很重要。這篇說清楚為什麼 LifePak 是第一步，Youthspan 是第二步。'
 pubDate: 2026-03-08
-heroImage: "./lifepack家族-agelocked-014-20261021.webp"
+heroImage: "./editorial-014-20261026.webp"
 tags: ['LifePak', '植化素', 'Phytochemicals', 'Nrf2', '抗氧化', '微量營養素']
 category: '介入與調校'
 ctaType: 'hard'

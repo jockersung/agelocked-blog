@@ -2,7 +2,7 @@
 title: '雷帕黴素、二甲雙胍、GLP-1——抗老化藥物的科學很真實，但有些事情你需要知道'
 description: '這三種藥物在抗老化研究圈裡被討論得最多，背後的分子機制也最紮實。這篇客觀說清楚它們做了什麼、限制在哪裡，以及沒有處方的人可以從哪裡開始。'
 pubDate: 2026-03-04
-heroImage: "./三種抗老藥物-agelocked-098-20261021.webp"
+heroImage: "./editorial-098-20261026.webp"
 tags: ['抗老化', '雷帕黴素', '二甲雙胍', 'GLP-1', 'mTOR', 'CRM']
 category: '慢性發炎科學'
 slug: "longevity-drugs-science"

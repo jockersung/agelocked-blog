@@ -2,7 +2,7 @@
 title: '那條後退的髮際線，是身體給中年男人的第一個警告'
 description: '以為只是遺傳問題？科學告訴你：M型禿背後，是DHT觸發的細胞衰老與頭皮慢性發炎——而這件事，和你全身的細胞再生能力高度相關。'
 pubDate: 2026-03-11
-heroImage: "./中年男子禿頭-agelocked-006-20261021.webp"
+heroImage: "./editorial-006-20261026.webp"
 tags: ['男性健康', '掉髮', '雄性禿', 'M型禿', '頭皮發炎', 'Inflammaging', '細胞衰老']
 category: '身體訊號解讀'
 slug: "hairline-recession-warning"

@@ -2,7 +2,7 @@
 title: 'ageLOC Youthspan：可以不節食讓細胞以為你在挨餓，啟動修復基因功能'
 description: '科學家發現，讓細胞以為正處於熱量受限狀態，就能啟動那套強大的修復基因組。Youthspan 的 13 種成分，做的就是這件事。'
 pubDate: 2026-03-04
-heroImage: "./Youthspan-agelocked-021-20261021.webp"
+heroImage: "./editorial-021-20261026.webp"
 tags: ['ageLOC', 'Youthspan', '抗衰老', '基因表達', 'CRM', '介入']
 category: '介入與調校'
 ctaType: 'hard'

@@ -2,7 +2,7 @@
 title: '為什麼你睡滿8小時還是累？矽谷富豪的抗老實驗：問題可能出在你的「睡前心率」'
 description: '布萊恩．強生每年花200萬美金對抗老化。他的實驗告訴我們一件事：老化不再是無法逆轉的自然現象，而是一個可以被量化、被管理的過程。'
 pubDate: 2026-03-11
-heroImage: "./矽谷富豪-agelocked-072-20261021.webp"
+heroImage: "./editorial-072-20261026.webp"
 tags: ['老化', '生物年齡', '抗衰老', '量化健康', '睡眠', '運動']
 category: '身體訊號解讀'
 slug: 'aging-quantified-bryan-johnson-blueprint'

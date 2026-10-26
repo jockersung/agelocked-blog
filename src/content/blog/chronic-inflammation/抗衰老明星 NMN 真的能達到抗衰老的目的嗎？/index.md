@@ -2,7 +2,7 @@
 title: '抗衰老明星 NMN 真的能達到抗衰老的目的嗎？'
 description: 'NMN 是近年來最被關注的抗衰老成分之一，臨床數據也確實存在。但三個國家的人體試驗結果，指向了一個讓人意外的結論——問題的根源，不在補充量不夠。'
 pubDate: 2026-03-01
-heroImage: "./抗衰老明星NMN-agelocked-091-20261021.webp"
+heroImage: "./editorial-091-20261026.webp"
 tags: ['NMN', 'NAD+', '粒線體', '熱量限制', 'CRM', '抗衰老']
 category: '慢性發炎科學'
 slug: "nmn-anti-aging-review"

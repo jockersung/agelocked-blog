@@ -2,7 +2,7 @@
 title: '戴了半年 Apple Watch 來監測睡眠——但你知道是什麼在讓你睡不好嗎？'
 description: 'AI 穿戴裝置正在改變我們監測身體的方式，但它們測的是結果訊號，不是根本原因。那個根本原因，藏在細胞層級。'
 pubDate: 2026-03-04
-heroImage: "./穿戴裝置監測-agelocked-034-20261021.webp"
+heroImage: "./editorial-034-20261026.webp"
 tags: ['穿戴裝置', 'HRV', 'Prysm iO', '精準健康', '生物標記', '細胞儲備']
 category: '精準健康工具'
 ctaType: 'hard'

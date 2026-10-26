@@ -2,7 +2,7 @@
 title: "瘦瘦針不只讓你瘦——它正在改變你體內的老化基因表現"
 description: "GLP-1 受體促效劑的抗老機制：直接活化 IGF-1 受體、粒線體生物生成、全身性抗慢性發炎。這不是減重藥的副作用，這是它的另一個主效果——但有一個你必須知道的前提。"
 pubDate: 2026-04-16
-heroImage: "./瘦瘦針改變你體內的老化基因表現-agelocked-093-20261021.webp"
+heroImage: "./editorial-093-20261026.webp"
 tags: ["GLP-1", "瘦瘦針", "抗老化", "IGF-1", "慢性發炎", "粒線體", "基因老化", "肌少症"]
 category: "慢性發炎科學"
 slug: glp1-aging-gene-expression

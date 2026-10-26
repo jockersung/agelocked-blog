@@ -2,7 +2,7 @@
 title: '你上一次知道自己身體真正的狀態，是什麼時候？Prysm iO 15 秒看見你的抗氧化水位'
 description: 'Prysm iO 15 秒，一根手指，讀出你過去幾週的蔬果與抗氧化營養攝取——不是感覺，是數字'
 pubDate: 2026-02-12
-heroImage: "./健康不再憑感覺-agelocked-106-20261021.webp"
+heroImage: "./editorial-106-20261026.webp"
 tags: ['抗氧化', '科技', 'Prysm-iO']
 category: '精準健康工具'
 ctaType: 'hard'

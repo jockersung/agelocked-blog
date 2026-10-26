@@ -2,7 +2,7 @@
 title: '【深度科普】從抽血到 15 秒掃描：人類花了二十年才解決的這個問題'
 description: '完整還原抗氧化測量技術的五階段演化史——從 HPLC 抽血、皮膚切片，到拉曼光譜與 Prysm iO 的誕生'
 pubDate: 2026-02-24
-heroImage: "./從HPLC抽血皮膚切片到拉曼光譜與PrysmiO的誕生-agelocked-105-20261021.webp"
+heroImage: "./editorial-105-20261026.webp"
 tags: ['抗氧化', '科學史', 'Prysm-iO', '深度科普']
 category: '精準健康工具'
 ctaType: 'hard'
@@ -71,7 +71,7 @@ HPLC 是一種精密的化學分離技術，流程是這樣的：
 
 **物理學家** Werner Gellermann 博士（專精雷射與光學）和 **眼科醫師** Paul S. Bernstein 醫師（視網膜專家）
 
-![Gellermann博士Bernstein醫師](./Gellermann博士Bernstein醫師-agelocked-028-20261021.webp)
+![Gellermann博士Bernstein醫師](./editorial-028-20261026.webp)
 
 Bernstein 醫師的畢生研究目標，是對抗一種叫做 **老年性黃斑部病變（AMD）** 的眼疾。
 

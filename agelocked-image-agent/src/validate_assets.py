@@ -1,3 +1,4 @@
+from .style_profiles import profile_anchors
 from pathlib import Path
 from zipfile import ZipFile
 import shutil
@@ -101,7 +102,7 @@ def validate_task(task, root, repo, styles, settings, tasks):
                 if image.mode != 'RGBA' or image.getextrema()[3][0] == 255:
                     reasons.append('OFFICIAL_PRODUCT_CUTOUT_REQUIRED')
             task['product_photo'] = photo
-        refs = [_checked_image(root, p) for p in styles['product_anchors']]
+        refs = [_checked_image(root, p) for p in profile_anchors(task, root, styles)]
         if not refs or not all(refs):
             reasons.append('PRODUCT_STYLE_ANCHORS_MISSING')
     else:
@@ -115,7 +116,7 @@ def validate_task(task, root, repo, styles, settings, tasks):
                 reasons.append('ORIGINAL_IMAGE_MISSING')
             else:
                 refs.append(original)
-        anchors = [_checked_image(root, p) for p in styles['general_anchors']]
+        anchors = [_checked_image(root, p) for p in profile_anchors(task, root, styles)]
         if not anchors or not all(anchors):
             reasons.append('STYLE_ANCHORS_MISSING')
         refs.extend(p for p in anchors if p)

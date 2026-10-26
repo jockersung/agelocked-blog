@@ -2,7 +2,7 @@
 title: '我篩選保健品只看一件事——其他都是行銷'
 description: '不是成分清單、不是品牌知名度、不是價格。選保健品最關鍵的一件事，是這個產品有沒有針對你的目標，提供人體層級的臨床證據。這篇把選品邏輯整理成一個可以直接用的框架。'
 pubDate: 2026-03-11
-heroImage: "./選購保健品指南-agelocked-113-20261021.webp"
+heroImage: "./editorial-113-20261026.webp"
 tags: ['保健品選購', '選品指南', '科學選品', '台灣認證', '精準健康']
 category: '精準健康工具'
 slug: "supplement-one-thing-to-check"

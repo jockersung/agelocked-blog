@@ -2,7 +2,7 @@
 title: '同樣80歲，有人記得每個孫子的名字——科學找到了他們大腦的秘密'
 description: '2026年《Nature》大規模人類海馬迴研究，分析355,997個細胞核，揭示Super-agers維持認知韌性的分子機制。大腦老化不只是年齡問題，而是神經新生機制能否被維持的問題。'
 pubDate: 2026-04-03
-heroImage: "./80歲記憶不退化秘密-agelocked-085-20261021.webp"
+heroImage: "./editorial-085-20261026.webp"
 tags: ['神經新生', 'Super-agers', 'Healthspan', '阿茲海默症', '認知韌性', '海馬迴', 'BDNF', '大腦老化']
 category: '慢性發炎科學'
 ctaType: 'soft'

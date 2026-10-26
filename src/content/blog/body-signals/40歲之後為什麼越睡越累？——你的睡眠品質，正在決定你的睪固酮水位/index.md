@@ -2,7 +2,7 @@
 title: '40歲之後為什麼越睡越累？——你的睡眠品質，正在決定你的睪固酮水位'
 description: '睡不好、睡不夠、起床還是累——這不是你「比較淺眠」，這是你的荷爾蒙工廠在夜間關燈。睡眠才是男性體內最大的睪固酮製造窗口，而這個窗口正在縮小。'
 pubDate: 2026-03-11
-heroImage: "./睪固酮跟睡眠品質-agelocked-066-20261021.webp"
+heroImage: "./editorial-066-20261026.webp"
 tags: ['男性健康', '睡眠品質', '睪固酮', '皮質醇', '慢波睡眠', '男性老化', 'Inflammaging']
 category: '身體訊號解讀'
 slug: "sleep-quality-testosterone"

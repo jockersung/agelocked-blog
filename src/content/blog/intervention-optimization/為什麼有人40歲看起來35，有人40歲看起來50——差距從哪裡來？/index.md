@@ -2,7 +2,7 @@
 title: "為什麼有人40歲看起來35，有人40歲看起來50——差距從哪裡來？"
 description: "老化速度不一樣，是因為基因不同嗎？科學給了一個更具體的答案，而且這個答案你可以介入。"
 pubDate: 2026-03-11
-heroImage: "./40歲生理年齡差距-agelocked-100-20261021.webp"
+heroImage: "./editorial-100-20261026.webp"
 tags: ["生理年齡", "YouthSpan", "CRM", "長壽基因", "抗老化", "enJoy"]
 category: "介入與調校"
 ctaType: 'hard'
