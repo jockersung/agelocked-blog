@@ -50,6 +50,8 @@ def production_fingerprint(task, settings):
     references = [{'path':p, 'sha256':digest(p)} for p in task.get('references',[]) ]
     data = {'id':task['id'], 'prompt':task['prompt'], 'action':task['action'], 'refs':references,
             'article_title':task.get('article_title'),
+            'style_profile':task.get('style_profile'), 'visual_kind':task.get('visual_kind'),
+            'style_profiles_sha256':settings.get('style_profiles_sha256'),
             'model':settings['model'],'quality':settings['quality'],'size':settings['api_size'],
             'budget':settings['max_budget_usd'],'pricing':settings['pricing'],
             'reserve':settings['request_reserve_usd'],
@@ -169,6 +171,8 @@ def run(root, args):
     templates = yaml.safe_load((root/'config/prompt_templates.yaml').read_text(encoding='utf-8'))
     settings['templates_sha256']=digest(root/'config/prompt_templates.yaml')
     settings['styles_sha256']=digest(root/'config/styles.yaml')
+    profile_file=root/'config/style_profiles.yaml'
+    settings['style_profiles_sha256']=digest(profile_file) if profile_file.exists() else None
     archive = root / settings['archive']
     if archive.is_file():
         extract_archive(archive,root/'inputs/unpacked')

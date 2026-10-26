@@ -2,7 +2,7 @@
 title: "打瘦瘦針前你應該先搞清楚這些事"
 description: "週纖達 vs 猛健樂 vs 口服版，效果差多少？停藥後會復胖嗎？副作用嚴重怎麼辦？進診間前先讀這篇。"
 pubDate: 2026-04-17
-heroImage: "./打瘦瘦針使用之前你該搞清楚的事-agelocked-099-20261021.webp"
+heroImage: "./editorial-099-20261026.webp"
 tags: ["GLP-1", "瘦瘦針", "週纖達", "猛健樂", "semaglutide", "tirzepatide", "減重", "臨床指南"]
 category: "介入與調校"
 slug: 'glp1-clinical-guide-tirzepatide'

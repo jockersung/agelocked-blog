@@ -2,7 +2,7 @@
 title: "手錶說 HRV 偏低，今天該擔心嗎？先看這 4 件事"
 description: "HRV 偏低先看資料品質、指標算法、個人趨勢與近期事件。理解用途與限制，不把單次通知當成發炎或恢復診斷。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.webp"
+heroImage: "./editorial-054-20261026.webp"
 tags: ["HRV", "心率變異度", "自律神經", "睡眠", "恢復", "穿戴裝置"]
 category: "精準健康工具"
 slug: hrv-recovery-guide
@@ -47,7 +47,7 @@ Apple HealthKit 的 HRV 資料型別是 SDNN。其他產品的夜間數字，可
 
 有變化，不代表一定找到了原因。它幫你提出問題，還不能替你下結論。
 
-![比較同一裝置下的個人趨勢，並記錄近期生活事件](./personal-baseline-agelocked-056-20261021.webp)
+![比較同一裝置下的個人趨勢，並記錄近期生活事件](./editorial-056-20261026.webp)
 
 ## HRV 可以透露什麼，不能透露什麼？
 

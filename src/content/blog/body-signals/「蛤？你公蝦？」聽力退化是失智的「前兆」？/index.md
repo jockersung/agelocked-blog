@@ -2,7 +2,7 @@
 title: '「蛤？你公蝦？」聽力退化是失智的「前兆」？'
 description: '你的耳朵正在悄悄罷工。你以為只是別人說話不清楚。其實，是你的耳朵裡有一群細胞正在死去——而且死了就不會再長回來。'
 pubDate: 2026-03-11
-heroImage: "./蛤？你公蝦？-agelocked-001-20261021.webp"
+heroImage: "./editorial-001-20261026.webp"
 tags: ['聽力退化', '抗衰老', '失智']
 category: '身體訊號解讀'
 slug: "hearing-loss-dementia-signal"

@@ -2,7 +2,7 @@
 title: '廠商那張SGS合格報告和你吃進去有沒有用，是兩件事'
 description: 'SGS是真實的檢驗機構，SGS報告是真實的文件——但標準版的SGS報告測的是安全性，不是有效性。這篇說清楚SGS報告能告訴你什麼、不能告訴你什麼，以及你應該用什麼標準來判斷一個產品值不值得買。'
 pubDate: 2026-03-11
-heroImage: "./SGS合格-agelocked-112-20261021.webp"
+heroImage: "./editorial-112-20261026.webp"
 tags: ['保健品選購', 'SGS', '品質標準', '科學選品', '精準健康']
 category: '精準健康工具'
 slug: "sgs-report-vs-efficacy"

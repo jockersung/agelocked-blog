@@ -2,7 +2,7 @@
 title: "LDL 看起來還好，為什麼醫師還會看 ApoB？"
 description: "LDL-C 看膽固醇總量，ApoB 提供脂蛋白顆粒數量線索。了解何時可能有額外用途，以及應該帶去門診的問題。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.webp"
+heroImage: "./editorial-051-20261026.webp"
 tags: ["ApoB", "LDL", "血脂", "動脈硬化", "代謝症候群", "精準檢測"]
 category: "精準健康工具"
 slug: apob-vs-ldl
@@ -23,7 +23,7 @@ LDL-C 和 ApoB 的差別，可以從這裡開始理解。但這個比喻，不�
 
 這裡說的是臨床上的間接估計，並不是報告會直接列出「幾台車」。LDL、IDL、VLDL 殘餘顆粒與 Lp(a) 都可能參與其中；把它們留在血管壁裡的長期暴露，是動脈硬化風險的一部分。[1][2]
 
-![貨物總量相近，運送顆粒的數量可能不同，這是概念示意](./truck-analogy-agelocked-052-20261021.webp)
+![貨物總量相近，運送顆粒的數量可能不同，這是概念示意](./editorial-052-20261026.webp)
 
 ![LDL-C、ApoB、Lp(a)的概念圖解](./body-extra-057-20261025.webp)
 

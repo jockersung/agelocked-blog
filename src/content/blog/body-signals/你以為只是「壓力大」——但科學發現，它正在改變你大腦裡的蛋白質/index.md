@@ -2,7 +2,7 @@
 title: '你以為只是「壓力大」——但科學發現，它正在改變你大腦裡的蛋白質'
 description: '2026年《Science Signaling》最新研究揭示：長期壓力透過RAB5IF蛋白→粒線體→SUMO化→BDNF訊號這條具體的分子路徑，從細胞層級改變大腦。這不是心情問題，這是生理變化。'
 pubDate: 2026-04-03
-heroImage: "./壓力大改變你大腦-agelocked-068-20261021.webp"
+heroImage: "./editorial-068-20261026.webp"
 tags: ['慢性壓力', '粒線體', 'BDNF', '憂鬱', '神經科學', '身體訊號', '腦霧']
 category: '身體訊號解讀'
 ctaType: 'soft'

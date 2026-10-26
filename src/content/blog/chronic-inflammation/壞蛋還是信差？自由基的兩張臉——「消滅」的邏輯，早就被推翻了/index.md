@@ -2,7 +2,7 @@
 title: '壞蛋還是信差？自由基的兩張臉——「消滅」的邏輯，早就被推翻了'
 description: '「消滅自由基」的邏輯已被科學推翻一半。低濃度自由基不是在傷害你，它是細胞防禦系統的啟動訊號。真正的問題是：你的身體接收這個訊號的能力，正在隨年齡失靈。'
 pubDate: 2026-03-09
-heroImage: "./自由基的兩張臉-agelocked-086-20261021.webp"
+heroImage: "./editorial-086-20261026.webp"
 tags: ['自由基', 'ROS', 'Nrf2', '粒線體', 'Mitohormesis', '抗氧化', '氧化壓力', '抗老']
 category: '慢性發炎科學'
 slug: "free-radical-two-faces"

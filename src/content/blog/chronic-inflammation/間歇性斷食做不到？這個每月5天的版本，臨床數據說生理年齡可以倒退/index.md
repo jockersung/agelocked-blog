@@ -2,7 +2,7 @@
 title: '間歇性斷食做不到？這個每月5天的版本，臨床數據說生理年齡可以倒退'
 description: '168斷食太難維持、長期熱量限制根本不可能——但每個月只需要5天的模擬斷食飲食，在臨床試驗中讓受試者生理年齡平均下降2.6歲。這篇說清楚它是怎麼運作的。'
 pubDate: 2026-03-01
-heroImage: "./模擬間歇性斷食-agelocked-097-20261021.webp"
+heroImage: "./editorial-097-20261026.webp"
 tags: ['模擬斷食', '熱量限制', '生理年齡', '自噬', '抗衰老']
 category: '慢性發炎科學'
 slug: "fasting-mimicking-diet-5days"

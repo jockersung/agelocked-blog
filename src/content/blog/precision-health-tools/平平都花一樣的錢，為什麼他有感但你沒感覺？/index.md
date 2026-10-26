@@ -2,7 +2,7 @@
 title: '平平都花一樣的錢，為什麼他有感但你沒感覺？'
 description: '你花錢買了成分，但成分有沒有進到細胞，取決於劑型、配方、服用時機、和你自己的腸道狀態。這篇說清楚生物利用率是什麼，以及它為什麼比成分本身更重要。'
 pubDate: 2026-03-11
-heroImage: "./同樣成分吸收不同-agelocked-111-20261021.webp"
+heroImage: "./editorial-111-20261026.webp"
 tags: ['保健品選購', '生物利用率', '吸收率', '科學選品', '精準健康']
 category: '精準健康工具'
 slug: "supplement-bioavailability-gap"

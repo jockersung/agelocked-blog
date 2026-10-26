@@ -1,9 +1,11 @@
-def build_prompt(task, templates):
+from .style_profiles import apply_profile
+
+def build_prompt(task, templates, profile_root=None):
     if task['type'] == 'C' or task.get('reuse_of'):
         raise ValueError('TASK_DOES_NOT_USE_GENERATIVE_IMAGE_API')
     if task['type'] == 'D':
         # Do not send Excel's full-product prompt into image generation.
-        return templates['product'] + '\n' + templates['general']
+        return apply_profile(task, templates['product'] + '\n' + templates['general'], profile_root)
     parts = [task['prompt'], templates['general']]
     if '照原構圖' in task['action']:
         parts.append(templates['redraw'])
@@ -15,4 +17,9 @@ def build_prompt(task, templates):
                      'Render the COMPLETE article title verbatim in large bold Traditional Chinese typography, '
                      'deep teal, at most TWO lines. Adjust type size to preserve the full title without clipping. '
                      'No other text. Exact title: '+task['article_title'])
-    return '\n\n'.join(parts)
+    if task['type']=='B':
+        parts.append('USER BODY ANNOTATION OVERRIDE: Preserve original molecule names, scientific labels, explanations, axes, units and legends. '
+                     'Disregard earlier instructions to remove original text or leave blank labels. '
+                     'Do not add an article headline, decorative title or slogan. '
+                     'Do not invent or alter numerical results; uncertain data require review.')
+    return apply_profile(task, '\n\n'.join(parts), profile_root)

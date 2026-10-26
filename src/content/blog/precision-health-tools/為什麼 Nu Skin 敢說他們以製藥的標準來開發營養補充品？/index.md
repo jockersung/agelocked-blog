@@ -2,7 +2,7 @@
 title: '為什麼 Nu Skin 敢說他們以製藥的標準來開發營養補充品？'
 description: '上一篇說了四個真正有意義的品質標準：配方科學依據、人體臨床試驗、製藥等級生產、有效劑量。這篇來逐一對照Nu Skin實際做了什麼——包括GMP等級、NSF認證、PDR收錄、以及6S品質流程的具體內容。'
 pubDate: 2026-03-07
-heroImage: "./NuSkin產品標準-agelocked-115-20261021.webp"
+heroImage: "./editorial-115-20261026.webp"
 tags: ['Nu Skin', '製藥標準', 'GMP', 'NSF', '保健品品質', '精準健康']
 category: '精準健康工具'
 ctaType: 'hard'

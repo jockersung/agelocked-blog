@@ -2,7 +2,7 @@
 title: '你的 Prysm iO 分數出來了——這個數字對你意味著什麼？完整教學 + 六色分數全解析'
 description: '15 秒實測完整教學 + 六色分數全解析，讀懂你的抗氧化水位，找到最適合你的下一步'
 pubDate: 2026-02-24
-heroImage: "./光譜指數-agelocked-031-20261021.webp"
+heroImage: "./editorial-031-20261026.webp"
 tags: ['抗氧化', 'Prysm-iO', '教學', '健康管理']
 category: '精準健康工具'
 ctaType: 'hard'

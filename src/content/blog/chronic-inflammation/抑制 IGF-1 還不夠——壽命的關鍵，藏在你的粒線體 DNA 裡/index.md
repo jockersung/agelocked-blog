@@ -2,7 +2,7 @@
 title: "抑制 IGF-1 還不夠——壽命的關鍵，藏在你的粒線體 DNA 裡"
 description: "最新《Science Advances》研究揭示：IGF-1 抑制能否延長壽命，取決於粒線體基因體的穩定性。這對抗老策略意味著什麼？"
 pubDate: 2026-04-16
-heroImage: "./壽命的關鍵在粒線體DNA-agelocked-089-20261021.webp"
+heroImage: "./editorial-089-20261026.webp"
 tags: ["粒線體", "IGF-1", "抗老科學", "粒線體DNA", "長壽機制"]
 category: "慢性發炎科學"
 slug: igf1-mitochondria-dna-longevity

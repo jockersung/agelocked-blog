@@ -1,0 +1,56 @@
+version: '2026-10-25'
+name: AGELOCKED Warm Editorial System
+description_zh: 溫潤紙感健康編輯插畫，搭配極簡編輯式資訊圖解
+default_illustration: warm_editorial
+default_diagram: minimal_infographic
+background: '#FAF7F2'
+palette: ['#1F5C5C', '#2E8B8B', '#8FB9A8', '#E0A43A', '#E8613C']
+font: Noto Sans TC
+diagram_keywords: ['流程', '比較', '對照', '表格', '清單', '紀錄', '記錄', '步驟', '單位', '時間軸', 'workflow', 'comparison', 'checklist', 'table']
+profiles:
+  warm_editorial:
+    name_zh: 溫潤紙感健康編輯插畫
+    name_en: Warm Textured Editorial Health Illustration
+    use_for: 人物、生活情境、食物原料、器官與科學結構
+    guidance: >-
+      Warm textured editorial health illustration. Use gentle organic contours,
+      natural human proportions, subtle paper grain and restrained painterly shading.
+      Warm ivory background #FAF7F2, deep teal #1F5C5C, teal #2E8B8B, sage #8FB9A8,
+      restrained amber #E0A43A; orange-red #E8613C only where the subject warrants a warning.
+      Calm, humane, sophisticated health editorial storytelling, balanced open space.
+      Do not introduce photographic people, 3D renders, exaggerated faces, dramatic disease
+      imagery, decorative slogans, invented results or treatment promises.
+    anchors:
+      - style_references/editorial-20261025/warm-consultation.webp
+      - style_references/editorial-20261025/warm-ingredients.webp
+      - style_references/editorial-20261025/warm-science.webp
+  minimal_infographic:
+    name_zh: 極簡編輯式資訊圖解
+    name_en: Minimal Editorial Infographics
+    use_for: 流程、比較、單位、紀錄表與已確認數據圖表
+    guidance: >-
+      Minimal editorial information design using the same AGELOCKED ivory and teal palette.
+      Use precise flat diagrams, restrained thin-line icons, soft rounded panels,
+      clear hierarchy, generous spacing and accurate readable Traditional Chinese labels.
+      Choose a meaningful comparison, workflow, relationship diagram or worksheet layout;
+      do not substitute decorative repeated cards for a genuine explanation.
+      Keep units, legends and necessary scientific names legible. Do not use paper grain
+      over text, 3D, decorative article headlines, blank label boxes or invented data.
+      Numerical charts must be rendered locally from confirmed data, never generated.
+    anchors:
+      - style_references/editorial-20261025/diagram-comparison.webp
+      - style_references/editorial-20261025/diagram-worksheet.webp
+product_background_anchors:
+  - style_references/editorial-20261025/warm-ingredients.webp
+rules:
+  final_format: WebP
+  webp_quality: 85
+  cover_size: [2400, 1260]
+  inline_size: [2400, 1350]
+  cover_title: 完整文章標題，大字，最多兩行
+  body_text: 保留科學名稱與必要說明，不加文章式大標題，不留空白標籤
+  scientific_charts: 保留核准數據、單位、座標軸、圖例、誤差與來源；以本機程式重繪
+  products: 保留已核對官方來源或已核准卡通素材的包裝、標籤與比例；不生成假包裝
+  safety: 不虛構病例、診斷、研究數值、療效或官方認證
+  article_consistency: 同文人物、用色、線條與陰影保持一致；依功能選插畫或圖解
+  originals: 不覆蓋原圖；新版本需審核後整合

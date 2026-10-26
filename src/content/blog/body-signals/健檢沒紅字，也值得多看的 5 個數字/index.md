@@ -2,7 +2,7 @@
 title: "健檢沒紅字，還要看什麼？5 個值得和醫師討論的數字"
 description: "先看健檢報告驗過哪些項目，再認識 HbA1c、TG/HDL、hs-CRP、ApoB、Lp(a) 的用途與限制，整理值得和醫師討論的問題。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.webp"
+heroImage: "./editorial-042-20261026.webp"
 tags: ["健康檢查", "成人健檢", "HbA1c", "hs-CRP", "ApoB", "Lp(a)", "三酸甘油脂"]
 category: "身體訊號解讀"
 slug: checkup-five-numbers
@@ -75,7 +75,7 @@ Lp(a) 主要受基因影響。家人年輕時就有心肌梗塞或其他心血�
 
 有些報告用 mg/dL，有些用 nmol/L，兩者不能用固定倍數精準換算。更多說明見 [家人年輕就心肌梗塞？認識 Lp(a) 這條遺傳風險線索](/blog/chronic-inflammation/lpa-genetic-risk/)。
 
-![五項檢驗各自提供不同資訊，選擇前先看個人需求](./five-numbers-agelocked-044-20261021.webp)
+![五項檢驗各自提供不同資訊，選擇前先看個人需求](./editorial-044-20261026.webp)
 
 ## 下次回診，把問題問得更具體
 

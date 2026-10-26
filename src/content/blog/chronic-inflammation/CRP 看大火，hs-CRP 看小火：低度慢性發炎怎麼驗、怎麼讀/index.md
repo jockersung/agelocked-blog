@@ -2,7 +2,7 @@
 title: "CRP 正常，還需要看 hs-CRP 嗎？先看單位，再讀數字"
 description: "CRP <0.5 怎麼看？先確認 mg/dL 或 mg/L、檢驗方法與抽血狀況，再理解 hs-CRP 的風險分層、複驗與限制。"
 pubDate: 2026-10-19
-heroImage: "./cover-editorial-20261025.webp"
+heroImage: "./editorial-045-20261026.webp"
 tags: ["hs-CRP", "C反應蛋白", "慢性發炎", "心血管風險", "血液檢查"]
 category: "慢性發炎科學"
 slug: hs-crp-low-grade-inflammation
@@ -25,7 +25,7 @@ CRP 是 C 反應蛋白，身體發炎時，血中濃度可能升高。一般 CRP
 
 所以「CRP 正常，要不要再驗 hs-CRP」，需要先知道原本的方法與用途。單看「<0.5」，不能斷定機器量不到，也不能直接說沒有慢性發炎。
 
-![CRP 與 hs-CRP 量測同一種蛋白，差異在低濃度範圍的量測能力](./crp-vs-hscrp-agelocked-046-20261021.webp)
+![CRP 與 hs-CRP 量測同一種蛋白，差異在低濃度範圍的量測能力](./editorial-046-20261026.webp)
 
 ## 報告拿到手，先找這四個欄位
 

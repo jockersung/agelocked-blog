@@ -2,7 +2,7 @@
 title: '「本產品通過FDA認證」和你以為的FDA認證根本不一樣'
 description: '「本產品通過FDA認證」——這句話在台灣的保健品市場被反覆使用。但FDA根本不認證保健品。這篇說清楚FDA對保健品的實際監管範圍，以及什麼樣的認證才真正有意義。'
 pubDate: 2026-03-07
-heroImage: "./本產品通過FDA認證和你想的不一樣-agelocked-104-20261021.webp"
+heroImage: "./editorial-104-20261026.webp"
 tags: ['保健品選購', 'FDA', '監管標準', '科學選品', '精準健康']
 category: '精準健康工具'
 ctaType: 'hard'

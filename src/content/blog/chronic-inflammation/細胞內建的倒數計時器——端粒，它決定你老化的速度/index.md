@@ -2,7 +2,7 @@
 title: '細胞內建的倒數計時器——端粒，它決定你老化的速度'
 description: '每次細胞分裂，染色體末端就縮短一點。這不是比喻，這是2009年諾貝爾獎確認的生物機制。但端粒縮短的速度，不是命中注定的——慢性發炎和氧化壓力，是加速這個倒數的主要推手。'
 pubDate: 2026-03-11
-heroImage: "./端粒是細胞倒數計時器-agelocked-094-20261021.webp"
+heroImage: "./editorial-094-20261026.webp"
 tags: ['端粒', '細胞老化', '慢性發炎', 'Inflammaging', '氧化壓力', '生物年齡']
 category: '慢性發炎科學'
 slug: "telomere-aging-clock"

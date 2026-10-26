@@ -2,7 +2,7 @@
 title: "不是卡路里，是你的荷爾蒙！3 大荷爾蒙陷阱大公開"
 description: "內臟脂肪不是原因，是結果——而且它會成為新的原因。三個荷爾蒙迴路互相強化，解釋為什麼少吃多動在中年之後越來越難奏效。"
 pubDate: 2026-03-11
-heroImage: "./三大荷爾蒙陷阱-agelocked-081-20261021.webp"
+heroImage: "./editorial-081-20261026.webp"
 tags: ["胰島素阻抗", "皮質醇", "睪固酮", "內臟脂肪", "慢性發炎", "代謝"]
 category: "慢性發炎科學"
 slug: "visceral-fat-three-cycles"

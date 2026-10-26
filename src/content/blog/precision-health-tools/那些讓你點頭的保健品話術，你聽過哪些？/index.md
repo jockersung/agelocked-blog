@@ -2,7 +2,7 @@
 title: '那些讓你點頭的保健品話術，你聽過哪些？'
 description: '「天然最好」「SGS認證有保障」「我家那個吃了生龍活虎」——你知道這些說法有問題，但還是半信半疑。這篇說清楚話術為什麼有效，以及你對保健品的期待從一開始就設錯了。'
 pubDate: 2026-03-07
-heroImage: "./保健品話術-agelocked-117-20261021.webp"
+heroImage: "./editorial-117-20261026.webp"
 tags: ['保健品選購', '話術破解', '科學選品', '精準健康']
 category: '精準健康工具'
 slug: "supplement-marketing-tactics"

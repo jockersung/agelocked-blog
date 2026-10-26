@@ -2,7 +2,7 @@
 title: "別再只靠餓肚子對付腰部脂肪——三種多酚的研究在說什麼"
 description: "花青素、Oligonol®、兒茶素三種多酚，分別從腸道菌相重塑、產熱代謝、脂肪動員訊號延長三條路徑切入。這不是靠「燃燒卡路里」，而是修復那個讓你偏向囤積的訊號系統。"
 pubDate: 2026-03-11
-heroImage: "./三種多酚解決腰部脂肪-agelocked-110-20261021.webp"
+heroImage: "./editorial-110-20261026.webp"
 tags: ["花青素", "Oligonol", "兒茶素", "多酚", "內臟脂肪", "腸道菌", "COMT"]
 category: "精準健康工具"
 ctaType: 'hard'

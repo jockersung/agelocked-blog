@@ -2,7 +2,7 @@
 title: "老化不是零件壞了，是細胞「忘了」自己是誰"
 description: "你的 DNA 沒有壞掉——老化是細胞讀取指令出了錯。哈佛團隊 2023 年在《Cell》用小鼠實驗支持這個說法，2026 年第一個表觀遺傳重編程療法也獲准進入人體試驗。"
 pubDate: 2026-04-02
-heroImage: "./細胞忘了自己是誰-agelocked-116-20261021.webp"
+heroImage: "./editorial-116-20261026.webp"
 tags: ["表觀遺傳", "生物年齡", "David Sinclair", "老化理論", "抗老科學"]
 category: "精準健康工具"
 ctaType: 'hard'
@@ -18,7 +18,7 @@ slug: "epigenetic-dysregulation-2026-nature-review"
 
 科學家現在確認：真正決定你老化速度的，不是你的 DNA 寫了什麼，而是你的身體「讀對了多少」。
 
-![CD有刮痕](./CD有刮痕-agelocked-036-20261021.webp)
+![CD有刮痕](./editorial-036-20261026.webp)
 
 ---
 

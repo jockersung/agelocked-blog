@@ -2,7 +2,7 @@
 title: '你的身體幾歲了？（衰老可以測量嗎？2026版）'
 description: '身分證上的年齡只是數字，身體內部的「生物年齡」才是決定你老不老、會不會生病的關鍵。'
 pubDate: 2026-02-21
-heroImage: "./你的身體幾歲了-agelocked-032-20261021.webp"
+heroImage: "./editorial-032-20261026.webp"
 tags: ['抗氧化', '健康', '長壽']
 category: '精準健康工具'
 ctaType: 'hard'

@@ -2,7 +2,7 @@
 title: '你的身體老化速度，有辦法知道嗎？——三種方法，從專業到居家'
 description: '一個人有多老？我們必須透過身體檢查才可以得知一個生物個體衰老的程度。那又怎麼知道自己現在抗衰老能力如何？'
 pubDate: 2026-03-03
-heroImage: "./身體老化速度檢測-agelocked-107-20261021.webp"
+heroImage: "./editorial-107-20261026.webp"
 tags: ['健康', '抗衰老', '長壽科學']
 category: '精準健康工具'
 slug: "aging-speed-measurement-methods"
@@ -53,7 +53,7 @@ ctaType: 'hard'
 
 **限制：** 費用較高、需要專業機構、不適合頻繁追蹤。適合作為一次性的深度評估基準。
 
-![端粒檢測報告](./端粒檢測報告-agelocked-033-20261021.webp)
+![端粒檢測報告](./editorial-033-20261026.webp)
 
 ---
 

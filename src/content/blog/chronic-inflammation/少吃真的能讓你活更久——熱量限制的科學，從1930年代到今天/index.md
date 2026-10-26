@@ -2,7 +2,7 @@
 title: '少吃真的能讓你活更久——熱量限制的科學，從1930年代到今天'
 description: '從大鼠到恆河猴，從酵母菌到人類臨床試驗——減少20%的熱量攝取，是目前科學界最有跨物種一致性的抗老化介入方式。這篇說清楚它為什麼有效。'
 pubDate: 2026-03-04
-heroImage: "./熱量限制科學-agelocked-088-20261021.webp"
+heroImage: "./editorial-088-20261026.webp"
 tags: ['熱量限制', '抗衰老', 'Sirtuins', '自噬', '長壽科學']
 category: '慢性發炎科學'
 slug: "caloric-restriction-longevity-science"
@@ -81,7 +81,7 @@ ctaBridge: '想先了解自己的身體訊號現在在哪個程度？花 1 分�
 
 這個結果很重要，它同時證明了熱量限制對人體有效，也預告了它最大的實踐障礙。
 
-![生物圈二號](./生物圈二號-agelocked-011-20261021.webp)
+![生物圈二號](./editorial-011-20261026.webp)
 
 ---
 
