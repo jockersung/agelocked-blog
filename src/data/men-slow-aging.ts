@@ -61,6 +61,6 @@ export const MEN_PILLARS: Pillar[] = [
     concern: '健檢數字、活動能力、長期健康',
     intro: '心血管和代謝決定你十年後還能不能自在地爬山、跑跳、陪家人。報告沒紅字，不代表沒有值得多看的數字。',
     slugs: ['normal-checkup-still-tired', 'checkup-five-numbers', 'lpa-genetic-risk', 'hs-crp-low-grade-inflammation', 'hypertension-glymphatic-dementia', 'apob-vs-ldl'],
-    upcoming: ['爬兩層樓就喘，是年紀還是訊號？', '為什麼有些心臟科醫師自己也吃 statin？LDL 要降到多低才夠'],
+    upcoming: ['爬兩層樓就喘，是年紀還是訊號？', '為什麼有些心臟科醫師自己也吃 statin？LDL 要降到多低才夠', '降血脂藥吃了肌肉痠？從換藥到一年兩針的新選擇'],
   },
 ];
