@@ -16,26 +16,8 @@ export type Pillar = {
   upcoming?: string[]; // 規劃中的題目（只當作預告，不是承諾日期）
 };
 
+// 順序 = 健康島「男性慢老」導覽路線的站序：身材 → 臉蛋 → 性健康 → 禿頭、白髮 → 心血管 → 健檢站
 export const MEN_PILLARS: Pillar[] = [
-  {
-    id: 'sexual-health',
-    name: '性健康',
-    hook: '以前不必想的反應，現在開始讓你在意了嗎？',
-    concern: '晨勃、硬度、性慾、親密自信',
-    intro: '晨勃變少、硬度不同、中途變軟，很多男人只會偷偷擔心。先分清楚是累、沒慾望，還是勃起本身有變化，再決定下一步。',
-    slugs: ['male-fatigue-after-40', 'sleep-quality-testosterone'],
-    doctorNote: '勃起變化反覆發生、或已經造成困擾，請帶著紀錄和泌尿科醫師討論。勃起問題有時是血管健康的早期提醒，值得認真看待。',
-    upcoming: ['晨勃少了，代表什麼、不代表什麼？', '性慾、勃起、維持：三件常被混在一起的事', '看泌尿科前，可以先整理哪些紀錄？'],
-  },
-  {
-    id: 'hair',
-    name: '頭髮',
-    hook: '最讓你有年紀感的，是白髮，還是髮量？',
-    concern: '白髮、髮量、看起來顯老',
-    intro: '白髮和髮際線後退，是男人最早在鏡子裡看到的變化。它們各自有不同的原因，也各自有能做和不能做的事。',
-    slugs: ['white-hair-stem-cells', 'hairline-recession-warning'],
-    upcoming: ['頭髮需要的營養，從餐桌開始'],
-  },
   {
     id: 'body',
     name: '身材',
@@ -52,6 +34,25 @@ export const MEN_PILLARS: Pillar[] = [
     intro: '別人第一眼看到的年紀，大多來自臉。疲態、膚色和膚況，跟睡眠、壓力與日曬都有關係。',
     slugs: ['aging-quantified-bryan-johnson-blueprint'],
     upcoming: ['男人的皮膚，老得比你想的早：日曬是第一名', '洗臉、保濕、防曬：男人保養的基本三件事', '為什麼睡不好，會直接寫在臉上？'],
+  },
+  {
+    id: 'sexual-health',
+    name: '性健康',
+    hook: '以前不必想的反應，現在開始讓你在意了嗎？',
+    concern: '晨勃、硬度、性慾、親密自信',
+    intro: '晨勃變少、硬度不同、中途變軟，很多男人只會偷偷擔心。先分清楚是累、沒慾望，還是勃起本身有變化，再決定下一步。',
+    slugs: ['male-fatigue-after-40', 'sleep-quality-testosterone'],
+    doctorNote: '勃起變化反覆發生、或已經造成困擾，請帶著紀錄和泌尿科醫師討論。勃起問題有時是血管健康的早期提醒，值得認真看待。',
+    upcoming: ['晨勃少了，代表什麼、不代表什麼？', '性慾、勃起、維持：三件常被混在一起的事', '看泌尿科前，可以先整理哪些紀錄？'],
+  },
+  {
+    id: 'hair',
+    name: '禿頭、白髮',
+    hook: '最讓你有年紀感的，是白髮，還是髮量？',
+    concern: '白髮、髮量、看起來顯老',
+    intro: '白髮和髮際線後退，是男人最早在鏡子裡看到的變化。它們各自有不同的原因，也各自有能做和不能做的事。',
+    slugs: ['white-hair-stem-cells', 'hairline-recession-warning'],
+    upcoming: ['頭髮需要的營養，從餐桌開始'],
   },
   {
     id: 'heart',

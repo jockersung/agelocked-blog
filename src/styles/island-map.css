@@ -242,3 +242,35 @@ html.island-on,html.island-on body{overflow:hidden}
 .island-open{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:800;min-height:48px;padding:0 18px;border:0;border-radius:999px;background:#211d1d;color:#fff8f4;font:700 15px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;box-shadow:0 6px 20px #2a1a1040;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
 .island-open:hover{background:#db6a41}
 .island-open:focus-visible{outline:3px solid #db6a41;outline-offset:3px}
+
+/* 導覽路線 */
+.map-page #route{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(440px,calc(100vw - 720px));min-width:300px;border-radius:18px;padding:12px 14px 10px;z-index:12;display:grid;gap:6px}
+.map-page .rt-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.map-page .rt-head b{font:italic 700 20px/1 var(--m-num);color:var(--m-coral);font-variant-numeric:tabular-nums}
+.map-page .rt-station{font-size:16px;font-weight:800;line-height:1.35}
+.map-page .rt-dots{display:flex;gap:4px}
+.map-page .rt-dots i{flex:1;height:4px;border-radius:2px;background:#e3d6c8}
+.map-page .rt-dots i.done{background:var(--m-teal)}
+.map-page .rt-dots i.on{background:var(--m-coral)}
+.map-page .rt-btns{display:flex;gap:6px}
+.map-page .rt-btns .btn{min-height:40px;border:1px solid var(--m-line);background:#fff}
+.map-page .rt-btns .rt-next{flex:1;background:var(--m-ink);color:var(--m-cream);border-color:var(--m-ink)}
+.map-page .rt-btns .rt-next:hover{background:var(--m-coral)}
+.map-page .rt-btns .btn:disabled{opacity:.4;cursor:default}
+.map-page .help-box .btn.ghost{background:transparent;color:var(--m-ink);border:1px solid var(--m-line);margin-top:8px}
+/* 島主 Jason */
+.map-page .jtag{pointer-events:auto;cursor:pointer;background:var(--m-teal);color:#fff;border:0;border-radius:999px;padding:4px 10px;font:800 12px var(--m-font);white-space:nowrap;box-shadow:0 2px 8px #4a2a1430}
+.map-page .jbub{max-width:240px;background:#fff;color:var(--m-ink);border-radius:14px;padding:10px 12px;font-size:13.5px;line-height:1.55;font-weight:600;box-shadow:0 6px 18px #4a2a1430;position:relative;white-space:normal}
+.map-page .jbub::after{content:"";position:absolute;left:50%;bottom:-7px;transform:translateX(-50%);border:7px solid transparent;border-top-color:#fff;border-bottom:0}
+/* 站卡片 */
+.map-page .st-hook{font-size:15px;font-weight:700;color:var(--m-ink);margin:2px 0 8px}
+.map-page .ilist a.st-art{display:flex;gap:8px;align-items:flex-start;text-decoration:none;color:var(--m-ink);background:#f8f1ea;border-radius:10px;padding:9px 10px;font-size:13px;line-height:1.5}
+.map-page .ilist a.st-art:hover{background:var(--m-yellow)}
+.map-page .ilist a.st-art .n{flex:none;font-weight:700;color:var(--m-teal);font-size:11.5px;padding-top:1px}
+.map-page .st-up{margin:10px 0 0;padding:0 0 0 18px;color:var(--m-muted);font-size:12.5px;line-height:1.6}
+.map-page .st-doc{margin-top:12px;padding:10px 12px;border-radius:10px;background:#eef4f2;color:#1f4f4a;font-size:12.5px;line-height:1.6}
+@media (max-width:800px){
+  .map-page #route{top:108px;left:10px;right:70px;transform:none;width:auto;min-width:0;padding:10px 12px 8px}
+  .map-page .rt-station{font-size:15px}
+  .map-page .jbub{max-width:200px;font-size:12.5px}
+}

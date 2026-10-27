@@ -7,6 +7,8 @@ const { mode } = Astro.props;
 import { getCollection } from 'astro:content';
 import { getUrlSlug } from '../utils/categories';
 import { ISLANDS, LAND, DAY_CYCLE, FLOW_MIN, STEPS, DEFAULT_MODEL } from '../data/island-map';
+import { ROUTES } from '../data/island-routes';
+import { MEN_PILLARS } from '../data/men-slow-aging';
 import '../styles/island-map.css';
 
 const TIER: Record<string, number> = { '身體訊號解讀': 1, '慢性發炎科學': 2, '精準健康工具': 3, '介入與調校': 4 };
@@ -42,13 +44,25 @@ const islands = ISLANDS.map((isl) => ({
 const unplaced: string[] = [];
 for (const a of bySlug.values()) {
   if (placed.has(a.slug)) continue;
-  const open = islands.filter((i) => i.items.length < MAX_PER_ISLAND)
+  // noAuto 的島（例如性健康）不自動放新文章，避免產品或無關文章混進來
+  const open = islands.filter((i) => i.items.length < MAX_PER_ISLAND && !(i as { noAuto?: boolean }).noAuto)
     .sort((x, y) => Math.abs(x.tier - a.tier) - Math.abs(y.tier - a.tier) || x.items.length - y.items.length);
   if (!open.length) { unplaced.push(a.slug); continue; }
   open[0].items.push({ id: a.slug, name: shortName(a.title), model: DEFAULT_MODEL[a.tier], tier: a.tier, desc: a.title, facts: [], url: a.url });
   placed.add(a.slug);
 }
 
+// 導覽路線：把每一站的主題（pillar）展開成標題、提問、文章清單
+const routes = ROUTES.map((r) => ({
+  ...r,
+  stations: r.stations.map((st) => {
+    const pl = st.pillar ? MEN_PILLARS.find((p) => p.id === st.pillar) : undefined;
+    const arts = (pl?.slugs ?? []).map((s) => bySlug.get(s)).filter((a): a is NonNullable<typeof a> => !!a)
+      .map((a) => ({ id: a.slug, title: a.title, url: a.url, tier: a.tier })).sort((x, y) => x.tier - y.tier);
+    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, jason: st.jason,
+      hook: pl?.hook ?? '', intro: pl?.intro ?? '', concern: pl?.concern ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [], articles: arts };
+  }),
+}));
 const articles = Object.fromEntries([...bySlug.values()].map((a) => [a.slug, { sum: a.sum, out: a.out.filter((s) => bySlug.has(s)) }]));
 const data = {
   city: 'AGELOCKED',
@@ -56,7 +70,7 @@ const data = {
   links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/blog' },
   islands, land: LAND, flowMin: FLOW_MIN,
   dayCycle: DAY_CYCLE.map((d) => ({ ...d, items: d.items.filter((s: string) => placed.has(s) || s.startsWith('page-')) })),
-  articles, missing, unplaced,
+  articles, missing, unplaced, routes,
 };
 const total = bySlug.size;
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
@@ -129,6 +143,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
     <button class="btn" id="tPano" title="回到全景"><b>⌂</b>全景</button>
     <button class="btn" id="tList" aria-pressed="true" title="主題清單"><b>☰</b>清單</button>
     <button class="btn" id="tAbout" title="作者孫義坤"><b>i</b>作者</button>
+    <button class="btn" id="tRoute" title="跟著島主 Jason 走一趟"><b>➤</b>導覽</button>
     <button class="btn" id="tHelp" title="操作說明"><b>?</b>說明</button>
     <button class="btn" id="tText" title={mode === 'home' ? '切換成原本的文字首頁' : '切換成文字版文章地圖'}><b>文</b>文字版</button>
   </nav>
@@ -164,6 +179,17 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
   <span class="ev"><i class="pending"></i>帶回前一步</span>
 </div>
 
+<div id="route" class="glass" hidden aria-live="polite">
+  <div class="rt-head"><span class="eyebrow" id="rtName">男性慢老路線</span><b id="rtProg">1 / 6</b></div>
+  <div class="rt-station" id="rtStation"></div>
+  <div class="rt-dots" id="rtDots" aria-hidden="true"></div>
+  <div class="rt-btns">
+    <button class="btn" id="rtPrev" type="button">← 上一站</button>
+    <button class="btn rt-next" id="rtNext" type="button">下一站 →</button>
+    <button class="btn" id="rtExit" type="button" aria-label="結束導覽">×</button>
+  </div>
+</div>
+
 <div id="hud" class="glass">
   <div id="clock"><b id="clockT">10:00</b><span id="clockS">上午工作</span></div>
   <button class="btn" data-time="360"><b>06</b>清晨</button>
@@ -191,7 +217,8 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
       <li><span>點島上的<b>小建物</b>或號碼 ①②③，每一棟都是網站上的一篇文章，可以直接點去讀全文。</span></li>
       <li><span>用下方<b>時段</b>與開關，看一天之中哪些身體訊號亮起，小人如何把內容搬往下一層。</span></li>
     </ol>
-    <button class="btn" id="helpOk">開始逛</button>
+    <button class="btn" id="helpRoute" type="button">跟著島主走：男性慢老 6 站</button>
+    <button class="btn ghost" id="helpOk">自己逛</button>
   </div>
 </div>
 
