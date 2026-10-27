@@ -57,7 +57,7 @@ const routes = ROUTES.map((r) => ({
   ...r,
   stations: r.stations.map((st) => {
     const pl = st.pillar ? MEN_PILLARS.find((p) => p.id === st.pillar) : undefined;
-    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, jason: st.jason,
+    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, jason: st.jason, audio: st.audio,
       hook: pl?.hook ?? '', intro: pl?.intro ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [] };
   }),
 }));
@@ -100,6 +100,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
     {byStep.map(({ t, isl, st }) => (
       <>
         <div class="fb-step"><b>{t}</b><h2>{isl.stationName}</h2><span>{st?.hook || isl.summary}</span></div>
+        {st?.audio && <p><small>島主 Jason 本人聲音導覽（AI 合成）</small><br/><audio controls preload="none" src={st.audio} aria-label={`${isl.stationName}：Jason 開場白`}></audio></p>}
         {isl.groups.map((g) => (
           <div class="fb-isl">
             <h3><i style={`background:${isl.color}`}></i>{g.name}</h3>
@@ -212,7 +213,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
     <h2 id="helpT">三步看懂健康島</h2>
     <ol>
       <li><span>島由北到南分成<b>六站</b>：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站，每站的建物都是一篇文章。</span></li>
-      <li><span>用<b>方向鍵或 WASD</b> 操控島主 Jason 走路，走到建物旁按 <b>Enter</b> 看文章；用滑鼠或手指<b>點地面</b>，Jason 會走過去。</span></li>
+      <li><span>用<b>方向鍵或 WASD</b> 操控島主 Jason 走路，走到建物旁按 <b>Enter</b> 看文章；用滑鼠或手指<b>點地面</b>，Jason 會走過去。點「🔊 島主 Jason」或角色本人，可播放本站的本人聲音開場白，再點一次停止。</span></li>
       <li><span>拖曳轉動地圖，<b>Q / E</b> 也能旋轉視角。不想自己走，就讓 Jason 帶你走一遍。</span></li>
     </ol>
     <button class="btn" id="helpRoute" type="button">跟著島主走：男性慢老 6 站</button>

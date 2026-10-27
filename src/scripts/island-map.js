@@ -1,3 +1,4 @@
+import { createGuideAudio, bindExclusiveAudio } from './island-guide-audio.js';
 import { createWalkSurface, acceptsMovementKey } from './island-movement.js';
 import { TAIWAN_COASTLINE } from '../data/taiwan-coastline.js';
 // 健康島 3D 引擎（首頁與 /map 共用）。資料在 build 時由 src/components/HealthIsland.astro 產生，放在 #map-data。
@@ -21,6 +22,8 @@ const mem = navigator.deviceMemory||8, cores = navigator.hardwareConcurrency||8,
 const LITE = QS.has('3d') ? false : (QS.has('lite') || !gpu || saveData || mem<=2 || cores<=2);
 const LOW = mem<=4 || cores<=4;
 const UI = ['#leftcol','#side','#hud','#hudToggle','#legend','#log','#disclaimer','#stage'];
+let stopGuideAudio=()=>{}, stopGuidePlayer=()=>{};
+bindExclusiveAudio(document,()=>stopGuidePlayer());
 let started = false, PAUSED = false; const savedUI = {};
 
 async function boot3D(){
@@ -32,18 +35,21 @@ async function boot3D(){
 }
 // ── /map：3D 與文字版文章地圖互切 ──
 function showFallback(reason){
+  stopGuideAudio();
   const fb=$('#fallback'); if(!fb) return; fb.hidden=false; loader.hidden=true; PAUSED=true;
   const r=$('#fbReason'); if(r) r.textContent=reason||'';
   UI.forEach(s=>{ const el=$(s); if(el){ savedUI[s]=el.hidden; el.hidden=true; } });
   track('map_view',{mode:'text',reason:reason?'auto':'click'});
 }
 function show3D(){
+  stopGuideAudio();
   if(!started){ location.search='?3d'; return; }
   $('#fallback').hidden=true; UI.forEach(s=>{ const el=$(s); if(el) el.hidden=!!savedUI[s]; });
   PAUSED=false; window.__islandWake&&window.__islandWake(); track('map_view',{mode:'3d'});
 }
 // ── 首頁：健康島與原本的文字首頁互切 ──
 function goText(auto){
+  stopGuideAudio();
   ROOT.hidden=true; document.documentElement.classList.remove('island-on'); PAUSED=true;
   const ob=$('#islandOpen'); if(ob) ob.hidden=false;
   if(!auto){ pref.set('text'); track('home_view',{mode:'text'}); window.scrollTo(0,0); }
@@ -904,10 +910,34 @@ const jason = new THREE.Group();
   add(new THREE.SphereGeometry(.5,16,8,0,Math.PI*2,Math.PI/2,Math.PI/2),mouth,0,.272,.07,.03,.016,.01); // 微笑（不露牙）
   const sh=new THREE.Mesh(wGeo.shadow,new THREE.MeshBasicMaterial({color:'#2a1d14',transparent:true,opacity:.25,depthWrite:false})); sh.position.y=.004; jason.add(sh);
   jason.scale.setScalar(2.1); }
-const jTagEl=document.createElement('button'); jTagEl.className='jtag'; jTagEl.type='button'; jTagEl.textContent='島主 Jason';
+const jTagEl=document.createElement('button'); jTagEl.className='jtag'; jTagEl.type='button'; jTagEl.id='jasonVoice'; jTagEl.textContent='🔊 島主 Jason'; jTagEl.setAttribute('aria-pressed','false'); jTagEl.setAttribute('aria-label','播放本站 Jason 本人聲音開場白（AI 合成）'); jTagEl.title='點擊播放本人聲音，再點一次停止';
 const jTag=new CSS2DObject(jTagEl); jTag.position.set(0,.46,0); jason.add(jTag);
 const bubEl=document.createElement('div'); bubEl.className='jbub'; const bub=new CSS2DObject(bubEl); bub.position.set(0,.63,0); bub.visible=false; jason.add(bub);
 function say(t){ bubEl.textContent=t; bub.visible=true; dirty=true; clearTimeout(say.t); say.t=setTimeout(()=>{ bub.visible=false; dirty=true; },10000); }
+// Local, pre-generated personal voice clips; no visitor API requests or keys.
+const guideMedia=document.createElement('audio'); guideMedia.id='jasonGuideAudio'; guideMedia.preload='none'; ROOT.appendChild(guideMedia);
+const guideVoice=createGuideAudio(guideMedia,{
+  onState(state){
+    const active=state==='loading'||state==='playing';
+    jTagEl.textContent=active?'■ 停止語音':'🔊 島主 Jason';
+    jTagEl.setAttribute('aria-pressed',String(active)); jTagEl.setAttribute('aria-busy',String(state==='loading'));
+    jTagEl.setAttribute('aria-label',active?'停止 Jason 本人聲音導覽':'播放本站 Jason 本人聲音開場白（AI 合成）');
+    if(active){ clearTimeout(say.t); bub.visible=true; }
+    dirty=true;
+  },
+  onError(){ say('語音暫時無法播放，請再點島主重試。你也可以先閱讀文字。'); }
+});
+stopGuidePlayer=()=>guideVoice.stop();
+stopGuideAudio=()=>{ stopGuidePlayer(); ROOT.querySelectorAll('audio').forEach(a=>a.pause()); };
+addEventListener('pagehide',stopGuideAudio);
+document.addEventListener('visibilitychange',()=>{ if(document.hidden) stopGuideAudio(); });
+function toggleJasonVoice(){
+  if(guideVoice.isActive()){ guideVoice.stop(); return; }
+  let st=route?ROUTES[route.r].stations[route.k]:ROUTES.flatMap(r=>r.stations).find(s=>s.island===hexAt(jason.position.x,jason.position.z)?.id);
+  if(!st){ startRoute(0); st=ROUTES[0].stations[0]; }
+  say(st.jason);
+  if(st.audio) guideVoice.play(st.audio);
+}
 const stationNode = (islId)=> islById[islId] ? islById[islId].i*12+4 : 0; // 島的南側（鏡頭這一側），避開路燈
 const J={ path:null, cum:null, len:0, s:0, speed:1, arrive:null }; let jNode=null;
 function jasonGo(target,onArrive){
@@ -937,7 +967,7 @@ function jasonWalkTo(point,onArrive){ if(!jason.parent) return; const end=point.
 const keys=new Set(); let jZone=-1;
 const KEYMAP={ArrowUp:'u',KeyW:'u',ArrowDown:'d',KeyS:'d',ArrowLeft:'l',KeyA:'l',ArrowRight:'r',KeyD:'r'};
 function zoneCheck(){ const h=hexAt(jason.position.x,jason.position.z); const z=h&&!h.land?h.i:-1; if(z===jZone) return; jZone=z;
-  if(z>=0){ const s=ISL[z];
+  if(z>=0){ const s=ISL[z]; guideVoice.stop();
     const k=route?ROUTES[route.r].stations.findIndex(st=>st.island===s.id):-1;
     if(k>=0){ route.k=k; routeUI(); showRouteVis(route.r,k); }
     say(`第 ${s.station} 站・${s.name}：走到子主題旁按 Enter 看文章`); track('jason_enter',{island:s.id}); } }
@@ -998,20 +1028,20 @@ function routeUI(){ const R0=ROUTES[route.r], n=R0.stations.length, st=R0.statio
   $('#rtDots').innerHTML=R0.stations.map((_,i)=>`<i class="${i<route.k?'done':i===route.k?'on':''}"></i>`).join('');
   $('#rtPrev').disabled=route.k===0; $('#rtNext').textContent=route.k===n-1?'完成 ✓':'下一站 →'; }
 function goStation(k){ const R0=ROUTES[route.r]; const st=R0.stations[k]; const s=islById[st.island]; if(!s) return;
-  route.k=k; routeUI(); bub.visible=false; showRouteVis(route.r,k);
+  guideVoice.stop(); route.k=k; routeUI(); bub.visible=false; showRouteVis(route.r,k);
   sel={type:'island',i:s.i}; openCard(cardStation(route.r,k)); afterSelect();
   if(mqMobile.matches) $('#card').style.height='46vh';
   flyTo(new THREE.Vector3(s.x,TOP,s.z),OFF_ISL);
   jasonGo(stationNode(st.island),()=>say(st.jason));
   track('route_station',{route:R0.id,station:st.id,step:k+1}); }
 function startRoute(r=0){ if(!ROUTES[r]) return; route={r,k:0}; rtEl.hidden=false; $('#help').hidden=true; lsSet('agelocked-island-help','1'); track('route_start',{route:ROUTES[r].id}); goStation(0); }
-function endRoute(done){ if(!route) return; if(done) track('route_complete',{route:ROUTES[route.r].id}); route=null; rtEl.hidden=true; showRouteVis(-1,0); dirty=true; }
+function endRoute(done){ guideVoice.stop(); if(!route) return; if(done) track('route_complete',{route:ROUTES[route.r].id}); route=null; rtEl.hidden=true; showRouteVis(-1,0); dirty=true; }
 $('#rtPrev').onclick=()=>{ if(route&&route.k>0) goStation(route.k-1); };
 $('#rtNext').onclick=()=>{ if(!route) return; const n=ROUTES[route.r].stations.length; if(route.k<n-1) goStation(route.k+1); else { endRoute(true); say('走完了！想知道自己的狀況，從健檢站開始最快。'); } };
 $('#rtExit').onclick=()=>endRoute(false);
 $('#tRoute').onclick=()=> route ? goStation(route.k) : startRoute(0);
 $('#helpRoute').onclick=()=>startRoute(0);
-jTagEl.onclick=e=>{ e.stopPropagation(); if(route) say(ROUTES[route.r].stations[route.k].jason); else startRoute(0); };
+jTagEl.onclick=e=>{ e.stopPropagation(); toggleJasonVoice(); };
 
 /* ---------- sidebar list ---------- */
 let tab='t';
@@ -1087,6 +1117,8 @@ renderer.domElement.addEventListener('pointerup',e=>{ if(!down) return; const mo
   WM.body.computeBoundingSphere(); WM.head.computeBoundingSphere();
   const targets=[...(st.carry?[WM.body,WM.head]:[]),...flowMeshes.filter(m=>m.visible),...kitMeshes.filter(m=>m.visible),...islandTops];
   const hits=ray.intersectObjects(targets,false);
+  const jHit=ray.intersectObject(jason,true).find(h=>h.object.isMesh);
+  if(jHit&&(!hits.length||jHit.distance<hits[0].distance)){ toggleJasonVoice(); return; }
   { const gp=new THREE.Vector3(); if(ray.ray.intersectPlane(new THREE.Plane(new THREE.Vector3(0,1,0),-TOP),gp)&&walkable(gp.x,gp.z)) jasonWalkTo(gp,()=>{ jZone=-2; zoneCheck(); }); }
   for(const h of hits){ const o=h.object;
     if(o===WM.body||o===WM.head){ if(h.instanceId<NW){ selectWalker(h.instanceId); return; } continue; }
