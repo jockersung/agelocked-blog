@@ -1,4 +1,14 @@
 // One player, no autoplay; stale play promises cannot revive a stopped clip.
+export function bindExclusiveAudio(doc, onOtherAudio, AudioType = HTMLAudioElement) {
+  doc.addEventListener('play', event => {
+    if (!(event.target instanceof AudioType)) return;
+    if (event.target.id !== 'jasonGuideAudio') onOtherAudio();
+    doc.querySelectorAll('audio').forEach(audio => {
+      if (audio !== event.target) audio.pause();
+    });
+  }, true);
+}
+
 export function createGuideAudio(audio, {onState = () => {}, onError = () => {}} = {}) {
   let version = 0, active = false;
   const state = value => onState(value);

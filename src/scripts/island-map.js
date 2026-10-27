@@ -1,4 +1,4 @@
-import { createGuideAudio } from './island-guide-audio.js';
+import { createGuideAudio, bindExclusiveAudio } from './island-guide-audio.js';
 import { createWalkSurface, acceptsMovementKey } from './island-movement.js';
 import { TAIWAN_COASTLINE } from '../data/taiwan-coastline.js';
 // 健康島 3D 引擎（首頁與 /map 共用）。資料在 build 時由 src/components/HealthIsland.astro 產生，放在 #map-data。
@@ -23,6 +23,7 @@ const LITE = QS.has('3d') ? false : (QS.has('lite') || !gpu || saveData || mem<=
 const LOW = mem<=4 || cores<=4;
 const UI = ['#leftcol','#side','#hud','#hudToggle','#legend','#log','#disclaimer','#stage'];
 let stopGuideAudio=()=>{};
+bindExclusiveAudio(document,()=>stopGuideAudio());
 let started = false, PAUSED = false; const savedUI = {};
 
 async function boot3D(){
@@ -41,6 +42,7 @@ function showFallback(reason){
   track('map_view',{mode:'text',reason:reason?'auto':'click'});
 }
 function show3D(){
+  stopGuideAudio();
   if(!started){ location.search='?3d'; return; }
   $('#fallback').hidden=true; UI.forEach(s=>{ const el=$(s); if(el) el.hidden=!!savedUI[s]; });
   PAUSED=false; window.__islandWake&&window.__islandWake(); track('map_view',{mode:'3d'});
@@ -925,14 +927,9 @@ const guideVoice=createGuideAudio(guideMedia,{
   },
   onError(){ say('語音暫時無法播放，請再點島主重試。你也可以先閱讀文字。'); }
 });
-stopGuideAudio=()=>guideVoice.stop();
+stopGuideAudio=()=>{ guideVoice.stop(); ROOT.querySelectorAll('audio').forEach(a=>a.pause()); };
 addEventListener('pagehide',stopGuideAudio);
 document.addEventListener('visibilitychange',()=>{ if(document.hidden) stopGuideAudio(); });
-document.addEventListener('play',e=>{
-  if(!(e.target instanceof HTMLAudioElement)) return;
-  if(e.target!==guideMedia) stopGuideAudio();
-  document.querySelectorAll('audio').forEach(a=>{if(a!==e.target)a.pause();});
-},true);
 function toggleJasonVoice(){
   if(guideVoice.isActive()){ guideVoice.stop(); return; }
   let st=route?ROUTES[route.r].stations[route.k]:ROUTES.flatMap(r=>r.stations).find(s=>s.island===hexAt(jason.position.x,jason.position.z)?.id);

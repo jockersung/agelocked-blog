@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,statSync} from 'node:fs';
-import {createGuideAudio} from '../../src/scripts/island-guide-audio.js';
+import {createGuideAudio,bindExclusiveAudio} from '../../src/scripts/island-guide-audio.js';
 
 class FakeAudio extends EventTarget {
   src=''; ended=false; error=null; paused=true;
@@ -45,4 +45,11 @@ test('six routes reference six real MP3s, including the approved pronunciation r
   assert.equal(files.length,6);assert.equal(new Set(files).size,6);
   for(const file of files){assert.ok(file.startsWith('/audio/island-guide/'));assert.ok(statSync(new URL('../../public'+file,import.meta.url)).size>10000);}
   assert.match(files[4],/05-heart-20261027-v2\.mp3$/);
+});
+test('lightweight text mode prevents overlapping audio without starting 3D',()=>{
+  const first=new FakeAudio(),second=new FakeAudio();let handler,stopped=0;
+  const doc={addEventListener(type,fn,capture){assert.equal(type,'play');assert.equal(capture,true);handler=fn;},querySelectorAll:()=>[first,second]};
+  bindExclusiveAudio(doc,()=>stopped++,FakeAudio);
+  first.paused=false;second.paused=false;handler({target:second});
+  assert.equal(first.paused,true);assert.equal(second.paused,false);assert.equal(stopped,1);
 });
