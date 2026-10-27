@@ -10,7 +10,7 @@ export const ROUTES: Route[] = [
     name: '男性慢老',
     intro: '跟著島主 Jason 走 6 站：從你在意的變化開始，最後換成自己的數據。',
     stations: [
-      { pillar: 'body', island: 'body', jason: '嗨，我是健康島島主 Jason！第一站先看最多人在意的：肚子和腰圍。' },
+      { pillar: 'body', island: 'body', jason: '嗨，我是健康島島主 Jason，我來帶你前進第一站——身材！在意發狂的小肚肚嗎？還看不見腳趾？我來幫你！' },
       { pillar: 'face', island: 'face', jason: '明明有睡，照片裡還是顯累？這一站聊男人的臉。' },
       { pillar: 'sexual-health', island: 'sexual-health', jason: '這一站比較私密，但很多人都在偷偷擔心：以前不用想的反應。' },
       { pillar: 'hair', island: 'hair', jason: '白髮和髮際線，是鏡子裡最早出現的年紀。' },

@@ -20,19 +20,18 @@ const posts = (await getCollection('blog'))
     return { p, slug, url: `/blog/${getUrlSlug(p)}/`, st, audio: a ? { file: a.file, min: Math.max(1, Math.round(a.seconds / 60)) } : null };
   });
 const count = Object.fromEntries(STATIONS.map((s) => [s.slug, posts.filter((x) => x.st.slug === s.slug).length]));
-const withAudio = posts.filter((x) => x.audio).length;
 ---
 <!doctype html>
 <html lang="zh-TW">
   <head>
-    <BaseHead title={`知識庫：${posts.length} 篇文章與語音版｜AGELOCKED`} description="男性慢老六站：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站。所有文章都有作者本人聲音的語音版，可依主題篩選、直接收聽。" />
+    <BaseHead title="知識庫：文字＋語音｜AGELOCKED" description="男性慢老六站：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站。所有文章都有作者本人聲音的語音版，可依主題篩選、直接收聽。" />
   </head>
   <body>
     <Header />
     <main class="kb">
       <section class="kb-hero">
         <p class="kb-eyebrow">AGELOCKED · 知識庫</p>
-        <h1>{posts.length} 篇文章，{withAudio} 篇可以用聽的</h1>
+        <h1>文字＋語音</h1>
         <p class="kb-lead">依「男性慢老」六站分類。挑一站、輸入關鍵字，或只看有語音版的文章，按 ▶ 就能邊做事邊聽。</p>
         <div class="kb-links">
           <a href="/map/">回到健康島地圖 →</a>
