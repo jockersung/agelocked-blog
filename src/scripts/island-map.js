@@ -1,4 +1,4 @@
-import { createGuideAudio, bindExclusiveAudio } from './island-guide-audio.js';
+import { createGuideAudio, bindExclusiveAudio, createStationGuide } from './island-guide-audio.js';
 import { createWalkSurface, acceptsMovementKey } from './island-movement.js';
 import { TAIWAN_COASTLINE } from '../data/taiwan-coastline.js';
 // 健康島 3D 引擎（首頁與 /map 共用）。資料在 build 時由 src/components/HealthIsland.astro 產生，放在 #map-data。
@@ -809,7 +809,7 @@ function cardGroup(i,k){ const s=ISL[i], g=s.groups[k];
   <div class="sec">文章 · ${g.slugs.length}</div><ul class="ilist">${g.slugs.map(artLi).join('')}</ul>
   <div class="chips" style="margin-top:12px"><button class="chip" data-isl="${s.i}">回到 ${esc(s.stationName)} 站</button>${s.groups.filter(x=>x!==g).map(x=>`<button class="chip" data-grp="${s.i}:${x.k}">${esc(x.name)}</button>`).join('')}</div>
   <a class="link" href="${kbLink(s)}">在知識庫看「${esc(s.stationName)}」全部文章 →</a>`; }
-function selectGroup(i,k){ sel={type:'group',i,k}; openCard(cardGroup(i,k)); afterSelect(); const g=ISL[i].groups[k]; flyTo(g.world.clone().setY(TOP+g.h*.4),OFF_ITEM); }
+function selectGroup(i,k){ setGuideStation(ISL[i].id); sel={type:'group',i,k}; openCard(cardGroup(i,k)); afterSelect(); const g=ISL[i].groups[k]; flyTo(g.world.clone().setY(TOP+g.h*.4),OFF_ITEM); }
 function cardIsland(i){ const s=ISL[i]; if(s.groups&&s.groups.length) return cardStationIsland(i); const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
   return `<div class="c-head"><span class="c-num">${s.station||i+1}</span><div><div class="eyebrow">第 ${s.station} 站 · ${esc(s.stationName)}${LANDMARKS[s.landmark]?' · 地標：'+LANDMARKS[s.landmark].name:''}</div>${tierChip(s.tier)}</div></div>
   <h2>${esc(s.name)}</h2><p>${esc(s.summary)}</p>
@@ -861,8 +861,8 @@ function renderThumb(id){ const cv=document.getElementById('thumb'); if(!cv) ret
   renderer.render(scene,cam); const g=cv.getContext('2d'); g.drawImage(renderer.domElement,0,renderer.domElement.height-S*pr,S*pr,S*pr,0,0,cv.width,cv.height);
   renderer.setScissorTest(false); renderer.setViewport(0,0,size.x,size.y); pinLines.visible=pv; flowMeshes.forEach(m=>m.visible=m.userData.v); dirty=true; }
 
-function selectIsland(i){ sel={type:'island',i}; openCard(cardIsland(i)); afterSelect(); const s=ISL[i]; flyTo(new THREE.Vector3(s.x,TOP,s.z),OFF_ISL); }
-function selectItem(id){ sel={type:'item',id}; openCard(cardItem(id)); afterSelect(); const it=itemById[id]; flyTo(it.world.clone().setY(TOP+it.h*.4),OFF_ITEM); renderThumb(id); }
+function selectIsland(i){ setGuideStation(ISL[i].id); sel={type:'island',i}; openCard(cardIsland(i)); afterSelect(); const s=ISL[i]; flyTo(new THREE.Vector3(s.x,TOP,s.z),OFF_ISL); }
+function selectItem(id){ setGuideStation(ISL[itemById[id].island].id); sel={type:'item',id}; openCard(cardItem(id)); afterSelect(); const it=itemById[id]; flyTo(it.world.clone().setY(TOP+it.h*.4),OFF_ITEM); renderThumb(id); }
 function selectFlow(fi){ sel={type:'flow',fi}; openCard(cardFlow(fi)); afterSelect(); const fp=flowPaths[fi]; const mid=new THREE.Vector3(); fp.pts.forEach(p=>mid.add(p)); mid.multiplyScalar(1/fp.pts.length);
   flyTo(mid,OFF_ISL.clone().multiplyScalar(clamp(fp.len/9,1,1.9))); }
 function selectWalker(wi){ sel={type:'walker',wi}; openCard(cardWalker(wi)); afterSelect(); flyTo(walkers[wi].pos.clone(),OFF_ITEM); }
@@ -912,7 +912,7 @@ const jason = new THREE.Group();
   jason.scale.setScalar(2.1); }
 const jTagEl=document.createElement('button'); jTagEl.className='jtag'; jTagEl.type='button'; jTagEl.id='jasonVoice'; jTagEl.textContent='🔊 島主 Jason'; jTagEl.setAttribute('aria-pressed','false'); jTagEl.setAttribute('aria-label','播放本站 Jason 本人聲音開場白（AI 合成）'); jTagEl.title='點擊播放本人聲音，再點一次停止';
 const jTag=new CSS2DObject(jTagEl); jTag.position.set(0,.46,0); jason.add(jTag);
-const bubEl=document.createElement('div'); bubEl.className='jbub'; const bub=new CSS2DObject(bubEl); bub.position.set(0,.63,0); bub.visible=false; jason.add(bub);
+const bubEl=document.createElement('div'); bubEl.className='jbub'; const bub=new CSS2DObject(bubEl); bub.center.set(.5,1); bub.position.set(0,.55,0); bub.visible=false; jason.add(bub);
 function say(t){ bubEl.textContent=t; bub.visible=true; dirty=true; clearTimeout(say.t); say.t=setTimeout(()=>{ bub.visible=false; dirty=true; },10000); }
 // Local, pre-generated personal voice clips; no visitor API requests or keys.
 const guideMedia=document.createElement('audio'); guideMedia.id='jasonGuideAudio'; guideMedia.preload='none'; ROOT.appendChild(guideMedia);
@@ -931,13 +931,9 @@ stopGuidePlayer=()=>guideVoice.stop();
 stopGuideAudio=()=>{ stopGuidePlayer(); ROOT.querySelectorAll('audio').forEach(a=>a.pause()); };
 addEventListener('pagehide',stopGuideAudio);
 document.addEventListener('visibilitychange',()=>{ if(document.hidden) stopGuideAudio(); });
-function toggleJasonVoice(){
-  if(guideVoice.isActive()){ guideVoice.stop(); return; }
-  let st=route?ROUTES[route.r].stations[route.k]:ROUTES.flatMap(r=>r.stations).find(s=>s.island===hexAt(jason.position.x,jason.position.z)?.id);
-  if(!st){ startRoute(0); st=ROUTES[0].stations[0]; }
-  say(st.jason);
-  if(st.audio) guideVoice.play(st.audio);
-}
+const stationGuide=createStationGuide(guideVoice,ROUTES.flatMap(r=>r.stations),text=>say(text));
+function setGuideStation(id){ stationGuide.select(id); }
+function toggleJasonVoice(){ stationGuide.toggle(); }
 const stationNode = (islId)=> islById[islId] ? islById[islId].i*12+4 : 0; // 島的南側（鏡頭這一側），避開路燈
 const J={ path:null, cum:null, len:0, s:0, speed:1, arrive:null }; let jNode=null;
 function jasonGo(target,onArrive){
@@ -967,7 +963,7 @@ function jasonWalkTo(point,onArrive){ if(!jason.parent) return; const end=point.
 const keys=new Set(); let jZone=-1;
 const KEYMAP={ArrowUp:'u',KeyW:'u',ArrowDown:'d',KeyS:'d',ArrowLeft:'l',KeyA:'l',ArrowRight:'r',KeyD:'r'};
 function zoneCheck(){ const h=hexAt(jason.position.x,jason.position.z); const z=h&&!h.land?h.i:-1; if(z===jZone) return; jZone=z;
-  if(z>=0){ const s=ISL[z]; guideVoice.stop();
+  if(z>=0){ const s=ISL[z]; guideVoice.stop(); setGuideStation(s.id);
     const k=route?ROUTES[route.r].stations.findIndex(st=>st.island===s.id):-1;
     if(k>=0){ route.k=k; routeUI(); showRouteVis(route.r,k); }
     say(`第 ${s.station} 站・${s.name}：走到子主題旁按 Enter 看文章`); track('jason_enter',{island:s.id}); } }
@@ -1028,7 +1024,7 @@ function routeUI(){ const R0=ROUTES[route.r], n=R0.stations.length, st=R0.statio
   $('#rtDots').innerHTML=R0.stations.map((_,i)=>`<i class="${i<route.k?'done':i===route.k?'on':''}"></i>`).join('');
   $('#rtPrev').disabled=route.k===0; $('#rtNext').textContent=route.k===n-1?'完成 ✓':'下一站 →'; }
 function goStation(k){ const R0=ROUTES[route.r]; const st=R0.stations[k]; const s=islById[st.island]; if(!s) return;
-  guideVoice.stop(); route.k=k; routeUI(); bub.visible=false; showRouteVis(route.r,k);
+  guideVoice.stop(); setGuideStation(st.island); route.k=k; routeUI(); bub.visible=false; showRouteVis(route.r,k);
   sel={type:'island',i:s.i}; openCard(cardStation(route.r,k)); afterSelect();
   if(mqMobile.matches) $('#card').style.height='46vh';
   flyTo(new THREE.Vector3(s.x,TOP,s.z),OFF_ISL);
