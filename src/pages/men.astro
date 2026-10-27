@@ -1,0 +1,121 @@
+---
+// 「男性慢老」專區：外貌、體態到親密健康。主題設定在 src/data/men-slow-aging.ts。
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { getUrlSlug } from '../utils/categories';
+import { MEN_PILLARS } from '../data/men-slow-aging';
+
+const STEP: Record<string, { n: number; name: string }> = {
+  '身體訊號解讀': { n: 1, name: '察覺' },
+  '慢性發炎科學': { n: 2, name: '原因' },
+  '精準健康工具': { n: 3, name: '量測' },
+  '介入與調校': { n: 4, name: '調整' },
+};
+const posts = await getCollection('blog');
+const bySlug = new Map(posts.map((p) => [getUrlSlug(p).split('/').pop() as string, p]));
+const pillars = MEN_PILLARS.map((pl) => ({
+  ...pl,
+  articles: pl.slugs
+    .map((s) => bySlug.get(s))
+    .filter((p): p is NonNullable<typeof p> => !!p)
+    .map((p) => ({ url: `/blog/${getUrlSlug(p)}/`, title: p.data.title, desc: p.data.description, step: STEP[p.data.category] ?? { n: 1, name: '察覺' } }))
+    .sort((a, b) => a.step.n - b.step.n),
+}));
+const total = pillars.reduce((n, p) => n + p.articles.length, 0);
+const title = '男性慢老｜從外貌、體態到親密健康｜AGELOCKED';
+const description = '知道年紀在增加，但還想保有好看的外表、自在的體態和親密關係中的自信。從白髮、身材、臉、心血管到性健康，分清楚哪些可以記錄、哪些能從生活調整、哪些該找醫師。';
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <Header />
+    <main class="men">
+      <div class="men-hero">
+        <span class="men-label">男性慢老</span>
+        <h1>想維持往日風采，<br />從你在意的變化開始</h1>
+        <p class="men-lead">知道年紀在增加，但還想保有好看的外表、自在的體態，以及親密關係中的自信。這裡幫你分清楚：哪些值得記錄、哪些可以從生活調整、哪些需要找醫師。</p>
+        <nav class="men-nav" aria-label="五大主題">
+          {pillars.map((p) => <a href={`#${p.id}`}>{p.name}</a>)}
+        </nav>
+        <p class="men-steps">每個主題依四個步驟排列：<b>察覺</b>變化 → 找出<b>原因</b> → <b>量測</b>確認 → 開始<b>調整</b>。目前共 {total} 篇。</p>
+      </div>
+
+      {pillars.map((p) => (
+        <section class="pillar" id={p.id} aria-labelledby={`${p.id}-t`}>
+          <div class="pillar-head">
+            <span class="pillar-concern">{p.concern}</span>
+            <h2 id={`${p.id}-t`}>{p.name}</h2>
+            <p class="pillar-hook">「{p.hook}」</p>
+            <p class="pillar-intro">{p.intro}</p>
+          </div>
+          <ol class="pillar-list">
+            {p.articles.map((a) => (
+              <li>
+                <a href={a.url}>
+                  <span class="step">第 {a.step.n} 步・{a.step.name}</span>
+                  <span class="t">{a.title}</span>
+                  <span class="d">{a.desc}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+          {p.upcoming && p.upcoming.length > 0 && (
+            <div class="pillar-upcoming">
+              <span>即將加入</span>
+              <ul>{p.upcoming.map((u) => <li>{u}</li>)}</ul>
+            </div>
+          )}
+          {p.doctorNote && <p class="pillar-doctor">{p.doctorNote}</p>}
+        </section>
+      ))}
+
+      <section class="men-cta">
+        <h2>先看看你的身體，現在哪些訊號在亮燈</h2>
+        <p>花 1 分鐘做「身體警報訊號評估清單」，整理出值得先注意的方向。</p>
+        <a class="men-btn" href="/assessment/">身體警報訊號評估清單（1 分鐘）</a>
+        <a class="men-btn ghost" href="/prescan/">有健檢報告：填寫掃描前資料表</a>
+      </section>
+
+      <p class="men-note">本頁內容為健康教育資訊，不構成醫療診斷或治療建議。身體變化反覆發生或造成困擾，請諮詢合格醫師。</p>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main.men { max-width: 860px; margin: 0 auto; padding: 3rem 6vw 6rem; }
+  .men-label, .pillar-concern, .step, .pillar-upcoming > span { font-family: 'DM Mono', monospace; letter-spacing: 0.2em; color: var(--teal); font-size: 0.85rem; }
+  .men-hero { padding-bottom: 2rem; border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
+  .men-hero h1 { margin: 0.6rem 0 1rem; font-family: 'Noto Serif TC', serif; font-weight: 500; font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.35; text-wrap: balance; }
+  .men-lead { font-size: 1.1rem; line-height: 1.85; }
+  .men-nav { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0 1rem; }
+  .men-nav a { border: 1px solid var(--teal); border-radius: 999px; padding: 0.35rem 1rem; font-size: 0.95rem; color: var(--teal); }
+  .men-nav a:hover { background: var(--teal); color: #fff; border-bottom-color: var(--teal); }
+  .men-steps { font-size: 0.95rem; color: var(--muted); margin: 0; }
+  .men-steps b { color: var(--ink); font-weight: 500; }
+  .pillar { padding: 2.5rem 0; border-bottom: 1px solid var(--border); scroll-margin-top: 5rem; }
+  .pillar-head h2 { margin: 0.4rem 0 0.6rem; font-family: 'Noto Serif TC', serif; font-weight: 500; font-size: 1.8rem; }
+  .pillar-hook { font-size: 1.15rem; color: var(--ink); margin-bottom: 0.6rem; }
+  .pillar-intro { color: var(--body); }
+  .pillar-list { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 0.7rem; }
+  .pillar-list a { display: grid; gap: 0.25rem; padding: 1rem 1.2rem; background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--teal); border-radius: 2px; color: inherit; }
+  .pillar-list a:hover { box-shadow: var(--box-shadow); border-bottom-color: var(--border); }
+  .pillar-list .t { font-family: 'Noto Serif TC', serif; font-size: 1.08rem; color: var(--ink); line-height: 1.6; }
+  .pillar-list .d { font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
+  .pillar-upcoming { margin-top: 1rem; padding: 0.9rem 1.2rem; background: var(--surface); border-radius: 2px; }
+  .pillar-upcoming ul { margin: 0.4rem 0 0; padding-left: 1.2rem; color: var(--muted); font-size: 0.95rem; }
+  .pillar-doctor { margin: 1rem 0 0; padding: 0.9rem 1.2rem; border: 1px solid var(--teal-mid); background: var(--teal-pale); font-size: 0.95rem; }
+  .men-cta { margin-top: 3rem; padding: 2.5rem 2rem; background: var(--ink); color: #fff; text-align: center; border-radius: 2px; }
+  .men-cta h2 { color: #fff; margin: 0 0 0.6rem; font-family: 'Noto Serif TC', serif; font-weight: 500; font-size: 1.5rem; text-wrap: balance; }
+  .men-cta p { color: rgba(255,255,255,0.8); }
+  .men-btn { display: inline-block; margin: 0.4rem; padding: 0.8rem 1.4rem; background: var(--teal); color: #fff; border-radius: 2px; font-weight: 500; }
+  .men-btn:hover { background: var(--teal-light); color: #fff; border-bottom-color: transparent; }
+  .men-btn.ghost { background: transparent; border: 1px solid rgba(255,255,255,0.5); }
+  .men-note { margin-top: 2rem; font-size: 0.85rem; color: var(--muted); }
+</style>
