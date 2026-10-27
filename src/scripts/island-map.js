@@ -912,7 +912,7 @@ const jason = new THREE.Group();
   jason.scale.setScalar(2.1); }
 const jTagEl=document.createElement('button'); jTagEl.className='jtag'; jTagEl.type='button'; jTagEl.id='jasonVoice'; jTagEl.textContent='🔊 島主 Jason'; jTagEl.setAttribute('aria-pressed','false'); jTagEl.setAttribute('aria-label','播放本站 Jason 本人聲音開場白（AI 合成）'); jTagEl.title='點擊播放本人聲音，再點一次停止';
 const jTag=new CSS2DObject(jTagEl); jTag.position.set(0,.46,0); jason.add(jTag);
-const bubEl=document.createElement('div'); bubEl.className='jbub'; const bub=new CSS2DObject(bubEl); bub.position.set(0,.63,0); bub.visible=false; jason.add(bub);
+const bubEl=document.createElement('div'); bubEl.className='jbub'; const bub=new CSS2DObject(bubEl); bub.center.set(.5,1); bub.position.set(0,.55,0); bub.visible=false; jason.add(bub);
 function say(t){ bubEl.textContent=t; bub.visible=true; dirty=true; clearTimeout(say.t); say.t=setTimeout(()=>{ bub.visible=false; dirty=true; },10000); }
 // Local, pre-generated personal voice clips; no visitor API requests or keys.
 const guideMedia=document.createElement('audio'); guideMedia.id='jasonGuideAudio'; guideMedia.preload='none'; ROOT.appendChild(guideMedia);
