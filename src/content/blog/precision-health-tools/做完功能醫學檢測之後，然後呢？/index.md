@@ -4,7 +4,7 @@ description: '去診所做全套代謝評估與有機酸檢測，最後卻因為
 pubDate: 2026-03-15
 heroImage: "./editorial-108-20261026.webp"
 tags: ['功能醫學', '代謝評估', '心率變異度', '量化健康', '慢性發炎', '精準補充']
-category: '精準健康工具'
+category: '健檢站'
 ctaType: 'hard'
 slug: 'functional-medicine-execution-gap'
 ctaBridge: "如果你手邊已經有健檢報告、也戴著穿戴裝置，素材其實都齊了。把資料填進來，我幫你排出第一步要動哪裡。"

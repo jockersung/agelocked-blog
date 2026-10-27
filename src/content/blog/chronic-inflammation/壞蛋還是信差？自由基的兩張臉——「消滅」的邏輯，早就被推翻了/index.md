@@ -4,7 +4,7 @@ description: '「消滅自由基」的邏輯已被科學推翻一半。低濃度
 pubDate: 2026-03-09
 heroImage: "./editorial-086-20261026.webp"
 tags: ['自由基', 'ROS', 'Nrf2', '粒線體', 'Mitohormesis', '抗氧化', '氧化壓力', '抗老']
-category: '慢性發炎科學'
+category: '禿頭、白髮'
 slug: "free-radical-two-faces"
 ctaBridge: '想知道你目前的狀況適合從哪裡開始調整？先花 1 分鐘做評估，看看你的身體警報在哪個水位。'
 ---

@@ -4,7 +4,8 @@ description: 'Prysm iO 15 秒，一根手指，讀出你過去幾週的蔬果與
 pubDate: 2026-02-12
 heroImage: "./editorial-106-20261026.webp"
 tags: ['抗氧化', '科技', 'Prysm-iO']
-category: '精準健康工具'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: "prysm-io-15sec"
 ---

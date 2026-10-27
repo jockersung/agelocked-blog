@@ -4,7 +4,7 @@ description: "血液、HRV、皮膚分數不同步怎麼辦？先分清各項用
 pubDate: 2026-10-19
 heroImage: "./editorial-038-20261026.webp"
 tags: ["慢性發炎", "發炎老化", "hs-CRP", "HRV", "Prysm iO", "類胡蘿蔔素"]
-category: "慢性發炎科學"
+category: '心血管'
 slug: inflammation-three-clues
 ctaType: "soft"
 ctaBridge: "先整理近期不適與生活事件。下方評估用來收集資訊，不能確診慢性發炎或替各項數字加總評分。"

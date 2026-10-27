@@ -4,7 +4,8 @@ description: '上一篇說了四個真正有意義的品質標準：配方科學
 pubDate: 2026-03-07
 heroImage: "./editorial-115-20261026.webp"
 tags: ['Nu Skin', '製藥標準', 'GMP', 'NSF', '保健品品質', '精準健康']
-category: '精準健康工具'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: "nuskin-pharmaceutical-standard"
 ---

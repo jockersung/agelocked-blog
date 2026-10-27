@@ -5,7 +5,7 @@ description: "你以為肚子變大只是代謝變差？2026 年《Nature》研�
 heroImage: "./editorial-095-20261026.webp"
 pubDate: 2026-03-18
 tags: ["神經新生", "失智症", "阿茲海默", "慢性發炎", "葉黃素", "類胡蘿蔔素", "BDNF", "超級老年人"]
-category: "慢性發炎科學"
+category: '心血管'
 slug: "neurogenesis-inflammaging-cognitive-resilience"
 
 ---

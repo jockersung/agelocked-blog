@@ -4,7 +4,7 @@ description: '研究發現，牙周病菌能穿透血腦屏障，直接在阿茲
 pubDate: 2026-03-11
 heroImage: "./editorial-073-20261026.webp"
 tags: ['慢性發炎', '牙周病', '失智症', 'Inflammaging', '口腔健康']
-category: '身體訊號解讀'
+category: '心血管'
 slug: "gum-bleeding-brain-inflammation"
 ctaBridge: '還不確定自己的身體目前累積了多少慢性發炎？先花 1 分鐘做評估，看看你的身體警報在哪個水位。'
 ---

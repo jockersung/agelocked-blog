@@ -4,7 +4,7 @@ description: '4-7-8呼吸法不是玄學，而是透過迷走神經與玻爾效�
 pubDate: 2026-04-04
 heroImage: "./editorial-074-20261026.webp"
 tags: ['失眠', '呼吸法', '睡眠', '副交感神經', '迷走神經', '壓力', '睡前放鬆', '身體訊號']
-category: '身體訊號解讀'
+category: '性健康'
 ctaType: 'soft'
 slug: '478-breathing-sleep-vagus-nerve'
 ---

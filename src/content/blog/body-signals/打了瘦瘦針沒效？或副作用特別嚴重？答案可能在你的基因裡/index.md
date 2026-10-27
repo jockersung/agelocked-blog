@@ -4,7 +4,7 @@ description: "2026 年 4 月，Nature 刊出首個大規模遺傳研究，找到
 pubDate: 2026-04-17
 heroImage: "./editorial-071-20261026.webp"
 tags: ["GLP-1", "瘦瘦針", "基因", "藥物反應", "精準醫療", "副作用", "猛健樂", "semaglutide"]
-category: "身體訊號解讀"
+category: '身材'
 slug: glp1-genetics-response-variation
 
 ---

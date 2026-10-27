@@ -4,7 +4,7 @@ description: '你花錢買了成分，但成分有沒有進到細胞，取決於
 pubDate: 2026-03-11
 heroImage: "./editorial-111-20261026.webp"
 tags: ['保健品選購', '生物利用率', '吸收率', '科學選品', '精準健康']
-category: '精準健康工具'
+category: '健檢站'
 slug: "supplement-bioavailability-gap"
 ctaType: 'hard'
 ctaBridge: "「有沒有進到細胞」這件事不用猜。把你手上的保健品清單和健檢數據填進資料表，我幫你看吸收這一關卡在哪裡，再用 15 秒的類胡蘿蔔素掃描建立可以追蹤的數字。"

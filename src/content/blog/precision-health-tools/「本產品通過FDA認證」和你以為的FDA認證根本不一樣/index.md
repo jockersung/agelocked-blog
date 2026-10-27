@@ -4,7 +4,7 @@ description: '「本產品通過FDA認證」——這句話在台灣的保健品
 pubDate: 2026-03-07
 heroImage: "./editorial-104-20261026.webp"
 tags: ['保健品選購', 'FDA', '監管標準', '科學選品', '精準健康']
-category: '精準健康工具'
+category: '健檢站'
 ctaType: 'hard'
 slug: "fda-certification-myth"
 ---

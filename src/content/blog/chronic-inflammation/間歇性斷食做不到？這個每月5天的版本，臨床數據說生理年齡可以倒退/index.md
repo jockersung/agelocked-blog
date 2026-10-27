@@ -4,7 +4,7 @@ description: '168斷食太難維持、長期熱量限制根本不可能——但
 pubDate: 2026-03-01
 heroImage: "./editorial-097-20261026.webp"
 tags: ['模擬斷食', '熱量限制', '生理年齡', '自噬', '抗衰老']
-category: '慢性發炎科學'
+category: '身材'
 slug: "fasting-mimicking-diet-5days"
 ctaBridge: '你的修復機制是活躍的，還是已經長期關閉了？先花 1 分鐘做評估，從日常的身體訊號開始看。'
 ---

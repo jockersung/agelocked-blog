@@ -4,7 +4,7 @@ description: "週纖達 vs 猛健樂 vs 口服版，效果差多少？停藥後�
 pubDate: 2026-04-17
 heroImage: "./editorial-099-20261026.webp"
 tags: ["GLP-1", "瘦瘦針", "週纖達", "猛健樂", "semaglutide", "tirzepatide", "減重", "臨床指南"]
-category: "介入與調校"
+category: '身材'
 slug: 'glp1-clinical-guide-tirzepatide'
 
 ctaType: 'hard'

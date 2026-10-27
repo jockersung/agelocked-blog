@@ -4,7 +4,7 @@ description: '身分證上的年齡只是數字，身體內部的「生物年齡
 pubDate: 2026-02-21
 heroImage: "./editorial-032-20261026.webp"
 tags: ['抗氧化', '健康', '長壽']
-category: '精準健康工具'
+category: '臉蛋'
 ctaType: 'hard'
 slug: "biological-age-measurement"
 ctaBridge: "凡是能被測量的，就能被改進。量化的第一步不用抽血：把你現有的健檢數據填進資料表，加上 15 秒的類胡蘿蔔素掃描，基準值就建立起來了。"

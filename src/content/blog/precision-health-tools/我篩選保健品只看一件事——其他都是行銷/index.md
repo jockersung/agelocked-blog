@@ -4,7 +4,7 @@ description: '不是成分清單、不是品牌知名度、不是價格。選保
 pubDate: 2026-03-11
 heroImage: "./editorial-113-20261026.webp"
 tags: ['保健品選購', '選品指南', '科學選品', '台灣認證', '精準健康']
-category: '精準健康工具'
+category: '健檢站'
 slug: "supplement-one-thing-to-check"
 ctaType: 'hard'
 ---

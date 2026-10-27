@@ -4,7 +4,8 @@ description: '睡前腦袋停不下來，是很多中年人睡不深的起點。
 pubDate: 2026-03-11
 heroImage: "./editorial-015-20261026.webp"
 tags: ['男性健康', '睡眠品質', 'MYND360', '酪蛋白胜肽', '番紅花', '山茶葉', '如新', '介入調校']
-category: '介入與調校'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: 'mynd360-sleep-brain-shutdown'
 ---

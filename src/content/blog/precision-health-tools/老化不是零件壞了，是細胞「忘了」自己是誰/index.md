@@ -4,7 +4,7 @@ description: "你的 DNA 沒有壞掉——老化是細胞讀取指令出了錯�
 pubDate: 2026-04-02
 heroImage: "./editorial-116-20261026.webp"
 tags: ["表觀遺傳", "生物年齡", "David Sinclair", "老化理論", "抗老科學"]
-category: "精準健康工具"
+category: '臉蛋'
 ctaType: 'hard'
 slug: "epigenetic-dysregulation-2026-nature-review"
 

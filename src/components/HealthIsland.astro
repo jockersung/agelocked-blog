@@ -5,20 +5,20 @@ const { mode } = Astro.props;
 // 資料在 build 時從 content collection 產生；島嶼排列在 src/data/island-map.ts。
 // 加上 ?audit 會顯示內部用的「連結檢查」；?lite 強制文字版、?3d 強制 3D。
 import { getCollection } from 'astro:content';
-import { getUrlSlug } from '../utils/categories';
+import { getUrlSlug, getTier } from '../utils/categories';
 import { ISLANDS, LAND, DAY_CYCLE, FLOW_MIN, STEPS, DEFAULT_MODEL } from '../data/island-map';
 import { ROUTES } from '../data/island-routes';
+import audioManifest from '../data/audio-manifest.json';
 import { MEN_PILLARS } from '../data/men-slow-aging';
 import '../styles/island-map.css';
 
-const TIER: Record<string, number> = { '身體訊號解讀': 1, '慢性發炎科學': 2, '精準健康工具': 3, '介入與調校': 4 };
 const posts = await getCollection('blog');
 const bySlug = new Map(posts.map((p) => {
   const urlSlug = getUrlSlug(p);
   const slug = urlSlug.split('/').pop() as string;
   const out = new Set<string>();
   for (const m of (p.body ?? '').matchAll(/\]\((?:https?:\/\/(?:www\.)?agelocked\.com)?\/blog\/[^/]+\/([^/)\s#]+)\/?/g)) if (m[1] !== slug) out.add(m[1]);
-  return [slug, { slug, url: `/blog/${urlSlug}/`, tier: TIER[p.data.category] ?? 1, title: p.data.title, sum: p.data.description, out: [...out] }];
+  return [slug, { slug, url: `/blog/${urlSlug}/`, tier: getTier(p), station: p.data.category, product: p.data.product, title: p.data.title, sum: p.data.description, out: [...out] }];
 }));
 
 // 短名：取標題第一個斷句前的部分
@@ -27,60 +27,55 @@ const shortName = (t: string) => {
   return s.length > 10 ? s.slice(0, 10) + '…' : s;
 };
 
-const MAX_PER_ISLAND = 7;
 const placed = new Set<string>();
 const missing: string[] = [];
-const islands = ISLANDS.map((isl) => ({
-  ...isl,
-  items: isl.items.flatMap((it) => {
-    if (it.page) return [{ id: it.page.id, name: it.name, model: it.model, tier: it.page.tier, desc: it.page.title, facts: it.facts ?? [], url: it.page.url, page: true }];
+const islands = ISLANDS.map((isl) => {
+  const items = isl.items.flatMap((it) => {
+    if (it.page) return [{ id: it.page.id, name: it.name, model: it.model, tier: it.page.tier, desc: it.page.title, facts: it.facts ?? [], url: it.page.url, page: true, product: false }];
     const a = it.slug ? bySlug.get(it.slug) : undefined;
     if (!a) { if (it.slug) missing.push(it.slug); return []; }
     placed.add(a.slug);
-    return [{ id: a.slug, name: it.name, model: it.model, tier: a.tier, desc: a.title, facts: it.facts ?? [], url: a.url }];
-  }),
-}));
-// 新文章自動上島：同一步、文章最少的島；都滿了就找最接近那一步、還有空位的島
+    return [{ id: a.slug, name: it.name, model: it.model, tier: a.tier, desc: a.title, facts: it.facts ?? [], url: a.url, page: false, product: a.product }];
+  });
+  const ids = new Set(items.map((x) => x.id));
+  return { ...isl, items, groups: isl.groups.map((g) => ({ ...g, slugs: g.slugs.filter((x) => ids.has(x)) })), featured: isl.featured.filter((x) => ids.has(x)) };
+});
+// 新文章自動上地圖：放進文章 category 那一站、文章最少的子主題。性健康站不收產品介紹文章。
 const unplaced: string[] = [];
 for (const a of bySlug.values()) {
   if (placed.has(a.slug)) continue;
-  // noAuto 的島（例如性健康）不自動放新文章，避免產品或無關文章混進來
-  const open = islands.filter((i) => i.items.length < MAX_PER_ISLAND && !(i as { noAuto?: boolean }).noAuto)
-    .sort((x, y) => Math.abs(x.tier - a.tier) - Math.abs(y.tier - a.tier) || x.items.length - y.items.length);
-  if (!open.length) { unplaced.push(a.slug); continue; }
-  open[0].items.push({ id: a.slug, name: shortName(a.title), model: DEFAULT_MODEL[a.tier], tier: a.tier, desc: a.title, facts: [], url: a.url });
+  const isl = islands.find((i) => i.stationName === a.station);
+  if (!isl || (isl.id === 'sexual-health' && a.product)) { unplaced.push(a.slug); continue; }
+  isl.items.push({ id: a.slug, name: shortName(a.title), model: DEFAULT_MODEL[a.tier], tier: a.tier, desc: a.title, facts: [], url: a.url, page: false, product: a.product });
+  const g = [...isl.groups].sort((x, y) => x.slugs.length - y.slugs.length)[0];
+  g.slugs.push(a.slug);
   placed.add(a.slug);
 }
 
-// 導覽路線：把每一站的主題（pillar）展開成標題、提問、文章清單
+// 導覽路線：把每一站的主題（pillar）展開成標題、提問；文章清單直接用地圖上那一站
 const routes = ROUTES.map((r) => ({
   ...r,
   stations: r.stations.map((st) => {
     const pl = st.pillar ? MEN_PILLARS.find((p) => p.id === st.pillar) : undefined;
-    // 這一站的文章 = 這一站所有島上的文章（依島的順序、再依閱讀步驟）
-    const arts = st.islands.flatMap((iid) => {
-      const isl = islands.find((i) => i.id === iid);
-      return (isl?.items ?? []).filter((it) => !('page' in it && it.page))
-        .map((it) => ({ id: it.id, title: it.desc, url: it.url, tier: it.tier, sub: isl!.sub || isl!.stationName }));
-    });
-    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, islands: st.islands, jason: st.jason,
-      hook: pl?.hook ?? '', intro: pl?.intro ?? '', concern: pl?.concern ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [], articles: arts };
+    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, jason: st.jason,
+      hook: pl?.hook ?? '', intro: pl?.intro ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [] };
   }),
 }));
 const articles = Object.fromEntries([...bySlug.values()].map((a) => [a.slug, { sum: a.sum, out: a.out.filter((s) => bySlug.has(s)) }]));
 const data = {
   city: 'AGELOCKED',
   steps: STEPS,
-  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/blog' },
+  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/blog', knowledge: '/knowledge/' },
   islands, land: LAND, flowMin: FLOW_MIN,
   dayCycle: DAY_CYCLE.map((d) => ({ ...d, items: d.items.filter((s: string) => placed.has(s) || s.startsWith('page-')) })),
-  articles, missing, unplaced, routes,
+  articles, missing, unplaced, routes, audio: Object.keys(audioManifest), kb: { url: '/knowledge/', total: bySlug.size },
 };
 const total = bySlug.size;
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
 
 // 文字版（弱裝置、不支援 3D、搜尋引擎與 AI 爬蟲都讀這一份）
-const byStep = routes[0].stations.map((st, k) => ({ t: k + 1, step: { name: st.name, what: st.hook || st.intro }, islands: st.islands.map((id) => islands.find((i) => i.id === id)!).filter(Boolean) }));
+const byStep = islands.map((isl) => ({ t: isl.station, isl, st: routes[0]?.stations.find((x) => x.island === isl.id) }));
+const itemOf = (isl: (typeof islands)[number], id: string) => isl.items.find((x) => x.id === id)!;
 const title = `健康島：${total} 篇文章的閱讀地圖｜AGELOCKED`;
 const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台灣地圖：從察覺身體訊號、找出慢性發炎的原因、用數據量測，到開始調整，照著路徑一步步讀。`;
 ---
@@ -102,16 +97,15 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
       <a class="sec2" href="/about/">作者：孫義坤</a>
       <a class="sec2" href="/">回首頁</a>
     </div>
-    {byStep.map(({ t, step, islands: isls }) => (
+    {byStep.map(({ t, isl, st }) => (
       <>
-        <div class="fb-step"><b>{t}</b><h2>{step.name}</h2><span>{step.what}</span></div>
-        {isls.map((isl) => (
+        <div class="fb-step"><b>{t}</b><h2>{isl.stationName}</h2><span>{st?.hook || isl.summary}</span></div>
+        {isl.groups.map((g) => (
           <div class="fb-isl">
-            <h3><i style={`background:${isl.color}`}></i>{isl.sub || isl.name}</h3>
-            <p>{isl.summary}</p>
+            <h3><i style={`background:${isl.color}`}></i>{g.name}</h3>
             <ul>
-              {isl.items.map((it) => (
-                <li><a href={it.url}>{it.desc}<small>{it.page ? '' : articles[it.id]?.sum}</small></a></li>
+              {g.slugs.map((id) => itemOf(isl, id)).map((it) => (
+                <li><a href={it.url}>{it.desc}{it.product && <em class="fb-prod">產品介紹</em>}<small>{it.page ? '' : articles[it.id]?.sum}</small></a></li>
               ))}
             </ul>
           </div>

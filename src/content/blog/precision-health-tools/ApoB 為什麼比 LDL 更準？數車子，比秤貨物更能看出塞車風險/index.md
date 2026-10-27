@@ -4,7 +4,7 @@ description: "LDL-C 看膽固醇總量，ApoB 提供脂蛋白顆粒數量線索�
 pubDate: 2026-10-19
 heroImage: "./editorial-051-20261026.webp"
 tags: ["ApoB", "LDL", "血脂", "動脈硬化", "代謝症候群", "精準檢測"]
-category: "精準健康工具"
+category: '心血管'
 slug: apob-vs-ldl
 ctaType: "hard"
 ctaBridge: "把既有 LDL-C、三酸甘油脂和 ApoB 的日期、單位整理好，再透過資料表留下想釐清的問題。"

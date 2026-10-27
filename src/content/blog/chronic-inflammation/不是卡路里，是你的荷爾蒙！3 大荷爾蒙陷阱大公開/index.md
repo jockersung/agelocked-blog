@@ -4,7 +4,7 @@ description: "內臟脂肪不是原因，是結果——而且它會成為新的
 pubDate: 2026-03-11
 heroImage: "./editorial-081-20261026.webp"
 tags: ["胰島素阻抗", "皮質醇", "睪固酮", "內臟脂肪", "慢性發炎", "代謝"]
-category: "慢性發炎科學"
+category: '身材'
 slug: "visceral-fat-three-cycles"
 ---
 

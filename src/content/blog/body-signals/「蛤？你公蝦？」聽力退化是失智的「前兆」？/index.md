@@ -4,7 +4,7 @@ description: '你的耳朵正在悄悄罷工。你以為只是別人說話不清
 pubDate: 2026-03-11
 heroImage: "./editorial-001-20261026.webp"
 tags: ['聽力退化', '抗衰老', '失智']
-category: '身體訊號解讀'
+category: '心血管'
 slug: "hearing-loss-dementia-signal"
 ---
 

@@ -4,7 +4,7 @@ description: 'SGS是真實的檢驗機構，SGS報告是真實的文件——但
 pubDate: 2026-03-11
 heroImage: "./editorial-112-20261026.webp"
 tags: ['保健品選購', 'SGS', '品質標準', '科學選品', '精準健康']
-category: '精準健康工具'
+category: '健檢站'
 slug: "sgs-report-vs-efficacy"
 ctaType: 'hard'
 ---

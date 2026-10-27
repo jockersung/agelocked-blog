@@ -4,7 +4,7 @@ description: '粒線體是細胞的發電廠，它老化了，你的體力、認
 pubDate: 2026-03-01
 heroImage: "./editorial-079-20261026.webp"
 tags: ['尿石素', 'Urolithin A', '粒線體', '自噬', '抗衰老']
-category: '慢性發炎科學'
+category: '身材'
 slug: "mitochondria-energy-after-40"
 ctaBridge: '知道了機制，下一步是了解你現在的狀況。先花 1 分鐘做評估，找出你目前的細胞耗損模式。'
 ---

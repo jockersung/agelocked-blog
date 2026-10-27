@@ -4,7 +4,8 @@ description: '15 秒實測完整教學 + 六色分數全解析，讀懂你的抗
 pubDate: 2026-02-24
 heroImage: "./editorial-031-20261026.webp"
 tags: ['抗氧化', 'Prysm-iO', '教學', '健康管理']
-category: '精準健康工具'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: "prysm-io-score-guide"
 ctaBridge: '想知道「我的數字，具體代表我最優先需要補什麼」？把你的 Prysm iO 分數和健檢數據填進資料表，我幫你把狀況說清楚。'

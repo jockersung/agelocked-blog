@@ -4,7 +4,7 @@ description: '從日本、韓國、美國、加拿大、澳洲到歐盟，不同
 pubDate: 2026-03-07
 heroImage: "./editorial-109-20261026.webp"
 tags: ['國外保健品', '保健品選購', '各國法規', 'NSF認證', 'Amazon', '精準健康']
-category: '精準健康工具'
+category: '健檢站'
 slug: "supplement-import-guide"
 ctaType: 'hard'
 ---

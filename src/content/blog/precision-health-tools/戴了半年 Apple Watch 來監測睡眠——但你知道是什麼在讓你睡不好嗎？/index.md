@@ -4,7 +4,7 @@ description: 'AI 穿戴裝置正在改變我們監測身體的方式，但它們
 pubDate: 2026-03-04
 heroImage: "./editorial-034-20261026.webp"
 tags: ['穿戴裝置', 'HRV', 'Prysm iO', '精準健康', '生物標記', '細胞儲備']
-category: '精準健康工具'
+category: '健檢站'
 ctaType: 'hard'
 slug: "apple-watch-sleep-vs-root-cause"
 ctaBridge: "你的手錶已經給了你時間軸，缺的是細胞層級的那個截面。把 HRV 和睡眠數據填進資料表，第一次掃描就有東西可以對照。"

@@ -4,7 +4,7 @@ description: "CRP <0.5 怎麼看？先確認 mg/dL 或 mg/L、檢驗方法與抽
 pubDate: 2026-10-19
 heroImage: "./editorial-045-20261026.webp"
 tags: ["hs-CRP", "C反應蛋白", "慢性發炎", "心血管風險", "血液檢查"]
-category: "慢性發炎科學"
+category: '心血管'
 slug: hs-crp-low-grade-inflammation
 ctaType: "soft"
 ctaBridge: "先記下檢驗名稱、單位和抽血時的狀況。若還有近期身體訊號想整理，可以從 1 分鐘評估開始。"

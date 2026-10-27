@@ -4,7 +4,7 @@ description: "花青素、Oligonol®、兒茶素三種多酚，分別從腸道�
 pubDate: 2026-03-11
 heroImage: "./editorial-110-20261026.webp"
 tags: ["花青素", "Oligonol", "兒茶素", "多酚", "內臟脂肪", "腸道菌", "COMT"]
-category: "精準健康工具"
+category: '身材'
 ctaType: 'hard'
 slug: "visceral-fat-polyphenol-mechanism"
 ctaBridge: '不確定三條路徑哪一條是你的主要缺口？把你的 TG（三酸甘油酯）、HDL（高密度脂蛋白）和腰圍填進資料表，我幫你先看。'

@@ -4,7 +4,7 @@ description: '體檢報告沒有紅字，如果知道自己的狀態不對—要
 pubDate: 2026-03-11
 heroImage: "./editorial-077-20261026.webp"
 tags: ['抗氧化', '科技', 'Prysm-iO']
-category: '身體訊號解讀'
+category: '健檢站'
 slug: "normal-checkup-still-tired"
 ctaBridge: "我在健康領域看了十五年的數據，最常見的落差就是「報告正常、人不對勁」。這種時候要做的不是換一家健檢中心，是先把報告沒抓到的訊號系統化整理起來。"
 ---

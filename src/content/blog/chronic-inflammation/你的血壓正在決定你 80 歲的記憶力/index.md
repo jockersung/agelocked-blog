@@ -4,7 +4,7 @@ description: '高血壓不只傷心臟，它透過讓血管失去彈性，間接
 pubDate: 2026-04-04
 heroImage: "./editorial-084-20261026.webp"
 tags: ['高血壓', '失智症', '類淋巴系統', '血管彈性', '認知健康', '阿茲海默症', '一氧化氮', 'HRV', '大腦老化']
-category: '慢性發炎科學'
+category: '心血管'
 ctaType: 'soft'
 slug: 'hypertension-glymphatic-dementia'
 ---

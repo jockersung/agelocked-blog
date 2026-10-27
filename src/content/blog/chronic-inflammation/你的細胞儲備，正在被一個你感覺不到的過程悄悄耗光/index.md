@@ -4,7 +4,7 @@ description: '慢性低度發炎不只是讓你疲勞——它在細胞層級同
 pubDate: 2026-03-04
 heroImage: "./editorial-008-20261026.webp"
 tags: ['Inflammaging', '慢性發炎', 'NAD+', '粒線體', '幹細胞', '端粒', '細胞老化']
-category: '慢性發炎科學'
+category: '禿頭、白髮'
 slug: "cell-reserve-chronic-depletion"
 ctaBridge: '你的細胞儲備現在還剩多少，不需要靠感覺猜。先花 1 分鐘做評估，看看你的身體訊號指向哪裡。'
 ---

@@ -4,7 +4,7 @@ description: '每次細胞分裂，染色體末端就縮短一點。這不是比
 pubDate: 2026-03-11
 heroImage: "./editorial-094-20261026.webp"
 tags: ['端粒', '細胞老化', '慢性發炎', 'Inflammaging', '氧化壓力', '生物年齡']
-category: '慢性發炎科學'
+category: '禿頭、白髮'
 slug: "telomere-aging-clock"
 ---
 

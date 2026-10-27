@@ -4,7 +4,7 @@ description: '熱量限制有效，但沒有人能長期做到。科學家花了
 pubDate: 2026-03-01
 heroImage: "./editorial-082-20261026.webp"
 tags: ['熱量限制模擬物', 'CRM', '基因表達', '抗衰老', '長壽科學']
-category: '慢性發炎科學'
+category: '身材'
 slug: "caloric-restriction-mimetics-science"
 ctaBridge: '如果你想先了解自己目前的身體訊號在哪個水位，花 1 分鐘做評估，是最簡單的第一步。'
 ---

@@ -76,13 +76,16 @@ title: '標題（繁體中文，含關鍵詞）'
 description: 'SEO 描述，120 字以內'
 pubDate: YYYY-MM-DD
 heroImage: './cover.webp'
-category: '身體訊號解讀'   # 四選一：身體訊號解讀｜慢性發炎科學｜精準健康工具｜介入與調校
+category: '身材'           # 六選一：身材｜臉蛋｜性健康｜禿頭、白髮｜心血管｜健檢站（男性慢老六站）
+product: true              # 只有產品介紹文章才加；性健康站不能放產品文章
 tags: ['標籤1', '標籤2']
 slug: 'kebab-case-english-only'
 ctaType: 'hard'            # ③④ 必填；①② 可省略
 ctaBridge: '客製引導語（選填）'
 ---
 ```
+
+**資料夾＝漏斗層級（決定網址前綴與 CTA，讀者看不到）：** 上漏斗放 `body-signals/`、中漏斗 `chronic-inflammation/`、中下漏斗 `precision-health-tools/`、下漏斗 `intervention-optimization/`。
 
 **slug 規則：**
 - 全英文，kebab-case

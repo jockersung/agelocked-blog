@@ -4,7 +4,7 @@ description: '睡眠期間，大腦透過類淋巴系統進行精密的代謝清
 pubDate: 2026-04-03
 heroImage: "./editorial-083-20261026.webp"
 tags: ['睡眠', '類淋巴系統', '大腦排毒', '阿茲海默症', '神經新生', 'BDNF', '粒線體', '認知健康', '神經科學']
-category: '慢性發炎科學'
+category: '性健康'
 ctaType: 'soft'
 slug: 'sleep-glymphatic-brain-detox'
 ---

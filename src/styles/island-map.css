@@ -287,3 +287,23 @@ html.island-on,html.island-on body{overflow:hidden}
 .map-page .st-sub{font:700 11.5px var(--m-mono);color:var(--m-muted);margin:12px 0 5px;letter-spacing:.04em}
 .map-page .ssub{display:block;width:100%;text-align:left;border:0;background:none;font:700 11px var(--m-mono);color:var(--m-muted);padding:8px 2px 3px;cursor:pointer}
 .map-page .ssub:hover{color:var(--m-coral)}
+/* 第二級圖示：子主題名牌 */
+.map-page .gpin{pointer-events:auto;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:4px;background:#fffdfbe8;border-left:3px solid var(--c,#999);border-radius:7px;padding:3px 7px 3px 6px;font-size:11.5px;font-weight:700;color:var(--m-ink);box-shadow:0 1px 5px #4a2a1422;white-space:nowrap;transform:translateY(-4px)}
+.map-page .gpin small{font:600 10px var(--m-mono);color:var(--m-muted)}
+.map-page .gpin:hover,.map-page .gpin.sel{background:var(--m-ink);color:var(--m-cream)}
+.map-page .gpin.sel small,.map-page .gpin:hover small{color:#e8d8cc}
+/* 澎湖知識庫 */
+.map-page .kbl{pointer-events:auto;display:inline-flex;align-items:center;gap:7px;background:var(--m-ink);color:var(--m-cream);border-radius:999px;padding:6px 13px 6px 8px;font-size:13.5px;font-weight:700;text-decoration:none;box-shadow:0 3px 10px #4a2a1440;white-space:nowrap}
+.map-page .kbl b{font-size:15px}
+.map-page .kbl small{display:block;font:600 10px var(--m-mono);color:#d9c9bc;margin-top:1px}
+.map-page .kbl:hover{background:var(--m-coral)}
+/* 站卡 */
+.map-page .ilist .t{flex:1}
+.map-page .ilist small.au{font-size:12px}
+.map-page .ilist small.pd{font:600 10px var(--m-mono);background:#efe6dc;color:#7a5a3c;border-radius:4px;padding:2px 5px;white-space:nowrap}
+.map-page .ilist.feat button{background:#fcf3c2}
+.map-page .choices{display:grid;gap:6px;margin:10px 0 4px}
+.map-page .kb-row{display:block;margin:12px 4px 4px;padding:10px 12px;border-radius:10px;background:var(--m-ink);color:var(--m-cream);font-size:13px;font-weight:700;text-decoration:none}
+.map-page .kb-row:hover{background:var(--m-coral)}
+.map-page .fb-prod{font-style:normal;font-size:11px;background:#efe6dc;color:#7a5a3c;border-radius:4px;padding:1px 5px;margin-left:6px}
+.map-page .ilist .n.dot{width:10px;height:10px;min-width:10px;border-radius:50%;background:var(--c);padding:0;font-size:0}

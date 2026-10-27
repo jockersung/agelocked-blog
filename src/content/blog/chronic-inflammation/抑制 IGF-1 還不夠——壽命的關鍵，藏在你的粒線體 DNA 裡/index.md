@@ -4,7 +4,7 @@ description: "最新《Science Advances》研究揭示：IGF-1 抑制能否延�
 pubDate: 2026-04-16
 heroImage: "./editorial-089-20261026.webp"
 tags: ["粒線體", "IGF-1", "抗老科學", "粒線體DNA", "長壽機制"]
-category: "慢性發炎科學"
+category: '身材'
 slug: igf1-mitochondria-dna-longevity
 ctaBridge: '粒線體狀態量不到，但身體訊號看得到。先花 1 分鐘做評估，看看你目前處於哪個狀態。'
 ---

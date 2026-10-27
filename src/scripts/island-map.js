@@ -439,10 +439,17 @@ function tree(type,x,z,s){
 }
 const lampPos=[]; const itemPlace={};
 ISL.forEach(s=>{
-  const n=s.items.length; const L=slots(n);
+  const n=s.groups&&s.groups.length?0:s.items.length; const L=slots(n);
   const occupied=[];
   const lm=LANDMARKS[s.landmark]; if(lm){ setFrame(s.x,TOP,s.z+LM_Z,1,0); curOwner='isl:'+s.i; curSmall=false; lm.f(); s.lmH=lm.h; }
-  s.items.forEach((it,k)=>{
+  if(s.groups&&s.groups.length){ // 站點：中間是站點地標，周圍是第二級的子主題建物
+    const G=slots(s.groups.length);
+    s.groups.forEach((g,k)=>{ const [lx,lz]=G.pts[k]; const sc=Math.min(G.c*1.05,.72); occupied.push([lx,lz,sc*.62]);
+      const model=MODELS[g.model]||MODELS.hall; g.k=k; g.island=s.i; g.world=new THREE.Vector3(s.x+lx,TOP,s.z+lz); g.scale=sc; g.h=model.h*sc;
+      setFrame(s.x+lx,TOP,s.z+lz,sc,(rng()-.5)*.4); curOwner='grp:'+s.i+':'+k; curSmall=false; model.f();
+      g.slugs.forEach(id=>{ const it=itemById[id]; if(!it) return; it.grp=k; it.world=g.world; it.scale=sc; it.h=g.h; it.local=[lx,lz]; }); });
+  }
+  else s.items.forEach((it,k)=>{
     const [lx,lz]=L.pts[k]; const sc=L.c*.9;
     occupied.push([lx,lz,sc*.6]);
     const model=MODELS[it.model]||MODELS.house; const ry=(rng()-.5)*.5;
@@ -504,7 +511,18 @@ bridges.forEach(b=>{ const dir=b.pb.clone().sub(b.pa); const L=dir.length(); con
 /* ---------- background islets, lighthouse ---------- */
 // 澎湖（西）、綠島與蘭嶼（東南）、龜山島（東北）
 const islets=[[-15,1,1.2,true],[-16.5,3.4,.8,false],[-14,4.6,.7,false],[13,11,.9,false],[12.5,16,1.1,false],[9,-15.5,.7,false]];
-islets.forEach(([dx,dz,sz,lh],k)=>{ const x=center.x+dx, z=center.z+dz; setFrame(x,WATER_Y,z,sz,0);
+// 澎湖 = 知識庫：圖書館＋大書＋燈塔，點了就到 /knowledge/
+const KB=(()=>{ const [dx,dz]=islets[0]; return { x:center.x+dx, z:center.z+dz }; })(); islets[0][2]=0;
+{ const S=1.35; curOwner='kb'; curSmall=false; setFrame(KB.x,WATER_Y,KB.z,S,0);
+  P('cyl',0,.2,0,1.9,.5,1.9,'#e3cfae'); P('cyl',0,.47,0,1.72,.06,1.72,C.leaf2); P('cyl',.55,.5,.55,.5,.04,.5,'#d9c49d');
+  const top=WATER_Y+.5*S;
+  setFrame(KB.x-.1,top,KB.z-.15,.95,0); MODELS.hall.f();
+  setFrame(KB.x+.78,top,KB.z+.35,.62,-.5); MODELS.book.f();
+  setFrame(KB.x,WATER_Y,KB.z,S,0); for(let j=0;j<5;j++) P('cyl',-.62,.5+j*.2,.42,.22-.02*j,.2,.22-.02*j,j%2?C.white:C.coral);
+  P('glowsphere',-.62,1.55,.42,.16,.16,.16,'#fff1c9'); P('cone',-.62,1.72,.42,.24,.2,.24,C.ink);
+  for(let k=0;k<5;k++){ const a=k/5*TAU+.4; tree(k%2?'round':'palm',KB.x+Math.cos(a)*1.85,KB.z+Math.sin(a)*1.85,.36); }
+  curOwner=null; setFrame(0,0,0,1,0); KB.top=top; }
+islets.forEach(([dx,dz,sz,lh],k)=>{ if(!sz) return; const x=center.x+dx, z=center.z+dz; setFrame(x,WATER_Y,z,sz,0);
   P('cyl',0,.2,0,1.6,.5,1.6,'#e3cfae'); P('ico',0,.55,0,1.2,.5,1.2,C.leaf2); P('ico',.3,.8,.2,.6,.5,.6,C.leaf1);
   if(lh){ for(let j=0;j<5;j++) P('cyl',-.2,.9+j*.28,0,.36-.03*j,.28,.36-.03*j,j%2?C.white:C.coral); P('glowsphere',-.2,2.35,0,.24,.24,.24,'#fff1c9'); P('cone',-.2,2.6,0,.36,.3,.36,C.ink); } });
 setFrame(0,0,0,1,0);
@@ -638,10 +656,18 @@ void main(){ float u = vUv.x*uLen*5.0 - uTime*1.4;
   m.visible=false; m.renderOrder=2; m.userData.flow=fi; scene.add(m); return m; });
 
 /* ---------- labels & pins ---------- */
-const islLabels = ISL.map(s=>{ const el=document.createElement('button'); el.className='isl'; el.innerHTML=`<b>${s.station||s.i+1}</b><span>${s.stationName||s.name}${s.sub?`<small>${s.sub}</small>`:''}</span>`;
-  el.addEventListener('click',e=>{ e.stopPropagation(); selectIsland(s.i); }); const o=new CSS2DObject(el); o.position.set(s.x,TOP*.45,s.z+R*.98); scene.add(o); return {o,el,state:'full',fullW:0}; });
+const islLabels = ISL.map(s=>{ const el=document.createElement('button'); el.className='isl'; el.innerHTML=`<b>${s.station||s.i+1}</b><span>${s.stationName||s.name}${s.city?`<small>${s.city}</small>`:''}</span>`;
+  el.addEventListener('click',e=>{ e.stopPropagation(); selectIsland(s.i); }); const o=new CSS2DObject(el); o.position.set(s.x,TOP*.45,s.z+(s.labelN?-1:1)*R*.98); scene.add(o); return {o,el,state:'full',fullW:0}; }); // labelN：名牌放在島的北邊（最北的站）
 const CIRC='①②③④⑤⑥⑦⑧⑨';
-const pins={}; Object.values(itemById).forEach(it=>{ const el=document.createElement('div'); el.className='pin'; el.textContent=CIRC[it.k]; el.title=it.name;
+const kbEl=document.createElement('a'); kbEl.className='kbl'; kbEl.href=DATA.links.knowledge; kbEl.innerHTML=`<b>📚</b><span>知識庫<small>澎湖 · ${DATA.kb.total} 篇＋語音</small></span>`;
+kbEl.addEventListener('click',e=>{ e.preventDefault(); e.stopPropagation(); openKB(); });
+{ const o=new CSS2DObject(kbEl); o.position.set(KB.x,KB.top+1.9,KB.z); scene.add(o); }
+function openKB(){ track('kb_open',{from:'island'}); location.href=DATA.links.knowledge; }
+// 第二級圖示：子主題名牌（一直顯示）
+const grpLabels=[]; ISL.forEach(s=>(s.groups||[]).forEach(g=>{ const el=document.createElement('button'); el.type='button'; el.className='gpin'; el.style.setProperty('--c',s.color);
+  el.textContent=g.name; const sm=document.createElement('small'); sm.textContent=g.slugs.length; el.appendChild(sm); el.addEventListener('click',e=>{ e.stopPropagation(); selectGroup(s.i,g.k); });
+  const o=new CSS2DObject(el); o.position.set(g.world.x,TOP+g.h+.32,g.world.z); scene.add(o); grpLabels.push({o,el,i:s.i,k:g.k}); }));
+const pins={}; Object.values(itemById).filter(it=>it.grp===undefined).forEach(it=>{ const el=document.createElement('div'); el.className='pin'; el.textContent=CIRC[it.k]; el.title=it.name;
   el.addEventListener('click',e=>{ e.stopPropagation(); selectItem(it.id); }); const o=new CSS2DObject(el); o.position.set(it.world.x,TOP+it.h+.38,it.world.z); o.visible=false; scene.add(o); pins[it.id]={o,el}; });
 const pinLines=new THREE.LineSegments(new THREE.BufferGeometry(),new THREE.LineBasicMaterial({color:C.coral,depthTest:false,transparent:true}));
 pinLines.renderOrder=5; pinLines.visible=false; scene.add(pinLines);
@@ -676,7 +702,11 @@ function applyTime(force){
 /* ---------- highlight & selection ---------- */
 let sel=null; const ORPH=new THREE.Color('#d8366a'), DEAD=new THREE.Color('#4c5fb0'), CORAL=new THREE.Color(C.coral), YEL=new THREE.Color(C.yellow), tmpC=new THREE.Color();
 function applyHighlight(){ const touched=new Set();
-  for(const id in ownerParts){ if(!itemById[id]) continue; let tgt=null;
+  for(const id in ownerParts){ if(id.startsWith('grp:')){ const [,gi,gk]=id.split(':').map(Number); const g=ISL[gi].groups[gk]; let tgt=null, amt=.28;
+      if(sel&&((sel.type==='group'&&sel.i===gi&&sel.k===gk)||(sel.type==='item'&&itemById[sel.id].island===gi&&itemById[sel.id].grp===gk))){ tgt=CORAL; amt=.3; }
+      else if(st.audit&&g.slugs.some(x=>orphans.has(x))){ tgt=ORPH; amt=.45; } else if(!st.audit&&g.slugs.some(x=>activeItems.has(x))) tgt=YEL;
+      for(const [mesh,i] of ownerParts[id]){ tmpC.copy(mesh.userData.base[i]); if(tgt) tmpC.lerp(tgt,amt); mesh.setColorAt(i,tmpC); touched.add(mesh); } continue; }
+    if(!itemById[id]) continue; let tgt=null;
     let amt=.28; if(sel&&sel.type==='item'&&sel.id===id){ tgt=CORAL; amt=.3; } else if(st.audit&&orphans.has(id)){ tgt=ORPH; amt=.55; } else if(st.audit&&deadEnds.has(id)){ tgt=DEAD; amt=.5; } else if(!st.audit&&activeItems.has(id)) tgt=YEL;
     for(const [mesh,i] of ownerParts[id]){ tmpC.copy(mesh.userData.base[i]); if(tgt) tmpC.lerp(tgt,amt); mesh.setColorAt(i,tmpC); touched.add(mesh); } }
   touched.forEach(m=>m.instanceColor.needsUpdate=true); dirty=true; }
@@ -687,12 +717,13 @@ function updateFlows(){ const vis=new Set(); if(st.flows) DATA.flows.forEach((f,
     if(sel.type==='flow') vis.add(sel.fi); if(sel.type==='walker') vis.add(walkers[sel.wi].fi); }
   flowMeshes.forEach((m,i)=>m.visible=vis.has(i)); $('#legend').hidden=vis.size===0; dirty=true; }
 function showPins(islIdx){ const pos=[];
-  Object.values(itemById).forEach(it=>{ const flag=st.audit&&(orphans.has(it.id)||deadEnds.has(it.id)); const on=it.island===islIdx||flag; pins[it.id].o.visible=on; pins[it.id].el.classList.toggle('on',!!(sel&&sel.type==='item'&&sel.id===it.id));
+  Object.values(itemById).forEach(it=>{ if(!pins[it.id]) return; const flag=st.audit&&(orphans.has(it.id)||deadEnds.has(it.id)); const on=it.island===islIdx||flag; pins[it.id].o.visible=on; pins[it.id].el.classList.toggle('on',!!(sel&&sel.type==='item'&&sel.id===it.id));
     pins[it.id].el.classList.toggle('orph',st.audit&&orphans.has(it.id)); pins[it.id].el.classList.toggle('dead',st.audit&&!orphans.has(it.id)&&deadEnds.has(it.id));
     if(on){ pos.push(it.world.x,TOP+it.h,it.world.z, it.world.x,TOP+it.h+.3,it.world.z); } });
   pinLines.geometry.dispose(); pinLines.geometry=new THREE.BufferGeometry(); pinLines.geometry.setAttribute('position',new THREE.Float32BufferAttribute(pos,3)); pinLines.visible=pos.length>0; }
-function islOfSel(){ if(!sel) return -1; if(sel.type==='island') return sel.i; if(sel.type==='item') return itemById[sel.id].island; return -1; }
-function refreshLabels(){ const si=islOfSel(); islLabels.forEach((l,i)=>{ l.el.classList.toggle('sel',i===si); l.el.classList.toggle('dim',si>=0&&i!==si); }); }
+function islOfSel(){ if(!sel) return -1; if(sel.type==='island') return sel.i; if(sel.type==='item') return itemById[sel.id].island; if(sel.type==='group') return sel.i; return -1; }
+function refreshLabels(){ const si=islOfSel(); islLabels.forEach((l,i)=>{ l.el.classList.toggle('sel',i===si); l.el.classList.toggle('dim',si>=0&&i!==si); });
+  const gi=sel&&sel.type==='item'?itemById[sel.id]:null; grpLabels.forEach(g=>g.el.classList.toggle('sel',!!sel&&((sel.type==='group'&&sel.i===g.i&&sel.k===g.k)||(gi&&gi.island===g.i&&gi.grp===g.k)))); }
 function afterSelect(){ applyHighlight(); updateFlows(); showPins(islOfSel()); refreshLabels(); renderList(); }
 
 /* ---------- camera flight ---------- */
@@ -706,9 +737,9 @@ function flyTo(obj,off){ const target=obj.clone(); const offset=off.clone();
   startFly(target.clone().add(offset),target); }
 function startFly(pos,target){ if(reduced){ camera.position.copy(pos); controls.target.copy(target); controls.update(); dirty=true; return; }
   fly={t0:performance.now(),p0:camera.position.clone(),t0v:controls.target.clone(),p1:pos,t1:target}; }
-function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?64:a>.8?72:124; }
-function panoTarget(){ const t=center.clone(); if(mqMobile.matches){ t.x-=0.6; t.z+=0.5; } else { t.z+=5; if(!$('#side').hidden) t.x+=3.6; } return t; }
-function panorama(){ const dir=new THREE.Vector3(.16,.8,.58).normalize(); const t=panoTarget(); if(st.bird){ startFly(t.clone().add(new THREE.Vector3(.01,84,12)),t); return; } startFly(t.clone().addScaledVector(dir,panoDist()),t); }
+function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?64:a>.8?72:146; }
+function panoTarget(){ const t=center.clone(); if(mqMobile.matches){ t.x-=3.2; t.z-=6.5; } else { t.z+=5; if(!$('#side').hidden) t.x+=3.6; } return t; }
+function panorama(){ const dir=(mqMobile.matches?new THREE.Vector3(-.2,.8,.56):new THREE.Vector3(.16,.8,.58)).normalize(); const t=panoTarget(); if(st.bird){ startFly(t.clone().add(new THREE.Vector3(.01,84,12)),t); return; } startFly(t.clone().addScaledVector(dir,panoDist()),t); }
 
 /* ---------- cards ---------- */
 const cardBody=$('#cardBody');
@@ -716,7 +747,8 @@ function openCard(html){ $('#card').hidden=false; cardBody.innerHTML=html; cardB
   cardBody.querySelectorAll('[data-item]').forEach(b=>b.onclick=()=>selectItem(b.dataset.item));
   cardBody.querySelectorAll('[data-read]').forEach(a=>a.addEventListener('click',()=>{ try{ window.gtag&&gtag('event','map_read_article',{slug:a.dataset.read}); }catch(e){} }));
   cardBody.querySelectorAll('[data-flow]').forEach(b=>b.onclick=()=>selectFlow(+b.dataset.flow));
-  cardBody.querySelectorAll('[data-isl]').forEach(b=>b.onclick=()=>selectIsland(+b.dataset.isl)); }
+  cardBody.querySelectorAll('[data-isl]').forEach(b=>b.onclick=()=>selectIsland(+b.dataset.isl));
+  cardBody.querySelectorAll('[data-grp]').forEach(b=>b.onclick=()=>{ const [i,k]=b.dataset.grp.split(':').map(Number); selectGroup(i,k); }); }
 function closeCard(){ $('#card').hidden=true; sel=null; afterSelect(); }
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const STEP=t=>DATA.steps[t];
@@ -739,7 +771,26 @@ function pathBlock(it){ const t=it.tier;
 function flowChip(fi){ const f=DATA.flows[fi]; return `<button class="chip" data-flow="${fi}">${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</button>`; }
 function ctaFor(t){ return t<=2?`<a class="cta soft" href="${DATA.links.assessment}">身體警報訊號評估清單（1 分鐘）→</a>`
   :`<a class="cta" href="${DATA.links.prescan}">填寫掃描前資料表，整理優先方向 →</a>`; }
-function cardIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
+const AUD=new Set(DATA.audio||[]);
+const kbLink=s=>`${DATA.links.knowledge}?cat=${encodeURIComponent(s.id)}`;
+const artLi=id=>{ const it=itemById[id]; if(!it) return ''; const tags=`${AUD.has(id)?'<small class="au" title="有語音版">🎧</small>':''}${it.product?'<small class="pd">產品介紹</small>':''}`;
+  return `<li><button data-item="${id}"><span class="n dot" style="--c:${ISL[it.island].color}">${it.page?'↗':''}</span><span class="t">${esc(it.name)}</span>${tags}</button></li>`; };
+// 站卡：先看這篇（精選 3 篇）→ 子主題 → 看懂變化／今天能做什麼／需要進一步了解時
+function stationBody(s){ const feat=new Set(s.featured||[]); const rest=s.items.filter(it=>!feat.has(it.id)&&!it.page);
+  const blk=[['看懂變化',it=>it.tier<=2],['今天能做什麼',it=>it.tier===4],['需要進一步了解時',it=>it.tier===3]];
+  const pages=s.items.filter(it=>it.page);
+  return `${(s.featured||[]).length?`<div class="sec">先看這篇</div><ul class="ilist feat">${s.featured.map(artLi).join('')}</ul>`:''}
+  ${pages.length?`<div class="choices">${pages.map(it=>`<a class="choice" href="${it.url}"><small>${esc(it.name)}</small><b>${esc(it.desc)} →</b></a>`).join('')}</div>`:''}
+  <div class="sec">這一站的子主題</div><div class="chips">${(s.groups||[]).map(g=>`<button class="chip" data-grp="${s.i}:${g.k}">${esc(g.name)} · ${g.slugs.length}</button>`).join('')}</div>
+  ${blk.map(([t,f])=>{ const a=rest.filter(f); return a.length?`<div class="sec">${t} · ${a.length}</div><ul class="ilist">${a.map(it=>artLi(it.id)).join('')}</ul>`:''; }).join('')}
+  <a class="link" href="${kbLink(s)}">在知識庫看這一站全部 ${s.items.filter(it=>!it.page).length} 篇，還能直接收聽 →</a>`; }
+function cardGroup(i,k){ const s=ISL[i], g=s.groups[k];
+  return `<div class="eyebrow">第 ${s.station} 站 · ${esc(s.stationName)} · 子主題</div><h2>${esc(g.name)}</h2>
+  <div class="sec">文章 · ${g.slugs.length}</div><ul class="ilist">${g.slugs.map(artLi).join('')}</ul>
+  <div class="chips" style="margin-top:12px"><button class="chip" data-isl="${s.i}">回到 ${esc(s.stationName)} 站</button>${s.groups.filter(x=>x!==g).map(x=>`<button class="chip" data-grp="${s.i}:${x.k}">${esc(x.name)}</button>`).join('')}</div>
+  <a class="link" href="${kbLink(s)}">在知識庫看「${esc(s.stationName)}」全部文章 →</a>`; }
+function selectGroup(i,k){ sel={type:'group',i,k}; openCard(cardGroup(i,k)); afterSelect(); const g=ISL[i].groups[k]; flyTo(g.world.clone().setY(TOP+g.h*.4),OFF_ITEM); }
+function cardIsland(i){ const s=ISL[i]; if(s.groups&&s.groups.length) return cardStationIsland(i); const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
   return `<div class="c-head"><span class="c-num">${s.station||i+1}</span><div><div class="eyebrow">第 ${s.station} 站 · ${esc(s.stationName)}${LANDMARKS[s.landmark]?' · 地標：'+LANDMARKS[s.landmark].name:''}</div>${tierChip(s.tier)}</div></div>
   <h2>${esc(s.name)}</h2><p>${esc(s.summary)}</p>
   ${AUDIT?`<div class="tiles">${(()=>{ const ids=s.items.map(it=>it.id); const out=ids.reduce((n,id)=>n+outLinks[id].filter(t=>itemById[t].island!==i).length,0), inn=ids.reduce((n,id)=>n+inLinks[id].filter(t=>itemById[t].island!==i).length,0), orph=ids.filter(id=>orphans.has(id)).length;
@@ -748,10 +799,15 @@ function cardIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).
   <ul class="ilist">${s.items.map(it=>`<li><button data-item="${it.id}"><span class="n">${CIRC[it.k]}</span>${esc(it.name)}${AUDIT&&orphans.has(it.id)?'<small class="fo">孤兒</small>':''}${AUDIT&&deadEnds.has(it.id)?'<small class="fd">死路</small>':''}</button></li>`).join('')}</ul>
   ${fl.length?`<div class="sec">通往其他島的路</div><div class="chips">${fl.map(([f,fi])=>flowChip(fi)).join('')}</div>`:''}
   ${ctaFor(s.tier)}`; }
+function cardStationIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
+  return `<div class="c-head"><span class="c-num" style="background:${s.color}">${s.station}</span><div><div class="eyebrow">第 ${s.station} 站 · ${esc(s.city||'')}</div></div></div>
+  <h2>${esc(s.stationName)}</h2><p>${esc(s.summary)}</p>${stationBody(s)}
+  ${fl.length?`<div class="sec">和其他站互相連結</div><div class="chips">${fl.map(([f,fi])=>flowChip(fi)).join('')}</div>`:''}
+  ${ctaFor(s.tier)}`; }
 function numTile(fact){ const m=fact.match(/(\d[\d,]*(?:\.\d+)?)(?:\s*[–-]\s*(\d+))?\s*(年代|mg\/L|%|秒|分鐘|小時|天|週|篇|項|個|年|次|種|步|位|份|條|張|下|頁|件|歲|公分|色|台|大|多)?/); if(!m) return '';
   return `<div class="tile"><b>${m[1]}${m[2]?'–'+m[2]:''}${m[3]?`<small>${m[3]}</small>`:''}</b><span>${esc(fact)}</span></div>`; }
 function cardItem(id){ const it=itemById[id], s=ISL[it.island];
-  return `<div class="eyebrow">第 ${s.station} 站 · ${esc(s.name)} · 細項 ${CIRC[it.k]}</div><h2>${esc(it.name)}</h2>
+  return `<div class="eyebrow">第 ${s.station} 站 · ${esc(s.name)}${it.grp!==undefined?' · '+esc(s.groups[it.grp].name):''}${it.product?' · 產品介紹':''}</div><h2>${esc(it.name)}</h2>
   <canvas class="thumb" id="thumb" width="320" height="320" aria-label="${esc(it.name)} 模型縮圖"></canvas>
   <blockquote class="tq">${esc(it.desc)}</blockquote>
   ${it.sum?`<p>${esc(it.sum)}</p>`:''}
@@ -762,7 +818,7 @@ function cardItem(id){ const it=itemById[id], s=ISL[it.island];
   ${it.page?'':`<div class="sec">延伸閱讀 · ${outLinks[id].length}</div>${outLinks[id].length?`<ul class="ilist lk">${outLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">這篇沒有延伸閱讀。</p>'}
   <div class="sec">從這些文章讀過來 · ${inLinks[id].length}</div>${inLinks[id].length?`<ul class="ilist lk">${inLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">還沒有其他文章提到這篇。</p>'}`}
   ${activeItems.has(id)?`<p style="margin-top:12px"><span class="tier" style="background:#fcf3c2;color:#6b5a12">此刻亮起 · ${esc(DATA.dayCycle[activeSlot].name)}</span></p>`:''}
-  <div class="sec">所屬站點</div><div class="chips"><button class="chip" data-isl="${s.i}">${esc(s.name)}</button></div>
+  <div class="sec">所屬站點</div><div class="chips"><button class="chip" data-isl="${s.i}">${esc(s.name)}</button>${it.grp!==undefined?`<button class="chip" data-grp="${s.i}:${it.grp}">${esc(s.groups[it.grp].name)}</button>`:''}</div>
   ${ctaFor(it.tier)}`; }
 const EVL={official:'帶往下一步',thematic:'同一步延伸',pending:'帶回前一步'};
 const linkBtn=id=>`<li><button data-item="${id}"><span class="n">${itemById[id].tier}</span>${esc(itemById[id].name)}<small>${esc(ISL[itemById[id].island].name)}</small></button></li>`;
@@ -869,7 +925,7 @@ function jasonWalkTo(point,onArrive){ if(!jason.parent) return; const end=point.
 const keys=new Set(); let jZone=-1;
 const KEYMAP={ArrowUp:'u',KeyW:'u',ArrowDown:'d',KeyS:'d',ArrowLeft:'l',KeyA:'l',ArrowRight:'r',KeyD:'r'};
 function zoneCheck(){ const h=hexAt(jason.position.x,jason.position.z); const z=h&&!h.land?h.i:-1; if(z===jZone) return; jZone=z;
-  if(z>=0){ const s=ISL[z]; say(`${s.name}：${s.items.length} 篇。按 Enter 看這裡的文章`); track('jason_enter',{island:s.id}); } }
+  if(z>=0){ const s=ISL[z]; say(`第 ${s.station} 站・${s.name}：走到子主題旁按 Enter 看文章`); track('jason_enter',{island:s.id}); } }
 function driveJason(dt){ if(!keys.size||!jason.parent) return false;
   const f=(keys.has('u')?1:0)-(keys.has('d')?1:0), sd=(keys.has('r')?1:0)-(keys.has('l')?1:0); if(!f&&!sd) return false;
   const fw=controls.target.clone().sub(camera.position).setY(0).normalize(); const rt=new THREE.Vector3(-fw.z,0,fw.x);
@@ -883,8 +939,8 @@ function driveJason(dt){ if(!keys.size||!jason.parent) return false;
   U.legs[0].rotation.x=sw*.55; U.legs[1].rotation.x=-sw*.55; U.arms[0].rotation.x=-sw*.45; U.arms[1].rotation.x=sw*.45;
   jNode=nearestNode(p); zoneCheck(); return true; }
 function jasonAction(){ if(!jason.parent) return false; const p=jason.position; let best=null,bd=1.1;
-  Object.values(itemById).forEach(it=>{ if(!it.world) return; const d=Math.hypot(it.world.x-p.x,it.world.z-p.z); if(d<bd){bd=d;best=it;} });
-  if(best){ selectItem(best.id); return true; } if(jZone>=0){ selectIsland(jZone); return true; } return false; }
+  ISL.forEach(s=>(s.groups||[]).forEach(g=>{ const d=Math.hypot(g.world.x-p.x,g.world.z-p.z); if(d<bd){bd=d;best=g;} }));
+  if(best){ selectGroup(best.island,best.k); return true; } if(jZone>=0){ selectIsland(jZone); return true; } return false; }
 function keyOk(e){ const t=e.target; if(!t||!t.closest) return true; if(/^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName)||t.isContentEditable) return false; return !t.closest('#card,#side,#help,#route,.map-hud'); }
 addEventListener('keydown',e=>{ if(PAUSED||!keyOk(e)) return; const k=KEYMAP[e.code]; if(k){ e.preventDefault(); keys.add(k); dirty=true; return; }
   if((e.key==='Enter'||e.key===' ')&&(e.target===document.body||e.target===renderer.domElement)){ if(jasonAction()) e.preventDefault(); } });
@@ -913,16 +969,12 @@ void main(){ float u=vUv.x*uLen*3.0-uTime*1.6; if(fract(u)>.62) discard; gl_Frag
   return { mesh, flags }; });
 function showRouteVis(r,k){ routeVis.forEach((v,i)=>{ const on=i===r; v.mesh.visible=on; v.flags.forEach((f,j)=>{ f.o.visible=on; f.el.classList.toggle('on',on&&j===k); f.el.classList.toggle('done',on&&j<k); }); }); dirty=true; }
 let route=null; const rtEl=$('#route');
-function cardStation(r,k){ const R0=ROUTES[r], st=R0.stations[k];
-  const subs=[...new Set(st.articles.map(a=>a.sub))];
-  const arts=subs.map(sb=>`${subs.length>1?`<div class="st-sub">${esc(sb)}</div>`:''}<ul class="ilist">${st.articles.filter(a=>a.sub===sb).map(a=>`<li><a class="st-art" href="${a.url}" data-read="${a.id}"><span class="n">第 ${a.tier} 步</span><span>${esc(a.title)}</span></a></li>`).join('')}</ul>`).join('');
-  const check= st.id==='check' ? `<a class="choice" href="${DATA.links.prescan}"><small>有健檢報告</small><b>填寫掃描前資料表 →</b><span>帶上血液報告和穿戴裝置數據，整理出 90 天生活調整的優先順序。</span></a><a class="choice" href="${DATA.links.assessment}"><small>還沒有數據</small><b>身體警報訊號評估清單 →</b><span>約 1 分鐘，先看看身體哪些訊號正在亮燈。</span></a>` : '';
-  return `<div class="eyebrow">${esc(R0.name)}路線 · 第 ${k+1} / ${R0.stations.length} 站</div><h2>${esc(st.name)}</h2>
-  ${st.hook?`<p class="st-hook">「${esc(st.hook)}」</p>`:''}${st.intro?`<p>${esc(st.intro)}</p>`:''}${check}
-  ${arts?`<div class="sec">這一站的文章 · ${st.articles.length}</div>${arts}`:''}
+function cardStation(r,k){ const R0=ROUTES[r], st=R0.stations[k], s=islById[st.island];
+  return `<div class="eyebrow">${esc(R0.name)}路線 · 第 ${k+1} / ${R0.stations.length} 站 · ${esc(s.city||'')}</div><h2>${esc(s.stationName)}</h2>
+  ${st.hook?`<p class="st-hook">「${esc(st.hook)}」</p>`:''}${st.intro?`<p>${esc(st.intro)}</p>`:`<p>${esc(s.summary)}</p>`}
+  ${stationBody(s)}
   ${st.upcoming&&st.upcoming.length?`<div class="sec">即將加入</div><ul class="st-up">${st.upcoming.map(u=>`<li>${esc(u)}</li>`).join('')}</ul>`:''}
-  ${st.doctorNote?`<p class="st-doc">${esc(st.doctorNote)}</p>`:''}
-  <a class="link" href="/men/${st.id!=='check'?'#'+st.id:''}">${st.id!=='check'?`看「男性慢老」專區的${esc(st.name)} →`:'看完整「男性慢老」專區 →'}</a>`; }
+  ${st.doctorNote?`<p class="st-doc">${esc(st.doctorNote)}</p>`:''}`; }
 function routeUI(){ const R0=ROUTES[route.r], n=R0.stations.length, st=R0.stations[route.k];
   $('#rtName').textContent=R0.name+'路線'; $('#rtProg').textContent=`${route.k+1} / ${n}`; $('#rtStation').textContent=`第 ${route.k+1} 站・${st.name}`;
   $('#rtDots').innerHTML=R0.stations.map((_,i)=>`<i class="${i<route.k?'done':i===route.k?'on':''}"></i>`).join('');
@@ -947,11 +999,12 @@ jTagEl.onclick=e=>{ e.stopPropagation(); if(route) say(ROUTES[route.r].stations[
 let tab='t';
 function renderList(){ const q=$('#search').value.trim().toLowerCase(); const L=$('#list'); const si=islOfSel();
   if(tab==='t'){ let html='';
-    const groups=[]; ISL.forEach(s=>{ const g=groups.find(g=>g.n===s.station); if(g) g.isl.push(s); else groups.push({n:s.station,name:s.stationName||s.name,isl:[s]}); });
-    groups.forEach(g=>{ const lead=g.isl[0]; const parts=g.isl.map(s=>({s,its:s.items.filter(it=>!q||(it.name+it.desc+s.name).toLowerCase().includes(q))})).filter(p=>!q||p.its.length); if(q&&!parts.length) return;
-      const open=q||g.isl.some(s=>s.i===si); const cnt=g.isl.reduce((n,s)=>n+s.items.length,0);
-      html+=`<details ${open?'open':''}><summary data-isl="${lead.i}"><span class="dot" style="background:${lead.color}"></span><span class="k">${g.n}</span>${esc(g.name)}<span class="c">${cnt}</span></summary>
-      <div class="sub">${parts.map(p=>`${g.isl.length>1&&p.s.sub?`<button class="ssub" type="button" data-isl="${p.s.i}">${esc(p.s.sub)}</button>`:''}${p.its.map(it=>`<a href="${it.url||'#'}" data-item="${it.id}">${CIRC[it.k]} ${esc(it.name)}</a>`).join('')}`).join('')}</div></details>`; });
+    ISL.forEach(s=>{ const m=it=>!q||(it.name+it.desc+s.name+(s.groups&&it.grp!==undefined?s.groups[it.grp].name:'')).toLowerCase().includes(q);
+      const its=s.items.filter(m); if(q&&!its.length) return;
+      const parts=(s.groups&&s.groups.length?s.groups.map(g=>({g,its:g.slugs.map(id=>itemById[id]).filter(it=>it&&m(it))})):[{g:null,its}]).filter(p=>!q||p.its.length);
+      html+=`<details ${q||si===s.i?'open':''}><summary data-isl="${s.i}"><span class="dot" style="background:${s.color}"></span><span class="k">${s.station||s.i+1}</span>${esc(s.stationName||s.name)}<span class="c">${s.items.length}</span></summary>
+      <div class="sub">${parts.map(p=>`${p.g?`<button class="ssub" type="button" data-grp="${s.i}:${p.g.k}">${esc(p.g.name)}</button>`:''}${p.its.map(it=>`<a href="${it.url||'#'}" data-item="${it.id}">${esc(it.name)}${AUD.has(it.id)?' <small>🎧</small>':''}</a>`).join('')}`).join('')}</div></details>`; });
+    html+=`<a class="kb-row" href="${DATA.links.knowledge}">📚 知識庫：全部 ${DATA.kb.total} 篇＋語音版，自由篩選 →</a>`;
     L.innerHTML=html||'<div class="empty">找不到符合的主題或細項，換個關鍵字試試，例如「睡眠」。</div>'; }
   else if(tab==='h'){ const pct=k=>Math.round(dirStat[k]/totalLinks*100); const match=q?(id=>(itemById[id].name+itemById[id].desc).toLowerCase().includes(q)):(()=>true);
     const lst=(set)=>[...set].filter(match).map(id=>`<button data-item="${id}">${esc(itemById[id].name)} <small>${esc(ISL[itemById[id].island].name)}</small></button>`).join('');
@@ -967,7 +1020,7 @@ function renderList(){ const q=$('#search').value.trim().toLowerCase(); const L=
   else { const fs=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>!q||(f.label+islById[f.from].name+islById[f.to].name).toLowerCase().includes(q));
     L.innerHTML=fs.map(([f,fi])=>`<button class="frow" data-flow="${fi}"><b>${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</b><small><span class="ev"><i class="${f.evidence}"></i></span> ${esc(f.label)}${AUDIT?' · 多數'+EVL[f.evidence]:''}</small></button>`).join('')||'<div class="empty">找不到符合的流動。</div>'; }
   L.querySelectorAll('summary[data-isl]').forEach(b=>b.addEventListener('click',()=>selectIsland(+b.dataset.isl)));
-  L.querySelectorAll('.ssub[data-isl]').forEach(b=>b.onclick=()=>selectIsland(+b.dataset.isl));
+  L.querySelectorAll('.ssub[data-grp]').forEach(b=>b.onclick=()=>{ const [i,k]=b.dataset.grp.split(':').map(Number); selectGroup(i,k); });
   L.querySelectorAll('[data-item]').forEach(b=>b.onclick=e=>{ if(e.metaKey||e.ctrlKey||e.shiftKey||e.button===1) return; e.preventDefault(); selectItem(b.dataset.item); });
   L.querySelectorAll('[data-flow]').forEach(b=>b.onclick=()=>selectFlow(+b.dataset.flow)); }
 $('#search').addEventListener('input',renderList);
@@ -1020,7 +1073,7 @@ renderer.domElement.addEventListener('pointerup',e=>{ if(!down) return; const mo
   for(const h of hits){ const o=h.object;
     if(o===WM.body||o===WM.head){ if(h.instanceId<NW){ selectWalker(h.instanceId); return; } continue; }
     if(o.userData.flow!==undefined){ selectFlow(o.userData.flow); return; }
-    if(o.isInstancedMesh){ const ow=o.userData.owners[h.instanceId]; if(!ow) continue; if(itemById[ow]){ selectItem(ow); return; } if(ow.startsWith('isl:')){ selectIsland(+ow.slice(4)); return; } continue; }
+    if(o.isInstancedMesh){ const ow=o.userData.owners[h.instanceId]; if(!ow) continue; if(itemById[ow]){ selectItem(ow); return; } if(ow.startsWith('isl:')){ selectIsland(+ow.slice(4)); return; } if(ow.startsWith('grp:')){ const [,gi,gk]=ow.split(':').map(Number); selectGroup(gi,gk); return; } if(ow==='kb'){ openKB(); return; } continue; }
     if(o.userData.island!==undefined){ selectIsland(o.userData.island); return; } } });
 addEventListener('keydown',e=>{ if(PAUSED) return; if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
   if(e.key==='Escape'){ if(!$('#help').hidden){ $('#help').hidden=true; lsSet('agelocked-island-help','1'); return; } closeCard(); return; }
@@ -1062,11 +1115,14 @@ function placeLabels(){ const ui=uiEls.filter(e=>!e.hidden&&e.offsetParent!==nul
   list.sort((a,b)=>(b.i===si)-(a.i===si)||b.r.top-a.r.top); const placed=[];
   for(const x of list){ const {l,r}=x; if(l.state==='full') l.fullW=r.width; const cx=r.left+r.width/2, cy=r.top+r.height/2, hh=r.height/2||14;
     const rect=(w,p)=>({l:cx-w/2-p,r:cx+w/2+p,t:cy-hh-p,b:cy+hh+p}); const free=q=>!ui.some(u=>hit(q,u))&&!placed.some(p=>hit(q,p));
-    const fw=l.fullW||r.width, cw=34; let ns;
-    if(free(rect(fw,l.state==='full'?0:8))) ns='full'; else if(free(rect(cw,l.state==='hide'?8:0))) ns='compact'; else ns='hide';
+    const fw=l.fullW||r.width, cw=34; let ns, dx=0; const cur=l.dx||0;
+    const rectAt=(w,p,o)=>{ const q=rect(w,p); q.l+=o-cur; q.r+=o-cur; return q; };
+    for(const o of [0,-45,45,-85,85]){ if(free(rectAt(fw,l.state==='full'?0:8,o))){ ns='full'; dx=o; break; } }
+    if(!ns){ if(free(rect(cw,l.state==='hide'?8:0))) ns='compact'; else ns='hide'; }
+    if(dx!==cur){ l.dx=dx; l.el.style.translate=dx?`${dx}px 0`:''; }
     if(x.i===si&&ns==='hide') ns='compact';
     if(ns!==l.state){ l.state=ns; l.el.classList.toggle('compact',ns==='compact'); l.el.classList.toggle('hide',ns==='hide'); }
-    if(ns!=='hide') placed.push(rect(ns==='full'?fw:cw,2)); } }
+    if(ns!=='hide') placed.push(ns==='full'?rectAt(fw,2,dx):rect(cw,2)); } }
 
 /* ---------- resize ---------- */
 function resize(){ const w=stage.clientWidth, h=stage.clientHeight; if(!w||!h) return; renderer.setSize(w,h); labelRenderer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix(); dirty=true; }
@@ -1099,6 +1155,7 @@ function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/
   if(!dirty) return; dirty=false;
   const d=camera.position.distanceTo(controls.target);
   const lod=d<26; smallMeshes.forEach(m=>m.visible=lod);
+  { const si=islOfSel(); const near=d<34; grpLabels.forEach(g=>{ g.o.visible=near||g.i===si; }); }
   const sc=clamp(d/20,1,1.45); if(st.carry) poseWalkers(sc);
   sprites.forEach(s=>s.visible=st.carry&&d<16);
   tags.forEach((t,i)=>t.visible=st.tags&&st.carry&&walkers[i].pos.distanceTo(camera.position)<14);

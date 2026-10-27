@@ -4,7 +4,7 @@ description: '這三種藥物在抗老化研究圈裡被討論得最多，背後
 pubDate: 2026-03-04
 heroImage: "./editorial-098-20261026.webp"
 tags: ['抗老化', '雷帕黴素', '二甲雙胍', 'GLP-1', 'mTOR', 'CRM']
-category: '慢性發炎科學'
+category: '臉蛋'
 slug: "longevity-drugs-science"
 ---
 
