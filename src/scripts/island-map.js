@@ -22,8 +22,8 @@ const mem = navigator.deviceMemory||8, cores = navigator.hardwareConcurrency||8,
 const LITE = QS.has('3d') ? false : (QS.has('lite') || !gpu || saveData || mem<=2 || cores<=2);
 const LOW = mem<=4 || cores<=4;
 const UI = ['#leftcol','#side','#hud','#hudToggle','#legend','#log','#disclaimer','#stage'];
-let stopGuideAudio=()=>{};
-bindExclusiveAudio(document,()=>stopGuideAudio());
+let stopGuideAudio=()=>{}, stopGuidePlayer=()=>{};
+bindExclusiveAudio(document,()=>stopGuidePlayer());
 let started = false, PAUSED = false; const savedUI = {};
 
 async function boot3D(){
@@ -927,7 +927,8 @@ const guideVoice=createGuideAudio(guideMedia,{
   },
   onError(){ say('語音暫時無法播放，請再點島主重試。你也可以先閱讀文字。'); }
 });
-stopGuideAudio=()=>{ guideVoice.stop(); ROOT.querySelectorAll('audio').forEach(a=>a.pause()); };
+stopGuidePlayer=()=>guideVoice.stop();
+stopGuideAudio=()=>{ stopGuidePlayer(); ROOT.querySelectorAll('audio').forEach(a=>a.pause()); };
 addEventListener('pagehide',stopGuideAudio);
 document.addEventListener('visibilitychange',()=>{ if(document.hidden) stopGuideAudio(); });
 function toggleJasonVoice(){
