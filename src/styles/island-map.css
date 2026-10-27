@@ -274,3 +274,10 @@ html.island-on,html.island-on body{overflow:hidden}
   .map-page .rt-station{font-size:15px}
   .map-page .jbub{max-width:200px;font-size:12.5px}
 }
+
+/* 路線站號旗 */
+.map-page .rflag{pointer-events:auto;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:2px solid #1a8c82;background:#fff;color:#1f4f4a;border-radius:999px;padding:3px 10px 3px 3px;font:800 12.5px var(--m-font);white-space:nowrap;box-shadow:0 3px 10px #4a2a1430}
+.map-page .rflag b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#1a8c82;color:#fff;font:700 12px var(--m-mono)}
+.map-page .rflag.done{opacity:.75}
+.map-page .rflag.on{background:var(--m-coral);border-color:var(--m-coral);color:#fff;transform:scale(1.08)}
+.map-page .rflag.on b{background:#fff;color:var(--m-coral)}

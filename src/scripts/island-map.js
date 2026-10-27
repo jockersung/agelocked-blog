@@ -831,8 +831,7 @@ const jason = new THREE.Group();
   add(box,hair,-.077,.318,-.008,.008,.036,.05); add(box,hair,.077,.318,-.008,.008,.036,.05); // 鬢角
   add(wGeo.eye,ink,-.028,.3,.072,1.1,.8,1); add(wGeo.eye,ink,.028,.3,.072,1.1,.8,1);
   add(box,ink,-.028,.32,.071,.022,.004,.004,0,0,.12); add(box,ink,.028,.32,.071,.022,.004,.004,0,0,-.12); // 眉毛
-  add(new THREE.SphereGeometry(.5,16,8,0,Math.PI*2,Math.PI/2,Math.PI/2),mouth,0,.27,.07,.036,.022,.012); // 笑開的嘴
-  add(box,shirt,0,.2675,.0735,.028,.005,.004);               // 牙齒
+  add(new THREE.SphereGeometry(.5,16,8,0,Math.PI*2,Math.PI/2,Math.PI/2),mouth,0,.272,.07,.03,.016,.01); // 微笑（不露牙）
   const sh=new THREE.Mesh(wGeo.shadow,new THREE.MeshBasicMaterial({color:'#2a1d14',transparent:true,opacity:.25,depthWrite:false})); sh.position.y=.004; jason.add(sh);
   jason.scale.setScalar(2.1); }
 const jTagEl=document.createElement('button'); jTagEl.className='jtag'; jTagEl.type='button'; jTagEl.textContent='島主 Jason';
@@ -854,6 +853,26 @@ function stepJason(dt){ if(!J.path) return false;
   return true; }
 if(ROUTES.length){ jNode=stationNode(ROUTES[0].stations[0].island); jason.position.copy(nodes[jNode].p); scene.add(jason); }
 
+// 路線在地圖上：一條串起各站的虛線步道，加上站號旗子
+const routeVis = ROUTES.map((R0)=>{
+  const st=R0.stations.map(x=>stationNode(x.island)); let ids=[st[0]];
+  for(let k=1;k<st.length;k++) ids=ids.concat(dijkstra(st[k-1],st[k]).slice(1));
+  const pts=ids.map(n=>nodes[n].p.clone().setY(nodes[n].p.y+.06));
+  const cp=new THREE.CurvePath(); for(let i=1;i<pts.length;i++) cp.add(new THREE.LineCurve3(pts[i-1],pts[i]));
+  let len=0; for(let i=1;i<pts.length;i++) len+=pts[i].distanceTo(pts[i-1]);
+  const mat=new THREE.ShaderMaterial({ transparent:true, depthWrite:false,
+    uniforms:{ uTime:{value:0}, uLen:{value:len}, uColor:{value:new THREE.Color('#1a8c82')} },
+    vertexShader:`varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
+    fragmentShader:`uniform float uTime; uniform float uLen; uniform vec3 uColor; varying vec2 vUv;
+void main(){ float u=vUv.x*uLen*3.0-uTime*1.6; if(fract(u)>.62) discard; gl_FragColor=vec4(uColor,.95);
+  #include <colorspace_fragment>
+}` });
+  const mesh=new THREE.Mesh(new THREE.TubeGeometry(cp,Math.max(32,pts.length*6),.075,6,false),mat); mesh.renderOrder=3; mesh.visible=false; scene.add(mesh);
+  const flags=R0.stations.map((x,k)=>{ const el=document.createElement('button'); el.type='button'; el.className='rflag'; el.innerHTML=`<b>${k+1}</b>${esc(x.name)}`;
+    el.onclick=e=>{ e.stopPropagation(); if(!route) route={r:ROUTES.indexOf(R0),k:0}; rtEl.hidden=false; goStation(k); };
+    const o=new CSS2DObject(el); const p=nodes[st[k]].p; o.position.set(p.x,p.y+1.25,p.z); o.visible=false; scene.add(o); return {o,el}; });
+  return { mesh, flags }; });
+function showRouteVis(r,k){ routeVis.forEach((v,i)=>{ const on=i===r; v.mesh.visible=on; v.flags.forEach((f,j)=>{ f.o.visible=on; f.el.classList.toggle('on',on&&j===k); f.el.classList.toggle('done',on&&j<k); }); }); dirty=true; }
 let route=null; const rtEl=$('#route');
 function cardStation(r,k){ const R0=ROUTES[r], st=R0.stations[k];
   const arts=st.articles.map(a=>`<li><a class="st-art" href="${a.url}" data-read="${a.id}"><span class="n">第 ${a.tier} 步</span><span>${esc(a.title)}</span></a></li>`).join('');
@@ -869,14 +888,14 @@ function routeUI(){ const R0=ROUTES[route.r], n=R0.stations.length, st=R0.statio
   $('#rtDots').innerHTML=R0.stations.map((_,i)=>`<i class="${i<route.k?'done':i===route.k?'on':''}"></i>`).join('');
   $('#rtPrev').disabled=route.k===0; $('#rtNext').textContent=route.k===n-1?'完成 ✓':'下一站 →'; }
 function goStation(k){ const R0=ROUTES[route.r]; const st=R0.stations[k]; const s=islById[st.island]; if(!s) return;
-  route.k=k; routeUI(); bub.visible=false;
+  route.k=k; routeUI(); bub.visible=false; showRouteVis(route.r,k);
   sel={type:'island',i:s.i}; openCard(cardStation(route.r,k)); afterSelect();
   if(mqMobile.matches) $('#card').style.height='46vh';
   flyTo(new THREE.Vector3(s.x,TOP,s.z),OFF_ISL);
   jasonGo(stationNode(st.island),()=>say(st.jason));
   track('route_station',{route:R0.id,station:st.id,step:k+1}); }
 function startRoute(r=0){ if(!ROUTES[r]) return; route={r,k:0}; rtEl.hidden=false; $('#help').hidden=true; lsSet('agelocked-island-help','1'); track('route_start',{route:ROUTES[r].id}); goStation(0); }
-function endRoute(done){ if(!route) return; if(done) track('route_complete',{route:ROUTES[route.r].id}); route=null; rtEl.hidden=true; dirty=true; }
+function endRoute(done){ if(!route) return; if(done) track('route_complete',{route:ROUTES[route.r].id}); route=null; rtEl.hidden=true; showRouteVis(-1,0); dirty=true; }
 $('#rtPrev').onclick=()=>{ if(route&&route.k>0) goStation(route.k-1); };
 $('#rtNext').onclick=()=>{ if(!route) return; const n=ROUTES[route.r].stations.length; if(route.k<n-1) goStation(route.k+1); else { endRoute(true); say('走完了！想知道自己的狀況，從健檢站開始最快。'); } };
 $('#rtExit').onclick=()=>endRoute(false);
@@ -1024,6 +1043,7 @@ function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/
   if(fly){ const t=clamp((now-fly.t0)/800,0,1); const k=t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2; camera.position.lerpVectors(fly.p0,fly.p1,k); controls.target.lerpVectors(fly.t0v,fly.t1,k); if(t>=1) fly=null; dirty=true; }
   if(controls.update()) dirty=true;
   if(stepJason(dt)) dirty=true;
+  if(route&&!reduced){ routeVis[route.r].mesh.material.uniforms.uTime.value=now/1000; dirty=true; }
   const running=!st.pause&&!reduced;
   if(running){ simT+=dt; minute=(minute+dt*10)%1440; applyTime(false); stepWalkers(dt);
     waterMat.uniforms.uTime.value+=dt; flowMeshes.forEach(m=>{ if(m.visible) m.material.uniforms.uTime.value=simT; });
