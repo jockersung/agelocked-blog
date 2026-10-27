@@ -307,3 +307,11 @@ html.island-on,html.island-on body{overflow:hidden}
 .map-page .kb-row:hover{background:var(--m-coral)}
 .map-page .fb-prod{font-style:normal;font-size:11px;background:#efe6dc;color:#7a5a3c;border-radius:4px;padding:1px 5px;margin-left:6px}
 .map-page .ilist .n.dot{width:10px;height:10px;min-width:10px;border-radius:50%;background:var(--c);padding:0;font-size:0}
+
+/* Jason: permanent, silent detection CTA; independent speech and playback controls. */
+.map-page .jcontrols{display:flex;flex-direction:column;align-items:center;gap:8px;max-width:260px;pointer-events:none}
+.map-page .jcontrols .jbub{max-height:26vh;overflow:auto;pointer-events:auto;margin-bottom:6px}
+.map-page .jcontrols .jbub[hidden]{display:none}
+.map-page .jcta{pointer-events:auto;display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;background:#fff1c9;color:#173f3b;border:2px solid #1f5c5c;border-radius:18px;font:800 13px var(--m-font);white-space:nowrap;box-shadow:0 3px 12px #173f3b33;text-decoration:none}
+.map-page .jtag{min-height:32px}
+.map-page .isl,.map-page .rflag{min-height:44px}
