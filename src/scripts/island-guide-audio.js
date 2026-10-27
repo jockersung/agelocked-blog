@@ -10,6 +10,8 @@ export function bindExclusiveAudio(doc, onOtherAudio, AudioType = HTMLAudioEleme
 }
 
 export function createGuideAudio(audio, {onState = () => {}, onError = () => {}} = {}) {
+  audio.loop = false;
+  audio.autoplay = false;
   let version = 0, active = false;
   const state = value => onState(value);
   function stop() {
@@ -42,11 +44,29 @@ export function createGuideAudio(audio, {onState = () => {}, onError = () => {}}
   }
   audio.addEventListener('ended', () => {
     if (!active || !audio.ended) return;
-    active = false;
-    state('idle');
+    stop();
   });
   audio.addEventListener('error', () => {
     if (audio.error) failed(version);
   });
   return {play, stop, isActive: () => active};
+}
+
+// Selecting or arriving at a station never starts speech. Only toggle() may play.
+export function createStationGuide(player, stations, onSpeak = () => {}) {
+  let selected = stations[0]?.island;
+  return {
+    select(id) {
+      if (!stations.some(station => station.island === id)) return;
+      if (id !== selected) player.stop();
+      selected = id;
+    },
+    toggle() {
+      if (player.isActive()) { player.stop(); return; }
+      const station = stations.find(station => station.island === selected);
+      if (!station?.audio) return;
+      onSpeak(station.jason);
+      player.play(station.audio);
+    }
+  };
 }
