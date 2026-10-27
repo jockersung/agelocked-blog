@@ -4,7 +4,7 @@ description: '一個人有多老？我們必須透過身體檢查才可以得知
 pubDate: 2026-03-03
 heroImage: "./editorial-107-20261026.webp"
 tags: ['健康', '抗衰老', '長壽科學']
-category: '精準健康工具'
+category: '臉蛋'
 slug: "aging-speed-measurement-methods"
 ctaType: 'hard'
 ---

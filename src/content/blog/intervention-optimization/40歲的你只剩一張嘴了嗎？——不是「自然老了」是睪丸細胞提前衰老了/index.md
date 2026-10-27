@@ -4,7 +4,7 @@ description: '台灣40歲以上男性三分之一有荷爾蒙低下症狀。你�
 pubDate: 2026-03-09
 heroImage: "./editorial-013-20261026.webp"
 tags: ['男性健康', '睪固酮', '雄性素', '性功能', 'LOH', '晚發性性腺功能低下', 'Inflammaging', '慢性發炎']
-category: '介入與調校'
+category: '健檢站'
 slug: "testosterone-cell-aging-40"
 ctaType: 'hard'
 ---

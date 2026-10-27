@@ -4,7 +4,7 @@ description: '體力下降、睡醒還累、記憶力開始出空白——你以
 pubDate: 2026-03-11
 heroImage: "./editorial-004-20261026.webp"
 tags: ['男性健康', 'Inflammaging', '慢性發炎', '疲勞', '身體訊號']
-category: '身體訊號解讀'
+category: '性健康'
 slug: "male-fatigue-after-40"
 ctaBridge: "40 歲的疲勞是一組症狀模式，不是單一症狀。把時間段、修復速度、認知狀態這些細節整理清楚，介入的方向才會浮出來。"
 ---

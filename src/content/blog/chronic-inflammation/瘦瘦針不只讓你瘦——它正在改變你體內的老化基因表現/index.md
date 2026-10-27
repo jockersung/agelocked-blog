@@ -4,7 +4,7 @@ description: "GLP-1 受體促效劑的抗老機制：直接活化 IGF-1 受體�
 pubDate: 2026-04-16
 heroImage: "./editorial-093-20261026.webp"
 tags: ["GLP-1", "瘦瘦針", "抗老化", "IGF-1", "慢性發炎", "粒線體", "基因老化", "肌少症"]
-category: "慢性發炎科學"
+category: '身材'
 slug: glp1-aging-gene-expression
 ---
 

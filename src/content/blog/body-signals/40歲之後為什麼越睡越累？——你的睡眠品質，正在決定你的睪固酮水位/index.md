@@ -4,7 +4,7 @@ description: '睡不好、睡不夠、起床還是累——這不是你「比較
 pubDate: 2026-03-11
 heroImage: "./editorial-066-20261026.webp"
 tags: ['男性健康', '睡眠品質', '睪固酮', '皮質醇', '慢波睡眠', '男性老化', 'Inflammaging']
-category: '身體訊號解讀'
+category: '性健康'
 slug: "sleep-quality-testosterone"
 ---
 

@@ -5,18 +5,20 @@ const { mode } = Astro.props;
 // 資料在 build 時從 content collection 產生；島嶼排列在 src/data/island-map.ts。
 // 加上 ?audit 會顯示內部用的「連結檢查」；?lite 強制文字版、?3d 強制 3D。
 import { getCollection } from 'astro:content';
-import { getUrlSlug } from '../utils/categories';
+import { getUrlSlug, getTier } from '../utils/categories';
 import { ISLANDS, LAND, DAY_CYCLE, FLOW_MIN, STEPS, DEFAULT_MODEL } from '../data/island-map';
+import { ROUTES } from '../data/island-routes';
+import audioManifest from '../data/audio-manifest.json';
+import { MEN_PILLARS } from '../data/men-slow-aging';
 import '../styles/island-map.css';
 
-const TIER: Record<string, number> = { '身體訊號解讀': 1, '慢性發炎科學': 2, '精準健康工具': 3, '介入與調校': 4 };
 const posts = await getCollection('blog');
 const bySlug = new Map(posts.map((p) => {
   const urlSlug = getUrlSlug(p);
   const slug = urlSlug.split('/').pop() as string;
   const out = new Set<string>();
   for (const m of (p.body ?? '').matchAll(/\]\((?:https?:\/\/(?:www\.)?agelocked\.com)?\/blog\/[^/]+\/([^/)\s#]+)\/?/g)) if (m[1] !== slug) out.add(m[1]);
-  return [slug, { slug, url: `/blog/${urlSlug}/`, tier: TIER[p.data.category] ?? 1, title: p.data.title, sum: p.data.description, out: [...out] }];
+  return [slug, { slug, url: `/blog/${urlSlug}/`, tier: getTier(p), station: p.data.category, product: p.data.product, title: p.data.title, sum: p.data.description, out: [...out] }];
 }));
 
 // 短名：取標題第一個斷句前的部分
@@ -25,44 +27,55 @@ const shortName = (t: string) => {
   return s.length > 10 ? s.slice(0, 10) + '…' : s;
 };
 
-const MAX_PER_ISLAND = 7;
 const placed = new Set<string>();
 const missing: string[] = [];
-const islands = ISLANDS.map((isl) => ({
-  ...isl,
-  items: isl.items.flatMap((it) => {
-    if (it.page) return [{ id: it.page.id, name: it.name, model: it.model, tier: it.page.tier, desc: it.page.title, facts: it.facts ?? [], url: it.page.url, page: true }];
+const islands = ISLANDS.map((isl) => {
+  const items = isl.items.flatMap((it) => {
+    if (it.page) return [{ id: it.page.id, name: it.name, model: it.model, tier: it.page.tier, desc: it.page.title, facts: it.facts ?? [], url: it.page.url, page: true, product: false }];
     const a = it.slug ? bySlug.get(it.slug) : undefined;
     if (!a) { if (it.slug) missing.push(it.slug); return []; }
     placed.add(a.slug);
-    return [{ id: a.slug, name: it.name, model: it.model, tier: a.tier, desc: a.title, facts: it.facts ?? [], url: a.url }];
-  }),
-}));
-// 新文章自動上島：同一步、文章最少的島；都滿了就找最接近那一步、還有空位的島
+    return [{ id: a.slug, name: it.name, model: it.model, tier: a.tier, desc: a.title, facts: it.facts ?? [], url: a.url, page: false, product: a.product }];
+  });
+  const ids = new Set(items.map((x) => x.id));
+  return { ...isl, items, groups: isl.groups.map((g) => ({ ...g, slugs: g.slugs.filter((x) => ids.has(x)) })), featured: isl.featured.filter((x) => ids.has(x)) };
+});
+// 新文章自動上地圖：放進文章 category 那一站、文章最少的子主題。性健康站不收產品介紹文章。
 const unplaced: string[] = [];
 for (const a of bySlug.values()) {
   if (placed.has(a.slug)) continue;
-  const open = islands.filter((i) => i.items.length < MAX_PER_ISLAND)
-    .sort((x, y) => Math.abs(x.tier - a.tier) - Math.abs(y.tier - a.tier) || x.items.length - y.items.length);
-  if (!open.length) { unplaced.push(a.slug); continue; }
-  open[0].items.push({ id: a.slug, name: shortName(a.title), model: DEFAULT_MODEL[a.tier], tier: a.tier, desc: a.title, facts: [], url: a.url });
+  const isl = islands.find((i) => i.stationName === a.station);
+  if (!isl || (isl.id === 'sexual-health' && a.product)) { unplaced.push(a.slug); continue; }
+  isl.items.push({ id: a.slug, name: shortName(a.title), model: DEFAULT_MODEL[a.tier], tier: a.tier, desc: a.title, facts: [], url: a.url, page: false, product: a.product });
+  const g = [...isl.groups].sort((x, y) => x.slugs.length - y.slugs.length)[0];
+  g.slugs.push(a.slug);
   placed.add(a.slug);
 }
 
+// 導覽路線：把每一站的主題（pillar）展開成標題、提問；文章清單直接用地圖上那一站
+const routes = ROUTES.map((r) => ({
+  ...r,
+  stations: r.stations.map((st) => {
+    const pl = st.pillar ? MEN_PILLARS.find((p) => p.id === st.pillar) : undefined;
+    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, jason: st.jason,
+      hook: pl?.hook ?? '', intro: pl?.intro ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [] };
+  }),
+}));
 const articles = Object.fromEntries([...bySlug.values()].map((a) => [a.slug, { sum: a.sum, out: a.out.filter((s) => bySlug.has(s)) }]));
 const data = {
   city: 'AGELOCKED',
   steps: STEPS,
-  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/blog' },
+  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/blog', knowledge: '/knowledge/' },
   islands, land: LAND, flowMin: FLOW_MIN,
   dayCycle: DAY_CYCLE.map((d) => ({ ...d, items: d.items.filter((s: string) => placed.has(s) || s.startsWith('page-')) })),
-  articles, missing, unplaced,
+  articles, missing, unplaced, routes, audio: Object.keys(audioManifest), kb: { url: '/knowledge/', total: bySlug.size },
 };
 const total = bySlug.size;
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
 
 // 文字版（弱裝置、不支援 3D、搜尋引擎與 AI 爬蟲都讀這一份）
-const byStep = [1, 2, 3, 4].map((t) => ({ t, step: STEPS[t]!, islands: islands.filter((i) => i.tier === t) }));
+const byStep = islands.map((isl) => ({ t: isl.station, isl, st: routes[0]?.stations.find((x) => x.island === isl.id) }));
+const itemOf = (isl: (typeof islands)[number], id: string) => isl.items.find((x) => x.id === id)!;
 const title = `健康島：${total} 篇文章的閱讀地圖｜AGELOCKED`;
 const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台灣地圖：從察覺身體訊號、找出慢性發炎的原因、用數據量測，到開始調整，照著路徑一步步讀。`;
 ---
@@ -75,7 +88,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
   <div class="fb-in">
     <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
     <h1 id="fbTitle">健康島：{total} 篇文章的閱讀路徑</h1>
-    <p class="lead">給把健康排最後的你。這些文章依四個步驟排列：先察覺訊號，再找出原因，接著用數據量測，最後開始調整。不知道從哪裡讀起，就從第 1 步開始。</p>
+    <p class="lead">給把健康排最後的你。這些文章依「男性慢老」六站排列：身材、臉蛋、性健康、禿頭白髮、心血管，最後到健檢站換成自己的數據。不知道從哪裡讀起，就從第 1 站開始。</p>
     <p class="lead" id="fbReason"></p>
     <div class="fb-actions">
       <a class="pri" href="/assessment/">身體警報訊號評估清單（1 分鐘）</a>
@@ -84,16 +97,15 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
       <a class="sec2" href="/about/">作者：孫義坤</a>
       <a class="sec2" href="/">回首頁</a>
     </div>
-    {byStep.map(({ t, step, islands: isls }) => (
+    {byStep.map(({ t, isl, st }) => (
       <>
-        <div class="fb-step"><b>{t}</b><h2>{step.name}</h2><span>{step.what}</span></div>
-        {isls.map((isl) => (
+        <div class="fb-step"><b>{t}</b><h2>{isl.stationName}</h2><span>{st?.hook || isl.summary}</span></div>
+        {isl.groups.map((g) => (
           <div class="fb-isl">
-            <h3><i style={`background:${isl.color}`}></i>{isl.name}</h3>
-            <p>{isl.summary}</p>
+            <h3><i style={`background:${isl.color}`}></i>{g.name}</h3>
             <ul>
-              {isl.items.map((it) => (
-                <li><a href={it.url}>{it.desc}<small>{it.page ? '' : articles[it.id]?.sum}</small></a></li>
+              {g.slugs.map((id) => itemOf(isl, id)).map((it) => (
+                <li><a href={it.url}>{it.desc}{it.product && <em class="fb-prod">產品介紹</em>}<small>{it.page ? '' : articles[it.id]?.sum}</small></a></li>
               ))}
             </ul>
           </div>
@@ -120,7 +132,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
   <div id="brand" class="glass">
     <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
     <h1>身體重開機 <span>健康島</span></h1>
-    <p>給把健康排最後的你。{total} 篇文章沿台灣由北往南排成一條閱讀路徑：察覺訊號、找出原因、量測確認、開始調整。</p>
+    <p>給把健康排最後的你。{total} 篇文章排成一張台灣地圖；跟著島主 Jason 從北走到南，走完「男性慢老」6 站。</p>
     {mode === 'home'
       ? <button class="home-link" id="toText" type="button">切換成文字版首頁 →</button>
       : <a class="home-link" href="/">← 回 AGELOCKED 首頁</a>}
@@ -129,6 +141,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
     <button class="btn" id="tPano" title="回到全景"><b>⌂</b>全景</button>
     <button class="btn" id="tList" aria-pressed="true" title="主題清單"><b>☰</b>清單</button>
     <button class="btn" id="tAbout" title="作者孫義坤"><b>i</b>作者</button>
+    <button class="btn" id="tRoute" title="跟著島主 Jason 走一趟"><b>➤</b>導覽</button>
     <button class="btn" id="tHelp" title="操作說明"><b>?</b>說明</button>
     <button class="btn" id="tText" title={mode === 'home' ? '切換成原本的文字首頁' : '切換成文字版文章地圖'}><b>文</b>文字版</button>
   </nav>
@@ -164,6 +177,17 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
   <span class="ev"><i class="pending"></i>帶回前一步</span>
 </div>
 
+<div id="route" class="glass" hidden aria-live="polite">
+  <div class="rt-head"><span class="eyebrow" id="rtName">男性慢老路線</span><b id="rtProg">1 / 6</b></div>
+  <div class="rt-station" id="rtStation"></div>
+  <div class="rt-dots" id="rtDots" aria-hidden="true"></div>
+  <div class="rt-btns">
+    <button class="btn" id="rtPrev" type="button">← 上一站</button>
+    <button class="btn rt-next" id="rtNext" type="button">下一站 →</button>
+    <button class="btn" id="rtExit" type="button" aria-label="結束導覽">×</button>
+  </div>
+</div>
+
 <div id="hud" class="glass">
   <div id="clock"><b id="clockT">10:00</b><span id="clockS">上午工作</span></div>
   <button class="btn" data-time="360"><b>06</b>清晨</button>
@@ -187,11 +211,12 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
     <div class="eyebrow">怎麼逛這座島</div>
     <h2 id="helpT">三步看懂健康島</h2>
     <ol>
-      <li><span>點一座<b>島</b>，看這個健康主題底下有哪些細項，以及它和哪些島互相導流。</span></li>
-      <li><span>點島上的<b>小建物</b>或號碼 ①②③，每一棟都是網站上的一篇文章，可以直接點去讀全文。</span></li>
-      <li><span>用下方<b>時段</b>與開關，看一天之中哪些身體訊號亮起，小人如何把內容搬往下一層。</span></li>
+      <li><span>島由北到南分成<b>六站</b>：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站，每站的建物都是一篇文章。</span></li>
+      <li><span>用<b>方向鍵或 WASD</b> 操控島主 Jason 走路，走到建物旁按 <b>Enter</b> 看文章；用滑鼠或手指<b>點地面</b>，Jason 會走過去。</span></li>
+      <li><span>拖曳轉動地圖，<b>Q / E</b> 也能旋轉視角。不想自己走，就讓 Jason 帶你走一遍。</span></li>
     </ol>
-    <button class="btn" id="helpOk">開始逛</button>
+    <button class="btn" id="helpRoute" type="button">跟著島主走：男性慢老 6 站</button>
+    <button class="btn ghost" id="helpOk">自己逛</button>
   </div>
 </div>
 

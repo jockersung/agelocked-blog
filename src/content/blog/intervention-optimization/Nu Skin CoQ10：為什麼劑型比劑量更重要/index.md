@@ -4,7 +4,8 @@ description: '同樣是CoQ10，為什麼有人吃了有感、有人完全沒反�
 pubDate: 2026-03-03
 heroImage: "./editorial-016-20261026.webp"
 tags: ['CoQ10', '輔酶Q10', '粒線體', '抗衰老', '介入']
-category: '介入與調校'
+category: '身材'
+product: true
 ctaType: 'hard'
 slug: "nuskin-coq10-bioavailability"
 ctaBridge: '適不適合補 CoQ10、要搭配什麼，取決於你現在的狀況。把健檢數據和用藥整理起來，我幫你先看一次。'

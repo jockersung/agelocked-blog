@@ -4,7 +4,7 @@ description: 'NMN 是近年來最被關注的抗衰老成分之一，臨床數�
 pubDate: 2026-03-01
 heroImage: "./editorial-091-20261026.webp"
 tags: ['NMN', 'NAD+', '粒線體', '熱量限制', 'CRM', '抗衰老']
-category: '慢性發炎科學'
+category: '臉蛋'
 slug: "nmn-anti-aging-review"
 ---
 

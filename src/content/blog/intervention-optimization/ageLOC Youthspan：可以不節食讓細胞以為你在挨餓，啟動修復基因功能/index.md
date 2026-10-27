@@ -4,7 +4,8 @@ description: '科學家發現，讓細胞以為正處於熱量受限狀態，就
 pubDate: 2026-03-04
 heroImage: "./editorial-021-20261026.webp"
 tags: ['ageLOC', 'Youthspan', '抗衰老', '基因表達', 'CRM', '介入']
-category: '介入與調校'
+category: '臉蛋'
+product: true
 ctaType: 'hard'
 slug: "ageloc-youthspan-longevity-genes"
 ctaBridge: '想了解 Youthspan 是否適合你現在的狀況？把你的健檢數據和穿戴裝置數據整理起來，我幫你先看一次。'

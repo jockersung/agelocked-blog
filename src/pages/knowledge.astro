@@ -1,0 +1,242 @@
+---
+// 知識庫：所有文章＋語音版，依「男性慢老」六站自由篩選。健康島上的澎湖（知識庫）連到這裡，也是地圖的文字版入口。
+// 篩選條件會寫進網址（?cat=body&audio=1&q=睡眠），可以直接分享某一站的清單。
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import manifest from '../data/audio-manifest.json';
+import { STATIONS, LABEL_TO_SLUG, getUrlSlug } from '../utils/categories';
+
+const audio = manifest as Record<string, { file: string; seconds: number }>;
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .map((p) => {
+    const slug = getUrlSlug(p).split('/').pop() as string;
+    const st = STATIONS.find((s) => s.label === p.data.category)!;
+    const a = audio[slug];
+    return { p, slug, url: `/blog/${getUrlSlug(p)}/`, st, audio: a ? { file: a.file, min: Math.max(1, Math.round(a.seconds / 60)) } : null };
+  });
+const count = Object.fromEntries(STATIONS.map((s) => [s.slug, posts.filter((x) => x.st.slug === s.slug).length]));
+const withAudio = posts.filter((x) => x.audio).length;
+---
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title={`知識庫：${posts.length} 篇文章與語音版｜AGELOCKED`} description="男性慢老六站：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站。所有文章都有作者本人聲音的語音版，可依主題篩選、直接收聽。" />
+  </head>
+  <body>
+    <Header />
+    <main class="kb">
+      <section class="kb-hero">
+        <p class="kb-eyebrow">AGELOCKED · 知識庫</p>
+        <h1>{posts.length} 篇文章，{withAudio} 篇可以用聽的</h1>
+        <p class="kb-lead">依「男性慢老」六站分類。挑一站、輸入關鍵字，或只看有語音版的文章，按 ▶ 就能邊做事邊聽。</p>
+        <div class="kb-links">
+          <a href="/map/">回到健康島地圖 →</a>
+          <a href="/assessment/">身體警報訊號評估清單（1 分鐘）→</a>
+        </div>
+      </section>
+
+      <div class="kb-tools" id="kbTools">
+        <div class="kb-chips" role="group" aria-label="依站點篩選">
+          <button type="button" class="chip" data-cat="" aria-pressed="true">全部 <span>{posts.length}</span></button>
+          {STATIONS.map((s) => (
+            <button type="button" class="chip" data-cat={s.slug} aria-pressed="false"><i style={`background:${s.color}`}></i>{s.n} {s.label} <span>{count[s.slug]}</span></button>
+          ))}
+        </div>
+        <div class="kb-row">
+          <label class="kb-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input id="kbQ" type="search" placeholder="搜尋標題或摘要，例如：睡眠、ApoB、白髮" autocomplete="off" aria-label="搜尋文章" />
+          </label>
+          <label class="kb-toggle"><input type="checkbox" id="kbAudio" /> 只看有語音版</label>
+          <select id="kbSort" aria-label="排序">
+            <option value="new">最新在前</option>
+            <option value="old">最舊在前</option>
+            <option value="short">語音短的在前</option>
+          </select>
+        </div>
+        <p class="kb-status" id="kbStatus" aria-live="polite"></p>
+      </div>
+
+      {STATIONS.map((s) => (
+        <p class="kb-desc" data-desc={s.slug} hidden><b style={`border-color:${s.color}`}>{s.n} {s.label}</b>{s.desc}</p>
+      ))}
+
+      <ul class="kb-list" id="kbList">
+        {posts.map((x, i) => (
+          <li class="kb-item" data-cat={x.st.slug} data-audio={x.audio ? '1' : ''} data-min={x.audio?.min ?? 999} data-i={i}
+              data-text={(x.p.data.title + ' ' + x.p.data.description).toLowerCase()}>
+            <a class="kb-thumb" href={x.url} tabindex="-1" aria-hidden="true">
+              {x.p.data.heroImage ? <Image src={x.p.data.heroImage} alt="" width={240} height={150} loading="lazy" /> : <span style={`background:${x.st.color}`}></span>}
+            </a>
+            <div class="kb-body">
+              <div class="kb-meta">
+                <a class="kb-cat" href={`?cat=${x.st.slug}`} data-cat-link={x.st.slug}><i style={`background:${x.st.color}`}></i>{x.st.label}</a>
+                <FormattedDate date={x.p.data.pubDate} />
+              </div>
+              <h2><a href={x.url}>{x.p.data.title}</a></h2>
+              <p>{x.p.data.description}</p>
+              {x.audio && (
+                <button type="button" class="kb-play" data-src={x.audio.file} data-slug={x.slug} data-title={x.p.data.title} data-url={x.url}>
+                  <span class="ic" aria-hidden="true">▶</span> 收聽 · 約 {x.audio.min} 分鐘
+                </button>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="kb-empty" id="kbEmpty" hidden>找不到符合的文章，換個關鍵字或清除篩選試試。</p>
+    </main>
+
+    <div class="kb-player" id="kbPlayer" hidden>
+      <div class="kb-player__in">
+        <div class="kb-player__t"><small>正在播放 · 作者本人聲音（AI 合成）</small><a id="kbPT" href="#"></a></div>
+        <audio id="kbAudioEl" controls preload="none"></audio>
+        <div class="kb-player__r" role="group" aria-label="播放速度">
+          {[0.9, 1, 1.25, 1.5].map((r) => <button type="button" data-rate={r} aria-pressed={r === 1 ? 'true' : 'false'}>{r}×</button>)}
+        </div>
+        <button type="button" class="kb-player__x" id="kbPX" aria-label="關閉播放器">✕</button>
+      </div>
+    </div>
+    <Footer />
+
+    <script>
+      const $ = <T extends Element = HTMLElement>(s: string) => document.querySelector(s) as unknown as T;
+      const items = [...document.querySelectorAll<HTMLElement>('.kb-item')];
+      const list = $('#kbList');
+      const q = $<HTMLInputElement>('#kbQ'), onlyAudio = $<HTMLInputElement>('#kbAudio'), sort = $<HTMLSelectElement>('#kbSort');
+      const chips = [...document.querySelectorAll<HTMLButtonElement>('.kb-chips .chip')];
+      const track = (ev: string, p: Record<string, unknown> = {}) => { try { (window as any).gtag?.('event', ev, p); } catch {} };
+      let cat = '';
+
+      const params = new URLSearchParams(location.search);
+      cat = params.get('cat') || '';
+      q.value = params.get('q') || '';
+      onlyAudio.checked = params.get('audio') === '1';
+      if (params.get('sort')) sort.value = params.get('sort')!;
+
+      function apply(push = false) {
+        const term = q.value.trim().toLowerCase();
+        chips.forEach((c) => c.setAttribute('aria-pressed', String((c.dataset.cat || '') === cat)));
+        document.querySelectorAll<HTMLElement>('[data-desc]').forEach((d) => (d.hidden = d.dataset.desc !== cat));
+        const order = [...items].sort((a, b) =>
+          sort.value === 'old' ? Number(b.dataset.i) - Number(a.dataset.i)
+          : sort.value === 'short' ? Number(a.dataset.min) - Number(b.dataset.min)
+          : Number(a.dataset.i) - Number(b.dataset.i));
+        let n = 0;
+        order.forEach((el) => {
+          const ok = (!cat || el.dataset.cat === cat) && (!onlyAudio.checked || el.dataset.audio === '1') && (!term || el.dataset.text!.includes(term));
+          el.hidden = !ok; if (ok) n++; list.appendChild(el);
+        });
+        $('#kbStatus').textContent = `顯示 ${n} 篇`;
+        $('#kbEmpty').hidden = n > 0;
+        const u = new URLSearchParams();
+        if (cat) u.set('cat', cat); if (term) u.set('q', q.value.trim()); if (onlyAudio.checked) u.set('audio', '1'); if (sort.value !== 'new') u.set('sort', sort.value);
+        const url = location.pathname + (u.toString() ? '?' + u : '');
+        history[push ? 'pushState' : 'replaceState'](null, '', url);
+      }
+      chips.forEach((c) => c.addEventListener('click', () => { cat = c.dataset.cat || ''; apply(true); track('kb_filter', { cat: cat || 'all' }); }));
+      document.querySelectorAll<HTMLAnchorElement>('[data-cat-link]').forEach((a) => a.addEventListener('click', (e) => {
+        e.preventDefault(); cat = a.dataset.catLink!; apply(true); $('#kbTools').scrollIntoView({ behavior: 'smooth' }); track('kb_filter', { cat }); }));
+      let t: number | undefined; q.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(() => apply(), 150); });
+      q.addEventListener('change', () => { if (q.value.trim()) track('kb_search', { q: q.value.trim() }); });
+      onlyAudio.addEventListener('change', () => { apply(); track('kb_filter', { audio: onlyAudio.checked }); });
+      sort.addEventListener('change', () => apply());
+      addEventListener('popstate', () => { const p = new URLSearchParams(location.search); cat = p.get('cat') || ''; apply(); });
+      apply();
+
+      // 共用播放器
+      const player = $('#kbPlayer'), audio = $<HTMLAudioElement>('#kbAudioEl'), title = $<HTMLAnchorElement>('#kbPT');
+      const rates = [...player.querySelectorAll<HTMLButtonElement>('[data-rate]')];
+      let rate = 1; try { rate = Number(localStorage.getItem('agelocked-audio-rate')) || 1; } catch {}
+      const setRate = (r: number) => { rate = r; audio.playbackRate = r; rates.forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.rate) === r))); try { localStorage.setItem('agelocked-audio-rate', String(r)); } catch {} };
+      setRate(rate); rates.forEach((b) => b.addEventListener('click', () => setRate(Number(b.dataset.rate))));
+      let cur: HTMLButtonElement | null = null, half = false;
+      const mark = () => document.querySelectorAll<HTMLButtonElement>('.kb-play').forEach((b) => {
+        const on = b === cur && !audio.paused; b.classList.toggle('on', on); b.querySelector('.ic')!.textContent = on ? '❚❚' : '▶'; });
+      document.querySelectorAll<HTMLButtonElement>('.kb-play').forEach((b) => b.addEventListener('click', () => {
+        if (cur === b) { audio.paused ? audio.play() : audio.pause(); return; }
+        cur = b; half = false; audio.src = b.dataset.src!; title.textContent = b.dataset.title!; title.href = b.dataset.url!;
+        player.hidden = false; document.body.classList.add('kb-playing'); audio.play().then(() => { audio.playbackRate = rate; }).catch(() => {});
+        track('audio_play', { slug: b.dataset.slug, source: 'knowledge' });
+      }));
+      audio.addEventListener('play', () => { audio.playbackRate = rate; mark(); });
+      audio.addEventListener('pause', mark);
+      audio.addEventListener('ended', () => { mark(); if (cur) track('audio_complete', { slug: cur.dataset.slug, source: 'knowledge' }); });
+      audio.addEventListener('timeupdate', () => { if (!half && cur && audio.duration && audio.currentTime / audio.duration > .5) { half = true; track('audio_half', { slug: cur.dataset.slug, source: 'knowledge' }); } });
+      $('#kbPX').addEventListener('click', () => { audio.pause(); player.hidden = true; document.body.classList.remove('kb-playing'); cur = null; mark(); });
+    </script>
+  </body>
+</html>
+
+<style>
+  .kb { max-width: 920px; margin: 0 auto; padding: 2.5rem 16px 6rem; }
+  .kb-hero { margin-bottom: 1.6rem; }
+  .kb-eyebrow { font: 600 .75rem 'DM Mono', monospace; letter-spacing: .12em; color: var(--teal); margin: 0 0 .6rem; }
+  .kb-hero h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.3; margin: 0 0 .8rem; color: var(--ink); }
+  .kb-lead { color: var(--body); margin: 0 0 1rem; max-width: 40em; }
+  .kb-links { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; font-size: .92rem; }
+  .kb-links a { color: var(--teal-dark); font-weight: 600; text-decoration: none; }
+  .kb-links a:hover { text-decoration: underline; }
+
+  .kb-tools { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: .8rem 0 .4rem; border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
+  .kb-chips { display: flex; gap: .45rem; overflow-x: auto; padding-bottom: .5rem; scrollbar-width: thin; }
+  .chip { flex: none; display: inline-flex; align-items: center; gap: .4rem; border: 1px solid var(--border); background: var(--bg2); color: var(--ink); border-radius: 999px; padding: .45rem .85rem; font-size: .9rem; cursor: pointer; min-height: 40px; }
+  .chip i { width: .7rem; height: .7rem; border-radius: 50%; display: inline-block; }
+  .chip span { font: .75rem 'DM Mono', monospace; color: var(--muted); }
+  .chip[aria-pressed='true'] { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .chip[aria-pressed='true'] span { color: #cfd8df; }
+  .kb-row { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+  .kb-search { flex: 1 1 260px; display: flex; align-items: center; gap: .5rem; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 0 .8rem; color: var(--muted); }
+  .kb-search input { border: 0; outline: 0; background: none; flex: 1; font-size: 1rem; padding: .65rem 0; color: var(--ink); min-width: 0; }
+  .kb-search:focus-within { border-color: var(--teal); }
+  .kb-toggle { display: inline-flex; align-items: center; gap: .4rem; font-size: .9rem; color: var(--body); cursor: pointer; min-height: 40px; }
+  .kb-toggle input { width: 1.1rem; height: 1.1rem; accent-color: var(--teal); }
+  #kbSort { border: 1px solid var(--border); background: var(--bg2); border-radius: 10px; padding: .55rem .6rem; font-size: .9rem; color: var(--ink); min-height: 40px; }
+  .kb-status { font: .78rem 'DM Mono', monospace; color: var(--muted); margin: .5rem 0 0; }
+  .kb-desc { margin: 0 0 1rem; color: var(--body); font-size: .95rem; }
+  .kb-desc b { border-left: 4px solid; padding-left: .5rem; margin-right: .6rem; color: var(--ink); }
+
+  .kb-list { list-style: none; margin: 0; padding: 0; }
+  .kb-item { display: grid; grid-template-columns: 160px 1fr; gap: 1.1rem; padding: 1.2rem 0; border-bottom: 1px solid var(--border); }
+  .kb-item[hidden] { display: none; }
+  .kb-thumb { display: block; border-radius: 10px; overflow: hidden; aspect-ratio: 16 / 10; background: var(--surface); }
+  .kb-thumb img, .kb-thumb span { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .9; }
+  .kb-meta { display: flex; gap: .8rem; align-items: center; font: .78rem 'DM Mono', monospace; color: var(--muted); margin-bottom: .35rem; }
+  .kb-cat { display: inline-flex; align-items: center; gap: .35rem; color: var(--ink); text-decoration: none; font-weight: 600; }
+  .kb-cat i { width: .6rem; height: .6rem; border-radius: 50%; }
+  .kb-cat:hover { color: var(--teal-dark); }
+  .kb-body h2 { font-size: 1.12rem; line-height: 1.45; margin: 0 0 .35rem; }
+  .kb-body h2 a { color: var(--ink); text-decoration: none; }
+  .kb-body h2 a:hover { color: var(--teal-dark); }
+  .kb-body p { margin: 0 0 .6rem; color: var(--body); font-size: .93rem; line-height: 1.65; }
+  .kb-play { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid var(--teal-mid); background: var(--teal-pale); color: var(--teal-dark); border-radius: 999px; padding: .4rem .9rem; font-size: .88rem; font-weight: 600; cursor: pointer; min-height: 40px; }
+  .kb-play .ic { font-size: .75rem; width: 1rem; text-align: center; }
+  .kb-play:hover, .kb-play.on { background: var(--teal); color: #fff; border-color: var(--teal); }
+  .kb-empty { color: var(--muted); padding: 2rem 0; text-align: center; }
+
+  .kb-player { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: var(--ink); color: #fff; box-shadow: 0 -6px 24px rgba(0,0,0,.18); }
+  .kb-player__in { max-width: 920px; margin: 0 auto; padding: .7rem 16px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) auto auto; gap: .8rem; align-items: center; }
+  .kb-player__t { min-width: 0; }
+  .kb-player__t small { display: block; font: .68rem 'DM Mono', monospace; color: #9fb3c0; }
+  .kb-player__t a { color: #fff; font-weight: 600; font-size: .9rem; text-decoration: none; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kb-player audio { width: 100%; height: 36px; }
+  .kb-player__r { display: flex; gap: 2px; }
+  .kb-player__r button, .kb-player__x { border: 0; background: rgba(255,255,255,.1); color: #fff; border-radius: 6px; padding: .35rem .45rem; font: .75rem 'DM Mono', monospace; cursor: pointer; min-height: 32px; }
+  .kb-player__r button[aria-pressed='true'] { background: var(--teal); }
+  :global(body.kb-playing) { padding-bottom: 90px; }
+
+  @media (max-width: 640px) {
+    .kb-item { grid-template-columns: 96px 1fr; gap: .8rem; }
+    .kb-body h2 { font-size: 1rem; }
+    .kb-body p { display: none; }
+    .kb-player__in { grid-template-columns: 1fr auto; }
+    .kb-player audio { grid-column: 1 / -1; grid-row: 2; }
+    .kb-player__r { grid-column: 1 / -1; grid-row: 3; justify-content: center; }
+    :global(body.kb-playing) { padding-bottom: 150px; }
+  }
+</style>

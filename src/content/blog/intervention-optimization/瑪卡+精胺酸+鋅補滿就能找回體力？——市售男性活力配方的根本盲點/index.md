@@ -4,7 +4,8 @@ description: "市售最常見的「瑪卡+精胺酸+鋅」組合，為什麼對4
 pubDate: 2026-03-15
 heroImage: "./editorial-101-20261026.webp"
 tags: ["瑪卡", "精胺酸", "男性活力", "ageLOC R2", "睪固酮", "粒線體", "慢性疲勞"]
-category: '介入與調校'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: 'maca-arginine-vs-ageloc-r2'
 ctaBridge: '把你的靜止心率、HRV、TG/HDL 填進資料表，我會先幫你梳理數據背後的代謝缺口，再討論下一步。'

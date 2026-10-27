@@ -4,7 +4,7 @@ description: '感冒拖三週、睡滿還是累、傷口好得比以前慢，你
 pubDate: 2026-03-11
 heroImage: "./editorial-070-20261026.webp"
 tags: ['抗氧化', '老化', '慢性發炎']
-category: '身體訊號解讀'
+category: '心血管'
 slug: "three-signs-chronic-inflammation"
 ctaBridge: "這三個訊號同時出現就不是巧合，是同一個系統的問題。花一分鐘把你的症狀組合整理出來，看它們指向哪一個方向。"
 ---

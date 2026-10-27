@@ -1,3 +1,13 @@
 
 /blog/precision-health-tools/three-clues-cross-reading/ /blog/chronic-inflammation/inflammation-three-clues/ 301
 /blog/precision-health-tools/three-clues-cross-reading /blog/chronic-inflammation/inflammation-three-clues/ 301
+
+# 2026-10：分類改成男性慢老六站，舊的四個分類頁導到知識庫（文章網址不變）
+/category/body-signals/ /knowledge/ 301
+/category/body-signals /knowledge/ 301
+/category/chronic-inflammation/ /knowledge/ 301
+/category/chronic-inflammation /knowledge/ 301
+/category/precision-health-tools/ /knowledge/ 301
+/category/precision-health-tools /knowledge/ 301
+/category/intervention-optimization/ /knowledge/ 301
+/category/intervention-optimization /knowledge/ 301

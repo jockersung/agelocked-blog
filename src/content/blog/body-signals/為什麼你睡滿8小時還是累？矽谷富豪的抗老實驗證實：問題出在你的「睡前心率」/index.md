@@ -4,7 +4,7 @@ description: '布萊恩．強生每年花200萬美金對抗老化。他的實驗
 pubDate: 2026-03-11
 heroImage: "./editorial-072-20261026.webp"
 tags: ['老化', '生物年齡', '抗衰老', '量化健康', '睡眠', '運動']
-category: '身體訊號解讀'
+category: '性健康'
 slug: 'aging-quantified-bryan-johnson-blueprint'
 ctaBridge: '就像布萊恩的藍圖計畫，一切都從測量開始。先花 1 分鐘，把你的身體訊號放在一起看，找出它們和慢性發炎早期模式有多少重疊。'
 ---

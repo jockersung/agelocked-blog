@@ -4,7 +4,7 @@ description: "先看健檢報告驗過哪些項目，再認識 HbA1c、TG/HDL、
 pubDate: 2026-10-19
 heroImage: "./editorial-042-20261026.webp"
 tags: ["健康檢查", "成人健檢", "HbA1c", "hs-CRP", "ApoB", "Lp(a)", "三酸甘油脂"]
-category: "身體訊號解讀"
+category: '健檢站'
 slug: checkup-five-numbers
 ctaType: "soft"
 ctaBridge: "先整理已有報告與想問的問題。你也可以用 1 分鐘評估，記下近期身體訊號，作為整理資訊的起點。"

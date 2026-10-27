@@ -4,7 +4,7 @@ description: "腹部脂肪不只是外觀問題。內臟脂肪是一個主動干
 pubDate: 2026-03-11
 heroImage: "./editorial-075-20261026.webp"
 tags: ["腹部脂肪", "內臟脂肪", "代謝症候群", "胰島素阻抗", "慢性發炎"]
-category: "身體訊號解讀"
+category: '身材'
 slug: "visceral-fat-metabolic-signal"
 ctaBridge: "腰圍是最誠實的代謝指標，但它只告訴你結果。先做一次系統化評估，看你的代謝訊號現在偏到哪個水位。"
 ---

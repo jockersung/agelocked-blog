@@ -242,3 +242,68 @@ html.island-on,html.island-on body{overflow:hidden}
 .island-open{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:800;min-height:48px;padding:0 18px;border:0;border-radius:999px;background:#211d1d;color:#fff8f4;font:700 15px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;box-shadow:0 6px 20px #2a1a1040;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
 .island-open:hover{background:#db6a41}
 .island-open:focus-visible{outline:3px solid #db6a41;outline-offset:3px}
+
+/* 導覽路線 */
+.map-page #route{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(440px,calc(100vw - 720px));min-width:300px;border-radius:18px;padding:12px 14px 10px;z-index:12;display:grid;gap:6px}
+.map-page .rt-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.map-page .rt-head b{font:italic 700 20px/1 var(--m-num);color:var(--m-coral);font-variant-numeric:tabular-nums}
+.map-page .rt-station{font-size:16px;font-weight:800;line-height:1.35}
+.map-page .rt-dots{display:flex;gap:4px}
+.map-page .rt-dots i{flex:1;height:4px;border-radius:2px;background:#e3d6c8}
+.map-page .rt-dots i.done{background:var(--m-teal)}
+.map-page .rt-dots i.on{background:var(--m-coral)}
+.map-page .rt-btns{display:flex;gap:6px}
+.map-page .rt-btns .btn{min-height:40px;border:1px solid var(--m-line);background:#fff}
+.map-page .rt-btns .rt-next{flex:1;background:var(--m-ink);color:var(--m-cream);border-color:var(--m-ink)}
+.map-page .rt-btns .rt-next:hover{background:var(--m-coral)}
+.map-page .rt-btns .btn:disabled{opacity:.4;cursor:default}
+.map-page .help-box .btn.ghost{background:transparent;color:var(--m-ink);border:1px solid var(--m-line);margin-top:8px}
+/* 島主 Jason */
+.map-page .jtag{pointer-events:auto;cursor:pointer;background:var(--m-teal);color:#fff;border:0;border-radius:999px;padding:4px 10px;font:800 12px var(--m-font);white-space:nowrap;box-shadow:0 2px 8px #4a2a1430}
+.map-page .jbub{max-width:240px;background:#fff;color:var(--m-ink);border-radius:14px;padding:10px 12px;font-size:13.5px;line-height:1.55;font-weight:600;box-shadow:0 6px 18px #4a2a1430;position:relative;white-space:normal}
+.map-page .jbub::after{content:"";position:absolute;left:50%;bottom:-7px;transform:translateX(-50%);border:7px solid transparent;border-top-color:#fff;border-bottom:0}
+/* 站卡片 */
+.map-page .st-hook{font-size:15px;font-weight:700;color:var(--m-ink);margin:2px 0 8px}
+.map-page .ilist a.st-art{display:flex;gap:8px;align-items:flex-start;text-decoration:none;color:var(--m-ink);background:#f8f1ea;border-radius:10px;padding:9px 10px;font-size:13px;line-height:1.5}
+.map-page .ilist a.st-art:hover{background:var(--m-yellow)}
+.map-page .ilist a.st-art .n{flex:none;font-weight:700;color:var(--m-teal);font-size:11.5px;padding-top:1px}
+.map-page .st-up{margin:10px 0 0;padding:0 0 0 18px;color:var(--m-muted);font-size:12.5px;line-height:1.6}
+.map-page .st-doc{margin-top:12px;padding:10px 12px;border-radius:10px;background:#eef4f2;color:#1f4f4a;font-size:12.5px;line-height:1.6}
+@media (max-width:800px){
+  .map-page #route{top:108px;left:10px;right:70px;transform:none;width:auto;min-width:0;padding:10px 12px 8px}
+  .map-page .rt-station{font-size:15px}
+  .map-page .jbub{max-width:200px;font-size:12.5px}
+}
+
+/* 路線站號旗 */
+.map-page .rflag{pointer-events:auto;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:2px solid #1a8c82;background:#fff;color:#1f4f4a;border-radius:999px;padding:3px 10px 3px 3px;font:800 12.5px var(--m-font);white-space:nowrap;box-shadow:0 3px 10px #4a2a1430}
+.map-page .rflag b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#1a8c82;color:#fff;font:700 12px var(--m-mono)}
+.map-page .rflag.done{opacity:.75}
+.map-page .rflag.on{background:var(--m-coral);border-color:var(--m-coral);color:#fff;transform:scale(1.08)}
+.map-page .rflag.on b{background:#fff;color:var(--m-coral)}
+/* 六站：島名標籤的子主題、站卡與側欄的分區 */
+.map-page .isl small{font-weight:600;font-size:11px;color:var(--m-muted);margin-left:5px}
+.map-page .isl.sel small{color:#f3e6dc}
+.map-page .st-sub{font:700 11.5px var(--m-mono);color:var(--m-muted);margin:12px 0 5px;letter-spacing:.04em}
+.map-page .ssub{display:block;width:100%;text-align:left;border:0;background:none;font:700 11px var(--m-mono);color:var(--m-muted);padding:8px 2px 3px;cursor:pointer}
+.map-page .ssub:hover{color:var(--m-coral)}
+/* 第二級圖示：子主題名牌 */
+.map-page .gpin{pointer-events:auto;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:4px;background:#fffdfbe8;border-left:3px solid var(--c,#999);border-radius:7px;padding:3px 7px 3px 6px;font-size:11.5px;font-weight:700;color:var(--m-ink);box-shadow:0 1px 5px #4a2a1422;white-space:nowrap;transform:translateY(-4px)}
+.map-page .gpin small{font:600 10px var(--m-mono);color:var(--m-muted)}
+.map-page .gpin:hover,.map-page .gpin.sel{background:var(--m-ink);color:var(--m-cream)}
+.map-page .gpin.sel small,.map-page .gpin:hover small{color:#e8d8cc}
+/* 澎湖知識庫 */
+.map-page .kbl{pointer-events:auto;display:inline-flex;align-items:center;gap:7px;background:var(--m-ink);color:var(--m-cream);border-radius:999px;padding:6px 13px 6px 8px;font-size:13.5px;font-weight:700;text-decoration:none;box-shadow:0 3px 10px #4a2a1440;white-space:nowrap}
+.map-page .kbl b{font-size:15px}
+.map-page .kbl small{display:block;font:600 10px var(--m-mono);color:#d9c9bc;margin-top:1px}
+.map-page .kbl:hover{background:var(--m-coral)}
+/* 站卡 */
+.map-page .ilist .t{flex:1}
+.map-page .ilist small.au{font-size:12px}
+.map-page .ilist small.pd{font:600 10px var(--m-mono);background:#efe6dc;color:#7a5a3c;border-radius:4px;padding:2px 5px;white-space:nowrap}
+.map-page .ilist.feat button{background:#fcf3c2}
+.map-page .choices{display:grid;gap:6px;margin:10px 0 4px}
+.map-page .kb-row{display:block;margin:12px 4px 4px;padding:10px 12px;border-radius:10px;background:var(--m-ink);color:var(--m-cream);font-size:13px;font-weight:700;text-decoration:none}
+.map-page .kb-row:hover{background:var(--m-coral)}
+.map-page .fb-prod{font-style:normal;font-size:11px;background:#efe6dc;color:#7a5a3c;border-radius:4px;padding:1px 5px;margin-left:6px}
+.map-page .ilist .n.dot{width:10px;height:10px;min-width:10px;border-radius:50%;background:var(--c);padding:0;font-size:0}

@@ -4,7 +4,7 @@ description: '從大鼠到恆河猴，從酵母菌到人類臨床試驗——減
 pubDate: 2026-03-04
 heroImage: "./editorial-088-20261026.webp"
 tags: ['熱量限制', '抗衰老', 'Sirtuins', '自噬', '長壽科學']
-category: '慢性發炎科學'
+category: '身材'
 slug: "caloric-restriction-longevity-science"
 ctaBridge: '想先了解自己的身體訊號現在在哪個程度？花 1 分鐘做評估，是最簡單的起點。'
 ---

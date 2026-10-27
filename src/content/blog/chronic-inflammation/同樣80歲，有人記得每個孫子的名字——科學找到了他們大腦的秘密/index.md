@@ -4,7 +4,7 @@ description: '2026年《Nature》大規模人類海馬迴研究，分析355,997�
 pubDate: 2026-04-03
 heroImage: "./editorial-085-20261026.webp"
 tags: ['神經新生', 'Super-agers', 'Healthspan', '阿茲海默症', '認知韌性', '海馬迴', 'BDNF', '大腦老化']
-category: '慢性發炎科學'
+category: '臉蛋'
 ctaType: 'soft'
 slug: 'super-agers-neurogenesis-healthspan'
 ---

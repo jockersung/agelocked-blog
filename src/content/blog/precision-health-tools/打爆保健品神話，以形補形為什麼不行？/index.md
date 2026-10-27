@@ -4,7 +4,7 @@ description: '胎盤素、端粒酶促進劑、膠原蛋白、幹細胞飲品—
 pubDate: 2026-03-09
 heroImage: "./editorial-114-20261026.webp"
 tags: ['保健品選擇', '生物利用率', '消化系統', '以形補形', '胎盤素', '端粒酶']
-category: '精準健康工具'
+category: '健檢站'
 ctaType: 'hard'
 slug: "supplement-myths-debunked"
 ---

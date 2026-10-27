@@ -4,7 +4,7 @@ description: '毛細胞死了不會再長回來。所有介入的目標只有一
 pubDate: 2026-02-21
 heroImage: "./editorial-102-20261026.webp"
 tags: ['聽力保護', '抗氧化', '粒線體', '抗衰老']
-category: '介入與調校'
+category: '心血管'
 ctaType: 'hard'
 slug: "hearing-loss-supplement-strategy"
 ---

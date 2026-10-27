@@ -4,7 +4,8 @@ description: '體力下降、睡醒還累、記憶力鈍掉——這些不是「
 pubDate: 2026-03-01
 heroImage: "./editorial-018-20261026.webp"
 tags: ['ageLOC R2', '男性抗衰老', '蟲草', 'Nrf2', '介入與調校']
-category: '介入與調校'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: "ageloc-r2-cellular-renewal"
 ctaBridge: '體力、睡眠、認知這三個面向裡，你最想先處理哪一個？把你的健檢數據和穿戴裝置數據整理起來，我幫你先看優先順序。'

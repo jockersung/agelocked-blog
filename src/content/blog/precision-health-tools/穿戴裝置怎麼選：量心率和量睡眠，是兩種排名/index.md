@@ -4,7 +4,7 @@ description: "先決定要量運動心率、睡眠還是 HRV，再比較配戴�
 pubDate: 2026-10-19
 heroImage: "./editorial-057-20261026.webp"
 tags: ["穿戴裝置", "智慧手錶", "智慧戒指", "HRV", "睡眠追蹤", "心率"]
-category: "精準健康工具"
+category: '健檢站'
 slug: wearable-choose-guide
 ctaType: "hard"
 ctaBridge: "若已有量測資料，可在資料表記下裝置、指標與想了解的問題，不需要為填表先買新工具。"

@@ -4,7 +4,7 @@ description: '「天然最好」「SGS認證有保障」「我家那個吃了生
 pubDate: 2026-03-07
 heroImage: "./editorial-117-20261026.webp"
 tags: ['保健品選購', '話術破解', '科學選品', '精準健康']
-category: '精準健康工具'
+category: '健檢站'
 slug: "supplement-marketing-tactics"
 ctaType: 'hard'
 ---

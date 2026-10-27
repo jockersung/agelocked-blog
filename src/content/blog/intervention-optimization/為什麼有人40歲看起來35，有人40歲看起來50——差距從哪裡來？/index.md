@@ -4,7 +4,8 @@ description: "老化速度不一樣，是因為基因不同嗎？科學給了一
 pubDate: 2026-03-11
 heroImage: "./editorial-100-20261026.webp"
 tags: ["生理年齡", "YouthSpan", "CRM", "長壽基因", "抗老化", "enJoy"]
-category: "介入與調校"
+category: '臉蛋'
+product: true
 ctaType: 'hard'
 slug: "biological-age-gap-youthspan"
 ctaBridge: '不推薦三層同時上。先把你的健檢數據和生活狀況整理起來，我幫你看現在哪一層對你最有意義。'

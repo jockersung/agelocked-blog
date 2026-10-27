@@ -3,7 +3,7 @@ title: '越睡越累？熬夜催老？《Nature》雙重解密：大腦的物理
 description: '《Nature》50萬人大規模研究：睡眠不足真正的代價不是疲勞，而是老化速度。從大腦每晚的物理清洗到全身抗老，解析你的「最佳睡眠時數」。'
 pubDate: 2026-05-18
 heroImage: "./editorial-096-20261026.webp"
-category: '慢性發炎科學'
+category: '性健康'
 ctaType: 'soft'
 slug: 'sleep-duration-biological-aging'
 ctaBridge: '你的睡眠是原因，也是結果。如果你不確定自己屬於哪一種，先花 1 分鐘做評估，從睡眠、壓力、發炎、代謝四個面向看一次。'

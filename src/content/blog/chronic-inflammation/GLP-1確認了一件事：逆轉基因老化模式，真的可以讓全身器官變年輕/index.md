@@ -4,7 +4,7 @@ description: '香港中文大學團隊在《Cell Metabolism》發表的研究，
 pubDate: 2026-03-01
 heroImage: "./editorial-080-20261026.webp"
 tags: ['抗衰老', '基因表達', 'mTOR', '慢性發炎科學', 'Cell Metabolism']
-category: '慢性發炎科學'
+category: '身材'
 slug: "glp1-gene-aging-reversal"
 ctaBridge: '基因表達量不到，但身體訊號看得到。先花 1 分鐘做評估，看看你的身體警報落在哪個水位。'
 ---

@@ -4,7 +4,7 @@ description: '2026年《Science Signaling》最新研究揭示：長期壓力透
 pubDate: 2026-04-03
 heroImage: "./editorial-068-20261026.webp"
 tags: ['慢性壓力', '粒線體', 'BDNF', '憂鬱', '神經科學', '身體訊號', '腦霧']
-category: '身體訊號解讀'
+category: '性健康'
 ctaType: 'soft'
 slug: 'stress-mitochondria-bdnf-depression'
 ---

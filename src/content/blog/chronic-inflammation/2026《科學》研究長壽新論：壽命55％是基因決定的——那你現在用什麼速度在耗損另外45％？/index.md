@@ -4,7 +4,7 @@ description: '2026 年《科學》雙胞胎研究估計，排除意外與傳染�
 pubDate: 2026-02-12
 heroImage: "./editorial-078-20261026.webp"
 tags: ['抗氧化', '健康', '長壽']
-category: '慢性發炎科學'
+category: '臉蛋'
 slug: "longevity-55-percent-genetics"
 ctaBridge: '你的疲勞、感冒頻率、睡眠和修復速度，放在一起看才看得出方向。先花 1 分鐘做評估，看看這些訊號組合指向哪裡。'
 ---

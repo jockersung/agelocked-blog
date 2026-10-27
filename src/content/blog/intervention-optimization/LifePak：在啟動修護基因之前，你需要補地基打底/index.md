@@ -4,7 +4,8 @@ description: '很多人掃完 Prysm iO 之後問我：「那我要吃 Youthspan 
 pubDate: 2026-03-08
 heroImage: "./editorial-014-20261026.webp"
 tags: ['LifePak', '植化素', 'Phytochemicals', 'Nrf2', '抗氧化', '微量營養素']
-category: '介入與調校'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: "lifepak-foundation-nutrition"
 ---

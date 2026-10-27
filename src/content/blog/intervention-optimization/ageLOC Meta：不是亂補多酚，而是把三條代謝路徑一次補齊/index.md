@@ -4,7 +4,8 @@ description: "前三篇講的是內臟脂肪的訊號問題，這篇講的是解
 pubDate: 2026-03-19
 heroImage: "./editorial-017-20261026.webp"
 tags: ["ageLOC Meta", "每代紫", "花青素", "Oligonol", "內臟脂肪", "代謝介入"]
-category: "介入與調校"
+category: '身材'
+product: true
 slug: "ageloc-meta-clinical-protocol"
 ctaType: 'hard'
 ctaBridge: '把腰圍、身高、TG、HDL、空腹血糖填進資料表，我會先告訴你比較像卡在哪一個迴路、Meta 是不是你的優先選項，以及有沒有該先處理的干擾因素。'

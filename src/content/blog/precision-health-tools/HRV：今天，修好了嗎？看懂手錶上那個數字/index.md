@@ -4,7 +4,7 @@ description: "HRV 偏低先看資料品質、指標算法、個人趨勢與近�
 pubDate: 2026-10-19
 heroImage: "./editorial-054-20261026.webp"
 tags: ["HRV", "心率變異度", "自律神經", "睡眠", "恢復", "穿戴裝置"]
-category: "精準健康工具"
+category: '心血管'
 slug: hrv-recovery-guide
 ctaType: "hard"
 ctaBridge: "先整理同一裝置的有效資料與近期作息，再用資料表保留脈絡；持續不適請先就醫。"

@@ -4,7 +4,7 @@ description: '人類平均壽命在延長，但健康壽命和壽命之間的落
 pubDate: 2026-03-02
 heroImage: "./editorial-092-20261026.webp"
 tags: ['抗氧化', '健康', '長壽']
-category: '慢性發炎科學'
+category: '臉蛋'
 slug: "healthspan-vs-lifespan"
 ctaBridge: '把你的訊號整理清楚，是第一步。花 1 分鐘做評估，看看這些症狀組合起來，有沒有呈現出一個早期的模式。'
 ---

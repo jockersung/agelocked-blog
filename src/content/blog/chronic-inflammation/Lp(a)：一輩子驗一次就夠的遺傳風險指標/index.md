@@ -4,7 +4,7 @@ description: "家人年輕就有心血管疾病，值得認識 Lp(a)。了解一
 pubDate: 2026-10-19
 heroImage: "./editorial-048-20261026.webp"
 tags: ["Lp(a)", "脂蛋白a", "遺傳", "心血管風險", "家族史", "血液檢查"]
-category: "慢性發炎科學"
+category: '心血管'
 slug: lpa-genetic-risk
 ctaType: "soft"
 ctaBridge: "記下家人發病年齡與已有報告。評估入口可協助整理近期困擾；遺傳風險與檢驗安排仍請和醫師討論。"

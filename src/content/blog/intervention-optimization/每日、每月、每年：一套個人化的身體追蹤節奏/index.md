@@ -4,7 +4,7 @@ description: "用日期、工具、結果、當時狀況與問題五個欄位，
 pubDate: 2026-10-19
 heroImage: "./editorial-063-20261026.webp"
 tags: ["健康管理", "追蹤", "Prysm iO", "HRV", "血液檢查", "營養補充"]
-category: "介入與調校"
+category: '健檢站'
 slug: tracking-rhythm
 ctaType: "hard"
 ctaBridge: "把已有報告、工具名稱和想問的問題整理進資料表即可，不必為了填表先加做檢查。"

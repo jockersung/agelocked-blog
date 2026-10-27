@@ -4,7 +4,7 @@ description: '2000年，義大利老年醫學家 Claudio Franceschi 在頂級期
 pubDate: 2026-03-01
 heroImage: "./editorial-090-20261026.webp"
 tags: ['Inflammaging', '慢性發炎', 'NF-κB', 'SASP', '老化機制', 'IL-6']
-category: '慢性發炎科學'
+category: '臉蛋'
 slug: "anti-inflammation-anti-aging"
 ctaBridge: "Inflammaging 不是命定的，但你得先知道自己現在走到哪裡。花一分鐘把疲勞、睡眠、修復速度這些訊號整理成一個可以判讀的模式。"
 ---

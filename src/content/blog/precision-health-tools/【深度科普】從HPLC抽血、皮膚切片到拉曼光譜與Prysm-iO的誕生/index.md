@@ -4,7 +4,8 @@ description: '完整還原抗氧化測量技術的五階段演化史——從 HP
 pubDate: 2026-02-24
 heroImage: "./editorial-105-20261026.webp"
 tags: ['抗氧化', '科學史', 'Prysm-iO', '深度科普']
-category: '精準健康工具'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: "carotenoid-rrs-science"
 ---

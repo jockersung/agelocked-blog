@@ -5,7 +5,8 @@ pubDate: 2026-02-24
 heroImage: "./editorial-022-20261026.webp"
 tags: ['抗氧化', '科技', 'Prysm-iO']
 memberOnly: true
-category: '精準健康工具'
+category: '健檢站'
+product: true
 ctaType: 'hard'
 slug: "antioxidant-scanner-comparison"
 ---
