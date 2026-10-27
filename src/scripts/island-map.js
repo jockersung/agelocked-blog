@@ -1,3 +1,4 @@
+import { ISLAND_OVERVIEW, DETECTION_CTA } from '../data/island-overview.js';
 import { createGuideAudio, bindExclusiveAudio, createStationGuide } from './island-guide-audio.js';
 import { createWalkSurface, acceptsMovementKey } from './island-movement.js';
 import { TAIWAN_COASTLINE } from '../data/taiwan-coastline.js';
@@ -757,9 +758,9 @@ function flyTo(obj,off){ const target=obj.clone(); const offset=off.clone();
   startFly(target.clone().add(offset),target); }
 function startFly(pos,target){ if(reduced){ camera.position.copy(pos); controls.target.copy(target); controls.update(); dirty=true; return; }
   fly={t0:performance.now(),p0:camera.position.clone(),t0v:controls.target.clone(),p1:pos,t1:target}; }
-function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?78:a>.8?84:146; }
+function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?ISLAND_OVERVIEW.desktopDistance:a>.8?ISLAND_OVERVIEW.tabletDistance:ISLAND_OVERVIEW.mobileDistance; }
 function panoTarget(){ const t=center.clone(); if(mqMobile.matches){ t.x-=3.2; t.z-=6.5; } else { t.z+=5; if(!$('#side').hidden) t.x+=3.6; } return t; }
-function panorama(){ const dir=(mqMobile.matches?new THREE.Vector3(-.2,.8,.56):new THREE.Vector3(.16,.8,.58)).normalize(); const t=panoTarget(); if(st.bird){ startFly(t.clone().add(new THREE.Vector3(.01,84,12)),t); return; } startFly(t.clone().addScaledVector(dir,panoDist()),t); }
+function panorama(){ const dir=(mqMobile.matches?new THREE.Vector3(-.12,.65,.75):new THREE.Vector3(...ISLAND_OVERVIEW.direction)).normalize(); const t=panoTarget(); if(st.bird){ startFly(t.clone().add(new THREE.Vector3(.01,84,12)),t); return; } startFly(t.clone().addScaledVector(dir,panoDist()),t); }
 
 /* ---------- cards ---------- */
 const cardBody=$('#cardBody');
@@ -911,8 +912,13 @@ const jason = new THREE.Group();
   const sh=new THREE.Mesh(wGeo.shadow,new THREE.MeshBasicMaterial({color:'#2a1d14',transparent:true,opacity:.25,depthWrite:false})); sh.position.y=.004; jason.add(sh);
   jason.scale.setScalar(2.1); }
 const jTagEl=document.createElement('button'); jTagEl.className='jtag'; jTagEl.type='button'; jTagEl.id='jasonVoice'; jTagEl.textContent='🔊 島主 Jason'; jTagEl.setAttribute('aria-pressed','false'); jTagEl.setAttribute('aria-label','播放本站 Jason 本人聲音開場白（AI 合成）'); jTagEl.title='點擊播放本人聲音，再點一次停止';
-const jTag=new CSS2DObject(jTagEl); jTag.position.set(0,.46,0); jason.add(jTag);
-const bubEl=document.createElement('div'); bubEl.className='jbub'; const bub=new CSS2DObject(bubEl); bub.center.set(.5,1); bub.position.set(0,.55,0); bub.visible=false; jason.add(bub);
+const jControlEl=document.createElement('div'); jControlEl.className='jcontrols';
+const jCtaEl=document.createElement('a'); jCtaEl.id='jasonDetectionCta'; jCtaEl.className='jcta'; jCtaEl.textContent=DETECTION_CTA.text; jCtaEl.href=DETECTION_CTA.href; jCtaEl.setAttribute('aria-label','來做檢測：填寫掃描前資料表');
+jCtaEl.addEventListener('click',e=>{ e.stopPropagation(); track('jason_detection_cta'); });
+const bubEl=document.createElement('div'); bubEl.className='jbub'; bubEl.hidden=true;
+const bub={ get visible(){ return !bubEl.hidden; }, set visible(on){ bubEl.hidden=!on; } };
+jControlEl.append(bubEl,jCtaEl,jTagEl);
+const jTag=new CSS2DObject(jControlEl); jTag.center.set(.5,1); jTag.position.set(0,.46,0); jason.add(jTag);
 function say(t){ bubEl.textContent=t; bub.visible=true; dirty=true; clearTimeout(say.t); say.t=setTimeout(()=>{ bub.visible=false; dirty=true; },10000); }
 // Local, pre-generated personal voice clips; no visitor API requests or keys.
 const guideMedia=document.createElement('audio'); guideMedia.id='jasonGuideAudio'; guideMedia.preload='none'; ROOT.appendChild(guideMedia);
@@ -1082,7 +1088,7 @@ document.querySelectorAll('[data-tog]').forEach(b=>b.onclick=()=>{ const k=b.dat
   if(k==='flows') updateFlows();
   if(k==='audit'){ applyHighlight(); showPins(islOfSel()); if(st.audit){ setSide(true); setTab('h'); } }
   if(k==='log') $('#log').hidden=!st.log;
-  if(k==='bird'){ controls.minPolarAngle=st.bird?0:THREE.MathUtils.degToRad(25); const t=controls.target.clone(); startFly(st.bird?t.clone().add(new THREE.Vector3(.01,84,12)):t.clone().addScaledVector(new THREE.Vector3(.16,.8,.58).normalize(),panoDist()),t); }
+  if(k==='bird'){ controls.minPolarAngle=st.bird?0:THREE.MathUtils.degToRad(25); const t=controls.target.clone(); startFly(st.bird?t.clone().add(new THREE.Vector3(.01,84,12)):t.clone().addScaledVector(new THREE.Vector3(...ISLAND_OVERVIEW.direction).normalize(),panoDist()),t); }
   if(k==='carry'){ Object.values(WM).forEach(m=>m.visible=st.carry); }
   dirty=true; });
 $('#hudToggle').onclick=()=>{ const o=document.body.classList.toggle('hud-open'); $('#hudToggle').setAttribute('aria-expanded',o); };
@@ -1170,6 +1176,15 @@ function placeLabels(){ const ui=uiEls.filter(e=>!e.hidden&&e.offsetParent!==nul
     if(ns!==l.state){ l.state=ns; l.el.classList.toggle('compact',ns==='compact'); l.el.classList.toggle('hide',ns==='hide'); }
     if(ns!=='hide') placed.push(ns==='full'?rectAt(fw,2,dx):rect(cw,2)); } }
 
+function placeJasonControls(){
+  jControlEl.style.translate='';
+  const r=jControlEl.getBoundingClientRect(); let top=10;
+  if(!rtEl.hidden){ const routeBox=rtEl.getBoundingClientRect(); if(r.left<routeBox.right&&r.right>routeBox.left) top=Math.max(top,routeBox.bottom+8); }
+  const dx=r.left<10?10-r.left:r.right>innerWidth-10?innerWidth-10-r.right:0;
+  const dy=r.top<top?top-r.top:r.bottom>innerHeight-80?innerHeight-80-r.bottom:0;
+  if(dx||dy) jControlEl.style.translate=`${dx}px ${dy}px`;
+}
+
 /* ---------- resize ---------- */
 function resize(){ const w=stage.clientWidth, h=stage.clientHeight; if(!w||!h) return; renderer.setSize(w,h); labelRenderer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix(); dirty=true; }
 new ResizeObserver(resize).observe(stage); resize();
@@ -1179,7 +1194,7 @@ if(reduced) flowMeshes.forEach(m=>m.material.uniforms.uStyle.value=1);
 
 /* ---------- start ---------- */
 applyTime(true); renderList();
-{ const dir=new THREE.Vector3(.16,.8,.58).normalize(); const t0=panoTarget(); controls.target.copy(t0); camera.position.copy(t0).addScaledVector(dir,panoDist()); controls.update(); }
+{ const dir=new THREE.Vector3(...ISLAND_OVERVIEW.direction).normalize(); const t0=panoTarget(); controls.target.copy(t0); camera.position.copy(t0).addScaledVector(dir,panoDist()); controls.update(); }
 poseWalkers(1); renderer.render(scene,camera);
 loader.classList.add('gone'); setTimeout(()=>loader.hidden=true,600);
 if(!lsGet('agelocked-island-help')) showHelp();
@@ -1207,7 +1222,7 @@ function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/
   sprites.forEach(s=>s.visible=st.carry&&d<16);
   tags.forEach((t,i)=>t.visible=st.tags&&st.carry&&walkers[i].pos.distanceTo(camera.position)<14);
   if(boats.length&&!running) boats.forEach(b=>{ const u=b.userData; b.position.set(center.x+Math.cos(u.a)*u.r,WATER_Y+.02,center.z+Math.sin(u.a)*u.rz); });
-  renderer.render(scene,camera); labelRenderer.render(scene,camera); placeLabels();
+  renderer.render(scene,camera); labelRenderer.render(scene,camera); placeJasonControls(); placeLabels();
   logT+=dt; if(st.log&&logDirty&&logT>.3){ renderLog(); logT=0; } }
 requestAnimationFrame(frame);
 }
