@@ -24,6 +24,7 @@
 - 定義在 `src/utils/categories.ts`；地圖的子主題與「先看這篇」在 `src/data/island-map.ts`
 - 性健康站不放產品介紹文章；產品文章 frontmatter 加 `product: true`，知識庫與地圖會標示「產品介紹」
 - 知識庫 `/knowledge/`（地圖上的澎湖）：全部文章＋語音版，可依六站篩選
+- 待寫題目與素材記在 `.claude/content-backlog.md`（依六站分區）；讀者看得到的預告是 `src/data/men-slow-aging.ts` 的 `upcoming`
 
 ## 內容漏斗架構（內部用：文章資料夾）
 
