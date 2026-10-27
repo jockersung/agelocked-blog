@@ -1,3 +1,5 @@
+import { createWalkSurface, acceptsMovementKey } from './island-movement.js';
+import { TAIWAN_COASTLINE } from '../data/taiwan-coastline.js';
 // 健康島 3D 引擎（首頁與 /map 共用）。資料在 build 時由 src/components/HealthIsland.astro 產生，放在 #map-data。
 const DATA = JSON.parse(document.getElementById('map-data').textContent);
 { // 萬聖節南瓜燈只在 10/10–11/1 出現
@@ -125,7 +127,7 @@ renderer.shadowMap.enabled = !(LOW&&isMobile); renderer.shadowMap.type = THREE.P
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1;
 stage.appendChild(renderer.domElement);
-renderer.domElement.tabIndex = 0; renderer.domElement.setAttribute('aria-label','健康島 3D 場景，方向鍵可旋轉');
+renderer.domElement.tabIndex = 0; renderer.domElement.setAttribute('aria-label','健康島 3D 場景，方向鍵或 WASD 操控島主走路');
 const labelRenderer = new CSS2DRenderer(); labelRenderer.domElement.id='labels'; stage.appendChild(labelRenderer.domElement);
 
 const scene = new THREE.Scene();
@@ -219,6 +221,16 @@ function bandTex(color){
   const t=new THREE.CanvasTexture(c); t.colorSpace=THREE.SRGBColorSpace; t.wrapS=THREE.RepeatWrapping; t.repeat.set(6,1); return t;
 }
 
+/* Continuous Taiwan coastline, with six town plazas on top. */
+const coastShape=new THREE.Shape();
+TAIWAN_COASTLINE.forEach(([x,z],i)=>i?coastShape.lineTo(x,-z):coastShape.moveTo(x,-z)); coastShape.closePath();
+const coastGeo=new THREE.ExtrudeGeometry(coastShape,{depth:TOP-WATER_Y+.5,bevelEnabled:false}).rotateX(-Math.PI/2);
+const coast=new THREE.Mesh(coastGeo,new THREE.MeshStandardMaterial({color:'#b8cb91',roughness:.95}));
+coast.position.y=WATER_Y-.6; coast.receiveShadow=true; coast.castShadow=true; scene.add(coast);
+const coastWater=new THREE.Mesh(new THREE.ShapeGeometry(coastShape).rotateX(-Math.PI/2),new THREE.MeshBasicMaterial({color:'#c6ebe6',transparent:true,opacity:.5,depthWrite:false}));
+coastWater.scale.set(1.025,1,1.018); coastWater.position.y=WATER_Y+.012; scene.add(coastWater);
+const coastLine=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(TAIWAN_COASTLINE.map(([x,z])=>new THREE.Vector3(x,TOP-.09,z))),new THREE.LineBasicMaterial({color:'#eee4c8'})); scene.add(coastLine);
+
 /* ---------- islands ---------- */
 const hexXZ = (a,r)=>[Math.cos(a)*r, Math.sin(a)*r];
 const flatHex = g=>g.rotateZ(Math.PI/6).rotateX(-Math.PI/2);
@@ -230,16 +242,18 @@ HEX.forEach(s=>{
   const tint = new THREE.Color(s.color).lerp(new THREE.Color('#ffffff'), s.land?.5:.78);
   const top = new THREE.Mesh(g, new THREE.MeshStandardMaterial({ map:GTEX[s.pattern], color:tint, roughness:.92 }));
   top.receiveShadow=true; scene.add(top); if(!s.land){ top.userData.island=s.i; islandTops.push(top); }
+  if(!s.land){
   const band = new THREE.Mesh(new THREE.CylinderGeometry(R,R,.16,6,1,true).translate(s.x,TOP-.08,s.z), new THREE.MeshStandardMaterial({ map:bandTex(s.color), roughness:.85 }));
   band.receiveShadow=true; scene.add(band);
   const wh=(TOP-.16)-(WATER_Y-.6);
   wallGeos.push(new THREE.CylinderGeometry(R*.997,R*1.05,wh,6).translate(s.x,(TOP-.16)-wh/2,s.z));
+  }
   curbGeos.push(flatHex(new THREE.RingGeometry(R-.09,R-.02,6)).translate(s.x,TOP+.006,s.z));
   walkGeos.push(flatHex(new THREE.RingGeometry(1.66,1.94,6)).translate(s.x,TOP+.004,s.z));
-  shallowGeos.push(flatHex(new THREE.RingGeometry(R,R+.7,6)).translate(s.x,WATER_Y+.012,s.z));
-  foamGeos.push(flatHex(new THREE.RingGeometry(R,R+.16,6)).translate(s.x,WATER_Y+.02,s.z));
+
+
 });
-function addMerged(geos, mat, opts={}){ const m=new THREE.Mesh(BGU.mergeGeometries(geos), mat); Object.assign(m,opts); scene.add(m); return m; }
+function addMerged(geos, mat, opts={}){ if(!geos.length) return null; const m=new THREE.Mesh(BGU.mergeGeometries(geos), mat); Object.assign(m,opts); scene.add(m); return m; }
 addMerged(wallGeos, new THREE.MeshStandardMaterial({color:'#ead8c1',roughness:.9}), {castShadow:true,receiveShadow:true});
 addMerged(curbGeos, new THREE.MeshStandardMaterial({color:'#e4d6c3',roughness:.9,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-2}), {receiveShadow:true});
 addMerged(walkGeos, new THREE.MeshStandardMaterial({color:'#ecc3a8',roughness:.9,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1}), {receiveShadow:true});
@@ -504,8 +518,8 @@ curOwner=null; curSmall=false; setFrame(0,0,0,1,0);
 bridges.forEach(b=>{ const dir=b.pb.clone().sub(b.pa); const L=dir.length(); const yaw=Math.atan2(dir.x,dir.z);
   for(let i=0;i<9;i++){ const t=(i+.5)/9; const p=b.pa.clone().addScaledVector(dir,t); const y=TOP+.02+Math.sin(t*Math.PI)*b.h; const slope=Math.atan(b.h*Math.PI*Math.cos(t*Math.PI)/L);
     _e.set(-slope,yaw,0,'YXZ'); const q=new THREE.Quaternion().setFromEuler(_e); _e.order='XYZ';
-    parts.push({kind:'box',m:new THREE.Matrix4().compose(new THREE.Vector3(p.x,y,p.z),q,new THREE.Vector3(.36,.04,L/9*.92)),color:new THREE.Color(i%2?'#c9976f':C.wood),owner:null,small:false}); }
-  for(const t of [0.02,.98]) for(const side of [-1,1]){ const p=b.pa.clone().addScaledVector(dir,t); const nx=dir.z/L*side*.19, nz=-dir.x/L*side*.19; P('cyl',p.x+nx,TOP+.1,p.z+nz,.04,.2,.04,C.cream); P('sphere',p.x+nx,TOP+.21,p.z+nz,.05,.05,.05,C.coral); }
+    parts.push({kind:'box',m:new THREE.Matrix4().compose(new THREE.Vector3(p.x,y,p.z),q,new THREE.Vector3(.82,.04,L/9*1.02)),color:new THREE.Color(i%2?'#c9976f':C.wood),owner:null,small:false}); }
+  for(const t of [0.02,.98]) for(const side of [-1,1]){ const p=b.pa.clone().addScaledVector(dir,t); const nx=dir.z/L*side*.45, nz=-dir.x/L*side*.45; P('cyl',p.x+nx,TOP+.1,p.z+nz,.04,.2,.04,C.cream); P('sphere',p.x+nx,TOP+.21,p.z+nz,.05,.05,.05,C.coral); }
 });
 
 /* ---------- background islets, lighthouse ---------- */
@@ -659,7 +673,7 @@ void main(){ float u = vUv.x*uLen*5.0 - uTime*1.4;
 const islLabels = ISL.map(s=>{ const el=document.createElement('button'); el.className='isl'; el.innerHTML=`<b>${s.station||s.i+1}</b><span>${s.stationName||s.name}${s.city?`<small>${s.city}</small>`:''}</span>`;
   el.addEventListener('click',e=>{ e.stopPropagation(); selectIsland(s.i); }); const o=new CSS2DObject(el); o.position.set(s.x,TOP*.45,s.z+(s.labelN?-1:1)*R*.98); scene.add(o); return {o,el,state:'full',fullW:0}; }); // labelN：名牌放在島的北邊（最北的站）
 const CIRC='①②③④⑤⑥⑦⑧⑨';
-const kbEl=document.createElement('a'); kbEl.className='kbl'; kbEl.href=DATA.links.knowledge; kbEl.innerHTML=`<b>📚</b><span>知識庫<small>澎湖 · ${DATA.kb.total} 篇＋語音</small></span>`;
+const kbEl=document.createElement('a'); kbEl.className='kbl'; kbEl.href=DATA.links.knowledge; kbEl.innerHTML=`<b>📚</b><span>知識庫<small>澎湖 · 文字＋語音</small></span>`;
 kbEl.addEventListener('click',e=>{ e.preventDefault(); e.stopPropagation(); openKB(); });
 { const o=new CSS2DObject(kbEl); o.position.set(KB.x,KB.top+1.9,KB.z); scene.add(o); }
 function openKB(){ track('kb_open',{from:'island'}); location.href=DATA.links.knowledge; }
@@ -737,7 +751,7 @@ function flyTo(obj,off){ const target=obj.clone(); const offset=off.clone();
   startFly(target.clone().add(offset),target); }
 function startFly(pos,target){ if(reduced){ camera.position.copy(pos); controls.target.copy(target); controls.update(); dirty=true; return; }
   fly={t0:performance.now(),p0:camera.position.clone(),t0v:controls.target.clone(),p1:pos,t1:target}; }
-function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?64:a>.8?72:146; }
+function panoDist(){ const a=innerWidth/innerHeight; return a>1.3?78:a>.8?84:146; }
 function panoTarget(){ const t=center.clone(); if(mqMobile.matches){ t.x-=3.2; t.z-=6.5; } else { t.z+=5; if(!$('#side').hidden) t.x+=3.6; } return t; }
 function panorama(){ const dir=(mqMobile.matches?new THREE.Vector3(-.2,.8,.56):new THREE.Vector3(.16,.8,.58)).normalize(); const t=panoTarget(); if(st.bird){ startFly(t.clone().add(new THREE.Vector3(.01,84,12)),t); return; } startFly(t.clone().addScaledVector(dir,panoDist()),t); }
 
@@ -783,7 +797,7 @@ function stationBody(s){ const feat=new Set(s.featured||[]); const rest=s.items.
   ${pages.length?`<div class="choices">${pages.map(it=>`<a class="choice" href="${it.url}"><small>${esc(it.name)}</small><b>${esc(it.desc)} →</b></a>`).join('')}</div>`:''}
   <div class="sec">這一站的子主題</div><div class="chips">${(s.groups||[]).map(g=>`<button class="chip" data-grp="${s.i}:${g.k}">${esc(g.name)} · ${g.slugs.length}</button>`).join('')}</div>
   ${blk.map(([t,f])=>{ const a=rest.filter(f); return a.length?`<div class="sec">${t} · ${a.length}</div><ul class="ilist">${a.map(it=>artLi(it.id)).join('')}</ul>`:''; }).join('')}
-  <a class="link" href="${kbLink(s)}">在知識庫看這一站全部 ${s.items.filter(it=>!it.page).length} 篇，還能直接收聽 →</a>`; }
+  <a class="link" href="${kbLink(s)}">在知識庫看這一站的文字＋語音 →</a>`; }
 function cardGroup(i,k){ const s=ISL[i], g=s.groups[k];
   return `<div class="eyebrow">第 ${s.station} 站 · ${esc(s.stationName)} · 子主題</div><h2>${esc(g.name)}</h2>
   <div class="sec">文章 · ${g.slugs.length}</div><ul class="ilist">${g.slugs.map(artLi).join('')}</ul>
@@ -909,11 +923,9 @@ function stepJason(dt){ if(!J.path) return false;
   return true; }
 if(ROUTES.length){ jNode=stationNode(ROUTES[0].stations[0].island); jason.position.copy(nodes[jNode].p); scene.add(jason); }
 /* ---------- 操控 Jason：方向鍵／WASD 走路，滑鼠點地面讓他走過去 ---------- */
-const HEX_IN=R*SQ3/2; // 六角形內切半徑
-function onBridge(x,z){ for(const b of bridges){ const ax=b.pa.x, az=b.pa.z, dx=b.pb.x-ax, dz=b.pb.z-az; const t=clamp(((x-ax)*dx+(z-az)*dz)/(dx*dx+dz*dz||1),0,1); if(Math.hypot(x-ax-dx*t,z-az-dz*t)<.34) return true; } return false; }
-function hexAt(x,z){ for(const h of HEX){ if(Math.hypot(x-h.x,z-h.z)<HEX_IN*.97) return h; } return null; }
-function nearHex(x,z){ let b=null,bd=Infinity; for(const h of HEX){ const d=Math.hypot(x-h.x,z-h.z); if(d<bd){bd=d;b=h;} } return bd<SPACING*SQ3/2*.98?{h:b,d:bd}:null; }
-function walkable(x,z){ const n=nearHex(x,z); if(!n) return false; if(n.h.land&&n.h.kind!=='plain'&&n.d<1.25) return false; return true; } // 相鄰格之間的縫也能走（有橋）
+const movement=createWalkSurface(HEX,bridges,R);
+const hexAt=(x,z)=>movement.hexAt(x,z);
+const walkable=(x,z)=>movement.walkable(x,z);
 function nearestNode(p){ let b=0,bd=Infinity; for(let i=0;i<nodes.length;i++){ const d=(nodes[i].p.x-p.x)**2+(nodes[i].p.z-p.z)**2; if(d<bd){bd=d;b=i;} } return b; }
 function jasonWalkTo(point,onArrive){ if(!jason.parent) return; const end=point.clone().setY(TOP+.01);
   if(reduced){ jason.position.copy(end); jNode=nearestNode(end); dirty=true; onArrive&&onArrive(); return; }
@@ -925,9 +937,13 @@ function jasonWalkTo(point,onArrive){ if(!jason.parent) return; const end=point.
 const keys=new Set(); let jZone=-1;
 const KEYMAP={ArrowUp:'u',KeyW:'u',ArrowDown:'d',KeyS:'d',ArrowLeft:'l',KeyA:'l',ArrowRight:'r',KeyD:'r'};
 function zoneCheck(){ const h=hexAt(jason.position.x,jason.position.z); const z=h&&!h.land?h.i:-1; if(z===jZone) return; jZone=z;
-  if(z>=0){ const s=ISL[z]; say(`第 ${s.station} 站・${s.name}：走到子主題旁按 Enter 看文章`); track('jason_enter',{island:s.id}); } }
+  if(z>=0){ const s=ISL[z];
+    const k=route?ROUTES[route.r].stations.findIndex(st=>st.island===s.id):-1;
+    if(k>=0){ route.k=k; routeUI(); showRouteVis(route.r,k); }
+    say(`第 ${s.station} 站・${s.name}：走到子主題旁按 Enter 看文章`); track('jason_enter',{island:s.id}); } }
 function driveJason(dt){ if(!keys.size||!jason.parent) return false;
   const f=(keys.has('u')?1:0)-(keys.has('d')?1:0), sd=(keys.has('r')?1:0)-(keys.has('l')?1:0); if(!f&&!sd) return false;
+  if(!$('#card').hidden) closeCard();
   const fw=controls.target.clone().sub(camera.position).setY(0).normalize(); const rt=new THREE.Vector3(-fw.z,0,fw.x);
   const v=fw.multiplyScalar(f).add(rt.multiplyScalar(sd)).normalize(); const sp=3.4*dt, p=jason.position;
   let nx=p.x+v.x*sp, nz=p.z+v.z*sp;
@@ -941,11 +957,13 @@ function driveJason(dt){ if(!keys.size||!jason.parent) return false;
 function jasonAction(){ if(!jason.parent) return false; const p=jason.position; let best=null,bd=1.1;
   ISL.forEach(s=>(s.groups||[]).forEach(g=>{ const d=Math.hypot(g.world.x-p.x,g.world.z-p.z); if(d<bd){bd=d;best=g;} }));
   if(best){ selectGroup(best.island,best.k); return true; } if(jZone>=0){ selectIsland(jZone); return true; } return false; }
-function keyOk(e){ const t=e.target; if(!t||!t.closest) return true; if(/^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName)||t.isContentEditable) return false; return !t.closest('#card,#side,#help,#route,.map-hud'); }
+function keyOk(e){ return $('#help').hidden && acceptsMovementKey(e.target); }
 addEventListener('keydown',e=>{ if(PAUSED||!keyOk(e)) return; const k=KEYMAP[e.code]; if(k){ e.preventDefault(); keys.add(k); dirty=true; return; }
   if((e.key==='Enter'||e.key===' ')&&(e.target===document.body||e.target===renderer.domElement)){ if(jasonAction()) e.preventDefault(); } });
 addEventListener('keyup',e=>{ const k=KEYMAP[e.code]; if(!k) return; keys.delete(k); if(!keys.size){ const U=jason.userData; [...U.legs,...U.arms].forEach(o=>o.rotation.x=0); dirty=true; } });
-addEventListener('blur',()=>keys.clear());
+function stopWalking(){ keys.clear(); [...jason.userData.legs,...jason.userData.arms].forEach(o=>o.rotation.x=0); dirty=true; }
+addEventListener('blur',stopWalking);
+document.addEventListener('visibilitychange',()=>{ if(document.hidden) stopWalking(); });
 
 
 // 路線在地圖上：一條串起各站的虛線步道，加上站號旗子
@@ -1004,7 +1022,7 @@ function renderList(){ const q=$('#search').value.trim().toLowerCase(); const L=
       const parts=(s.groups&&s.groups.length?s.groups.map(g=>({g,its:g.slugs.map(id=>itemById[id]).filter(it=>it&&m(it))})):[{g:null,its}]).filter(p=>!q||p.its.length);
       html+=`<details ${q||si===s.i?'open':''}><summary data-isl="${s.i}"><span class="dot" style="background:${s.color}"></span><span class="k">${s.station||s.i+1}</span>${esc(s.stationName||s.name)}<span class="c">${s.items.length}</span></summary>
       <div class="sub">${parts.map(p=>`${p.g?`<button class="ssub" type="button" data-grp="${s.i}:${p.g.k}">${esc(p.g.name)}</button>`:''}${p.its.map(it=>`<a href="${it.url||'#'}" data-item="${it.id}">${esc(it.name)}${AUD.has(it.id)?' <small>🎧</small>':''}</a>`).join('')}`).join('')}</div></details>`; });
-    html+=`<a class="kb-row" href="${DATA.links.knowledge}">📚 知識庫：全部 ${DATA.kb.total} 篇＋語音版，自由篩選 →</a>`;
+    html+=`<a class="kb-row" href="${DATA.links.knowledge}">📚 知識庫：文字＋語音，自由篩選 →</a>`;
     L.innerHTML=html||'<div class="empty">找不到符合的主題或細項，換個關鍵字試試，例如「睡眠」。</div>'; }
   else if(tab==='h'){ const pct=k=>Math.round(dirStat[k]/totalLinks*100); const match=q?(id=>(itemById[id].name+itemById[id].desc).toLowerCase().includes(q)):(()=>true);
     const lst=(set)=>[...set].filter(match).map(id=>`<button data-item="${id}">${esc(itemById[id].name)} <small>${esc(ISL[itemById[id].island].name)}</small></button>`).join('');
@@ -1051,7 +1069,7 @@ document.querySelectorAll('.handle').forEach(h=>{ const sheet=h.parentElement; l
 function showHelp(){ $('#help').hidden=false; $('#helpOk').focus(); }
 $('#tHelp').onclick=showHelp;
 $('#tAbout').onclick=()=>openSpecial('about');
-$('#hudCheck').onclick=()=>openSpecial('check'); $('#helpOk').onclick=()=>{ $('#help').hidden=true; lsSet('agelocked-island-help','1'); };
+$('#hudCheck').onclick=()=>openSpecial('check'); $('#helpOk').onclick=()=>{ $('#help').hidden=true; lsSet('agelocked-island-help','1'); renderer.domElement.focus({preventScroll:true}); };
 // log
 const logSel=$('#logFilter'); DATA.flows.forEach((f,fi)=>{ const o=document.createElement('option'); o.value=fi; o.textContent=islById[f.from].name+' → '+islById[f.to].name; logSel.appendChild(o); });
 const logs=[]; let logDirty=false;
@@ -1063,7 +1081,7 @@ logSel.onchange=renderLog;
 
 /* ---------- picking ---------- */
 const ray=new THREE.Raycaster(), ndc=new THREE.Vector2(); let down=null;
-renderer.domElement.addEventListener('pointerdown',e=>{ down=[e.clientX,e.clientY]; fly=null; });
+renderer.domElement.addEventListener('pointerdown',e=>{ renderer.domElement.focus({preventScroll:true}); down=[e.clientX,e.clientY]; fly=null; });
 renderer.domElement.addEventListener('pointerup',e=>{ if(!down) return; const moved=Math.hypot(e.clientX-down[0],e.clientY-down[1]); down=null; if(moved>6) return;
   const r=renderer.domElement.getBoundingClientRect(); ndc.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1); ray.setFromCamera(ndc,camera);
   WM.body.computeBoundingSphere(); WM.head.computeBoundingSphere();
@@ -1154,6 +1172,7 @@ function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/
     dirty=true; }
   if(!dirty) return; dirty=false;
   const d=camera.position.distanceTo(controls.target);
+  mtnLabels.forEach(label=>label.visible=d<50);
   const lod=d<26; smallMeshes.forEach(m=>m.visible=lod);
   { const si=islOfSel(); const near=d<34; grpLabels.forEach(g=>{ g.o.visible=near||g.i===si; }); }
   const sc=clamp(d/20,1,1.45); if(st.carry) poseWalkers(sc);
