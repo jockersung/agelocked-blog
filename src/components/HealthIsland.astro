@@ -57,9 +57,13 @@ const routes = ROUTES.map((r) => ({
   ...r,
   stations: r.stations.map((st) => {
     const pl = st.pillar ? MEN_PILLARS.find((p) => p.id === st.pillar) : undefined;
-    const arts = (pl?.slugs ?? []).map((s) => bySlug.get(s)).filter((a): a is NonNullable<typeof a> => !!a)
-      .map((a) => ({ id: a.slug, title: a.title, url: a.url, tier: a.tier })).sort((x, y) => x.tier - y.tier);
-    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, jason: st.jason,
+    // 這一站的文章 = 這一站所有島上的文章（依島的順序、再依閱讀步驟）
+    const arts = st.islands.flatMap((iid) => {
+      const isl = islands.find((i) => i.id === iid);
+      return (isl?.items ?? []).filter((it) => !('page' in it && it.page))
+        .map((it) => ({ id: it.id, title: it.desc, url: it.url, tier: it.tier, sub: isl!.sub || isl!.stationName }));
+    });
+    return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, islands: st.islands, jason: st.jason,
       hook: pl?.hook ?? '', intro: pl?.intro ?? '', concern: pl?.concern ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [], articles: arts };
   }),
 }));
@@ -76,7 +80,7 @@ const total = bySlug.size;
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
 
 // 文字版（弱裝置、不支援 3D、搜尋引擎與 AI 爬蟲都讀這一份）
-const byStep = [1, 2, 3, 4].map((t) => ({ t, step: STEPS[t]!, islands: islands.filter((i) => i.tier === t) }));
+const byStep = routes[0].stations.map((st, k) => ({ t: k + 1, step: { name: st.name, what: st.hook || st.intro }, islands: st.islands.map((id) => islands.find((i) => i.id === id)!).filter(Boolean) }));
 const title = `健康島：${total} 篇文章的閱讀地圖｜AGELOCKED`;
 const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台灣地圖：從察覺身體訊號、找出慢性發炎的原因、用數據量測，到開始調整，照著路徑一步步讀。`;
 ---
@@ -89,7 +93,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
   <div class="fb-in">
     <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
     <h1 id="fbTitle">健康島：{total} 篇文章的閱讀路徑</h1>
-    <p class="lead">給把健康排最後的你。這些文章依四個步驟排列：先察覺訊號，再找出原因，接著用數據量測，最後開始調整。不知道從哪裡讀起，就從第 1 步開始。</p>
+    <p class="lead">給把健康排最後的你。這些文章依「男性慢老」六站排列：身材、臉蛋、性健康、禿頭白髮、心血管，最後到健檢站換成自己的數據。不知道從哪裡讀起，就從第 1 站開始。</p>
     <p class="lead" id="fbReason"></p>
     <div class="fb-actions">
       <a class="pri" href="/assessment/">身體警報訊號評估清單（1 分鐘）</a>
@@ -103,7 +107,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
         <div class="fb-step"><b>{t}</b><h2>{step.name}</h2><span>{step.what}</span></div>
         {isls.map((isl) => (
           <div class="fb-isl">
-            <h3><i style={`background:${isl.color}`}></i>{isl.name}</h3>
+            <h3><i style={`background:${isl.color}`}></i>{isl.sub || isl.name}</h3>
             <p>{isl.summary}</p>
             <ul>
               {isl.items.map((it) => (
@@ -213,9 +217,9 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
     <div class="eyebrow">怎麼逛這座島</div>
     <h2 id="helpT">三步看懂健康島</h2>
     <ol>
-      <li><span>點一座<b>島</b>，看這個健康主題底下有哪些細項，以及它和哪些島互相導流。</span></li>
-      <li><span>點島上的<b>小建物</b>或號碼 ①②③，每一棟都是網站上的一篇文章，可以直接點去讀全文。</span></li>
-      <li><span>用下方<b>時段</b>與開關，看一天之中哪些身體訊號亮起，小人如何把內容搬往下一層。</span></li>
+      <li><span>島由北到南分成<b>六站</b>：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站，每站的建物都是一篇文章。</span></li>
+      <li><span>用<b>方向鍵或 WASD</b> 操控島主 Jason 走路，走到建物旁按 <b>Enter</b> 看文章；用滑鼠或手指<b>點地面</b>，Jason 會走過去。</span></li>
+      <li><span>拖曳轉動地圖，<b>Q / E</b> 也能旋轉視角。不想自己走，就讓 Jason 帶你走一遍。</span></li>
     </ol>
     <button class="btn" id="helpRoute" type="button">跟著島主走：男性慢老 6 站</button>
     <button class="btn ghost" id="helpOk">自己逛</button>

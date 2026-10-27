@@ -638,7 +638,7 @@ void main(){ float u = vUv.x*uLen*5.0 - uTime*1.4;
   m.visible=false; m.renderOrder=2; m.userData.flow=fi; scene.add(m); return m; });
 
 /* ---------- labels & pins ---------- */
-const islLabels = ISL.map(s=>{ const el=document.createElement('button'); el.className='isl'; el.innerHTML=`<b>${String(s.i+1).padStart(2,'0')}</b><span>${s.name}</span>`;
+const islLabels = ISL.map(s=>{ const el=document.createElement('button'); el.className='isl'; el.innerHTML=`<b>${s.station||s.i+1}</b><span>${s.stationName||s.name}${s.sub?`<small>${s.sub}</small>`:''}</span>`;
   el.addEventListener('click',e=>{ e.stopPropagation(); selectIsland(s.i); }); const o=new CSS2DObject(el); o.position.set(s.x,TOP*.45,s.z+R*.98); scene.add(o); return {o,el,state:'full',fullW:0}; });
 const CIRC='①②③④⑤⑥⑦⑧⑨';
 const pins={}; Object.values(itemById).forEach(it=>{ const el=document.createElement('div'); el.className='pin'; el.textContent=CIRC[it.k]; el.title=it.name;
@@ -740,7 +740,7 @@ function flowChip(fi){ const f=DATA.flows[fi]; return `<button class="chip" data
 function ctaFor(t){ return t<=2?`<a class="cta soft" href="${DATA.links.assessment}">身體警報訊號評估清單（1 分鐘）→</a>`
   :`<a class="cta" href="${DATA.links.prescan}">填寫掃描前資料表，整理優先方向 →</a>`; }
 function cardIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
-  return `<div class="c-head"><span class="c-num">${String(i+1).padStart(2,'0')}</span><div><div class="eyebrow">健康主題島${LANDMARKS[s.landmark]?' · 地標：'+LANDMARKS[s.landmark].name:''}</div>${tierChip(s.tier)}</div></div>
+  return `<div class="c-head"><span class="c-num">${s.station||i+1}</span><div><div class="eyebrow">第 ${s.station} 站 · ${esc(s.stationName)}${LANDMARKS[s.landmark]?' · 地標：'+LANDMARKS[s.landmark].name:''}</div>${tierChip(s.tier)}</div></div>
   <h2>${esc(s.name)}</h2><p>${esc(s.summary)}</p>
   ${AUDIT?`<div class="tiles">${(()=>{ const ids=s.items.map(it=>it.id); const out=ids.reduce((n,id)=>n+outLinks[id].filter(t=>itemById[t].island!==i).length,0), inn=ids.reduce((n,id)=>n+inLinks[id].filter(t=>itemById[t].island!==i).length,0), orph=ids.filter(id=>orphans.has(id)).length;
     return `<div class="tile"><b>${out}<small>條</small></b><span>連往其他島</span></div><div class="tile"><b>${inn}<small>條</small></b><span>從其他島連入</span></div><div class="tile"><b>${orph}<small>篇</small></b><span>孤兒文章</span></div>`; })()}</div>`:''}
@@ -751,7 +751,7 @@ function cardIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).
 function numTile(fact){ const m=fact.match(/(\d[\d,]*(?:\.\d+)?)(?:\s*[–-]\s*(\d+))?\s*(年代|mg\/L|%|秒|分鐘|小時|天|週|篇|項|個|年|次|種|步|位|份|條|張|下|頁|件|歲|公分|色|台|大|多)?/); if(!m) return '';
   return `<div class="tile"><b>${m[1]}${m[2]?'–'+m[2]:''}${m[3]?`<small>${m[3]}</small>`:''}</b><span>${esc(fact)}</span></div>`; }
 function cardItem(id){ const it=itemById[id], s=ISL[it.island];
-  return `<div class="eyebrow">${String(s.i+1).padStart(2,'0')} ${esc(s.name)} · 細項 ${CIRC[it.k]}</div><h2>${esc(it.name)}</h2>
+  return `<div class="eyebrow">第 ${s.station} 站 · ${esc(s.name)} · 細項 ${CIRC[it.k]}</div><h2>${esc(it.name)}</h2>
   <canvas class="thumb" id="thumb" width="320" height="320" aria-label="${esc(it.name)} 模型縮圖"></canvas>
   <blockquote class="tq">${esc(it.desc)}</blockquote>
   ${it.sum?`<p>${esc(it.sum)}</p>`:''}
@@ -762,7 +762,7 @@ function cardItem(id){ const it=itemById[id], s=ISL[it.island];
   ${it.page?'':`<div class="sec">延伸閱讀 · ${outLinks[id].length}</div>${outLinks[id].length?`<ul class="ilist lk">${outLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">這篇沒有延伸閱讀。</p>'}
   <div class="sec">從這些文章讀過來 · ${inLinks[id].length}</div>${inLinks[id].length?`<ul class="ilist lk">${inLinks[id].map(linkBtn).join('')}</ul>`:'<p class="none">還沒有其他文章提到這篇。</p>'}`}
   ${activeItems.has(id)?`<p style="margin-top:12px"><span class="tier" style="background:#fcf3c2;color:#6b5a12">此刻亮起 · ${esc(DATA.dayCycle[activeSlot].name)}</span></p>`:''}
-  <div class="sec">所屬島嶼</div><div class="chips"><button class="chip" data-isl="${s.i}">${esc(s.name)}</button></div>
+  <div class="sec">所屬站點</div><div class="chips"><button class="chip" data-isl="${s.i}">${esc(s.name)}</button></div>
   ${ctaFor(it.tier)}`; }
 const EVL={official:'帶往下一步',thematic:'同一步延伸',pending:'帶回前一步'};
 const linkBtn=id=>`<li><button data-item="${id}"><span class="n">${itemById[id].tier}</span>${esc(itemById[id].name)}<small>${esc(ISL[itemById[id].island].name)}</small></button></li>`;
@@ -852,6 +852,45 @@ function stepJason(dt){ if(!J.path) return false;
   if(J.s>=J.len){ const cb=J.arrive; J.path=null; J.arrive=null; [...U.legs,...U.arms].forEach(o=>o.rotation.x=0); jason.rotation.y=0; cb&&cb(); }
   return true; }
 if(ROUTES.length){ jNode=stationNode(ROUTES[0].stations[0].island); jason.position.copy(nodes[jNode].p); scene.add(jason); }
+/* ---------- 操控 Jason：方向鍵／WASD 走路，滑鼠點地面讓他走過去 ---------- */
+const HEX_IN=R*SQ3/2; // 六角形內切半徑
+function onBridge(x,z){ for(const b of bridges){ const ax=b.pa.x, az=b.pa.z, dx=b.pb.x-ax, dz=b.pb.z-az; const t=clamp(((x-ax)*dx+(z-az)*dz)/(dx*dx+dz*dz||1),0,1); if(Math.hypot(x-ax-dx*t,z-az-dz*t)<.34) return true; } return false; }
+function hexAt(x,z){ for(const h of HEX){ if(Math.hypot(x-h.x,z-h.z)<HEX_IN*.97) return h; } return null; }
+function nearHex(x,z){ let b=null,bd=Infinity; for(const h of HEX){ const d=Math.hypot(x-h.x,z-h.z); if(d<bd){bd=d;b=h;} } return bd<SPACING*SQ3/2*.98?{h:b,d:bd}:null; }
+function walkable(x,z){ const n=nearHex(x,z); if(!n) return false; if(n.h.land&&n.h.kind!=='plain'&&n.d<1.25) return false; return true; } // 相鄰格之間的縫也能走（有橋）
+function nearestNode(p){ let b=0,bd=Infinity; for(let i=0;i<nodes.length;i++){ const d=(nodes[i].p.x-p.x)**2+(nodes[i].p.z-p.z)**2; if(d<bd){bd=d;b=i;} } return b; }
+function jasonWalkTo(point,onArrive){ if(!jason.parent) return; const end=point.clone().setY(TOP+.01);
+  if(reduced){ jason.position.copy(end); jNode=nearestNode(end); dirty=true; onArrive&&onArrive(); return; }
+  const a=nearestNode(jason.position), b=nearestNode(end);
+  const raw=[jason.position.clone(), ...(a===b?[]:dijkstra(a,b).map(n=>nodes[n].p.clone())), end];
+  const pts=[raw[0]]; raw.slice(1).forEach(p=>{ if(p.distanceTo(pts[pts.length-1])>.05) pts.push(p); }); if(pts.length<2){ onArrive&&onArrive(); return; }
+  const cum=[0]; for(let i=1;i<pts.length;i++) cum.push(cum[i-1]+pts[i].distanceTo(pts[i-1]));
+  Object.assign(J,{ path:pts, cum, len:cum[cum.length-1], s:0, arrive:onArrive }); J.speed=Math.max(2.4,J.len/4); jNode=b; dirty=true; }
+const keys=new Set(); let jZone=-1;
+const KEYMAP={ArrowUp:'u',KeyW:'u',ArrowDown:'d',KeyS:'d',ArrowLeft:'l',KeyA:'l',ArrowRight:'r',KeyD:'r'};
+function zoneCheck(){ const h=hexAt(jason.position.x,jason.position.z); const z=h&&!h.land?h.i:-1; if(z===jZone) return; jZone=z;
+  if(z>=0){ const s=ISL[z]; say(`${s.name}：${s.items.length} 篇。按 Enter 看這裡的文章`); track('jason_enter',{island:s.id}); } }
+function driveJason(dt){ if(!keys.size||!jason.parent) return false;
+  const f=(keys.has('u')?1:0)-(keys.has('d')?1:0), sd=(keys.has('r')?1:0)-(keys.has('l')?1:0); if(!f&&!sd) return false;
+  const fw=controls.target.clone().sub(camera.position).setY(0).normalize(); const rt=new THREE.Vector3(-fw.z,0,fw.x);
+  const v=fw.multiplyScalar(f).add(rt.multiplyScalar(sd)).normalize(); const sp=3.4*dt, p=jason.position;
+  let nx=p.x+v.x*sp, nz=p.z+v.z*sp;
+  if(!walkable(nx,nz)){ if(walkable(nx,p.z)) nz=p.z; else if(walkable(p.x,nz)) nx=p.x; else { nx=p.x; nz=p.z; } }
+  const dx=nx-p.x, dz=nz-p.z; J.path=null; J.arrive=null; fly=null;
+  p.set(nx, hexAt(nx,nz)?TOP+.01:TOP+.07, nz); jason.rotation.y=Math.atan2(v.x,v.z);
+  camera.position.x+=dx; camera.position.z+=dz; controls.target.x+=dx; controls.target.z+=dz;
+  const sw=Math.sin(performance.now()/1000*12); const U=jason.userData;
+  U.legs[0].rotation.x=sw*.55; U.legs[1].rotation.x=-sw*.55; U.arms[0].rotation.x=-sw*.45; U.arms[1].rotation.x=sw*.45;
+  jNode=nearestNode(p); zoneCheck(); return true; }
+function jasonAction(){ if(!jason.parent) return false; const p=jason.position; let best=null,bd=1.1;
+  Object.values(itemById).forEach(it=>{ if(!it.world) return; const d=Math.hypot(it.world.x-p.x,it.world.z-p.z); if(d<bd){bd=d;best=it;} });
+  if(best){ selectItem(best.id); return true; } if(jZone>=0){ selectIsland(jZone); return true; } return false; }
+function keyOk(e){ const t=e.target; if(!t||!t.closest) return true; if(/^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName)||t.isContentEditable) return false; return !t.closest('#card,#side,#help,#route,.map-hud'); }
+addEventListener('keydown',e=>{ if(PAUSED||!keyOk(e)) return; const k=KEYMAP[e.code]; if(k){ e.preventDefault(); keys.add(k); dirty=true; return; }
+  if((e.key==='Enter'||e.key===' ')&&(e.target===document.body||e.target===renderer.domElement)){ if(jasonAction()) e.preventDefault(); } });
+addEventListener('keyup',e=>{ const k=KEYMAP[e.code]; if(!k) return; keys.delete(k); if(!keys.size){ const U=jason.userData; [...U.legs,...U.arms].forEach(o=>o.rotation.x=0); dirty=true; } });
+addEventListener('blur',()=>keys.clear());
+
 
 // 路線在地圖上：一條串起各站的虛線步道，加上站號旗子
 const routeVis = ROUTES.map((R0)=>{
@@ -875,11 +914,12 @@ void main(){ float u=vUv.x*uLen*3.0-uTime*1.6; if(fract(u)>.62) discard; gl_Frag
 function showRouteVis(r,k){ routeVis.forEach((v,i)=>{ const on=i===r; v.mesh.visible=on; v.flags.forEach((f,j)=>{ f.o.visible=on; f.el.classList.toggle('on',on&&j===k); f.el.classList.toggle('done',on&&j<k); }); }); dirty=true; }
 let route=null; const rtEl=$('#route');
 function cardStation(r,k){ const R0=ROUTES[r], st=R0.stations[k];
-  const arts=st.articles.map(a=>`<li><a class="st-art" href="${a.url}" data-read="${a.id}"><span class="n">第 ${a.tier} 步</span><span>${esc(a.title)}</span></a></li>`).join('');
+  const subs=[...new Set(st.articles.map(a=>a.sub))];
+  const arts=subs.map(sb=>`${subs.length>1?`<div class="st-sub">${esc(sb)}</div>`:''}<ul class="ilist">${st.articles.filter(a=>a.sub===sb).map(a=>`<li><a class="st-art" href="${a.url}" data-read="${a.id}"><span class="n">第 ${a.tier} 步</span><span>${esc(a.title)}</span></a></li>`).join('')}</ul>`).join('');
   const check= st.id==='check' ? `<a class="choice" href="${DATA.links.prescan}"><small>有健檢報告</small><b>填寫掃描前資料表 →</b><span>帶上血液報告和穿戴裝置數據，整理出 90 天生活調整的優先順序。</span></a><a class="choice" href="${DATA.links.assessment}"><small>還沒有數據</small><b>身體警報訊號評估清單 →</b><span>約 1 分鐘，先看看身體哪些訊號正在亮燈。</span></a>` : '';
   return `<div class="eyebrow">${esc(R0.name)}路線 · 第 ${k+1} / ${R0.stations.length} 站</div><h2>${esc(st.name)}</h2>
   ${st.hook?`<p class="st-hook">「${esc(st.hook)}」</p>`:''}${st.intro?`<p>${esc(st.intro)}</p>`:''}${check}
-  ${arts?`<div class="sec">這一站的文章 · ${st.articles.length}</div><ul class="ilist">${arts}</ul>`:''}
+  ${arts?`<div class="sec">這一站的文章 · ${st.articles.length}</div>${arts}`:''}
   ${st.upcoming&&st.upcoming.length?`<div class="sec">即將加入</div><ul class="st-up">${st.upcoming.map(u=>`<li>${esc(u)}</li>`).join('')}</ul>`:''}
   ${st.doctorNote?`<p class="st-doc">${esc(st.doctorNote)}</p>`:''}
   <a class="link" href="/men/${st.id!=='check'?'#'+st.id:''}">${st.id!=='check'?`看「男性慢老」專區的${esc(st.name)} →`:'看完整「男性慢老」專區 →'}</a>`; }
@@ -907,9 +947,11 @@ jTagEl.onclick=e=>{ e.stopPropagation(); if(route) say(ROUTES[route.r].stations[
 let tab='t';
 function renderList(){ const q=$('#search').value.trim().toLowerCase(); const L=$('#list'); const si=islOfSel();
   if(tab==='t'){ let html='';
-    ISL.forEach(s=>{ const its=s.items.filter(it=>!q||(it.name+it.desc+s.name).toLowerCase().includes(q)); if(q&&!its.length) return;
-      html+=`<details ${q||si===s.i?'open':''}><summary data-isl="${s.i}"><span class="dot" style="background:${s.color}"></span><span class="k">${String(s.i+1).padStart(2,'0')}</span>${esc(s.name)}<span class="c">${s.items.length}</span></summary>
-      <div class="sub">${its.map(it=>`<a href="${it.url||'#'}" data-item="${it.id}">${CIRC[it.k]} ${esc(it.name)}</a>`).join('')}</div></details>`; });
+    const groups=[]; ISL.forEach(s=>{ const g=groups.find(g=>g.n===s.station); if(g) g.isl.push(s); else groups.push({n:s.station,name:s.stationName||s.name,isl:[s]}); });
+    groups.forEach(g=>{ const lead=g.isl[0]; const parts=g.isl.map(s=>({s,its:s.items.filter(it=>!q||(it.name+it.desc+s.name).toLowerCase().includes(q))})).filter(p=>!q||p.its.length); if(q&&!parts.length) return;
+      const open=q||g.isl.some(s=>s.i===si); const cnt=g.isl.reduce((n,s)=>n+s.items.length,0);
+      html+=`<details ${open?'open':''}><summary data-isl="${lead.i}"><span class="dot" style="background:${lead.color}"></span><span class="k">${g.n}</span>${esc(g.name)}<span class="c">${cnt}</span></summary>
+      <div class="sub">${parts.map(p=>`${g.isl.length>1&&p.s.sub?`<button class="ssub" type="button" data-isl="${p.s.i}">${esc(p.s.sub)}</button>`:''}${p.its.map(it=>`<a href="${it.url||'#'}" data-item="${it.id}">${CIRC[it.k]} ${esc(it.name)}</a>`).join('')}`).join('')}</div></details>`; });
     L.innerHTML=html||'<div class="empty">找不到符合的主題或細項，換個關鍵字試試，例如「睡眠」。</div>'; }
   else if(tab==='h'){ const pct=k=>Math.round(dirStat[k]/totalLinks*100); const match=q?(id=>(itemById[id].name+itemById[id].desc).toLowerCase().includes(q)):(()=>true);
     const lst=(set)=>[...set].filter(match).map(id=>`<button data-item="${id}">${esc(itemById[id].name)} <small>${esc(ISL[itemById[id].island].name)}</small></button>`).join('');
@@ -925,6 +967,7 @@ function renderList(){ const q=$('#search').value.trim().toLowerCase(); const L=
   else { const fs=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>!q||(f.label+islById[f.from].name+islById[f.to].name).toLowerCase().includes(q));
     L.innerHTML=fs.map(([f,fi])=>`<button class="frow" data-flow="${fi}"><b>${esc(islById[f.from].name)} → ${esc(islById[f.to].name)}</b><small><span class="ev"><i class="${f.evidence}"></i></span> ${esc(f.label)}${AUDIT?' · 多數'+EVL[f.evidence]:''}</small></button>`).join('')||'<div class="empty">找不到符合的流動。</div>'; }
   L.querySelectorAll('summary[data-isl]').forEach(b=>b.addEventListener('click',()=>selectIsland(+b.dataset.isl)));
+  L.querySelectorAll('.ssub[data-isl]').forEach(b=>b.onclick=()=>selectIsland(+b.dataset.isl));
   L.querySelectorAll('[data-item]').forEach(b=>b.onclick=e=>{ if(e.metaKey||e.ctrlKey||e.shiftKey||e.button===1) return; e.preventDefault(); selectItem(b.dataset.item); });
   L.querySelectorAll('[data-flow]').forEach(b=>b.onclick=()=>selectFlow(+b.dataset.flow)); }
 $('#search').addEventListener('input',renderList);
@@ -973,6 +1016,7 @@ renderer.domElement.addEventListener('pointerup',e=>{ if(!down) return; const mo
   WM.body.computeBoundingSphere(); WM.head.computeBoundingSphere();
   const targets=[...(st.carry?[WM.body,WM.head]:[]),...flowMeshes.filter(m=>m.visible),...kitMeshes.filter(m=>m.visible),...islandTops];
   const hits=ray.intersectObjects(targets,false);
+  { const gp=new THREE.Vector3(); if(ray.ray.intersectPlane(new THREE.Plane(new THREE.Vector3(0,1,0),-TOP),gp)&&walkable(gp.x,gp.z)) jasonWalkTo(gp,()=>{ jZone=-2; zoneCheck(); }); }
   for(const h of hits){ const o=h.object;
     if(o===WM.body||o===WM.head){ if(h.instanceId<NW){ selectWalker(h.instanceId); return; } continue; }
     if(o.userData.flow!==undefined){ selectFlow(o.userData.flow); return; }
@@ -981,8 +1025,9 @@ renderer.domElement.addEventListener('pointerup',e=>{ if(!down) return; const mo
 addEventListener('keydown',e=>{ if(PAUSED) return; if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
   if(e.key==='Escape'){ if(!$('#help').hidden){ $('#help').hidden=true; lsSet('agelocked-island-help','1'); return; } closeCard(); return; }
   const off=camera.position.clone().sub(controls.target); const sph=new THREE.Spherical().setFromVector3(off);
-  if(e.key==='ArrowLeft') sph.theta-=.12; else if(e.key==='ArrowRight') sph.theta+=.12;
-  else if(e.key==='ArrowUp') sph.phi=clamp(sph.phi-.06,controls.minPolarAngle,controls.maxPolarAngle); else if(e.key==='ArrowDown') sph.phi=clamp(sph.phi+.06,controls.minPolarAngle,controls.maxPolarAngle); else return;
+  if(!keyOk(e)) return;
+  if(e.code==='KeyQ') sph.theta-=.12; else if(e.code==='KeyE') sph.theta+=.12;
+  else if(e.code==='KeyR') sph.phi=clamp(sph.phi-.06,controls.minPolarAngle,controls.maxPolarAngle); else if(e.code==='KeyF') sph.phi=clamp(sph.phi+.06,controls.minPolarAngle,controls.maxPolarAngle); else return;
   e.preventDefault(); fly=null; camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(sph)); controls.update(); dirty=true; });
 
 /* ---------- walkers update ---------- */
@@ -1042,6 +1087,7 @@ let last=performance.now(), logT=0;
 function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/1000,.08); last=now; if(PAUSED) return;
   if(fly){ const t=clamp((now-fly.t0)/800,0,1); const k=t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2; camera.position.lerpVectors(fly.p0,fly.p1,k); controls.target.lerpVectors(fly.t0v,fly.t1,k); if(t>=1) fly=null; dirty=true; }
   if(controls.update()) dirty=true;
+  if(driveJason(dt)) dirty=true;
   if(stepJason(dt)) dirty=true;
   if(route&&!reduced){ routeVis[route.r].mesh.material.uniforms.uTime.value=now/1000; dirty=true; }
   const running=!st.pause&&!reduced;

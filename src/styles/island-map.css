@@ -281,3 +281,9 @@ html.island-on,html.island-on body{overflow:hidden}
 .map-page .rflag.done{opacity:.75}
 .map-page .rflag.on{background:var(--m-coral);border-color:var(--m-coral);color:#fff;transform:scale(1.08)}
 .map-page .rflag.on b{background:#fff;color:var(--m-coral)}
+/* 六站：島名標籤的子主題、站卡與側欄的分區 */
+.map-page .isl small{font-weight:600;font-size:11px;color:var(--m-muted);margin-left:5px}
+.map-page .isl.sel small{color:#f3e6dc}
+.map-page .st-sub{font:700 11.5px var(--m-mono);color:var(--m-muted);margin:12px 0 5px;letter-spacing:.04em}
+.map-page .ssub{display:block;width:100%;text-align:left;border:0;background:none;font:700 11px var(--m-mono);color:var(--m-muted);padding:8px 2px 3px;cursor:pointer}
+.map-page .ssub:hover{color:var(--m-coral)}
