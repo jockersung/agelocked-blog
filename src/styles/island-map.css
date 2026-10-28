@@ -307,3 +307,6 @@ html.island-on,html.island-on body{overflow:hidden}
 .map-page .kb-row:hover{background:var(--m-coral)}
 .map-page .fb-prod{font-style:normal;font-size:11px;background:#efe6dc;color:#7a5a3c;border-radius:4px;padding:1px 5px;margin-left:6px}
 .map-page .ilist .n.dot{width:10px;height:10px;min-width:10px;border-radius:50%;background:var(--c);padding:0;font-size:0}
+/* 島名卡定位句 */
+.map-page #brand p.pos{color:var(--m-ink);font-weight:700;font-size:13.5px;margin-bottom:4px}
+@media (max-width:800px){ .map-page #brand p.pos{display:block;font-size:12px;line-height:1.45;margin:3px 0 0} }
