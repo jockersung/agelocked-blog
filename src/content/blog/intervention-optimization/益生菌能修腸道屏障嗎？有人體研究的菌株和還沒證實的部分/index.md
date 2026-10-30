@@ -7,6 +7,8 @@ category: '健檢站'
 product: true
 tags: ['益生菌', '腸漏症', '腸道屏障', '保健品識讀', '菌株', '內毒素']
 slug: 'probiotics-gut-barrier-evidence'
+series: 'gut-barrier'
+series_order: 4
 ctaType: 'hard'
 ctaBridge: '不確定自己目前吃的益生菌和保健品適不適合？填寫掃描前資料表，把在吃的品項和腸胃狀況列出來，我幫你一起整理。'
 ---

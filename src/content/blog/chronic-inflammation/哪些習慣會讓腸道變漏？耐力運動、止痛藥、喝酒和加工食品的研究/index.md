@@ -3,10 +3,12 @@ title: '哪些習慣會讓腸道變漏？耐力運動、止痛藥、喝酒和加
 description: '跑完長距離肚子翻攪、止痛藥一吃好幾個月、一攤喝到茫、加工食品天天吃。研究發現這些習慣會讓腸道屏障變鬆，細菌碎片跑進血液，成為慢性發炎的來源之一。哪些有人體證據、可以怎麼調整，一次整理。'
 pubDate: 2026-10-30
 heroImage: './cover.webp'
-category: '身材'
+category: '健檢站'
 tags: ['腸漏症', '腸道屏障', '慢性發炎', '內毒素', '止痛藥', '喝酒', '耐力運動']
 slug: 'gut-barrier-habits-exercise-nsaids-alcohol'
-ctaBridge: '想知道自己的生活習慣裡，哪幾項最值得先調整？先花 1 分鐘做身體警報評估，看看身材這一站亮了幾盞燈。'
+series: 'gut-barrier'
+series_order: 2
+ctaBridge: '想知道自己的生活習慣裡，哪幾項最值得先調整？先花 1 分鐘做身體警報評估，把生活習慣和在意的腸胃變化整理清楚。'
 ---
 
 <!-- 🎨 [cover] [類型 A]
