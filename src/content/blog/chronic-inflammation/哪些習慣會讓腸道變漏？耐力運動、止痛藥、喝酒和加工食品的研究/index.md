@@ -99,22 +99,19 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 喝酒量難以控制、肝功能指數異常：看**家醫科**、**腸胃肝膽科**或**身心科**。
 - 運動時反覆腸胃不適：看**腸胃科**，必要時找運動醫學專科。
 
-## 帶走一句話
-
-**讓腸道變漏的，常常是很日常的習慣。** 很長很熱的運動、天天吞的止痛藥、一攤接一攤的酒、包裝食品，挑一項先改。
+先回頭看最近一週：是不是常在很熱的環境長時間運動、喝酒的場合太密，或止痛藥吃得頻繁？把這些情況記下來，比先買「修復腸漏」的產品更有方向。處方藥不要自行停用，有疑問就帶著紀錄問醫師或藥師。
 
 下一篇〈[腸漏症檢測準不準？](/blog/precision-health-tools/leaky-gut-test-zonulin/)〉，來看網路上很紅的 zonulin 檢測到底在量什麼。
 
 ---
 
 ## 參考資料
-
-1. Costa RJS, et al. Systematic review: exercise-induced gastrointestinal syndrome—implications for health and intestinal disease. *Alimentary Pharmacology & Therapeutics*, 2017.（來源：[Alimentary Pharmacology & Therapeutics](https://doi.org/10.1111/apt.14157)，2017）
-2. Graham DY, et al. Visible small-intestinal mucosal injury in chronic NSAID users. *Clinical Gastroenterology and Hepatology*, 2005.（PMID：[15645405](https://pubmed.ncbi.nlm.nih.gov/15645405/)）
-3. Camilleri M. Leaky gut: mechanisms, measurement and clinical implications in humans. *Gut*, 2019.（PMID：[31076401](https://pubmed.ncbi.nlm.nih.gov/31076401/)）
-4. Bala S, et al. Acute binge drinking increases serum endotoxin and bacterial DNA levels in healthy individuals. *PLoS ONE*, 2014.（來源：[PLoS ONE](https://doi.org/10.1371/journal.pone.0096864)，2014）
-5. Bishehsari F, et al. Alcohol and gut-derived inflammation. *Alcohol Research: Current Reviews*, 2017.（PMID：[28988571](https://pubmed.ncbi.nlm.nih.gov/28988571/)）
-6. Erridge C, et al. A high-fat meal induces low-grade endotoxemia: evidence of a novel mechanism of postprandial inflammation. *American Journal of Clinical Nutrition*, 2007.（來源：[American Journal of Clinical Nutrition](https://doi.org/10.1093/ajcn/86.5.1286)，2007）
-7. Chassaing B, et al. Randomized controlled-feeding study of dietary emulsifier carboxymethylcellulose reveals detrimental impacts on the gut microbiota and metabolome. *Gastroenterology*, 2022.（來源：[Gastroenterology](https://doi.org/10.1053/j.gastro.2021.11.006)，2022）
+1. Costa RJS, et al. Systematic review: exercise-induced gastrointestinal syndrome—implications for health and intestinal disease. *Alimentary Pharmacology & Therapeutics*, 2017. DOI：[10.1111/apt.14157](https://doi.org/10.1111/apt.14157)。
+2. Graham DY, et al. Visible small-intestinal mucosal injury in chronic NSAID users. *Clinical Gastroenterology and Hepatology*, 2005. DOI：[10.1016/s1542-3565(04)00603-2](https://doi.org/10.1016/s1542-3565(04)00603-2)。
+3. Camilleri M. Leaky gut: mechanisms, measurement and clinical implications in humans. *Gut*, 2019. DOI：[10.1136/gutjnl-2019-318427](https://doi.org/10.1136/gutjnl-2019-318427)。
+4. Bala S, et al. Acute binge drinking increases serum endotoxin and bacterial DNA levels in healthy individuals. *PLoS ONE*, 2014. DOI：[10.1371/journal.pone.0096864](https://doi.org/10.1371/journal.pone.0096864)。
+5. Bishehsari F, et al. Alcohol and gut-derived inflammation. *Alcohol Research: Current Reviews*, 2017. DOI：[10.35946/arcr.v38.2.02](https://doi.org/10.35946/arcr.v38.2.02)。
+6. Erridge C, et al. A high-fat meal induces low-grade endotoxemia: evidence of a novel mechanism of postprandial inflammation. *American Journal of Clinical Nutrition*, 2007. DOI：[10.1093/ajcn/86.5.1286](https://doi.org/10.1093/ajcn/86.5.1286)。
+7. Chassaing B, et al. Randomized controlled-feeding study of dietary emulsifier carboxymethylcellulose reveals detrimental impacts on the gut microbiota and metabolome. *Gastroenterology*, 2022. DOI：[10.1053/j.gastro.2021.11.006](https://doi.org/10.1053/j.gastro.2021.11.006)。
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*

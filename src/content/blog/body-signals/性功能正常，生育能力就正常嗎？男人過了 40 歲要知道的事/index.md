@@ -102,17 +102,14 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 正在考慮荷爾蒙治療：先告訴醫師你的生育計畫。
 - 勃起或射精有困難：看**泌尿科**，可以參考〈[硬度不如以前、晨間反應變少](/blog/body-signals/erection-libido-fatigue-three-questions/)〉。
 
-## 帶走一句話
-
-**性功能正常，不代表生育能力正常。** 想要孩子，夫妻一起檢查；男方先做一次精液分析，是最簡單的一步。
+如果真的準備要孩子，就別只用晨勃或性生活表現來猜。夫妻一起諮詢，男方把用藥和生活習慣整理好，再和醫師討論精液分析，會比自己上網猜原因有用。
 
 ---
 
 ## 參考資料
-
-1. Johnson SL, et al. Consistent age-dependent declines in human semen quality: a systematic review and meta-analysis. *Ageing Research Reviews*, 2015.（來源：[Ageing Research Reviews](https://doi.org/10.1016/j.arr.2014.10.007)，2015）
-2. Kong A, et al. Rate of de novo mutations and the importance of father's age to disease risk. *Nature*, 2012.（PMID：[22914163](https://pubmed.ncbi.nlm.nih.gov/22914163/)）
-3. Bhasin S, et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. *Journal of Clinical Endocrinology & Metabolism*, 2018.（PMID：[29562364](https://pubmed.ncbi.nlm.nih.gov/29562364/)）
+1. Johnson SL, et al. Consistent age-dependent declines in human semen quality: a systematic review and meta-analysis. *Ageing Research Reviews*, 2015. DOI：[10.1016/j.arr.2014.10.007](https://doi.org/10.1016/j.arr.2014.10.007)。
+2. Kong A, et al. Rate of de novo mutations and the importance of father's age to disease risk. *Nature*, 2012. DOI：[10.1038/nature11396](https://doi.org/10.1038/nature11396)。
+3. Bhasin S, et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. *Journal of Clinical Endocrinology & Metabolism*, 2018. DOI：[10.1210/jc.2018-00229](https://doi.org/10.1210/jc.2018-00229)。
 4. World Health Organization. *WHO laboratory manual for the examination and processing of human semen*, 6th edition. WHO, 2021. https://www.who.int/publications/i/item/9789240030787
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*

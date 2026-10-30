@@ -100,18 +100,15 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 同時有血壓、血脂、血糖紅字，或爬樓梯會喘：加看**家醫科**或**心臟內科**。
 - **有胸痛、胸悶、呼吸困難，請立即就醫。**
 
-## 帶走一句話
-
-**壯陽食物有幾個有一點證據，但效果最好的是把腰圍降下來。** 先把體重和運動顧好，補充品放在後面。
+牡蠣、南瓜子可以放進日常菜單，瑪卡和精胺酸則要看研究條件，不能靠一份食物或一罐補充品保證表現。若勃起狀況持續改變，先找醫師釐清原因，再把運動、體重與作息一起顧好。
 
 ---
 
 ## 參考資料
-
-1. Prasad AS, et al. Zinc status and serum testosterone levels of healthy adults. *Nutrition*, 1996.（PMID：[8875519](https://pubmed.ncbi.nlm.nih.gov/8875519/)）
-2. Gonzales GF, et al. Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men. *Andrologia*, 2002.（PMID：[12472620](https://pubmed.ncbi.nlm.nih.gov/12472620/)）
-3. Rhim HC, et al. The potential role of arginine supplements on erectile dysfunction: a systemic review and meta-analysis. *Journal of Sexual Medicine*, 2019.（來源：[Journal of Sexual Medicine](https://doi.org/10.1016/j.jsxm.2018.12.002)，2019）
-4. Shindel AW, et al. Erectogenic and neurotrophic effects of icariin, a purified extract of horny goat weed (Epimedium spp.) in vitro and in vivo. *Journal of Sexual Medicine*, 2010.（PMID：[20141584](https://pubmed.ncbi.nlm.nih.gov/20141584/)）
-5. Esposito K, et al. Effect of lifestyle changes on erectile dysfunction in obese men: a randomized controlled trial. *JAMA*, 2004.（PMID：[15213209](https://pubmed.ncbi.nlm.nih.gov/15213209/)）
+1. Prasad AS, et al. Zinc status and serum testosterone levels of healthy adults. *Nutrition*, 1996. DOI：[10.1016/s0899-9007(96)80058-x](https://doi.org/10.1016/s0899-9007(96)80058-x)。
+2. Gonzales GF, et al. Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men. *Andrologia*, 2002. DOI：[10.1046/j.1439-0272.2002.00519.x](https://doi.org/10.1046/j.1439-0272.2002.00519.x)。
+3. Rhim HC, et al. The potential role of arginine supplements on erectile dysfunction: a systemic review and meta-analysis. *Journal of Sexual Medicine*, 2019. DOI：[10.1016/j.jsxm.2018.12.002](https://doi.org/10.1016/j.jsxm.2018.12.002)。
+4. Shindel AW, et al. Erectogenic and neurotrophic effects of icariin, a purified extract of horny goat weed (Epimedium spp.) in vitro and in vivo. *Journal of Sexual Medicine*, 2010. DOI：[10.1111/j.1743-6109.2009.01699.x](https://doi.org/10.1111/j.1743-6109.2009.01699.x)。
+5. Esposito K, et al. Effect of lifestyle changes on erectile dysfunction in obese men: a randomized controlled trial. *JAMA*, 2004. DOI：[10.1001/jama.291.24.2978](https://doi.org/10.1001/jama.291.24.2978)。
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*

@@ -106,16 +106,13 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 臉上的斑點**形狀不規則、顏色不均、短時間內變大，或會出血**：請盡快看**皮膚科**。
 - 擦了任何產品後出現紅腫、起疹子、刺痛：先停用，必要時就醫。
 
-## 帶走一句話
-
-**男人保養先做三件事：洗乾淨、補水分、擋太陽。** 防曬選物理防曬，最重要的是每天擦。
+明天早上，先把洗臉、保濕、防曬做好就好。我會優先考慮適合自己膚況的礦物型防曬，但你挑到舒服、願意每天擦的產品，才有機會讓這件事持續下去。
 
 ---
 
 ## 參考資料
-
-1. Hughes MCB, et al. Sunscreen and prevention of skin aging: a randomized trial. *Annals of Internal Medicine*, 2013.（來源：[Annals of Internal Medicine](https://doi.org/10.7326/0003-4819-158-11-201306040-00002)，2013）
-2. Matta MK, et al. Effect of sunscreen application on plasma concentration of sunscreen active ingredients: a randomized clinical trial. *JAMA*, 2020.（來源：[JAMA](https://doi.org/10.1001/jama.2019.20747)，2020）
+1. Hughes MCB, et al. Sunscreen and prevention of skin aging: a randomized trial. *Annals of Internal Medicine*, 2013. DOI：[10.7326/0003-4819-158-11-201306040-00002](https://doi.org/10.7326/0003-4819-158-11-201306040-00002)。
+2. Matta MK, et al. Effect of sunscreen application on plasma concentration of sunscreen active ingredients: a randomized clinical trial. *JAMA*, 2020. DOI：[10.1001/jama.2019.20747](https://doi.org/10.1001/jama.2019.20747)。
 3. U.S. Food and Drug Administration. Sunscreen Drug Products for Over-the-Counter Human Use; Proposed Rule. *Federal Register*, 2019. https://www.federalregister.gov/documents/2019/02/26/2019-03019/sunscreen-drug-products-for-over-the-counter-human-use
 
 4. Cole C, Shyr T, Ou-Yang H. Metal oxide sunscreens protect skin by absorption, not by reflection or scattering. *Photodermatology, Photoimmunology & Photomedicine*. 2016;32:5–10. DOI：[10.1111/phpp.12214](https://doi.org/10.1111/phpp.12214)。

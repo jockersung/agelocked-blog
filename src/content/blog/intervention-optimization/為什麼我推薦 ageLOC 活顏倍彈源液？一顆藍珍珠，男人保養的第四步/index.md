@@ -104,16 +104,13 @@ Nu Skin 委託第三方檢測機構，找了一群在意肌膚不夠緊緻的女
 - 皮膚很敏感的人，先在耳後或下巴一小塊試用，觀察一兩天再擦全臉。
 - 擦了之後出現紅腫、起疹子、刺痛：先停用，必要時看**皮膚科**。
 
-## 帶走一句話
-
-**基本三件事做順了，想多顧一點下巴線條，活顏倍彈源液是我會推薦的第四步。** 一次一顆，早晚各一次，白天記得防曬。
+如果清潔、保濕、防曬都做順了，還想多照顧一點臉部輪廓，活顏倍彈源液是我會推薦你考慮的第四步。一次一顆，放進早晚的保養順序，白天的防曬也別省。
 
 想讓清潔這一步更有步驟，可以搭配〈[為什麼我推薦 ageLOC LumiSpa iO？](/blog/intervention-optimization/ageloc-lumispa-io-guide/)〉。
 
 ---
 
 ## 參考資料
-
 1. Nu Skin. *ageLOC Tru Face Essence Ultra Product Information Page*. 原廠產品資料，無 DOI。[官方 PDF](https://www.nuskin.com/content/dam/sea/ph/Documents/PIP/ageloc_tru_face_essence_ultra.pdf)。用於成分、使用方式與 12 週評估設計。
 2. Nu Skin. *ageLOC Tru Face Essence Ultra*. 原廠產品頁，無 DOI。[官方頁面](https://www.nuskin.com/en_PT/products/anti-aging_opportunity/the-ageloc-difference/ageLOC-Tru-Face-Essence-Ultra.html)。用於第 1 週與第 12 週受試者自評比例。
 3. Nu Skin 如新台灣。*Tru Face 活顏抗老保養產品列表*。官方產品資訊，無 DOI。[台灣官方頁面](https://www.nuskin.com.tw/shop/productlist/1174412216806413733)。用於品項名稱與售價，核對日期 2026-10-30。

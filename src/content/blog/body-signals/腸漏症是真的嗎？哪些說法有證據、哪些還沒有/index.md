@@ -141,24 +141,21 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 ![需要先看腸胃科的腸道警訊](./pr37-02-body-03-editorial-v2.webp)
 
-## 帶走一句話
-
-**腸道屏障可能參與慢性發炎，但「腸漏症」不能拿來概括所有不適。** 肚子出狀況，先排除需要處理的腸道疾病，再談怎麼照顧腸道屏障。
+肚子不舒服是真的，值得找出原因。腸道屏障和慢性發炎可以一起理解，但不能靠「腸漏症」三個字解釋所有不適。先把需要處理的疾病排除，再來看自己的飲食、用藥與生活習慣。
 
 下一篇〈[哪些習慣會讓腸道變漏？](/blog/chronic-inflammation/gut-barrier-habits-exercise-nsaids-alcohol/)〉，來看研究裡被抓到的幾個生活習慣。
 
 ---
 
 ## 參考資料
-
-1. Camilleri M. Leaky gut: mechanisms, measurement and clinical implications in humans. *Gut*, 2019.DOI：[10.1136/gutjnl-2019-318427](https://doi.org/10.1136/gutjnl-2019-318427)。
+1. Camilleri M. Leaky gut: mechanisms, measurement and clinical implications in humans. *Gut*, 2019. DOI：[10.1136/gutjnl-2019-318427](https://doi.org/10.1136/gutjnl-2019-318427)。
 2. 衛生福利部。健康台灣－擴展腸癌防護網 「腸」常篩檢護健康。衛生福利部，2025。https://mohw.gov.tw/cp-16-81256-1.html
 
 3. Martel J, et al. Gut barrier disruption and chronic disease. *Trends Endocrinol Metab*. 2022;33:247–265. DOI：[10.1016/j.tem.2022.01.002](https://doi.org/10.1016/j.tem.2022.01.002)。
 4. Violi F, et al. Gut-derived low-grade endotoxaemia, atherothrombosis and cardiovascular disease. *Nat Rev Cardiol*. 2023;20:24–37. DOI：[10.1038/s41569-022-00737-2](https://doi.org/10.1038/s41569-022-00737-2)。
 5. Marino M, et al. A (poly)phenol-rich diet reduces serum and faecal calprotectin in older adults with increased intestinal permeability: the MaPLE randomised controlled trial. *BMC Geriatr*. 2024;24:707. DOI：[10.1186/s12877-024-05272-y](https://doi.org/10.1186/s12877-024-05272-y)。
 6. Zeng M, et al. A green tea extract confection decreases circulating endotoxin and fasting glucose by improving gut barrier function but without affecting systemic inflammation: A double-blind, placebo-controlled randomized trial in healthy adults and adults with metabolic syndrome. *Nutr Res*. 2024. DOI：[10.1016/j.nutres.2024.02.001](https://doi.org/10.1016/j.nutres.2024.02.001)。
-7. Wellens J, et al. Effect of Five Dietary Emulsifiers on Inflammation, Permeability, and the Gut Microbiome: A Placebo-controlled Randomized Trial. *Clin Gastroenterol Hepatol*. 2026;24:1092–1101.（2025 年先行發表。）DOI：[10.1016/j.cgh.2025.08.005](https://doi.org/10.1016/j.cgh.2025.08.005)。
+7. Wellens J, et al. Effect of Five Dietary Emulsifiers on Inflammation, Permeability, and the Gut Microbiome: A Placebo-controlled Randomized Trial. *Clin Gastroenterol Hepatol*. 2026;24:1092–1101.2025 年先行發表。 DOI：[10.1016/j.cgh.2025.08.005](https://doi.org/10.1016/j.cgh.2025.08.005)。
 8. Ogilvie AR, et al. Short-term high fat diet-induced metabolic endotoxemia in older individuals with obesity: a randomized crossover study. *Am J Clin Nutr*. 2025;122:601–611. DOI：[10.1016/j.ajcnut.2025.06.001](https://doi.org/10.1016/j.ajcnut.2025.06.001)。
 
 9. Scheffler L, et al. Widely Used Commercial ELISA Does Not Detect Precursor of Haptoglobin2, but Recognizes Properdin as a Potential Second Member of the Zonulin Family. *Front Endocrinol*. 2018;9:22. DOI：[10.3389/fendo.2018.00022](https://doi.org/10.3389/fendo.2018.00022)。

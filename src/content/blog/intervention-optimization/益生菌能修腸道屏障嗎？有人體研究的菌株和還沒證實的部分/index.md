@@ -100,18 +100,15 @@ Nu Skin 的 Probio PCC® 是單一菌株的益生菌，主要成分是發酵乳�
 
 這些研究的對象是運動員，結果有正有反。把它當成參考，而不是保證。
 
-## 帶走一句話
-
-**益生菌對腸道屏障可能有幫助，但證據多半來自病人，而且要看菌株。** 先把讓腸道變漏的習慣減下來，再談吃什麼。
+買益生菌之前，先看清楚菌株編號，再問研究做在哪些人身上、實際量到了什麼。若最近一直有腸胃不適，先釐清原因；日常習慣也要一起調整，別把希望全放在一罐產品上。
 
 ---
 
 ## 參考資料
-
-1. Zheng Y, et al. Probiotics fortify intestinal barrier function: a systematic review and meta-analysis of randomized trials. *Frontiers in Immunology*, 2023.（來源：[Frontiers in Immunology](https://doi.org/10.3389/fimmu.2023.1143548)，2023）
-2. Mujagic Z, et al. The effects of Lactobacillus plantarum on small intestinal barrier function and mucosal gene transcription; a randomized double-blind placebo controlled trial. *Scientific Reports*, 2017.（來源：[Scientific Reports](https://doi.org/10.1038/srep40128)，2017）
-3. West NP, et al. Lactobacillus fermentum (PCC®) supplementation and gastrointestinal and respiratory-tract illness symptoms: a randomised control trial in athletes. *Nutrition Journal*, 2011.（PMID：[21477383](https://pubmed.ncbi.nlm.nih.gov/21477383/)）
-4. Cox AJ, et al. Oral administration of the probiotic Lactobacillus fermentum VRI-003 and mucosal immunity in endurance athletes. *British Journal of Sports Medicine*, 2010.（PMID：[18272539](https://pubmed.ncbi.nlm.nih.gov/18272539/)）
-5. 衛生福利部食品藥物管理署。健康食品資料查詢。食藥署。https://consumer.fda.gov.tw/
+1. Zheng Y, et al. Probiotics fortify intestinal barrier function: a systematic review and meta-analysis of randomized trials. *Frontiers in Immunology*, 2023. DOI：[10.3389/fimmu.2023.1143548](https://doi.org/10.3389/fimmu.2023.1143548)。
+2. Mujagic Z, et al. The effects of Lactobacillus plantarum on small intestinal barrier function and mucosal gene transcription; a randomized double-blind placebo controlled trial. *Scientific Reports*, 2017. DOI：[10.1038/srep40128](https://doi.org/10.1038/srep40128)。
+3. West NP, et al. Lactobacillus fermentum (PCC®) supplementation and gastrointestinal and respiratory-tract illness symptoms: a randomised control trial in athletes. *Nutrition Journal*, 2011. DOI：[10.1186/1475-2891-10-30](https://doi.org/10.1186/1475-2891-10-30)。
+4. Cox AJ, et al. Oral administration of the probiotic Lactobacillus fermentum VRI-003 and mucosal immunity in endurance athletes. *British Journal of Sports Medicine*, 2010. DOI：[10.1136/bjsm.2007.044628](https://doi.org/10.1136/bjsm.2007.044628)。
+5. 衛生福利部食品藥物管理署。健康食品資料查詢。食藥署。https://consumer.fda.gov.tw/Food/InfoHealthFood.aspx?nodeID=162
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。產品內容以 Nu Skin 台灣官方標示為準。*

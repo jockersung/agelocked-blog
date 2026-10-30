@@ -124,21 +124,18 @@ finasteride 有專門給雄性禿的 1 毫克劑型，也有給攝護腺肥大�
 - 用 finasteride 或 dutasteride 後性功能有變化：回診討論，不要自己停藥或換藥。
 - 頭皮紅、癢、脫屑、長膿包，或一塊一塊掉髮：先看**皮膚科**，可能不是雄性禿。
 
-## 帶走一句話
-
-**口服 minoxidil 和 dutasteride 是多出來的選項，不是比較強的升級版。** 先從生髮水加 finasteride 開始，擦不下去、效果不夠，再和皮膚科醫師討論換法。
+看診時，把自己擦不下去的原因、用過哪些藥、出現過什麼不舒服說清楚。口服或外用怎麼搭配，讓皮膚科醫師依你的情況安排；不要因為網路上說哪一種比較強，就自己換藥、加量或切藥。
 
 ---
 
 ## 參考資料
-
-1. Pindado-Ortega C, et al. Prescribing habits for androgenetic alopecia among dermatologists in Spain in 2024: a cross-sectional study. *Actas Dermo-Sifiliográficas*, 2026.（來源：[Actas Dermo-Sifiliográficas](https://doi.org/10.1016/j.ad.2026.104618)，2026）
-2. Penha MA, et al. Oral minoxidil vs topical minoxidil for male androgenetic alopecia: a randomized clinical trial. *JAMA Dermatology*, 2024.（來源：[JAMA Dermatology](https://doi.org/10.1001/jamadermatol.2024.0284)，2024）
-3. Vañó-Galván S, et al. Safety of low-dose oral minoxidil for hair loss: a multicenter study of 1404 patients. *Journal of the American Academy of Dermatology*, 2021.（PMID：[33639244](https://pubmed.ncbi.nlm.nih.gov/33639244/)）
-4. Zhou Z, et al. The efficacy and safety of dutasteride compared with finasteride in treating men with androgenetic alopecia: a systematic review and meta-analysis. *Clinical Interventions in Aging*, 2019.（PMID：[30863034](https://pubmed.ncbi.nlm.nih.gov/30863034/)）
-5. Effectiveness and safety of the ablative fractional 2940-nm Er:YAG laser for the treatment of androgenetic alopecia. *Lasers in Medical Science*, 2024.（PMID：[38724798](https://pubmed.ncbi.nlm.nih.gov/38724798/)）
-6. Mokhtari F, Zavare Z, Iraji F. Topical 5% minoxidil versus combined erbium-YAG laser and topical 5% minoxidil in androgenetic alopecia: a randomized controlled trial. *Journal of Cosmetic Dermatology*, 2023.（來源：[Journal of Cosmetic Dermatology](https://doi.org/10.1111/jocd.15955)，2023）
-7. 蔡宗樺醫師。雄性禿還在擦生髮水？2026 最新研究：9 成皮膚科醫師改開這個？YouTube。https://www.youtube.com/watch?v=v6j3UNHpKzg（醫師衛教影片，作為題目來源）
-8. 謝宗廷醫師。雄性禿藥物費用多少錢？6 種常見治療藥物一次整理！YouTube。https://www.youtube.com/watch?v=8J0bV89AUx4（醫師衛教影片，作為切藥風險題目來源）
+1. Pindado-Ortega C, et al. Prescribing habits for androgenetic alopecia among dermatologists in Spain in 2024: a cross-sectional study. *Actas Dermo-Sifiliográficas*, 2026. DOI：[10.1016/j.ad.2026.104618](https://doi.org/10.1016/j.ad.2026.104618)。
+2. Penha MA, et al. Oral minoxidil vs topical minoxidil for male androgenetic alopecia: a randomized clinical trial. *JAMA Dermatology*, 2024. DOI：[10.1001/jamadermatol.2024.0284](https://doi.org/10.1001/jamadermatol.2024.0284)。
+3. Vañó-Galván S, et al. Safety of low-dose oral minoxidil for hair loss: a multicenter study of 1404 patients. *Journal of the American Academy of Dermatology*, 2021. DOI：[10.1016/j.jaad.2021.02.054](https://doi.org/10.1016/j.jaad.2021.02.054)。
+4. Zhou Z, et al. The efficacy and safety of dutasteride compared with finasteride in treating men with androgenetic alopecia: a systematic review and meta-analysis. *Clinical Interventions in Aging*, 2019. DOI：[10.2147/CIA.S192435](https://doi.org/10.2147/CIA.S192435)。
+5. Effectiveness and safety of the ablative fractional 2940-nm Er:YAG laser for the treatment of androgenetic alopecia. *Lasers in Medical Science*, 2024. DOI：[10.1007/s10103-024-04074-3](https://doi.org/10.1007/s10103-024-04074-3)。
+6. Mokhtari F, Zavare Z, Iraji F. Topical 5% minoxidil versus combined erbium-YAG laser and topical 5% minoxidil in androgenetic alopecia: a randomized controlled trial. *Journal of Cosmetic Dermatology*, 2023. DOI：[10.1111/jocd.15955](https://doi.org/10.1111/jocd.15955)。
+7. 蔡宗樺醫師。雄性禿還在擦生髮水？2026 最新研究：9 成皮膚科醫師改開這個？YouTube。https://www.youtube.com/watch?v=v6j3UNHpKzg。醫師衛教影片，用於題目來源。
+8. 謝宗廷醫師。雄性禿藥物費用多少錢？6 種常見治療藥物一次整理！YouTube。https://www.youtube.com/watch?v=8J0bV89AUx4。醫師衛教影片，用於切藥風險的題目來源。
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。處方藥的使用請由醫師評估。*

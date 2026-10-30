@@ -91,20 +91,17 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 吃了某種食物後嘴唇腫、起疹子、呼吸困難：這是過敏的急症，請立即就醫；之後看**過敏免疫科**，用正規的方法確認過敏原。
 - 已經做了自費檢測，報告讓你很擔心：帶著報告看**家醫科**或**腸胃科**，不要自己照著報告大幅忌口。
 
-## 帶走一句話
-
-**zonulin 檢測量到的，可能不是 zonulin。** 肚子出狀況，先做真正能排除問題的檢查，再談腸道屏障。
+拿到一張檢驗報告，先問它量的是什麼、結果會不會改變接下來的處理。肚子持續不舒服，或有血便、體重下降等警訊，先看腸胃科；不用急著替自己買一個「腸漏症」的答案。
 
 下一篇〈[益生菌能修腸道屏障嗎？](/blog/intervention-optimization/probiotics-gut-barrier-evidence/)〉，來看哪些菌株做過人體研究，以及還沒證實的部分。
 
 ---
 
 ## 參考資料
-
-1. Scheffler L, et al. Widely used commercial ELISA does not detect precursor of haptoglobin2, but recognizes properdin as a potential second member of the zonulin family. *Frontiers in Endocrinology*, 2018.（來源：[Frontiers in Endocrinology](https://doi.org/10.3389/fendo.2018.00022)，2018）
-2. Ajamian M, et al. Serum zonulin as a marker of intestinal mucosal barrier function: may not be what it seems. *PLoS ONE*, 2019.（來源：[PLoS ONE](https://doi.org/10.1371/journal.pone.0210728)，2019）
-3. Stapel SO, et al. Testing for IgG4 against foods is not recommended as a diagnostic tool: EAACI Task Force Report. *Allergy*, 2008.（PMID：[18489614](https://pubmed.ncbi.nlm.nih.gov/18489614/)）
-4. Camilleri M. Leaky gut: mechanisms, measurement and clinical implications in humans. *Gut*, 2019.（PMID：[31076401](https://pubmed.ncbi.nlm.nih.gov/31076401/)）
+1. Scheffler L, et al. Widely used commercial ELISA does not detect precursor of haptoglobin2, but recognizes properdin as a potential second member of the zonulin family. *Frontiers in Endocrinology*, 2018. DOI：[10.3389/fendo.2018.00022](https://doi.org/10.3389/fendo.2018.00022)。
+2. Ajamian M, et al. Serum zonulin as a marker of intestinal mucosal barrier function: may not be what it seems. *PLoS ONE*, 2019. DOI：[10.1371/journal.pone.0210728](https://doi.org/10.1371/journal.pone.0210728)。
+3. Stapel SO, et al. Testing for IgG4 against foods is not recommended as a diagnostic tool: EAACI Task Force Report. *Allergy*, 2008. DOI：[10.1111/j.1398-9995.2008.01705.x](https://doi.org/10.1111/j.1398-9995.2008.01705.x)。
+4. Camilleri M. Leaky gut: mechanisms, measurement and clinical implications in humans. *Gut*, 2019. DOI：[10.1136/gutjnl-2019-318427](https://doi.org/10.1136/gutjnl-2019-318427)。
 5. 衛生福利部。健康台灣－擴展腸癌防護網 「腸」常篩檢護健康。衛生福利部，2025。https://mohw.gov.tw/cp-16-81256-1.html
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*
