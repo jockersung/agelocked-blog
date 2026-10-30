@@ -804,7 +804,8 @@ function stationBody(s){ const feat=new Set(s.featured||[]); const rest=s.items.
   ${pages.length?`<div class="choices">${pages.map(it=>`<a class="choice" href="${it.url}"><small>${esc(it.name)}</small><b>${esc(it.desc)} →</b></a>`).join('')}</div>`:''}
   <div class="sec">這一站的子主題</div><div class="chips">${(s.groups||[]).map(g=>`<button class="chip" data-grp="${s.i}:${g.k}">${esc(g.name)} · ${g.slugs.length}</button>`).join('')}</div>
   ${blk.map(([t,f])=>{ const a=rest.filter(f); return a.length?`<div class="sec">${t} · ${a.length}</div><ul class="ilist">${a.map(it=>artLi(it.id)).join('')}</ul>`:''; }).join('')}
-  <a class="link" href="${kbLink(s)}">在知識庫看這一站的文字＋語音 →</a>`; }
+  <a class="link" href="${kbLink(s)}">在知識庫看這一站全部 ${s.items.filter(it=>!it.page).length} 篇，還能直接收聽 →</a>
+  <a class="link" href="${DATA.links.sample}">找 Jason 之後會拿到什麼？看一份起點整理示例 →</a>`; }
 function cardGroup(i,k){ const s=ISL[i], g=s.groups[k];
   return `<div class="eyebrow">第 ${s.station} 站 · ${esc(s.stationName)} · 子主題</div><h2>${esc(g.name)}</h2>
   <div class="sec">文章 · ${g.slugs.length}</div><ul class="ilist">${g.slugs.map(artLi).join('')}</ul>
@@ -822,7 +823,7 @@ function cardIsland(i){ const s=ISL[i]; if(s.groups&&s.groups.length) return car
   ${ctaFor(s.tier)}`; }
 function cardStationIsland(i){ const s=ISL[i]; const fl=DATA.flows.map((f,fi)=>[f,fi]).filter(([f])=>f.from===s.id||f.to===s.id);
   return `<div class="c-head"><span class="c-num" style="background:${s.color}">${s.station}</span><div><div class="eyebrow">第 ${s.station} 站 · ${esc(s.city||'')}</div></div></div>
-  <h2>${esc(s.stationName)}</h2><p>${esc(s.summary)}</p>${stationBody(s)}
+  <h2>${esc(s.stationName)}</h2>${s.hook?`<p class="st-hook">「${esc(s.hook)}」</p>`:''}<p>${esc(s.summary)}</p>${stationBody(s)}
   ${fl.length?`<div class="sec">和其他站互相連結</div><div class="chips">${fl.map(([f,fi])=>flowChip(fi)).join('')}</div>`:''}
   ${ctaFor(s.tier)}`; }
 function numTile(fact){ const m=fact.match(/(\d[\d,]*(?:\.\d+)?)(?:\s*[–-]\s*(\d+))?\s*(年代|mg\/L|%|秒|分鐘|小時|天|週|篇|項|個|年|次|種|步|位|份|條|張|下|頁|件|歲|公分|色|台|大|多)?/); if(!m) return '';
@@ -877,6 +878,7 @@ function cardAbout(){ return `<div class="eyebrow">作者</div><h2 class="about-
   <ul class="creds"><li>國立陽明交通大學應用化學、國立清華大學分子醫學背景</li><li>15 年協助臨床醫師解讀研究數據、撰寫醫學論文</li><li>帶上你的健檢數據，對照科學研究文獻，了解數字背後可能的生活型態意義</li></ul>
   <p class="motto">我不賣奇蹟，只看科學實證與數據。</p>
   <a class="cta read" href="${DATA.links.about}">看完整介紹 →</a>
+  <a class="link" href="${DATA.links.sample}">找我之後會拿到什麼？看一份起點整理示例 →</a>
   <button class="chip" id="aboutCheck" style="margin-top:10px">開始你的健檢</button>`; }
 function openSpecial(kind){ sel=null; openCard(kind==='about'?cardAbout():cardCheck()); afterSelect(); document.body.classList.remove('hud-open'); if(mqMobile.matches) $('#card').style.height='62vh';
   const b=document.getElementById('aboutCheck'); if(b) b.onclick=()=>openSpecial('check'); }
@@ -1043,6 +1045,8 @@ $('#rtNext').onclick=()=>{ if(!route) return; const n=ROUTES[route.r].stations.l
 $('#rtExit').onclick=()=>endRoute(false);
 $('#tRoute').onclick=()=> route ? goStation(route.k) : startRoute(0);
 $('#helpRoute').onclick=()=>startRoute(0);
+// 開場畫面：按「你在意的是什麼？」的六站，地圖直接飛到那一站
+document.querySelectorAll('[data-go-station]').forEach(b=>b.onclick=()=>{ const s=islById[b.dataset.goStation]; if(!s) return; $('#help').hidden=true; lsSet('agelocked-island-help','1'); track('intro_station',{station:s.id}); selectIsland(s.i); });
 jTagEl.onclick=e=>{ e.stopPropagation(); toggleJasonVoice(); };
 
 /* ---------- sidebar list ---------- */
@@ -1098,7 +1102,7 @@ document.querySelectorAll('.handle').forEach(h=>{ const sheet=h.parentElement; l
   h.addEventListener('pointermove',e=>{ if(y0===null) return; sheet.style.height=clamp(h0+(y0-e.clientY),110,innerHeight)+'px'; });
   h.addEventListener('pointerup',()=>{ y0=null; }); });
 // help
-function showHelp(){ $('#help').hidden=false; $('#helpOk').focus(); }
+function showHelp(){ $('#help').hidden=false; const f=document.querySelector('#help [data-go-station]'); (f||$('#helpOk')).focus({preventScroll:true}); }
 $('#tHelp').onclick=showHelp;
 $('#tAbout').onclick=()=>openSpecial('about');
 $('#hudCheck').onclick=()=>openSpecial('check'); $('#helpOk').onclick=()=>{ $('#help').hidden=true; lsSet('agelocked-island-help','1'); renderer.domElement.focus({preventScroll:true}); };

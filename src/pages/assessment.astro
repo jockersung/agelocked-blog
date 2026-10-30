@@ -5,7 +5,35 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const title = '身體警報訊號評估清單 · AGELOCKED';
-const description = '為什麼你的健檢報告沒有紅字，卻依然感覺體力在流失？花 1 分鐘，勾選你觀察到的身體訊號，了解目前需要優先關注的生活型態面向。';
+const description = '40 歲是一個分水嶺。花 1 分鐘，勾選過去 3 個月常出現的狀況，看看身材、臉蛋、性健康、禿頭白髮、心血管、睡眠與恢復，哪幾站正在亮燈。';
+
+// 男性慢老六站版的身體警報訊號。性健康那一組只在瀏覽器裡計算，不放進傳到 LINE 的訊息（個資法特種個資）。
+const PARTS = [
+  { st: 'body', name: '身材', items: [
+    ['腰圍悄悄變大', '吃的跟以前差不多，近一兩年褲子卻越穿越緊，肚子的肉越來越難減。'],
+    ['肌肉和衝勁流失', '力量在下降，體態開始變鬆，做事的衝勁也跟著少了。'],
+    ['壓力性進食', '壓力一大，就特別想吃甜的、重口味或宵夜。'] ] },
+  { st: 'face', name: '臉蛋', items: [
+    ['臉上長斑', '顴骨、額頭的斑變多、變深，拍照越來越明顯。'],
+    ['看起來比實際累', '明明有睡，照片裡還是顯得疲倦、氣色差，同事會問你是不是很累。'] ] },
+  { st: 'sexual-health', name: '性健康', private: true, items: [
+    ['晨間反應變少', '早上醒來的自然反應，比以前少很多。'],
+    ['硬度或持久度不如以前', '以前不必想的事，現在開始在意。'],
+    ['性慾變低', '沒有那麼想了，不確定是太累還是別的原因。'] ] },
+  { st: 'hair', name: '禿頭、白髮', items: [
+    ['頭頂或髮際線變薄', '拍照會刻意找角度，或洗頭時掉髮明顯變多。'],
+    ['白髮增加得很快', '一兩年內白髮明顯變多，比同齡朋友早。'] ] },
+  { st: 'heart', name: '心血管', items: [
+    ['爬樓梯會喘', '爬兩三層樓就喘，以前不會。'],
+    ['報告上有紅字還沒處理', '血脂、血糖或血壓被標示超出範圍，但一直沒有回診追蹤。'],
+    ['家人有心臟病或中風', '父母或兄弟姊妹有心臟病、中風，或很年輕就開始吃心血管的藥。'] ] },
+  { st: 'checkup', name: '睡眠與恢復', items: [
+    ['睡滿還是累', '週末就算補眠，週一早上起床身體依然很沉重。'],
+    ['下午續航力斷崖', '下午兩到四點腦袋像起霧，要靠咖啡才撐得過會議。'],
+    ['晚上腦袋停不下來', '躺在床上還在想工作，很難睡沉。'],
+    ['恢復期拉長', '運動後的痠痛、熬夜的疲勞、小感冒，都要比以前多好幾天才好。'] ] },
+];
+const TOTAL = PARTS.reduce((n, p) => n + p.items.length, 0);
 ---
 
 <!doctype html>
@@ -113,6 +141,16 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
       .check-content { display: flex; flex-direction: column; gap: 0.4rem; }
       .check-title { font-size: 1.25rem; font-weight: 500; color: var(--ink); }
       .check-desc { font-size: 1.1rem; color: var(--muted); font-weight: 300; line-height: 1.6; }
+      .cat-lock { font-size: .95rem; color: var(--muted); font-weight: 300; margin: .4rem 0 0; }
+      .st-bars { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; margin: .4rem 0 1rem; }
+      /* 下面這些元素由 JavaScript 動態產生，要用 :global 才套得到樣式 */
+      .st-bars :global(span) { font-size: .95rem; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: .25rem .7rem; display: inline-flex; gap: .4rem; align-items: center; }
+      .st-bars :global(span b) { font-family: 'DM Mono', monospace; font-weight: 400; }
+      .st-bars :global(span.on) { color: var(--ink); border-color: var(--teal); background: var(--teal-p); }
+      .part-insight-text :global(strong) { color: #fff; font-weight: 500; }
+      .part-insight-text :global(a) { color: #5fd3c8; font-weight: 500; }
+      .next-step-text a { color: #5fd3c8; font-weight: 500; }
+      .result-text :global(strong) { color: var(--ink); }
 
       /* ── RESULT BOX ── */
       .result-box {
@@ -252,10 +290,10 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
     <main>
       <header class="page-header">
         <div class="header-inner">
-          <div class="header-brand">AGELOCKED · 專屬評估</div>
+          <div class="header-brand">AGELOCKED · 男性慢老</div>
           <h1 class="page-title">身體警報訊號<br><em>自我評估清單</em></h1>
           <p class="page-desc">
-            標準健檢找的是「已經發生的疾病」，但身體在出狀況之前，往往會先出現一段漫長的「能量感受下滑與慢性低度發炎」訊號期。花 1 分鐘，勾選你過去 3 個月內頻繁出現的狀況，了解目前需要優先關注的生活型態面向。
+            40 歲是一個分水嶺。健檢找的是已經發生的疾病，但身體在出狀況之前，常常先在外表、體力和日常感受上亮燈。花 1 分鐘，勾選過去 3 個月常出現的狀況，看看你的身體在六站裡，哪幾站正在亮燈。
           </p>
         </div>
       </header>
@@ -263,121 +301,45 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
       <div class="form-body">
         
         <div class="quiz-section">
-          
-          <div class="quiz-category">
-            <div class="cat-head">
-              <div class="cat-label">PART 01</div>
-              <h2 class="cat-title">能量與神經系統</h2>
+          {PARTS.map((p, k) => (
+            <div class="quiz-category" data-st={p.st} data-name={p.name}>
+              <div class="cat-head">
+                <div class="cat-label">PART {String(k + 1).padStart(2, '0')}</div>
+                <h2 class="cat-title">{p.name}</h2>
+                {p.private && <p class="cat-lock">🔒 這一組只在你的手機上計算，不會放進傳給我的訊息；見面時想談再談。</p>}
+              </div>
+              <div class="check-list">
+                {p.items.map(([t, d]) => (
+                  <label class="check-item">
+                    <input type="checkbox" name="alarm" value={t} data-private={p.private ? '1' : undefined} onchange="toggleActive(this)" />
+                    <div class="check-content">
+                      <div class="check-title">{t}</div>
+                      <div class="check-desc">{d}</div>
+                    </div>
+                  </label>
+                ))}
+              </div>
             </div>
-            <div class="check-list">
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="睡眠品質的錯覺" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">睡眠品質的錯覺</div>
-                  <div class="check-desc">週末就算睡滿 8 小時甚至補眠，禮拜一早上起床依然覺得身體很沉重。</div>
-                </div>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="續航力斷崖" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">續航力斷崖</div>
-                  <div class="check-desc">下午 2-4 點之間會出現明顯的「腦霧」，專注力渙散，必須依賴咖啡才能撐過會議。</div>
-                </div>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="煞車失靈" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">煞車失靈</div>
-                  <div class="check-desc">晚上躺在床上，腦袋依然轉個不停，感覺自律神經處於緊繃狀態，很難進入深眠。</div>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <div class="quiz-category">
-            <div class="cat-head">
-              <div class="cat-label">PART 02</div>
-              <h2 class="cat-title">代謝與體態訊號</h2>
-            </div>
-            <div class="check-list">
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="頑固的內臟脂肪" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">頑固的內臟脂肪</div>
-                  <div class="check-desc">飲食與運動量明明跟以前差不多，但近一兩年腹部（腰圍）的脂肪卻越來越難減。</div>
-                </div>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="肌肉與衝勁流失" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">肌肉與衝勁流失</div>
-                  <div class="check-desc">感覺肌肉的力量在下降，體態開始變得鬆垮，且常伴隨日常活力與衝勁的下滑。</div>
-                </div>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="壓力性進食" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">壓力性進食</div>
-                  <div class="check-desc">工作壓力大的時候，會無法控制地極度渴望高糖、高碳水或重口味的食物。</div>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <div class="quiz-category">
-            <div class="cat-head">
-              <div class="cat-label">PART 03</div>
-              <h2 class="cat-title">修復與免疫防護網</h2>
-            </div>
-            <div class="check-list">
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="恢復期拉長" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">恢復期拉長</div>
-                  <div class="check-desc">不管是運動後的痠痛，還是偶爾熬夜的疲勞，現在需要的「恢復天數」比以前長很多。</div>
-                </div>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="免疫力邊緣" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">免疫力邊緣</div>
-                  <div class="check-desc">只要壓力一來，就容易有快感冒的感覺，或者一個小感冒拖了兩三週都好不徹底。</div>
-                </div>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="表面氧化痕跡" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">表面氧化痕跡</div>
-                  <div class="check-desc">白髮增生的速度明顯變快，或是洗頭時感覺掉髮量比過去增加。</div>
-                </div>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="alarm" value="組織修復緩慢" onchange="toggleActive(this)">
-                <div class="check-content">
-                  <div class="check-title">組織修復緩慢</div>
-                  <div class="check-desc">嘴破（口腔潰瘍）的頻率變高，或者小傷口癒合的時間變長。</div>
-                </div>
-              </label>
-            </div>
-          </div>
-
+          ))}
         </div>
 
         <div id="resultBox" class="result-box hidden">
-          <div class="score-display"><span id="scoreNum">0</span> <span>/ 10</span></div>
+          <div class="score-display"><span id="scoreNum">0</span> <span>/ {TOTAL}</span></div>
+          <div id="stationBars" class="st-bars"></div>
          
           <div id="resultBadge" class="result-badge">測量中</div>
           <div id="resultText" class="result-text">請勾選上方符合的狀況以顯示評估結果。</div>
           <div id="partInsight" class="part-insight" style="display:none;">
-            <div class="part-insight-label">◆ 數據缺口提醒</div>
+            <div class="part-insight-label">◆ 你亮燈最多的一站</div>
             <div id="partInsightText" class="part-insight-text"></div>
           </div>
           <div id="nextStepBox" class="next-step-box" style="display:none;">
             <p class="next-step-text">
-              這份評估是第一步——它顯示的是你觀察到的症狀訊號。<br>
-              要看出<strong>真正的方向</strong>，需要把這份結果和你的健檢數據、穿戴裝置數據放在一起比對。
+              這份清單是第一步，它顯示的是你自己觀察到的變化。<br>
+              下一步，把你手上的健檢報告、手錶紀錄放進來，我幫你做一份<strong>男性慢老起點整理</strong>：先記錄什麼、哪些問題帶給醫師。
             </p>
-            <a href="/prescan" class="next-step-btn">📊 下一步：填寫健檢資料表，完成數據比對</a>
+            <a href="/prescan/" class="next-step-btn">📊 下一步：填寫掃描前資料表</a>
+            <p class="next-step-text" style="margin-top:1rem"><a href="/sample/">先看一份起點整理示例 →</a></p>
           </div>
         </div>
 
@@ -385,8 +347,8 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
           <div class="submit-inner">
             <div class="submit-title">取得個人化方向</div>
             <p class="submit-sub">
-              複製你的評估結果，貼到 LINE 傳給我。<br>
-              系統收到後會立即回覆，幫你確認你屬於哪一型，再給你下一步最值得先處理的方向。
+              按第 2 步會直接開啟 LINE，結果已經填在對話框，按傳送就完成。<br>
+              如果對話框是空的，先按第 1 步複製，再貼上傳送。我會告訴你最值得先處理的是哪一站。
             </p>
             <div class="submit-steps">
               <div class="submit-step">
@@ -396,11 +358,11 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
               <div class="submit-arrow">↓</div>
               <div class="submit-step">
                 <span class="step-num">2</span>
-                <a href="https://line.me/ti/p/@fer7932k" target="_blank" rel="noopener" class="btn-line">
+                <a id="lineBtn" href="https://line.me/R/ti/p/%40fer7932k" target="_blank" rel="noopener" class="btn-line">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
                     <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                   </svg>
-                  開啟 LINE 貼上結果
+                  開啟 LINE 傳送結果
                 </a>
               </div>
             </div>
@@ -417,127 +379,112 @@ const description = '為什麼你的健檢報告沒有紅字，卻依然感覺�
     <Footer />
 
     <script is:inline>
-      // ── 各 PART 數據缺口對應提醒 ──
-      const PART_INSIGHTS = [
-        {
-          name: '能量與神經系統',
-          text: '你的訊號主要集中在<strong>能量與神經系統</strong>。這類症狀與 HRV（心率變異度）下滑及皮質醇失衡高度相關——光憑症狀無法判斷是壓力負荷還是代謝問題所致。要精準定位根因，需要對照你的穿戴數據與 hs-CRP 數值。',
-          prescan: '📊 下一步：填寫健檢資料表，對照 HRV 與 hs-CRP'
-        },
-        {
-          name: '代謝與體態訊號',
-          text: '你的訊號主要集中在<strong>代謝系統</strong>。這類症狀與 TG/HDL 比值偏高及 HbA1c 趨勢直接相關——很多人這兩個數字都「還在正常範圍」，但已在臨界邊緣。光看症狀無法判斷嚴重程度，需要血液數據交叉對位才能確認。',
-          prescan: '📊 下一步：填寫健檢資料表，對照 TG/HDL 與 HbA1c'
-        },
-        {
-          name: '修復與免疫防護網',
-          text: '你的訊號主要集中在<strong>修復與免疫系統</strong>。這類症狀與體內 hs-CRP（高敏感 C 反應蛋白）長期偏高高度相關——這個數字在常規健檢中常被忽略，但它是慢性發炎最直接的指標。要確認發炎源頭，必須結合客觀的血液數據。',
-          prescan: '📊 下一步：填寫健檢資料表，對照 hs-CRP 與發炎指標'
-        }
-      ];
+      // ── 六站各自的下一步（不做診斷；什麼情況看哪一科） ──
+      const ST = {
+        'body': { text: '你的訊號集中在<strong>身材</strong>：腰圍、體力和飲食。先每週同一天量一次腰圍，再把健檢報告上的血脂、血糖找出來，這兩樣是身材變化最常一起看的數字。', cat: 'body' },
+        'face': { text: '你的訊號集中在<strong>臉蛋</strong>：斑點和氣色。日曬和睡眠是最常見的兩個因素，出門前擦防曬，並在固定光線下拍一張不開美肌的照片當起點。如果有一塊斑短時間變大、顏色不均、會癢或流血，盡快看皮膚科。', cat: 'face' },
+        'sexual-health': { text: '你的訊號集中在<strong>性健康</strong>。先分清楚是太累、沒有慾望，還是勃起本身有變化；這類變化有時和血管、血糖、睡眠有關。反覆困擾，帶著紀錄找泌尿科醫師最直接。', cat: 'sexual-health' },
+        'hair': { text: '你的訊號集中在<strong>禿頭、白髮</strong>。先在固定位置、同一盞燈下拍頭頂和髮際線，也想想家人的掉髮狀況。頭髮變化慢，3 個月比一次才準；想了解處理方式，看皮膚科。', cat: 'hair' },
+        'heart': { text: '你的訊號集中在<strong>心血管</strong>。先用「722」量法量一週居家血壓（連續 7 天、早晚各一次、每次兩遍），帶著報告和家族史找家醫科或心臟內科。<br><strong>如果有胸痛、胸悶、呼吸困難，或突然單側無力、說話不清楚，請立即就醫。</strong>', cat: 'heart' },
+        'checkup': { text: '你的訊號集中在<strong>睡眠與恢復</strong>。睡不飽、下午沒電、恢復變慢，常常是壓力、睡眠和代謝一起造成的。先固定上床時間一週，手錶有睡眠或 HRV 紀錄的話，把近一個月的趨勢截圖留著。', cat: 'checkup' },
+      };
 
-      function getTopPart() {
-        const categories = document.querySelectorAll('.quiz-category');
-        let maxCount = 0;
-        let topIndex = 0;
-        categories.forEach((cat, i) => {
-          const count = cat.querySelectorAll('input[name="alarm"]:checked').length;
-          if (count > maxCount) { maxCount = count; topIndex = i; }
-        });
-        return { topIndex, maxCount };
+      function stationCounts() {
+        return [...document.querySelectorAll('.quiz-category')].map(cat => ({
+          st: cat.dataset.st, name: cat.dataset.name,
+          n: cat.querySelectorAll('input[name="alarm"]:checked').length,
+          total: cat.querySelectorAll('input[name="alarm"]').length,
+        }));
+      }
+      function topStation() {
+        const c = stationCounts().filter(x => x.n > 0);
+        c.sort((a, b) => b.n / b.total - a.n / a.total || b.n - a.n);
+        return c[0] || null;
       }
 
       function updatePartInsight(score) {
         const insightBox = document.getElementById('partInsight');
         const insightText = document.getElementById('partInsightText');
-        const nextStepBtn = document.querySelector('.next-step-btn');
-
-        if (score === 0) {
-          insightBox.style.display = 'none';
-          return;
-        }
-
-        const { topIndex, maxCount } = getTopPart();
-        const insight = PART_INSIGHTS[topIndex];
-
-        insightText.innerHTML = insight.text;
+        const bars = document.getElementById('stationBars');
+        if (score === 0) { insightBox.style.display = 'none'; bars.innerHTML = ''; return; }
+        bars.innerHTML = stationCounts().map(x => `<span class="${x.n ? 'on' : ''}">${x.name}<b>${x.n}</b></span>`).join('');
+        const top = topStation();
+        insightText.innerHTML = ST[top.st].text + `<br><a href="/knowledge/?cat=${ST[top.st].cat}">看「${top.name}」這一站的文章 →</a>`;
         insightBox.style.display = 'block';
-
-        // 同步更新 prescan 按鈕文字
-        if (nextStepBtn) nextStepBtn.textContent = insight.prescan;
       }
 
       function toggleActive(checkbox) {
         const label = checkbox.closest('.check-item');
-        if (checkbox.checked) {
-          label.classList.add('active');
-        } 
-        else {
-          label.classList.remove('active');
-        }
+        label.classList.toggle('active', checkbox.checked);
         calculateScore();
       }
 
       function calculateScore() {
         const checkedBoxes = document.querySelectorAll('input[name="alarm"]:checked');
         const score = checkedBoxes.length;
+        const total = document.querySelectorAll('input[name="alarm"]').length;
         const resultBox = document.getElementById('resultBox');
-        const scoreNum = document.getElementById('scoreNum');
         const badge = document.getElementById('resultBadge');
         const text = document.getElementById('resultText');
         const copyBtn = document.getElementById('copyBtn');
-
-        scoreNum.textContent = score;
+        document.getElementById('scoreNum').textContent = score;
 
         if (score === 0) {
           resultBox.className = 'result-box hidden';
           copyBtn.disabled = true;
           document.getElementById('nextStepBox').style.display = 'none';
-          document.getElementById('partInsight').style.display = 'none';
+          updatePartInsight(0);
+          updateLine();
           return;
         }
-
         copyBtn.disabled = false;
         resultBox.className = 'result-box show';
         document.getElementById('nextStepBox').style.display = 'block';
+        const lit = stationCounts().filter(x => x.n > 0).length;
 
         if (score <= 2) {
           resultBox.classList.add('green');
-          badge.textContent = '身體訊號良好';
-          text.innerHTML = '你目前觀察到的身體訊號不多，代謝與恢復狀態看起來相對穩定。請繼續保持目前的飲食與運動習慣，這將是你事業最好的資本。';
-        } else if (score <= 5) {
+          badge.textContent = '目前亮燈不多';
+          text.innerHTML = '你勾的狀況不多，身體大致還跟得上。這正是最適合開始記錄的時候：趁變化還小，先留下自己的起點數字，之後才比得出差別。';
+        } else if (score <= 6) {
           resultBox.classList.add('orange');
-          badge.textContent = '需留意的身體訊號';
-          text.innerHTML = '你的健檢報告可能很漂亮，但身體已經開始給出警告訊號。研究顯示，這類症狀組合與慢性低度發炎及壓力負荷高度相關。這個階段光靠補充保健品往往感覺效果有限，因為問題出在訊號源頭，不在補充量——你需要的是針對根本原因的系統性調整。';
+          badge.textContent = `有 ${lit} 站開始亮燈`;
+          text.innerHTML = '你的健檢報告可能還很漂亮，但外表、體力或日常感受已經在提醒你。這個階段最有效的，不是再多買一罐保健品，而是先弄清楚該從哪一站開始，把變化記錄下來。';
         } else {
           resultBox.classList.add('red');
-          badge.textContent = '多重身體警報訊號';
-          text.innerHTML = '你觀察到的訊號數量較多，身體在多個面向同時發出警報。慢性發炎已經在你的細胞軟體裡製造了大量亂碼，蓋過了年輕時的原始指令。現在你需要的不是再多加一罐保健品——而是透過數據對位，先找到干擾源頭。';
+          badge.textContent = `${lit} 站同時亮燈`;
+          text.innerHTML = '你勾的狀況不少，好幾站同時在亮燈。不用一次處理全部：先挑你最在意的一站，把資料整理清楚，報告上有紅字或身體有明顯不適的，先找醫師評估。';
         }
-
         updatePartInsight(score);
+        updateLine();
+      }
+
+      // ── 要傳到 LINE 的文字（第一行維持原本格式；性健康的勾選不放進來） ──
+      function buildText() {
+        // 只算可以分享的勾選（不含性健康），訊息裡的項數才不會透露有沒勾的部分
+        const checked = [...document.querySelectorAll('input[name="alarm"]:checked')].filter(cb => !cb.dataset.private);
+        const score = checked.length;
+        let status = score <= 2 ? '🟢 目前亮燈不多' : score <= 6 ? '🟡 有幾站開始亮燈' : '🔴 多站同時亮燈';
+        const groups = {};
+        checked.forEach(cb => { if (cb.dataset.private) return; const n = cb.closest('.quiz-category').dataset.name; (groups[n] = groups[n] || []).push(cb.value); });
+        const lines = Object.entries(groups).map(([n, v]) => `${n}：${v.join('、')}`).join('\n') || '（沒有可分享的勾選）';
+        const pub = stationCounts().filter(x => x.n > 0 && x.st !== 'sexual-health').sort((a, b) => b.n / b.total - a.n / a.total || b.n - a.n)[0];
+        const topLine = pub ? `\n亮燈最多：${pub.name}` : '';
+        return `【AGELOCKED 身體警報評估結果】\n\n我勾了 ${score} 項\n整體狀況：${status}${topLine}\n\n▌我目前觀察到的變化：\n${lines}\n\n請幫我看，我現在最該先處理哪一站。`;
+      }
+      function updateLine() {
+        const btn = document.getElementById('lineBtn');
+        if (!document.querySelectorAll('input[name="alarm"]:checked').length) { btn.href = 'https://line.me/R/ti/p/%40fer7932k'; return; }
+        btn.href = 'https://line.me/R/oaMessage/%40fer7932k/?' + encodeURIComponent(buildText());
       }
 
       function copyResult() {
-        const checkedBoxes = document.querySelectorAll('input[name="alarm"]:checked');
-        const score = checkedBoxes.length;
-
-        const signals = Array.from(checkedBoxes).map(cb => `- ${cb.value}`).join('\n');
-        let status = '';
-        if (score <= 2) status = '🟢 身體訊號良好';
-        else if (score <= 5) status = '🟡 需留意的身體訊號';
-        else status = '🔴 多重身體警報訊號';
-
-        const textToCopy = `【AGELOCKED 身體警報評估結果】\n\n我的身體警報評估分數：${score} / 10\n整體狀況：${status}\n\n▌我目前觀察到的訊號：\n${signals}\n\n請幫我看，我現在最該先處理哪一條。`;
+        const textToCopy = buildText();
         navigator.clipboard.writeText(textToCopy).then(() => {
           const btn = document.getElementById('copyBtn');
           btn.textContent = '✓ 已複製！請開啟 LINE 貼上傳送';
           btn.style.background = '#1a7a50';
-          setTimeout(() => {
-            btn.textContent = '📋 複製評估結果';
-            btn.style.background = '';
-          }, 3500);
-      
+          setTimeout(() => { btn.textContent = '📋 複製評估結果'; btn.style.background = ''; }, 3500);
         }).catch(() => {
           const ta = document.createElement('textarea');
           ta.value = textToCopy; ta.style.position = 'fixed'; ta.style.opacity = '0';

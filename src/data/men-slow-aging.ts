@@ -21,7 +21,7 @@ export const MEN_PILLARS: Pillar[] = [
   {
     id: 'body',
     name: '身材',
-    hook: '體重差不多，為什麼以前的衣服穿起來不同了？',
+    hook: '肚子越來越大，體力卻越來越少？',
     concern: '腰圍、肚子、肌肉與穿衣感',
     intro: '體重沒變，腰圍卻變了，通常代表脂肪的位置和肌肉量在改變。從腰圍、荷爾蒙到粒線體，看懂中年體態為什麼變。',
     slugs: ['visceral-fat-metabolic-signal', 'visceral-fat-three-cycles', 'mitochondria-energy-after-40', 'glp1-aging-gene-expression', 'glp1-clinical-guide-tirzepatide'],
@@ -29,7 +29,7 @@ export const MEN_PILLARS: Pillar[] = [
   {
     id: 'face',
     name: '臉蛋',
-    hook: '明明有睡，照片裡的自己為什麼總顯得累？',
+    hook: '明明有睡，怎麼看起來還是累？',
     concern: '疲態、膚況、日常整理',
     intro: '別人第一眼看到的年紀，大多來自臉。疲態、膚色和膚況，跟睡眠、壓力與日曬都有關係。',
     slugs: ['aging-quantified-bryan-johnson-blueprint'],
@@ -38,7 +38,7 @@ export const MEN_PILLARS: Pillar[] = [
   {
     id: 'sexual-health',
     name: '性健康',
-    hook: '以前不必想的反應，現在開始讓你在意了嗎？',
+    hook: '晨間狀態、硬度或持久度變了，哪些事值得先了解？',
     concern: '晨勃、硬度、性慾、親密自信',
     intro: '晨勃變少、硬度不同、中途變軟，很多男人只會偷偷擔心。先分清楚是累、沒慾望，還是勃起本身有變化，再決定下一步。',
     slugs: ['male-fatigue-after-40', 'sleep-quality-testosterone'],
@@ -48,7 +48,7 @@ export const MEN_PILLARS: Pillar[] = [
   {
     id: 'hair',
     name: '禿頭、白髮',
-    hook: '最讓你有年紀感的，是白髮，還是髮量？',
+    hook: '白髮和髮量，哪些能從日常照顧開始，哪些應該找醫師？',
     concern: '白髮、髮量、看起來顯老',
     intro: '白髮和髮際線後退，是男人最早在鏡子裡看到的變化。它們各自有不同的原因，也各自有能做和不能做的事。',
     slugs: ['white-hair-stem-cells', 'hairline-recession-warning'],
@@ -57,10 +57,10 @@ export const MEN_PILLARS: Pillar[] = [
   {
     id: 'heart',
     name: '心血管',
-    hook: '想維持狀態，健檢報告有哪些問題值得問？',
+    hook: '想維持風采，哪些底層數字不能忽略？',
     concern: '健檢數字、活動能力、長期健康',
     intro: '心血管和代謝決定你十年後還能不能自在地爬山、跑跳、陪家人。報告沒紅字，不代表沒有值得多看的數字。',
     slugs: ['normal-checkup-still-tired', 'checkup-five-numbers', 'lpa-genetic-risk', 'hs-crp-low-grade-inflammation', 'hypertension-glymphatic-dementia', 'apob-vs-ldl'],
-    upcoming: ['爬兩層樓就喘，是年紀還是訊號？'],
+    upcoming: ['爬兩層樓就喘，是年紀還是訊號？', '為什麼有些心臟科醫師自己也吃 statin？LDL 要降到多低才夠', '降血脂藥吃了肌肉痠？從換藥到一年兩針的新選擇'],
   },
 ];
