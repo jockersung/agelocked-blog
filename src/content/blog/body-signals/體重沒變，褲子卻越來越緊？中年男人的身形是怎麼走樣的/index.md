@@ -2,7 +2,7 @@
 title: '體重沒變，褲子卻越來越緊？中年男人的身形是怎麼走樣的'
 description: '體重計上的數字跟三年前差不多，西裝褲卻扣不起來，襯衫肚子那顆釦子快繃開。中年之後，肌肉悄悄變少、脂肪往肚子集中，體重看不出來，身形先變了。為什麼會這樣、該怎麼量、怎麼把形穿回來，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr40-05-cover-editorial-v2.webp'
 category: '身材'
 tags: ['身材', '腰圍', '肌肉流失', '內臟脂肪', '肌力訓練', '男性慢老']
 slug: 'same-weight-tighter-pants-body-composition'
@@ -48,7 +48,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 內臟脂肪不只讓肚子變大，它本身就是發炎和代謝問題的來源。為什麼腰圍比體重更值得盯，可以看〈[腰圍每年多三公分，不是你吃太多](/blog/body-signals/visceral-fat-metabolic-signal/)〉。
 
-![體重不變時，肌肉減少、肚子脂肪增加的變化](./fig-01-same-weight.webp)
+![體重不變時，肌肉減少、肚子脂肪增加的變化](./pr40-05-body-01-editorial-v2.webp)
 
 ## 該量什麼，才看得出變化
 
@@ -60,7 +60,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 另外，**每個月拍一張正面、側面的照片**，固定位置和光線，三個月後對照，比體重計更有感。
 
-![比體重更能看出身形的三種量法](./fig-02-what-to-measure.webp)
+![比體重更能看出身形的三種量法](./pr40-05-body-02-editorial-v2.webp)
 
 ## 怎麼把形穿回來
 
@@ -86,7 +86,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 肚子的脂肪，很多是應酬和宵夜累積來的。不用全部戒掉，先從「一週少一次」開始。
 
-![把形穿回來的三件事](./fig-03-three-moves.webp)
+![把形穿回來的三件事](./pr40-05-body-03-editorial-v2.webp)
 
 ## 什麼時候看醫生、看哪一科
 

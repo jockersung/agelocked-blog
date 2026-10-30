@@ -2,7 +2,7 @@
 title: '白頭髮可以拔嗎？染髮和轉黑產品怎麼看'
 description: '「拔一根長三根」是真的嗎？白頭髮能不能變回黑的？染髮會不會致癌？轉黑洗髮精有沒有用？白頭髮最常被問的幾個問題，研究怎麼說，什麼情況要先抽血檢查，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr40-04-cover-editorial-v2.webp'
 category: '禿頭、白髮'
 tags: ['白頭髮', '染髮', '少年白', '頭髮', '男性慢老']
 slug: 'gray-hair-plucking-dye-reversal'
@@ -45,7 +45,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 這項研究人數很少，壓力和白髮的關係只是線索。它告訴我們的是：**剛開始冒白頭髮的時候，把睡眠和壓力顧好，可能還有一點機會。**
 
-![拔白頭髮、轉黑、染髮三個常見問題的答案](./fig-01-three-questions.webp)
+![拔白頭髮、轉黑、染髮三個常見問題的答案](./pr40-04-body-01-editorial-v2.webp)
 
 ## 這些情況，白頭髮可能是身體在提醒你
 
@@ -69,7 +69,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 過敏的表現是頭皮紅、癢、起水泡、甚至破皮。出現這些情況，立刻沖掉並停止使用，嚴重的話看皮膚科。
 
-![染髮前後的安全步驟](./fig-02-dye-safety.webp)
+![染髮前後的安全步驟](./pr40-04-body-02-editorial-v2.webp)
 
 **男生染髮的小建議：**
 
@@ -87,7 +87,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 ## 白髮族可以顧的事
 
-![減緩白髮可以從日常顧的事](./fig-03-daily-care.webp)
+![減緩白髮可以從日常顧的事](./pr40-04-body-03-editorial-v2.webp)
 
 - **戒菸。**
 - **睡飽、處理壓力。**

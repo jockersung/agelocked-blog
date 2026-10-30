@@ -2,7 +2,7 @@
 title: '雄性禿吃藥還是擦藥？口服 minoxidil、finasteride、dutasteride 怎麼選'
 description: '西班牙 2024 年的調查發現，近九成皮膚科醫師會開口服 minoxidil 給雄性禿男性，dutasteride 也超過了 finasteride。那生髮水過時了嗎？最新研究怎麼比、各自的風險在哪、切藥省錢要注意什麼、雷射能不能加分，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr40-08-cover-editorial-v2.webp'
 category: '禿頭、白髮'
 tags: ['雄性禿', '掉髮', 'minoxidil', 'finasteride', 'dutasteride', '皮膚科', '男性慢老']
 slug: 'aga-medications-oral-minoxidil-dutasteride-finasteride'
@@ -35,7 +35,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 所以很多皮膚科醫師會兩類一起用：一個擋住讓頭髮變少的原因，一個催頭髮長。
 
-![兩類雄性禿藥物：擋 DHT 和催生長](./fig-01-two-types.webp)
+![兩類雄性禿藥物：擋 DHT 和催生長](./pr40-08-body-01-editorial-v2.webp)
 
 ## 2026 年的新調查：處方習慣變了
 
@@ -67,7 +67,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 出現心悸、胸悶、腳腫、喘：要回診或就醫。
 - 不管擦的還是吃的，**停用之後效果會慢慢消失**，新長出來的頭髮可能又掉。
 
-![口服與外用 minoxidil 的比較](./fig-02-minoxidil.webp)
+![口服與外用 minoxidil 的比較](./pr40-08-body-02-editorial-v2.webp)
 
 ## Dutasteride 一定比 finasteride 強嗎？
 
@@ -106,7 +106,7 @@ finasteride 有專門給雄性禿的 1 毫克劑型，也有給攝護腺肥大�
 
 要不要切藥、怎麼切，請照醫師和藥師的指示；**家裡有懷孕或備孕的女性，不要自己在家切 finasteride。** 費用上的考量，可以直接和醫師討論學名藥或其他劑型。
 
-![切藥省錢的四個風險](./fig-03-pill-splitting.webp)
+![切藥省錢的四個風險](./pr40-08-body-03-editorial-v2.webp)
 
 ## 雷射能不能加分？
 

@@ -2,7 +2,7 @@
 title: '性功能正常，生育能力就正常嗎？男人過了 40 歲要知道的事'
 description: '「我很正常啊，問題應該不在我。」很多夫妻備孕，第一個檢查的是太太。其實性功能和生育能力是兩件事，男人的精蟲品質也會隨年齡下降，有些男性荷爾蒙療法還會讓精蟲變少。精液分析怎麼看、什麼時候該做，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr40-02-cover-editorial-v2.webp'
 category: '性健康'
 tags: ['性健康', '生育', '不孕', '精液分析', '睪固酮', '男性慢老', '泌尿科']
 slug: 'sexual-function-vs-fertility-men'
@@ -33,7 +33,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 所以夫妻備孕遇到困難，**男女雙方要一起檢查**，不是只看太太。
 
-![性功能和生育能力看的是不同的事](./fig-01-function-vs-fertility.webp)
+![性功能和生育能力看的是不同的事](./pr40-02-body-01-editorial-v2.webp)
 
 ## 男人的生育能力，也會隨年齡下降
 
@@ -71,7 +71,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 低於參考下限，不代表一定不能生；高於參考下限，也不保證一定能生。這些數字要由醫師一起看，通常也會建議隔幾週再驗一次，因為精液品質本來就會波動。
 
-![精液分析報告的五個基本項目](./fig-02-semen-analysis.webp)
+![精液分析報告的五個基本項目](./pr40-02-body-02-editorial-v2.webp)
 
 **檢查前要注意：**
 
@@ -81,7 +81,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 ## 平常可以顧的事
 
-![顧好精蟲品質可以先做的事](./fig-03-daily-habits.webp)
+![顧好精蟲品質可以先做的事](./pr40-02-body-03-editorial-v2.webp)
 
 - **戒菸、少喝酒。**
 - **把體重和腰圍顧好。** 肥胖和精蟲品質、睪固酮都有關。

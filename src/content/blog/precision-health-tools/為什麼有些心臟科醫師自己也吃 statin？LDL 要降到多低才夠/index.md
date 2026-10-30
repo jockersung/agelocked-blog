@@ -2,7 +2,7 @@
 title: '為什麼有些心臟科醫師自己也吃 statin？LDL 要降到多低才夠'
 description: '一支訪問多位心臟科醫師的短影片裡，好幾位說自己有在吃降膽固醇藥，「桌上就有一排」；也有醫師說「我 LDL 70，吃了沒好處」。LDL 為什麼越早降、降得越低越好？副作用有多常見？要不要吃怎麼和醫師討論，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr40-09-cover-editorial-v2.webp'
 category: '心血管'
 tags: ['statin', 'LDL', '膽固醇', '降血脂藥', '心血管', '健檢']
 slug: 'cardiologists-take-statins-ldl-target'
@@ -39,7 +39,7 @@ LDL 就是報告上的「低密度脂蛋白膽固醇」，常被叫做「壞膽�
 
 這就是為什麼有些心臟科醫師選擇早一點開始、把 LDL 壓得更低：他們每天看到的是累積幾十年之後的結果。
 
-![LDL 對血管的影響是累積的](./fig-01-cumulative-ldl.webp)
+![LDL 對血管的影響是累積的](./pr40-09-body-01-editorial-v2.webp)
 
 ## 降多少，風險少多少
 
@@ -63,7 +63,7 @@ LDL 就是報告上的「低密度脂蛋白膽固醇」，常被叫做「壞膽�
 
 LDL 之外，醫師有時還會看 ApoB 和 Lp(a)，可以參考〈[LDL 看起來還好，為什麼醫師還會看 ApoB？](/blog/precision-health-tools/apob-vs-ldl/)〉和〈[家人年輕就心肌梗塞？認識 Lp(a)](/blog/chronic-inflammation/lpa-genetic-risk/)〉。
 
-![誰比較需要積極降 LDL：看整體風險](./fig-02-risk-based.webp)
+![誰比較需要積極降 LDL：看整體風險](./pr40-09-body-02-editorial-v2.webp)
 
 ## 副作用：肌肉痠痛有多常見？
 
@@ -84,7 +84,7 @@ LDL 之外，醫師有時還會看 ApoB 和 Lp(a)，可以參考〈[LDL 看起�
 
 ## 要不要吃？和醫師討論時可以問的三個問題
 
-![和醫師討論 statin 時可以問的三個問題](./fig-03-questions.webp)
+![和醫師討論 statin 時可以問的三個問題](./pr40-09-body-03-editorial-v2.webp)
 
 1. **以我的狀況，屬於哪一個風險等級？我的 LDL 目標是多少？**
 2. **如果先從飲食和運動開始，要多久回來抽血？到時候沒達標怎麼辦？**
