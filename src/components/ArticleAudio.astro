@@ -1,9 +1,10 @@
 ---
 // 文章語音版播放器：有音檔（src/data/audio-manifest.json）才會出現。
 import manifest from '../data/audio-manifest.json';
+import { articleAudioUrl } from '../utils/audio-url';
 interface Props { slug: string }
 const { slug } = Astro.props;
-const entry = (manifest as Record<string, { file: string; seconds: number }>)[slug];
+const entry = (manifest as Record<string, { file: string; seconds: number; hash?: string }>)[slug];
 const minutes = entry ? Math.max(1, Math.round(entry.seconds / 60)) : 0;
 ---
 {entry && (
@@ -15,7 +16,7 @@ const minutes = entry ? Math.max(1, Math.round(entry.seconds / 60)) : 0;
         <span class="listen__meta">約 {minutes} 分鐘 · 作者本人聲音（AI 合成）</span>
       </div>
     </div>
-    <audio class="listen__audio" controls preload="none" src={entry.file}></audio>
+    <audio class="listen__audio" controls preload="none" src={articleAudioUrl(entry)}></audio>
     <div class="listen__speed" role="group" aria-label="播放速度">
       {[0.9, 1, 1.25, 1.5].map((r) => (
         <button type="button" data-rate={r} aria-pressed={r === 1 ? 'true' : 'false'}>{r}×</button>
