@@ -622,5 +622,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-30"
+  },
+  "erection-libido-fatigue-three-questions": {
+    "seconds": 611,
+    "hash": "ecc07c441ebea576",
+    "file": "/audio/erection-libido-fatigue-three-questions.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "hair-loss-options-scalp-check": {
+    "seconds": 429,
+    "hash": "360c1f8b2acf2dc8",
+    "file": "/audio/hair-loss-options-scalp-check.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "body-fat-measurement-bia-inbody-dxa": {
+    "seconds": 409,
+    "hash": "86e37370cd51588e",
+    "file": "/audio/body-fat-measurement-bia-inbody-dxa.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "oral-collagen-how-to-choose": {
+    "seconds": 435,
+    "hash": "d20e1b1776d307a1",
+    "file": "/audio/oral-collagen-how-to-choose.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "red-yeast-rice-monacolin-k-statin": {
+    "seconds": 511,
+    "hash": "0ea8dc8719d8142b",
+    "file": "/audio/red-yeast-rice-monacolin-k-statin.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "probiotics-how-to-choose-strain": {
+    "seconds": 504,
+    "hash": "76366e8d3a71172d",
+    "file": "/audio/probiotics-how-to-choose-strain.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
   }
 }
