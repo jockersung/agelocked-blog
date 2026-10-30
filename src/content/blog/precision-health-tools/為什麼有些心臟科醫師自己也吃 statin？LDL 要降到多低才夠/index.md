@@ -100,18 +100,15 @@ statin 是處方藥。要不要吃、吃哪一種、吃多少，都由醫師依�
 - 同時有血糖、血壓問題：可以看**新陳代謝科**。
 - **胸痛、胸悶、呼吸困難、單側手腳無力或說話不清楚：請立即就醫。**
 
-## 帶走一句話
-
-**LDL 的傷害是累積的，所以有些心臟科醫師選擇早一點降。** 但要降到多低、要不要吃藥，看的是你自己的整體風險。
+下次回診，可以直接問：「以我的血壓、血糖、家族史和過去病史，LDL 目標是多少？」弄清楚自己的風險與追蹤方式，比照著別人的用藥經驗做決定，更能回答你現在該怎麼辦。
 
 ---
 
 ## 參考資料
-
-1. Ference BA, et al. Low-density lipoproteins cause atherosclerotic cardiovascular disease. 1. Evidence from genetic, epidemiologic, and clinical studies. A consensus statement from the European Atherosclerosis Society Consensus Panel. *European Heart Journal*, 2017.（來源：[European Heart Journal](https://doi.org/10.1093/eurheartj/ehx144)，2017）
-2. Cholesterol Treatment Trialists' (CTT) Collaboration. Efficacy and safety of more intensive lowering of LDL cholesterol: a meta-analysis of data from 170,000 participants in 26 randomised trials. *Lancet*, 2010.（來源：[Lancet](https://doi.org/10.1016/S0140-6736(10)61350-5)，2010）
-3. Cholesterol Treatment Trialists' (CTT) Collaboration. Effect of statin therapy on muscle symptoms: an individual participant data meta-analysis of large-scale, randomised, double-blind trials. *Lancet*, 2022.（來源：[Lancet](https://doi.org/10.1016/S0140-6736(22)01545-8)，2022）
-4. Li YH, et al. 2022 Taiwan lipid guidelines for primary prevention. *Journal of the Formosan Medical Association*, 2022.（PMID：[35715290](https://pubmed.ncbi.nlm.nih.gov/35715290/)）
-5. 連思涵醫師。POV：心臟科醫師有沒有吃膽固醇藥？Facebook 短影片。https://www.facebook.com/share/r/1FdWdanRAH/（醫師個人說法，作為開場情境，非科學證據）
+1. Ference BA, et al. Low-density lipoproteins cause atherosclerotic cardiovascular disease. 1. Evidence from genetic, epidemiologic, and clinical studies. A consensus statement from the European Atherosclerosis Society Consensus Panel. *European Heart Journal*, 2017. DOI：[10.1093/eurheartj/ehx144](https://doi.org/10.1093/eurheartj/ehx144)。
+2. Cholesterol Treatment Trialists' Collaboration. Efficacy and safety of more intensive lowering of LDL cholesterol: a meta-analysis of data from 170,000 participants in 26 randomised trials. *Lancet*, 2010. DOI：[10.1016/S0140-6736(10)61350-5](https://doi.org/10.1016/S0140-6736(10)61350-5)。
+3. Cholesterol Treatment Trialists' Collaboration. Effect of statin therapy on muscle symptoms: an individual participant data meta-analysis of large-scale, randomised, double-blind trials. *Lancet*, 2022. DOI：[10.1016/S0140-6736(22)01545-8](https://doi.org/10.1016/S0140-6736(22)01545-8)。
+4. Li YH, et al. 2022 Taiwan lipid guidelines for primary prevention. *Journal of the Formosan Medical Association*, 2022. DOI：[10.1016/j.jfma.2022.05.010](https://doi.org/10.1016/j.jfma.2022.05.010)。
+5. 連思涵醫師。POV：心臟科醫師有沒有吃膽固醇藥？Facebook 短影片。https://www.facebook.com/share/r/1FdWdanRAH/。醫師個人說法，用於開場情境，非科學證據。
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*

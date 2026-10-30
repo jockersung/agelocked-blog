@@ -95,17 +95,14 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 想用藥物協助減重：要由醫師評估，可以先看〈[打瘦瘦針前你應該先搞清楚這些事](/blog/intervention-optimization/glp1-clinical-guide-tirzepatide/)〉。
 - 有膝蓋、腰背的老毛病，不確定能不能做肌力訓練：先問**復健科**或**骨科**。
 
-## 帶走一句話
-
-**體重沒變，不代表身形沒變。** 中年之後肌肉會少、肚子會多，練下半身、吃夠蛋白質，再用一件基準褲來量。
+下次量體重時，也看看腰圍和那件熟悉的褲子。把阻力訓練和每餐的蛋白質安排進日常，再慢慢觀察身形變化，不用每天只等體重計上的數字往下掉。
 
 ---
 
 ## 參考資料
-
-1. Janssen I, et al. Skeletal muscle mass and distribution in 468 men and women aged 18–88 yr. *Journal of Applied Physiology*, 2000.（PMID：[10904038](https://pubmed.ncbi.nlm.nih.gov/10904038/)）
-2. Kuk JL, et al. Age-related changes in total and regional fat distribution. *Ageing Research Reviews*, 2009.（來源：[Ageing Research Reviews](https://doi.org/10.1016/j.arr.2009.06.001)，2009）
-3. Bauer J, et al. Evidence-based recommendations for optimal dietary protein intake in older people: a position paper from the PROT-AGE Study Group. *Journal of the American Medical Directors Association*, 2013.（PMID：[23867520](https://pubmed.ncbi.nlm.nih.gov/23867520/)）
-4. 衛生福利部國民健康署。代謝症候群判定標準。國民健康署。https://www.hpa.gov.tw/
+1. Janssen I, et al. Skeletal muscle mass and distribution in 468 men and women aged 18–88 yr. *Journal of Applied Physiology*, 2000. DOI：[10.1152/jappl.2000.89.1.81](https://doi.org/10.1152/jappl.2000.89.1.81)。
+2. Kuk JL, et al. Age-related changes in total and regional fat distribution. *Ageing Research Reviews*, 2009. DOI：[10.1016/j.arr.2009.06.001](https://doi.org/10.1016/j.arr.2009.06.001)。
+3. Bauer J, et al. Evidence-based recommendations for optimal dietary protein intake in older people: a position paper from the PROT-AGE Study Group. *Journal of the American Medical Directors Association*, 2013. DOI：[10.1016/j.jamda.2013.05.021](https://doi.org/10.1016/j.jamda.2013.05.021)。
+4. 衛生福利部國民健康署。代謝症候群判定標準。國民健康署。https://www.hpa.gov.tw/221/s
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*

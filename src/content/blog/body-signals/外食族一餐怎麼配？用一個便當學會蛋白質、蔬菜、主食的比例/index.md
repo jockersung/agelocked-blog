@@ -97,15 +97,12 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 健檢血糖、血脂、尿酸有紅字，或腰圍超過 90 公分：看**家醫科**或**新陳代謝科**，也可以請醫師轉介**營養師**。
 - 有腎臟病、糖尿病、痛風的人，蛋白質和主食的量要和醫師或營養師討論，不要直接套用這篇的比例。
 
-## 帶走一句話
-
-**外食不用算熱量，記住一個盤子：菜最多，飯跟菜一樣多，蛋白質一個手掌。** 先改你最常吃的那一餐。
+下一次買便當，先看蔬菜夠不夠，再找一掌心的豆魚蛋肉，最後看飯量。先把最常吃的那一餐配好，不用第一天就要求自己餐餐完美。
 
 ---
 
 ## 參考資料
-
 1. 衛生福利部。跟著「我的餐盤」6口訣 吃得均衡又健康。衛生福利部，2019。https://mohw.gov.tw/cp-16-50222-1.html
-2. Bauer J, et al. Evidence-based recommendations for optimal dietary protein intake in older people: a position paper from the PROT-AGE Study Group. *Journal of the American Medical Directors Association*, 2013.（PMID：[23867520](https://pubmed.ncbi.nlm.nih.gov/23867520/)）
+2. Bauer J, et al. Evidence-based recommendations for optimal dietary protein intake in older people: a position paper from the PROT-AGE Study Group. *Journal of the American Medical Directors Association*, 2013. DOI：[10.1016/j.jamda.2013.05.021](https://doi.org/10.1016/j.jamda.2013.05.021)。
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*

@@ -101,17 +101,14 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - 頭髮或皮膚出現一塊一塊變白的地方：看**皮膚科**，排除白斑症。
 - 染髮後頭皮紅腫、起水泡、破皮：看**皮膚科**。
 
-## 帶走一句話
-
-**白頭髮拔一根不會長三根，但會傷毛囊。** 在意就剪掉或染，突然變很多就抽血看看。
+幾根白頭髮讓你在意，剪短或依照標示安全染髮，都比反覆拔來得實際。若短時間變多，或同時出現掉髮、身體不適，先和皮膚科醫師談談，別急著買一套轉黑產品。
 
 ---
 
 ## 參考資料
-
-1. Rosenberg AM, et al. Quantitative mapping of human hair greying and reversal in relation to life stress. *eLife*, 2021.（PMID：[34155974](https://pubmed.ncbi.nlm.nih.gov/34155974/)）
-2. Mediratta V, et al. An observational, epidemiological study on pattern of clinical presentation and associated laboratory findings in patients of premature hair graying. *International Journal of Trichology*, 2018.（來源：[International Journal of Trichology](https://doi.org/10.4103/ijt.ijt_65_17)，2018）
-3. Zhang Y, et al. Personal use of permanent hair dyes and cancer risk and mortality in US women: prospective cohort study. *BMJ*, 2020.（來源：[BMJ](https://doi.org/10.1136/bmj.m2942)，2020）
+1. Rosenberg AM, et al. Quantitative mapping of human hair greying and reversal in relation to life stress. *eLife*, 2021. DOI：[10.7554/eLife.67437](https://doi.org/10.7554/eLife.67437)。
+2. Mediratta V, et al. An observational, epidemiological study on pattern of clinical presentation and associated laboratory findings in patients of premature hair graying. *International Journal of Trichology*, 2018. DOI：[10.4103/ijt.ijt_65_17](https://doi.org/10.4103/ijt.ijt_65_17)。
+3. Zhang Y, et al. Personal use of permanent hair dyes and cancer risk and mortality in US women: prospective cohort study. *BMJ*, 2020. DOI：[10.1136/bmj.m2942](https://doi.org/10.1136/bmj.m2942)。
 4. 衛生福利部。「染髮5撇步，安全又美麗」正確染髮及選購染髮劑！衛生福利部，2023。https://mohw.gov.tw/cp-16-24032-1.html
 5. Sharp HealthCare. Does plucking gray hair cause more to grow? Sharp Health News，非同儕審查。https://www.sharp.com/health-news/does-plucking-gray-hair-cause-more-to-grow
 

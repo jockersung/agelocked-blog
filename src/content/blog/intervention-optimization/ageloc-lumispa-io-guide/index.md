@@ -197,10 +197,9 @@ LumiSpa 的導頭不是隨便選一個速度在轉，這套振盪設計有美國
 你不用一開始就叫得出每瓶保養品的名字。先把清潔流程弄懂，知道用完舒不舒服，再逐步把保濕、防曬接起來。我希望你選到的，是買回家以後知道怎麼用，也願意繼續用的工具。
 
 ## 參考資料
-
-1. Nu Skin Research and Development. *ageLOC LumiSpa System: 12-Week Clinical Efficacy Study*. 2017–2018 原廠公布的第三方委託評估摘要，無 DOI；不是獨立發表的隨機對照試驗。[官方摘要 PDF](https://createhistory.nuskin.com/content/dam/office/pacific_new/shared/en/ClinicalStudies/ageLOC%20LumiSpa%20-%20Clinical%20Study.pdf)。本稿只用於交代廠商報告的研究設計與資料性質，不作獨立健康效益證明。
-2. Namkoong J, Kern D, Knaggs HE. *Assessment of Human Skin Gene Expression by Different Blends of Plant Extracts with Implications to Periorbital Skin Aging*. Int J Mol Sci. 2018;19(11):3349. DOI：[10.3390/ijms19113349](https://doi.org/10.3390/ijms19113349)。[PubMed PMID 30373163](https://pubmed.ncbi.nlm.nih.gov/30373163/)。作者任職 Nu Skin，屬配方的實驗室模型研究。
-3. Caberlotto E, Ruiz L, Miller Z, Poletti M, Tadlock L. *Effects of a skin-massaging device on the ex-vivo expression of human dermis proteins and in-vivo facial wrinkles*. PLoS One. 2017;12(3):e0172624. DOI：[10.1371/journal.pone.0172624](https://doi.org/10.1371/journal.pone.0172624)。僅用來說明其他裝置研究不能移作 LumiSpa iO 成品證據。
+1. Nu Skin Research and Development. *ageLOC LumiSpa System: 12-Week Clinical Efficacy Study*. 2017–2018 原廠公布的第三方委託評估摘要，無 DOI；不是獨立發表的隨機對照試驗。[官方摘要 PDF](https://createhistory.nuskin.com/content/dam/office/pacific_new/shared/en/ClinicalStudies/ageLOC%20LumiSpa%20-%20Clinical%20Study.pdf)。此摘要用於交代廠商報告的研究設計與資料性質，不作獨立健康效益證明。
+2. Namkoong J, Kern D, Knaggs HE. *Assessment of Human Skin Gene Expression by Different Blends of Plant Extracts with Implications to Periorbital Skin Aging*. Int J Mol Sci. 2018;19(11):3349. 作者任職 Nu Skin，屬配方的實驗室模型研究。 DOI：[10.3390/ijms19113349](https://doi.org/10.3390/ijms19113349)。
+3. Caberlotto E, Ruiz L, Miller Z, Poletti M, Tadlock L. *Effects of a skin-massaging device on the ex-vivo expression of human dermis proteins and in-vivo facial wrinkles*. PLoS One. 2017;12(3):e0172624. 僅用來說明其他裝置研究不能移作 LumiSpa iO 成品證據。 DOI：[10.1371/journal.pone.0172624](https://doi.org/10.1371/journal.pone.0172624)。
 4. Nu Skin 如新台灣。*QA：LumiSpa iO 與 LumiSpa 產品相關問答*。官方操作文件，無 DOI。[官方頁面](https://www.nuskin.com.tw/content/join/training/faqs.html)，核對日期 2026-10-30。
 5. Nu Skin. *ageLOC LumiSpa iO 官方產品操作與導頭照護說明*. 海外官方產品頁，無 DOI。[基本操作及用後照護](https://www.nuskin.com/content/products/07/41/56/07415690/en.html)，核對日期 2026-10-30。僅採用同機型基本滑動、沖洗與乾燥說明，不套用海外配方、App 入口、售價或保固；台灣實際搭配與條款以當地說明為準。
 
@@ -209,5 +208,5 @@ LumiSpa 的導頭不是隨便選一個速度在轉，這套振盪設計有美國
 7. Nu Skin 如新台灣。*LumiSpa iO 睛緻修護新動組與睛緻修護新動眼霜*。官方產品資訊，無 DOI；用於核對 iO 配件內容、眼周用途與搭配方式，不作獨立臨床研究證據。[iO 睛緻修護新動組](https://www.nuskin.com.tw/shop/productdetail/1316562873982627964)；[睛緻修護新動眼霜](https://www.nuskin.com.tw/shop/productdetail/1176341658270295145)。核對日期 2026-10-30。
 8. Nu Skin. *ageLOC LumiSpa iO* 與 *How long does ageLOC LumiSpa iO last after a full charge*. 官方說明中心，無 DOI。[LumiSpa iO](https://nuskin.knowledgeowl.com/help/lumispa-io)；[充飽後可用時間](https://nuskin.knowledgeowl.com/help/how-long-does-ageloc-lumispa-io-last-after-a-full-charge-with-the-magnetic-charger)。用於反向轉動、壓太用力自動停止、充飽可用至少一週。核對日期 2026-10-30。
 9. Nu Skin. *What is the ageLOC LumiSpa?* 官方說明中心，無 DOI。[官方頁面](https://nuskin-pacific.knowledgeowl.com/help/what-is-the-ageloc-lumispa)。用於 12 週評估的改善項目與「第一次使用」的描述。核對日期 2026-10-30。
-10. Johnstone SL, Herd MJ, Kilby CF（NSE Products, Inc.）. *Device and method for cleansing and treating skin*. 美國專利 US 10,080,428 B2，2018；相關申請 US 2019/0008332 A1。[Google Patents](https://patents.google.com/patent/US10080428)；[申請案全文](https://uspto.report/patent/app/20190008332)。用於導頭內外分區、約 5–30 Hz 振盪與實驗室膠原基因表現測試的描述；專利文件不是人體臨床試驗。
+10. Johnstone SL, Herd MJ, Kilby CF，NSE Products, Inc.. *Device and method for cleansing and treating skin*. 美國專利 US 10,080,428 B2，2018；相關申請 US 2019/0008332 A1。[Google Patents](https://patents.google.com/patent/US10080428)；[申請案全文](https://uspto.report/patent/app/20190008332)。用於導頭內外分區、約 5–30 Hz 振盪與實驗室膠原基因表現測試的描述；專利文件不是人體臨床試驗。
 11. Sagentia. *LumiSpa – award-winning smart skincare device*. 研發合作夥伴案例說明，無 DOI。[官方頁面](https://sagentia.com/case-study/lumispa-award-winning-smart-skincare-device/)。用於合成皮膚模型與高速攝影的研發過程。核對日期 2026-10-30。
