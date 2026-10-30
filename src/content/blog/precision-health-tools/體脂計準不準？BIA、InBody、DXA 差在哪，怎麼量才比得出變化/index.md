@@ -3,6 +3,7 @@ title: '體脂計準不準？BIA、InBody、DXA 差在哪，怎麼量才比得�
 description: 'BMI 分不出肌肉和脂肪，於是大家改量體脂。可是家裡的體脂計、健身房的 InBody、醫院的 DXA，量出來常常不一樣。三種方法的原理和誤差在哪，怎麼量才比得出自己的變化，一次講清楚。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
+heroImage: './cover.webp'
 category: '身材'
 tags: ['體脂肪', '體脂計', 'InBody', 'DXA', '腰圍', '身體組成']
 slug: 'body-fat-measurement-bia-inbody-dxa'
@@ -14,7 +15,6 @@ ctaBridge: '已經有體脂或腰圍紀錄？填寫掃描前資料表，我幫�
 畫面：Three body-composition tools arranged side by side on a warm off-white background: a home bathroom body-fat scale, a professional standing analyzer with hand grips, and a hospital DXA scanning table. Clean flat illustration, teal and sage palette.
 標籤（Canva 填入）：體脂計準不準？
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
-heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 -->
 
 拿來確認胖不胖的指標很多，身體質量指數（BMI）只是其中之一。
@@ -37,11 +37,7 @@ BMI 有多不準？廣告上最常出現的例子是「林書豪 VS 連勝文」
 
 所以體脂計的數字是「估計值」，不是直接量到的脂肪重量。
 
-<!-- 🎨 [fig-01] [類型 B]
-畫面：A simple diagram of a person standing on a scale with a faint current path through the legs; muscle tissue drawn as water-rich (blue droplets, easy path) and fat tissue as dry (yellow, harder path). Clean medical illustration, no text, blank rounded label boxes.
-標籤（Canva 填入）：肌肉（含水多，電流好通過）, 脂肪（含水少，阻力大）, 微弱電流
-STYLE: 依 IMAGE-STYLE.md 第 7.2 節
--->
+![家用體脂計從量電阻到推算體脂率的流程](./fig-01-bia-principle.webp)
 
 ## 誤差從哪裡來
 
@@ -65,6 +61,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 DXA 是研究裡最常用來當參考的方法，輻射量很低，但需要到醫療院所、自費，不適合天天量。如果你想知道自己「真正的起點」，可以考慮做一次 DXA，之後再用 InBody 或體脂計追蹤趨勢。
 
+![家用體脂計、InBody 與 DXA 的比較](./fig-02-three-tools.webp)
+
 ## 怎麼量，才比得出自己的變化
 
 比起找到「最準的那台機器」，更重要的是**每次用同一台、同一個條件量**：
@@ -75,6 +73,8 @@ DXA 是研究裡最常用來當參考的方法，輻射量很低，但需要到�
 4. **一定要加上腰圍：** 一條皮尺就能量，誤差最小。國民健康署的代謝症候群判定標準，男性腰圍是 90 公分以上。腰圍反映的是肚子裡的脂肪，和代謝風險的關係最直接；為什麼它比體重更值得盯，可以看〈[腰圍每年多三公分，不是你吃太多](/blog/body-signals/visceral-fat-metabolic-signal/)〉。
 
 腰圍量法：站直、放鬆、正常吐氣，皮尺水平繞過肚臍上緣，不要勒緊。
+
+![比得出變化的四個量法](./fig-03-how-to-measure.webp)
 
 ## 數字之外，什麼時候要看醫師
 

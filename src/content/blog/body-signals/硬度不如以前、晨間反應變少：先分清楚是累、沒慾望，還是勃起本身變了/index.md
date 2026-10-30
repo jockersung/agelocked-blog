@@ -3,6 +3,7 @@ title: '硬度不如以前、晨間反應變少：先分清楚是累、沒慾望
 description: '40 歲後，以前不必想的反應開始讓你在意。先分清楚是疲累、性慾變低，還是勃起本身有變化，三種情況的原因和該找的科別都不一樣；勃起變化有時也是心血管的早期訊號。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
+heroImage: './cover.webp'
 category: '性健康'
 tags: ['性健康', '勃起', '性慾', '睪固酮', '男性慢老', '泌尿科']
 slug: 'erection-libido-fatigue-three-questions'
@@ -13,7 +14,6 @@ ctaBridge: '不確定自己屬於哪一種？先花 1 分鐘做身體警報評�
 畫面：A middle-aged East Asian man sitting on the edge of a bed in soft morning light, looking thoughtfully out of a window, with a glass of water on the bedside table. Calm, respectful mood, no intimacy implied. Warm off-white background, flat illustration, teal and sage palette.
 標籤（Canva 填入）：先分清楚是哪一種
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
-heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 -->
 
 「男生們！你只剩一張嘴了嗎？」
@@ -36,6 +36,8 @@ heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 
 三種可能同時出現。你可以先問自己：如果今天睡飽、沒有壓力，問題還在不在？還在的話，比較像第二或第三種。
 
+![累、沒慾望、勃起變了三種情況的比較](./fig-01-three-types.webp)
+
 ## 睪固酮真的會往下掉，只是比你想的慢
 
 男性最重要的荷爾蒙是睪固酮。美國麻州男性老化研究追蹤了上千名中年男性，總睪固酮大約每年下降 1.6%，游離睪固酮下降得更快一些（Feldman et al., 2002）。
@@ -54,13 +56,9 @@ heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 
 美國梅約診所追蹤一個社區的男性長達十年，發現在 40 多歲就出現勃起問題的男性，之後發生冠狀動脈疾病的機會明顯較高（Inman et al., 2009）。
 
-所以如果你同時有腰圍變大、血壓或血脂紅字、家族裡有人早發心臟病，勃起變化值得當成一個提醒，連同心血管一起檢查。報告上的血脂怎麼看，可以參考〈[LDL 看起來還好，為什麼醫師還會看 ApoB？](/blog/precision-health-tools/apob-vs-ldl/)〉。
+![較細的陰莖動脈常比冠狀動脈先出現變化](./fig-02-vessel-signal.webp)
 
-<!-- 🎨 [fig-01] [類型 B]
-畫面：A simple side-by-side illustration of two blood vessels: a large coronary artery and a much narrower penile artery, both with a thin inner lining, showing that the narrower vessel is affected first. Clean medical-illustration style, no text, blank rounded label boxes.
-標籤（Canva 填入）：冠狀動脈（較粗）, 陰莖動脈（較細）, 血管內皮
-STYLE: 依 IMAGE-STYLE.md 第 7.2 節
--->
+所以如果你同時有腰圍變大、血壓或血脂紅字、家族裡有人早發心臟病，勃起變化值得當成一個提醒，連同心血管一起檢查。報告上的血脂怎麼看，可以參考〈[LDL 看起來還好，為什麼醫師還會看 ApoB？](/blog/precision-health-tools/apob-vs-ldl/)〉。
 
 ## 以形補形和「壯陽食物」，研究到底說了什麼
 
@@ -104,6 +102,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - **心情持續低落、對很多事都提不起興趣：** 也和醫師說。需要有人聽你說話時，可以撥衛福部安心專線 **1925**。
 
 看診前可以先記下這幾件事：從什麼時候開始、晨間反應大概一週幾次、在什麼情況下比較明顯、目前在吃的藥和保健品。這些紀錄是給醫師看的，不需要傳給任何人。
+
+![看診前先記下的四件事](./fig-03-before-visit.webp)
 
 ## 帶走一句話
 

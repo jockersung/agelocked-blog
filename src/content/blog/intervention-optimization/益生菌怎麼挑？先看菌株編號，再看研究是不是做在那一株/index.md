@@ -3,6 +3,7 @@ title: '益生菌怎麼挑？先看菌株編號，再看研究是不是做在那
 description: '益生菌是台灣最競爭的保健品之一，貨架上每一盒都說自己最好。效果取決於「菌株」，不是菌種的名字。看懂標示、看研究是不是做在同一株、腹瀉和腸漏症的研究走到哪裡，一次整理。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
+heroImage: './cover.webp'
 category: '健檢站'
 product: true
 tags: ['益生菌', '腸道健康', '保健品識讀', '菌株', '益生元', '腹瀉', '腸漏症']
@@ -15,7 +16,6 @@ ctaBridge: '不確定自己目前吃的保健品有沒有重複、適不適合�
 畫面：A supermarket shelf of probiotic boxes and yogurt drinks, with one box being examined through a magnifying glass revealing a tiny strain code on the label. Clean flat illustration, warm off-white background, teal and sage palette, no readable text.
 標籤（Canva 填入）：益生菌先看菌株編號
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
-heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 -->
 
 > 這篇最後一段會介紹 Nu Skin 的益生菌產品。先說清楚：我是 Nu Skin 經銷商。前面的內容，不管你買不買產品都用得上。
@@ -42,11 +42,7 @@ heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 
 也就是說，A 牌的「鼠李糖乳桿菌」做過研究，不代表 B 牌的「鼠李糖乳桿菌」也有一樣的效果，除非兩家用的是同一株。
 
-<!-- 🎨 [fig-01] [類型 B]
-畫面：A three-level family-tree style diagram: one genus box at the top, branching into species boxes, each branching into several strain tags with different shapes, showing that strains under the same species differ. Clean infographic illustration, no text, blank rounded label boxes.
-標籤（Canva 填入）：屬（姓）, 種（名）, 菌株（身分證字號）, 效果看菌株
-STYLE: 依 IMAGE-STYLE.md 第 7.2 節
--->
+![益生菌名字的屬、種、菌株三層](./fig-01-strain-levels.webp)
 
 ## 腹瀉：研究最多的地方
 
@@ -64,6 +60,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 所以看到「吃這個修復腸漏」的廣告，先保留一點。腸道屏障和益生菌之間的關係，我會另外整理成系列文章。
 
+![抗生素腹瀉與腸漏症的研究現況](./fig-02-diarrhea-leaky-gut.webp)
+
 ## 挑選時看這五件事
 
 1. **菌株編號有沒有寫清楚：** 標示上只有「乳酸菌」「益生菌」，沒有菌株編號的，你無法查它做過什麼研究。
@@ -73,6 +71,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 5. **少一點額外添加：** 為了口味加了很多糖或香料的，不一定是好選擇。
 
 菌種「越多越好」不是挑選標準，菌株對、研究對得上，比數量重要。
+
+![挑選益生菌的五件事與就醫提醒](./fig-03-how-to-choose.webp)
 
 ## 益生菌的食物：益生元
 
@@ -95,7 +95,7 @@ Nu Skin 的 Probio PCC® 是單一菌株的益生菌，主要成分是發酵乳�
 
 **以下是 PCC® 這株菌的成分研究，不代表產品效果：**
 
-- 一項隨機、安慰劑對照試驗，找來近百位自行車選手，每天補充 PCC® 或安慰劑 11 週。男性受試者的下呼吸道症狀嚴重度較低；但女性受試者反而回報較多症狀，作者認為需要再研究（West et al., 2011）。這項研究的經費有一部分來自菌株所屬的公司。
+- 一項隨機、安慰劑對照試驗，找來近百位自行車選手，每天補充 PCC® 或安慰劑 11 週。男性受試者的下呼吸道症狀嚴重度較低；但女性受試者反而回報較多症狀，作者認為需要再研究。腸胃方面，補充組輕微腸胃症狀的次數和天數，大約是安慰劑組的兩倍；只有男性的腸胃症狀嚴重度比較輕（West et al., 2011）。這項研究的經費有一部分來自菌株所屬的公司。
 - 另一項在耐力型運動員身上的研究，觀察補充 PCC® 後口腔黏膜免疫指標的變化（Cox et al., 2010）。
 
 這些研究的對象是運動員，結果也不完全一致，所以把它當成參考，而不是保證。

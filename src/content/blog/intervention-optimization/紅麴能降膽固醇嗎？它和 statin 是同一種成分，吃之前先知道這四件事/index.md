@@ -3,6 +3,7 @@ title: '紅麴能降膽固醇嗎？它和 statin 是同一種成分，吃之前�
 description: '健檢 LDL 紅字、不想馬上吃藥，很多人會想到紅麴。紅麴裡的 Monacolin K 和降血脂藥 lovastatin 是同一種化合物，所以它有效，也有藥物的注意事項。不能和 statin 一起吃、含量差很多、橘黴素、原料品管，吃之前先弄清楚。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
+heroImage: './cover.webp'
 category: '心血管'
 product: true
 tags: ['紅麴', 'Monacolin K', 'LDL', '膽固醇', 'statin', '保健品識讀']
@@ -15,7 +16,6 @@ ctaBridge: '健檢報告上有血脂紅字？填寫掃描前資料表，我幫�
 畫面：A bowl of deep red fermented rice next to a printed blood test report with a blank highlighted row, on a warm off-white kitchen table. Clean flat illustration, teal and sage palette, one small amber accent, no text.
 標籤（Canva 填入）：紅麴和 statin 是同一種成分
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
-heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 -->
 
 > 這篇最後一段會介紹 Nu Skin 的紅麴產品。先說清楚：我是 Nu Skin 經銷商。前面的內容，不管你買不買產品都用得上。
@@ -38,11 +38,7 @@ heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 
 也就是說，吃紅麴保健品，等於在吃低劑量、劑量不固定的 statin。
 
-<!-- 🎨 [fig-01] [類型 B]
-畫面：A simple diagram of a liver cell with a cholesterol production line; a red rice grain icon and a pill icon both pointing to the same blocked enzyme step, showing they act on the same switch. Clean medical illustration, no text, blank rounded label boxes.
-標籤（Canva 填入）：紅麴（Monacolin K）, 降血脂藥（lovastatin）, HMG-CoA 還原酶, 肝臟製造膽固醇
-STYLE: 依 IMAGE-STYLE.md 第 7.2 節
--->
+![紅麴的 Monacolin K 和 lovastatin 作用在同一個酵素](./fig-01-same-switch.webp)
 
 ## 效果：真的有，安全性還不夠確定
 
@@ -80,6 +76,8 @@ statin 可能有的副作用，紅麴也可能有，例如肌肉痠痛無力、�
 
 這件事讓我很難過，也更戒慎恐懼。消費者是因為信任才買，安全永遠要排在有效前面：原料從哪裡來、每一批有沒有檢驗、出事時能不能追溯，比任何功效宣傳都重要。
 
+![吃紅麴前要知道的四件事](./fig-02-four-things.webp)
+
 ## 紅麴和吃藥，該怎麼選
 
 這是要和醫師一起決定的事，不是自己在藥局或網路上決定。
@@ -89,6 +87,8 @@ statin 可能有的副作用，紅麴也可能有，例如肌肉痠痛無力、�
 - 如果你吃 statin 有明顯的肌肉不適，或想先從生活調整開始，可以把「紅麴」拿出來和醫師討論，並一起安排追蹤抽血。
 
 不管選哪一條路，飲食、運動和腰圍管理都是基本功，可以搭配〈[吃對了，發炎指數卻不動？](/blog/chronic-inflammation/mediterranean-diet-fasting-hscrp-weight-loss/)〉一起看。
+
+![紅麴和處方藥怎麼和醫師一起決定](./fig-03-talk-to-doctor.webp)
 
 ## 什麼時候看醫生、看哪一科
 

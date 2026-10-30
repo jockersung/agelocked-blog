@@ -3,6 +3,7 @@ title: '吃的膠原蛋白有用嗎？先看來源、分子大小，再看研究
 description: '膠原蛋白只存在動物食材裡，銀耳、桃膠不算。吃進去會被分解成小胜肽，研究結果有正有反：全部研究合起來看有改善，只看沒有廠商資助的研究則沒有明顯效果。怎麼挑、怎麼看研究，一次整理。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
+heroImage: './cover.webp'
 category: '臉蛋'
 product: true
 tags: ['膠原蛋白', '皮膚保養', '保健品識讀', '男性保養', 'VERISOL']
@@ -15,7 +16,6 @@ ctaBridge: '想知道臉上的變化該從保養、作息還是補充品開始�
 畫面：A man's bathroom shelf seen from the front: a mirror, a sunscreen bottle, a glass of water, and a plain unlabeled collagen powder pouch, in soft morning light. Clean flat illustration, warm off-white background, teal and sage palette, one small amber accent.
 標籤（Canva 填入）：吃的膠原蛋白有用嗎？
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
-heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 -->
 
 > 這篇最後一段會介紹 Nu Skin 的膠原蛋白產品。先說清楚：我是 Nu Skin 經銷商。前面的內容，不管你買不買產品都用得上。
@@ -43,11 +43,7 @@ heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 
 這是細胞實驗，說明吃進去的小胜肽「可能」有作用，不代表吃了皮膚就一定會變好。
 
-<!-- 🎨 [fig-01] [類型 B]
-畫面：A simple left-to-right diagram: a long collagen protein chain, then a stomach and intestine breaking it into small two- and three-unit peptide fragments, then the fragments entering a blood vessel and reaching a skin fibroblast cell. Clean medical illustration, no text, blank rounded label boxes.
-標籤（Canva 填入）：膠原蛋白, 消化分解, 小胜肽（如 Pro-Hyp）, 血液, 皮膚纖維母細胞
-STYLE: 依 IMAGE-STYLE.md 第 7.2 節
--->
+![膠原蛋白吃進去後被分解成小胜肽的過程](./fig-01-digestion.webp)
 
 ## 研究到底說了什麼：有正有反
 
@@ -58,6 +54,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 **質疑的一方：** 2025 年《美國醫學期刊》的統合分析納入 23 個試驗、約 1,500 人。全部合在一起看，同樣有改善；但只看**沒有廠商資助**的試驗，或只看品質較好的試驗，就看不到明顯效果（Myung & Park, 2025）。作者的結論是：目前沒有足夠的臨床證據支持用膠原蛋白來預防或改善皮膚老化。
 
 業界則反駁：「膠原蛋白」包含很多不同原料和配方，混在一起比較並不公平。
+
+![膠原蛋白研究支持與質疑的兩篇統合分析](./fig-02-evidence-both-sides.webp)
 
 我的讀法是：**膠原蛋白不是沒有研究，但效果沒有廣告講得那麼確定**，而且受試者大多是女性。與其期待它，不如把它放在防曬、睡眠和戒菸後面。
 
@@ -76,6 +74,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 5. **搭配足夠的蛋白質和蔬果：** 身體製造膠原蛋白需要維生素 C 幫忙，蔬果吃夠比額外補充更基本。
 
 腎臟功能不好、需要限制蛋白質的人，吃之前先問醫師或營養師。
+
+![挑選膠原蛋白的五個重點](./fig-03-how-to-choose.webp)
 
 ## 產品介紹：Nu Skin 水光膠原胜肽
 

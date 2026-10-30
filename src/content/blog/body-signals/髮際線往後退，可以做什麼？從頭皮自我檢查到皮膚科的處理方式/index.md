@@ -3,6 +3,7 @@ title: '髮際線往後退，可以做什麼？從頭皮自我檢查到皮膚科
 description: '一個男人從「嘴上無毛，辦事不牢」爬到「頂上無毛，經驗老道」，看著額頭越來越高，該怎麼辦？從手機就能做的頭皮檢查、哪些掉髮算異常，到皮膚科有哪些處理方式，一次整理。'
 pubDate: 2024-10-07
 updatedDate: 2026-10-30
+heroImage: './cover.webp'
 category: '禿頭、白髮'
 tags: ['掉髮', '雄性禿', '髮際線', '頭皮', '男性慢老', '皮膚科']
 slug: 'hair-loss-options-scalp-check'
@@ -13,7 +14,6 @@ ctaBridge: '想把髮際線的變化記錄清楚？先花 1 分鐘做身體警�
 畫面：A middle-aged East Asian man in an elevator checking his receding hairline in the mirror with a slightly worried but humorous expression. Soft flat illustration, warm off-white background, teal and sage palette, one small amber accent.
 標籤（Canva 填入）：髮際線往後退，可以做什麼？
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
-heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 -->
 
 幾年前流行過一個禿頭 app，上傳一張照片，就能看到自己禿頭的樣子，瞬間老了十歲。
@@ -34,11 +34,7 @@ heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 
 每次拍同一個位置、同一盞燈，存在同一個相簿。頭髮長得慢，三個月比一次才看得出差別。
 
-<!-- 🎨 [fig-01] [類型 B]
-畫面：A smartphone with a clip-on macro lens held over a scalp, with three small circular inset views showing a healthy pale scalp, a reddened inflamed scalp, and thinning miniaturized hairs. Clean medical illustration, no text, blank rounded label boxes.
-標籤（Canva 填入）：健康頭皮, 泛紅發炎, 頭髮變細
-STYLE: 依 IMAGE-STYLE.md 第 7.2 節
--->
+![用手機看頭皮的三個重點](./fig-01-scalp-check.webp)
 
 ## 哪些掉髮要注意
 
@@ -50,6 +46,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - **生病、手術、壓力很大之後兩三個月，突然大把掉：** 這類掉髮常會自己恢復，但也要排除甲狀腺、貧血等原因。
 
 生活習慣也有影響。台灣的研究團隊調查社區裡 40 歲以上的男性，發現抽菸和中重度雄性禿有關，每天抽 20 根以上的人關聯更明顯（Su & Chen, 2007）。
+
+![四種值得注意的掉髮情況](./fig-02-hair-loss-signs.webp)
 
 ## 研究走到哪裡了
 
@@ -67,6 +65,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 - **PRP、植髮等療程：** 在醫療院所進行，費用和效果差異大，要和醫師談清楚適不適合自己。
 
 不要自己在網路上買處方藥來吃，也不要相信「保證長回來」的廣告。
+
+![皮膚科處理雄性禿的四種選擇](./fig-03-dermatology-options.webp)
 
 ## 吃的東西：缺乏時才有幫助
 
