@@ -688,8 +688,8 @@
     "updated": "2026-10-30"
   },
   "leaky-gut-test-zonulin": {
-    "seconds": 427,
-    "hash": "67b591c84630129e",
+    "seconds": 435,
+    "hash": "370dc8942819ff56",
     "file": "/audio/leaky-gut-test-zonulin.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
