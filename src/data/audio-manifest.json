@@ -702,5 +702,53 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-30"
+  },
+  "men-skincare-cleanse-moisturize-sunscreen": {
+    "seconds": 424,
+    "hash": "985656bbaa175e63",
+    "file": "/audio/men-skincare-cleanse-moisturize-sunscreen.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "aphrodisiac-foods-zinc-maca-arginine-evidence": {
+    "seconds": 431,
+    "hash": "355284a28d7759fa",
+    "file": "/audio/aphrodisiac-foods-zinc-maca-arginine-evidence.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "sexual-function-vs-fertility-men": {
+    "seconds": 374,
+    "hash": "56dff67f0f2f564d",
+    "file": "/audio/sexual-function-vs-fertility-men.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "gray-hair-plucking-dye-reversal": {
+    "seconds": 422,
+    "hash": "dfe61a2bbbbebedd",
+    "file": "/audio/gray-hair-plucking-dye-reversal.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "cardiologists-take-statins-ldl-target": {
+    "seconds": 423,
+    "hash": "99626a099468cd30",
+    "file": "/audio/cardiologists-take-statins-ldl-target.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "same-weight-tighter-pants-body-composition": {
+    "seconds": 373,
+    "hash": "d51f4892d734bd1f",
+    "file": "/audio/same-weight-tighter-pants-body-composition.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
   }
 }
