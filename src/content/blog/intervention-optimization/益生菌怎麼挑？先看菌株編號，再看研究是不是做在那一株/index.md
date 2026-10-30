@@ -58,7 +58,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 腸道屏障變得比較「漏」，在研究裡是真的量得到的現象。長時間耐力運動、常吃消炎止痛藥（NSAIDs），都會讓腸道通透性上升。但梅約診所的腸胃科學者整理研究後提醒：「腸漏」目前不是一個獨立的診斷，把屏障修好能不能改善症狀，也還沒有被證實（Camilleri, 2019）。
 
-所以看到「吃這個修復腸漏」的廣告，先保留一點。腸道屏障和益生菌之間的關係，我會另外整理成系列文章。
+所以看到「吃這個修復腸漏」的廣告，先保留一點。腸道屏障的完整整理，從〈[腸漏症是真的嗎？](/blog/body-signals/leaky-gut-what-is-real/)〉開始讀；益生菌能不能修屏障，看〈[益生菌能修腸道屏障嗎？](/blog/intervention-optimization/probiotics-gut-barrier-evidence/)〉。
 
 ![抗生素腹瀉與腸漏症的研究現況](./fig-02-diarrhea-leaky-gut.webp)
 
