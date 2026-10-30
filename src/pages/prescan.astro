@@ -5,6 +5,34 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const title = '掃描前資料表 · AGELOCKED';
+
+// 「你最在意的變化」依男性慢老六站分組；「你已經有的資料」勾選後，還缺的會依勾選的站自動列出。
+// 性健康那一組只留在讀者的瀏覽器，不放進傳到 LINE 的訊息（性生活相關屬個資法特種個資，不經 LINE 收集）。
+const CHANGES = [
+  { st: 'body', name: '身材', items: ['腰圍變大、褲子換尺寸', '體重差不多，身形卻變了', '下午容易疲勞、體力下滑', '肌肉量感覺較難維持', '應酬、宵夜變多'] },
+  { st: 'face', name: '臉蛋', items: ['臉上長斑、斑變深', '看起來累、氣色差', '皺紋或法令紋變明顯', '皮膚變乾或出油變多'] },
+  { st: 'sexual-health', name: '性健康', private: true, items: ['晨間勃起變少', '硬度或持久度不如以前', '性慾變低'] },
+  { st: 'hair', name: '禿頭、白髮', items: ['頭頂髮量變少', '髮際線後退', '白髮變多', '洗頭掉髮變多'] },
+  { st: 'heart', name: '心血管', items: ['爬樓梯會喘', '健檢的血脂、血糖或血壓被標紅字', '家人有心臟病或中風', '很少運動'] },
+  { st: 'checkup', name: '睡眠、壓力與數據', items: ['睡滿 7-8 小時起床仍感疲倦', '睡眠品質不佳、容易中斷', '工作壓力高、難以放鬆', '專注力不如以往', '報告沒紅字，但總覺得哪裡不對', '手錶有數據，不知道怎麼看'] },
+];
+const DATA_ITEMS = [
+  { id: 'report', label: '近一年的健檢報告', st: ['heart', 'checkup', 'body'] },
+  { id: 'lipid', label: '血脂（LDL、三酸甘油酯、HDL）', st: ['heart', 'body'] },
+  { id: 'glucose', label: '空腹血糖或糖化血色素', st: ['heart', 'body'] },
+  { id: 'apob', label: 'ApoB 或 Lp(a)', st: ['heart'] },
+  { id: 'crp', label: 'hs-CRP', st: ['heart', 'checkup'] },
+  { id: 'bp', label: '連續 7 天的居家血壓', st: ['heart'] },
+  { id: 'waist', label: '自己量的腰圍', st: ['body'] },
+  { id: 'meals', label: '晚餐、宵夜與喝酒的紀錄', st: ['body', 'heart'] },
+  { id: 'sleep', label: '手錶或戒指的睡眠紀錄', st: ['face', 'checkup', 'sexual-health'] },
+  { id: 'hrv', label: '靜止心率或 HRV 趨勢', st: ['checkup', 'heart'] },
+  { id: 'family', label: '家族病史（心臟病、中風、糖尿病、掉髮）', st: ['heart', 'hair'] },
+  { id: 'facephoto', label: '固定光線、不開美肌的臉部和斑點照片', st: ['face'] },
+  { id: 'hairphoto', label: '固定角度的頭頂、髮際線照片', st: ['hair'] },
+  { id: 'meds', label: '目前在吃的藥和保健品清單', st: ['body', 'face', 'sexual-health', 'hair', 'heart', 'checkup'] },
+  { id: 'prysm', label: 'Prysm iO 掃描分數', st: ['checkup', 'face'] },
+];
 const description = '資料越完整，當場討論越有方向。有的填、沒有的跳過就好——我會根據你提供的數據組合，梳理出最適合你的科學保養與生活調整方向。';
 ---
 
@@ -172,6 +200,16 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         background: var(--bg);
       }
       .check-item:hover { border-color: var(--teal); background: var(--teal-p); }
+      .cg { margin-bottom: 1.6rem; }
+      .cg-h { font-weight: 500; font-size: 1.1rem; color: var(--ink); margin-bottom: .7rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem; }
+      .cg-lock { font-size: .85rem; color: var(--muted); font-weight: 300; }
+      .cg-lock::before { content: '🔒 '; }
+      .missing { margin-top: 1.6rem; border: 1px solid var(--gold); background: var(--gold-p); border-radius: 4px; padding: 1.1rem 1.3rem; display: none; }
+      .missing.show { display: block; }
+      .missing-h { font-weight: 500; color: var(--ink); margin-bottom: .5rem; }
+      .missing ul { margin: 0; padding-left: 1.2rem; line-height: 1.9; color: var(--body); }
+      .missing-note { margin: .6rem 0 0; font-size: .95rem; color: var(--muted); }
+      .sample-link { color: var(--teal); font-weight: 500; white-space: nowrap; }
       .check-item input { flex-shrink: 0; accent-color: var(--teal); margin-top: 0.2rem; transform: scale(1.3); }
 
       /* ── TG/HDL CALCULATOR ── */
@@ -406,8 +444,9 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           <h1 class="page-title">掃描前<em>資料表</em></h1>
           <p class="page-desc">
             資料越完整，當場討論越有方向。有的填、沒有的跳過就好——
-            我會根據你提供的數據組合，整理出一份<strong>個人化健康管理參考報告</strong>：
-            最需要優先關注的面向、90 天生活調整的優先順序。
+            我會根據你勾選的變化和數據，整理出一份<strong>男性慢老起點整理</strong>：
+            你在意的變化、還缺哪些資料、先記錄什麼、哪些問題帶給醫師。
+            <a href="/sample/" class="sample-link">先看一份示例 →</a>
           </p>
           <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
         </div>
@@ -451,31 +490,52 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           </div>
         </div>
 
-        <!-- ══ 02 身體訊號（原 05，移到第二位——摩擦力最低，先建立投入感） ══ -->
+        <!-- ══ 02 你最在意的變化（依男性慢老六站分組） ══ -->
         <div class="form-section">
           <div class="section-head">
             <div class="section-num">02</div>
             <div class="section-title-wrap">
-              <div class="section-label-sm">Body Signals</div>
-              <div class="section-h">體力與日常感受（勾選有感覺的）</div>
+              <div class="section-label-sm">What You Care About</div>
+              <div class="section-h">你最在意的變化（勾選有感覺的）</div>
+            </div>
+          </div>
+          <div class="section-body">
+            {CHANGES.map((g) => (
+              <div class:list={['cg', { private: g.private }]}>
+                <div class="cg-h">{g.name}{g.private && <span class="cg-lock">只留在你的手機，不會傳出；見面時想談再談</span>}</div>
+                <div class="check-grid">
+                  {g.items.map((it) => (
+                    <label class="check-item"><input type="checkbox" name="change" value={it} data-st={g.st} data-private={g.private ? '1' : undefined} /> {it}</label>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <div class="field" style="margin-top:1.5rem;">
+              <div class="field-label">最想先處理的一件事 <span class="field-optional">選填</span></div>
+              <textarea id="main_concern" placeholder="例如：臉上的斑越來越明顯，想知道先從哪裡開始..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ 03 你已經有的資料（勾選後自動列出還缺的） ══ -->
+        <div class="form-section">
+          <div class="section-head">
+            <div class="section-num">03</div>
+            <div class="section-title-wrap">
+              <div class="section-label-sm">What You Have</div>
+              <div class="section-h">你已經有的資料（勾選手上有的）</div>
             </div>
           </div>
           <div class="section-body">
             <div class="check-grid">
-              <label class="check-item"><input type="checkbox" name="signal" value="fatigue_pm" /> 下午容易疲勞、體力下滑</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="sleep_enough_tired" /> 睡滿 7-8 小時起床仍感疲倦</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="belly_increase" /> 腹部脂肪近 1-2 年感覺有增加</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="brain_fog" /> 專注力不如以往、容易渙散</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="wound_slow" /> 體能或運動後的恢復變慢</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="sleep_poor" /> 睡眠品質不佳 / 容易中斷</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="muscle_loss" /> 肌肉量感覺較難維持</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="hair_gray" /> 白髮 / 掉髮問題</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="stress_high" /> 工作壓力高、日常難以放鬆</label>
-              <label class="check-item"><input type="checkbox" name="signal" value="cold_long" /> 保護力感覺變差、容易小感冒</label>
+              {DATA_ITEMS.map((d) => (
+                <label class="check-item"><input type="checkbox" name="have" value={d.label} data-id={d.id} data-st={d.st.join(' ')} /> {d.label}</label>
+              ))}
             </div>
-            <div class="field" style="margin-top:1.5rem;">
-              <div class="field-label">目前在保養上最想優化的重點 <span class="field-optional">選填</span></div>
-              <textarea id="main_concern" placeholder="例如：明明睡夠了還是沒精神，想提升下午的專注力與體力..."></textarea>
+            <div class="missing" id="missingBox">
+              <div class="missing-h">依你在意的變化，還缺這些資料</div>
+              <ul id="missingList"></ul>
+              <p class="missing-note">沒有也沒關係，見面後我會告訴你先補哪一項、怎麼記錄。</p>
             </div>
           </div>
         </div>
@@ -483,7 +543,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         <!-- ══ 03 體態數據（原 03，加入 BMI 自動計算） ══ -->
         <div class="form-section">
           <div class="section-head">
-            <div class="section-num">03</div>
+            <div class="section-num">04</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Body Metrics</div>
               <div class="section-h">體態數據</div>
@@ -528,7 +588,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         <!-- ══ 04 血脂數據（原 02，移到第四位——需要健檢報告，摩擦力較高） ══ -->
         <div class="form-section">
           <div class="section-head">
-            <div class="section-num">04</div>
+            <div class="section-num">05</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Blood Lipids</div>
               <div class="section-h">血脂數據（常規檢查）</div>
@@ -602,7 +662,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         <!-- ══ 05 穿戴裝置數據（原 04） ══ -->
         <div class="form-section">
           <div class="section-head">
-            <div class="section-num">05</div>
+            <div class="section-num">06</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Wearable Data · 選填</div>
               <div class="section-h">穿戴裝置數據</div>
@@ -669,7 +729,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         <!-- ══ 06 目前在吃的保健品（原 06） ══ -->
         <div class="form-section">
           <div class="section-head">
-            <div class="section-num">06</div>
+            <div class="section-num">07</div>
             <div class="section-title-wrap">
               <div class="section-label-sm">Current Supplements</div>
               <div class="section-h">目前在吃的保健品</div>
@@ -700,7 +760,8 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           <div class="submit-inner">
             <div class="submit-title">資料填寫完成</div>
             <p class="submit-sub">
-              先複製資料，再開啟 LINE 貼上傳送給我即可
+              按第 2 步會直接開啟 LINE，資料已經填在對話框，按傳送就完成。<br />
+              如果對話框是空的，先按第 1 步複製，再貼上傳送。
             </p>
             <div class="submit-steps">
               <div class="submit-step">
@@ -716,12 +777,12 @@ const description = '資料越完整，當場討論越有方向。有的填、�
                   </svg>
                   開啟 LINE 傳送資料
                 </a>
-                <div class="btn-line-hint">請先填寫姓名，並至少勾選一項身體訊號</div>
+                <div class="btn-line-hint">請先填寫姓名，並至少勾選一項在意的變化</div>
               </div>
             </div>
             <div class="submit-note">
-              傳送後的下一步：我會根據你的資料，回覆你一份個人化健康管理參考報告——<br />
-              包含最值得優先處理的項目排序，與 90 天生活調整的優先建議。
+              傳送後的下一步：我會根據你的資料，回覆你一份男性慢老起點整理，<br />
+              並和你約見面時間：Prysm iO 掃描、拍起點照片，接下來 4 週用 LINE 陪你追蹤。
             </div>
             <div class="submit-note">資料僅用於諮詢參考 · 不會轉傳或儲存至第三方</div>
           </div>
@@ -754,7 +815,12 @@ const description = '資料越完整，當場討論越有方向。有的填、�
       // ── LINE BUTTON GATE：姓名已填 + 至少一個訊號勾選 ──
       function checkLineReady() {
         const name = document.getElementById('name').value.trim();
-        const hasSignal = document.querySelectorAll('input[name="signal"]:checked').length > 0;
+        const hasSignal = document.querySelectorAll('input[name="change"]:checked').length > 0;
+        updateMissing();
+        const text = buildText();
+        const url = 'https://line.me/R/oaMessage/%40fer7932k/?' + encodeURIComponent(text);
+        // 訊息太長時 LINE 可能帶不進去，改成只開啟對話，請讀者貼上剛才複製的內容
+        document.getElementById('lineBtn').href = url.length < 7000 ? url : 'https://line.me/R/ti/p/%40fer7932k';
         const btn = document.getElementById('lineBtn');
         if (name && hasSignal) {
           btn.classList.remove('disabled');
@@ -840,12 +906,27 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         if (rows.length > 1) btn.closest('.suppl-row').remove();
       }
 
-      // ── COPY TO LINE（補上 weight、height、BMI、watch_trend） ──
-      function copyToLine() {
+      // ── 還缺的資料：依勾選的站列出沒勾的資料 ──
+      function missingItems() {
+        const sts = new Set([...document.querySelectorAll('input[name="change"]:checked')].map(el => el.dataset.st));
+        return [...document.querySelectorAll('input[name="have"]')]
+          .filter(el => !el.checked && (sts.size === 0 || el.dataset.st.split(' ').some(s => sts.has(s))))
+          .map(el => el.value);
+      }
+      function updateMissing() {
+        const box = document.getElementById('missingBox');
+        const anyChange = document.querySelectorAll('input[name="change"]:checked').length > 0;
+        const list = missingItems();
+        document.getElementById('missingList').innerHTML = list.map(t => '<li>' + t + '</li>').join('');
+        box.classList.toggle('show', anyChange && list.length > 0);
+      }
+
+      // ── 組成要傳到 LINE 的訊息（性健康的勾選不放進來） ──
+      function buildText() {
         const name = document.getElementById('name').value || '（未填）';
         const age = document.getElementById('age').value || '（未填）';
         const gender = document.getElementById('gender');
-        const genderText = gender.options[gender.selectedIndex].text || '（未填）';
+        const genderText = gender.value ? gender.options[gender.selectedIndex].text : '（未填）';
 
         // 體態
         const waist = document.getElementById('waist').value;
@@ -878,13 +959,20 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         const watchTrendText = watchTrend.options[watchTrend.selectedIndex].text;
         const watchTrendLine = watchTrendText && watchTrendText !== '請選擇' ? `\n近期趨勢：${watchTrendText}` : '';
 
-        // 訊號
-        const signals = [...document.querySelectorAll('input[name="signal"]:checked')]
-          .map(el => el.parentElement.textContent.trim()).join('、') || '（未勾選）';
+        // 在意的變化（依站分組，不含性健康）
+        const groups = {};
+        document.querySelectorAll('input[name="change"]:checked').forEach(el => {
+          if (el.dataset.private) return;
+          const g = el.closest('.cg').querySelector('.cg-h').firstChild.textContent.trim();
+          (groups[g] = groups[g] || []).push(el.value);
+        });
+        const signals = Object.entries(groups).map(([g, v]) => `${g}：${v.join('、')}`).join('\n') || '（未勾選）';
+        const have = [...document.querySelectorAll('input[name="have"]:checked')].map(el => el.value).join('、') || '（未勾選）';
+        const missing = missingItems().join('、') || '（無）';
 
         // 目標
         const concern = document.getElementById('main_concern').value;
-        const concernText = concern ? `\n\n▌主要優化方向\n${concern}` : '';
+        const concernText = concern ? `\n\n▌最想先處理的一件事\n${concern}` : '';
 
         // 保健品
         const supplNote = document.getElementById('suppl_note').value;
@@ -899,7 +987,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         const supplNoteText = supplNote ? `\n\n▌補充品備註\n${supplNote}` : '';
 
         const text =
-`【AGELOCKED 掃描前資料】
+`【AGELOCKED 男性慢老起點整理：掃描前資料】
 
 ▌基本資料
 姓名：${name}
@@ -919,11 +1007,22 @@ hs-CRP：${hsCrp || '（未填）'} mg/L${ratio}
 靜止心率 RHR：${rhr || '（未填）'} bpm
 HRV：${hrv || '（未填）'} ms${watchTrendLine}
 
-▌身體訊號
+▌在意的變化
 ${signals}
+
+▌已經有的資料
+${have}
+
+▌還缺的資料
+${missing}
 
 ▌目前保健品
 ${suppls}${concernText}${supplNoteText}`;
+        return text;
+      }
+
+      function copyToLine() {
+        const text = buildText();
 
         navigator.clipboard.writeText(text).then(() => {
           const btn = document.querySelector('.btn-submit');
