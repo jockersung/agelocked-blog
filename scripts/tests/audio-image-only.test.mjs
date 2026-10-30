@@ -31,3 +31,10 @@ test('title change still schedules a new spoken introduction',()=>fixture(({file
 test('explicit queue still refreshes pre-existing stale narration',()=>fixture(({file,put,git,article,before,plan})=>{
  put(file,article('範例','原本的朗讀內容。\n\n![新增圖](./new.webp)'));git('add',file);git('commit','-qm','image only');put('audio-queue.txt','example\n');assert.equal(plan(before)[0].slug,'example');
 }));
+test('image production comments neither trigger rerecording nor enter narration',()=>fixture(({file,put,git,article,before,plan})=>{
+ put(file,article('範例','原本的朗讀內容。\n\n<!-- 🎨 [cover]\n畫面：PRIVATE_PROMPT_NOT_NARRATION\n標籤：不要朗讀這段\n-->\n\n![圖片](./cover.webp)'));
+ git('add',file);git('commit','-qm','production comments');assert.deepEqual(plan(before),[]);
+ put('audio-queue.txt','example\n');const result=plan(before);assert.equal(result.length,1);
+ assert.ok(!result[0].parts.join('').includes('PRIVATE_PROMPT_NOT_NARRATION'));
+ assert.ok(!result[0].parts.join('').includes('不要朗讀這段'));
+}));
