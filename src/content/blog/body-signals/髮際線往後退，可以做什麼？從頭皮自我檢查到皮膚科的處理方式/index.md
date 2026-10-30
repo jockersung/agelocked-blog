@@ -66,6 +66,8 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 不要自己在網路上買處方藥來吃，也不要相信「保證長回來」的廣告。
 
+口服 minoxidil 和 dutasteride 這幾年越來越常被開，它們和生髮水、finasteride 怎麼比，可以看〈[雄性禿吃藥還是擦藥？](/blog/intervention-optimization/aga-medications-oral-minoxidil-dutasteride-finasteride/)〉。
+
 ![皮膚科處理雄性禿的四種選擇](./pr37-03-body-03-editorial-v2.webp)
 
 ## 吃的東西：缺乏時才有幫助
