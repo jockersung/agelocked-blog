@@ -1,10 +1,4 @@
 # 要產生語音的文章 slug，一行一篇；寫 all 代表全部；slug 前加 ! 代表強制重錄。推上 main 後 GitHub Actions 會自動處理並清空；每天也會自動續做。
-leaky-gut-what-is-real
-men-skincare-cleanse-moisturize-sunscreen
-eating-out-plate-protein-vegetables-carbs
-sexual-function-vs-fertility-men
-gray-hair-plucking-dye-reversal
-same-weight-tighter-pants-body-composition
 gut-barrier-habits-exercise-nsaids-alcohol
 aphrodisiac-foods-zinc-maca-arginine-evidence
 ageloc-tru-face-essence-ultra-firming
