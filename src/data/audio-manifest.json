@@ -632,8 +632,8 @@
     "updated": "2026-10-30"
   },
   "hair-loss-options-scalp-check": {
-    "seconds": 429,
-    "hash": "360c1f8b2acf2dc8",
+    "seconds": 470,
+    "hash": "efe9245c9f670ecf",
     "file": "/audio/hair-loss-options-scalp-check.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
@@ -747,6 +747,30 @@
     "seconds": 373,
     "hash": "d51f4892d734bd1f",
     "file": "/audio/same-weight-tighter-pants-body-composition.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "eating-out-plate-protein-vegetables-carbs": {
+    "seconds": 318,
+    "hash": "a80315720a27e7af",
+    "file": "/audio/eating-out-plate-protein-vegetables-carbs.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "ageloc-tru-face-essence-ultra-firming": {
+    "seconds": 529,
+    "hash": "35fe17fc4292ad06",
+    "file": "/audio/ageloc-tru-face-essence-ultra-firming.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "aga-medications-oral-minoxidil-dutasteride-finasteride": {
+    "seconds": 576,
+    "hash": "67e35e2b477342d3",
+    "file": "/audio/aga-medications-oral-minoxidil-dutasteride-finasteride.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-30"
