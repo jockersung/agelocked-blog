@@ -1174,23 +1174,31 @@ function placeLabels(){ const ui=uiEls.filter(e=>!e.hidden&&e.offsetParent!==nul
     const rect=(w,p)=>({l:cx-w/2-p,r:cx+w/2+p,t:cy-hh-p,b:cy+hh+p}); const free=q=>q.l>=4&&q.r<=innerWidth-4&&!ui.some(u=>hit(q,u))&&!placed.some(p=>hit(q,p));
     const fw=l.fullW||r.width, cw=44; let ns, dx=0, dy=0; const cur=l.dx||0, curY=l.dy||0, H=r.height+4;
     const rectAt=(w,p,o,v)=>{ const q=rect(w,p); q.l+=o-cur; q.r+=o-cur; q.t+=v-curY; q.b+=v-curY; return q; };
-    outer: for(const v of [0,-H,H]) for(const o of [0,-45,45,-85,85]){ if(free(rectAt(fw,l.state==='full'?0:8,o,v))){ ns='full'; dx=o; dy=v; break outer; } }
+    outer: for(const v of [0,-H,H]) for(const o of [0,-45,45,-85,85,-130,130]){ if(free(rectAt(fw,l.state==='full'?0:8,o,v))){ ns='full'; dx=o; dy=v; break outer; } }
     if(!ns){ for(const v of [0,-H,H]){ if(free(rectAt(cw,l.state==='hide'?8:0,0,v))){ ns='compact'; dy=v; break; } } if(!ns) ns='hide'; }
     if(dx!==cur||dy!==curY){ l.dx=dx; l.dy=dy; l.el.style.translate=(dx||dy)?`${dx}px ${dy}px`:''; }
     if(x.i===si&&ns==='hide') ns='compact';
     if(ns!==l.state){ l.state=ns; l.el.classList.toggle('compact',ns==='compact'); l.el.classList.toggle('hide',ns==='hide'); }
     if(ns!=='hide') placed.push(ns==='full'?rectAt(fw,2,dx,dy):rectAt(cw,2,0,dy)); } }
 
+function placeKB(){ kbEl.style.translate=''; const r=kbEl.getBoundingClientRect(); if(!r.width) return;
+  const ui=['#tools','#brand'].map(q=>$(q)).filter(e=>e&&!e.hidden&&e.offsetParent!==null).map(e=>e.getBoundingClientRect());
+  let dx=r.left<6?6-r.left:r.right>innerWidth-6?innerWidth-6-r.right:0, dy=0;
+  for(const u of ui){ if(r.left+dx<u.right&&r.right+dx>u.left&&r.top<u.bottom&&r.bottom>u.top){ dy=u.bottom+6-r.top; } }
+  if(dx||dy) kbEl.style.translate=`${dx}px ${dy}px`; }
 function placeJasonControls(){
   jControlEl.style.translate='';
   const r=jControlEl.getBoundingClientRect(); let top=10;
   if(!rtEl.hidden){ const routeBox=rtEl.getBoundingClientRect(); if(r.left<routeBox.right&&r.right>routeBox.left) top=Math.max(top,routeBox.bottom+8); }
   const dx=r.left<10?10-r.left:r.right>innerWidth-10?innerWidth-10-r.right:0;
   let dy=r.top<top?top-r.top:r.bottom>innerHeight-80?innerHeight-80-r.bottom:0;
+  let dxx=dx; for(const q of ['#tools','#brand']){ const e=$(q); if(!e||e.hidden||e.offsetParent===null) continue; const u=e.getBoundingClientRect();
+    if(r.left+dxx<u.right&&r.right+dxx>u.left&&r.top+dy<u.bottom&&r.bottom+dy>u.top){ if(r.right+dxx>u.left&&u.left>innerWidth/2) dxx=u.left-8-r.right; else dy=u.bottom+8-r.top; } }
+  if(r.left+dxx<6) dxx=6-r.left;
   // 不要蓋住站名牌：重疊時往上移到名牌上方，空間不夠就移到名牌下方
   for(const l of islLabels){ if(!l.o.visible||l.state==='hide') continue; const q=l.el.getBoundingClientRect(); if(!q.width) continue;
-    const t=r.top+dy, bt=r.bottom+dy; if(r.left+dx<q.right&&r.right+dx>q.left&&t<q.bottom&&bt>q.top){ const up=q.top-6-r.bottom; dy=(r.top+up>=top)?up:q.bottom+6-r.top; } }
-  if(dx||dy) jControlEl.style.translate=`${dx}px ${dy}px`;
+    const t=r.top+dy, bt=r.bottom+dy; if(r.left+dxx<q.right&&r.right+dxx>q.left&&t<q.bottom&&bt>q.top){ const up=q.top-6-r.bottom; dy=(r.top+up>=top)?up:q.bottom+6-r.top; } }
+  if(dxx||dy) jControlEl.style.translate=`${dxx}px ${dy}px`;
 }
 
 /* ---------- resize ---------- */
@@ -1230,7 +1238,7 @@ function frame(now){ requestAnimationFrame(frame); const dt=Math.min((now-last)/
   sprites.forEach(s=>s.visible=st.carry&&d<16);
   tags.forEach((t,i)=>t.visible=st.tags&&st.carry&&walkers[i].pos.distanceTo(camera.position)<14);
   if(boats.length&&!running) boats.forEach(b=>{ const u=b.userData; b.position.set(center.x+Math.cos(u.a)*u.r,WATER_Y+.02,center.z+Math.sin(u.a)*u.rz); });
-  renderer.render(scene,camera); labelRenderer.render(scene,camera); placeJasonControls(); placeLabels();
+  renderer.render(scene,camera); labelRenderer.render(scene,camera); placeJasonControls(); placeKB(); placeLabels();
   logT+=dt; if(st.log&&logDirty&&logT>.3){ renderLog(); logT=0; } }
 requestAnimationFrame(frame);
 }
