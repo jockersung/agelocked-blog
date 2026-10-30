@@ -3,7 +3,7 @@ title: '硬度不如以前、晨間反應變少：先分清楚是累、沒慾望
 description: '40 歲後，以前不必想的反應開始讓你在意。先分清楚是疲累、性慾變低，還是勃起本身有變化，三種情況的原因和該找的科別都不一樣；勃起變化有時也是心血管的早期訊號。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr37-01-cover-editorial-v2.webp'
 category: '性健康'
 tags: ['性健康', '勃起', '性慾', '睪固酮', '男性慢老', '泌尿科']
 slug: 'erection-libido-fatigue-three-questions'
@@ -36,7 +36,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 三種可能同時出現。你可以先問自己：如果今天睡飽、沒有壓力，問題還在不在？還在的話，比較像第二或第三種。
 
-![累、沒慾望、勃起變了三種情況的比較](./fig-01-three-types.webp)
+![累、沒慾望、勃起變了三種情況的比較](./pr37-01-body-01-editorial-v2.webp)
 
 ## 睪固酮真的會往下掉，只是比你想的慢
 
@@ -56,7 +56,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 美國梅約診所追蹤一個社區的男性長達十年，發現在 40 多歲就出現勃起問題的男性，之後發生冠狀動脈疾病的機會明顯較高（Inman et al., 2009）。
 
-![較細的陰莖動脈常比冠狀動脈先出現變化](./fig-02-vessel-signal.webp)
+![較細的陰莖動脈常比冠狀動脈先出現變化](./pr37-01-body-02-editorial-v2.webp)
 
 所以如果你同時有腰圍變大、血壓或血脂紅字、家族裡有人早發心臟病，勃起變化值得當成一個提醒，連同心血管一起檢查。報告上的血脂怎麼看，可以參考〈[LDL 看起來還好，為什麼醫師還會看 ApoB？](/blog/precision-health-tools/apob-vs-ldl/)〉。
 
@@ -103,7 +103,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 看診前可以先記下這幾件事：從什麼時候開始、晨間反應大概一週幾次、在什麼情況下比較明顯、目前在吃的藥和保健品。這些紀錄是給醫師看的，不需要傳給任何人。
 
-![看診前先記下的四件事](./fig-03-before-visit.webp)
+![看診前先記下的四件事](./pr37-01-body-03-editorial-v2.webp)
 
 ## 帶走一句話
 

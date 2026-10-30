@@ -3,7 +3,7 @@ title: '髮際線往後退，可以做什麼？從頭皮自我檢查到皮膚科
 description: '一個男人從「嘴上無毛，辦事不牢」爬到「頂上無毛，經驗老道」，看著額頭越來越高，該怎麼辦？從手機就能做的頭皮檢查、哪些掉髮算異常，到皮膚科有哪些處理方式，一次整理。'
 pubDate: 2024-10-07
 updatedDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr37-03-cover-editorial-v2.webp'
 category: '禿頭、白髮'
 tags: ['掉髮', '雄性禿', '髮際線', '頭皮', '男性慢老', '皮膚科']
 slug: 'hair-loss-options-scalp-check'
@@ -34,7 +34,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 每次拍同一個位置、同一盞燈，存在同一個相簿。頭髮長得慢，三個月比一次才看得出差別。
 
-![用手機看頭皮的三個重點](./fig-01-scalp-check.webp)
+![用手機看頭皮的三個重點](./pr37-03-body-01-editorial-v2.webp)
 
 ## 哪些掉髮要注意
 
@@ -47,7 +47,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 生活習慣也有影響。台灣的研究團隊調查社區裡 40 歲以上的男性，發現抽菸和中重度雄性禿有關，每天抽 20 根以上的人關聯更明顯（Su & Chen, 2007）。
 
-![四種值得注意的掉髮情況](./fig-02-hair-loss-signs.webp)
+![四種值得注意的掉髮情況](./pr37-03-body-02-editorial-v2.webp)
 
 ## 研究走到哪裡了
 
@@ -66,7 +66,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 不要自己在網路上買處方藥來吃，也不要相信「保證長回來」的廣告。
 
-![皮膚科處理雄性禿的四種選擇](./fig-03-dermatology-options.webp)
+![皮膚科處理雄性禿的四種選擇](./pr37-03-body-03-editorial-v2.webp)
 
 ## 吃的東西：缺乏時才有幫助
 

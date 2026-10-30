@@ -2,7 +2,7 @@
 title: '哪些習慣會讓腸道變漏？耐力運動、止痛藥、喝酒和加工食品的研究'
 description: '跑完長距離肚子翻攪、止痛藥一吃好幾個月、一攤喝到茫、加工食品天天吃。研究發現這些習慣會讓腸道屏障變鬆，細菌碎片跑進血液，成為慢性發炎的來源之一。哪些有人體證據、可以怎麼調整，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr37-04-cover-editorial-v2.webp'
 category: '健檢站'
 tags: ['腸漏症', '腸道屏障', '慢性發炎', '內毒素', '止痛藥', '喝酒', '耐力運動']
 slug: 'gut-barrier-habits-exercise-nsaids-alcohol'
@@ -31,7 +31,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 這也是為什麼腸道屏障會和「慢性發炎」扯上關係。慢性發炎怎麼從血液數字看出線索，可以參考〈[CRP 正常，還需要看 hs-CRP 嗎？](/blog/chronic-inflammation/hs-crp-low-grade-inflammation/)〉。
 
-![腸道屏障變鬆時，內毒素進入血液引起發炎](./fig-01-endotoxin-path.webp)
+![腸道屏障變鬆時，內毒素進入血液引起發炎](./pr37-04-body-01-editorial-v2.webp)
 
 ## 一、長時間、高強度的耐力運動
 
@@ -73,7 +73,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 **可以怎麼做：** 不需要每一樣都看成分表，從「多吃原型食物、少吃包裝零食和加工肉品」開始就好。蔬菜、全穀、豆類裡的纖維，也是腸道好菌的食物。飲食品質和發炎指數的關係，可以搭配〈[吃對了，發炎指數卻不動？](/blog/chronic-inflammation/mediterranean-diet-fasting-hscrp-weight-loss/)〉一起看。
 
-![耐力運動、止痛藥、喝酒和高油加工食品對腸道屏障的影響](./fig-02-four-habits.webp)
+![耐力運動、止痛藥、喝酒和高油加工食品對腸道屏障的影響](./pr37-04-body-02-editorial-v2.webp)
 
 ## 腰圍，是把這些串起來的那條線
 
@@ -85,7 +85,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 你不需要四項同時改。挑一項你最常做、也最容易調整的：
 
-![四個習慣各自可以先做的一個調整](./fig-03-first-step.webp)
+![四個習慣各自可以先做的一個調整](./pr37-04-body-03-editorial-v2.webp)
 
 - 每週跑長距離的人：先處理補水和高溫。
 - 腰痠背痛常吞止痛藥的人：先和醫師討論替代方式。
