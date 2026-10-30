@@ -1,4 +1,5 @@
 import { ISLAND_OVERVIEW, DETECTION_CTA } from '../data/island-overview.js';
+import { stationLabelHTML } from './station-icons.js';
 import { createGuideAudio, bindExclusiveAudio, createStationGuide } from './island-guide-audio.js';
 import { createWalkSurface, acceptsMovementKey } from './island-movement.js';
 import { TAIWAN_COASTLINE } from '../data/taiwan-coastline.js';
@@ -677,7 +678,7 @@ void main(){ float u = vUv.x*uLen*5.0 - uTime*1.4;
   m.visible=false; m.renderOrder=2; m.userData.flow=fi; scene.add(m); return m; });
 
 /* ---------- labels & pins ---------- */
-const islLabels = ISL.map(s=>{ const el=document.createElement('button'); el.className='isl'; el.innerHTML=`<b>${s.station||s.i+1}</b><span>${s.stationName||s.name}${s.city?`<small>${s.city}</small>`:''}</span>`;
+const islLabels = ISL.map(s=>{ const el=document.createElement('button'); el.className='isl'; el.innerHTML=stationLabelHTML(s);
   el.addEventListener('click',e=>{ e.stopPropagation(); selectIsland(s.i); }); const o=new CSS2DObject(el); o.position.set(s.x,TOP*.45,s.z+(s.labelN?-1:1)*R*.98); scene.add(o); return {o,el,state:'full',fullW:0}; }); // labelN：名牌放在島的北邊（最北的站）
 const CIRC='①②③④⑤⑥⑦⑧⑨';
 const kbEl=document.createElement('a'); kbEl.className='kbl'; kbEl.href=DATA.links.knowledge; kbEl.innerHTML=`<b>📚</b><span>知識庫<small>澎湖 · 文字＋語音</small></span>`;
@@ -1170,22 +1171,25 @@ function placeLabels(){ const ui=uiEls.filter(e=>!e.hidden&&e.offsetParent!==nul
   const si=islOfSel(); const list=islLabels.map((l,i)=>({l,i,r:l.el.getBoundingClientRect()})).filter(x=>x.l.o.visible&&x.r.width>0);
   list.sort((a,b)=>(b.i===si)-(a.i===si)||b.r.top-a.r.top); const placed=[];
   for(const x of list){ const {l,r}=x; if(l.state==='full') l.fullW=r.width; const cx=r.left+r.width/2, cy=r.top+r.height/2, hh=r.height/2||14;
-    const rect=(w,p)=>({l:cx-w/2-p,r:cx+w/2+p,t:cy-hh-p,b:cy+hh+p}); const free=q=>!ui.some(u=>hit(q,u))&&!placed.some(p=>hit(q,p));
-    const fw=l.fullW||r.width, cw=34; let ns, dx=0; const cur=l.dx||0;
-    const rectAt=(w,p,o)=>{ const q=rect(w,p); q.l+=o-cur; q.r+=o-cur; return q; };
-    for(const o of [0,-45,45,-85,85]){ if(free(rectAt(fw,l.state==='full'?0:8,o))){ ns='full'; dx=o; break; } }
-    if(!ns){ if(free(rect(cw,l.state==='hide'?8:0))) ns='compact'; else ns='hide'; }
-    if(dx!==cur){ l.dx=dx; l.el.style.translate=dx?`${dx}px 0`:''; }
+    const rect=(w,p)=>({l:cx-w/2-p,r:cx+w/2+p,t:cy-hh-p,b:cy+hh+p}); const free=q=>q.l>=4&&q.r<=innerWidth-4&&!ui.some(u=>hit(q,u))&&!placed.some(p=>hit(q,p));
+    const fw=l.fullW||r.width, cw=44; let ns, dx=0, dy=0; const cur=l.dx||0, curY=l.dy||0, H=r.height+4;
+    const rectAt=(w,p,o,v)=>{ const q=rect(w,p); q.l+=o-cur; q.r+=o-cur; q.t+=v-curY; q.b+=v-curY; return q; };
+    outer: for(const v of [0,-H,H]) for(const o of [0,-45,45,-85,85]){ if(free(rectAt(fw,l.state==='full'?0:8,o,v))){ ns='full'; dx=o; dy=v; break outer; } }
+    if(!ns){ for(const v of [0,-H,H]){ if(free(rectAt(cw,l.state==='hide'?8:0,0,v))){ ns='compact'; dy=v; break; } } if(!ns) ns='hide'; }
+    if(dx!==cur||dy!==curY){ l.dx=dx; l.dy=dy; l.el.style.translate=(dx||dy)?`${dx}px ${dy}px`:''; }
     if(x.i===si&&ns==='hide') ns='compact';
     if(ns!==l.state){ l.state=ns; l.el.classList.toggle('compact',ns==='compact'); l.el.classList.toggle('hide',ns==='hide'); }
-    if(ns!=='hide') placed.push(ns==='full'?rectAt(fw,2,dx):rect(cw,2)); } }
+    if(ns!=='hide') placed.push(ns==='full'?rectAt(fw,2,dx,dy):rectAt(cw,2,0,dy)); } }
 
 function placeJasonControls(){
   jControlEl.style.translate='';
   const r=jControlEl.getBoundingClientRect(); let top=10;
   if(!rtEl.hidden){ const routeBox=rtEl.getBoundingClientRect(); if(r.left<routeBox.right&&r.right>routeBox.left) top=Math.max(top,routeBox.bottom+8); }
   const dx=r.left<10?10-r.left:r.right>innerWidth-10?innerWidth-10-r.right:0;
-  const dy=r.top<top?top-r.top:r.bottom>innerHeight-80?innerHeight-80-r.bottom:0;
+  let dy=r.top<top?top-r.top:r.bottom>innerHeight-80?innerHeight-80-r.bottom:0;
+  // 不要蓋住站名牌：重疊時往上移到名牌上方，空間不夠就移到名牌下方
+  for(const l of islLabels){ if(!l.o.visible||l.state==='hide') continue; const q=l.el.getBoundingClientRect(); if(!q.width) continue;
+    const t=r.top+dy, bt=r.bottom+dy; if(r.left+dx<q.right&&r.right+dx>q.left&&t<q.bottom&&bt>q.top){ const up=q.top-6-r.bottom; dy=(r.top+up>=top)?up:q.bottom+6-r.top; } }
   if(dx||dy) jControlEl.style.translate=`${dx}px ${dy}px`;
 }
 
