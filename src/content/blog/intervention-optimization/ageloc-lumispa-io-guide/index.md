@@ -153,7 +153,11 @@ App 的紀錄會備份在雲端，換手機之後，用原本的帳號登入就�
 
 ### 為什麼是 15 Hz、內外反向轉動？
 
-LumiSpa 的導頭不是隨便選一個速度在轉。Nu Skin 研發團隊測試了不同的振動方式和頻率，要找出能把臉洗乾淨、又夠溫和的組合。最後採用的是每秒 15 次（15 Hz）的微脈衝振盪，導頭的內圈和外圈以相反方向轉動；壓得太用力時，導頭會自動停下來，提醒你放輕。
+LumiSpa 的導頭不是隨便選一個速度在轉，這套振盪設計有美國專利（US 10,080,428，專利權人 NSE Products，是 Nu Skin 旗下的公司）。專利裡寫明：導頭分成內圈和外圈兩區，以每秒約 5 到 30 次的頻率擺動，內外可以朝相反方向動，讓矽膠導頭帶著皮膚做小幅度、規律的拉動。
+
+研發時，團隊用合成皮膚模型和高速攝影，觀察導頭和皮膚之間的動作，一步步調出合適的頻率和擺動方式。LumiSpa 最後採用的是每秒 15 次（15 Hz）的微脈衝振盪。專利文件裡也記錄了實驗室測試：不同的施力方式，對皮膚細胞裡膠原蛋白等基因表現的影響。研發團隊的想法是，溫和而規律地拉動皮膚，可能讓負責製造膠原蛋白的纖維母細胞產生有利的變化。這是實驗室階段的設計依據，不是在使用者臉上量到的結果。
+
+實際用起來，壓得太用力時導頭會自動停下來，提醒你放輕。
 
 這也是我推薦它給保養新手的原因：你不用自己拿捏力道和速度，跟著機器走就好。
 
@@ -182,7 +186,7 @@ LumiSpa 的導頭不是隨便選一個速度在轉。Nu Skin 研發團隊測試�
 
 ### 洗臉機會讓膠原蛋白變多嗎？
 
-很多人會問這一題。目前沒有 LumiSpa iO 直接量膠原蛋白的人體研究。網路上常被引用的那篇按摩儀研究，用的是另一個品牌的機器（Clarisonic Smart PROfile），不能拿來替 LumiSpa 背書。
+很多人會問這一題。前面提到的專利實驗，是在實驗室裡看細胞的基因表現；目前沒有 LumiSpa iO 在使用者臉上直接量膠原蛋白的人體研究。網路上常被引用的那篇按摩儀研究，用的是另一個品牌的機器（Clarisonic Smart PROfile），不能拿來替 LumiSpa 背書。
 
 我推薦它，看的是清潔流程、使用感受和紀錄功能，不是膠原蛋白。
 
@@ -205,3 +209,5 @@ LumiSpa 的導頭不是隨便選一個速度在轉。Nu Skin 研發團隊測試�
 7. Nu Skin 如新台灣。*LumiSpa iO 睛緻修護新動組與睛緻修護新動眼霜*。官方產品資訊，無 DOI；用於核對 iO 配件內容、眼周用途與搭配方式，不作獨立臨床研究證據。[iO 睛緻修護新動組](https://www.nuskin.com.tw/shop/productdetail/1316562873982627964)；[睛緻修護新動眼霜](https://www.nuskin.com.tw/shop/productdetail/1176341658270295145)。核對日期 2026-10-30。
 8. Nu Skin. *ageLOC LumiSpa iO* 與 *How long does ageLOC LumiSpa iO last after a full charge*. 官方說明中心，無 DOI。[LumiSpa iO](https://nuskin.knowledgeowl.com/help/lumispa-io)；[充飽後可用時間](https://nuskin.knowledgeowl.com/help/how-long-does-ageloc-lumispa-io-last-after-a-full-charge-with-the-magnetic-charger)。用於反向轉動、壓太用力自動停止、充飽可用至少一週。核對日期 2026-10-30。
 9. Nu Skin. *What is the ageLOC LumiSpa?* 官方說明中心，無 DOI。[官方頁面](https://nuskin-pacific.knowledgeowl.com/help/what-is-the-ageloc-lumispa)。用於 12 週評估的改善項目與「第一次使用」的描述。核對日期 2026-10-30。
+10. Johnstone SL, Herd MJ, Kilby CF（NSE Products, Inc.）. *Device and method for cleansing and treating skin*. 美國專利 US 10,080,428 B2，2018；相關申請 US 2019/0008332 A1。[Google Patents](https://patents.google.com/patent/US10080428)；[申請案全文](https://uspto.report/patent/app/20190008332)。用於導頭內外分區、約 5–30 Hz 振盪與實驗室膠原基因表現測試的描述；專利文件不是人體臨床試驗。
+11. Sagentia. *LumiSpa – award-winning smart skincare device*. 研發合作夥伴案例說明，無 DOI。[官方頁面](https://sagentia.com/case-study/lumispa-award-winning-smart-skincare-device/)。用於合成皮膚模型與高速攝影的研發過程。核對日期 2026-10-30。
