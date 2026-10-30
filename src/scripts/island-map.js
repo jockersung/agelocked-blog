@@ -995,6 +995,8 @@ $('#rtNext').onclick=()=>{ if(!route) return; const n=ROUTES[route.r].stations.l
 $('#rtExit').onclick=()=>endRoute(false);
 $('#tRoute').onclick=()=> route ? goStation(route.k) : startRoute(0);
 $('#helpRoute').onclick=()=>startRoute(0);
+// 開場畫面：按「你在意的是什麼？」的六站，地圖直接飛到那一站
+document.querySelectorAll('[data-go-station]').forEach(b=>b.onclick=()=>{ const s=islById[b.dataset.goStation]; if(!s) return; $('#help').hidden=true; lsSet('agelocked-island-help','1'); track('intro_station',{station:s.id}); selectIsland(s.i); });
 jTagEl.onclick=e=>{ e.stopPropagation(); if(route) say(ROUTES[route.r].stations[route.k].jason); else startRoute(0); };
 
 /* ---------- sidebar list ---------- */
@@ -1050,7 +1052,7 @@ document.querySelectorAll('.handle').forEach(h=>{ const sheet=h.parentElement; l
   h.addEventListener('pointermove',e=>{ if(y0===null) return; sheet.style.height=clamp(h0+(y0-e.clientY),110,innerHeight)+'px'; });
   h.addEventListener('pointerup',()=>{ y0=null; }); });
 // help
-function showHelp(){ $('#help').hidden=false; $('#helpOk').focus(); }
+function showHelp(){ $('#help').hidden=false; const f=document.querySelector('#help [data-go-station]'); (f||$('#helpOk')).focus({preventScroll:true}); }
 $('#tHelp').onclick=showHelp;
 $('#tAbout').onclick=()=>openSpecial('about');
 $('#hudCheck').onclick=()=>openSpecial('check'); $('#helpOk').onclick=()=>{ $('#help').hidden=true; lsSet('agelocked-island-help','1'); };

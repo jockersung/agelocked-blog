@@ -1,12 +1,13 @@
 ---
 // 〈男性慢老起點整理〉示例：讓讀者在聯絡前就看到「找 Jason 之後，第一份拿到的東西長什麼樣子」。
-// 全部是虛構示例資料。這份整理只做資料整理與就醫準備，不做診斷、不給用藥建議、不推薦產品。
+// 全部是虛構示例資料。這份整理只做資料整理、追蹤與就醫準備，不做診斷、不給用藥建議；保養與營養補充只在讀者想了解時說明，並揭露經銷商身分。
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import ParentAgeCalc from '../components/ParentAgeCalc.astro';
 
 const title = '男性慢老起點整理（示例）｜AGELOCKED';
-const description = '找 Jason 之後，你第一份拿到的整理長什麼樣子？以虛構的 46 歲男性為例，把身材、臉、頭髮、心血管的變化整理成：有哪些資料、先記錄什麼、哪些問題帶給哪一科醫師、下次比較什麼。';
+const description = '找 Jason 之後，你會拿到什麼？以虛構的 46 歲男性為例：為什麼是現在、身材臉頭髮心血管的變化整理、你做什麼與 Jason 做什麼、帶給醫師的問題，以及 4 週的 LINE 與見面追蹤。';
 ---
 <!doctype html>
 <html lang="zh-TW">
@@ -19,7 +20,7 @@ const description = '找 Jason 之後，你第一份拿到的整理長什麼樣�
       <section class="sp-hero">
         <p class="sp-eyebrow">AGELOCKED · 起點整理示例</p>
         <h1>找我之後，你第一份拿到的是這個</h1>
-        <p class="sp-lead">不是保證你變健康，是讓你知道下一步先做什麼。下面用一位虛構的讀者當例子，示範一份「男性慢老起點整理」會包含哪些內容：身材、臉、頭髮和心血管，在意的變化都整理在同一份。</p>
+        <p class="sp-lead">不是保證你變健康，是讓你知道下一步先做什麼，而且接下來 4 週，有人陪你把它做完。下面用一位虛構的讀者當例子：身材、臉、頭髮和心血管，在意的變化都整理在同一份。</p>
         <p class="sp-note"><b>示例</b>以下人物、數字與紀錄全部是虛構的，只用來說明格式。</p>
       </section>
 
@@ -31,6 +32,14 @@ const description = '找 Jason 之後，你第一份拿到的整理長什麼樣�
           </div>
           <span class="rep-tag">示例資料</span>
         </header>
+
+        <section class="rep-sec why-now">
+          <h3><i>0</i>為什麼是現在</h3>
+          <p>K 先生 46 歲，爸爸 74 歲、媽媽 72 歲。等 K 先生 60 歲，爸媽是 88 歲和 86 歲。</p>
+          <p>十四年前爸爸裝支架，是他開車載去醫院、在病房外陪到半夜。他說：「錢我會規劃，股票也有配置。可是再過十幾年，我自己也 60 歲了，到時候我還扶得動他們嗎？」</p>
+          <p class="note2">這份整理，是幫他的身體做第一次配置。</p>
+          <div class="calc-wrap"><b>換你算算看：</b><ParentAgeCalc /></div>
+        </section>
 
         <section class="rep-sec">
           <h3><i>1</i>你最在意的變化</h3>
@@ -71,15 +80,29 @@ const description = '找 Jason 之後，你第一份拿到的整理長什麼樣�
         </section>
 
         <section class="rep-sec">
-          <h3><i>3</i>接下來兩週，先記錄這些</h3>
-          <ol>
-            <li><b>居家血壓：</b>連續 7 天，早上起床後、晚上睡前各量一次，每次量兩遍取平均（台灣高血壓學會的「722」量法）。<span class="st">心血管</span></li>
-            <li><b>腰圍與晚餐：</b>每週同一天早上量腰圍；兩週內記下晚餐和宵夜的時間與內容，拍照就可以。<span class="st">身材</span></li>
-            <li><b>睡眠：</b>先固定上床時間，用手錶看兩週的平均睡眠時數有沒有變化。睡眠也會直接反映在眼周和氣色上。<span class="st">臉蛋</span></li>
-            <li><b>臉部照片與斑點：</b>每週同一天、同一扇窗前的自然光，正面和左右側臉各拍一張，不開美肌；最明顯的那幾塊斑，旁邊放一枚十元硬幣拍近照，之後才比得出大小和顏色。<span class="st">臉蛋</span></li>
-            <li><b>頭頂與髮際線照片：</b>每兩週同一個位置、同一盞燈，拍頭頂、前額髮際線各一張；洗頭時掉髮有沒有明顯變多，也順手記一句。<span class="st">禿頭、白髮</span></li>
-          </ol>
-          <p class="why">為什麼先做這些：它們不用花錢，兩週就有第一批紀錄，看醫師時也用得上。照片是臉和頭髮唯一能前後比較的資料，條件固定才看得出變化。</p>
+          <h3><i>3</i>接下來兩週，我們分工</h3>
+          <div class="split">
+            <div class="you">
+              <h4>你自己做</h4>
+              <ol>
+                <li><b>居家血壓：</b>連續 7 天，早上起床後、晚上睡前各量一次，每次量兩遍取平均（台灣高血壓學會的「722」量法）。<span class="st">心血管</span></li>
+                <li><b>腰圍與晚餐：</b>每週同一天早上量腰圍；晚餐和宵夜拍照就好。<span class="st">身材</span></li>
+                <li><b>睡眠：</b>先固定上床時間，手錶照常戴著。睡眠也會反映在眼周和氣色上。<span class="st">臉蛋</span></li>
+                <li><b>臉和斑點：</b>每週同一扇窗前自拍正面照，不開美肌；最明顯的斑旁邊放一枚十元硬幣拍近照。<span class="st">臉蛋</span></li>
+                <li><b>頭髮：</b>洗頭時掉髮有沒有明顯變多，順手記一句。<span class="st">禿頭、白髮</span></li>
+              </ol>
+            </div>
+            <div class="me">
+              <h4>Jason 幫你做</h4>
+              <ul>
+                <li><b>見面當天：</b>Prysm iO 掃描，記下第一個分數。它反映的是過去幾週蔬果與類胡蘿蔔素的攝取，用來看趨勢。</li>
+                <li><b>見面當天：</b>在固定燈光下幫你拍臉部、斑點近照、頭頂和髮際線。起點照片由我保存，之後每次用同樣條件比較。</li>
+                <li><b>第 7 天：</b>幫你算出 7 天居家血壓平均，和腰圍、第一週照片並排。</li>
+                <li><b>第 14 天：</b>把兩週的睡眠和晚餐紀錄整理好，做成可以直接帶去看診的問題清單。</li>
+                <li><b>你想了解時：</b>說明臉部保養流程和營養補充有哪些選擇、各自的限制。</li>
+              </ul>
+            </div>
+          </div>
           <p class="why">日常照顧可以同時開始：每天在外面跑業務，臉上的斑和日曬關係很大，出門前擦防曬、戴帽子，洗完臉後保濕。這些是基本照顧，不需要等任何紀錄。</p>
         </section>
 
@@ -104,20 +127,19 @@ const description = '找 Jason 之後，你第一份拿到的整理長什麼樣�
         </section>
 
         <section class="rep-sec">
-          <h3><i>5</i>下一次追蹤，比較這些</h3>
-          <p class="when">建議時間：4 到 8 週後</p>
-          <ul class="cmp">
-            <li><b>腰圍</b>和今天的 96 公分比</li>
-            <li><b>7 天居家血壓平均</b>第一次的數字當起點</li>
-            <li><b>平均睡眠時數</b>和 5 小時 40 分比</li>
-            <li><b>臉部照片與斑點近照</b>同光線、同角度，和第一週並排看大小和顏色</li>
-            <li><b>頭頂與髮際線照片</b>頭髮變化慢，建議 3 個月後再和第一張比</li>
-            <li><b>醫師的建議</b>家醫科、皮膚科的回診結論都記下來，下一步照醫師的方向調整</li>
-          </ul>
+          <h3><i>5</i>接下來 4 週，我們這樣追蹤</h3>
+          <ol class="tl">
+            <li><span class="d">第 0 天<small>見面</small></span><div>交付這份起點整理、Prysm iO 第一次掃描、拍起點照片。</div></li>
+            <li><span class="d">第 3 天<small>LINE</small></span><div>血壓量了沒？保養流程有沒有卡住？最容易放棄的就是這幾天。</div></li>
+            <li class="hi"><span class="d">第 7 天<small>LINE</small></span><div><b>你拿到第一組自己的數字：</b>7 天居家血壓平均，加上腰圍和第一週照片與起點並排。</div></li>
+            <li><span class="d">第 14 天<small>LINE</small></span><div>兩週紀錄整理好，看診問題清單交給你，帶去家醫科或皮膚科。</div></li>
+            <li class="hi"><span class="d">第 4 週<small>見面</small></span><div>Prysm iO 再掃一次看趨勢；臉部與斑點照片並排；聽你回診的結論，一起排下一個月。</div></li>
+            <li><span class="d">第 3 個月<small>見面</small></span><div>頭頂與髮際線照片第一次比較。頭髮長得慢，3 個月才比得出差別。</div></li>
+          </ol>
         </section>
 
         <div class="rep-foot">
-          <b>這份整理不包含：</b>疾病診斷、處方或用藥建議、產品推薦。檢驗數字代表什麼、要不要治療，由醫師依你的整體狀況判斷；這份整理幫你把資料和問題準備好。
+          <b>這份整理不包含：</b>疾病診斷、處方或用藥建議。檢驗數字代表什麼、要不要治療，由醫師依你的整體狀況判斷；這份整理幫你把資料和問題準備好，陪你把紀錄做完。<br><b>關於產品：</b>我是 Nu Skin 經銷商。保養品和營養補充只在你想了解時才說明，不買產品也能拿到這份整理和追蹤。
         </div>
       </article>
 
@@ -158,6 +180,25 @@ const description = '找 Jason 之後，你第一份拿到的整理長什麼樣�
   .why, .who, .when { margin: .8rem 0 0; font-size: .9rem; color: var(--muted); }
   .who, .when { margin: 0 0 .6rem; }
   .doc { background: #fbf8f2; }
+  .why-now { background: #fffaf5; }
+  .why-now p { margin: 0 0 .6rem; color: var(--body); line-height: 1.8; }
+  .why-now .note2 { color: var(--ink); font-weight: 700; }
+  .calc-wrap { margin-top: .8rem; }
+  .calc-wrap > b { font-size: .9rem; color: var(--teal-dark); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .split > div { border-radius: 12px; padding: .9rem 1rem; }
+  .split .you { background: var(--surface); }
+  .split .me { background: var(--teal-pale); border: 1px solid var(--teal-mid); }
+  .split .me h4 { color: var(--teal-dark); }
+  .split ol, .split ul { font-size: .93rem !important; }
+  .tl { list-style: none; padding: 0 !important; margin: 0; position: relative; }
+  .tl::before { content: ''; position: absolute; left: 4.6rem; top: .4rem; bottom: .4rem; width: 2px; background: var(--teal-mid); }
+  .tl li { display: grid; grid-template-columns: 4.2rem 1fr; gap: 1.2rem; align-items: start; margin: 0 0 .9rem !important; position: relative; }
+  .tl li::before { content: ''; position: absolute; left: 4.33rem; top: .45rem; width: .7rem; height: .7rem; border-radius: 50%; background: #fff; border: 2px solid var(--teal); }
+  .tl li.hi::before { background: var(--teal); }
+  .tl .d { font-weight: 700; color: var(--ink); font-size: .92rem; line-height: 1.3; }
+  .tl .d small { display: block; font: 600 .72rem 'DM Mono', monospace; color: var(--teal-dark); }
+  .tl li.hi > div { background: var(--teal-pale); border-radius: 8px; padding: .35rem .6rem; }
   .alert { margin-top: .8rem !important; color: #8a3b1f !important; background: #fdeee6; border-radius: 8px; padding: .6rem .8rem; }
   .cmp { list-style: none; padding: 0 !important; display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
   .cmp li { background: var(--surface); border-radius: 10px; padding: .7rem .8rem; margin: 0; font-size: .92rem; }
@@ -175,7 +216,7 @@ const description = '找 Jason 之後，你第一份拿到的整理長什麼樣�
   .sp-links a { color: var(--muted); }
 
   @media (max-width: 640px) {
-    .cols, .cmp { grid-template-columns: 1fr; }
+    .cols, .cmp, .split { grid-template-columns: 1fr; }
     .rep-head, .rep-sec, .rep-foot { padding-left: 1.1rem; padding-right: 1.1rem; }
   }
 </style>

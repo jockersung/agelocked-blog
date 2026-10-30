@@ -9,6 +9,8 @@ import { getUrlSlug, getTier } from '../utils/categories';
 import { ISLANDS, LAND, DAY_CYCLE, FLOW_MIN, STEPS, DEFAULT_MODEL } from '../data/island-map';
 import { ROUTES } from '../data/island-routes';
 import audioManifest from '../data/audio-manifest.json';
+import ParentAgeCalc from './ParentAgeCalc.astro';
+import FortyIntro from './FortyIntro.astro';
 import { MEN_PILLARS } from '../data/men-slow-aging';
 import '../styles/island-map.css';
 
@@ -100,6 +102,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
       <a class="sec2" href="/about/">作者：孫義坤</a>
       <a class="sec2" href="/">回首頁</a>
     </div>
+    <FortyIntro />
     {byStep.map(({ t, isl, st }) => (
       <>
         <div class="fb-step"><b>{t}</b><h2>{isl.stationName}</h2><span>{st?.hook || isl.summary}</span></div>
@@ -211,16 +214,22 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
 <button class="btn glass" id="hudToggle" aria-expanded="false">◷ 時間</button>
 
 <div id="help" hidden>
-  <div class="help-box" role="dialog" aria-labelledby="helpT">
-    <div class="eyebrow">怎麼逛這座島</div>
-    <h2 id="helpT">三步看懂健康島</h2>
-    <ol>
-      <li><span>島由北到南分成<b>六站</b>：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站，每站的建物都是一篇文章。</span></li>
-      <li><span>用<b>方向鍵或 WASD</b> 操控島主 Jason 走路，走到建物旁按 <b>Enter</b> 看文章；用滑鼠或手指<b>點地面</b>，Jason 會走過去。</span></li>
-      <li><span>拖曳轉動地圖，<b>Q / E</b> 也能旋轉視角。不想自己走，就讓 Jason 帶你走一遍。</span></li>
-    </ol>
-    <button class="btn" id="helpRoute" type="button">跟著島主走：男性慢老 6 站</button>
+  <div class="help-box intro" role="dialog" aria-labelledby="helpT">
+    <div class="eyebrow">AGELOCKED · 男性慢老</div>
+    <h2 id="helpT">40 歲，是一個分水嶺。</h2>
+    <p class="ib">工作穩了，存了一些錢，也買了一些股票。錢，你懂得配置。<b>那你的身體，有沒有配置？</b></p>
+    <p class="ib">再算一件事：你 60 歲的時候，爸媽幾歲？</p>
+    <ParentAgeCalc compact />
+    <p class="ib">打開朋友圈，有人開始晨跑、游泳，有人報名了全馬。</p>
+    <h3 class="ask">你在意的是什麼？</h3>
+    <div class="go-st">
+      {islands.map((isl) => (
+        <button type="button" data-go-station={isl.id} style={`--c:${isl.color}`}><b>{isl.station}</b>{isl.stationName}</button>
+      ))}
+    </div>
+    <button class="btn" id="helpRoute" type="button">還沒想好？跟著島主 Jason 走一遍 6 站</button>
     <button class="btn ghost" id="helpOk">自己逛</button>
+    <p class="keys">操作：方向鍵或 WASD 讓 Jason 走路，Enter 看附近的文章；點地面 Jason 會走過去；拖曳或 Q / E 轉視角。</p>
   </div>
 </div>
 
