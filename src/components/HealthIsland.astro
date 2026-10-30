@@ -9,6 +9,8 @@ import { getUrlSlug, getTier } from '../utils/categories';
 import { ISLANDS, LAND, DAY_CYCLE, FLOW_MIN, STEPS, DEFAULT_MODEL } from '../data/island-map';
 import { ROUTES } from '../data/island-routes';
 import audioManifest from '../data/audio-manifest.json';
+import ParentAgeCalc from './ParentAgeCalc.astro';
+import FortyIntro from './FortyIntro.astro';
 import { MEN_PILLARS } from '../data/men-slow-aging';
 import '../styles/island-map.css';
 
@@ -58,14 +60,16 @@ const routes = ROUTES.map((r) => ({
   stations: r.stations.map((st) => {
     const pl = st.pillar ? MEN_PILLARS.find((p) => p.id === st.pillar) : undefined;
     return { id: st.pillar ?? st.id, name: pl?.name ?? st.name, island: st.island, jason: st.jason, audio: st.audio,
-      hook: pl?.hook ?? '', intro: pl?.intro ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [] };
+      hook: st.hook ?? pl?.hook ?? '', intro: pl?.intro ?? '', doctorNote: pl?.doctorNote ?? '', upcoming: pl?.upcoming ?? [] };
   }),
 }));
+// 每一站的提問（讀者心裡的那句話），站卡最上面顯示
+for (const isl of islands) (isl as { hook?: string }).hook = routes[0]?.stations.find((x) => x.island === isl.id)?.hook ?? '';
 const articles = Object.fromEntries([...bySlug.values()].map((a) => [a.slug, { sum: a.sum, out: a.out.filter((s) => bySlug.has(s)) }]));
 const data = {
   city: 'AGELOCKED',
   steps: STEPS,
-  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/knowledge/', knowledge: '/knowledge/' },
+  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/knowledge/', knowledge: '/knowledge/', sample: '/sample/' },
   islands, land: LAND, flowMin: FLOW_MIN,
   dayCycle: DAY_CYCLE.map((d) => ({ ...d, items: d.items.filter((s: string) => placed.has(s) || s.startsWith('page-')) })),
   articles, missing, unplaced, routes, audio: Object.keys(audioManifest), kb: { url: '/knowledge/', total: bySlug.size },
@@ -88,15 +92,17 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
   <div class="fb-in">
     <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
     <h1 id="fbTitle">健康島：{total} 篇文章的閱讀路徑</h1>
-    <p class="lead">給把健康排最後的你。這些文章依「男性慢老」六站排列：身材、臉蛋、性健康、禿頭白髮、心血管，最後到健檢站換成自己的數據。不知道從哪裡讀起，就從第 1 站開始。</p>
+    <p class="lead">幫四十歲後的男人，把在意的變化整理清楚，知道下一步先做什麼。這些文章依「男性慢老」六站排列：身材、臉蛋、性健康、禿頭白髮、心血管，最後到健檢站換成自己的資料。從你最在意的那一站開始讀。</p>
     <p class="lead" id="fbReason"></p>
     <div class="fb-actions">
       <a class="pri" href="/assessment/">身體警報訊號評估清單（1 分鐘）</a>
       <a class="sec2" href="/prescan/">有健檢報告：填寫掃描前資料表</a>
       <button class="sec2" id="fbTry" type="button">開啟 3D 地圖</button>
+      <a class="sec2" href="/sample/">看一份起點整理示例</a>
       <a class="sec2" href="/about/">作者：孫義坤</a>
       <a class="sec2" href="/">回首頁</a>
     </div>
+    <FortyIntro />
     {byStep.map(({ t, isl, st }) => (
       <>
         <div class="fb-step"><b>{t}</b><h2>{isl.stationName}</h2><span>{st?.hook || isl.summary}</span></div>
@@ -133,6 +139,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
   <div id="brand" class="glass">
     <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
     <h1>身體重開機 <span>健康島</span></h1>
+    <p class="pos">幫四十歲後的男人，把在意的變化整理清楚，知道下一步先做什麼。</p>
     <p>給把健康排最後的你。文字與語音排成一張台灣地圖；跟著島主 Jason 從北走到南，走完「男性慢老」6 站。</p>
     {mode === 'home'
       ? <button class="home-link" id="toText" type="button">切換成文字版首頁 →</button>
@@ -208,16 +215,22 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
 <button class="btn glass" id="hudToggle" aria-expanded="false">◷ 時間</button>
 
 <div id="help" hidden>
-  <div class="help-box" role="dialog" aria-labelledby="helpT">
-    <div class="eyebrow">怎麼逛這座島</div>
-    <h2 id="helpT">三步看懂健康島</h2>
-    <ol>
-      <li><span>島由北到南分成<b>六站</b>：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站，每站的建物都是一篇文章。</span></li>
-      <li><span>用<b>方向鍵或 WASD</b> 操控島主 Jason 走路，走到建物旁按 <b>Enter</b> 看文章；用滑鼠或手指<b>點地面</b>，Jason 會走過去。點「🔊 島主 Jason」或角色本人，可播放本站的本人聲音開場白，再點一次停止。</span></li>
-      <li><span>拖曳轉動地圖，<b>Q / E</b> 也能旋轉視角。不想自己走，就讓 Jason 帶你走一遍。</span></li>
-    </ol>
-    <button class="btn" id="helpRoute" type="button">跟著島主走：男性慢老 6 站</button>
+  <div class="help-box intro" role="dialog" aria-labelledby="helpT">
+    <div class="eyebrow">AGELOCKED · 男性慢老</div>
+    <h2 id="helpT">40 歲，是一個分水嶺。</h2>
+    <p class="ib">工作穩了，存了一些錢，也買了一些股票。錢，你懂得配置。<b>那你的身體，有沒有配置？</b></p>
+    <p class="ib">再算一件事：你 60 歲的時候，爸媽幾歲？</p>
+    <ParentAgeCalc compact />
+    <p class="ib">打開朋友圈，有人開始晨跑、游泳，有人報名了全馬。</p>
+    <h3 class="ask">你在意的是什麼？</h3>
+    <div class="go-st">
+      {islands.map((isl) => (
+        <button type="button" data-go-station={isl.id} style={`--c:${isl.color}`}><b>{isl.station}</b>{isl.stationName}</button>
+      ))}
+    </div>
+    <button class="btn" id="helpRoute" type="button">還沒想好？跟著島主 Jason 走一遍 6 站</button>
     <button class="btn ghost" id="helpOk">自己逛</button>
+    <p class="keys">操作：方向鍵或 WASD 讓 Jason 走路，Enter 看附近的文章；點地面 Jason 會走過去；拖曳或 Q / E 轉視角；點「🔊 島主 Jason」可聽本站的開場白，再點一次停止。</p>
   </div>
 </div>
 
