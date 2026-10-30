@@ -1,3 +1,6 @@
+# Consolidate only the article listing; keep /blog/... article URLs unchanged.
+/blog /knowledge/ 301
+/blog/ /knowledge/ 301
 
 /blog/precision-health-tools/three-clues-cross-reading/ /blog/chronic-inflammation/inflammation-three-clues/ 301
 /blog/precision-health-tools/three-clues-cross-reading /blog/chronic-inflammation/inflammation-three-clues/ 301

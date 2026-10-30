@@ -65,7 +65,7 @@ const articles = Object.fromEntries([...bySlug.values()].map((a) => [a.slug, { s
 const data = {
   city: 'AGELOCKED',
   steps: STEPS,
-  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/blog', knowledge: '/knowledge/' },
+  links: { prescan: '/prescan/', assessment: '/assessment/', about: '/about/', blog: '/knowledge/', knowledge: '/knowledge/' },
   islands, land: LAND, flowMin: FLOW_MIN,
   dayCycle: DAY_CYCLE.map((d) => ({ ...d, items: d.items.filter((s: string) => placed.has(s) || s.startsWith('page-')) })),
   articles, missing, unplaced, routes, audio: Object.keys(audioManifest), kb: { url: '/knowledge/', total: bySlug.size },
