@@ -3,7 +3,7 @@ title: '益生菌怎麼挑？先看菌株編號，再看研究是不是做在那
 description: '益生菌是台灣最競爭的保健品之一，貨架上每一盒都說自己最好。效果取決於「菌株」，不是菌種的名字。看懂標示、看研究是不是做在同一株、腹瀉和腸漏症的研究走到哪裡，一次整理。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr37-06-cover-editorial-v2.webp'
 category: '健檢站'
 product: true
 tags: ['益生菌', '腸道健康', '保健品識讀', '菌株', '益生元', '腹瀉', '腸漏症']
@@ -42,7 +42,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 也就是說，A 牌的「鼠李糖乳桿菌」做過研究，不代表 B 牌的「鼠李糖乳桿菌」也有一樣的效果，除非兩家用的是同一株。
 
-![益生菌名字的屬、種、菌株三層](./fig-01-strain-levels.webp)
+![益生菌名字的屬、種、菌株三層](./pr37-06-body-01-editorial-v2.webp)
 
 ## 腹瀉：研究最多的地方
 
@@ -60,7 +60,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 所以看到「吃這個修復腸漏」的廣告，先保留一點。腸道屏障的完整整理，從〈[腸漏症是真的嗎？](/blog/body-signals/leaky-gut-what-is-real/)〉開始讀；益生菌能不能修屏障，看〈[益生菌能修腸道屏障嗎？](/blog/intervention-optimization/probiotics-gut-barrier-evidence/)〉。
 
-![抗生素腹瀉與腸漏症的研究現況](./fig-02-diarrhea-leaky-gut.webp)
+![抗生素腹瀉與腸漏症的研究現況](./pr37-06-body-02-editorial-v2.webp)
 
 ## 挑選時看這五件事
 
@@ -72,7 +72,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 菌種「越多越好」不是挑選標準，菌株對、研究對得上，比數量重要。
 
-![挑選益生菌的五件事與就醫提醒](./fig-03-how-to-choose.webp)
+![挑選益生菌的五件事與就醫提醒](./pr37-06-body-03-editorial-v2.webp)
 
 ## 益生菌的食物：益生元
 

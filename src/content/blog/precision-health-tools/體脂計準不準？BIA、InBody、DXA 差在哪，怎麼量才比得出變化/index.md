@@ -3,7 +3,7 @@ title: '體脂計準不準？BIA、InBody、DXA 差在哪，怎麼量才比得�
 description: 'BMI 分不出肌肉和脂肪，於是大家改量體脂。可是家裡的體脂計、健身房的 InBody、醫院的 DXA，量出來常常不一樣。三種方法的原理和誤差在哪，怎麼量才比得出自己的變化，一次講清楚。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr37-10-cover-editorial-v2.webp'
 category: '身材'
 tags: ['體脂肪', '體脂計', 'InBody', 'DXA', '腰圍', '身體組成']
 slug: 'body-fat-measurement-bia-inbody-dxa'
@@ -37,7 +37,7 @@ BMI 有多不準？廣告上最常出現的例子是「林書豪 VS 連勝文」
 
 所以體脂計的數字是「估計值」，不是直接量到的脂肪重量。
 
-![家用體脂計從量電阻到推算體脂率的流程](./fig-01-bia-principle.webp)
+![家用體脂計從量電阻到推算體脂率的流程](./pr37-10-body-01-editorial-v2.webp)
 
 ## 誤差從哪裡來
 
@@ -61,7 +61,7 @@ BMI 有多不準？廣告上最常出現的例子是「林書豪 VS 連勝文」
 
 DXA 是研究裡最常用來當參考的方法，輻射量很低，但需要到醫療院所、自費，不適合天天量。如果你想知道自己「真正的起點」，可以考慮做一次 DXA，之後再用 InBody 或體脂計追蹤趨勢。
 
-![家用體脂計、InBody 與 DXA 的比較](./fig-02-three-tools.webp)
+![家用體脂計、InBody 與 DXA 的比較](./pr37-10-body-02-editorial-v2.webp)
 
 ## 怎麼量，才比得出自己的變化
 
@@ -74,7 +74,7 @@ DXA 是研究裡最常用來當參考的方法，輻射量很低，但需要到�
 
 腰圍量法：站直、放鬆、正常吐氣，皮尺水平繞過肚臍上緣，不要勒緊。
 
-![比得出變化的四個量法](./fig-03-how-to-measure.webp)
+![比得出變化的四個量法](./pr37-10-body-03-editorial-v2.webp)
 
 ## 數字之外，什麼時候要看醫師
 

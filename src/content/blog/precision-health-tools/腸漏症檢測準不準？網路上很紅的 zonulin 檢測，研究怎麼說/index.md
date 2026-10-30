@@ -2,7 +2,7 @@
 title: '腸漏症檢測準不準？網路上很紅的 zonulin 檢測，研究怎麼說'
 description: '「驗一管血就知道你有沒有腸漏」，很多自費檢測主打 zonulin。研究發現市售的 zonulin 試劑，量到的可能根本不是 zonulin；食物 IgG 檢測也不能拿來診斷食物過敏。哪些檢查真的有用、花錢前先問哪幾件事，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr37-09-cover-editorial-v2.webp'
 category: '健檢站'
 tags: ['腸漏症', 'zonulin', '自費檢測', '食物過敏原檢測', '腸道健康', '健檢']
 slug: 'leaky-gut-test-zonulin'
@@ -42,7 +42,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 作者的結論很直接：在弄清楚這些試劑到底在量什麼之前，用血中 zonulin 來評估腸道屏障，**沒有意義**。
 
-![兩項研究對市售 zonulin 試劑的發現](./fig-01-zonulin-kits.webp)
+![兩項研究對市售 zonulin 試劑的發現](./pr37-09-body-01-editorial-v2.webp)
 
 這不代表 zonulin 這個蛋白質不重要，而是**目前市面上的檢測工具，還沒辦法可靠地量到它**。
 
@@ -70,13 +70,13 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 這些檢查不會告訴你「漏不漏」，但能排除真正需要處理的問題。
 
-![腸胃不適時，比 zonulin 更值得先做的檢查](./fig-02-useful-tests.webp)
+![腸胃不適時，比 zonulin 更值得先做的檢查](./pr37-09-body-02-editorial-v2.webp)
 
 ## 花錢做自費檢測之前，先問這四件事
 
 不只是腸漏檢測，任何自費檢測都可以先問：
 
-![花錢做自費檢測前要問的四個問題](./fig-03-four-questions.webp)
+![花錢做自費檢測前要問的四個問題](./pr37-09-body-03-editorial-v2.webp)
 
 1. **它量的是什麼？** 試劑有沒有被獨立研究驗證過，真的量到它宣稱的東西？
 2. **結果會改變我要做的事嗎？** 如果不管結果高低，你都會做一樣的事（吃好、睡好、少喝酒），那這個檢測就沒有加分。
