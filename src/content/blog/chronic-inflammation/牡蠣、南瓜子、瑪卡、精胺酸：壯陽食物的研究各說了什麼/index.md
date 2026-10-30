@@ -2,7 +2,7 @@
 title: '牡蠣、南瓜子、瑪卡、精胺酸：壯陽食物的研究各說了什麼'
 description: '「吃生蠔補腎」「南瓜子是天然威而鋼」，這些說法流傳很久。牡蠣、南瓜子、瑪卡、精胺酸、淫羊藿，研究各自看到什麼、沒看到什麼？比任何一種食物都有效的，其實是另一件事。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr40-06-cover-editorial-v2.webp'
 category: '性健康'
 tags: ['性健康', '壯陽', '鋅', '瑪卡', '精胺酸', '勃起', '男性慢老']
 slug: 'aphrodisiac-foods-zinc-maca-arginine-evidence'
@@ -64,7 +64,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 淫羊藿的成分淫羊藿苷，在細胞和大鼠實驗裡，看到改善勃起相關指標的結果（Shindel et al., 2010）。但這是動物研究，人體證據還不夠。
 
-![五種壯陽食物與營養素的研究現況](./fig-01-evidence-map.webp)
+![五種壯陽食物與營養素的研究現況](./pr40-06-body-01-editorial-v2.webp)
 
 ## 比任何一種食物都有效的：把腰圍降下來
 
@@ -79,7 +79,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 這和勃起的原理有關：勃起靠的是血管，腰圍變大、血糖血脂變差，最先受影響的常常就是比較細的陰莖血管。腰圍怎麼量、為什麼值得盯，可以看〈[腰圍每年多三公分，不是你吃太多](/blog/body-signals/visceral-fat-metabolic-signal/)〉。
 
-![減重運動試驗中勃起功能恢復的比例](./fig-02-lifestyle-trial.webp)
+![減重運動試驗中勃起功能恢復的比例](./pr40-06-body-02-editorial-v2.webp)
 
 ## 那「以形補形」呢？
 
@@ -87,7 +87,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 ## 吃補充品之前，先問這幾件事
 
-![吃男性活力補充品前要先確認的事](./fig-03-before-supplements.webp)
+![吃男性活力補充品前要先確認的事](./pr40-06-body-03-editorial-v2.webp)
 
 - **你正在吃什麼藥？** 降血壓藥、心臟藥物（特別是硝酸鹽類）、抗凝血藥、威而鋼，和補充品可能互相影響。
 - **你缺不缺？** 鋅這類營養素，缺了補才有用，可以請醫師抽血確認。

@@ -2,7 +2,7 @@
 title: '男人保養只做三件事：清潔、保濕、防曬怎麼排'
 description: '化妝水、精華液、乳液、面霜，名字一長串，男人看了就想放棄。其實先把三件事做好就夠：洗乾淨、補水分、擋太陽。早上晚上怎麼排、為什麼我推薦物理防曬，一次整理。'
 pubDate: 2026-10-30
-heroImage: './cover.webp'
+heroImage: './pr40-03-cover-editorial-v2.webp'
 category: '臉蛋'
 tags: ['男性保養', '防曬', '物理防曬', '保濕', '臉部清潔', '臉蛋']
 slug: 'men-skincare-cleanse-moisturize-sunscreen'
@@ -48,7 +48,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 剛開始擦會不習慣，覺得「臉好油」。先從少量開始，一顆黃豆大小，薄薄擦開就好。兩三週之後，你會發現洗完臉不擦反而怪怪的。
 
-![男人保養三件事：清潔、保濕、防曬的重點](./fig-01-three-steps.webp)
+![男人保養三件事：清潔、保濕、防曬的重點](./pr40-03-body-01-editorial-v2.webp)
 
 ## 第三件事：防曬，這一步最值得做
 
@@ -60,22 +60,24 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 ## 為什麼我推薦物理防曬
 
-防曬品依擋紫外線的方式，大致分成兩種：
+防曬品依使用的濾劑成分，大致分成兩類：
 
-- **物理防曬（礦物防曬）：** 成分是**氧化鋅**和**二氧化鈦**，在皮膚表面形成一層屏障，把紫外線反射、散射掉。
-- **化學防曬：** 成分像是 avobenzone、oxybenzone、octocrylene 這類，被皮膚吸收後，把紫外線轉換掉。
+- **物理防曬（礦物防曬）：** 常見成分是**氧化鋅**和**二氧化鈦**。它們主要靠吸收紫外線提供防護，也會散射或反射部分光線。
+- **化學防曬（有機濾劑）：** 常見成分像 avobenzone、oxybenzone、octocrylene，透過吸收紫外線能量提供防護。
+
+也就是說，兩者都主要靠吸收紫外線發揮作用，不是「一種反射、一種吸收」；濾劑也不需要先進入血液才能防曬。氧化鋅與二氧化鈦的光學實驗支持這項區分（Cole et al., 2016）。
 
 我比較推薦物理防曬，原因有兩個：
 
 **第一，安全資料比較完整。** 美國 FDA 在 2019 年重新檢視市面上的 16 種防曬成分，只有氧化鋅和二氧化鈦被認定為「一般認為安全有效」；另外 12 種化學防曬成分，FDA 認為安全資料還不夠，要求廠商補件（U.S. FDA, 2019）。
 
-**第二，化學防曬成分會被吸收進血液。** FDA 研究人員讓 48 位健康成人照一般用量擦防曬，結果測試的 6 種化學防曬成分，擦一次之後血中濃度就超過 FDA 設定的「需要進一步做安全評估」門檻（Matta et al., 2020）。
+**第二，化學防曬成分會被吸收進血液。** FDA 研究人員讓 48 位健康成人依研究設計的最大使用條件擦防曬，結果測試的 6 種化學防曬成分，擦一次之後血中濃度就超過 FDA 設定的「需要進一步做安全評估」門檻（Matta et al., 2020）。
 
 要說清楚的是：**被吸收不等於有害**，研究作者也強調，這只代表需要更多研究，大家還是應該繼續擦防曬。所以重點是「擦」，而不是因為擔心成分就乾脆不擦。
 
 在都可以選的情況下，我會選安全資料比較完整、比較不刺激的物理防曬。尤其是皮膚比較敏感、容易泛紅的人，物理防曬通常比較溫和。
 
-![物理防曬和化學防曬的比較](./fig-02-physical-vs-chemical.webp)
+![物理防曬和化學防曬的比較](./pr40-03-body-02-editorial-v2.webp)
 
 **物理防曬的小缺點：** 早期的物理防曬擦起來比較白、比較厚。現在很多產品已經改善，選「清爽」「不泛白」的款式，或帶一點膚色的，男生擦也很自然。
 
@@ -89,7 +91,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 ## 早上和晚上，怎麼排
 
-![早上與晚上的保養順序](./fig-03-morning-night.webp)
+![早上與晚上的保養順序](./pr40-03-body-03-editorial-v2.webp)
 
 **早上（3 分鐘）：** 清水或洗面乳洗臉 → 保濕 → 防曬。
 
@@ -115,5 +117,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 1. Hughes MCB, et al. Sunscreen and prevention of skin aging: a randomized trial. *Annals of Internal Medicine*, 2013.（來源：[Annals of Internal Medicine](https://doi.org/10.7326/0003-4819-158-11-201306040-00002)，2013）
 2. Matta MK, et al. Effect of sunscreen application on plasma concentration of sunscreen active ingredients: a randomized clinical trial. *JAMA*, 2020.（來源：[JAMA](https://doi.org/10.1001/jama.2019.20747)，2020）
 3. U.S. Food and Drug Administration. Sunscreen Drug Products for Over-the-Counter Human Use; Proposed Rule. *Federal Register*, 2019. https://www.federalregister.gov/documents/2019/02/26/2019-03019/sunscreen-drug-products-for-over-the-counter-human-use
+
+4. Cole C, Shyr T, Ou-Yang H. Metal oxide sunscreens protect skin by absorption, not by reflection or scattering. *Photodermatology, Photoimmunology & Photomedicine*. 2016;32:5–10. DOI：[10.1111/phpp.12214](https://doi.org/10.1111/phpp.12214)。
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*
