@@ -1,11 +1,11 @@
 ---
 title: '益生菌怎麼挑？先看菌株編號，再看研究是不是做在那一株'
-description: '益生菌是台灣最競爭的保健品之一，貨架上每一盒都說自己最好。效果取決於「菌株」，不是菌種的名字。看懂標示、看研究是不是做在同一株、知道哪些情況要先問醫師，一次整理。'
+description: '益生菌是台灣最競爭的保健品之一，貨架上每一盒都說自己最好。效果取決於「菌株」，不是菌種的名字。看懂標示、看研究是不是做在同一株、腹瀉和腸漏症的研究走到哪裡，一次整理。'
 pubDate: 2024-12-08
 updatedDate: 2026-10-30
 category: '健檢站'
 product: true
-tags: ['益生菌', '腸道健康', '保健品識讀', '菌株', '益生元']
+tags: ['益生菌', '腸道健康', '保健品識讀', '菌株', '益生元', '腹瀉', '腸漏症']
 slug: 'probiotics-how-to-choose-strain'
 ctaType: 'hard'
 ctaBridge: '不確定自己目前吃的保健品有沒有重複、適不適合？填寫掃描前資料表，把在吃的品項列出來，我幫你一起整理。'
@@ -47,6 +47,22 @@ heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 標籤（Canva 填入）：屬（姓）, 種（名）, 菌株（身分證字號）, 效果看菌株
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
+
+## 腹瀉：研究最多的地方
+
+益生菌研究最多、證據也最完整的，是**吃抗生素引起的腹瀉**。抗生素會連腸道的好菌一起殺掉，有些人吃藥那幾天就開始拉肚子。
+
+2012 年《美國醫學會期刊》的統合分析整理了 82 個隨機試驗，同時吃益生菌的人，發生抗生素相關腹瀉的風險平均低了大約四成（Hempel et al., 2012）。作者也提醒：研究用的菌株、劑量差很多，還不能說哪一株最好，也不能把這個結果套到每一款產品上。
+
+這又回到同一件事：效果要看菌株，研究要對得上你手上那一盒。
+
+## 腸漏症：說法很紅，證據還在補
+
+網路上常說「腸漏症」：腸道黏膜的縫隙變大，該擋在外面的東西跑進血液，引起全身發炎。
+
+腸道屏障變得比較「漏」，在研究裡是真的量得到的現象。長時間耐力運動、常吃消炎止痛藥（NSAIDs），都會讓腸道通透性上升。但梅約診所的腸胃科學者整理研究後提醒：「腸漏」目前不是一個獨立的診斷，把屏障修好能不能改善症狀，也還沒有被證實（Camilleri, 2019）。
+
+所以看到「吃這個修復腸漏」的廣告，先保留一點。腸道屏障和益生菌之間的關係，我會另外整理成系列文章。
 
 ## 挑選時看這五件事
 
@@ -95,6 +111,8 @@ Nu Skin 的 Probio PCC® 是單一菌株的益生菌，主要成分是發酵乳�
 1. Hill C, et al. Expert consensus document: The International Scientific Association for Probiotics and Prebiotics consensus statement on the scope and appropriate use of the term probiotic. *Nature Reviews Gastroenterology & Hepatology*, 2014.（PMID：[24912386](https://pubmed.ncbi.nlm.nih.gov/24912386/)）
 2. West NP, et al. Lactobacillus fermentum (PCC®) supplementation and gastrointestinal and respiratory-tract illness symptoms: a randomised control trial in athletes. *Nutrition Journal*, 2011.（PMID：[21477383](https://pubmed.ncbi.nlm.nih.gov/21477383/)）
 3. Cox AJ, et al. Oral administration of the probiotic Lactobacillus fermentum VRI-003 and mucosal immunity in endurance athletes. *British Journal of Sports Medicine*, 2010.（PMID：[18272539](https://pubmed.ncbi.nlm.nih.gov/18272539/)）
-4. 衛生福利部食品藥物管理署。健康食品資料查詢。食藥署。https://consumer.fda.gov.tw/
+4. Hempel S, et al. Probiotics for the prevention and treatment of antibiotic-associated diarrhea: a systematic review and meta-analysis. *JAMA*, 2012.（來源：[JAMA](https://doi.org/10.1001/jama.2012.3507)，2012）
+5. Camilleri M. Leaky gut: mechanisms, measurement and clinical implications in humans. *Gut*, 2019.（PMID：[31076401](https://pubmed.ncbi.nlm.nih.gov/31076401/)）
+6. 衛生福利部食品藥物管理署。健康食品資料查詢。食藥署。https://consumer.fda.gov.tw/
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。產品內容以 Nu Skin 台灣官方標示為準。*

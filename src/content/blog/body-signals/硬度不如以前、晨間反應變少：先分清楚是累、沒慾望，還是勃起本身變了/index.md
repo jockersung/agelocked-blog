@@ -16,9 +16,13 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 heroImage 做好後加進 frontmatter：heroImage: './cover.webp'
 -->
 
-二十幾歲的時候，你大概從來沒想過這件事。
+「男生們！你只剩一張嘴了嗎？」
 
-現在偶爾會想：早上的自然反應好像少了，硬度不如以前，中場休息要好幾個小時，有時候乾脆沒那個心情。
+「聽說你以前是兩棲部隊啊？」怎麼現在是這樣？
+
+二十幾歲的時候，你大概從來沒想過這件事。現在「大老二」（大還不一定大，不過老是真的）會很老實地告訴你：早上的自然反應好像少了，硬度不如以前，中場休息要好幾個小時，有時候甚至叫也叫不醒。
+
+你要推說工作壓力大也可以，反正都是「they」的錯。🤷‍♂️ 不過，不要害羞。
 
 這些變化很常見，但它們不是同一件事。先分清楚你在意的是哪一種，因為原因不一樣，該找的醫師也不一樣。
 
@@ -60,10 +64,13 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 ## 以形補形和「壯陽食物」，研究到底說了什麼
 
-牛鞭、海馬酒、雞睪丸，這些說法流傳很久。它們大多是高脂肪、高膽固醇的內臟，吃多了反而讓腰圍和血脂往錯的方向走。為什麼「以形補形」站不住腳，可以看〈[打爆保健品神話，以形補形為什麼不行？](/blog/precision-health-tools/supplement-myths-debunked/)〉。
+牛鞭、海馬酒、雞睪丸，這些說法流傳很久。那哪天你吃猴腦，會補腦嗎？補了會變成猴子的思考嗎？
+
+這些大多是高脂肪、高膽固醇的內臟，吃多了反而讓腰圍和血脂往錯的方向走，最後頭禿、肚子凸還不舉，超慘。為什麼「以形補形」站不住腳，可以看〈[打爆保健品神話，以形補形為什麼不行？](/blog/precision-health-tools/supplement-myths-debunked/)〉。
 
 比較常被拿出來討論的營養素和植物，研究狀況大致如下。以下是成分研究，不代表任何產品的效果：
 
+- **精胺酸（L-arginine）：** 日本「AV 之王」清水健（しみけん）曾在受訪時說，他每天吃精胺酸等補充品，來應付繁重的「體力」工作。精胺酸是一氧化氮的原料，而一氧化氮負責讓陰莖的血管放鬆。一篇統合分析整理了 10 個隨機試驗、540 位輕到中度勃起障礙的男性，每天補充 1,500 到 5,000 毫克，和安慰劑相比勃起功能有改善，但性慾沒有變化（Rhim et al., 2019）。試驗規模都不大，正在吃降血壓藥或威而鋼的人不要自己加。
 - **鋅：** 牡蠣、紅肉、堅果裡都有。研究發現缺鋅的人睪固酮會偏低，補足之後會回升（Prasad et al., 1996）。如果你本來就不缺，多吃不一定有差別。
 - **瑪卡：** 一項 12 週的小型研究，受試男性自評的性慾有提升，但血中睪固酮沒有變化（Gonzales et al., 2002）。人數少、時間短，只能當線索。
 - **淫羊藿：** 它的成分淫羊藿苷，在細胞和大鼠實驗中看到改善勃起相關的指標（Shindel et al., 2010）。這是動物研究，人體證據還不夠。
@@ -73,7 +80,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 ## 有證據、今天就能做的事
 
 - **肌力訓練：** 深蹲、硬舉這類用到大肌群的阻力訓練，研究顯示會帶動睪固酮的反應（Vingren et al., 2010）。肌肉量本身也是代謝的底盤。
-- **把腰圍降下來：** 腹部脂肪多，睪固酮通常偏低，血管也比較吃力。低頭看得到自己的腳尖，是很實際的第一個目標。
+- **把腰圍降下來：** 腹部脂肪多，睪固酮通常偏低，血管也比較吃力。低頭看不見自己的台 GG，想到就起肖。低頭看得到自己的腳尖，是很實際的第一個目標。
 - **睡飽、睡完整：** 睪固酮需要完整、不被切碎的睡眠，原因寫在〈[40 歲之後為什麼越睡越累？](/blog/body-signals/sleep-quality-testosterone/)〉。
 - **戒菸、少喝酒：** 兩者都直接傷害血管。
 
@@ -112,6 +119,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 4. Prasad AS, et al. Zinc status and serum testosterone levels of healthy adults. *Nutrition*, 1996.（PMID：[8875519](https://pubmed.ncbi.nlm.nih.gov/8875519/)）
 5. Gonzales GF, et al. Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men. *Andrologia*, 2002.（PMID：[12472620](https://pubmed.ncbi.nlm.nih.gov/12472620/)）
 6. Shindel AW, et al. Erectogenic and neurotrophic effects of icariin, a purified extract of horny goat weed (Epimedium spp.) in vitro and in vivo. *Journal of Sexual Medicine*, 2010.（PMID：[20141584](https://pubmed.ncbi.nlm.nih.gov/20141584/)）
-7. Vingren JL, et al. Testosterone physiology in resistance exercise and training: the up-stream regulatory elements. *Sports Medicine*, 2010.（PMID：[21058750](https://pubmed.ncbi.nlm.nih.gov/21058750/)）
+7. Rhim HC, et al. The potential role of arginine supplements on erectile dysfunction: a systemic review and meta-analysis. *Journal of Sexual Medicine*, 2019.（來源：[Journal of Sexual Medicine](https://doi.org/10.1016/j.jsxm.2018.12.002)，2019）
+8. Vingren JL, et al. Testosterone physiology in resistance exercise and training: the up-stream regulatory elements. *Sports Medicine*, 2010.（PMID：[21058750](https://pubmed.ncbi.nlm.nih.gov/21058750/)）
 
 *本文為健康教育資訊，不構成醫療診斷或治療建議。*
