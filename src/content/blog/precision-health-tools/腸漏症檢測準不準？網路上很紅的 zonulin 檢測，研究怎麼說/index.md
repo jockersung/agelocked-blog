@@ -6,6 +6,8 @@ heroImage: './cover.webp'
 category: '健檢站'
 tags: ['腸漏症', 'zonulin', '自費檢測', '食物過敏原檢測', '腸道健康', '健檢']
 slug: 'leaky-gut-test-zonulin'
+series: 'gut-barrier'
+series_order: 3
 ctaType: 'hard'
 ctaBridge: '手上有自費檢測報告，不確定該不該信？填寫掃描前資料表，把報告和你在意的症狀列出來，我陪你整理要問醫師的問題。'
 ---

@@ -10,6 +10,9 @@ const blog = defineCollection({
 			description: z.string(),
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
+			// 同系列文章的推薦順序
+			series: z.string().optional(),
+			series_order: z.number().int().positive().optional(),
 			heroImage: image().optional(),
 
 			// ── 分類：男性慢老六站 ──

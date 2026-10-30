@@ -6,6 +6,8 @@ heroImage: './cover.webp'
 category: '健檢站'
 tags: ['腸漏症', '腸道屏障', '腸道健康', '慢性發炎', '腸胃科']
 slug: 'leaky-gut-what-is-real'
+series: 'gut-barrier'
+series_order: 1
 ctaBridge: '肚子常不舒服，又說不清楚是哪裡怪？先花 1 分鐘做身體警報評估，把你在意的變化整理出來。'
 ---
 
