@@ -33,7 +33,7 @@ export const MEN_PILLARS: Pillar[] = [
     concern: '疲態、膚況、日常整理',
     intro: '別人第一眼看到的年紀，大多來自臉。疲態、膚色和膚況，跟睡眠、壓力與日曬都有關係。',
     slugs: ['aging-quantified-bryan-johnson-blueprint'],
-    upcoming: ['男人的皮膚，老得比你想的早：日曬是第一名', '洗臉、保濕、防曬：男人保養的基本三件事', '為什麼睡不好，會直接寫在臉上？'],
+    upcoming: ['男人的皮膚，老得比你想的早：日曬是第一名', '為什麼睡不好，會直接寫在臉上？'],
   },
   {
     id: 'sexual-health',
@@ -43,7 +43,7 @@ export const MEN_PILLARS: Pillar[] = [
     intro: '晨勃變少、硬度不同、中途變軟，很多男人只會偷偷擔心。先分清楚是累、沒慾望，還是勃起本身有變化，再決定下一步。',
     slugs: ['male-fatigue-after-40', 'sleep-quality-testosterone'],
     doctorNote: '勃起變化反覆發生、或已經造成困擾，請帶著紀錄和泌尿科醫師討論。勃起問題有時是血管健康的早期提醒，值得認真看待。',
-    upcoming: ['晨勃少了，代表什麼、不代表什麼？', '性慾、勃起、維持：三件常被混在一起的事', '看泌尿科前，可以先整理哪些紀錄？'],
+    upcoming: ['晨勃少了，代表什麼、不代表什麼？', '看泌尿科前，可以先整理哪些紀錄？'],
   },
   {
     id: 'hair',
@@ -61,6 +61,6 @@ export const MEN_PILLARS: Pillar[] = [
     concern: '健檢數字、活動能力、長期健康',
     intro: '心血管和代謝決定你十年後還能不能自在地爬山、跑跳、陪家人。報告沒紅字，不代表沒有值得多看的數字。',
     slugs: ['normal-checkup-still-tired', 'checkup-five-numbers', 'lpa-genetic-risk', 'hs-crp-low-grade-inflammation', 'hypertension-glymphatic-dementia', 'apob-vs-ldl'],
-    upcoming: ['爬兩層樓就喘，是年紀還是訊號？', '為什麼有些心臟科醫師自己也吃 statin？LDL 要降到多低才夠', '降血脂藥吃了肌肉痠？從換藥到一年兩針的新選擇'],
+    upcoming: ['爬兩層樓就喘，是年紀還是訊號？', '降血脂藥吃了肌肉痠？從換藥到一年兩針的新選擇'],
   },
 ];
