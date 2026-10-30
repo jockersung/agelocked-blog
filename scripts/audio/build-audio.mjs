@@ -51,6 +51,7 @@ const OUTRO = {
 };
 export function toScript(a) {
   let t = a.body.replace(/\r/g, '');
+  t = t.replace(/<!--[\s\S]*?-->/g, ''); // 圖片提示語與編輯註解不屬於朗讀內容
   t = t.split(/\n#{1,6}\s*(?:參考資料|參考文獻|學術文獻|References)/)[0];
   t = t.replace(/\*\*延伸閱讀[：:]?\*\*[\s\S]*?(?=\n\s*\n(?!\s*[-*]\s)|$)/g, '');
   t = t.replace(/```[\s\S]*?```/g, '');
