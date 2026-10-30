@@ -614,5 +614,13 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-30"
+  },
+  "ageloc-lumispa-io-guide": {
+    "seconds": 1017,
+    "hash": "7ecb032853334557",
+    "file": "/audio/ageloc-lumispa-io-guide.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
   }
 }
