@@ -616,8 +616,8 @@
     "updated": "2026-10-30"
   },
   "ageloc-lumispa-io-guide": {
-    "seconds": 1017,
-    "hash": "7ecb032853334557",
+    "seconds": 1040,
+    "hash": "44cfd36843b8e523",
     "file": "/audio/ageloc-lumispa-io-guide.mp3",
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
