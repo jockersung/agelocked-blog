@@ -670,5 +670,37 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-30"
+  },
+  "leaky-gut-what-is-real": {
+    "seconds": 388,
+    "hash": "22d172e4a823370c",
+    "file": "/audio/leaky-gut-what-is-real.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "gut-barrier-habits-exercise-nsaids-alcohol": {
+    "seconds": 505,
+    "hash": "1864bb218cd7ce2d",
+    "file": "/audio/gut-barrier-habits-exercise-nsaids-alcohol.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "leaky-gut-test-zonulin": {
+    "seconds": 427,
+    "hash": "67b591c84630129e",
+    "file": "/audio/leaky-gut-test-zonulin.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
+  },
+  "probiotics-gut-barrier-evidence": {
+    "seconds": 471,
+    "hash": "159f0b940fbc8ac3",
+    "file": "/audio/probiotics-gut-barrier-evidence.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-10-30"
   }
 }
