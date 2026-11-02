@@ -98,12 +98,14 @@ const { title, description, image = FallbackImage } = Astro.props;
       const text = (link.innerText || link.textContent || '').trim();
       const page = window.location.pathname;
       if (typeof gtag === 'undefined') return;     // ← 加這一行就好
+      // 只送網址本身，不送 ? 後面的內容（LINE 預填訊息裡有讀者填的個資與健康資料）
+      const cleanUrl = link.origin + link.pathname;
 
       // 軟 CTA：LINE 連結
       if (link.href.includes('line.me')) {
         gtag('event', 'cta_click', {
           cta_type: 'soft', cta_name: 'LINE連結',
-          link_url: link.href, link_text: text, page_path: page
+          link_url: cleanUrl, link_text: text, page_path: page
         });
       }
 
@@ -111,7 +113,7 @@ const { title, description, image = FallbackImage } = Astro.props;
       if (link.href.includes('/assessment')) {
         gtag('event', 'cta_click', {
           cta_type: 'soft', cta_name: '身體警報評估',
-          link_url: link.href, link_text: text, page_path: page
+          link_url: cleanUrl, link_text: text, page_path: page
         });
       }
 
@@ -119,7 +121,7 @@ const { title, description, image = FallbackImage } = Astro.props;
       if (link.href.includes('/prescan')) {
         gtag('event', 'cta_click', {
           cta_type: 'hard', cta_name: '健檢數據填資料',
-          link_url: link.href, link_text: text, page_path: page
+          link_url: cleanUrl, link_text: text, page_path: page
         });
       }
     });

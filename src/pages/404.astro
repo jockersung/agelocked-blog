@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <BaseHead title="找不到這一頁" description="這個網址已經不存在，可以從知識庫或健康島找到相關文章。" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <Header />
+    <main class="nf">
+      <p class="nf-code">404</p>
+      <h1>這一頁找不到了</h1>
+      <p>網址可能已經更新，或文章已經改寫成新版本。可以從這裡繼續找：</p>
+      <div class="nf-links">
+        <a class="nf-btn" href="/knowledge/">到知識庫找文章 →</a>
+        <a class="nf-btn ghost" href="/?3d">逛健康島</a>
+        <a class="nf-btn ghost" href="/assessment/">做 1 分鐘身體警報評估</a>
+      </div>
+    </main>
+    <Footer />
+    <script is:inline>
+      if (typeof gtag === 'function') gtag('event', 'page_not_found', { page_path: location.pathname });
+    </script>
+  </body>
+</html>
+
+<style>
+  .nf { max-width: 640px; margin: 0 auto; padding: 72px 20px 96px; }
+  .nf-code { font-weight: 800; letter-spacing: .2em; color: var(--teal, #2e8b8b); margin: 0 0 8px; }
+  .nf h1 { font-size: 1.9rem; margin: 0 0 12px; }
+  .nf p { line-height: 1.7; }
+  .nf-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .nf-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: #1f5c5c; color: #fff; font-weight: 700; text-decoration: none; }
+  .nf-btn.ghost { background: transparent; color: #1f5c5c; border: 1.5px solid #1f5c5c; }
+</style>
