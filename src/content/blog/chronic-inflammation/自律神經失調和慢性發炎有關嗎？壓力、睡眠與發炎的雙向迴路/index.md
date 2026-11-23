@@ -80,7 +80,7 @@ HRV，也就是說，每一次心跳之間的間隔有多少變化，常被拿�
 
 不知道從哪一科開始，可以看〈[慢性發炎看哪科？](/blog/precision-health-tools/chronic-inflammation-which-doctor/)〉。
 
-<!-- 🎨 [fig-02] [類型 C]
+<!-- 🎨 [fig-02] [類型 B]
 畫面：A checklist card with five rows, each with a small icon: a thyroid gland, a blood drop, a heart with an irregular line, a sleeping face with snoring lines, and a cloud over a head. A red-bordered note at the bottom with a hospital cross icon.
 標籤（Canva 填入）：先排除這些原因, 甲狀腺亢進, 貧血, 心律不整, 睡眠呼吸中止, 焦慮或憂鬱, 胸痛、昏倒、呼吸困難→急診
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
