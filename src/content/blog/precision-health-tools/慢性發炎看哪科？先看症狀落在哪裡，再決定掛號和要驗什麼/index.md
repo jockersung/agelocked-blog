@@ -2,7 +2,7 @@
 title: '慢性發炎看哪科？先看症狀落在哪裡，再決定掛號和要驗什麼'
 description: '醫院沒有「慢性發炎科」。先排除要立刻就醫的警訊，再依症狀找科別：家醫科、風濕免疫科、腸胃科、新陳代謝科、牙科、睡眠門診各看什麼，第一次看診可以和醫師討論哪些檢查，一篇整理。'
 pubDate: 2026-11-23
-heroImage: './cover.webp'
+heroImage: './cover-editorial-v1.webp'
 category: '健檢站'
 tags: ['慢性發炎', '看哪科', '家醫科', 'hs-CRP', '成人健檢', '健康檢查']
 slug: 'chronic-inflammation-which-doctor'
@@ -41,7 +41,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：先看有沒有警訊, 發燒不退, 體重莫名下降, 持續疼痛腫脹, 血便黑便, 咳嗽超過三週, 有→直接就醫, 沒有→依症狀找科別
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![先看有沒有要立刻就醫的警訊，再依症狀找科別](./fig-01-red-flags.webp)
+![先看有沒有要立刻就醫的警訊，再依症狀找科別](./fig-01-red-flags-editorial-v1.webp)
 
 ## 第二步：依症狀找科別
 
@@ -83,7 +83,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：第一次看診可以討論, 血液常規, CRP／ESR, 血糖與血脂, 肝腎功能, 甲狀腺, hs-CRP：看心血管風險, 先用免費的成人健檢
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![第一次看診可以和醫師討論的基本檢查](./fig-02-first-tests.webp)
+![第一次看診可以和醫師討論的基本檢查](./fig-02-first-tests-editorial-v1.webp)
 
 ## 帶這四樣東西去，比較不會白跑一趟
 
@@ -101,7 +101,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：看診前準備四樣, 症狀時間線, 已有報告, 用藥與保健品清單, 家族史
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![看診前可以準備的四樣資料](./fig-03-bring-to-clinic.webp)
+![看診前可以準備的四樣資料](./fig-03-bring-to-clinic-editorial-v1.webp)
 
 ## 檢查都正常，然後呢？
 

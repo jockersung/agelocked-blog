@@ -2,7 +2,7 @@
 title: '自律神經失調和慢性發炎有關嗎？壓力、睡眠與發炎的雙向迴路'
 description: '心悸、淺眠、腸胃時好時壞，很多人被說是「自律神經失調」。研究看到，自律神經和發炎之間有一條雙向的線：壓力和睡不好會推高發炎指標，發炎也會回頭影響神經。整理先排除哪些病、看哪科，以及三件有研究支持的日常做法。'
 pubDate: 2026-11-23
-heroImage: './cover.webp'
+heroImage: './cover-editorial-v1.webp'
 category: '性健康'
 tags: ['自律神經失調', '慢性發炎', 'HRV', '迷走神經', '壓力', '睡眠']
 slug: 'autonomic-imbalance-chronic-inflammation'
@@ -43,7 +43,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：神經與發炎的雙向迴路, 迷走神經：讓免疫細胞少放發炎物質, 發炎物質：回頭讓人疲倦、睡不好
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![迷走神經與發炎的雙向迴路](./fig-01-two-way-loop.webp)
+![迷走神經與發炎的雙向迴路](./fig-01-two-way-loop-editorial-v1.webp)
 
 ## 研究看到的三個連結
 
@@ -85,7 +85,7 @@ HRV，也就是說，每一次心跳之間的間隔有多少變化，常被拿�
 標籤（Canva 填入）：先排除這些原因, 甲狀腺亢進, 貧血, 心律不整, 睡眠呼吸中止, 焦慮或憂鬱, 胸痛、昏倒、呼吸困難→急診
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![歸給自律神經之前，先排除的五種原因](./fig-02-rule-out.webp)
+![歸給自律神經之前，先排除的五種原因](./fig-02-rule-out-editorial-v1.webp)
 
 ## 三件有研究支持的日常做法
 
@@ -110,7 +110,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：三件可以先做的事, 規律運動：每週 150 分鐘, 慢呼吸：每分鐘約 6 次, 固定起床時間
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![規律運動、慢呼吸、固定起床時間三件事](./fig-03-three-actions.webp)
+![規律運動、慢呼吸、固定起床時間三件事](./fig-03-three-actions-editorial-v1.webp)
 
 ## 關於補充品
 

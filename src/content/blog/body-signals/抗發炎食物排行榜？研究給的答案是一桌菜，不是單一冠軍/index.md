@@ -2,7 +2,7 @@
 title: '抗發炎食物排行榜？研究給的答案是一桌菜，不是單一冠軍'
 description: '網路上的「抗發炎第一名」每週換一個。把研究攤開來看，效果最一致的是整體飲食型態：蔬果、魚、堅果、橄欖油放在同一桌。依證據強弱排一次，也整理該少吃的食物和外食怎麼開始。'
 pubDate: 2026-11-23
-heroImage: './cover.webp'
+heroImage: './cover-editorial-v1.webp'
 category: '身材'
 tags: ['抗發炎食物', '抗發炎飲食', '慢性發炎', '地中海飲食', '蔬菜水果', 'Omega-3']
 slug: 'anti-inflammatory-foods-ranking'
@@ -42,7 +42,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：西式飲食型態, 發炎指標較高, 地中海式飲食型態, 發炎指標較低, 看整桌，不看單一食物
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![西式飲食型態與地中海式飲食型態的對比](./fig-01-two-tables.webp)
+![西式飲食型態與地中海式飲食型態的對比](./fig-01-two-tables-editorial-v1.webp)
 
 ## 如果一定要排名：依證據強弱分三層
 
@@ -73,7 +73,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：依證據強弱分三層, 第一層：蔬果、魚, 第二層：堅果、橄欖油、全穀豆類, 第三層：薑黃、生薑、綠茶, 先吃夠第一層
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![抗發炎食物依證據強弱分成三層](./fig-02-three-tiers.webp)
+![抗發炎食物依證據強弱分成三層](./fig-02-three-tiers-editorial-v1.webp)
 
 ## 該少吃的，比該多吃的更容易做到
 
@@ -107,7 +107,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 標籤（Canva 填入）：從一餐開始換, 排骨便當→烤魚便當加青菜, 奶茶→無糖豆漿加水果, 洋芋片→一小把堅果
 STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 -->
-![外食族可以先換的三個選擇](./fig-03-meal-swaps.webp)
+![外食族可以先換的三個選擇](./fig-03-meal-swaps-editorial-v1.webp)
 
 ## 三個提醒
 
