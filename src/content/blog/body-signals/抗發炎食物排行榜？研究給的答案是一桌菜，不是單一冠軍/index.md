@@ -35,7 +35,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 2014 年另一篇整合了 17 項隨機對照試驗、約 2300 人的分析，比較的是至少吃 12 週的地中海飲食。結果是：發炎指標下降，血管內皮功能也改善[2]。血管內皮功能，也就是血管內壁還能不能正常放鬆和收縮。
 
-換句話說，排行榜真正的第一名是「地中海式的一桌菜」：大量蔬菜、水果、全穀、豆類、堅果、魚，用橄欖油烹調，紅肉和加工食品少一點。
+照這些研究來排，第一名是「地中海式的一桌菜」：大量蔬菜、水果、全穀、豆類、堅果、魚，用橄欖油烹調，紅肉和加工食品少一點。
 
 <!-- 🎨 [fig-01] [類型 B]
 畫面：Two dinner tables side by side. Left table: fried chicken, processed sausages, white bread, sugary drink, with a small orange-red flame icon above. Right table: vegetables, fruits, whole grains, beans, fish, nuts, olive oil, with a calm teal leaf icon above. Clean split composition.
@@ -66,7 +66,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 一份蔬菜，大約是煮熟後半碗。換成外食的畫面：一個便當的配菜，通常只有一份多一點。
 
-所以對多數人來說，最大的進步空間不在找冠軍，而在把那份不夠的蔬菜補回來。
+所以對多數人來說，進步最大的一步很簡單：把那份不夠的蔬菜補回來。
 
 <!-- 🎨 [fig-02] [類型 B]
 畫面：A three-tier pyramid or stepped podium. Bottom and widest tier: vegetables, fruits, fish. Middle tier: nuts, olive oil, whole grains, beans. Top small tier: turmeric root, ginger, green tea cup, dark chocolate. A small figure climbing from the bottom.
@@ -87,7 +87,7 @@ STYLE: 依 IMAGE-STYLE.md 第 7.2 節
 
 不用一次全部戒掉。挑一樣你最常吃的，先換掉一半。例如手搖飲從每天一杯改成兩天一杯，或改成無糖。
 
-還有一件事很容易被忽略：**吃對了，熱量也要對。** 一項地中海飲食試驗發現，血脂先改善了，CRP 卻要等到後段體重有變化才跟著下降。詳細看〈[吃對了，發炎指數卻不動？](/blog/chronic-inflammation/mediterranean-diet-fasting-hscrp-weight-loss/)〉。
+**吃對了，熱量也要對。** 一項地中海飲食試驗發現，血脂先改善了，CRP 卻要等到後段體重有變化才跟著下降。詳細看〈[吃對了，發炎指數卻不動？](/blog/chronic-inflammation/mediterranean-diet-fasting-hscrp-weight-loss/)〉。
 
 ## 從明天的一餐開始
 
