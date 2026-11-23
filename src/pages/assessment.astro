@@ -474,9 +474,23 @@ const TOTAL = PARTS.reduce((n, p) => n + p.items.length, 0);
       }
       function updateLine() {
         const btn = document.getElementById('lineBtn');
-        if (!document.querySelectorAll('input[name="alarm"]:checked').length) { btn.href = 'https://line.me/R/ti/p/%40fer7932k'; return; }
-        btn.href = 'https://line.me/R/oaMessage/%40fer7932k/?' + encodeURIComponent(buildText());
+        if (!document.querySelectorAll('input[name="alarm"]:checked').length) { btn.href = 'https://line.me/R/ti/p/%40fer7932k'; btn.dataset.full = ''; return; }
+        // 預填訊息放在 data-full，點擊時才開啟；href 只留 LINE 帳號網址，避免分析工具記錄到訊息內容
+        btn.href = 'https://line.me/R/oaMessage/%40fer7932k/';
+        btn.dataset.full = 'https://line.me/R/oaMessage/%40fer7932k/?' + encodeURIComponent(buildText());
       }
+
+      // GA4：記錄「傳到 LINE」與「複製結果」，只送勾選數量，不送勾了什麼
+      function trackSend(kind) {
+        const n = document.querySelectorAll('input[name="alarm"]:checked').length;
+        if (typeof gtag === 'function') gtag('event', kind, { form: 'assessment', checked_count: n, transport_type: 'beacon' });
+      }
+      document.getElementById('lineBtn')?.addEventListener('click', (e) => {
+        const btn = e.currentTarget;
+        trackSend('line_send');
+        if (btn.dataset.full) { e.preventDefault(); const w = window.open(btn.dataset.full, '_blank'); if (w) w.opener = null; else location.href = btn.dataset.full; }
+      });
+      document.getElementById('copyBtn')?.addEventListener('click', () => trackSend('result_copy'));
 
       function copyResult() {
         const textToCopy = buildText();

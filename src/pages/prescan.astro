@@ -820,7 +820,10 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         const text = buildText();
         const url = 'https://line.me/R/oaMessage/%40fer7932k/?' + encodeURIComponent(text);
         // 訊息太長時 LINE 可能帶不進去，改成只開啟對話，請讀者貼上剛才複製的內容
-        document.getElementById('lineBtn').href = url.length < 7000 ? url : 'https://line.me/R/ti/p/%40fer7932k';
+        // 預填訊息放在 data-full，點擊時才開啟；href 只留 LINE 帳號網址，避免分析工具記錄到訊息內容
+        const lb = document.getElementById('lineBtn');
+        lb.href = url.length < 7000 ? 'https://line.me/R/oaMessage/%40fer7932k/' : 'https://line.me/R/ti/p/%40fer7932k';
+        lb.dataset.full = url.length < 7000 ? url : '';
         const btn = document.getElementById('lineBtn');
         if (name && hasSignal) {
           btn.classList.remove('disabled');
@@ -828,6 +831,15 @@ const description = '資料越完整，當場討論越有方向。有的填、�
           btn.classList.add('disabled');
         }
       }
+
+      // GA4：記錄「傳到 LINE」，只送勾選數量，不送內容
+      document.getElementById('lineBtn')?.addEventListener('click', (e) => {
+        const btn = document.getElementById('lineBtn');
+        if (btn.classList.contains('disabled')) return;
+        const n = document.querySelectorAll('input[name="change"]:checked').length;
+        if (typeof gtag === 'function') gtag('event', 'line_send', { form: 'prescan', checked_count: n, transport_type: 'beacon' });
+        if (btn.dataset.full) { e.preventDefault(); const w = window.open(btn.dataset.full, '_blank'); if (w) w.opener = null; else location.href = btn.dataset.full; }
+      });
 
       // ── BMI 自動計算 ──
       function calcBMI() {
