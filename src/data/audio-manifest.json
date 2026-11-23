@@ -774,5 +774,29 @@
     "model": "gemini-3.8-flash-tts",
     "voice": "voice_agrq78i96bfl",
     "updated": "2026-10-30"
+  },
+  "chronic-inflammation-which-doctor": {
+    "seconds": 465,
+    "hash": "5c48cf2f54c55f4d",
+    "file": "/audio/chronic-inflammation-which-doctor.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-11-23"
+  },
+  "anti-inflammatory-foods-ranking": {
+    "seconds": 369,
+    "hash": "d025723de98da778",
+    "file": "/audio/anti-inflammatory-foods-ranking.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-11-23"
+  },
+  "autonomic-imbalance-chronic-inflammation": {
+    "seconds": 437,
+    "hash": "590b4fcaa1b91870",
+    "file": "/audio/autonomic-imbalance-chronic-inflammation.mp3",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "voice_agrq78i96bfl",
+    "updated": "2026-11-23"
   }
 }
