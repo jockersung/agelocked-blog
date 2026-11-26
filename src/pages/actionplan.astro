@@ -1,10 +1,11 @@
 ---
 // src/pages/action-plan.astro
+import { BRAND_NAME } from '../consts';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = '個人化 90 天保健參考方案 · AGELOCKED';
+const title = '個人化 90 天保健參考方案';
 const description = '輸入你的健康數字，對照科學文獻，整理出適合你的 90 天 ageLOC 保健參考順序與追蹤指標。';
 ---
 
@@ -270,7 +271,7 @@ const description = '輸入你的健康數字，對照科學文獻，整理出�
 
     <div class="plan-header">
       <div class="header-inner">
-        <div class="brand-row">AGELOCKED · 孫義坤</div>
+        <div class="brand-row">{BRAND_NAME} · 孫義坤</div>
         <div class="lock-pill">🔒 LINE 限定 · 諮詢後專屬</div>
         <h1 class="plan-title">個人化 90 天<br><em>保健參考方案</em></h1>
         <p class="plan-desc">輸入你的健康數字，自動對照科學文獻，整理出你的數字觀察維度與 90 天 ageLOC 保健參考順序。</p>
@@ -472,7 +473,7 @@ const description = '輸入你的健康數字，對照科學文獻，整理出�
 
         <div class="legal-note">
           本工具提供的所有資訊為健康科學文獻整理，不構成醫療診斷、治療建議或處方。<br>
-          如有健康疑慮，請諮詢合格醫療人員。· AGELOCKED © 2026
+          如有健康疑慮，請諮詢合格醫療人員。· {BRAND_NAME} © {new Date().getFullYear()}
         </div>
 
       </div><!-- /output -->

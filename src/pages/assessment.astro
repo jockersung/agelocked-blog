@@ -1,10 +1,11 @@
 ---
 // src/pages/assessment.astro
+import { BRAND_NAME } from '../consts';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = '身體警報訊號評估清單 · AGELOCKED';
+const title = '身體警報訊號評估清單';
 const description = '40 歲是一個分水嶺。花 1 分鐘，勾選過去 3 個月常出現的狀況，看看身材、臉蛋、性健康、禿頭白髮、心血管、睡眠與恢復，哪幾站正在亮燈。';
 
 // 男性慢老六站版的身體警報訊號。性健康那一組只在瀏覽器裡計算，不放進傳到 LINE 的訊息（個資法特種個資）。
@@ -290,7 +291,7 @@ const TOTAL = PARTS.reduce((n, p) => n + p.items.length, 0);
     <main>
       <header class="page-header">
         <div class="header-inner">
-          <div class="header-brand">AGELOCKED · 男性慢老</div>
+          <div class="header-brand">{BRAND_NAME} · 男性慢老</div>
           <h1 class="page-title">身體警報訊號<br><em>自我評估清單</em></h1>
           <p class="page-desc">
             40 歲是一個分水嶺。健檢找的是已經發生的疾病，但身體在出狀況之前，常常先在外表、體力和日常感受上亮燈。花 1 分鐘，勾選過去 3 個月常出現的狀況，看看你的身體在六站裡，哪幾站正在亮燈。
@@ -470,7 +471,7 @@ const TOTAL = PARTS.reduce((n, p) => n + p.items.length, 0);
         const lines = Object.entries(groups).map(([n, v]) => `${n}：${v.join('、')}`).join('\n') || '（沒有可分享的勾選）';
         const pub = stationCounts().filter(x => x.n > 0 && x.st !== 'sexual-health').sort((a, b) => b.n / b.total - a.n / a.total || b.n - a.n)[0];
         const topLine = pub ? `\n亮燈最多：${pub.name}` : '';
-        return `【AGELOCKED 身體警報評估結果】\n\n我勾了 ${score} 項\n整體狀況：${status}${topLine}\n\n▌我目前觀察到的變化：\n${lines}\n\n請幫我看，我現在最該先處理哪一站。`;
+        return `【抗老研究室 身體警報評估結果】\n\n我勾了 ${score} 項\n整體狀況：${status}${topLine}\n\n▌我目前觀察到的變化：\n${lines}\n\n請幫我看，我現在最該先處理哪一站。`;
       }
       function updateLine() {
         const btn = document.getElementById('lineBtn');

@@ -3,6 +3,7 @@
 // 篩選條件會寫進網址（?cat=body&audio=1&q=睡眠），可以直接分享某一站的清單。
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import { BRAND_NAME } from '../consts';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -25,13 +26,13 @@ const count = Object.fromEntries(STATIONS.map((s) => [s.slug, posts.filter((x) =
 <!doctype html>
 <html lang="zh-TW">
   <head>
-    <BaseHead title="知識庫：文字＋語音｜AGELOCKED" description="男性慢老六站：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站。所有文章都有作者本人聲音的語音版，可依主題篩選、直接收聽。" />
+    <BaseHead title="知識庫：文字＋語音" description="男性慢老六站：身材、臉蛋、性健康、禿頭白髮、心血管、健檢站。所有文章都有作者本人聲音的語音版，可依主題篩選、直接收聽。" />
   </head>
   <body>
     <Header />
     <main class="kb">
       <section class="kb-hero">
-        <p class="kb-eyebrow">AGELOCKED · 知識庫</p>
+        <p class="kb-eyebrow">{BRAND_NAME} · 知識庫</p>
         <h1>文字＋語音</h1>
         <p class="kb-lead">依「男性慢老」六站分類。挑一站、輸入關鍵字，或只看有語音版的文章，按 ▶ 就能邊做事邊聽。</p>
         <div class="kb-links">

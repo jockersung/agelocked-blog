@@ -1,10 +1,11 @@
 ---
 // src/pages/r2-protocol-advisor.astro
+import { BRAND_NAME } from '../consts';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = '男性活力 90 天保健參考方案 · AGELOCKED';
+const title = '男性活力 90 天保健參考方案';
 const description = '輸入你的健康數字，自動對照文獻，整理出適合你的 90 天 ageLOC R2 保健參考順序與追蹤指標。';
 ---
 
@@ -278,7 +279,7 @@ const description = '輸入你的健康數字，自動對照文獻，整理出�
     <header class="page-header">
       <div class="header-glow"></div>
       <div class="header-inner">
-        <div class="brand-tag">AGELOCKED · 孫義坤</div>
+        <div class="brand-tag">{BRAND_NAME} · 孫義坤</div>
         <div class="lock-badge">🔒 LINE 限定 · 諮詢後專屬</div>
         <h1>男性活力 90 天<br><em>保健參考方案</em></h1>
         <p class="header-desc">輸入你的健康數字，自動對照文獻，整理出適合你的 90 天 ageLOC R2 保健參考順序與追蹤指標。</p>
@@ -527,7 +528,7 @@ const description = '輸入你的健康數字，自動對照文獻，整理出�
 
         <div class="legal">
           本工具提供的所有資訊為健康科學文獻整理，不構成醫療診斷、治療建議或處方。<br>
-          如有健康疑慮，請諮詢合格醫療人員。· AGELOCKED © 2026
+          如有健康疑慮，請諮詢合格醫療人員。· {BRAND_NAME} © {new Date().getFullYear()}
         </div>
 
       </div><!-- /output -->

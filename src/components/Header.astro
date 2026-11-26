@@ -1,16 +1,20 @@
 ---
+import { BRAND_NAME } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 <header>
   <nav id="main-nav">
     <div class="logo">
-      <a href="/"><img src="/agelockedlogo.webp" alt="AGELOCKED" height="44" /></a>
+      <a href="/" aria-label={`${BRAND_NAME}首頁`}>
+        <img src="/favicon.svg" alt="" width="30" height="30" />
+        <span>{BRAND_NAME}</span>
+      </a>
     </div>
     <div class="internal-links">
-      <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/knowledge/">knowledge</HeaderLink>
-      <HeaderLink href="/about">About</HeaderLink>
-      <HeaderLink href="/join">Join</HeaderLink>
+      <HeaderLink href="/">首頁</HeaderLink>
+      <HeaderLink href="/knowledge/">知識庫</HeaderLink>
+      <HeaderLink href="/about">關於</HeaderLink>
+      <HeaderLink href="/join">合作</HeaderLink>
     </div>
     <div class="nav-right">
       <button class="search-btn" id="search-toggle" aria-label="搜尋">
@@ -157,11 +161,17 @@ import HeaderLink from './HeaderLink.astro';
     display: flex;
     align-items: center;
     border-bottom: none;
+    gap: 0.35rem;
+    padding: 0;
+    color: #163b44;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    white-space: nowrap;
   }
   .logo img {
-    height: 44px;
-    width: auto;
     display: block;
+    flex: none;
   }
   nav {
     display: grid;
@@ -178,8 +188,9 @@ import HeaderLink from './HeaderLink.astro';
     display: flex;
     justify-content: flex-end;
   }
-  nav a {
+  .internal-links :global(a) {
     padding: 0 1.2em;
+    white-space: nowrap;
     line-height: 60px;
     color: #3a4a58;
     border-bottom: 3px solid transparent;
@@ -189,11 +200,11 @@ import HeaderLink from './HeaderLink.astro';
     letter-spacing: 0.1em;
     transition: color 0.2s;
   }
-  nav a:hover {
+  .internal-links :global(a:hover) {
     color: #1a8c82;
     border-bottom-color: transparent;
   }
-  nav a.active {
+  .internal-links :global(a.active) {
     color: #1a8c82;
     border-bottom-color: #1a8c82;
   }
@@ -378,11 +389,14 @@ import HeaderLink from './HeaderLink.astro';
     }
     nav {
       height: 52px;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      column-gap: 0.35rem;
     }
     .logo img {
-      height: 34px;
+      width: 22px;
+      height: 22px;
     }
-    nav a {
+    .internal-links :global(a) {
       padding: 0 0.55em;
       font-size: 0.7rem;
       letter-spacing: 0;

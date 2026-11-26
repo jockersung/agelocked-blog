@@ -1,12 +1,13 @@
 ---
 // 〈男性慢老起點整理〉示例：讓讀者在聯絡前就看到「找 Jason 之後，第一份拿到的東西長什麼樣子」。
 // 全部是虛構示例資料。這份整理只做資料整理、追蹤與就醫準備，不做診斷、不給用藥建議；保養與營養補充只在讀者想了解時說明，並揭露經銷商身分。
+import { BRAND_NAME } from '../consts';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import ParentAgeCalc from '../components/ParentAgeCalc.astro';
 
-const title = '男性慢老起點整理（示例）｜AGELOCKED';
+const title = '男性慢老起點整理（示例）';
 const description = '找 Jason 之後，你會拿到什麼？以虛構的 46 歲男性為例：為什麼是現在、身材臉頭髮心血管的變化整理、你做什麼與 Jason 做什麼、帶給醫師的問題，以及 4 週的 LINE 與見面追蹤。';
 ---
 <!doctype html>
@@ -18,7 +19,7 @@ const description = '找 Jason 之後，你會拿到什麼？以虛構的 46 歲
     <Header />
     <main class="sp">
       <section class="sp-hero">
-        <p class="sp-eyebrow">AGELOCKED · 起點整理示例</p>
+        <p class="sp-eyebrow">{BRAND_NAME} · 起點整理示例</p>
         <h1>找我之後，你第一份拿到的是這個</h1>
         <p class="sp-lead">不是保證你變健康，是讓你知道下一步先做什麼，而且接下來 4 週，有人陪你把它做完。下面用一位虛構的讀者當例子：身材、臉、頭髮和心血管，在意的變化都整理在同一份。</p>
         <p class="sp-note"><b>示例</b>以下人物、數字與紀錄全部是虛構的，只用來說明格式。</p>

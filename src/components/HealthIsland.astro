@@ -1,4 +1,5 @@
 ---
+import { BRAND_NAME, SITE_TITLE } from '../consts';
 interface Props { mode: 'home' | 'page' }
 const { mode } = Astro.props;
 // 健康島元件：首頁（mode=home，蓋在原本首頁上，可一鍵切回文字首頁）與 /map（mode=page，附文字版文章地圖）共用。
@@ -80,8 +81,7 @@ const json = JSON.stringify(data).replace(/</g, '\\u003c');
 // 文字版（弱裝置、不支援 3D、搜尋引擎與 AI 爬蟲都讀這一份）
 const byStep = islands.map((isl) => ({ t: isl.station, isl, st: routes[0]?.stations.find((x) => x.island === isl.id) }));
 const itemOf = (isl: (typeof islands)[number], id: string) => isl.items.find((x) => x.id === id)!;
-const title = `健康島：${total} 篇文章的閱讀地圖｜AGELOCKED`;
-const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台灣地圖：從察覺身體訊號、找出慢性發炎的原因、用數據量測，到開始調整，照著路徑一步步讀。`;
+
 ---
 
 <div id="island-root" class="map-page" data-mode={mode} hidden={mode === 'home'}>
@@ -90,7 +90,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
 {mode === 'page' && (
 <section id="fallback" aria-labelledby="fbTitle">
   <div class="fb-in">
-    <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
+    <div class="eyebrow">{BRAND_NAME} · 閱讀地圖</div>
     <h1 id="fbTitle">健康島：{total} 篇文章的閱讀路徑</h1>
     <p class="lead">幫四十歲後的男人，把在意的變化整理清楚，知道下一步先做什麼。這些文章依「男性慢老」六站排列：身材、臉蛋、性健康、禿頭白髮、心血管，最後到健檢站換成自己的資料。從你最在意的那一站開始讀。</p>
     <p class="lead" id="fbReason"></p>
@@ -129,7 +129,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
 
 <div id="loader" role="status">
   <div class="ld-inner">
-    <div class="eyebrow">AGELOCKED · 身體重開機計畫</div>
+    <div class="eyebrow">{SITE_TITLE}</div>
     <div class="ld-big">正在組合健康島…</div>
     <div class="ld-msg" id="loadMsg">載入 3D 引擎中</div>
   </div>
@@ -137,13 +137,13 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
 
 <div id="leftcol">
   <div id="brand" class="glass">
-    <div class="eyebrow">AGELOCKED · 閱讀地圖</div>
-    <h1>身體重開機 <span>健康島</span></h1>
+    <div class="eyebrow">健康島 · 閱讀地圖</div>
+    <h1>{SITE_TITLE}</h1>
     <p class="pos">幫四十歲後的男人，把在意的變化整理清楚，知道下一步先做什麼。</p>
     <p>給把健康排最後的你。文字與語音排成一張台灣地圖；跟著島主 Jason 從北走到南，走完「男性慢老」6 站。</p>
     {mode === 'home'
       ? <button class="home-link" id="toText" type="button">切換成文字版首頁 →</button>
-      : <a class="home-link" href="/">← 回 AGELOCKED 首頁</a>}
+      : <a class="home-link" href="/">← 回首頁</a>}
   </div>
   <nav id="tools" class="glass" aria-label="視角工具">
     <button class="btn" id="tPano" title="回到全景"><b>⌂</b>全景</button>
@@ -216,7 +216,7 @@ const description = `把 AGELOCKED 的 ${total} 篇健康文章排成一張台�
 
 <div id="help" hidden>
   <div class="help-box intro" role="dialog" aria-labelledby="helpT">
-    <div class="eyebrow">AGELOCKED · 男性慢老</div>
+    <div class="eyebrow">{BRAND_NAME} · 男性慢老</div>
     <h2 id="helpT">40 歲，是一個分水嶺。</h2>
     <p class="ib">工作穩了，存了一些錢，也買了一些股票。錢，你懂得配置。<b>那你的身體，有沒有配置？</b></p>
     <p class="ib">再算一件事：你 60 歲的時候，爸媽幾歲？</p>

@@ -41,7 +41,7 @@ html.island-on,html.island-on body{overflow:hidden}
 .map-page #leftcol>*{pointer-events:auto}
 .map-page #brand{border-radius:18px;padding:16px 18px 14px}
 .map-page #brand h1{margin:6px 0 4px;font-size:22px;line-height:1.2;font-weight:800;letter-spacing:.02em;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
-.map-page #brand h1 span{font-size:13px;font-weight:700;color:#fff;background:var(--m-teal);border-radius:999px;padding:2px 10px}
+.map-page #brand h1{text-wrap:balance}
 .map-page #brand p{margin:0;font-size:12.5px;line-height:1.6;color:var(--m-muted)}
 .map-page #tools{border-radius:14px;padding:4px;display:flex;gap:2px;align-self:flex-start}
 .map-page #tools .btn{flex-direction:column;gap:2px;font-size:11px;padding:0 12px}

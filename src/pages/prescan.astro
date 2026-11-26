@@ -1,10 +1,11 @@
 ---
 // src/pages/prescan.astro
+import { BRAND_NAME } from '../consts';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = '掃描前資料表 · AGELOCKED';
+const title = '掃描前資料表';
 
 // 「你最在意的變化」依男性慢老六站分組；「你已經有的資料」勾選後，還缺的會依勾選的站自動列出。
 // 性健康那一組只留在讀者的瀏覽器，不放進傳到 LINE 的訊息（性生活相關屬個資法特種個資，不經 LINE 收集）。
@@ -440,7 +441,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
     <main>
       <header class="page-header">
         <div class="header-inner">
-          <div class="header-brand">AGELOCKED · 孫義坤</div>
+          <div class="header-brand">{BRAND_NAME} · 孫義坤</div>
           <h1 class="page-title">掃描前<em>資料表</em></h1>
           <p class="page-desc">
             資料越完整，當場討論越有方向。有的填、沒有的跳過就好——
@@ -999,7 +1000,7 @@ const description = '資料越完整，當場討論越有方向。有的填、�
         const supplNoteText = supplNote ? `\n\n▌補充品備註\n${supplNote}` : '';
 
         const text =
-`【AGELOCKED 男性慢老起點整理：掃描前資料】
+`【抗老研究室 男性慢老起點整理：掃描前資料】
 
 ▌基本資料
 姓名：${name}

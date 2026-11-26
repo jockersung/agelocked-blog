@@ -7,8 +7,7 @@ import { Image } from 'astro:assets';
 import heroImg from '../assets/生活空間感.png';
 import profileImg from '../assets/profile.webp';
 
-const SITE_TITLE = '孫義坤｜給把健康排最後的你——身體重開機計畫';
-const SITE_DESCRIPTION = '告別無效的單一補充。用生醫專員的科學實證角度，梳理慢性低度發炎的生活型態風險因子，幫你找回被偷走的體力與清醒。';
+import { BRAND_NAME, SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import FortyIntro from '../components/FortyIntro.astro';
 ---
 
@@ -46,7 +45,8 @@ import FortyIntro from '../components/FortyIntro.astro';
       .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; }
       .hero-label { font-family: 'DM Mono', monospace; font-size: 0.95rem; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem; display: block; }
       .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.25; margin-bottom: 2rem; color: #fff; }
-      .hero-title em { color: #6de8df; font-style: italic; }
+      .hero-title span { display: block; color: #6de8df; }
+      .hero-tagline { margin: -1.1rem 0 1.5rem; color: #e3f4f2; font-size: 1rem; }
       
       .hero-checklist { list-style: none; padding: 0; margin: 0 0 2.5rem 0; }
       .hero-checklist li { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.95rem 0.8rem 0.95rem 2.4rem; position: relative; border-bottom: 1px solid rgba(255,255,255,0.08); font-weight: 300; }
@@ -155,7 +155,8 @@ import FortyIntro from '../components/FortyIntro.astro';
       <div class="hero-inner">
         <div>
           <span class="hero-label">生物醫學專員 · 15年醫療研究背景</span>
-          <h1 class="hero-title">給<em>把健康排最後</em>的你——<br>身體重開機計畫</h1>
+          <h1 class="hero-title">{BRAND_NAME} <span>身體重開機</span></h1>
+          <p class="hero-tagline">給把健康排最後的你</p>
           
           <ul class="hero-checklist">
             <li>
