@@ -5,7 +5,7 @@ import '../styles/global.css';
 import type { ImageMetadata } from 'astro';
 import { getImage } from 'astro:assets';
 import siteImage from '../assets/生活空間感.png';
-import { BRAND_ENGLISH, BRAND_NAME, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { BRAND_ENGLISH, BRAND_NAME, SITE_DESCRIPTION, SITE_ICON, SITE_TITLE } from '../consts';
 interface Props {
 	title: string;
 	description: string;
@@ -23,7 +23,7 @@ const organization = {
   name: BRAND_NAME,
   alternateName: BRAND_ENGLISH,
   url: siteURL,
-  logo: { '@type': 'ImageObject', url: new URL('/favicon.svg', siteURL).href },
+  logo: { '@type': 'ImageObject', url: new URL(SITE_ICON, siteURL).href },
   description: SITE_DESCRIPTION,
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', url: lineURL },
   sameAs: [lineURL],
@@ -32,8 +32,8 @@ const organization = {
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico?v=sprout" sizes="16x16 32x32 48x48" />
+<link rel="icon" type="image/png" href={SITE_ICON} sizes="512x512" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link
 	rel="alternate"

@@ -1,12 +1,12 @@
 ---
-import { BRAND_NAME } from '../consts';
+import { BRAND_NAME, SITE_ICON } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 <header>
   <nav id="main-nav">
     <div class="logo">
       <a href="/" aria-label={`${BRAND_NAME}首頁`}>
-        <img src="/favicon.svg" alt="" width="30" height="30" />
+        <img src={SITE_ICON} alt="" width="30" height="30" />
         <span>{BRAND_NAME}</span>
       </a>
     </div>
