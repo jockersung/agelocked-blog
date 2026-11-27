@@ -86,13 +86,52 @@ const organization = {
   })} />
 )}
 
-<!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JPQ34N5BN"></script>
+<!-- Google Analytics GA4（真人才記錄）
+     機器人進站不到 1 秒就走、不捲動也不點擊，所以 GA4 等到訪客
+     「捲動／點擊／觸控／按鍵／移動滑鼠」或停留 8 秒後才載入。
+     在那之前的 gtag() 事件先暫存，載入後依序補送，不會漏。
+     站長排除自己：網址加 ?ga_off=1（該瀏覽器之後都不記錄），?ga_off=0 恢復。 -->
 <script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9JPQ34N5BN');
+  (function () {
+    var ID = 'G-9JPQ34N5BN';
+    window.dataLayer = window.dataLayer || [];
+    var pending = [];
+    var live = false;
+    window.gtag = function () { if (live) dataLayer.push(arguments); else pending.push(arguments); };
+
+    try {
+      var q = new URLSearchParams(location.search).get('ga_off');
+      if (q === '1') localStorage.setItem('ga_off', '1');
+      if (q === '0') localStorage.removeItem('ga_off');
+      if (localStorage.getItem('ga_off') === '1') return; // 站長本人：完全不載入 GA
+    } catch (e) {}
+
+    var EVENTS = ['scroll', 'pointerdown', 'touchstart', 'keydown', 'mousemove', 'wheel'];
+    var timer = null;
+    function start() {
+      if (live) return;
+      live = true;
+      EVENTS.forEach(function (ev) { removeEventListener(ev, start, true); });
+      document.removeEventListener('visibilitychange', arm);
+      clearTimeout(timer);
+      window.gtag('js', new Date());
+      window.gtag('config', ID);
+      pending.forEach(function (a) { dataLayer.push(a); });
+      pending = [];
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+      document.head.appendChild(s);
+    }
+    // 只在分頁真的被看著時倒數 8 秒（背景分頁不算）
+    function arm() {
+      clearTimeout(timer);
+      if (document.visibilityState === 'visible') timer = setTimeout(start, 8000);
+    }
+    EVENTS.forEach(function (ev) { addEventListener(ev, start, { capture: true, passive: true, once: true }); });
+    document.addEventListener('visibilitychange', arm);
+    arm();
+  })();
 </script>
 
   <!-- GA4 CTA 追蹤：軟 / 硬 -->

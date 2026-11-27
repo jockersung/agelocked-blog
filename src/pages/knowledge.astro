@@ -163,12 +163,12 @@ const count = Object.fromEntries(STATIONS.map((s) => [s.slug, posts.filter((x) =
         if (cur === b) { audio.paused ? audio.play() : audio.pause(); return; }
         cur = b; half = false; audio.src = b.dataset.src!; title.textContent = b.dataset.title!; title.href = b.dataset.url!;
         player.hidden = false; document.body.classList.add('kb-playing'); audio.play().then(() => { audio.playbackRate = rate; }).catch(() => {});
-        track('audio_play', { slug: b.dataset.slug, source: 'knowledge' });
+        track('audio_play', { slug: b.dataset.slug, play_from: 'knowledge' });
       }));
       audio.addEventListener('play', () => { audio.playbackRate = rate; mark(); });
       audio.addEventListener('pause', mark);
-      audio.addEventListener('ended', () => { mark(); if (cur) track('audio_complete', { slug: cur.dataset.slug, source: 'knowledge' }); });
-      audio.addEventListener('timeupdate', () => { if (!half && cur && audio.duration && audio.currentTime / audio.duration > .5) { half = true; track('audio_half', { slug: cur.dataset.slug, source: 'knowledge' }); } });
+      audio.addEventListener('ended', () => { mark(); if (cur) track('audio_complete', { slug: cur.dataset.slug, play_from: 'knowledge' }); });
+      audio.addEventListener('timeupdate', () => { if (!half && cur && audio.duration && audio.currentTime / audio.duration > .5) { half = true; track('audio_half', { slug: cur.dataset.slug, play_from: 'knowledge' }); } });
       $('#kbPX').addEventListener('click', () => { audio.pause(); player.hidden = true; document.body.classList.remove('kb-playing'); cur = null; mark(); });
     </script>
   </body>
